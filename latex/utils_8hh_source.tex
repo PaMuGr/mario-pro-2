@@ -1,0 +1,37 @@
+\doxysection{utils.\+hh}
+\hypertarget{utils_8hh_source}{}\label{utils_8hh_source}\mbox{\hyperlink{utils_8hh}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ UTILS\_HH}}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00002}00002\ \textcolor{preprocessor}{\#define\ UTILS\_HH}}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{geometry_8hh}{geometry.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{window_8hh}{window.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00008}00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacepro2}{pro2}}\ \{}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00019}00019\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacepro2_abbe0515c5f731a53b2b2afcc7b51a4da}{paint\_hline}}(pro2::Window\&\ window,\ \textcolor{keywordtype}{int}\ xini,\ \textcolor{keywordtype}{int}\ xfin,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mario_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}},\ \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2::Color}}\ color\ =\ \mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2::white}});}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00030}00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacepro2_abb90df6acb9671a913c1f4d91591caae}{paint\_vline}}(pro2::Window\&\ window,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ yini,\ \textcolor{keywordtype}{int}\ yfin,\ \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2::Color}}\ color\ =\ \mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2::white}});}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00040}\mbox{\hyperlink{namespacepro2_adbaec8207390d10ba7dd1a0de39ccdf2}{00040}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacepro2_a80f038548a7ea3d520759a04437e096a}{paint\_sprite}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ window,}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ orig,}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\&\ sprite,}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mirror);}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00054}00054\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacepro2_acf1dcf2adb11869d05e7c463eb83fdb0}{paint\_empty\_rect}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window,\ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\&\ rect,\ \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2::Color}}\ color,\ \textcolor{keywordtype}{int}\ size);}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00064}00064\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacepro2_a8987cfe6c31fd95ba502334da8b36d58}{paint\_rect}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window,\ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\&\ rect,\ \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2::Color}}\ color);}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00074}00074\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacepro2_a081d28eb2022e1785285df38f0844a4a}{interseccionen}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\&\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\&\ \mbox{\hyperlink{mario_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}});}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00084}00084\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacepro2_afc58ae0c5cb2b4abcb963e3406ed8ee6}{randomizer}}(\textcolor{keywordtype}{int}\ max,\ \textcolor{keywordtype}{int}\ min);}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00093}00093\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacepro2_ab3ebf066ff359420415633ebcc955393}{numDigits}}(\textcolor{keywordtype}{int}\ num);}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00095}00095\ \}}
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{utils_8hh_source_l00097}00097\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

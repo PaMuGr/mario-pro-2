@@ -1,0 +1,43 @@
+//mirem si es toquen
+    auto it = crosses_.begin();
+    while(it != crosses_.end()){
+        if (check_overlap((*it).cross_hitbox(), mario_.mario_hitbox())) {
+            mario_.add_points();
+            it = crosses_.erase(it);
+            std::cout << mario_.check_points() << std::endl;
+        } else {
+            ++it;
+        }
+    }
+
+/**
+ * @brief mira si estan una a sobre l'altre
+ *
+ * @param a primera hitbox
+ * @param b segona hitbox
+ */
+bool check_overlap(const pro2::Rect& a, const pro2::Rect& b);
+
+}  // namespace pro2
+
+bool check_overlap(const pro2::Rect& a, const pro2::Rect& b){
+    return !(a.right < b.left || a.left > b.right || a.bottom < b.top || a.top > b.bottom);
+}
+
+pro2::Rect cross_hitbox() const {
+        return {
+            pos_.x - cross_width_,  
+            pos_.y - cross_height_, 
+            pos_.x + cross_width_,   
+            pos_.y + cross_height_  
+        };
+    }
+
+  pro2::Rect mario_hitbox() const {
+        return {
+            pos_.x - mario_width,  
+            pos_.y - mario_height,  
+            pos_.x + mario_width,   
+            pos_.y + mario_height   
+        };
+    }

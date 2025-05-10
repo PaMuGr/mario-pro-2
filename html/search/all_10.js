@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['pagedown_0',['PageDown',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700ab36e80941c59958fa8af38e9fe565626',1,'pro2']]],
+  ['pageup_1',['PageUp',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700a472261161b652b591234518dfa6c97f5',1,'pro2']]],
+  ['paint_2',['paint',['../classCross.html#a603cf10023993e6d83038c5c246a0117',1,'Cross::paint(pro2::Window &amp;window) const'],['../classCross.html#ae93f59a8f34c1554ea351213435852d3',1,'Cross::paint(pro2::Window &amp;window, int quantity, int cx, int cy) const'],['../classGame.html#af3e3428a12b9944fefb663f2fe560529',1,'Game::paint()'],['../classMario.html#aee49024d8542a3f425d53b7ca86aefc8',1,'Mario::paint()'],['../classPlatform.html#a73a1afa2b57fce20cb692f1679ea782e',1,'Platform::paint()']]],
+  ['paint_5fdigit_3',['paint_digit',['../texto_8cc.html#aa6b9099420c9a52fab9ffb702cb1d368',1,'paint_digit(Window &amp;window, Pt pos_, int digit):&#160;texto.cc'],['../texto_8hh.html#a142c5a94dfdc5600d3890dae04611062',1,'paint_digit(pro2::Window &amp;window, pro2::Pt pos, int digit):&#160;texto.cc']]],
+  ['paint_5fempty_5frect_4',['paint_empty_rect',['../namespacepro2.html#acf1dcf2adb11869d05e7c463eb83fdb0',1,'pro2']]],
+  ['paint_5fhline_5',['paint_hline',['../namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da',1,'pro2']]],
+  ['paint_5fletter_6',['paint_letter',['../texto_8cc.html#a1caf77231a2f801617052bf107cefc27',1,'paint_letter(Window &amp;window, Pt pos_, char letter):&#160;texto.cc'],['../texto_8hh.html#a0dbd80d80001edca2b6e9a211d519d55',1,'paint_letter(pro2::Window &amp;window, pro2::Pt pos, char letter):&#160;texto.cc']]],
+  ['paint_5fnumber_7',['paint_number',['../texto_8cc.html#ab30f60478b347bf1135dbbcc53482214',1,'paint_number(pro2::Window &amp;window, pro2::Pt pos, int number):&#160;texto.cc'],['../texto_8hh.html#ab30f60478b347bf1135dbbcc53482214',1,'paint_number(pro2::Window &amp;window, pro2::Pt pos, int number):&#160;texto.cc']]],
+  ['paint_5frect_8',['paint_rect',['../namespacepro2.html#a8987cfe6c31fd95ba502334da8b36d58',1,'pro2']]],
+  ['paint_5fsprite_9',['paint_sprite',['../namespacepro2.html#a80f038548a7ea3d520759a04437e096a',1,'pro2::paint_sprite(pro2::Window &amp;window, pro2::Pt orig, const vector&lt; vector&lt; int &gt; &gt; &amp;sprite, bool mirror)'],['../namespacepro2.html#adbaec8207390d10ba7dd1a0de39ccdf2',1,'pro2::paint_sprite(pro2::Window &amp;window, pro2::Pt orig, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;sprite, bool mirror)']]],
+  ['paint_5ftext_10',['paint_text',['../texto_8cc.html#a028a25b715954f1b84dff17b3ee7304f',1,'paint_text(Window &amp;window, Pt pos, const string &amp;text):&#160;texto.cc'],['../texto_8hh.html#a9e20fb337ca0147b9d10620569089efe',1,'paint_text(pro2::Window &amp;window, pro2::Pt pos, const std::string &amp;text):&#160;texto.hh']]],
+  ['paint_5fvline_11',['paint_vline',['../namespacepro2.html#abb90df6acb9671a913c1f4d91591caae',1,'pro2']]],
+  ['paused_5f_12',['paused_',['../classGame.html#a0199e692575fbb7366551b469b066a6c',1,'Game']]],
+  ['pixels_5f_13',['pixels_',['../classpro2_1_1Window.html#a66caf9db1012c67bac35e8170ea84b67',1,'pro2::Window']]],
+  ['pixels_5fsize_5f_14',['pixels_size_',['../classpro2_1_1Window.html#afd582a445ca5857ead1627e5b2b07df9',1,'pro2::Window']]],
+  ['platform_15',['Platform',['../classPlatform.html',1,'Platform'],['../classPlatform.html#a52028ea2984cbfdf8e9f42ee87f66cfe',1,'Platform::Platform()'],['../classPlatform.html#a5d56264f91430d6a44be86cb5f9075a5',1,'Platform::Platform(const Platform &amp;other)'],['../classPlatform.html#a91871e5a88901d48593ba752f8f71c54',1,'Platform::Platform(int left, int right, int top, int bottom)']]],
+  ['platform_2ecc_16',['platform.cc',['../platform_8cc.html',1,'']]],
+  ['platform_2ehh_17',['platform.hh',['../platform_8hh.html',1,'']]],
+  ['platform_5ftexture_5f_18',['platform_texture_',['../classPlatform.html#aa64d771d840a33ce382048f47a521435',1,'Platform']]],
+  ['platforms_5f_19',['platforms_',['../classGame.html#af8d7b0aefacb6a03fb6e2d28a2b49923',1,'Game']]],
+  ['pos_20',['pos',['../classCross.html#a6b537e45492f559b2e899995cf0f7b52',1,'Cross::pos()'],['../classMario.html#a0bc34a1f489d6d10905c83fa8e1e72f9',1,'Mario::pos()']]],
+  ['pos_5f_21',['pos_',['../classCross.html#a39079da2a2bb798cbec42322ebb75e27',1,'Cross::pos_'],['../classMario.html#afe8565966d1bdea7201e182558d2d709',1,'Mario::pos_']]],
+  ['pro2_22',['pro2',['../namespacepro2.html',1,'']]],
+  ['process_5fkeys_23',['process_keys',['../classGame.html#a0c6fbced92dbe00f94f96d899f02fdb8',1,'Game']]],
+  ['pt_24',['Pt',['../structpro2_1_1Pt.html',1,'pro2']]]
+];

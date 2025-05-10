@@ -1,0 +1,34 @@
+\doxysection{Referencia del archivo utils.\+cc}
+\hypertarget{utils_8cc}{}\label{utils_8cc}\index{utils.cc@{utils.cc}}
+{\ttfamily \#include "{}utils.\+hh"{}}\newline
+Gráfico de dependencias incluidas en utils.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Espacios de nombres}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepro2}{pro2}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacepro2_abbe0515c5f731a53b2b2afcc7b51a4da}{pro2\+::paint\+\_\+hline}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, int xini, int xfin, int \mbox{\hyperlink{mario_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}} color=\mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}})
+\begin{DoxyCompactList}\small\item\em Dibuja una línea horizontal en la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_abb90df6acb9671a913c1f4d91591caae}{pro2\+::paint\+\_\+vline}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, int x, int yini, int yfin, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}} color=\mbox{\hyperlink{namespacepro2_a776e9498a2ffad905d1116b37ac41345}{pro2\+::white}})
+\begin{DoxyCompactList}\small\item\em Dibuja una línea vertical en la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_a80f038548a7ea3d520759a04437e096a}{pro2\+::paint\+\_\+sprite}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} orig, const vector$<$ vector$<$ int $>$ $>$ \&sprite, bool mirror)
+\item 
+void \mbox{\hyperlink{namespacepro2_acf1dcf2adb11869d05e7c463eb83fdb0}{pro2\+::paint\+\_\+empty\+\_\+rect}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&rect, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}} color, int size)
+\begin{DoxyCompactList}\small\item\em Dibuixa una recuadre seguint la càmara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepro2_a8987cfe6c31fd95ba502334da8b36d58}{pro2\+::paint\+\_\+rect}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&rect, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{pro2\+::\+Color}} color)
+\begin{DoxyCompactList}\small\item\em Dibuixa una recuadre seguint la càmara. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacepro2_a081d28eb2022e1785285df38f0844a4a}{pro2\+::interseccionen}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&a, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&\mbox{\hyperlink{mario_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}})
+\begin{DoxyCompactList}\small\item\em Mira si una hitbox esta a sobre de l\textquotesingle{}altre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacepro2_afc58ae0c5cb2b4abcb963e3406ed8ee6}{pro2\+::randomizer}} (int max, int min)
+\begin{DoxyCompactList}\small\item\em Retorna un nombre random entre max i min. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacepro2_ab3ebf066ff359420415633ebcc955393}{pro2\+::num\+Digits}} (int num)
+\begin{DoxyCompactList}\small\item\em Retorna el nombre de digits de num. \end{DoxyCompactList}\end{DoxyCompactItemize}

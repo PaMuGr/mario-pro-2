@@ -1,0 +1,49 @@
+\doxysection{game.\+hh}
+\hypertarget{game_8hh_source}{}\label{game_8hh_source}\mbox{\hyperlink{game_8hh}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ GAME\_HH}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00002}00002\ \textcolor{preprocessor}{\#define\ GAME\_HH}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mario_8hh}{mario.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{cross_8hh}{cross.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{platform_8hh}{platform.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{window_8hh}{window.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8hh}{utils.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{texto_8hh}{texto.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00012}\mbox{\hyperlink{classGame}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGame_a5bc07cf8947858f32637943836cc6f8e}{Game}}\ \{}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00013}\mbox{\hyperlink{classGame_a5ca6a91487a61b30528dd535bed1ce26}{00013}}\ \ \ \ \ \mbox{\hyperlink{classMario}{Mario}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGame_a5ca6a91487a61b30528dd535bed1ce26}{mario\_}};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00014}\mbox{\hyperlink{classGame_af8d7b0aefacb6a03fb6e2d28a2b49923}{00014}}\ \ \ \ \ std::vector<Platform>\ \mbox{\hyperlink{classGame_af8d7b0aefacb6a03fb6e2d28a2b49923}{platforms\_}};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00015}\mbox{\hyperlink{classGame_a1766a1e6331c8458c040ad641f82b4ab}{00015}}\ \ \ \ \ std::list<Cross>\ \mbox{\hyperlink{classGame_a1766a1e6331c8458c040ad641f82b4ab}{crosses\_}};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00017}\mbox{\hyperlink{classGame_a0199e692575fbb7366551b469b066a6c}{00017}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_a0199e692575fbb7366551b469b066a6c}{paused\_}};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00018}\mbox{\hyperlink{classGame_ae68025f0c47e30423db4288e0038e5e8}{00018}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_ae68025f0c47e30423db4288e0038e5e8}{finished\_}};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00019}\mbox{\hyperlink{classGame_a6e8623dae36c0cac75255c40ceec5b35}{00019}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGame_a6e8623dae36c0cac75255c40ceec5b35}{cross\_height\_y\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00020}\mbox{\hyperlink{classGame_aa6b4a7d6ba751497f2ed43702ebc7fd6}{00020}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_aa6b4a7d6ba751497f2ed43702ebc7fd6}{cross\_movingup\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a0c6fbced92dbe00f94f96d899f02fdb8}{process\_keys}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_aeac837e84d3f63a3dac7b3942705203e}{update\_objects}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00024}00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_ab146f2f8cec61b092586762267cf1e73}{update\_camera}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00026}00026\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{classGame_a5bc07cf8947858f32637943836cc6f8e}{Game}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a3661c777f12e357cdc0b3727b2f73412}{update}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00030}00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_af3e3428a12b9944fefb663f2fe560529}{paint}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00032}\mbox{\hyperlink{classGame_a3fef163aab28f7a4de1abb8d08794e7f}{00032}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_a3fef163aab28f7a4de1abb8d08794e7f}{is\_paused}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classGame_a0199e692575fbb7366551b469b066a6c}{paused\_}};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00036}\mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{00036}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{is\_finished}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classGame_ae68025f0c47e30423db4288e0038e5e8}{finished\_}};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00040}00040\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00041}\mbox{\hyperlink{classGame_a636fa6f9369014f3aa1365b8cd3611b4}{00041}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGame_a636fa6f9369014f3aa1365b8cd3611b4}{sky\_blue}}\ =\ 0x5c94fc;}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00042}00042\ \};}
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{game_8hh_source_l00044}00044\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

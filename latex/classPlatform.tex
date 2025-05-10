@@ -1,0 +1,292 @@
+\doxysection{Referencia de la clase Platform}
+\hypertarget{classPlatform}{}\label{classPlatform}\index{Platform@{Platform}}
+
+
+{\ttfamily \#include $<$platform.\+hh$>$}
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlatform_a52028ea2984cbfdf8e9f42ee87f66cfe}{Platform}} ()
+\item 
+\mbox{\hyperlink{classPlatform_a5d56264f91430d6a44be86cb5f9075a5}{Platform}} (const \mbox{\hyperlink{classPlatform}{Platform}} \&other)
+\item 
+\mbox{\hyperlink{classPlatform_a91871e5a88901d48593ba752f8f71c54}{Platform}} (int \mbox{\hyperlink{classPlatform_aaf35cacf5bafafd352607a6897990b65}{left}}, int \mbox{\hyperlink{classPlatform_a4ce552d100551482cd970bc11ea203cd}{right}}, int \mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}}, int \mbox{\hyperlink{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd}{bottom}})
+\item 
+void \mbox{\hyperlink{classPlatform_a73a1afa2b57fce20cb692f1679ea782e}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\item 
+bool \mbox{\hyperlink{classPlatform_a433b419b896a57783db4c8ad2f5534b2}{has\+\_\+crossed\+\_\+floor\+\_\+downwards}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\item 
+bool \mbox{\hyperlink{classPlatform_a3b2bedf80878d1d3fd2f37ba776d33a1}{is\+\_\+pt\+\_\+inside}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pt) const
+\item 
+int \mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}} () const
+\item 
+int \mbox{\hyperlink{classPlatform_aaf35cacf5bafafd352607a6897990b65}{left}} () const
+\item 
+int \mbox{\hyperlink{classPlatform_a4ce552d100551482cd970bc11ea203cd}{right}} () const
+\item 
+int \mbox{\hyperlink{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd}{bottom}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classPlatform_a16a47c819406b8b30b8c28d63f272447}{get\+\_\+rect}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classPlatform_ad4040f2665d0b9c731170701139e1fd1}{topleft\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classPlatform_acd2db189e0fcda4683aea0b5ee7d06cc}{bottomright\+\_\+}}
+\item 
+int \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\+\_\+}}
+\item 
+int \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\+\_\+}}
+\item 
+int \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\+\_\+}}
+\item 
+int \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos estáticos privados}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classPlatform_aa64d771d840a33ce382048f47a521435}{platform\+\_\+texture\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00007}{7}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classPlatform_a52028ea2984cbfdf8e9f42ee87f66cfe}\index{Platform@{Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classPlatform_a52028ea2984cbfdf8e9f42ee87f66cfe} 
+Platform\+::\+Platform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00015}{15}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_a5d56264f91430d6a44be86cb5f9075a5}\index{Platform@{Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classPlatform_a5d56264f91430d6a44be86cb5f9075a5} 
+Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlatform}{Platform}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00017}{17}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_a91871e5a88901d48593ba752f8f71c54}\index{Platform@{Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classPlatform_a91871e5a88901d48593ba752f8f71c54} 
+Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{int}]{left}{, }\item[{int}]{right}{, }\item[{int}]{top}{, }\item[{int}]{bottom}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd}\index{Platform@{Platform}!bottom@{bottom}}
+\index{bottom@{bottom}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily \label{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd} 
+int Platform\+::bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00039}{39}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_a16a47c819406b8b30b8c28d63f272447}\index{Platform@{Platform}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \label{classPlatform_a16a47c819406b8b30b8c28d63f272447} 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Platform\+::get\+\_\+rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00043}{43}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_a433b419b896a57783db4c8ad2f5534b2}\index{Platform@{Platform}!has\_crossed\_floor\_downwards@{has\_crossed\_floor\_downwards}}
+\index{has\_crossed\_floor\_downwards@{has\_crossed\_floor\_downwards}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{has\_crossed\_floor\_downwards()}{has\_crossed\_floor\_downwards()}}
+{\footnotesize\ttfamily \label{classPlatform_a433b419b896a57783db4c8ad2f5534b2} 
+bool Platform\+::has\+\_\+crossed\+\_\+floor\+\_\+downwards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast}{, }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr}{}\end{DoxyParamCaption}) const}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8cc_source_l00032}{32}} del archivo \mbox{\hyperlink{platform_8cc_source}{platform.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_a3b2bedf80878d1d3fd2f37ba776d33a1}\index{Platform@{Platform}!is\_pt\_inside@{is\_pt\_inside}}
+\index{is\_pt\_inside@{is\_pt\_inside}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{is\_pt\_inside()}{is\_pt\_inside()}}
+{\footnotesize\ttfamily \label{classPlatform_a3b2bedf80878d1d3fd2f37ba776d33a1} 
+bool Platform\+::is\+\_\+pt\+\_\+inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pt}{}\end{DoxyParamCaption}) const}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8cc_source_l00037}{37}} del archivo \mbox{\hyperlink{platform_8cc_source}{platform.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_aaf35cacf5bafafd352607a6897990b65}\index{Platform@{Platform}!left@{left}}
+\index{left@{left}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily \label{classPlatform_aaf35cacf5bafafd352607a6897990b65} 
+int Platform\+::left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_a73a1afa2b57fce20cb692f1679ea782e}\index{Platform@{Platform}!paint@{paint}}
+\index{paint@{paint}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily \label{classPlatform_a73a1afa2b57fce20cb692f1679ea782e} 
+void Platform\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption}) const}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8cc_source_l00022}{22}} del archivo \mbox{\hyperlink{platform_8cc_source}{platform.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_a4ce552d100551482cd970bc11ea203cd}\index{Platform@{Platform}!right@{right}}
+\index{right@{right}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily \label{classPlatform_a4ce552d100551482cd970bc11ea203cd} 
+int Platform\+::right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00035}{35}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}\index{Platform@{Platform}!top@{top}}
+\index{top@{top}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \label{classPlatform_ae2f6ce1275d5add01a7af60474321bd5} 
+int Platform\+::top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classPlatform_a15a4798385af5225ac32250b0e3647d6}\index{Platform@{Platform}!bottom\_@{bottom\_}}
+\index{bottom\_@{bottom\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{bottom\_}{bottom\_}}
+{\footnotesize\ttfamily \label{classPlatform_a15a4798385af5225ac32250b0e3647d6} 
+int Platform\+::bottom\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00010}{10}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+\Hypertarget{classPlatform_acd2db189e0fcda4683aea0b5ee7d06cc}\index{Platform@{Platform}!bottomright\_@{bottomright\_}}
+\index{bottomright\_@{bottomright\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{bottomright\_}{bottomright\_}}
+{\footnotesize\ttfamily \label{classPlatform_acd2db189e0fcda4683aea0b5ee7d06cc} 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Platform\+::bottomright\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00009}{9}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+\Hypertarget{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}\index{Platform@{Platform}!left\_@{left\_}}
+\index{left\_@{left\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{left\_}{left\_}}
+{\footnotesize\ttfamily \label{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c} 
+int Platform\+::left\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00010}{10}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+\Hypertarget{classPlatform_aa64d771d840a33ce382048f47a521435}\index{Platform@{Platform}!platform\_texture\_@{platform\_texture\_}}
+\index{platform\_texture\_@{platform\_texture\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{platform\_texture\_}{platform\_texture\_}}
+{\footnotesize\ttfamily \label{classPlatform_aa64d771d840a33ce382048f47a521435} 
+const vector$<$ vector$<$ int $>$ $>$ Platform\+::platform\+\_\+texture\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00010}{10}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}\index{Platform@{Platform}!right\_@{right\_}}
+\index{right\_@{right\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{right\_}{right\_}}
+{\footnotesize\ttfamily \label{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6} 
+int Platform\+::right\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00010}{10}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+\Hypertarget{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}\index{Platform@{Platform}!top\_@{top\_}}
+\index{top\_@{top\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{top\_}{top\_}}
+{\footnotesize\ttfamily \label{classPlatform_a7fea78553cad4641c4f597ce155ae1c5} 
+int Platform\+::top\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00010}{10}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+\Hypertarget{classPlatform_ad4040f2665d0b9c731170701139e1fd1}\index{Platform@{Platform}!topleft\_@{topleft\_}}
+\index{topleft\_@{topleft\_}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{topleft\_}{topleft\_}}
+{\footnotesize\ttfamily \label{classPlatform_ad4040f2665d0b9c731170701139e1fd1} 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Platform\+::topleft\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00009}{9}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+
+
+
+La documentación de esta clase está generada de los siguientes archivos\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{platform_8hh}{platform.\+hh}}\item 
+\mbox{\hyperlink{platform_8cc}{platform.\+cc}}\end{DoxyCompactItemize}

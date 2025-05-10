@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mario_PRO_2 X Jesus Christ: Archivo de código fuente main.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Mario_PRO_2 X Jesus Christ<span id="projectnumber">&#160;Pau Muras i Grané</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">main.cc</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="game_8hh.html">game.hh</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="window_8hh.html">window.hh</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">    7</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a> = 480, <a class="code hl_variable" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a> = 320;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="main_8cc.html#a3166bb8af25e8c3ed92b68e2bd869d40">    8</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="main_8cc.html#a3166bb8af25e8c3ed92b68e2bd869d40">ZOOM</a> = 2;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="main_8cc.html#ac5090a6568797128b0a5545228bb8b75">    9</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="main_8cc.html#ac5090a6568797128b0a5545228bb8b75">FPS</a> = 48;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   11</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_class" href="classpro2_1_1Window.html">pro2::Window</a> window(<span class="stringliteral">&quot;Mario Pro 2&quot;</span>, <a class="code hl_variable" href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a>, <a class="code hl_variable" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a>, <a class="code hl_variable" href="main_8cc.html#a3166bb8af25e8c3ed92b68e2bd869d40">ZOOM</a>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    window.<a class="code hl_function" href="classpro2_1_1Window.html#aaa39faf0a0dfa480661c314341638548">set_fps</a>(<a class="code hl_variable" href="main_8cc.html#ac5090a6568797128b0a5545228bb8b75">FPS</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classGame.html">Game</a> game(<a class="code hl_variable" href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a>, <a class="code hl_variable" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">while</span> (window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6">next_frame</a>() &amp;&amp; !game.<a class="code hl_function" href="classGame.html#a48d38b110cb6558e69b1920bb31406db">is_finished</a>()) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        game.<a class="code hl_function" href="classGame.html#a3661c777f12e357cdc0b3727b2f73412">update</a>(window);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        game.<a class="code hl_function" href="classGame.html#af3e3428a12b9944fefb663f2fe560529">paint</a>(window);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+</div>
+<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00012">game.hh:12</a></div></div>
+<div class="ttc" id="aclassGame_html_a3661c777f12e357cdc0b3727b2f73412"><div class="ttname"><a href="classGame.html#a3661c777f12e357cdc0b3727b2f73412">Game::update</a></div><div class="ttdeci">void update(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00082">game.cc:82</a></div></div>
+<div class="ttc" id="aclassGame_html_a48d38b110cb6558e69b1920bb31406db"><div class="ttname"><a href="classGame.html#a48d38b110cb6558e69b1920bb31406db">Game::is_finished</a></div><div class="ttdeci">bool is_finished() const</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00036">game.hh:36</a></div></div>
+<div class="ttc" id="aclassGame_html_af3e3428a12b9944fefb663f2fe560529"><div class="ttname"><a href="classGame.html#af3e3428a12b9944fefb663f2fe560529">Game::paint</a></div><div class="ttdeci">void paint(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00091">game.cc:91</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html"><div class="ttname"><a href="classpro2_1_1Window.html">pro2::Window</a></div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00072">window.hh:72</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a3a2e9797e7da3874fd62727531e711d6"><div class="ttname"><a href="classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6">pro2::Window::next_frame</a></div><div class="ttdeci">bool next_frame()</div><div class="ttdoc">Gestiona las tareas necesarias para pasar al siguiente fotograma.</div><div class="ttdef"><b>Definition</b> <a href="window_8cc_source.html#l00035">window.cc:35</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_aaa39faf0a0dfa480661c314341638548"><div class="ttname"><a href="classpro2_1_1Window.html#aaa39faf0a0dfa480661c314341638548">pro2::Window::set_fps</a></div><div class="ttdeci">void set_fps(int fps)</div><div class="ttdoc">Cambia los FPS de refresco de la ventana.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00394">window.hh:394</a></div></div>
+<div class="ttc" id="agame_8hh_html"><div class="ttname"><a href="game_8hh.html">game.hh</a></div></div>
+<div class="ttc" id="amain_8cc_html_a3166bb8af25e8c3ed92b68e2bd869d40"><div class="ttname"><a href="main_8cc.html#a3166bb8af25e8c3ed92b68e2bd869d40">ZOOM</a></div><div class="ttdeci">const int ZOOM</div><div class="ttdef"><b>Definition</b> <a href="#l00008">main.cc:8</a></div></div>
+<div class="ttc" id="amain_8cc_html_a9649ab8139c4c2ea5c93625b30d92a05"><div class="ttname"><a href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a></div><div class="ttdeci">const int WIDTH</div><div class="ttdef"><b>Definition</b> <a href="#l00007">main.cc:7</a></div></div>
+<div class="ttc" id="amain_8cc_html_ac5090a6568797128b0a5545228bb8b75"><div class="ttname"><a href="main_8cc.html#ac5090a6568797128b0a5545228bb8b75">FPS</a></div><div class="ttdeci">const int FPS</div><div class="ttdef"><b>Definition</b> <a href="#l00009">main.cc:9</a></div></div>
+<div class="ttc" id="amain_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> <a href="#l00011">main.cc:11</a></div></div>
+<div class="ttc" id="amain_8cc_html_af728b7647e0b8c49832983a31f9a2e9b"><div class="ttname"><a href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a></div><div class="ttdeci">const int HEIGHT</div><div class="ttdef"><b>Definition</b> <a href="#l00007">main.cc:7</a></div></div>
+<div class="ttc" id="awindow_8hh_html"><div class="ttname"><a href="window_8hh.html">window.hh</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

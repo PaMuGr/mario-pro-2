@@ -1,0 +1,832 @@
+\doxysection{Referencia de la clase pro2\+::Window}
+\hypertarget{classpro2_1_1Window}{}\label{classpro2_1_1Window}\index{pro2::Window@{pro2::Window}}
+
+
+{\ttfamily \#include $<$window.\+hh$>$}
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpro2_1_1Window_a64ffe9a6cd8e21cdb17546f7d53a8e0f}{Window}} (std\+::string title, int \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}, int \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}, int zoom=1)
+\begin{DoxyCompactList}\small\item\em Contruye una ventana con título, anchura y altura. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpro2_1_1Window_aa0a63c4b3d431d8e5e71633b107bbe69}{\texorpdfstring{$\sim$}{\string~}\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destruye una ventana, es decir, cierra la ventana abierta en el constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el ancho de la ventana. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el alto de la ventana. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Window_a3a2e9797e7da3874fd62727531e711d6}{next\+\_\+frame}} ()
+\begin{DoxyCompactList}\small\item\em Gestiona las tareas necesarias para pasar al siguiente fotograma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Window_adb1c39426484aa6776b0cd7d1253932f}{clear}} (\mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} color=\mbox{\hyperlink{namespacepro2_ad75418ec194604dc97f1efe077788d53}{black}})
+\begin{DoxyCompactList}\small\item\em Rellena la ventana con un color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}{frame\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el contador de fotogramas pintados hasta el momento. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b}{is\+\_\+key\+\_\+down}} (int code) const
+\begin{DoxyCompactList}\small\item\em Determina si cierta tecla estuvo presionada en el fotograma anterior. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Window_aaa4fa6c518d090dcbaca4e6211f35522}{was\+\_\+key\+\_\+pressed}} (int code) const
+\begin{DoxyCompactList}\small\item\em Determina si cierta tecla se presionó entre el fotograma anterior y el actual. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Window_a261158f414bb77270be1dc7339418e5e}{is\+\_\+modkey\+\_\+down}} (\mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fd}{Mod\+Key}} key) const
+\begin{DoxyCompactList}\small\item\em Determina si cierta tecla de control se presionó entre el fotograma anterior y el actual. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Window_a2f3f28c0ff1122e8171534001a1892a3}{is\+\_\+mouse\+\_\+down}} () const
+\begin{DoxyCompactList}\small\item\em Determina si el botón izquierdo quedó en estado clicado en el fotograma anterior. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Window_af0950b857d97f12a4a3f9bd082f50dcb}{was\+\_\+mouse\+\_\+pressed}} () const
+\begin{DoxyCompactList}\small\item\em Determina si el botón izquierdo del ratón se clicó entre el fotograma anterior y el actual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{classpro2_1_1Window_a1362ea74501506424e5b8c4177d19aa1}{mouse\+\_\+pos}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve la posición del cursor del ratón. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Window_abbe66e79c657fd8939c3df975a825214}{sleep}} (int ms) const
+\begin{DoxyCompactList}\small\item\em Espera que pase un número {\ttfamily ms} de milisegundos sin hacer nada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} \mbox{\hyperlink{classpro2_1_1Window_a964b632d53a61b7602dfb909e9b7457f}{get\+\_\+pixel}} (\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} xy) const
+\begin{DoxyCompactList}\small\item\em Obtiene el color de un pixel de la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Window_af656aaa062615c33e183199ba2387cac}{set\+\_\+pixel}} (\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} xy, \mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Cambia un pixel de la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Window_aaa39faf0a0dfa480661c314341638548}{set\+\_\+fps}} (int fps)
+\begin{DoxyCompactList}\small\item\em Cambia los FPS de refresco de la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Window_afbc70ada8de42a0db90e11e9f3803a1e}{move\+\_\+camera}} (\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} desplazamiento)
+\begin{DoxyCompactList}\small\item\em Indica que la posición de la esquina superior izquierda de la ventana debería moverse según el vector {\ttfamily desplazamiento}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{classpro2_1_1Window_aba9caf9f926e540c6697f690ae6d3c68}{camera\+\_\+center}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve la posición del centro de la cámara. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{Rect}} \mbox{\hyperlink{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}{camera\+\_\+rect}} () const
+\begin{DoxyCompactList}\small\item\em Rectorna el rectangle de la camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Window_a1393bc8d5c74455c1b25e3b38db7af92}{set\+\_\+camera\+\_\+topleft}} (\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c}{topleft}})
+\begin{DoxyCompactList}\small\item\em Establece la posición de la esquina superior izquierda de la cámara. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c}{topleft}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve la posición de la esquina superior izquierda de la cámara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classpro2_1_1Window_ab7e10a36f347292e5fb9a0bffd0e3b49}{update\+\_\+camera\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Este método actualiza la cámara en función de la velocidad. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Window_ac36cada6562bd2bf7807fe8b5b76efee}{camera\+\_\+moving\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Determina si la cámara está en movimiento (su posición final es distinta de la actual). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpro2_1_1Window_a75da6563d9789fc8c8fde8d20891ce40}{last\+\_\+keys\+\_\+}} \mbox{[}256\mbox{]}
+\begin{DoxyCompactList}\small\item\em La estructura de datos que Fenster necesita para trabajar. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpro2_1_1Window_a435df41b0b5042199d4a73f08ce0fcbe}{last\+\_\+mouse\+\_\+}}
+\item 
+fenster \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\+\_\+}}
+\item 
+uint32\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpro2_1_1Window_a66caf9db1012c67bac35e8170ea84b67}{pixels\+\_\+}}
+\begin{DoxyCompactList}\small\item\em El buffer de pixels que se reserva como zona de pintado. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classpro2_1_1Window_afd582a445ca5857ead1627e5b2b07df9}{pixels\+\_\+size\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Tamaño del buffer en bytes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\+\_\+}} = 1
+\begin{DoxyCompactList}\small\item\em Parámetro de {\ttfamily zoom} para esta ventana. \end{DoxyCompactList}\item 
+int64\+\_\+t \mbox{\hyperlink{classpro2_1_1Window_a1f849469330d4d2e208862cdf91184e0}{last\+\_\+time\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Instance del último fotograma (epoch) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpro2_1_1Window_ac919f2ff4f15e2b3e2694101f7da587e}{frame\+\_\+count\+\_\+}} = 0
+\begin{DoxyCompactList}\small\item\em Contador de frames (o fotogramas) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classpro2_1_1Window_a660d498936402b0395f151836f27ec4b}{fps\+\_\+}} = 60
+\begin{DoxyCompactList}\small\item\em Fotogramas por segundo (FPS) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\+\_\+}} = \{0, 0\}
+\begin{DoxyCompactList}\small\item\em Camera topleft. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\+\_\+target\+\_\+}} = \{0, 0\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos estáticos privados}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \mbox{\hyperlink{classpro2_1_1Window_a3fc2ec7b7dcd41b28be129634463e20f}{camera\+\_\+speed\+\_\+}} = 8
+\begin{DoxyCompactList}\small\item\em Constante de la velocidad a la que la cámara se desplaza a la nueva posición. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+La clase {\ttfamily \doxylink{classpro2_1_1Window}{Window}} permite abrir ventanas en modo gráfico en Linux, Mac\+OS y Windows. Tiene unos pocos métodos que permiten hacer programas simples que muestran gráficos, como pequeños juegos o editores. 
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00072}{72}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classpro2_1_1Window_a64ffe9a6cd8e21cdb17546f7d53a8e0f}\index{pro2::Window@{pro2::Window}!Window@{Window}}
+\index{Window@{Window}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a64ffe9a6cd8e21cdb17546f7d53a8e0f} 
+pro2\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{std\+::string}]{title}{, }\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{int}]{zoom}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+Contruye una ventana con título, anchura y altura. 
+
+El constructor abre una ventana, y el destructor la cierra.
+
+El parámetro {\ttfamily zoom} permite visualizar con más comodidad contenido pixelado. Con {\ttfamily zoom = 1} cada pixel de la ventana se corresponde con un pixel de la pantalla. Con {\ttfamily zoom = 3}, cada píxel de la ventana se convierte en un cuadrado de 3x3 píxeles en la ventana.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em title} & El título de la ventana (un literal de cadena de caracteres) \\
+\hline
+{\em width} & El ancho de la ventana en píxels. \\
+\hline
+{\em height} & El alto de la ventana en píxels. \\
+\hline
+{\em zoom} & El factor de aumento de cada píxel. (Es opcional, si no hay 4o parámetro toma valor 1) \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{window_8cc_source_l00010}{10}} del archivo \mbox{\hyperlink{window_8cc_source}{window.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_aa0a63c4b3d431d8e5e71633b107bbe69}\index{pro2::Window@{pro2::Window}!````~Window@{\texorpdfstring{$\sim$}{\string~}Window}}
+\index{````~Window@{\texorpdfstring{$\sim$}{\string~}Window}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Window()}{\string~Window()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_aa0a63c4b3d431d8e5e71633b107bbe69} 
+pro2\+::\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destruye una ventana, es decir, cierra la ventana abierta en el constructor. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00161}{161}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classpro2_1_1Window_aba9caf9f926e540c6697f690ae6d3c68}\index{pro2::Window@{pro2::Window}!camera\_center@{camera\_center}}
+\index{camera\_center@{camera\_center}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{camera\_center()}{camera\_center()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_aba9caf9f926e540c6697f690ae6d3c68} 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::\+Window\+::camera\+\_\+center (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve la posición del centro de la cámara. 
+
+\begin{DoxyReturn}{Devuelve}
+Un {\ttfamily \doxylink{structpro2_1_1Pt}{Pt}} con las coordenadas del centro de la cámara. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00420}{420}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_ac36cada6562bd2bf7807fe8b5b76efee}\index{pro2::Window@{pro2::Window}!camera\_moving\_@{camera\_moving\_}}
+\index{camera\_moving\_@{camera\_moving\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{camera\_moving\_()}{camera\_moving\_()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_ac36cada6562bd2bf7807fe8b5b76efee} 
+bool pro2\+::\+Window\+::camera\+\_\+moving\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Determina si la cámara está en movimiento (su posición final es distinta de la actual). 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00131}{131}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}\index{pro2::Window@{pro2::Window}!camera\_rect@{camera\_rect}}
+\index{camera\_rect@{camera\_rect}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{camera\_rect()}{camera\_rect()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3} 
+\mbox{\hyperlink{structpro2_1_1Rect}{Rect}} pro2\+::\+Window\+::camera\+\_\+rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rectorna el rectangle de la camera. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00429}{429}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_adb1c39426484aa6776b0cd7d1253932f}\index{pro2::Window@{pro2::Window}!clear@{clear}}
+\index{clear@{clear}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_adb1c39426484aa6776b0cd7d1253932f} 
+void pro2\+::\+Window\+::clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}}}]{color}{ = {\ttfamily \mbox{\hyperlink{namespacepro2_ad75418ec194604dc97f1efe077788d53}{black}}}}\end{DoxyParamCaption})}
+
+
+
+Rellena la ventana con un color. 
+
+Este método se puede llamar con un color o bien sin parámetros. Si se llama sin parámetros se toma el {\ttfamily color} por defecto, que es el negro ({\ttfamily black}). De lo contrario se usa el color indicado.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em color} & El color a utilizar para pintar. Se puede usar uno de los valores del enumerado {\ttfamily Colors}, como {\ttfamily red}, o bien poner un entero en hexadecimal, como 0x0084fb, que equivale a los 3 valores RGB (o Red-\/\+Green-\/\+Blue) que conforman el color. Cualquier "{}color picker"{} de la web suele mostrar el color hexadecimal en la notación {\ttfamily \#0084fb} (de CSS). \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{window_8cc_source_l00053}{53}} del archivo \mbox{\hyperlink{window_8cc_source}{window.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}\index{pro2::Window@{pro2::Window}!frame\_count@{frame\_count}}
+\index{frame\_count@{frame\_count}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{frame\_count()}{frame\_count()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964} 
+int pro2\+::\+Window\+::frame\+\_\+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve el contador de fotogramas pintados hasta el momento. 
+
+Equivale a la cantidad de veces que se ha llamado a {\ttfamily next\+\_\+frame}. Se incrementa en 1 unidad en cada fotograma.
+
+Este valor es útil al hacer animaciones, ya que permite saber, de una secuencia de imágenes, cuál habría que usar en cada momento.
+
+\begin{DoxyReturn}{Devuelve}
+Un entero que corresponde al contador de fotogramas mostrados desde que la ventana se creó. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00243}{243}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a964b632d53a61b7602dfb909e9b7457f}\index{pro2::Window@{pro2::Window}!get\_pixel@{get\_pixel}}
+\index{get\_pixel@{get\_pixel}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{get\_pixel()}{get\_pixel()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a964b632d53a61b7602dfb909e9b7457f} 
+\mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}} pro2\+::\+Window\+::get\+\_\+pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{Pt}}}]{xy}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el color de un pixel de la ventana. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em xy} & Coordenadas del pixel de la pantalla del que se quiere saber el color. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El color del pixel en las coordenadas indicadas. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00364}{364}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}\index{pro2::Window@{pro2::Window}!height@{height}}
+\index{height@{height}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d} 
+int pro2\+::\+Window\+::height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve el alto de la ventana. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00176}{176}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b}\index{pro2::Window@{pro2::Window}!is\_key\_down@{is\_key\_down}}
+\index{is\_key\_down@{is\_key\_down}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{is\_key\_down()}{is\_key\_down()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b} 
+bool pro2\+::\+Window\+::is\+\_\+key\+\_\+down (\begin{DoxyParamCaption}\item[{int}]{code}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determina si cierta tecla estuvo presionada en el fotograma anterior. 
+
+El método {\ttfamily next\+\_\+frame} recoge todas los eventos de teclado y ratón que han ocurrido desde la llamada anterior a {\ttfamily next\+\_\+frame} (o desde la creación de la ventana) y mantiene el estado de todas las teclas y botones del ratón fijo durante el fotograma actual. Así pues, el método {\ttfamily is\+\_\+key\+\_\+down} simplemente consulta ese estado, que se mantiene fijo hasta la siguiente llamada a {\ttfamily next\+\_\+frame}.
+
+Ejemplo\+: 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parámetros}
+{\em code} & El código de la tecla de la que se quiere saber si estaba presionada. El código de la letra es, o bien el código ASCII de la letra mayúscula correspondiente, el código ASCII del dígito correspondiente, o bien uno de los valores del {\ttfamily enum} {\ttfamily Key}, que recoge las teclas más típicas, incluyendo flechas, return, esc, tab, etc.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} cuando la tecla {\ttfamily code} estaba presionada al empezar el fotograma actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00270}{270}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a261158f414bb77270be1dc7339418e5e}\index{pro2::Window@{pro2::Window}!is\_modkey\_down@{is\_modkey\_down}}
+\index{is\_modkey\_down@{is\_modkey\_down}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{is\_modkey\_down()}{is\_modkey\_down()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a261158f414bb77270be1dc7339418e5e} 
+bool pro2\+::\+Window\+::is\+\_\+modkey\+\_\+down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fd}{Mod\+Key}}}]{key}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determina si cierta tecla de control se presionó entre el fotograma anterior y el actual. 
+
+Método análogo a {\ttfamily is\+\_\+key\+\_\+down} pero para las teclas de control siguientes\+: Ctrl, Alt, Shift y Meta. Hay un enumerado de nombre {\ttfamily \doxylink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fd}{Mod\+Key}} con las 4 teclas\+: {\ttfamily \doxylink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7ed11fb24a4f44577d0e51c33a40674}{Mod\+Key\+::\+Ctrl}}, {\ttfamily \doxylink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b}{Mod\+Key\+::\+Alt}}, {\ttfamily \doxylink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fdae3f26039b51177aa99bd58f676c90b95}{Mod\+Key\+::\+Shift}}, y {\ttfamily \doxylink{namespacepro2_afcb0c99f6bf9c97f754dcc56e9e9c4fda24b0a64ee223639589b72a25bc4a156c}{Mod\+Key\+::\+Meta}}.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em key} & La tecla de la que se quiere consultar el estado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} si el estado de la tecla era "{}presionado"{} al entrar al fotograma actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00309}{309}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a2f3f28c0ff1122e8171534001a1892a3}\index{pro2::Window@{pro2::Window}!is\_mouse\_down@{is\_mouse\_down}}
+\index{is\_mouse\_down@{is\_mouse\_down}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{is\_mouse\_down()}{is\_mouse\_down()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a2f3f28c0ff1122e8171534001a1892a3} 
+bool pro2\+::\+Window\+::is\+\_\+mouse\+\_\+down (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determina si el botón izquierdo quedó en estado clicado en el fotograma anterior. 
+
+Este método se comporta como {\ttfamily is\+\_\+key\+\_\+down}, consulta la documentación de {\ttfamily is\+\_\+key\+\_\+down} para saber cómo opera.
+
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} si el botón del ratón quedó clicado al final del fotograma actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00321}{321}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a1362ea74501506424e5b8c4177d19aa1}\index{pro2::Window@{pro2::Window}!mouse\_pos@{mouse\_pos}}
+\index{mouse\_pos@{mouse\_pos}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{mouse\_pos()}{mouse\_pos()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a1362ea74501506424e5b8c4177d19aa1} 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::\+Window\+::mouse\+\_\+pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Devuelve la posición del cursor del ratón. 
+
+\begin{DoxyReturn}{Devuelve}
+Una tupla de tipo {\ttfamily \doxylink{structpro2_1_1Pt}{Pt}}, con campos {\ttfamily x} e {\ttfamily y}, que se corresponden con las coordenadas de la posición del ratón. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8cc_source_l00059}{59}} del archivo \mbox{\hyperlink{window_8cc_source}{window.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_afbc70ada8de42a0db90e11e9f3803a1e}\index{pro2::Window@{pro2::Window}!move\_camera@{move\_camera}}
+\index{move\_camera@{move\_camera}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{move\_camera()}{move\_camera()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_afbc70ada8de42a0db90e11e9f3803a1e} 
+void pro2\+::\+Window\+::move\+\_\+camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{Pt}}}]{desplazamiento}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indica que la posición de la esquina superior izquierda de la ventana debería moverse según el vector {\ttfamily desplazamiento}. 
+
+La cámara no se mueve instantáneamente, sino que se desplaza a la nueva posición a una velocidad constante.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em desplazamiento} & Vector de desplazamiento \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00408}{408}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a3a2e9797e7da3874fd62727531e711d6}\index{pro2::Window@{pro2::Window}!next\_frame@{next\_frame}}
+\index{next\_frame@{next\_frame}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{next\_frame()}{next\_frame()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a3a2e9797e7da3874fd62727531e711d6} 
+bool pro2\+::\+Window\+::next\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gestiona las tareas necesarias para pasar al siguiente fotograma. 
+
+En todo programa gráfico es necesario\+: 1) pintar en una superfície, típicamente en memoria, 2) transferir lo que se ha pintado a la pantalla, 3) procesar eventos ocurridos como presión de teclas o movimiento del ratón y actualizar su estado, y 4) esperar el tiempo que quede hasta el siguiente fotograma (en función de la velocidad de refresco, que suele ser de 60Hz, lo que equivale a 16ms por fotograma).
+
+{\ttfamily next\+\_\+frame} hace todas estas cosas en una sola llamada. Además devuelve {\ttfamily false} cuando se ha clicado el botón de cerrar la ventana (típicamente arriba a la derecha, y con una "{}x"{}), de forma que se pueda saber si se debe continuar en un bucle de pintado de fotogramas.
+
+El uso típico es el siguiente\+: 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ Es decir, hasta que no se cierre la ventana llamamos métodos de la ventana para hacer operaciones que resulten en el pintado de la ventana de cierta manera y {\ttfamily next\+\_\+frame} se hace cargo del resto.
+
+Con respecto al teclado y ratón, {\ttfamily next\+\_\+frame} recoge todos los eventos (presión y soltado de teclas, clicks y movimiento del ratón) que han ocurrido entre el fotograma anterior y el actual, y con todos ellos actualiza el estado final de cada tecla, botón del ratón y posición. Así pues, el usuario de la clase {\ttfamily \doxylink{classpro2_1_1Window}{Window}} tiene acceso al estado exacto de las teclas y el ratón en el instante en que se pasa al fotograma actual, y ese estado se conserva fijo mientras transcurre el tiempo entre el fotograma actual y el siguiente, en el que {\ttfamily next\+\_\+frame} vuelve a revisar los eventos ocurridos en ese intervalo de tiempo.
+
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} si el programa debe seguir (NO se ha clicado el botón de cerrar la ventana), {\ttfamily false} en caso contrario. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8cc_source_l00035}{35}} del archivo \mbox{\hyperlink{window_8cc_source}{window.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a1393bc8d5c74455c1b25e3b38db7af92}\index{pro2::Window@{pro2::Window}!set\_camera\_topleft@{set\_camera\_topleft}}
+\index{set\_camera\_topleft@{set\_camera\_topleft}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{set\_camera\_topleft()}{set\_camera\_topleft()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a1393bc8d5c74455c1b25e3b38db7af92} 
+void pro2\+::\+Window\+::set\+\_\+camera\+\_\+topleft (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{Pt}}}]{topleft}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la posición de la esquina superior izquierda de la cámara. 
+
+Este método mueve la cámara instantáneamente a la nueva posición.\+Alt
+
+
+\begin{DoxyParams}{Parámetros}
+{\em topleft} & La nueva posición absoluta de la cámara, que se aplica instantáneamente. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00446}{446}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_aaa39faf0a0dfa480661c314341638548}\index{pro2::Window@{pro2::Window}!set\_fps@{set\_fps}}
+\index{set\_fps@{set\_fps}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{set\_fps()}{set\_fps()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_aaa39faf0a0dfa480661c314341638548} 
+void pro2\+::\+Window\+::set\+\_\+fps (\begin{DoxyParamCaption}\item[{int}]{fps}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cambia los FPS de refresco de la ventana. 
+
+En función de la velocidad de refresco de la pantalla que queramos, el tiempo a esperar entre que pintamos un fotograma y el siguiente puede variar. Este método calcula un tiempo de espera entre una llamada a {\ttfamily next\+\_\+frame} y la siguiente, para que se produzca exactamente un número de fotogramas por segundo.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fps} & Número de fotogramas por segundo que se quieren mostrar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+{\ttfamily fps} \texorpdfstring{$>$}{>} 0 \&\& {\ttfamily fps} \texorpdfstring{$<$}{<} 240. 
+\end{DoxyPrecond}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00394}{394}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_af656aaa062615c33e183199ba2387cac}\index{pro2::Window@{pro2::Window}!set\_pixel@{set\_pixel}}
+\index{set\_pixel@{set\_pixel}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{set\_pixel()}{set\_pixel()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_af656aaa062615c33e183199ba2387cac} 
+void pro2\+::\+Window\+::set\+\_\+pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{Pt}}}]{xy}{, }\item[{\mbox{\hyperlink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Cambia un pixel de la ventana. 
+
+En realidad, {\ttfamily set\+\_\+pixel} no cambia la ventana directamente, sinó un "{}buffer"{} interno que se vuelca en la pantalla de golpe en el momento de llamar a {\ttfamily next\+\_\+frame}. Esto es más eficiente y maximiza el tiempo en que el fotograma está inmóvil en la pantalla mostrando una imagen fija, ya que el pintado podría llevar tanto tiempo que los fotogramas no se verían completos en la pantalla durante los 16ms (a 60Hz) en que deben estar visibles.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em xy} & Coordenadas del pixel que se quiere cambiar \\
+\hline
+{\em color} & \doxylink{namespacepro2_a1cf275c5d221949062bba6a49b3daa13}{Color} que se quiere poner en el pixel indicado \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{window_8cc_source_l00079}{79}} del archivo \mbox{\hyperlink{window_8cc_source}{window.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_abbe66e79c657fd8939c3df975a825214}\index{pro2::Window@{pro2::Window}!sleep@{sleep}}
+\index{sleep@{sleep}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_abbe66e79c657fd8939c3df975a825214} 
+void pro2\+::\+Window\+::sleep (\begin{DoxyParamCaption}\item[{int}]{ms}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Espera que pase un número {\ttfamily ms} de milisegundos sin hacer nada. 
+
+En ese intervalo de tiempo el programa estará esperando que el método vuelva de la llamada, y por tanto no se ejecutará ninguna instrucción.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ms} & Número de milisegundos a esperar. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00354}{354}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c}\index{pro2::Window@{pro2::Window}!topleft@{topleft}}
+\index{topleft@{topleft}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{topleft()}{topleft()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c} 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::\+Window\+::topleft (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve la posición de la esquina superior izquierda de la cámara. 
+
+\begin{DoxyReturn}{Devuelve}
+Un {\ttfamily \doxylink{structpro2_1_1Pt}{Pt}} con las coordenadas de la esquina superior izquierda de la cámara. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00456}{456}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_ab7e10a36f347292e5fb9a0bffd0e3b49}\index{pro2::Window@{pro2::Window}!update\_camera\_@{update\_camera\_}}
+\index{update\_camera\_@{update\_camera\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{update\_camera\_()}{update\_camera\_()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_ab7e10a36f347292e5fb9a0bffd0e3b49} 
+void pro2\+::\+Window\+::update\+\_\+camera\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Este método actualiza la cámara en función de la velocidad. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8cc_source_l00021}{21}} del archivo \mbox{\hyperlink{window_8cc_source}{window.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_aaa4fa6c518d090dcbaca4e6211f35522}\index{pro2::Window@{pro2::Window}!was\_key\_pressed@{was\_key\_pressed}}
+\index{was\_key\_pressed@{was\_key\_pressed}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{was\_key\_pressed()}{was\_key\_pressed()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_aaa4fa6c518d090dcbaca4e6211f35522} 
+bool pro2\+::\+Window\+::was\+\_\+key\+\_\+pressed (\begin{DoxyParamCaption}\item[{int}]{code}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determina si cierta tecla se presionó entre el fotograma anterior y el actual. 
+
+(En el método {\ttfamily is\+\_\+key\+\_\+down} se explica mejor el funcionamiento de los eventos.)
+
+Ejemplo\+: 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parámetros}
+{\em code} & El código de la tecla de la que se quiere saber si estaba presionada. El código de la letra es, o bien el código ASCII de la letra mayúscula correspondiente, el código ASCII del dígito correspondiente, o bien uno de los valores del {\ttfamily enum} {\ttfamily Key}, que recoge las teclas más típicas, incluyendo flechas, return, esc, tab, etc.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} cuando la tecla {\ttfamily code} estaba presionada al empezar el fotograma actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00293}{293}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_af0950b857d97f12a4a3f9bd082f50dcb}\index{pro2::Window@{pro2::Window}!was\_mouse\_pressed@{was\_mouse\_pressed}}
+\index{was\_mouse\_pressed@{was\_mouse\_pressed}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{was\_mouse\_pressed()}{was\_mouse\_pressed()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_af0950b857d97f12a4a3f9bd082f50dcb} 
+bool pro2\+::\+Window\+::was\+\_\+mouse\+\_\+pressed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determina si el botón izquierdo del ratón se clicó entre el fotograma anterior y el actual. 
+
+Este método se comporta como {\ttfamily was\+\_\+key\+\_\+pressed}, consulta la documentación de {\ttfamily was\+\_\+key\+\_\+pressed} para saber cómo opera.
+
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} si el botón del ratón se clicó entre el fotograma anterior y el actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00334}{334}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}\index{pro2::Window@{pro2::Window}!width@{width}}
+\index{width@{width}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898} 
+int pro2\+::\+Window\+::width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve el ancho de la ventana. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00169}{169}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classpro2_1_1Window_a3fc2ec7b7dcd41b28be129634463e20f}\index{pro2::Window@{pro2::Window}!camera\_speed\_@{camera\_speed\_}}
+\index{camera\_speed\_@{camera\_speed\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{camera\_speed\_}{camera\_speed\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a3fc2ec7b7dcd41b28be129634463e20f} 
+int pro2\+::\+Window\+::camera\+\_\+speed\+\_\+ = 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+Constante de la velocidad a la que la cámara se desplaza a la nueva posición. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00138}{138}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}\index{pro2::Window@{pro2::Window}!fenster\_@{fenster\_}}
+\index{fenster\_@{fenster\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{fenster\_}{fenster\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7} 
+fenster pro2\+::\+Window\+::fenster\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00079}{79}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_a660d498936402b0395f151836f27ec4b}\index{pro2::Window@{pro2::Window}!fps\_@{fps\_}}
+\index{fps\_@{fps\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{fps\_}{fps\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a660d498936402b0395f151836f27ec4b} 
+uint8\+\_\+t pro2\+::\+Window\+::fps\+\_\+ = 60\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fotogramas por segundo (FPS) 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00112}{112}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_ac919f2ff4f15e2b3e2694101f7da587e}\index{pro2::Window@{pro2::Window}!frame\_count\_@{frame\_count\_}}
+\index{frame\_count\_@{frame\_count\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{frame\_count\_}{frame\_count\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_ac919f2ff4f15e2b3e2694101f7da587e} 
+int pro2\+::\+Window\+::frame\+\_\+count\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Contador de frames (o fotogramas) 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00107}{107}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_a75da6563d9789fc8c8fde8d20891ce40}\index{pro2::Window@{pro2::Window}!last\_keys\_@{last\_keys\_}}
+\index{last\_keys\_@{last\_keys\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{last\_keys\_}{last\_keys\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a75da6563d9789fc8c8fde8d20891ce40} 
+int pro2\+::\+Window\+::last\+\_\+keys\+\_\+\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La estructura de datos que Fenster necesita para trabajar. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00077}{77}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_a435df41b0b5042199d4a73f08ce0fcbe}\index{pro2::Window@{pro2::Window}!last\_mouse\_@{last\_mouse\_}}
+\index{last\_mouse\_@{last\_mouse\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{last\_mouse\_}{last\_mouse\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a435df41b0b5042199d4a73f08ce0fcbe} 
+int pro2\+::\+Window\+::last\+\_\+mouse\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00078}{78}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_a1f849469330d4d2e208862cdf91184e0}\index{pro2::Window@{pro2::Window}!last\_time\_@{last\_time\_}}
+\index{last\_time\_@{last\_time\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{last\_time\_}{last\_time\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a1f849469330d4d2e208862cdf91184e0} 
+int64\+\_\+t pro2\+::\+Window\+::last\+\_\+time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Instance del último fotograma (epoch) 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00102}{102}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_a66caf9db1012c67bac35e8170ea84b67}\index{pro2::Window@{pro2::Window}!pixels\_@{pixels\_}}
+\index{pixels\_@{pixels\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{pixels\_}{pixels\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a66caf9db1012c67bac35e8170ea84b67} 
+uint32\+\_\+t\texorpdfstring{$\ast$}{*} pro2\+::\+Window\+::pixels\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+El buffer de pixels que se reserva como zona de pintado. 
+
+Cada pixel tiene 32bits, o 4 bytes, y los 3 bytes de menos peso son los valores (entre 0 y 255) de los canales R, G y B (red, green y blue). 
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00087}{87}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_afd582a445ca5857ead1627e5b2b07df9}\index{pro2::Window@{pro2::Window}!pixels\_size\_@{pixels\_size\_}}
+\index{pixels\_size\_@{pixels\_size\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{pixels\_size\_}{pixels\_size\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_afd582a445ca5857ead1627e5b2b07df9} 
+size\+\_\+t pro2\+::\+Window\+::pixels\+\_\+size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tamaño del buffer en bytes. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00092}{92}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+\Hypertarget{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}\index{pro2::Window@{pro2::Window}!topleft\_@{topleft\_}}
+\index{topleft\_@{topleft\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{topleft\_}{topleft\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf} 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::\+Window\+::topleft\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Camera topleft. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00119}{119}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}\index{pro2::Window@{pro2::Window}!topleft\_target\_@{topleft\_target\_}}
+\index{topleft\_target\_@{topleft\_target\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{topleft\_target\_}{topleft\_target\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811} 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::\+Window\+::topleft\+\_\+target\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00120}{120}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}\index{pro2::Window@{pro2::Window}!zoom\_@{zoom\_}}
+\index{zoom\_@{zoom\_}!pro2::Window@{pro2::Window}}
+\doxysubsubsection{\texorpdfstring{zoom\_}{zoom\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a} 
+int pro2\+::\+Window\+::zoom\+\_\+ = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Parámetro de {\ttfamily zoom} para esta ventana. 
+
+
+
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00097}{97}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+
+
+
+La documentación de esta clase está generada de los siguientes archivos\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{window_8hh}{window.\+hh}}\item 
+\mbox{\hyperlink{window_8cc}{window.\+cc}}\end{DoxyCompactItemize}
