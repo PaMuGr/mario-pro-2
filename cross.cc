@@ -42,12 +42,6 @@ void Cross::paint(pro2::Window& window, int quantity, int cx, int cy) const {
     }
 }
 
-void Cross::apply_physics_() {
-    if (grounded_) {
-        speed_.y = 0;
-    }
-}
-
 pro2::Rect Cross::hitbox(int height_y) const {
     int width = cross_sprite_normal_[0].size();
     int height = cross_sprite_normal_.size();
@@ -60,6 +54,8 @@ pro2::Rect Cross::hitbox(int height_y) const {
 }
 
 void Cross::update(pro2::Window& window) {
+
+    //modul de la distancia que es moura la cross
     int distx = (pos_.x - ini_pos_.x);
     int disty = (pos_.y - ini_pos_.y);
     if (distx * distx + disty * disty > dist_ * dist_) {

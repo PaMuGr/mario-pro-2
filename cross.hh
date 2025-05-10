@@ -94,17 +94,6 @@ class Cross {
         return grounded_;
     }
 
-    void set_grounded(bool grounded) {
-        grounded_ = grounded;
-        if (grounded_) {
-            speed_.y = 0;
-        }
-    }
-
-    void toggle_grounded() {
-        set_grounded(!grounded_);
-    }
-    
      /**
      * @brief Crea una hitbox utilitzant height_y
      * 
