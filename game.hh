@@ -29,10 +29,20 @@ class Game {
     void update(pro2::Window& window);
     void paint(pro2::Window& window);
 
+     /**
+     * @brief Retorna un bool segons si el joc esta o no pausat
+     * 
+     * @return True or False segons l'estat del joc
+     */
     bool is_paused() const {
         return paused_;
     }
 
+     /**
+     * @brief Retorna un bool segons si el joc esta o no pausat
+     * 
+     * @return True or False segons l'estat del joc
+     */
     bool is_finished() const {
         return finished_;
     }
