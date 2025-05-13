@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['keys_0',['Keys',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700',1,'pro2']]]
+  ['joc_0',['Mario Pro 2 - Documentació del Joc',['../index.html',1,'']]],
+  ['jump_1',['jump',['../classMario.html#ac3b75d0650fb2a149d33fd9f1420da99',1,'Mario']]],
+  ['jump_5fkey_5f_2',['jump_key_',['../classMario.html#a22dbf8a740c51b63f4bb24397910e734',1,'Mario']]]
 ];

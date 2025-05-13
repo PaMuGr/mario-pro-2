@@ -1,3 +1,7 @@
+/** @file texto.hh
+ * @brief Especificació de les Funcions del Text
+ */
+
 #ifndef  TEXT_HH
 #define TEXT_HH
 #include "utils.hh"

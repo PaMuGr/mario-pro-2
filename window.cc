@@ -2,6 +2,10 @@
 #include "fenster.h"
 // </HUGE-WARNING>
 
+/** @file window.cc
+ * @brief Funcions del Window
+ */
+
 #include "window.hh"
 using std::string;
 

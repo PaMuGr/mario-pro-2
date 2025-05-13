@@ -1,12 +1,12 @@
 <map id="utils.cc" name="utils.cc">
-<area shape="rect" id="Node000001" title=" " alt="" coords="69,5,132,31"/>
-<area shape="rect" id="Node000002" href="$utils_8hh.html" title=" " alt="" coords="69,79,132,105"/>
+<area shape="rect" id="Node000001" title="Funcions del Utils relacionat amb utilitats generals." alt="" coords="69,5,132,31"/>
+<area shape="rect" id="Node000002" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="69,79,132,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,31,103,63,98,63,98,31"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,153,63,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,107,58,143,54,139,88,103"/>
-<area shape="rect" id="Node000004" href="$geometry_8hh.html" title=" " alt="" coords="43,226,134,252"/>
+<area shape="rect" id="Node000004" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="43,226,134,252"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="102,105,94,211,88,211,97,105"/>
-<area shape="rect" id="Node000005" href="$window_8hh.html" title=" " alt="" coords="149,153,231,178"/>
+<area shape="rect" id="Node000005" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="149,153,231,178"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="117,103,165,141,161,145,114,107"/>
 <area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="174,181,120,219,117,215,171,177"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="158,226,222,252"/>

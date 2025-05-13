@@ -1,26 +1,29 @@
 \doxysection{main.\+cc}
 \hypertarget{main_8cc_source}{}\label{main_8cc_source}\mbox{\hyperlink{main_8cc}{Ir a la documentación de este archivo.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{game_8hh}{game.hh}}"{}}}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{window_8hh}{window.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00001}00001\ }
 \DoxyCodeLine{\Hypertarget{main_8cc_source_l00004}00004\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00005}00005\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00006}00006\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00007}\mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{00007}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}}\ =\ 480,\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}}\ =\ 320;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00008}\mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{00008}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}}\ =\ 2;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00009}\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{00009}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}}\ =\ 48;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00010}00010\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00011}\mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{00011}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\ \{}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00012}00012\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\ window(\textcolor{stringliteral}{"{}Mario\ Pro\ 2"{}},\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}},\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}});}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00013}00013\ \ \ \ \ window.\mbox{\hyperlink{classpro2_1_1Window_aaa39faf0a0dfa480661c314341638548}{set\_fps}}(\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}});}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00014}00014\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classGame}{Game}}\ game(\mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}});}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00016}00016\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00017}00017\ \ \ \ \ \textcolor{keywordflow}{while}\ (window.\mbox{\hyperlink{classpro2_1_1Window_a3a2e9797e7da3874fd62727531e711d6}{next\_frame}}()\ \&\&\ !game.\mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{is\_finished}}())\ \{}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00018}00018\ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_a3661c777f12e357cdc0b3727b2f73412}{update}}(window);}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00019}00019\ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_af3e3428a12b9944fefb663f2fe560529}{paint}}(window);}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00020}00020\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00021}00021\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00022}00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{game_8hh}{game.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00023}00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{window_8hh}{window.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00025}00025\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00027}\mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{00027}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}}\ =\ 480,\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}}\ =\ 320;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00028}\mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{00028}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}}\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00029}\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{00029}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}}\ =\ 48;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00031}\mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{00031}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00032}00032\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\ window(\textcolor{stringliteral}{"{}Mario\ Pro\ 2"{}},\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}},\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}});}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00033}00033\ \ \ \ \ window.\mbox{\hyperlink{classpro2_1_1Window_aaa39faf0a0dfa480661c314341638548}{set\_fps}}(\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}});}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{classGame}{Game}}\ game(\mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}});}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00037}00037\ \ \ \ \ \textcolor{keywordflow}{while}\ (window.\mbox{\hyperlink{classpro2_1_1Window_a3a2e9797e7da3874fd62727531e711d6}{next\_frame}}()\ \&\&\ !game.\mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{is\_finished}}())\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00038}00038\ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_a3661c777f12e357cdc0b3727b2f73412}{update}}(window);}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00039}00039\ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_af3e3428a12b9944fefb663f2fe560529}{paint}}(window);}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00041}00041\ \}}
 
 \end{DoxyCode}

@@ -1,3 +1,7 @@
+/** @file cross.hh
+ * @brief Especificació de les Funcions del Cross
+ */
+
 #ifndef CROSS_HH
 #define CROSS_HH
 
@@ -101,7 +105,7 @@ class Cross {
      * 
      * @returns Un Rectangle amb la hitbox de cross
      */
-    pro2::Rect hitbox(int height_y = 0) const;
+    pro2::Rect get_rect(int height_y = 0) const;
 
     /**
      * @brief actualitza el moviment de la creu 

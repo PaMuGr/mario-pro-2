@@ -1,3 +1,7 @@
+/** @file platform.cc
+ * @brief Funcions del Platforms
+ */
+
 #include "platform.hh"
 using namespace std;
 

@@ -1,3 +1,7 @@
+/** @file game.hh
+ * @brief Especificació de Funcions del Game
+ */
+
 #ifndef GAME_HH
 #define GAME_HH
 

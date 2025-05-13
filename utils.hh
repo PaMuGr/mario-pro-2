@@ -1,3 +1,7 @@
+/** @file utils.hh
+ * @brief Especificacions de les Funcions del Utils
+ */
+
 #ifndef UTILS_HH
 #define UTILS_HH
 

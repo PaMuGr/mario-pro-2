@@ -1,3 +1,7 @@
+/** @file texto.cc
+ * @brief Funcions del Text
+ */
+
 #include "texto.hh"
 
 using namespace std;

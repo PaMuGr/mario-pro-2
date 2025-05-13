@@ -26,7 +26,7 @@ $(OBJS): $(HHFILES)
 window.o: window.cc geometry.hh fenster.h
 
 tgz: clean
-	tar -czf $(TAR_FILE) Makefile *.cc *.hh fenster.h .vscode .clang-format
+	tar -czf $(TAR_FILE) Makefile *.cc *.hh fenster.h .vscode .clang-format Doxyfile html latex
 
 clean:
 	rm -f mario_pro_2 $(OBJS)

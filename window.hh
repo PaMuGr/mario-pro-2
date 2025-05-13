@@ -1,3 +1,7 @@
+/** @file window.hh
+ * @brief Especificació de les Funcions del Window
+ */
+
 #ifndef WINDOW_HH
 #define WINDOW_HH
 

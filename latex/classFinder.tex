@@ -1,0 +1,97 @@
+\doxysection{Referencia de la plantilla de la clase Finder\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}}
+\hypertarget{classFinder}{}\label{classFinder}\index{Finder$<$ T $>$@{Finder$<$ T $>$}}
+
+
+{\ttfamily \#include $<$finder.\+hh$>$}
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}} ()
+\item 
+void \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}} (const T \texorpdfstring{$\ast$}{*}t)
+\item 
+void \mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{update}} (const T \texorpdfstring{$\ast$}{*}t)
+\item 
+void \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}} (const T \texorpdfstring{$\ast$}{*}t)
+\item 
+std\+::set$<$ const T \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classFinder_a7dc2d4339d1982a26caf9373f34e3084}{query}} (\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} rect) const
+\begin{DoxyCompactList}\small\item\em Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialment dins de {\ttfamily rect}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+\subsubsection*{template$<$typename T$>$\newline
+class Finder$<$ T $>$}
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00006}{6}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classFinder_a8a823378bec0a23c9fa080f2332999ad}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!Finder@{Finder}}
+\index{Finder@{Finder}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Finder()}{Finder()}}
+{\footnotesize\ttfamily \label{classFinder_a8a823378bec0a23c9fa080f2332999ad} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\mbox{\hyperlink{classFinder}{\+::\+Finder}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00009}{9}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classFinder_a31c1952d79927548ce8fbde267628db3}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!add@{add}}
+\index{add@{add}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classFinder_a31c1952d79927548ce8fbde267628db3} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFinder_a7dc2d4339d1982a26caf9373f34e3084}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!query@{query}}
+\index{query@{query}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{classFinder_a7dc2d4339d1982a26caf9373f34e3084} 
+template$<$typename T$>$ \\
+std\+::set$<$ const T \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect}{}\end{DoxyParamCaption}) const}
+
+
+
+Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialment dins de {\ttfamily rect}. 
+
+Si el nombre de rectangles del contenidor és {\ttfamily n}, el cost de l\textquotesingle{}algorisme ha de ser O(log n).
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rect} & El rectangle de cerca\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins de {\ttfamily rect} 
+\end{DoxyReturn}
+\Hypertarget{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classFinder_a8a9d5bf342c5a13048d7853b52557f7d} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFinder_a073967ec8a3f5189c1922aeaf161098c}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!update@{update}}
+\index{update@{update}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classFinder_a073967ec8a3f5189c1922aeaf161098c} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::update (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{finder_8hh}{finder.\+hh}}\end{DoxyCompactItemize}

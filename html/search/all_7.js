@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['g_0',['g',['../mario_8cc.html#aece2eeedca2f58e31a680503a9b7e972',1,'mario.cc']]],
-  ['game_1',['Game',['../classGame.html',1,'Game'],['../classGame.html#a5bc07cf8947858f32637943836cc6f8e',1,'Game::Game()']]],
-  ['game_2ecc_2',['game.cc',['../game_8cc.html',1,'']]],
-  ['game_2ehh_3',['game.hh',['../game_8hh.html',1,'']]],
-  ['geometry_2ehh_4',['geometry.hh',['../geometry_8hh.html',1,'']]],
-  ['get_5fpixel_5',['get_pixel',['../classpro2_1_1Window.html#a964b632d53a61b7602dfb909e9b7457f',1,'pro2::Window']]],
-  ['get_5frect_6',['get_rect',['../classPlatform.html#a16a47c819406b8b30b8c28d63f272447',1,'Platform']]],
-  ['gl_7',['gl',['../mario_8cc.html#ad16bb7441920d6e4dc7b9ccfdf1a457f',1,'mario.cc']]],
-  ['green_8',['green',['../namespacepro2.html#a316de377ea278a05420f85b64f4349bb',1,'pro2']]],
-  ['grounded_5f_9',['grounded_',['../classCross.html#a92a0a20e62c013b7d7a4d88baa6634a4',1,'Cross::grounded_'],['../classMario.html#a9a5079abae4f376e690bdb2d69c16217',1,'Mario::grounded_']]]
+  ['fenster_5f_0',['fenster_',['../classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7',1,'pro2::Window']]],
+  ['fenster_5fheader_1',['FENSTER_HEADER',['../window_8hh.html#a260b0fc54095550ad3a7e9c414a7ab54',1,'window.hh']]],
+  ['finder_2',['Finder',['../classFinder.html',1,'Finder&lt; T &gt;'],['../classFinder.html#a8a823378bec0a23c9fa080f2332999ad',1,'Finder::Finder()']]],
+  ['finder_2ehh_3',['finder.hh',['../finder_8hh.html',1,'']]],
+  ['finished_5f_4',['finished_',['../classGame.html#ae68025f0c47e30423db4288e0038e5e8',1,'Game']]],
+  ['fps_5',['FPS',['../main_8cc.html#ac5090a6568797128b0a5545228bb8b75',1,'main.cc']]],
+  ['fps_5f_6',['fps_',['../classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b',1,'pro2::Window']]],
+  ['frame_5fcount_7',['frame_count',['../classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964',1,'pro2::Window']]],
+  ['frame_5fcount_5f_8',['frame_count_',['../classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e',1,'pro2::Window']]]
 ];

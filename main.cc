@@ -1,3 +1,23 @@
+/** @file main.cc
+ * @brief Mario
+ */
+
+/**
+ * @mainpage Mario Pro 2 - Documentació del Joc
+ * 
+ * @section intro_sec Introducció
+ * Aquesta és la documentació per el joc de Mario Pro 2, un plataformer 2D
+ * 
+ * @section tech_sec Detalls Tecnics
+ * - Resolució: 480x320 
+ * - Target FPS: 48
+ * 
+ * @section usage_sec Us
+ * Controls:
+ * - Fletxer per moure's 
+ * - Espai per saltar
+ */
+
 #include <vector>
 #include "game.hh"
 #include "window.hh"

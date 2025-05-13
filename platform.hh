@@ -1,3 +1,7 @@
+/** @file platform.hh
+ * @brief Especificacions de Funcions del Platforms
+ */
+
 #ifndef PLATFORM_HH
 #define PLATFORM_HH
 

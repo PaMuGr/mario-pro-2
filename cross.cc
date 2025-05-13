@@ -1,3 +1,7 @@
+/** @file cross.cc
+ * @brief Funcions del Cross
+ */
+
 #include "cross.hh"
 #include "utils.hh"
 using namespace std;
@@ -42,7 +46,7 @@ void Cross::paint(pro2::Window& window, int quantity, int cx, int cy) const {
     }
 }
 
-pro2::Rect Cross::hitbox(int height_y) const {
+pro2::Rect Cross::get_rect(int height_y) const {
     int width = cross_sprite_normal_[0].size();
     int height = cross_sprite_normal_.size();
     return pro2::Rect({

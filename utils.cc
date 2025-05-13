@@ -1,3 +1,7 @@
+/** @file utils.cc
+ * @brief Funcions del Utils relacionat amb utilitats generals
+ */
+
 #include "utils.hh"
 using namespace std;
 

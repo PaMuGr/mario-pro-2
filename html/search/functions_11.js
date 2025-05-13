@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['was_5fkey_5fpressed_0',['was_key_pressed',['../classpro2_1_1Window.html#aaa4fa6c518d090dcbaca4e6211f35522',1,'pro2::Window']]],
-  ['was_5fmouse_5fpressed_1',['was_mouse_pressed',['../classpro2_1_1Window.html#af0950b857d97f12a4a3f9bd082f50dcb',1,'pro2::Window']]],
-  ['width_2',['width',['../classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898',1,'pro2::Window']]],
-  ['window_3',['Window',['../classpro2_1_1Window.html#a64ffe9a6cd8e21cdb17546f7d53a8e0f',1,'pro2::Window']]]
+  ['update_0',['update',['../classCross.html#a933be6cc26313b9a4dbea577a564fedf',1,'Cross::update()'],['../classFinder.html#a073967ec8a3f5189c1922aeaf161098c',1,'Finder::update()'],['../classGame.html#a3661c777f12e357cdc0b3727b2f73412',1,'Game::update()'],['../classMario.html#a785b80003703d5213894a4999035484c',1,'Mario::update()']]],
+  ['update_5fcamera_1',['update_camera',['../classGame.html#ab146f2f8cec61b092586762267cf1e73',1,'Game']]],
+  ['update_5fcamera_5f_2',['update_camera_',['../classpro2_1_1Window.html#ab7e10a36f347292e5fb9a0bffd0e3b49',1,'pro2::Window']]],
+  ['update_5fobjects_3',['update_objects',['../classGame.html#aeac837e84d3f63a3dac7b3942705203e',1,'Game']]]
 ];

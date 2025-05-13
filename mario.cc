@@ -1,3 +1,7 @@
+/** @file mario.cc
+ * @brief Funcions del Mario
+ */
+
 #include "mario.hh"
 #include "utils.hh"
 using namespace std;
@@ -76,7 +80,7 @@ void Mario::jump() {
     }
 }
 
-pro2::Rect Mario::hitbox() const {
+pro2::Rect Mario::get_rect() const {
     return pro2::Rect({
         pos_.x - 6,           
         pos_.y - 15,         

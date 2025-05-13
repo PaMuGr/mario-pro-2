@@ -1,3 +1,7 @@
+/** @file mario.hh
+ * @brief Especificacions de Funcions del Mario
+ */
+
 #ifndef MARIO_HH
 #define MARIO_HH
 
@@ -76,7 +80,7 @@ class Mario {
     /**
      * @brief Retorna la hitbox del mario 
      */
-    pro2::Rect hitbox() const;
+    pro2::Rect get_rect() const;
 
     void update(pro2::Window& window, const std::vector<Platform>& platforms);
 

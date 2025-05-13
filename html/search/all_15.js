@@ -1,13 +1,15 @@
 var searchData=
 [
-  ['w_0',['w',['../mario_8cc.html#a66326676d44c838441a4dc39c85f599b',1,'mario.cc']]],
-  ['was_5fkey_5fpressed_1',['was_key_pressed',['../classpro2_1_1Window.html#aaa4fa6c518d090dcbaca4e6211f35522',1,'pro2::Window']]],
-  ['was_5fmouse_5fpressed_2',['was_mouse_pressed',['../classpro2_1_1Window.html#af0950b857d97f12a4a3f9bd082f50dcb',1,'pro2::Window']]],
-  ['wh_3',['wh',['../mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c',1,'mario.cc']]],
-  ['white_4',['white',['../namespacepro2.html#a776e9498a2ffad905d1116b37ac41345',1,'pro2']]],
-  ['width_5',['WIDTH',['../main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05',1,'main.cc']]],
-  ['width_6',['width',['../classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898',1,'pro2::Window']]],
-  ['window_7',['Window',['../classpro2_1_1Window.html',1,'pro2::Window'],['../classpro2_1_1Window.html#a64ffe9a6cd8e21cdb17546f7d53a8e0f',1,'pro2::Window::Window()']]],
-  ['window_2ecc_8',['window.cc',['../window_8cc.html',1,'']]],
-  ['window_2ehh_9',['window.hh',['../window_8hh.html',1,'']]]
+  ['tab_0',['Tab',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700a90361512ecabd0d9df6eb1cef17600ae',1,'pro2']]],
+  ['tecnics_1',['Detalls Tecnics',['../index.html#tech_sec',1,'']]],
+  ['texto_2ecc_2',['texto.cc',['../texto_8cc.html',1,'']]],
+  ['texto_2ehh_3',['texto.hh',['../texto_8hh.html',1,'']]],
+  ['toggle_5fgrounded_4',['toggle_grounded',['../classMario.html#a4b8785eae84e2d5f0f45bf5290054f92',1,'Mario']]],
+  ['top_5',['top',['../structpro2_1_1Rect.html#abea25fc7da9516fc9e1e88fb54e49737',1,'pro2::Rect::top'],['../classPlatform.html#ae2f6ce1275d5add01a7af60474321bd5',1,'Platform::top() const']]],
+  ['top_5f_6',['top_',['../classPlatform.html#a7fea78553cad4641c4f597ce155ae1c5',1,'Platform']]],
+  ['topleft_7',['topleft',['../classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c',1,'pro2::Window']]],
+  ['topleft_5f_8',['topleft_',['../classPlatform.html#ad4040f2665d0b9c731170701139e1fd1',1,'Platform::topleft_'],['../classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf',1,'pro2::Window::topleft_']]],
+  ['topleft_5ftarget_5f_9',['topleft_target_',['../classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811',1,'pro2::Window']]],
+  ['touch_10',['touch',['../classCross.html#a508dccd8125f4ab2c01b05efaa608c16',1,'Cross']]],
+  ['touched_5f_11',['touched_',['../classCross.html#ab7a7ccec79991cbeab7f4abe1415bae1',1,'Cross']]]
 ];

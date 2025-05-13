@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['b_0',['b',['../mario_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219',1,'b:&#160;mario.cc'],['../platform_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219',1,'b:&#160;platform.cc']]],
-  ['backspace_1',['Backspace',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700a8819bc5c67185dd437984b99b4f6e590',1,'pro2']]],
-  ['black_2',['black',['../namespacepro2.html#ad75418ec194604dc97f1efe077788d53',1,'pro2']]],
-  ['blue_3',['blue',['../namespacepro2.html#aabd9113151a0b2203ccff1e694aaadae',1,'pro2']]],
-  ['bottom_4',['bottom',['../structpro2_1_1Rect.html#a5240a907c581979ec7981419286a8637',1,'pro2::Rect::bottom'],['../classPlatform.html#a3ecf2d404215154d7abcd692aa16e3cd',1,'Platform::bottom() const']]],
-  ['bottom_5f_5',['bottom_',['../classPlatform.html#a15a4798385af5225ac32250b0e3647d6',1,'Platform']]],
-  ['bottomright_5f_6',['bottomright_',['../classPlatform.html#acd2db189e0fcda4683aea0b5ee7d06cc',1,'Platform']]],
-  ['br_7',['br',['../cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977',1,'br:&#160;cross.cc'],['../mario_8cc.html#a79f221932ddea28e0bebf65e4ed17977',1,'br:&#160;mario.cc']]]
+  ['accel_5f_0',['accel_',['../classMario.html#a1764d97c394e6e13e2754580b9c71452',1,'Mario']]],
+  ['accel_5ftime_5f_1',['accel_time_',['../classMario.html#a4ceb8b00f8520dfbe01dda96d9afc472',1,'Mario']]],
+  ['add_2',['add',['../classFinder.html#a31c1952d79927548ce8fbde267628db3',1,'Finder']]],
+  ['add_5fpoints_3',['add_points',['../classMario.html#a6a833fb3bb1f2c1a302cb5ed0e6787a2',1,'Mario']]],
+  ['alt_4',['Alt',['../namespacepro2.html#afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b',1,'pro2']]],
+  ['apply_5fphysics_5f_5',['apply_physics_',['../classCross.html#a8aaa1bab1fe679cda11438ce029efaf3',1,'Cross::apply_physics_()'],['../classMario.html#a58b73569c9d36b5443c4e0efcf5a1f95',1,'Mario::apply_physics_()']]]
 ];

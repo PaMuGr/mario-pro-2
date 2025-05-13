@@ -1,3 +1,7 @@
+/** @file game.cc
+ * @brief Funcions del Game
+ */
+
 #include "game.hh"
 using namespace pro2;
 
@@ -40,12 +44,12 @@ void Game::process_keys(pro2::Window& window) {
 void Game::update_objects(pro2::Window& window) {
     mario_.update(window, platforms_);
 
-    pro2::Rect marHit = mario_.hitbox();
+    pro2::Rect marHit = mario_.get_rect();
     auto it = crosses_.begin();
     while(it!=crosses_.end()) {
         (*it).update(window);
         if(!(*it).is_touched()){
-            if (interseccionen(marHit, (*it).hitbox(cross_height_y_))) {
+            if (interseccionen(marHit, (*it).get_rect(cross_height_y_))) {
                 (*it).touch();
                 it = crosses_.erase(it);
                 mario_.add_points();
@@ -100,7 +104,7 @@ void Game::paint(pro2::Window& window) {
         }
 
         for (const Cross& cross : crosses_) {
-            if(interseccionen(cross.hitbox(), windowRect)){
+            if(interseccionen(cross.get_rect(), windowRect)){
                 cross.paint(window, 1, cross.pos().x, cross.pos().y + cross_height_y_); 
             }        
         }

@@ -89,6 +89,9 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Referencia del archivo texto.hh</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Especificació de les Funcions del Text.  
+<a href="#details">Más...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="utils_8hh_source.html">utils.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="window_8hh_source.html">window.hh</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -99,19 +102,19 @@ Gráfico de dependencias incluidas en texto.hh:</div>
 <div class="dyncontent">
 <div class="center"><img src="texto_8hh__incl.png" border="0" usemap="#atexto_8hh" alt=""/></div>
 <map name="atexto_8hh" id="atexto_8hh">
-<area shape="rect" title=" " alt="" coords="138,5,207,31"/>
-<area shape="rect" href="utils_8hh.html" title=" " alt="" coords="72,79,135,105"/>
+<area shape="rect" title="Especificació de les Funcions del Text." alt="" coords="138,5,207,31"/>
+<area shape="rect" href="utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="72,79,135,105"/>
 <area shape="poly" title=" " alt="" coords="163,33,127,70,124,66,159,29"/>
 <area shape="rect" title=" " alt="" coords="5,153,63,178"/>
 <area shape="poly" title=" " alt="" coords="139,32,98,51,78,64,61,81,46,109,39,138,34,137,41,107,57,77,75,60,96,46,137,27"/>
-<area shape="rect" href="window_8hh.html" title=" " alt="" coords="139,153,220,178"/>
+<area shape="rect" href="window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="139,153,220,178"/>
 <area shape="poly" title=" " alt="" coords="176,31,181,137,175,137,171,31"/>
 <area shape="rect" title=" " alt="" coords="210,79,256,105"/>
 <area shape="poly" title=" " alt="" coords="185,30,215,65,211,69,181,33"/>
 <area shape="rect" title=" " alt="" coords="280,79,319,105"/>
 <area shape="poly" title=" " alt="" coords="195,29,268,70,265,75,193,34"/>
 <area shape="poly" title=" " alt="" coords="94,107,58,143,54,140,90,103"/>
-<area shape="rect" href="geometry_8hh.html" title=" " alt="" coords="32,226,124,252"/>
+<area shape="rect" href="geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="32,226,124,252"/>
 <area shape="poly" title=" " alt="" coords="104,105,85,211,80,210,99,105"/>
 <area shape="poly" title=" " alt="" coords="118,103,157,140,154,144,114,107"/>
 <area shape="poly" title=" " alt="" coords="164,181,109,219,106,215,161,177"/>
@@ -141,7 +144,11 @@ Funciones</h2></td></tr>
 <tr class="memdesc:a9e20fb337ca0147b9d10620569089efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta un text.  <br /></td></tr>
 <tr class="separator:a9e20fb337ca0147b9d10620569089efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación de funciones</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Especificació de les Funcions del Text. </p>
+
+<p class="definition">Definición en el archivo <a class="el" href="texto_8hh_source.html">texto.hh</a>.</p>
+</div><h2 class="groupheader">Documentación de funciones</h2>
 <a id="a142c5a94dfdc5600d3890dae04611062" name="a142c5a94dfdc5600d3890dae04611062"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a142c5a94dfdc5600d3890dae04611062">&#9670;&#160;</a></span>paint_digit()</h2>
 
@@ -176,16 +183,16 @@ Funciones</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="texto_8cc_source.html#l00342">342</a> del archivo <a class="el" href="texto_8cc_source.html">texto.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  342</span>                                                    {</div>
-<div class="line"><span class="lineno">  343</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpro2_1_1Pt.html">Pt</a> top_left = {pos_.x - <a class="code hl_variable" href="texto_8cc.html#ac071359538010b98b3af55d4094de40f">sprite_width</a>/2 , pos_.y - <a class="code hl_variable" href="texto_8cc.html#a6c1aa4b03d5edbd8e172eaa8c3760edd">sprite_height</a>/2 + 1};</div>
-<div class="line"><span class="lineno">  344</span>    <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, top_left, <a class="code hl_variable" href="texto_8cc.html#ac74a9e63e8da38f01ee5b74830fe3990">num_sprite_normal_</a>[digit], <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  345</span>}</div>
-<div class="ttc" id="anamespacepro2_html_a80f038548a7ea3d520759a04437e096a"><div class="ttname"><a href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">pro2::paint_sprite</a></div><div class="ttdeci">void paint_sprite(pro2::Window &amp;window, pro2::Pt orig, const vector&lt; vector&lt; int &gt; &gt; &amp;sprite, bool mirror)</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00018">utils.cc:18</a></div></div>
-<div class="ttc" id="astructpro2_1_1Pt_html"><div class="ttname"><a href="structpro2_1_1Pt.html">pro2::Pt</a></div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00006">geometry.hh:6</a></div></div>
-<div class="ttc" id="atexto_8cc_html_a6c1aa4b03d5edbd8e172eaa8c3760edd"><div class="ttname"><a href="texto_8cc.html#a6c1aa4b03d5edbd8e172eaa8c3760edd">sprite_height</a></div><div class="ttdeci">const int sprite_height</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00010">texto.cc:10</a></div></div>
-<div class="ttc" id="atexto_8cc_html_ac071359538010b98b3af55d4094de40f"><div class="ttname"><a href="texto_8cc.html#ac071359538010b98b3af55d4094de40f">sprite_width</a></div><div class="ttdeci">const int sprite_width</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00009">texto.cc:9</a></div></div>
-<div class="ttc" id="atexto_8cc_html_ac74a9e63e8da38f01ee5b74830fe3990"><div class="ttname"><a href="texto_8cc.html#ac74a9e63e8da38f01ee5b74830fe3990">num_sprite_normal_</a></div><div class="ttdeci">const vector&lt; vector&lt; vector&lt; int &gt; &gt; &gt; num_sprite_normal_</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00012">texto.cc:12</a></div></div>
+<p class="definition">Definición en la línea <a class="el" href="texto_8cc_source.html#l00346">346</a> del archivo <a class="el" href="texto_8cc_source.html">texto.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  346</span>                                                    {</div>
+<div class="line"><span class="lineno">  347</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpro2_1_1Pt.html">Pt</a> top_left = {pos_.x - <a class="code hl_variable" href="texto_8cc.html#ac071359538010b98b3af55d4094de40f">sprite_width</a>/2 , pos_.y - <a class="code hl_variable" href="texto_8cc.html#a6c1aa4b03d5edbd8e172eaa8c3760edd">sprite_height</a>/2 + 1};</div>
+<div class="line"><span class="lineno">  348</span>    <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, top_left, <a class="code hl_variable" href="texto_8cc.html#ac74a9e63e8da38f01ee5b74830fe3990">num_sprite_normal_</a>[digit], <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  349</span>}</div>
+<div class="ttc" id="anamespacepro2_html_a80f038548a7ea3d520759a04437e096a"><div class="ttname"><a href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">pro2::paint_sprite</a></div><div class="ttdeci">void paint_sprite(pro2::Window &amp;window, pro2::Pt orig, const vector&lt; vector&lt; int &gt; &gt; &amp;sprite, bool mirror)</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00022">utils.cc:22</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html"><div class="ttname"><a href="structpro2_1_1Pt.html">pro2::Pt</a></div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00010">geometry.hh:10</a></div></div>
+<div class="ttc" id="atexto_8cc_html_a6c1aa4b03d5edbd8e172eaa8c3760edd"><div class="ttname"><a href="texto_8cc.html#a6c1aa4b03d5edbd8e172eaa8c3760edd">sprite_height</a></div><div class="ttdeci">const int sprite_height</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00014">texto.cc:14</a></div></div>
+<div class="ttc" id="atexto_8cc_html_ac071359538010b98b3af55d4094de40f"><div class="ttname"><a href="texto_8cc.html#ac071359538010b98b3af55d4094de40f">sprite_width</a></div><div class="ttdeci">const int sprite_width</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00013">texto.cc:13</a></div></div>
+<div class="ttc" id="atexto_8cc_html_ac74a9e63e8da38f01ee5b74830fe3990"><div class="ttname"><a href="texto_8cc.html#ac74a9e63e8da38f01ee5b74830fe3990">num_sprite_normal_</a></div><div class="ttdeci">const vector&lt; vector&lt; vector&lt; int &gt; &gt; &gt; num_sprite_normal_</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00016">texto.cc:16</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -223,12 +230,12 @@ Funciones</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="texto_8cc_source.html#l00347">347</a> del archivo <a class="el" href="texto_8cc_source.html">texto.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  347</span>                                                        {</div>
-<div class="line"><span class="lineno">  348</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpro2_1_1Pt.html">Pt</a> top_left = {pos_.x - <a class="code hl_variable" href="texto_8cc.html#ac071359538010b98b3af55d4094de40f">sprite_width</a>/2 , pos_.y - <a class="code hl_variable" href="texto_8cc.html#a6c1aa4b03d5edbd8e172eaa8c3760edd">sprite_height</a>/2 + 1};</div>
-<div class="line"><span class="lineno">  349</span>    <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, top_left, <a class="code hl_variable" href="texto_8cc.html#adc8d0e360bf9ea6f83d5383688f88593">letter_sprite_normal_</a>[letter - <span class="charliteral">&#39;A&#39;</span>], <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  350</span>}</div>
-<div class="ttc" id="atexto_8cc_html_adc8d0e360bf9ea6f83d5383688f88593"><div class="ttname"><a href="texto_8cc.html#adc8d0e360bf9ea6f83d5383688f88593">letter_sprite_normal_</a></div><div class="ttdeci">const vector&lt; vector&lt; vector&lt; int &gt; &gt; &gt; letter_sprite_normal_</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00105">texto.cc:105</a></div></div>
+<p class="definition">Definición en la línea <a class="el" href="texto_8cc_source.html#l00351">351</a> del archivo <a class="el" href="texto_8cc_source.html">texto.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  351</span>                                                        {</div>
+<div class="line"><span class="lineno">  352</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpro2_1_1Pt.html">Pt</a> top_left = {pos_.x - <a class="code hl_variable" href="texto_8cc.html#ac071359538010b98b3af55d4094de40f">sprite_width</a>/2 , pos_.y - <a class="code hl_variable" href="texto_8cc.html#a6c1aa4b03d5edbd8e172eaa8c3760edd">sprite_height</a>/2 + 1};</div>
+<div class="line"><span class="lineno">  353</span>    <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, top_left, <a class="code hl_variable" href="texto_8cc.html#adc8d0e360bf9ea6f83d5383688f88593">letter_sprite_normal_</a>[letter - <span class="charliteral">&#39;A&#39;</span>], <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  354</span>}</div>
+<div class="ttc" id="atexto_8cc_html_adc8d0e360bf9ea6f83d5383688f88593"><div class="ttname"><a href="texto_8cc.html#adc8d0e360bf9ea6f83d5383688f88593">letter_sprite_normal_</a></div><div class="ttdeci">const vector&lt; vector&lt; vector&lt; int &gt; &gt; &gt; letter_sprite_normal_</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00109">texto.cc:109</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -266,27 +273,27 @@ Funciones</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="texto_8cc_source.html#l00352">352</a> del archivo <a class="el" href="texto_8cc_source.html">texto.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  352</span>                                                              {</div>
-<div class="line"><span class="lineno">  353</span> </div>
-<div class="line"><span class="lineno">  354</span>    vector&lt;int&gt; digits;</div>
-<div class="line"><span class="lineno">  355</span> </div>
-<div class="line"><span class="lineno">  356</span>    <span class="keywordflow">if</span> (number == 0) digits.push_back(0);</div>
+<p class="definition">Definición en la línea <a class="el" href="texto_8cc_source.html#l00356">356</a> del archivo <a class="el" href="texto_8cc_source.html">texto.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  356</span>                                                              {</div>
 <div class="line"><span class="lineno">  357</span> </div>
-<div class="line"><span class="lineno">  358</span>    <span class="keywordflow">while</span>(number &gt; 0){</div>
-<div class="line"><span class="lineno">  359</span>        digits.push_back(number % 10);</div>
-<div class="line"><span class="lineno">  360</span>        number /= 10;</div>
-<div class="line"><span class="lineno">  361</span>    }</div>
-<div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>    <span class="comment">//distancia del width del sprite + 2, un offset</span></div>
-<div class="line"><span class="lineno">  364</span>    <span class="keywordtype">int</span> offset = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="texto_8cc.html#ac071359538010b98b3af55d4094de40f">sprite_width</a> + 2);</div>
-<div class="line"><span class="lineno">  365</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; digits.size(); i++){</div>
-<div class="line"><span class="lineno">  366</span>            <a class="code hl_function" href="texto_8cc.html#aa6b9099420c9a52fab9ffb702cb1d368">paint_digit</a>(window, {pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + i * offset, pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>}, digits[digits.size() - 1 - i]);</div>
-<div class="line"><span class="lineno">  367</span>    }</div>
-<div class="line"><span class="lineno">  368</span>}</div>
-<div class="ttc" id="astructpro2_1_1Pt_html_a66aed2131ecee1ac8d9b7a114beead56"><div class="ttname"><a href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">pro2::Pt::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00007">geometry.hh:7</a></div></div>
-<div class="ttc" id="astructpro2_1_1Pt_html_ac3bf243622bd81d35086e7adb53c9b74"><div class="ttname"><a href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">pro2::Pt::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00007">geometry.hh:7</a></div></div>
-<div class="ttc" id="atexto_8cc_html_aa6b9099420c9a52fab9ffb702cb1d368"><div class="ttname"><a href="texto_8cc.html#aa6b9099420c9a52fab9ffb702cb1d368">paint_digit</a></div><div class="ttdeci">void paint_digit(Window &amp;window, Pt pos_, int digit)</div><div class="ttdoc">Pinta un sol digit.</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00342">texto.cc:342</a></div></div>
+<div class="line"><span class="lineno">  358</span>    vector&lt;int&gt; digits;</div>
+<div class="line"><span class="lineno">  359</span> </div>
+<div class="line"><span class="lineno">  360</span>    <span class="keywordflow">if</span> (number == 0) digits.push_back(0);</div>
+<div class="line"><span class="lineno">  361</span> </div>
+<div class="line"><span class="lineno">  362</span>    <span class="keywordflow">while</span>(number &gt; 0){</div>
+<div class="line"><span class="lineno">  363</span>        digits.push_back(number % 10);</div>
+<div class="line"><span class="lineno">  364</span>        number /= 10;</div>
+<div class="line"><span class="lineno">  365</span>    }</div>
+<div class="line"><span class="lineno">  366</span> </div>
+<div class="line"><span class="lineno">  367</span>    <span class="comment">//distancia del width del sprite + 2, un offset</span></div>
+<div class="line"><span class="lineno">  368</span>    <span class="keywordtype">int</span> offset = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="texto_8cc.html#ac071359538010b98b3af55d4094de40f">sprite_width</a> + 2);</div>
+<div class="line"><span class="lineno">  369</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; digits.size(); i++){</div>
+<div class="line"><span class="lineno">  370</span>            <a class="code hl_function" href="texto_8cc.html#aa6b9099420c9a52fab9ffb702cb1d368">paint_digit</a>(window, {pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + i * offset, pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>}, digits[digits.size() - 1 - i]);</div>
+<div class="line"><span class="lineno">  371</span>    }</div>
+<div class="line"><span class="lineno">  372</span>}</div>
+<div class="ttc" id="astructpro2_1_1Pt_html_a66aed2131ecee1ac8d9b7a114beead56"><div class="ttname"><a href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">pro2::Pt::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00011">geometry.hh:11</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html_ac3bf243622bd81d35086e7adb53c9b74"><div class="ttname"><a href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">pro2::Pt::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00011">geometry.hh:11</a></div></div>
+<div class="ttc" id="atexto_8cc_html_aa6b9099420c9a52fab9ffb702cb1d368"><div class="ttname"><a href="texto_8cc.html#aa6b9099420c9a52fab9ffb702cb1d368">paint_digit</a></div><div class="ttdeci">void paint_digit(Window &amp;window, Pt pos_, int digit)</div><div class="ttdoc">Pinta un sol digit.</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00346">texto.cc:346</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

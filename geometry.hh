@@ -1,3 +1,7 @@
+/** @file geometry.hh
+ * @brief Funcions relacionades amb geometria
+ */
+
 #ifndef GEOMETRY_HH
 #define GEOMETRY_HH
 
