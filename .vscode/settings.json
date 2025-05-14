@@ -47,6 +47,12 @@
         "list": "cpp",
         "unordered_map": "cpp",
         "__node_handle": "cpp",
-        "optional": "cpp"
+        "optional": "cpp",
+        "map": "cpp",
+        "__tree": "cpp",
+        "charconv": "cpp",
+        "sstream": "cpp",
+        "iterator": "cpp",
+        "memory_resource": "cpp"
     }
 }
