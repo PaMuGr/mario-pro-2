@@ -12,6 +12,7 @@
 #include "window.hh"
 #include "utils.hh"
 #include "texto.hh"
+#include "finder.hh"
 
 class Game {
     Mario                 mario_;

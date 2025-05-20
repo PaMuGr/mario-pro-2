@@ -4,6 +4,7 @@
 
 #include <map>
 #include <set>
+#include "geometry.hh"
 #include "utils.hh"
 
 
@@ -11,67 +12,98 @@ template <typename T>
 class Finder {
 
 private:
+    std::map<const T*, set<pro2::Pt>> quadsOfObject;
+    //Per cada punter tenim en quines quadricules esta
+    std::map<pro2::Pt, set<const T*>> objectsTopLeft;
+    //Pt es el top left de la quadricula i el set correspon als objectes en ella
 
-    //bastant segur de la primera estructura, la segona es una proba per veure si funcionaria
-    std::map<const T*, pro2::Rect> objecteRectangle;
+    //Tamany de les quadricules en les quals es dividira el mon
+    static const int QUADSIZE = 80;
 
-    std::map<pro2::Rect, const T*> rectanglesObjectes;
+    /**
+     * @brief Retorna el conjunt de quadricules on es troba 
+     *        l'objecte.
+     *
+     * @param rObj El rectangle del objecte
+     *
+     * @returns Un set de Pt's amb el topleft de les quadricules on està el objecte 
+     */
+    set<pro2::Pt> setPts(const pro2::Rect& rObj) const {
+        set<pro2::Pt> result;
+        //Si tenim objecte de topleft (524,17) llavors la quadricula on esta te topleft (500, 0) 
+        int left = (rObj.left / QUADSIZE) * QUADSIZE;
+        int right = (rObj.right / QUADSIZE) * QUADSIZE;
+        int top = (rObj.top / QUADSIZE) * QUADSIZE;
+        int bottom = (rObj.bottom / QUADSIZE) * QUADSIZE;
+
+        for (int x = left; x <= right; x += QUADSIZE) {
+            for (int y = top; y <= bottom; y += QUADSIZE) {
+                //Tots els top lefts dels quads on esta r (rect del objecte)
+                result.insert({x, y});
+            }
+        }
+        return result;
+    }
 
 public:
     Finder() {}
-
-    //n vegades
+    
+    /**
+     * @brief Afegeix a quadsOfObject les quadricules on es troba t, també afegeix a
+     *          objectsTopLeft els punters dins de cada quadricula
+     *
+     * @param t Punter al objecte
+     *
+     */
     void add(const T *t){
         pro2::Rect rect = t->get_rect();
-        objecteRectangle[t] = rect;
-        rectanglesObjectes[rect] = t;
-    }
+        std::set<pro2::Pt> quads = setPts(rect);
+        
+        quadsOfObject[t] = quads;
 
-    //cada frame: n vegades
-    //
-    //Find amb map i actualitzar el segon element del map?
-    //Guardem abans d'actualitzar i canviem primer element del segon map?
-    void update(const T *t){
-
-        auto it = objecteRectangle.find(t);
-        //si existeix intercanviem
-        if(it != objecteRectangle.end()){
-
-            pro2::Rect rect = t->get_rect();
-
-            //busquem al segon map el rectangle que haurem d'intercanviar
-            auto it2 = rectanglesObjectes.find(it -> second);
-            //mirem si existeix i si coincideix amb el iterador buscat
-            if(it2 != rectanglesObjectes.end() && it2->second == t){
-                rectanglesObjectes.erase(it2);
-                //insertem després d'eliminar-ho amb el nou rectangle i mateix iterador
-                rectanglesObjectes.insert({rect,t});
-            }
-
-            //canviat el rect del primer map per el que toca
-            it -> second = rect;
+        auto it = quads.begin();
+        while(it != quads.end()){
+            objectsTopLeft[*it].insert(t); 
+            it++;
         }
-
     }
 
-    //quan l'agafes
+    /**
+     * @brief Treu de quadsOfObject les quadricules on es trobava t, també treu de
+     *          objectsTopLeft els punters dins de cada quadricula. 
+     *
+     * @param t Punter al objecte
+     *
+     */
     void remove(const T *t){
-        auto it = objecteRectangle.find(t);
-        //si existeix hem d'eliminar-lo i per aixo borrem el punter
-        if (it != objecteRectangle.end()) {
-            //guardem el rectangle que buscarem en el segon map
-            pro2::Rect rect = it->second;
-            //borrem
-            objecteRectangle.erase(it); 
+        auto it = quadsOfObject.find(t);
 
-            auto it2 = rectanglesObjectes(rect);
-            //mirem si existeix i si coincideix amb el iterador buscat
-            if(it2 != rectanglesObjectes.end() && it2->second == t){
-                //esborrem
-                rectanglesObjectes.erase(it2);
+        if(it != quadsOfObject.end()){
+            std::set<pro2::Pt> quads = it->second;
+            auto it2 = quads.begin();
+
+            while(it2 != quads.end()){
+                objectsTopLeft[*it2].erase(t);
+                if(objectsTopLeft[*it2].empty()){
+                    objectsTopLeft.erase(*it2);
+                }
+                it2++;
             }
+            quadsOfObject.erase(it);
         }
     }
+
+    /**
+     * @brief Treiem l'antic i fiquem el nou ja mogut
+     *
+     * @param t Punter al objecte
+     *
+     */
+    void update(const T *t){
+        remove(t);
+        add(t);
+    }
+
 
     /**
      * @brief Retorna el conjunt d'objectes amb rectangles 
@@ -85,13 +117,26 @@ public:
      * @returns Un conjunt de punters a objectes que tenen un 
      *          rectangle parcial o totalment dins de `rect`
      */
+    std::set<const T *> query(pro2::Rect rect) const{
+        std::set<const T*> result;
+        std::set<pro2::Pt> quads = setPts(rect);
+        auto it = quads.begin();
 
-    //cada frame: 1 vegada
-    //bucle recorrint tot el map i mirant si s'intersecciona amb rect
-    //si, si. afegir al set resultat i retornar set
+        while(it != quads.end()){
+            auto it2 = objectsTopLeft.find(*it);
+            if(it2 != objectsTopLeft.end()){
+                std::set<const T*> setPunters = it2->second;
+                auto it3 = setPunters.begin(); 
 
-    //per fer-ho eficient compararem que el objecte bottom right > topleft de la cam, objecte top left < que bottom right
-    //en el map ho tenim ordenat i doncs quan trobem un punt bottom right >= topleft doncs tots desde aquell cap al final estan dins
-    //tindrem un iterador amb el moment on apuntem al punt >= topleft i un <= bottom right
-    std::set<const T *> query(pro2::Rect rect) const;
+                while(it3 != setPunters.end()){
+                    if(interseccionen((*it3) -> get_rect(), rect)){
+                        result.insert(*it3);
+                    }
+                    it3++;
+                }
+            }
+            it++;
+        }
+        return result;
+    }
 };
