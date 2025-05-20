@@ -12,9 +12,9 @@ template <typename T>
 class Finder {
 
 private:
-    std::map<const T*, set<pro2::Pt>> quadsOfObject;
+    std::map<const T*, std::set<pro2::Pt>> quadsOfObject;
     //Per cada punter tenim en quines quadricules esta
-    std::map<pro2::Pt, set<const T*>> objectsTopLeft;
+    std::map<pro2::Pt, std::set<const T*>> objectsTopLeft;
     //Pt es el top left de la quadricula i el set correspon als objectes en ella
 
     //Tamany de les quadricules en les quals es dividira el mon
@@ -28,8 +28,8 @@ private:
      *
      * @returns Un set de Pt's amb el topleft de les quadricules on està el objecte 
      */
-    set<pro2::Pt> setPts(const pro2::Rect& rObj) const {
-        set<pro2::Pt> result;
+    std::set<pro2::Pt> setPts(const pro2::Rect& rObj) const {
+        std::set<pro2::Pt> result;
         //Si tenim objecte de topleft (524,17) llavors la quadricula on esta te topleft (500, 0) 
         int left = (rObj.left / QUADSIZE) * QUADSIZE;
         int right = (rObj.right / QUADSIZE) * QUADSIZE;
