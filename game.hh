@@ -18,6 +18,10 @@ class Game {
     Mario                 mario_;
     std::vector<Platform> platforms_;
     std::list<Cross> crosses_;
+    //FINDER de les plataformes
+    Finder<Platform> finder_platforms_;
+    Finder<Cross> finder_crosses_;
+
 
     bool paused_;
     bool finished_;

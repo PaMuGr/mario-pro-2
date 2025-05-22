@@ -21,7 +21,6 @@ class Cross {
     
     bool grounded_ = false;
 	bool looking_left_ = false;
-    bool touched_ = false;
 
 	void apply_physics_();
 
@@ -43,22 +42,6 @@ class Cross {
      * @param cy posició vertical
      */
     void paint(pro2::Window& window, int quantity, int cx, int cy) const;
-
-    /**
-     * @brief Retorna el valor privat touched_ 
-     * 
-     * @returns Un bool amb el valor de touched_
-     */
-    bool is_touched() const {
-        return touched_;
-    }
-
-    /**
-     * @brief Fica a true touched_ 
-     */
-    void touch() {
-        touched_ = true;
-    }
 
     /**
      * @brief Retorna la posicio a la que es troba la cross 

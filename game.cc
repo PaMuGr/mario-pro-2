@@ -18,7 +18,7 @@ Game::Game(int width, int height)
           Platform(250, 400, 150, 161),
       },
       finished_(false) {
-    for (int i = 1; i < 20; i++) {
+    for (int i = 1; i < 1000000; i++) {
         int cy = randomizer(-3,3);
         platforms_.push_back(Platform(250 + i * 200, 400 + i * 200, 150+cy*10, 161+cy*10));
         
@@ -27,6 +27,16 @@ Game::Game(int width, int height)
             (randomizer(380,100) + i * 200 + 400 + i * 200) / 2,  //x
             135 - randomizer(200,0)/4 + cy*10                //y
         }, {(i%2)*-1+1,(i%2)*-1}, 15));
+    }
+
+    //Afegim a la constructora el .add de les plataformes
+    for (Platform& p : platforms_) {
+        finder_platforms_.add(&p);
+    }
+
+    //Afegim a la constructora el .add de les crosses
+    for (Cross& c : crosses_) {
+        finder_crosses_.add(&c);
     }
 }
 
@@ -43,18 +53,26 @@ void Game::process_keys(pro2::Window& window) {
 
 void Game::update_objects(pro2::Window& window) {
     mario_.update(window, platforms_);
-
     pro2::Rect marHit = mario_.get_rect();
-    auto it = crosses_.begin();
-    while(it!=crosses_.end()) {
-        (*it).update(window);
-        if(!(*it).is_touched()){
-            if (interseccionen(marHit, (*it).get_rect(cross_height_y_))) {
-                (*it).touch();
-                it = crosses_.erase(it);
-                mario_.add_points();
-            }
-            it++;
+
+    // auto it = crosses_.begin();
+    // while(it!=crosses_.end()) {
+    //     (*it).update(window);
+    //     if (interseccionen(marHit, (*it).get_rect(cross_height_y_))) {
+    //         it = crosses_.erase(it);
+    //         mario_.add_points();
+    //     }
+    //     it++;
+    // }
+
+    auto visibles = finder_crosses_.query(window.camera_rect());
+    for (const Cross* c : visibles) {
+        const_cast<Cross*>(c)->update(window);
+        finder_crosses_.update(c);
+
+        if (interseccionen(marHit, c->get_rect(cross_height_y_))) {
+            crosses_.remove_if([&](const Cross& cross) { return &cross == c; });
+            mario_.add_points();
         }
     }
 }
@@ -97,16 +115,15 @@ void Game::paint(pro2::Window& window) {
         window.clear(sky_blue);
         pro2::Rect windowRect = window.camera_rect();
 
-        for (const Platform& p : platforms_) {
-            if(interseccionen(p.get_rect(), windowRect)){
-                p.paint(window);
-            }
+        //Agafem totes les platforms visibles i per cada una en elles les pintem
+        std::set<const Platform*> visibles = finder_platforms_.query(windowRect);
+        for (const Platform* p : visibles) {
+            p->paint(window);
         }
 
-        for (const Cross& cross : crosses_) {
-            if(interseccionen(cross.get_rect(), windowRect)){
-                cross.paint(window, 1, cross.pos().x, cross.pos().y + cross_height_y_); 
-            }        
+        auto visible_crosses = finder_crosses_.query(windowRect);
+        for (const Cross* cross : visible_crosses) {
+            cross->paint(window, 1, cross->pos().x, cross->pos().y + cross_height_y_);
         }
 
         //pinta el nombre total de punts
