@@ -55,23 +55,15 @@ void Game::update_objects(pro2::Window& window) {
     mario_.update(window, platforms_);
     pro2::Rect marHit = mario_.get_rect();
 
-    // auto it = crosses_.begin();
-    // while(it!=crosses_.end()) {
-    //     (*it).update(window);
-    //     if (interseccionen(marHit, (*it).get_rect(cross_height_y_))) {
-    //         it = crosses_.erase(it);
-    //         mario_.add_points();
-    //     }
-    //     it++;
-    // }
-
     auto visibles = finder_crosses_.query(window.camera_rect());
-    for (const Cross* c : visibles) {
-        const_cast<Cross*>(c)->update(window);
+    for(const Cross* c : visibles){
+        //const_cast transforma el punter a un no const
+        Cross* cc = const_cast<Cross*>(c);
+        cc->update(window);
         finder_crosses_.update(c);
-
-        if (interseccionen(marHit, c->get_rect(cross_height_y_))) {
-            crosses_.remove_if([&](const Cross& cross) { return &cross == c; });
+        if (interseccionen(marHit, cc->get_rect(cross_height_y_))) {
+            //it = crosses_.erase(it);
+            finder_crosses_.remove(c);
             mario_.add_points();
         }
     }
@@ -123,7 +115,7 @@ void Game::paint(pro2::Window& window) {
 
         auto visible_crosses = finder_crosses_.query(windowRect);
         for (const Cross* cross : visible_crosses) {
-            cross->paint(window, 1, cross->pos().x, cross->pos().y + cross_height_y_);
+            cross->paint(window, 1 ,cross->pos().x, cross->pos().y + cross_height_y_);
         }
 
         //pinta el nombre total de punts

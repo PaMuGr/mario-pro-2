@@ -12,11 +12,11 @@ template <typename T>
 class Finder {
 
 private:
-    std::map<const T*, std::set<pro2::Pt>> quadsOfObject;
     //Per cada punter tenim en quines quadricules esta
-    std::map<pro2::Pt, std::set<const T*>> objectsTopLeft;
+    std::map<const T*, std::set<pro2::Pt>> quadsOfObject;
     //Pt es el top left de la quadricula i el set correspon als objectes en ella
-
+    std::map<pro2::Pt, std::set<const T*>> objectsTopLeft;
+    
     //Tamany de les quadricules en les quals es dividira el mon
     static const int QUADSIZE = 80;
 
