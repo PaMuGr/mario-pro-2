@@ -12,6 +12,10 @@ const int h = pro2::black;
 const int br = 0x895129;  // brown wood
 const int db = 0x5c3a1e;  // dark brown wood
 const int dr = 0x7c0a02;  // dark red (blood)
+const int d = 0x3a7d2d;  // green
+const int g = 0xa7c7cb;  // darkergreen
+const int l = 0xdbe1e3; //glass l¡ght
+const int s = 0xC2B280;  // dark red (blood)
 
 // clang-format off
 const vector<vector<int>> Cross::cross_sprite_normal_ = {
