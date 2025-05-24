@@ -14,10 +14,10 @@ const int s = 0xC2B280;  // dark red (blood)
 const int br = 0x895129;  // brown wood
 
 //Colors més brillants
-const int g_bright  = 0xc7e7eb;  // Brighter teal
-const int l_bright  = 0xfbf1f3;  // Near-white glass
-const int s_bright  = 0xe2c890;  // Warmer sand
-const int br_bright = 0xa16131;  // Lightened brown
+const int g_bright  = 0xc7e7eb;  // brighter teal
+const int l_bright  = 0xfbf1f3;  // near-white glass
+const int s_bright  = 0xe2c890;  // warmer sand
+const int br_bright = 0xa16131;  // lightened brown
 
 // clang-format off
 const vector<vector<int>> Sandglass::sandglass_sprite_normal_ = {

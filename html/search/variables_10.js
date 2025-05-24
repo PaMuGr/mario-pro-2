@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['top_0',['top',['../structpro2_1_1Rect.html#abea25fc7da9516fc9e1e88fb54e49737',1,'pro2::Rect']]],
-  ['top_5f_1',['top_',['../classPlatform.html#a7fea78553cad4641c4f597ce155ae1c5',1,'Platform']]],
-  ['topleft_5f_2',['topleft_',['../classPlatform.html#ad4040f2665d0b9c731170701139e1fd1',1,'Platform::topleft_'],['../classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf',1,'pro2::Window::topleft_']]],
-  ['topleft_5ftarget_5f_3',['topleft_target_',['../classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811',1,'pro2::Window']]],
-  ['touched_5f_4',['touched_',['../classCross.html#ab7a7ccec79991cbeab7f4abe1415bae1',1,'Cross']]]
+  ['r_0',['r',['../mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f',1,'r:&#160;mario.cc'],['../texto_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f',1,'r:&#160;texto.cc']]],
+  ['red_1',['red',['../namespacepro2.html#af106aa7882e524344cfa403034cd5720',1,'pro2']]],
+  ['redemtionpoints_5f_2',['redemtionPoints_',['../classMario.html#a4d323f2aeabc325e28a93ab4688e4459',1,'Mario']]],
+  ['right_3',['right',['../structpro2_1_1Rect.html#aae04a074de42a64bff8e9781b8e2af2b',1,'pro2::Rect']]],
+  ['right_5f_4',['right_',['../classPlatform.html#a46b87ba8300f0ab0338fd570ee9c49d6',1,'Platform']]],
+  ['right_5fkey_5f_5',['right_key_',['../classMario.html#aeed62c8513146eaa6607d0a407fc158e',1,'Mario']]]
 ];

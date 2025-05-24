@@ -9,7 +9,5 @@ var searchData=
   ['top_5f_6',['top_',['../classPlatform.html#a7fea78553cad4641c4f597ce155ae1c5',1,'Platform']]],
   ['topleft_7',['topleft',['../classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c',1,'pro2::Window']]],
   ['topleft_5f_8',['topleft_',['../classPlatform.html#ad4040f2665d0b9c731170701139e1fd1',1,'Platform::topleft_'],['../classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf',1,'pro2::Window::topleft_']]],
-  ['topleft_5ftarget_5f_9',['topleft_target_',['../classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811',1,'pro2::Window']]],
-  ['touch_10',['touch',['../classCross.html#a508dccd8125f4ab2c01b05efaa608c16',1,'Cross']]],
-  ['touched_5f_11',['touched_',['../classCross.html#ab7a7ccec79991cbeab7f4abe1415bae1',1,'Cross']]]
+  ['topleft_5ftarget_5f_9',['topleft_target_',['../classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811',1,'pro2::Window']]]
 ];

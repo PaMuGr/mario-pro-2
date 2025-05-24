@@ -10,13 +10,30 @@
 \mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}} ()
 \item 
 void \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}} (const T \texorpdfstring{$\ast$}{*}t)
-\item 
-void \mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{update}} (const T \texorpdfstring{$\ast$}{*}t)
-\item 
+\begin{DoxyCompactList}\small\item\em Afegeix a quads\+Of\+Object les quadricules on es troba t, també afegeix a objects\+Top\+Left els punters dins de cada quadricula. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}} (const T \texorpdfstring{$\ast$}{*}t)
-\item 
+\begin{DoxyCompactList}\small\item\em Treu de quads\+Of\+Object les quadricules on es trobava t, també treu de objects\+Top\+Left els punters dins de cada quadricula. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{update}} (const T \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Treiem l\textquotesingle{}antic i fiquem el nou ja mogut. \end{DoxyCompactList}\item 
 std\+::set$<$ const T \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classFinder_a7dc2d4339d1982a26caf9373f34e3084}{query}} (\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} rect) const
 \begin{DoxyCompactList}\small\item\em Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialment dins de {\ttfamily rect}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+std\+::set$<$ \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} $>$ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{set\+Pts}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&r\+Obj) const
+\begin{DoxyCompactList}\small\item\em Retorna el conjunt de quadricules on es troba l\textquotesingle{}objecte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ const T \texorpdfstring{$\ast$}{*}, std\+::set$<$ \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} $>$ $>$ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quads\+Of\+Object}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}, std\+::set$<$ const T \texorpdfstring{$\ast$}{*} $>$ $>$ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objects\+Top\+Left}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos estáticos privados}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}} = 80
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
@@ -24,7 +41,7 @@ std\+::set$<$ const T \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classFinde
 class Finder$<$ T $>$}
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00006}{6}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00012}{12}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 
@@ -38,12 +55,10 @@ template$<$typename T$>$ \\
 
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00009}{9}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00049}{49}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00009\ \{\}}
-
 \end{DoxyCode}
 
 
@@ -53,14 +68,30 @@ Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00009}{9}} del arch
 \doxysubsubsection{\texorpdfstring{add()}{add()}}
 {\footnotesize\ttfamily \label{classFinder_a31c1952d79927548ce8fbde267628db3} 
 template$<$typename T$>$ \\
-void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Afegeix a quads\+Of\+Object les quadricules on es troba t, també afegeix a objects\+Top\+Left els punters dins de cada quadricula. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Punter al objecte \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00058}{58}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
 \Hypertarget{classFinder_a7dc2d4339d1982a26caf9373f34e3084}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!query@{query}}
 \index{query@{query}!Finder$<$ T $>$@{Finder$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{query()}{query()}}
 {\footnotesize\ttfamily \label{classFinder_a7dc2d4339d1982a26caf9373f34e3084} 
 template$<$typename T$>$ \\
-std\+::set$<$ const T \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect}{}\end{DoxyParamCaption}) const}
+std\+::set$<$ const T \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -76,19 +107,120 @@ Si el nombre de rectangles del contenidor és {\ttfamily n}, el cost de l\textqu
 \begin{DoxyReturn}{Devuelve}
 Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins de {\ttfamily rect} 
 \end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00120}{120}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
 \Hypertarget{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!remove@{remove}}
 \index{remove@{remove}!Finder$<$ T $>$@{Finder$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{remove()}{remove()}}
 {\footnotesize\ttfamily \label{classFinder_a8a9d5bf342c5a13048d7853b52557f7d} 
 template$<$typename T$>$ \\
-void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Treu de quads\+Of\+Object les quadricules on es trobava t, també treu de objects\+Top\+Left els punters dins de cada quadricula. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Punter al objecte \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00078}{78}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classFinder_a505460974de6b20a36a98b4062d0ea12}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!setPts@{setPts}}
+\index{setPts@{setPts}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setPts()}{setPts()}}
+{\footnotesize\ttfamily \label{classFinder_a505460974de6b20a36a98b4062d0ea12} 
+template$<$typename T$>$ \\
+std\+::set$<$ \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} $>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::set\+Pts (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{r\+Obj}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Retorna el conjunt de quadricules on es troba l\textquotesingle{}objecte. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r\+Obj} & El rectangle del objecte\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Un set de Pt\textquotesingle{}s amb el topleft de les quadricules on està el objecte 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
 \Hypertarget{classFinder_a073967ec8a3f5189c1922aeaf161098c}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!update@{update}}
 \index{update@{update}!Finder$<$ T $>$@{Finder$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily \label{classFinder_a073967ec8a3f5189c1922aeaf161098c} 
 template$<$typename T$>$ \\
-void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::update (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::update (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Treiem l\textquotesingle{}antic i fiquem el nou ja mogut. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Punter al objecte \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00102}{102}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classFinder_a24e47df48868626679624c0f90f53973}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!objectsTopLeft@{objectsTopLeft}}
+\index{objectsTopLeft@{objectsTopLeft}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{objectsTopLeft}{objectsTopLeft}}
+{\footnotesize\ttfamily \label{classFinder_a24e47df48868626679624c0f90f53973} 
+template$<$typename T$>$ \\
+std\+::map$<$\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}, std\+::set$<$const T\texorpdfstring{$\ast$}{*}$>$ $>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::objects\+Top\+Left\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00018}{18}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+\Hypertarget{classFinder_a75ecebb34d5a39cd2484f5a38457d820}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!QUADSIZE@{QUADSIZE}}
+\index{QUADSIZE@{QUADSIZE}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{QUADSIZE}{QUADSIZE}}
+{\footnotesize\ttfamily \label{classFinder_a75ecebb34d5a39cd2484f5a38457d820} 
+template$<$typename T$>$ \\
+const int \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::\+QUADSIZE = 80\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+
+\Hypertarget{classFinder_a3b60c176851782e2780dd6c91a94e4bd}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!quadsOfObject@{quadsOfObject}}
+\index{quadsOfObject@{quadsOfObject}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{quadsOfObject}{quadsOfObject}}
+{\footnotesize\ttfamily \label{classFinder_a3b60c176851782e2780dd6c91a94e4bd} 
+template$<$typename T$>$ \\
+std\+::map$<$const T\texorpdfstring{$\ast$}{*}, std\+::set$<$\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}$>$ $>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::quads\+Of\+Object\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00016}{16}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 

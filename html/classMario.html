@@ -112,6 +112,8 @@ Métodos públicos</h2></td></tr>
 <tr class="separator:a0bc34a1f489d6d10905c83fa8e1e72f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a807ce8785091bd609e156292409b376f" id="r_a807ce8785091bd609e156292409b376f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a807ce8785091bd609e156292409b376f">set_y</a> (int <a class="el" href="mario_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>)</td></tr>
 <tr class="separator:a807ce8785091bd609e156292409b376f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e29f7688225e81da18bad4ed571a0e" id="r_a52e29f7688225e81da18bad4ed571a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52e29f7688225e81da18bad4ed571a0e">set_x</a> (int x)</td></tr>
+<tr class="separator:a52e29f7688225e81da18bad4ed571a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7c1e4fe5678628216c3110a8eb10c0" id="r_adb7c1e4fe5678628216c3110a8eb10c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb7c1e4fe5678628216c3110a8eb10c0">is_grounded</a> () const</td></tr>
 <tr class="separator:adb7c1e4fe5678628216c3110a8eb10c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a970f238b3538fa175b0f73aa29aa2c48" id="r_a970f238b3538fa175b0f73aa29aa2c48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a970f238b3538fa175b0f73aa29aa2c48">set_grounded</a> (bool grounded)</td></tr>
@@ -207,19 +209,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00030">30</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                              : <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>(<a class="code hl_function" href="#a0bc34a1f489d6d10905c83fa8e1e72f9">pos</a>), </div>
-<div class="line"><span class="lineno">   31</span>    <a class="code hl_variable" href="#a55592c8a186b21c9688ec1e10736711f">last_pos_</a>(<a class="code hl_function" href="#a0bc34a1f489d6d10905c83fa8e1e72f9">pos</a>), </div>
-<div class="line"><span class="lineno">   32</span>    <a class="code hl_variable" href="#a22dbf8a740c51b63f4bb24397910e734">jump_key_</a>(jumpKey),</div>
-<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="#ae5b22ddb16e949a19ec7211772ce0ad7">left_key_</a>(leftKey),</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="#aeed62c8513146eaa6607d0a407fc158e">right_key_</a>(rightKey)</div>
-<div class="line"><span class="lineno">   35</span>    {}</div>
-<div class="ttc" id="aclassMario_html_a0bc34a1f489d6d10905c83fa8e1e72f9"><div class="ttname"><a href="#a0bc34a1f489d6d10905c83fa8e1e72f9">Mario::pos</a></div><div class="ttdeci">pro2::Pt pos() const</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00055">mario.hh:55</a></div></div>
-<div class="ttc" id="aclassMario_html_a22dbf8a740c51b63f4bb24397910e734"><div class="ttname"><a href="#a22dbf8a740c51b63f4bb24397910e734">Mario::jump_key_</a></div><div class="ttdeci">int jump_key_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00022">mario.hh:22</a></div></div>
-<div class="ttc" id="aclassMario_html_a55592c8a186b21c9688ec1e10736711f"><div class="ttname"><a href="#a55592c8a186b21c9688ec1e10736711f">Mario::last_pos_</a></div><div class="ttdeci">pro2::Pt last_pos_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00015">mario.hh:15</a></div></div>
-<div class="ttc" id="aclassMario_html_ae5b22ddb16e949a19ec7211772ce0ad7"><div class="ttname"><a href="#ae5b22ddb16e949a19ec7211772ce0ad7">Mario::left_key_</a></div><div class="ttdeci">int left_key_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00022">mario.hh:22</a></div></div>
-<div class="ttc" id="aclassMario_html_aeed62c8513146eaa6607d0a407fc158e"><div class="ttname"><a href="#aeed62c8513146eaa6607d0a407fc158e">Mario::right_key_</a></div><div class="ttdeci">int right_key_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00022">mario.hh:22</a></div></div>
-<div class="ttc" id="aclassMario_html_afe8565966d1bdea7201e182558d2d709"><div class="ttname"><a href="#afe8565966d1bdea7201e182558d2d709">Mario::pos_</a></div><div class="ttdeci">pro2::Pt pos_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00015">mario.hh:15</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
@@ -249,11 +239,7 @@ Atributos estáticos privados</h2></td></tr>
 <p>Augmenta en 1 la puntuació </p>
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00040">40</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                     {</div>
-<div class="line"><span class="lineno">   41</span>        <a class="code hl_variable" href="#a4d323f2aeabc325e28a93ab4688e4459">redemtionPoints_</a>++;</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="ttc" id="aclassMario_html_a4d323f2aeabc325e28a93ab4688e4459"><div class="ttname"><a href="#a4d323f2aeabc325e28a93ab4688e4459">Mario::redemtionPoints_</a></div><div class="ttdeci">int redemtionPoints_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00019">mario.hh:19</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a58b73569c9d36b5443c4e0efcf5a1f95" name="a58b73569c9d36b5443c4e0efcf5a1f95"></a>
@@ -280,31 +266,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8cc_source.html#l00054">54</a> del archivo <a class="el" href="mario_8cc_source.html">mario.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                           {</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9a5079abae4f376e690bdb2d69c16217">grounded_</a>) {</div>
-<div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.y = 0;</div>
-<div class="line"><span class="lineno">   57</span>        <a class="code hl_variable" href="#a1764d97c394e6e13e2754580b9c71452">accel_</a>.y = 0;</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    <span class="comment">// Always falling to check if we aren&#39;t grounded</span></div>
-<div class="line"><span class="lineno">   61</span>    <span class="comment">// If we are, we will return to the same spot</span></div>
-<div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> gravity = 1;  <span class="comment">// gravity = 1 pixel / frame_time^2</span></div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.y += gravity;</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4ceb8b00f8520dfbe01dda96d9afc472">accel_time_</a> &gt; 0) {</div>
-<div class="line"><span class="lineno">   67</span>        <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.y += <a class="code hl_variable" href="#a1764d97c394e6e13e2754580b9c71452">accel_</a>.y;</div>
-<div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="#a4ceb8b00f8520dfbe01dda96d9afc472">accel_time_</a>--;</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.x += <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.x;</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.y += <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.y;</div>
-<div class="line"><span class="lineno">   73</span>}</div>
-<div class="ttc" id="aclassMario_html_a1764d97c394e6e13e2754580b9c71452"><div class="ttname"><a href="#a1764d97c394e6e13e2754580b9c71452">Mario::accel_</a></div><div class="ttdeci">pro2::Pt accel_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00017">mario.hh:17</a></div></div>
-<div class="ttc" id="aclassMario_html_a4ceb8b00f8520dfbe01dda96d9afc472"><div class="ttname"><a href="#a4ceb8b00f8520dfbe01dda96d9afc472">Mario::accel_time_</a></div><div class="ttdeci">int accel_time_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00018">mario.hh:18</a></div></div>
-<div class="ttc" id="aclassMario_html_a617d49e2f5c6ea5a91b3cc269a94d4b1"><div class="ttname"><a href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">Mario::speed_</a></div><div class="ttdeci">pro2::Pt speed_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00016">mario.hh:16</a></div></div>
-<div class="ttc" id="aclassMario_html_a9a5079abae4f376e690bdb2d69c16217"><div class="ttname"><a href="#a9a5079abae4f376e690bdb2d69c16217">Mario::grounded_</a></div><div class="ttdeci">bool grounded_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00024">mario.hh:24</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a40a06fa07b9b2956edde6bedddc3e8bb" name="a40a06fa07b9b2956edde6bedddc3e8bb"></a>
@@ -334,10 +296,7 @@ Atributos estáticos privados</h2></td></tr>
 <dl class="section return"><dt>Devuelve</dt><dd>int amb els punts que té al moment </dd></dl>
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00049">49</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>                            {</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4d323f2aeabc325e28a93ab4688e4459">redemtionPoints_</a>;</div>
-<div class="line"><span class="lineno">   51</span>    }</div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="acc0a64d028654c6bddca364379147bb4" name="acc0a64d028654c6bddca364379147bb4"></a>
@@ -358,15 +317,7 @@ Atributos estáticos privados</h2></td></tr>
 <p>Retorna la hitbox del mario. </p>
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8cc_source.html#l00083">83</a> del archivo <a class="el" href="mario_8cc_source.html">mario.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>                               {</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> pro2::Rect({</div>
-<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.x - 6,           </div>
-<div class="line"><span class="lineno">   86</span>        <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.y - 15,         </div>
-<div class="line"><span class="lineno">   87</span>        <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.x + 6,           </div>
-<div class="line"><span class="lineno">   88</span>        <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.y + 1    </div>
-<div class="line"><span class="lineno">   89</span>    });</div>
-<div class="line"><span class="lineno">   90</span>}</div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="adb7c1e4fe5678628216c3110a8eb10c0" name="adb7c1e4fe5678628216c3110a8eb10c0"></a>
@@ -392,11 +343,8 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00063">63</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>                             {</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a9a5079abae4f376e690bdb2d69c16217">grounded_</a>;</div>
-<div class="line"><span class="lineno">   65</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00067">67</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="ac3b75d0650fb2a149d33fd9f1420da99" name="ac3b75d0650fb2a149d33fd9f1420da99"></a>
@@ -415,14 +363,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8cc_source.html#l00075">75</a> del archivo <a class="el" href="mario_8cc_source.html">mario.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>                 {</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9a5079abae4f376e690bdb2d69c16217">grounded_</a>) {</div>
-<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="#a1764d97c394e6e13e2754580b9c71452">accel_</a>.y = -6;</div>
-<div class="line"><span class="lineno">   78</span>        <a class="code hl_variable" href="#a9a5079abae4f376e690bdb2d69c16217">grounded_</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   79</span>        <a class="code hl_variable" href="#a4ceb8b00f8520dfbe01dda96d9afc472">accel_time_</a> = 2;</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
-<div class="line"><span class="lineno">   81</span>}</div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="aee49024d8542a3f425d53b7ca86aefc8" name="aee49024d8542a3f425d53b7ca86aefc8"></a>
@@ -441,14 +382,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8cc_source.html#l00049">49</a> del archivo <a class="el" href="mario_8cc_source.html">mario.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>                                          {</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keyword">const</span> Pt top_left = {<a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.x - 6, <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.y - 15};</div>
-<div class="line"><span class="lineno">   51</span>    <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, top_left, <a class="code hl_variable" href="#a98619bbc1f150dae63dcd5a398bc05e8">mario_sprite_normal_</a>, <a class="code hl_variable" href="#ae0d25e2cdd2bcb16b2f97665d7482d8f">looking_left_</a>);</div>
-<div class="line"><span class="lineno">   52</span>}</div>
-<div class="ttc" id="aclassMario_html_a98619bbc1f150dae63dcd5a398bc05e8"><div class="ttname"><a href="#a98619bbc1f150dae63dcd5a398bc05e8">Mario::mario_sprite_normal_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; mario_sprite_normal_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00029">mario.hh:29</a></div></div>
-<div class="ttc" id="aclassMario_html_ae0d25e2cdd2bcb16b2f97665d7482d8f"><div class="ttname"><a href="#ae0d25e2cdd2bcb16b2f97665d7482d8f">Mario::looking_left_</a></div><div class="ttdeci">bool looking_left_</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00025">mario.hh:25</a></div></div>
-<div class="ttc" id="anamespacepro2_html_a80f038548a7ea3d520759a04437e096a"><div class="ttname"><a href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">pro2::paint_sprite</a></div><div class="ttdeci">void paint_sprite(pro2::Window &amp;window, pro2::Pt orig, const vector&lt; vector&lt; int &gt; &gt; &amp;sprite, bool mirror)</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00022">utils.cc:22</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a0bc34a1f489d6d10905c83fa8e1e72f9" name="a0bc34a1f489d6d10905c83fa8e1e72f9"></a>
@@ -475,10 +409,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00055">55</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>                       {</div>
-<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>;</div>
-<div class="line"><span class="lineno">   57</span>    }</div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a970f238b3538fa175b0f73aa29aa2c48" name="a970f238b3538fa175b0f73aa29aa2c48"></a>
@@ -504,14 +435,35 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00067">67</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>                                     {</div>
-<div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="#a9a5079abae4f376e690bdb2d69c16217">grounded_</a> = grounded;</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9a5079abae4f376e690bdb2d69c16217">grounded_</a>) {</div>
-<div class="line"><span class="lineno">   70</span>            <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.y = 0;</div>
-<div class="line"><span class="lineno">   71</span>        }</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00071">71</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
+</div>
+</div>
+<a id="a52e29f7688225e81da18bad4ed571a0e" name="a52e29f7688225e81da18bad4ed571a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e29f7688225e81da18bad4ed571a0e">&#9670;&#160;</a></span>set_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mario::set_x </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00063">63</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a807ce8785091bd609e156292409b376f" name="a807ce8785091bd609e156292409b376f"></a>
@@ -538,11 +490,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00059">59</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>                      {</div>
-<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>.y = <a class="code hl_variable" href="mario_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>;</div>
-<div class="line"><span class="lineno">   61</span>    }</div>
-<div class="ttc" id="amario_8cc_html_a536c339057ad4fa1840581ffde1bec6b"><div class="ttname"><a href="mario_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a></div><div class="ttdeci">const int y</div><div class="ttdef"><b>Definition</b> <a href="mario_8cc_source.html#l00014">mario.cc:14</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a4b8785eae84e2d5f0f45bf5290054f92" name="a4b8785eae84e2d5f0f45bf5290054f92"></a>
@@ -568,12 +516,8 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00074">74</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>                           {</div>
-<div class="line"><span class="lineno">   75</span>        <a class="code hl_function" href="#a970f238b3538fa175b0f73aa29aa2c48">set_grounded</a>(!<a class="code hl_variable" href="#a9a5079abae4f376e690bdb2d69c16217">grounded_</a>);</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="ttc" id="aclassMario_html_a970f238b3538fa175b0f73aa29aa2c48"><div class="ttname"><a href="#a970f238b3538fa175b0f73aa29aa2c48">Mario::set_grounded</a></div><div class="ttdeci">void set_grounded(bool grounded)</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00067">mario.hh:67</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00078">78</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a785b80003703d5213894a4999035484c" name="a785b80003703d5213894a4999035484c"></a>
@@ -596,39 +540,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8cc_source.html#l00092">92</a> del archivo <a class="el" href="mario_8cc_source.html">mario.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>                                                                        {</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_variable" href="#a55592c8a186b21c9688ec1e10736711f">last_pos_</a> = <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>;</div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (window.<a class="code hl_function" href="classpro2_1_1Window.html#a475d4644d6f1f082a15bf6b1eaf2631b">is_key_down</a>(<a class="code hl_variable" href="#a22dbf8a740c51b63f4bb24397910e734">jump_key_</a>)) {</div>
-<div class="line"><span class="lineno">   95</span>        <a class="code hl_function" href="#ac3b75d0650fb2a149d33fd9f1420da99">jump</a>();</div>
-<div class="line"><span class="lineno">   96</span>    }</div>
-<div class="line"><span class="lineno">   97</span> </div>
-<div class="line"><span class="lineno">   98</span>    <span class="comment">// Velocitat horitzontal</span></div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.x = 0; </div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span> (window.<a class="code hl_function" href="classpro2_1_1Window.html#a475d4644d6f1f082a15bf6b1eaf2631b">is_key_down</a>(<a class="code hl_variable" href="#ae5b22ddb16e949a19ec7211772ce0ad7">left_key_</a>)) {</div>
-<div class="line"><span class="lineno">  101</span>        <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.x = -4;</div>
-<div class="line"><span class="lineno">  102</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (window.<a class="code hl_function" href="classpro2_1_1Window.html#a475d4644d6f1f082a15bf6b1eaf2631b">is_key_down</a>(<a class="code hl_variable" href="#aeed62c8513146eaa6607d0a407fc158e">right_key_</a>)) {</div>
-<div class="line"><span class="lineno">  103</span>        <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.x = 4;</div>
-<div class="line"><span class="lineno">  104</span>    }</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.x != 0) {</div>
-<div class="line"><span class="lineno">  106</span>        <a class="code hl_variable" href="#ae0d25e2cdd2bcb16b2f97665d7482d8f">looking_left_</a> = <a class="code hl_variable" href="#a617d49e2f5c6ea5a91b3cc269a94d4b1">speed_</a>.x &lt; 0;</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-<div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_function" href="#a58b73569c9d36b5443c4e0efcf5a1f95">apply_physics_</a>();</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_function" href="#a970f238b3538fa175b0f73aa29aa2c48">set_grounded</a>(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> Platform&amp; platform : platforms) {</div>
-<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">if</span> (platform.has_crossed_floor_downwards(<a class="code hl_variable" href="#a55592c8a186b21c9688ec1e10736711f">last_pos_</a>, <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>)) {</div>
-<div class="line"><span class="lineno">  115</span>            <a class="code hl_function" href="#a970f238b3538fa175b0f73aa29aa2c48">set_grounded</a>(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  116</span>            <a class="code hl_function" href="#a807ce8785091bd609e156292409b376f">set_y</a>(platform.top());</div>
-<div class="line"><span class="lineno">  117</span>        }</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span>}</div>
-<div class="ttc" id="aclassMario_html_a58b73569c9d36b5443c4e0efcf5a1f95"><div class="ttname"><a href="#a58b73569c9d36b5443c4e0efcf5a1f95">Mario::apply_physics_</a></div><div class="ttdeci">void apply_physics_()</div><div class="ttdef"><b>Definition</b> <a href="mario_8cc_source.html#l00054">mario.cc:54</a></div></div>
-<div class="ttc" id="aclassMario_html_a807ce8785091bd609e156292409b376f"><div class="ttname"><a href="#a807ce8785091bd609e156292409b376f">Mario::set_y</a></div><div class="ttdeci">void set_y(int y)</div><div class="ttdef"><b>Definition</b> <a href="mario_8hh_source.html#l00059">mario.hh:59</a></div></div>
-<div class="ttc" id="aclassMario_html_ac3b75d0650fb2a149d33fd9f1420da99"><div class="ttname"><a href="#ac3b75d0650fb2a149d33fd9f1420da99">Mario::jump</a></div><div class="ttdeci">void jump()</div><div class="ttdef"><b>Definition</b> <a href="mario_8cc_source.html#l00075">mario.cc:75</a></div></div>
-<div class="ttc" id="aclasspro2_1_1Window_html_a475d4644d6f1f082a15bf6b1eaf2631b"><div class="ttname"><a href="classpro2_1_1Window.html#a475d4644d6f1f082a15bf6b1eaf2631b">pro2::Window::is_key_down</a></div><div class="ttdeci">bool is_key_down(int code) const</div><div class="ttdoc">Determina si cierta tecla estuvo presionada en el fotograma anterior.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00274">window.hh:274</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
@@ -653,8 +565,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00017">17</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>{0, 0};</div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a4ceb8b00f8520dfbe01dda96d9afc472" name="a4ceb8b00f8520dfbe01dda96d9afc472"></a>
@@ -844,39 +755,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
-<div class="line">    {<a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>, <a class="code hl_variable" href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a>},</div>
-<div class="line">}</div>
-<div class="ttc" id="across_8cc_html_a4d82239905175fe792bc2c8faf35bd1b"><div class="ttname"><a href="cross_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a></div><div class="ttdeci">const int _</div><div class="ttdef"><b>Definition</b> <a href="cross_8cc_source.html#l00010">cross.cc:10</a></div></div>
-<div class="ttc" id="across_8cc_html_a79f221932ddea28e0bebf65e4ed17977"><div class="ttname"><a href="cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977">br</a></div><div class="ttdeci">const int br</div><div class="ttdef"><b>Definition</b> <a href="cross_8cc_source.html#l00012">cross.cc:12</a></div></div>
-<div class="ttc" id="amario_8cc_html_a8ac749e7a8335becaf1f0c4d255ca28c"><div class="ttname"><a href="mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c">wh</a></div><div class="ttdeci">const int wh</div><div class="ttdef"><b>Definition</b> <a href="mario_8cc_source.html#l00025">mario.cc:25</a></div></div>
-<div class="ttc" id="amario_8cc_html_aab1a61aefa4f95e20603bbf888cb2a5f"><div class="ttname"><a href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a></div><div class="ttdeci">const int r</div><div class="ttdef"><b>Definition</b> <a href="mario_8cc_source.html#l00011">mario.cc:11</a></div></div>
-<div class="ttc" id="amario_8cc_html_af8696c95f62af6274dc8b026e8cad660"><div class="ttname"><a href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a></div><div class="ttdeci">const int s</div><div class="ttdef"><b>Definition</b> <a href="mario_8cc_source.html#l00012">mario.cc:12</a></div></div>
-</div><!-- fragment -->
+<b>Valor inicial:</b><div class="fragment"></div><!-- fragment -->
 <p class="definition">Definición en la línea <a class="el" href="mario_8hh_source.html#l00029">29</a> del archivo <a class="el" href="mario_8hh_source.html">mario.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>       :</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_function" href="#ad88345556f10629d39a0d0939dd7b6b6">Mario</a>(pro2::Pt <a class="code hl_function" href="#a0bc34a1f489d6d10905c83fa8e1e72f9">pos</a>, <span class="keywordtype">int</span> jumpKey, <span class="keywordtype">int</span> leftKey, <span class="keywordtype">int</span> rightKey) : <a class="code hl_variable" href="#afe8565966d1bdea7201e182558d2d709">pos_</a>(<a class="code hl_function" href="#a0bc34a1f489d6d10905c83fa8e1e72f9">pos</a>), </div>
-<div class="line"><span class="lineno">   31</span>    <a class="code hl_variable" href="#a55592c8a186b21c9688ec1e10736711f">last_pos_</a>(<a class="code hl_function" href="#a0bc34a1f489d6d10905c83fa8e1e72f9">pos</a>), </div>
-<div class="line"><span class="lineno">   32</span>    <a class="code hl_variable" href="#a22dbf8a740c51b63f4bb24397910e734">jump_key_</a>(jumpKey),</div>
-<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="#ae5b22ddb16e949a19ec7211772ce0ad7">left_key_</a>(leftKey),</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="#aeed62c8513146eaa6607d0a407fc158e">right_key_</a>(rightKey)</div>
-<div class="line"><span class="lineno">   35</span>    {}</div>
-<div class="line"><span class="lineno">   36</span></div>
+<div class="fragment"></div>
 <div class="line"><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="#a6a833fb3bb1f2c1a302cb5ed0e6787a2">add_points</a>(){</div>
 <div class="line"><span class="lineno">   41</span>        <a class="code hl_variable" href="#a4d323f2aeabc325e28a93ab4688e4459">redemtionPoints_</a>++;</div>
 <div class="line"><span class="lineno">   42</span>    }</div>

@@ -25,7 +25,6 @@ class Game {
     Finder<Cross> finder_crosses_;
 
     bool paused_;
-    bool gameover_;
     bool finished_;
     int cross_height_y_ = 0;
     bool cross_movingup_ = true;

@@ -5,5 +5,6 @@ var searchData=
   ['add_2',['add',['../classFinder.html#a31c1952d79927548ce8fbde267628db3',1,'Finder']]],
   ['add_5fpoints_3',['add_points',['../classMario.html#a6a833fb3bb1f2c1a302cb5ed0e6787a2',1,'Mario']]],
   ['alt_4',['Alt',['../namespacepro2.html#afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b',1,'pro2']]],
-  ['apply_5fphysics_5f_5',['apply_physics_',['../classCross.html#a8aaa1bab1fe679cda11438ce029efaf3',1,'Cross::apply_physics_()'],['../classMario.html#a58b73569c9d36b5443c4e0efcf5a1f95',1,'Mario::apply_physics_()']]]
+  ['animation_5fspeed_5f_5',['animation_speed_',['../classSandglass.html#ad42d5473d544c32852d1569c40284795',1,'Sandglass']]],
+  ['apply_5fphysics_5f_6',['apply_physics_',['../classCross.html#a8aaa1bab1fe679cda11438ce029efaf3',1,'Cross::apply_physics_()'],['../classMario.html#a58b73569c9d36b5443c4e0efcf5a1f95',1,'Mario::apply_physics_()'],['../classSandglass.html#a700c40d41a0ed8c0e3ac31f777462028',1,'Sandglass::apply_physics_()']]]
 ];

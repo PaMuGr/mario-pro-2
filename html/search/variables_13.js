@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['y_0',['y',['../structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56',1,'pro2::Pt::y'],['../mario_8cc.html#a536c339057ad4fa1840581ffde1bec6b',1,'y:&#160;mario.cc']]],
-  ['yellow_1',['yellow',['../namespacepro2.html#a2724ea0a5071964af91346a0f94fd60c',1,'pro2']]]
+  ['w_0',['w',['../mario_8cc.html#a66326676d44c838441a4dc39c85f599b',1,'mario.cc']]],
+  ['wh_1',['wh',['../mario_8cc.html#a8ac749e7a8335becaf1f0c4d255ca28c',1,'mario.cc']]],
+  ['white_2',['white',['../namespacepro2.html#a776e9498a2ffad905d1116b37ac41345',1,'pro2']]],
+  ['width_3',['WIDTH',['../main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05',1,'main.cc']]]
 ];

@@ -86,6 +86,9 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#pri-static-attribs">Atributos estáticos privados</a> &#124;
 <a href="classFinder-members.html">Lista de todos los miembros</a>  </div>
   <div class="headertitle"><div class="title">Referencia de la plantilla de la clase Finder&lt; T &gt;</div></div>
 </div><!--header-->
@@ -98,19 +101,40 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a8a823378bec0a23c9fa080f2332999ad" id="r_a8a823378bec0a23c9fa080f2332999ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a823378bec0a23c9fa080f2332999ad">Finder</a> ()</td></tr>
 <tr class="separator:a8a823378bec0a23c9fa080f2332999ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31c1952d79927548ce8fbde267628db3" id="r_a31c1952d79927548ce8fbde267628db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31c1952d79927548ce8fbde267628db3">add</a> (const T *t)</td></tr>
+<tr class="memdesc:a31c1952d79927548ce8fbde267628db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Afegeix a quadsOfObject les quadricules on es troba t, també afegeix a objectsTopLeft els punters dins de cada quadricula.  <br /></td></tr>
 <tr class="separator:a31c1952d79927548ce8fbde267628db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073967ec8a3f5189c1922aeaf161098c" id="r_a073967ec8a3f5189c1922aeaf161098c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a073967ec8a3f5189c1922aeaf161098c">update</a> (const T *t)</td></tr>
-<tr class="separator:a073967ec8a3f5189c1922aeaf161098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a9d5bf342c5a13048d7853b52557f7d" id="r_a8a9d5bf342c5a13048d7853b52557f7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a9d5bf342c5a13048d7853b52557f7d">remove</a> (const T *t)</td></tr>
+<tr class="memdesc:a8a9d5bf342c5a13048d7853b52557f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Treu de quadsOfObject les quadricules on es trobava t, també treu de objectsTopLeft els punters dins de cada quadricula.  <br /></td></tr>
 <tr class="separator:a8a9d5bf342c5a13048d7853b52557f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073967ec8a3f5189c1922aeaf161098c" id="r_a073967ec8a3f5189c1922aeaf161098c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a073967ec8a3f5189c1922aeaf161098c">update</a> (const T *t)</td></tr>
+<tr class="memdesc:a073967ec8a3f5189c1922aeaf161098c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Treiem l'antic i fiquem el nou ja mogut.  <br /></td></tr>
+<tr class="separator:a073967ec8a3f5189c1922aeaf161098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dc2d4339d1982a26caf9373f34e3084" id="r_a7dc2d4339d1982a26caf9373f34e3084"><td class="memItemLeft" align="right" valign="top">std::set&lt; const T * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dc2d4339d1982a26caf9373f34e3084">query</a> (<a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> rect) const</td></tr>
 <tr class="memdesc:a7dc2d4339d1982a26caf9373f34e3084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el conjunt d'objectes amb rectangles total o parcialment dins de <code>rect</code>.  <br /></td></tr>
 <tr class="separator:a7dc2d4339d1982a26caf9373f34e3084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a505460974de6b20a36a98b4062d0ea12" id="r_a505460974de6b20a36a98b4062d0ea12"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a505460974de6b20a36a98b4062d0ea12">setPts</a> (const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;rObj) const</td></tr>
+<tr class="memdesc:a505460974de6b20a36a98b4062d0ea12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el conjunt de quadricules on es troba l'objecte.  <br /></td></tr>
+<tr class="separator:a505460974de6b20a36a98b4062d0ea12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a3b60c176851782e2780dd6c91a94e4bd" id="r_a3b60c176851782e2780dd6c91a94e4bd"><td class="memItemLeft" align="right" valign="top">std::map&lt; const T *, std::set&lt; <a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b60c176851782e2780dd6c91a94e4bd">quadsOfObject</a></td></tr>
+<tr class="separator:a3b60c176851782e2780dd6c91a94e4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e47df48868626679624c0f90f53973" id="r_a24e47df48868626679624c0f90f53973"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>, std::set&lt; const T * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24e47df48868626679624c0f90f53973">objectsTopLeft</a></td></tr>
+<tr class="separator:a24e47df48868626679624c0f90f53973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos estáticos privados</h2></td></tr>
+<tr class="memitem:a75ecebb34d5a39cd2484f5a38457d820" id="r_a75ecebb34d5a39cd2484f5a38457d820"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a> = 80</td></tr>
+<tr class="separator:a75ecebb34d5a39cd2484f5a38457d820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 class Finder&lt; T &gt;</div>
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00006">6</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00012">12</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a8a823378bec0a23c9fa080f2332999ad" name="a8a823378bec0a23c9fa080f2332999ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a823378bec0a23c9fa080f2332999ad">&#9670;&#160;</a></span>Finder()</h2>
@@ -137,9 +161,8 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00009">9</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>{}</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00049">49</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
@@ -150,6 +173,9 @@ template&lt;typename T&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classFinder.html">Finder</a>&lt; T &gt;::add </td>
@@ -158,8 +184,23 @@ template&lt;typename T&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
+<p>Afegeix a quadsOfObject les quadricules on es troba t, també afegeix a objectsTopLeft els punters dins de cada quadricula. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Punter al objecte </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00058">58</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a7dc2d4339d1982a26caf9373f34e3084" name="a7dc2d4339d1982a26caf9373f34e3084"></a>
@@ -169,6 +210,9 @@ template&lt;typename T&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::set&lt; const T * &gt; <a class="el" href="classFinder.html">Finder</a>&lt; T &gt;::query </td>
@@ -177,6 +221,11 @@ template&lt;typename T&gt; </div>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Retorna el conjunt d'objectes amb rectangles total o parcialment dins de <code>rect</code>. </p>
@@ -189,6 +238,8 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins de <code>rect</code> </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00120">120</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a8a9d5bf342c5a13048d7853b52557f7d" name="a8a9d5bf342c5a13048d7853b52557f7d"></a>
@@ -198,6 +249,9 @@ template&lt;typename T&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classFinder.html">Finder</a>&lt; T &gt;::remove </td>
@@ -206,8 +260,61 @@ template&lt;typename T&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
+<p>Treu de quadsOfObject les quadricules on es trobava t, també treu de objectsTopLeft els punters dins de cada quadricula. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Punter al objecte </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00078">78</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
+</div>
+</div>
+<a id="a505460974de6b20a36a98b4062d0ea12" name="a505460974de6b20a36a98b4062d0ea12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505460974de6b20a36a98b4062d0ea12">&#9670;&#160;</a></span>setPts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; <a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> &gt; <a class="el" href="classFinder.html">Finder</a>&lt; T &gt;::setPts </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rObj</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna el conjunt de quadricules on es troba l'objecte. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rObj</td><td>El rectangle del objecte</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Un set de Pt's amb el topleft de les quadricules on està el objecte </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00031">31</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a073967ec8a3f5189c1922aeaf161098c" name="a073967ec8a3f5189c1922aeaf161098c"></a>
@@ -217,6 +324,9 @@ template&lt;typename T&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classFinder.html">Finder</a>&lt; T &gt;::update </td>
@@ -225,7 +335,101 @@ template&lt;typename T&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Treiem l'antic i fiquem el nou ja mogut. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Punter al objecte </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00102">102</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="a24e47df48868626679624c0f90f53973" name="a24e47df48868626679624c0f90f53973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e47df48868626679624c0f90f53973">&#9670;&#160;</a></span>objectsTopLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>, std::set&lt;const T*&gt; &gt; <a class="el" href="classFinder.html">Finder</a>&lt; T &gt;::objectsTopLeft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00018">18</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+
+</div>
+</div>
+<a id="a75ecebb34d5a39cd2484f5a38457d820" name="a75ecebb34d5a39cd2484f5a38457d820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ecebb34d5a39cd2484f5a38457d820">&#9670;&#160;</a></span>QUADSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="classFinder.html">Finder</a>&lt; T &gt;::QUADSIZE = 80</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00021">21</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+
+</div>
+</div>
+<a id="a3b60c176851782e2780dd6c91a94e4bd" name="a3b60c176851782e2780dd6c91a94e4bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b60c176851782e2780dd6c91a94e4bd">&#9670;&#160;</a></span>quadsOfObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;const T*, std::set&lt;<a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>&gt; &gt; <a class="el" href="classFinder.html">Finder</a>&lt; T &gt;::quadsOfObject</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00016">16</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
 
 </div>
 </div>

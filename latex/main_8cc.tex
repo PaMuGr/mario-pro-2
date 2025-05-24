@@ -8,8 +8,7 @@
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include "{}game.\+hh"{}}\newline
 {\ttfamily \#include "{}window.\+hh"{}}\newline
-Gráfico de dependencias incluidas en main.\+cc\+:
-\nopagebreak
+Gráfico de dependencias incluidas en main.\+cc\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -52,21 +51,21 @@ int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00031}{31}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
+Definición en la línea \mbox{\hyperlink{main_8cc_source_l00034}{34}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\ window(\textcolor{stringliteral}{"{}Mario\ Pro\ 2"{}},\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}},\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}});}
-\DoxyCodeLine{00033\ \ \ \ \ window.set\_fps(\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}});}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classGame}{Game}}\ game(\mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}});}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{while}\ (window.next\_frame()\ \&\&\ !game.is\_finished())\ \{}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ game.update(window);}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ game.paint(window);}
-\DoxyCodeLine{00040\ \ \ \ \ \}}
-\DoxyCodeLine{00041\ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\ window(\textcolor{stringliteral}{"{}Mario\ Pro\ 2"{}},\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}},\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}});}
+\DoxyCodeLine{00036\ \ \ \ \ window.set\_fps(\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classGame}{Game}}\ game(\mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}});}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordflow}{while}\ (window.next\_frame()\ \&\&\ !game.is\_finished())\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ game.update(window);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ game.paint(window);}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \}}
 
 \end{DoxyCode}
 
@@ -80,7 +79,7 @@ const int FPS = 48}
 
 
 
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00029}{29}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
+Definición en la línea \mbox{\hyperlink{main_8cc_source_l00032}{32}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
 
 \Hypertarget{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}\index{main.cc@{main.cc}!HEIGHT@{HEIGHT}}
 \index{HEIGHT@{HEIGHT}!main.cc@{main.cc}}
@@ -90,7 +89,7 @@ const int HEIGHT = 320}
 
 
 
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00027}{27}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
+Definición en la línea \mbox{\hyperlink{main_8cc_source_l00030}{30}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
 
 \Hypertarget{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}\index{main.cc@{main.cc}!WIDTH@{WIDTH}}
 \index{WIDTH@{WIDTH}!main.cc@{main.cc}}
@@ -100,7 +99,7 @@ const int WIDTH = 480}
 
 
 
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00027}{27}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
+Definición en la línea \mbox{\hyperlink{main_8cc_source_l00030}{30}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
 
 \Hypertarget{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}\index{main.cc@{main.cc}!ZOOM@{ZOOM}}
 \index{ZOOM@{ZOOM}!main.cc@{main.cc}}
@@ -110,5 +109,5 @@ const int ZOOM = 2}
 
 
 
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00028}{28}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
+Definición en la línea \mbox{\hyperlink{main_8cc_source_l00031}{31}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
 

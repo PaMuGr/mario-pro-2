@@ -6,13 +6,16 @@
  * @mainpage Mario Pro 2 - Documentació del Joc
  * 
  * @section intro_sec Introducció
- * Aquesta és la documentació per el joc de Mario Pro 2, un plataformer 2D
+ * Aquesta és la documentació per el joc de Mario Pro 2, un plataformer 2D amb Jesus com a protagonista
+ * - Hi podem trobar les Creus que haurem d'agafar
+ * - Enemics com serps (Coming soon)
+ * - Un rellotge que para el temps
  * 
  * @section tech_sec Detalls Tecnics
  * - Resolució: 480x320 
  * - Target FPS: 48
  * 
- * @section usage_sec Us
+ * @section usage_sec Controls del Joc
  * Controls:
  * - Fletxer per moure's 
  * - Espai per saltar

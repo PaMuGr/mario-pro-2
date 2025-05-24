@@ -7,9 +7,7 @@ using namespace pro2;
 
 Game::Game(int width, int height)
     : mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right),
-      sandglass_({200, 114}),
-      paused_(false),      
-      gameover_(false), 
+      sandglass_({200, 114}),    
       crosses_{
         Cross({-100, 235}),
         Cross({325, 134},{-1,0},30),
@@ -26,7 +24,7 @@ Game::Game(int width, int height)
         int cy = randomizer(-3,3);
         platforms_.push_back(Platform(250 + i * 200, 400 + i * 200, 150+cy*10, 161+cy*10));
         
-        //afegim les crosses
+        //Afegim les crosses
         crosses_.push_back(Cross({
             (randomizer(380,100) + i * 200 + 400 + i * 200) / 2,  //x
             135 - randomizer(200,0)/4 + cy*10                //y
@@ -53,25 +51,28 @@ void Game::process_keys(pro2::Window& window) {
         paused_ = !paused_;
         return;
     }
-    if (gameover_ && window.was_key_pressed(Keys::Return)) {
-        *this = Game(window.width(), window.height());  
-    }
 }
 
 void Game::update_objects(pro2::Window& window) {
-    auto marioHeight = (mario_.pos()).y;
-    if(marioHeight > 500) {
-        gameover_ = true;
-        return;
-    }
     
     mario_.update(window, platforms_);
+
+    int floor = window.topleft().y + window.height() + 200;
+    if(mario_.pos().y > floor) {
+        *this = Game(window.width(), window.height()); 
+        window.move_camera({
+            (window.width() / 2) - window.width() / 2,  
+            window.height() / 2                   
+        });
+    }
+
     pro2::Rect marHit = mario_.get_rect();
     auto visibles = finder_crosses_.query(window.camera_rect());
     sandglass_.update(window);
 
     if (interseccionen(marHit, sandglass_.get_rect())) {
             //Fica el cooldown a 10s --> 480 frames (anem a 48 Frames per second)
+            //Hauria d'afegir que part del cooldown fos l'efecte i part el temps per tornar a apareixer un nou
             sandglass_.set_cooldown(480);
         }
 
@@ -93,7 +94,6 @@ void Game::update_objects(pro2::Window& window) {
         //Fem tot menys deixar que es moguin
 
         for(const Cross* c : visibles){
-            //const_cast transforma el punter a un no const
             Cross* cc = const_cast<Cross*>(c);
             finder_crosses_.update(c);
             if (interseccionen(marHit, cc->get_rect(cross_height_y_))) {
@@ -129,17 +129,15 @@ void Game::update_camera(pro2::Window& window) {
 }
 
 void Game::update(pro2::Window& window) {
-    
     process_keys(window);
-    if(!paused_ && !gameover_){
+    if(!paused_){
         update_objects(window);
         update_camera(window);
     } 
 }
 
 void Game::paint(pro2::Window& window) {
-    if(!paused_ and !gameover_){
-        
+    if(!paused_){
         if(!sandglass_.is_in_cooldown()){
             window.clear(sky_blue);
             sandglass_.paint(window);
@@ -165,14 +163,12 @@ void Game::paint(pro2::Window& window) {
         paint_text(window, {window.camera_center().x - 215, window.camera_center().y - 150}, "POINTS");
         mario_.paint(window);
     } else if(paused_){
+        //pantalla en gris amb el text PAUSED
         window.clear(0x898989);
         //pinta el text PAUSED
-        paint_text(window, {window.camera_center().x-10, window.camera_center().y}, "PAUSED");
-    } else if(gameover_){
-        window.clear(0x8b0000);
-        //pinta el text PAUSED
-        paint_text(window, {window.camera_center().x-20, window.camera_center().y}, "GAME OVER");
-        paint_text(window, {window.camera_center().x-20, window.camera_center().y+10}, "PRESS 'ENTER' TO START AGAIN");
+        int pos_x = window.topleft().x + window.width()/2 - 20;
+        int pos_y = window.topleft().y + window.height()/2 -10;
+        paint_text(window, {pos_x, pos_y}, "PAUSED");
     } 
     
     //pintar recuadre
