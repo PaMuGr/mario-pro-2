@@ -13,14 +13,14 @@ Game::Game(int width, int height)
         Cross({325, 134},{-1,0},30),
       },
       platforms_{
-          Platform(-100, -85, 250, 261),
+          Platform(-100, -70, 250, 261),
           Platform(0, 200, 250, 261),
           Platform(100, 300, 200, 211),
           Platform(250, 400, 150, 161),
       },
 
       finished_(false) {
-    for (int i = 1; i < 20; i++) {
+    for (int i = 1; i < 5000; i++) {
         int cy = randomizer(-3,3);
         platforms_.push_back(Platform(250 + i * 200, 400 + i * 200, 150+cy*10, 161+cy*10));
         
@@ -165,9 +165,9 @@ void Game::paint(pro2::Window& window) {
     } else if(paused_){
         //pantalla en gris amb el text PAUSED
         window.clear(0x898989);
-        //pinta el text PAUSED
+        //pinta el text PAUSED al mitg de la pantalla
         int pos_x = window.topleft().x + window.width()/2 - 20;
-        int pos_y = window.topleft().y + window.height()/2 -10;
+        int pos_y = window.topleft().y + window.height()/2 - 10;
         paint_text(window, {pos_x, pos_y}, "PAUSED");
     } 
     

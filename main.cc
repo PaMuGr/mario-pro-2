@@ -8,8 +8,8 @@
  * @section intro_sec Introducció
  * Aquesta és la documentació per el joc de Mario Pro 2, un plataformer 2D amb Jesus com a protagonista
  * - Hi podem trobar les Creus que haurem d'agafar
- * - Enemics com serps (Coming soon)
- * - Un rellotge que para el temps
+ * - Enemic -> Dimoni (Coming soon)
+ * - Un rellotge que para el temps 10 segons
  * 
  * @section tech_sec Detalls Tecnics
  * - Resolució: 480x320 
@@ -19,6 +19,7 @@
  * Controls:
  * - Fletxer per moure's 
  * - Espai per saltar
+ * - Si caus torna a començar desde 0 el joc, no cal reiniciar
  */
 
 #include <vector>

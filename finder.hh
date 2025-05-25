@@ -12,9 +12,9 @@ template <typename T>
 class Finder {
 
 private:
-    //Per cada punter tenim en quines quadricules esta
+    //Per cada punter tenim en quines quadricules (set de topleft's)
     std::map<const T*, std::set<pro2::Pt>> quadsOfObject;
-    //Pt es el top left de la quadricula i el set correspon als objectes en ella
+    //Pt es el top left de la quadricula i el set correspon als objectes en la quadricula
     std::map<pro2::Pt, std::set<const T*>> objectsTopLeft;
     
     //Tamany de les quadricules en les quals es dividira el mon
@@ -30,7 +30,7 @@ private:
      */
     std::set<pro2::Pt> setPts(const pro2::Rect& rObj) const {
         std::set<pro2::Pt> result;
-        //Si tenim objecte de topleft (524,17) llavors la quadricula on esta te topleft (500, 0) 
+        //Si tenim objecte de topleft (524,17) llavors les quadricules van del topleft minim (500,0) al bottom right maxim, iterem com una matriu
         int left = (rObj.left / QUADSIZE) * QUADSIZE;
         int right = (rObj.right / QUADSIZE) * QUADSIZE;
         int top = (rObj.top / QUADSIZE) * QUADSIZE;
@@ -112,6 +112,8 @@ public:
      * Si el nombre de rectangles del contenidor és `n`, el 
      * cost de l'algorisme ha de ser O(log n).
      *
+     * Hem de primer trobar els elements en les quadricules i veure si aquestes estan dins del rectangle de la càmera
+     * 
      * @param rect El rectangle de cerca
      *
      * @returns Un conjunt de punters a objectes que tenen un 
