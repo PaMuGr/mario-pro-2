@@ -14,20 +14,24 @@
 #include "texto.hh"
 #include "finder.hh"
 #include "sandglass.hh"
+#include "demon.hh"
 
 class Game {
     Mario                 mario_;
     std::vector<Platform> platforms_;
     std::list<Cross> crosses_;
     Sandglass sandglass_;
-    //FINDER de les plataformes
+    Demon demon_;
+    std::list<Fireball> fireballs_;
+
+    //FINDER de les plataformes i crosses
     Finder<Platform> finder_platforms_;
     Finder<Cross> finder_crosses_;
 
     bool paused_;
     bool finished_;
+    bool reset_;
     int cross_height_y_ = 0;
-    bool cross_movingup_ = true;
 
     void process_keys(pro2::Window& window);
     void update_objects(pro2::Window& window);

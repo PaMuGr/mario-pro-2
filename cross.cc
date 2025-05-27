@@ -63,8 +63,8 @@ void Cross::update(pro2::Window& window) {
     int distx = (pos_.x - ini_pos_.x);
     int disty = (pos_.y - ini_pos_.y);
     if (distx * distx + disty * disty > dist_ * dist_) {
-        speed_.x = -speed_.x;
-        speed_.y = -speed_.y;
+        speed_.x *= -1;
+        speed_.y *= -1;
     }
     pos_.x += speed_.x;
     pos_.y += speed_.y;

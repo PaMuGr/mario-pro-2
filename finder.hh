@@ -57,12 +57,12 @@ public:
      */
     void add(const T *t){
         pro2::Rect rect = t->get_rect();
-        std::set<pro2::Pt> quads = setPts(rect);
+        std::set<pro2::Pt> quadricules = setPts(rect);
         
-        quadsOfObject[t] = quads;
+        quadsOfObject[t] = quadricules;
 
-        auto it = quads.begin();
-        while(it != quads.end()){
+        auto it = quadricules.begin();
+        while(it != quadricules.end()){
             objectsTopLeft[*it].insert(t); 
             it++;
         }
@@ -79,10 +79,10 @@ public:
         auto it = quadsOfObject.find(t);
 
         if(it != quadsOfObject.end()){
-            std::set<pro2::Pt> quads = it->second;
-            auto it2 = quads.begin();
+            std::set<pro2::Pt> quadricules = it->second;
+            auto it2 = quadricules.begin();
 
-            while(it2 != quads.end()){
+            while(it2 != quadricules.end()){
                 objectsTopLeft[*it2].erase(t);
                 if(objectsTopLeft[*it2].empty()){
                     objectsTopLeft.erase(*it2);
@@ -121,10 +121,10 @@ public:
      */
     std::set<const T *> query(pro2::Rect rect) const{
         std::set<const T*> result;
-        std::set<pro2::Pt> quads = setPts(rect);
-        auto it = quads.begin();
+        std::set<pro2::Pt> quadricules = setPts(rect);
+        auto it = quadricules.begin();
 
-        while(it != quads.end()){
+        while(it != quadricules.end()){
             auto it2 = objectsTopLeft.find(*it);
             if(it2 != objectsTopLeft.end()){
                 std::set<const T*> setPunters = it2->second;

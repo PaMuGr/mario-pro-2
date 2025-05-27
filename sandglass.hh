@@ -17,9 +17,6 @@ class Sandglass {
     pro2::Pt pos_,ini_pos_;
     pro2::Pt speed_ = {0, 0};
     int dist_ = 0;
-    
-    bool grounded_ = false;
-	bool looking_left_ = false;
 
     bool is_in_cooldown_ = false;
     int cooldown_ = 15; //En segons
@@ -75,17 +72,6 @@ class Sandglass {
      */
     void set_y(int y) {
         pos_.y = y;
-    }
-
-     /**
-     * @brief Canvia la posició vertical per y
-     * 
-     * @param y Posició a intercanviar
-     * 
-     * @returns Un Pt amb la posició x i y de la Sandglass
-     */
-    bool is_grounded() const {
-        return grounded_;
     }
 
      /**

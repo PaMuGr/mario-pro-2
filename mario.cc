@@ -10,11 +10,6 @@ using namespace pro2;
 const int _ = -1;
 const int r = pro2::red;
 const int s = 0xecc49b;
-const int b = 0x5e6ddc;
-const int y = pro2::yellow;
-const int h = pro2::black;
-const int g = 0xaaaaaa;
-const int w = 0x8d573c;
 //brown
 const int br = 0x895129;
 //dark brown
@@ -98,9 +93,9 @@ void Mario::update(pro2::Window& window, const vector<Platform>& platforms) {
     // Velocitat horitzontal
     speed_.x = 0; 
     if (window.is_key_down(left_key_)) {
-        speed_.x = -4;
+        speed_.x = -6;
     } else if (window.is_key_down(right_key_)) {
-        speed_.x = 4;
+        speed_.x = 6;
     }
     if (speed_.x != 0) {
         looking_left_ = speed_.x < 0;

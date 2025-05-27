@@ -18,7 +18,6 @@ class Cross {
     pro2::Pt speed_ = {0, 0};
     int dist_ = 0;
     
-    
     bool grounded_ = false;
 	bool looking_left_ = false;
 
@@ -29,7 +28,7 @@ class Cross {
  public:
     Cross(pro2::Pt pos) : pos_(pos) {}
 
-    Cross(pro2::Pt pos,pro2::Pt speed, int dist) : pos_(pos), ini_pos_(pos), speed_(speed),dist_(dist) {}
+    Cross(pro2::Pt pos,pro2::Pt speed, int dist) : pos_(pos), ini_pos_(pos), speed_(speed), dist_(dist) {}
 
     void paint(pro2::Window& window) const;
     

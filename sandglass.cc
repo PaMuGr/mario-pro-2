@@ -64,14 +64,14 @@ const vector<vector<int>> Sandglass::sandglass_sprite_brighter_ = {
 void Sandglass::paint(pro2::Window& window) const {
     const Pt top_left = {pos_.x - 6, pos_.y - 15};
     if(is_bright_){
-        paint_sprite(window, top_left, sandglass_sprite_brighter_, looking_left_);
-    } else paint_sprite(window, top_left, sandglass_sprite_normal_, looking_left_);
+        paint_sprite(window, top_left, sandglass_sprite_brighter_, false);
+    } else paint_sprite(window, top_left, sandglass_sprite_normal_, false);
 }
 
 void Sandglass::paint(pro2::Window& window, int quantity, int cx, int cy) const {
     for(int i = 0; i < quantity; i++){
         Pt top_left = {static_cast<int>(cx + i * (sandglass_sprite_normal_[0].size() + 2)), cy};
-        paint_sprite(window, top_left, sandglass_sprite_normal_, looking_left_);
+        paint_sprite(window, top_left, sandglass_sprite_normal_, false);
     }
 }
 
