@@ -62,27 +62,24 @@ const vector<vector<int>> Sandglass::sandglass_sprite_brighter_ = {
 // clang-format on
 
 void Sandglass::paint(pro2::Window& window) const {
-    const Pt top_left = {pos_.x - 6, pos_.y - 15};
+    const Pt top_left = {pos_.x, pos_.y};
     if(is_bright_){
         paint_sprite(window, top_left, sandglass_sprite_brighter_, false);
     } else paint_sprite(window, top_left, sandglass_sprite_normal_, false);
 }
 
-void Sandglass::paint(pro2::Window& window, int quantity, int cx, int cy) const {
-    for(int i = 0; i < quantity; i++){
-        Pt top_left = {static_cast<int>(cx + i * (sandglass_sprite_normal_[0].size() + 2)), cy};
-        paint_sprite(window, top_left, sandglass_sprite_normal_, false);
-    }
-}
-
 pro2::Rect Sandglass::get_rect() const {
-    int width = sandglass_sprite_normal_[0].size();
-    int height = sandglass_sprite_normal_.size();
+    const int width = 11;  
+    const int height = 17;
+
+    const int hitbox_width = 9;   
+    const int hitbox_height = 15;
+
     return pro2::Rect({
-        pos_.x,
-        pos_.y,
-        pos_.x + width,
-        pos_.y + height 
+        pos_.x + (width - hitbox_width) / 2,      // left
+        pos_.y + (height - hitbox_height) / 2,    // top
+        pos_.x + (width + hitbox_width) / 2,      // right
+        pos_.y + (height + hitbox_height) / 2     // bottom
     });
 }
 
@@ -93,13 +90,21 @@ void Sandglass::update(pro2::Window& window) {
         is_bright_ = !is_bright_;
     }
 
-    if (is_in_cooldown_) {
-        cooldown_--;
+    if (is_active_) {
+        effect_duration_--;
+        if (effect_duration_ <= 0) {
+            is_active_ = false;
+            is_in_cooldown_ = true;
+            respawn_delay_ = 240;  //5 segons abans de respawnejar
+        }
+        return;  
+    }
     
-        //Quan cooldown = 0 ->> pos random
-        if (cooldown_ <= 0) {
+    //Quan cooldown = 0 ->> pos random
+    if (is_in_cooldown_) {
+        respawn_delay_--;
+        if (respawn_delay_ <= 0) {
             is_in_cooldown_ = false;
-            cooldown_ = 0;
             
             pro2::Rect camera = window.camera_rect();
             //Agafem els punts del rectangle de camera

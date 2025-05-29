@@ -48,24 +48,29 @@ const vector<vector<int>> Fireball::fireball_sprite_ = {
 };
 // clang-format on
 
-void Demon::update(pro2::Window& window){
-    //S'ha de moure de esquerra a dreta dins de la camera
+void Demon::update(pro2::Window& window) {
+    //Marges de la camera
     pro2::Rect camera_rect = window.camera_rect();
     int camera_left = camera_rect.left + 50;
     int camera_right = camera_rect.right - 50;
 
-    //Movem el demoni
+    //Velocitat del dimoni
+    const int DEMON_SPEED = 4;
+    
+    //Movem el dimoni
     pos_.x += speed_.x;
 
-    if(pos_.x < camera_left){
+    //Canvi de direcció
+    if (pos_.x <= camera_left) {
         pos_.x = camera_left;
-        speed_.x *= -1;
-    } else if(pos_.x + demon_sprite_[0].size() > camera_right){
+        speed_.x = DEMON_SPEED; 
+    } 
+    else if (pos_.x + demon_sprite_[0].size() >= camera_right) {
         pos_.x = camera_right - demon_sprite_[0].size();
-        speed_.x *= -1;
+        speed_.x = -DEMON_SPEED; 
     }
 
-    //Mantenim el dimoni a dalt on la camera
+    //Mantenint el dimoni a dalt
     pos_.y = camera_rect.top + 10;
 
     if (fire_cooldown_ > 0) {

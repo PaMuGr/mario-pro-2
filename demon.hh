@@ -21,7 +21,7 @@ class Demon {
  public:
     Demon(pro2::Pt pos) 
         : pos_(pos), speed_({6, 0}), 
-          fire_cooldown_(0), fire_rate_(24) {} //Dispars cada 0.5 segons
+          fire_cooldown_(0), fire_rate_(12) {} //Dispars cada 0.25 segons
 
     void paint(pro2::Window& window) const;
 

@@ -39,7 +39,6 @@ class Game {
 
  public:
     Game(int width, int height);
-
     void update(pro2::Window& window);
     void paint(pro2::Window& window);
 
@@ -53,12 +52,21 @@ class Game {
     }
 
      /**
-     * @brief Retorna un bool segons si el joc esta o no pausat
+     * @brief Retorna un bool segons si el joc esta o no finalitzat
      * 
      * @return True or False segons l'estat del joc
      */
     bool is_finished() const {
         return finished_;
+    }
+
+     /**
+     * @brief Retorna un bool segons si el mario ha mort
+     * 
+     * @return True or False segons el mario
+     */
+    bool you_died() const {
+        return reset_;
     }
 
  private:

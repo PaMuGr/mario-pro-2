@@ -8,7 +8,7 @@ using namespace pro2;
 Game::Game(int width, int height)
     : mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right),
       sandglass_({200, 114}), 
-      demon_({width/2, 114}),   
+      demon_({0, 0}),   
       crosses_{
         Cross({-100, 235}),
         Cross({325, 134},{-1,0},30),
@@ -25,12 +25,14 @@ Game::Game(int width, int height)
       cross_height_y_(0) {
     for (int i = 1; i < 5000; i++) {
         int cy = randomizer(-3,3);
-        platforms_.push_back(Platform(250 + i * 200, 400 + i * 200, 150+cy*10, 161+cy*10));
+        platforms_.push_back(Platform(
+            250 + i * 200, 400 + i * 200, //x
+            150+cy*10, 161+cy*10));     //y
         
         //Afegim les crosses
         crosses_.push_back(Cross({
             (randomizer(380,100) + i * 200 + 400 + i * 200) / 2,  //x
-            135 - randomizer(200,0)/4 + cy*10                //y
+            100 + cy*10                //y
         }, {((i%2)*-1+1),((i%2)*-1)}, 15));
     }
 
@@ -54,6 +56,11 @@ void Game::process_keys(pro2::Window& window) {
         paused_ = !paused_;
         return;
     }
+    if (reset_ && window.is_key_down('R')) {
+        reset_ = false;
+        *this = Game(480, 320);
+        return;
+    }
 }
 
 void Game::update_objects(pro2::Window& window) {
@@ -64,7 +71,6 @@ void Game::update_objects(pro2::Window& window) {
     //Comprovació si mario esta caigut de les plataformes --> TORNA A INICIAR JOC
     int floor = window.topleft().y + window.height() + 200;
     if(mario_.pos().y > floor) {
-        // *this = Game(window.width(), window.height()); 
         reset_ = true;
         return;
     }
@@ -73,14 +79,12 @@ void Game::update_objects(pro2::Window& window) {
     sandglass_.update(window);
 
     //Mirem si estem tocant al sandglass
-    if (interseccionen(marioRect, sandglass_.get_rect())) {
-            //Fica el cooldown a 10s --> 480 frames (anem a 48 Frames per second)
-            //Hauria d'afegir que part del cooldown fos l'efecte i part el temps per tornar a apareixer un nou
-            sandglass_.set_cooldown(480);
-        }
+    if (!sandglass_.is_in_cooldown() && interseccionen(marioRect, sandglass_.get_rect())) {
+        sandglass_.activate(960, 240); //5 segons d'efecte i 15 segons per apareixer
+    }
 
     //Si el sanglass no en cooldown --> tot es mou
-    if(!sandglass_.is_in_cooldown()){
+    if(!sandglass_.is_effect_active()){
         demon_.update(window);
 
         //Comprovació de si demon hauria de disparar
@@ -122,9 +126,7 @@ void Game::update_objects(pro2::Window& window) {
         }
 
     } else{
-
         //Fem tot menys deixar que es moguin
-
         //Mirem si hi ha intersecció
         for (auto& fireball : fireballs_) {
             if (fireball.is_active() && interseccionen(marioRect, fireball.get_rect())) {
@@ -170,32 +172,16 @@ void Game::update_camera(pro2::Window& window) {
 }
 
 void Game::update(pro2::Window& window) {
-
-    if(reset_){
-        for (Cross& c : crosses_) {
-            finder_crosses_.remove(&c);
-        }
-        for (Platform& p : platforms_) {
-            finder_platforms_.remove(&p);
-        }
-
-        // Create new game state
-        Game new_game_state(window.width(), window.height());
-        *this = std::move(new_game_state);  // Use move semantics
-
-        reset_ = false;  
-        return;
-    }
     process_keys(window);
-    if(!paused_){
+    if(!paused_ and !reset_){
         update_objects(window);
         update_camera(window);
     } 
 }
 
 void Game::paint(pro2::Window& window) {
-    if(!paused_){
-        if(!sandglass_.is_in_cooldown()){
+    if(!paused_ and !reset_){
+        if(!sandglass_.is_effect_active()){
             window.clear(sky_blue);
             sandglass_.paint(window);
         } else{

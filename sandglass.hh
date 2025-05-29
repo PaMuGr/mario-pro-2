@@ -18,35 +18,26 @@ class Sandglass {
     pro2::Pt speed_ = {0, 0};
     int dist_ = 0;
 
-    bool is_in_cooldown_ = false;
-    int cooldown_ = 15; //En segons
     int frame_counter_ = 0;  
     bool is_bright_ = false; 
     int animation_speed_ = 20;
 
+    bool is_active_ = false;         //Efecte actiu
+    bool is_in_cooldown_ = false;    //Esperant per respawnejar
+    int effect_duration_ = 0;        //Duració de l'efecte 
+    int respawn_delay_ = 0;          //Temps abans d'apareixer de nou
+    
 	void apply_physics_();
 
     static const std::vector<std::vector<int>> sandglass_sprite_normal_;
-	
     static const std::vector<std::vector<int>> sandglass_sprite_brighter_;
     
  public:
     Sandglass(pro2::Pt pos) : pos_(pos) {}
-
     Sandglass(pro2::Pt pos,pro2::Pt speed, int dist) : pos_(pos), ini_pos_(pos), speed_(speed),dist_(dist) {}
 
     void paint(pro2::Window& window) const;
     
-     /**
-     * @brief Retorna el valor privat touched_ 
-     * 
-     * @param window finestra on ho dibuixem
-     * @param quantity nombre de Sandglasses a dibuixar
-     * @param cx posició horitzontal
-     * @param cy posició vertical
-     */
-    void paint(pro2::Window& window, int quantity, int cx, int cy) const;
-
     /**
      * @brief Retorna la posicio a la que es troba la Sandglass 
      * 
@@ -98,25 +89,24 @@ class Sandglass {
     void set_bright(bool bright) { is_bright_ = bright; }
 
     /**
-     * @brief Actualitza el cooldown del efecte del item 
-     * 
-     * @param cooldown quanta estona durara l'item
+     * @brief Activa l'efecte del Sandglass (inicia el temps actiu)
      */
-    void set_cooldown(int cooldown) { cooldown_ = cooldown; is_in_cooldown_ = true;}
+    void activate(int total_duration, int effect_frames) {
+        is_active_ = true;
+        is_in_cooldown_ = true;
+        effect_duration_ = effect_frames;
+        respawn_delay_ = total_duration - effect_frames;
+    }
 
     /**
-     * @brief Retorna si esta o no en cooldown
-     * 
-     * @return Retorna un bool que et diu si esta en cooldown o no
+     * @brief Retorna si està en fase de cooldown (esperant reapareixer)
      */
-    int is_in_cooldown() { return is_in_cooldown_; }
+    bool is_in_cooldown() const { return is_in_cooldown_; }
 
     /**
-     * @brief Retorna quant de temps li queda per acabar
-     * 
-     * @return Retorna cooldown_
+     * @brief Retorna si l'efecte està actiu
      */
-    int get_cooldown() { return cooldown_; }
+    bool is_effect_active() const { return is_active_; }
 };
 
 #endif
