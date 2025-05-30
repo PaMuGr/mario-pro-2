@@ -186,6 +186,7 @@ void Game::paint(pro2::Window& window) {
             sandglass_.paint(window);
         } else{
             window.clear(0xC2B280);
+            paint_number(window, {window.camera_center().x, window.camera_center().y}, sandglass_.cooldown());
         }
         pro2::Rect windowRect = window.camera_rect();
 

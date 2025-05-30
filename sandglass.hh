@@ -107,6 +107,11 @@ class Sandglass {
      * @brief Retorna si l'efecte està actiu
      */
     bool is_effect_active() const { return is_active_; }
+
+    /**
+     * @brief Retorna el cooldown
+     */
+    int cooldown() const { return effect_duration_; }
 };
 
 #endif
