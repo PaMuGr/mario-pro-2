@@ -8,7 +8,7 @@ using namespace pro2;
 Game::Game(int width, int height)
     : mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right),
       sandglass_({200, 114}), 
-      demon_({0, 0}),   
+      demon_({0, 0}),
       crosses_{
         Cross({-100, 235}),
         Cross({325, 134},{-1,0},30),
@@ -57,8 +57,8 @@ void Game::process_keys(pro2::Window& window) {
         return;
     }
     if (reset_ && window.is_key_down('R')) {
-        reset_ = false;
         *this = Game(480, 320);
+        reset_ = false;
         return;
     }
 }
@@ -219,7 +219,18 @@ void Game::paint(pro2::Window& window) {
         int pos_x = window.topleft().x + window.width()/2 - 20;
         int pos_y = window.topleft().y + window.height()/2 - 10;
         paint_text(window, {pos_x, pos_y}, "PAUSED");
-    } 
+    } else if(reset_){
+         //pantalla en gris amb el text GAME OVER
+        window.clear(0x7B1818);
+        //pinta el text GAME OVER al mitg de la pantalla
+        //a sota fiquem PRESS R TO RESTART
+        int pos_x = window.topleft().x + window.width()/2 - 20;
+        int pos_y = window.topleft().y + window.height()/2 - 10;
+        paint_text(window, {pos_x, pos_y}, "GAME OVER", 0xFF5733);
+        paint_text(window, {pos_x-25, pos_y+20}, "PRESS R TO RESTART", 0xFF5733);
+        paint_text(window, {pos_x, pos_y+40}, "SCORE: ", 0xFF5733);
+        paint_number(window, {pos_x+40, pos_y+40}, mario_.check_points());
+    }
     
     //pintar recuadre
         int left = window.topleft().x;

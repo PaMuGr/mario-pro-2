@@ -7,8 +7,9 @@
 using namespace std;
 using namespace pro2;
 
+int TEXT_COLOR = 0x0000000;
 const int _ = -1;
-const int r = 0x0000000; 
+int r = TEXT_COLOR; 
 
 const int sprite_width = 4;  
 const int sprite_height = 6; 
@@ -340,6 +341,24 @@ const vector<vector<vector<int>>> letter_sprite_normal_ = {
         {_, r, _, _},
         {r, _, _, _},
         {r, r, r, r}
+    }, 
+    //" "
+    {
+        {_, _, _, _},
+        {_, _, _, _},
+        {_, _, _, _},
+        {_, _, _, _},
+        {_, _, _, _},
+        {_, _, _, _}
+    },
+    //" "
+    {
+        {_, r, r, _},
+        {_, r, r, _},
+        {_, _, _, _},
+        {_, _, _, _},
+        {_, r, r, _},
+        {_, r, r, _}
     }
 };
 
@@ -350,13 +369,14 @@ void paint_digit(Window& window, Pt pos_, int digit){
 
 void paint_letter(Window& window, Pt pos_, char letter) {
     const Pt top_left = {pos_.x - sprite_width/2 , pos_.y - sprite_height/2 + 1};
+    
     paint_sprite(window, top_left, letter_sprite_normal_[letter - 'A'], false);
 }
 
-void paint_number(pro2::Window& window, pro2::Pt pos, int  number){
+void paint_number(pro2::Window& window, pro2::Pt pos, int  number, int color){
 
     vector<int> digits;
-
+    TEXT_COLOR = color;
     if (number == 0) digits.push_back(0);
 
     while(number > 0){
@@ -371,10 +391,14 @@ void paint_number(pro2::Window& window, pro2::Pt pos, int  number){
     }
 }
 
-void paint_text(Window& window, Pt pos, const string& text) {
+void paint_text(Window& window, Pt pos, const string& text, int color) {
+
+    TEXT_COLOR = color;
 
     int offset = static_cast<int>(sprite_width + 2);  
     for (int i = 0; i < text.size(); ++i) {
-        paint_letter(window, {pos.x + i * offset, pos.y}, text[i]);
+        if(text[i] == ' ') paint_letter(window, {pos.x + i * offset, pos.y}, '[');
+        else if(text[i] == ':') paint_letter(window, {pos.x + i * offset, pos.y}, char(92));
+        else paint_letter(window, {pos.x + i * offset, pos.y}, text[i]);
     }
 }

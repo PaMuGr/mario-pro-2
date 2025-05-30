@@ -36,9 +36,10 @@ void paint_letter( pro2::Window& window, pro2::Pt pos, char letter);
  * @param window Finestra on pintarem
  * @param pos Posició x i y on pintar el digit
  * @param number Numero a pintar
+ * @param color Color del text a pintar
  * 
  */
-void paint_number(pro2::Window& window, pro2::Pt pos, int  number);
+void paint_number(pro2::Window& window, pro2::Pt pos, int  number,  int color = 0x000000);
 
 /**
  * @brief Pinta un text
@@ -46,8 +47,9 @@ void paint_number(pro2::Window& window, pro2::Pt pos, int  number);
  * @param window Finestra on pintarem
  * @param pos Posició x i y on pintar el digit
  * @param text Text a pintar
+ * @param color Color del text a pintar
  * 
  */
-void paint_text(pro2::Window& window, pro2::Pt pos, const std::string& text);
+void paint_text(pro2::Window& window, pro2::Pt pos, const std::string& text, int color = 0x000000);
 
 #endif
