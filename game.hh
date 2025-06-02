@@ -15,17 +15,15 @@
 #include "finder.hh"
 #include "sandglass.hh"
 #include "demon.hh"
-//##AFEGIM LINKED LIST##
-#include "list.hh"
 
 class Game {
     Mario                 mario_;
+    std::vector<Platform> platforms_;
+    std::list<Cross> crosses_;
     Sandglass sandglass_;
     Demon demon_;
-    std::vector<Platform> platforms_;
-    List<Cross> crosses_;
-    List<Fireball> fireballs_;
-    List<Fire> fires_;
+    std::list<Fireball> fireballs_;
+    std::list<Fire> fires_;
 
     //FINDER de les plataformes i crosses
     Finder<Platform> finder_platforms_;
@@ -61,10 +59,6 @@ class Game {
      */
     bool is_finished() const {
         return finished_;
-    }
-
-    bool is_reseted() const{
-        return reset_;
     }
 
      /**

@@ -5,7 +5,7 @@
 #include "blesser.hh"
 using namespace std;
 
-class CrossAltar {
+class Blesser {
 private:
 
 public:
