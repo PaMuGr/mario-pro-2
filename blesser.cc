@@ -1,16 +1,30 @@
-/** @file blesser.cc
- * @brief Funcions del Blesser
- */
-
 #include "blesser.hh"
-using namespace std;
 
-class Blesser {
-private:
+using namespace pro2;
 
-public:
+Blesser::Blesser(const Pt& pos) 
+    : pos_(pos), crosses_collected_(0), active_shield_(nullptr) {}
 
-//La idea es guardar blessings en un stack i que cada vegada que agafes el blesser
-//L'estaqueja i d'aquesta manera si uses la B et dona un powerup
+bool Blesser::activate_shield() {
+    if (!shields_.empty() && !active_shield_) {
+        active_shield_ = &shields_.top();
+        active_shield_->activate(pos_, 180);
+        shields_.pop();
+        return true;
+    }
+    return false;
+}
 
-};
+bool Blesser::has_shield() const {
+    return !shields_.empty();
+}
+
+void Blesser::update() {
+    // Update position if needed
+}
+
+void Blesser::paint(Window& window) const {
+    if (!shields_.empty()) {
+        paint_number(window, {pos_.x, pos_.y - 20}, shields_.size());
+    }
+}

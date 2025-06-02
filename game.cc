@@ -148,7 +148,8 @@ void Game::update_objects(pro2::Window& window) {
 
                     //Creació de focs 
 
-                    if (randomizer(0, 100) <= 200) {
+                    //30% D'APARICIÓ DE FOCS
+                    if (randomizer(0, 4) < 6) {
                         pro2::Rect fireballRect = (*it).get_rect();
                         pro2::Rect platformRect = platform.get_rect();
                         Pt fire_pos = {
