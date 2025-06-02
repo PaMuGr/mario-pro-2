@@ -67,7 +67,7 @@ bool interseccionen(const pro2::Rect& a, const pro2::Rect& b){
 }
 
 int randomizer(int max, int min){
-    int range = max - min;
+    int range = max - min + 1;
     return rand() % range + min;
 }
 

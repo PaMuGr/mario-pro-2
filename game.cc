@@ -6,42 +6,69 @@
 using namespace pro2;
 
 Game::Game(int width, int height)
-    : mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right),
+    : mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right, Keys::Down),
       sandglass_({200, 114}), 
       demon_({0, 0}),
-      crosses_{
-        Cross({-100, 235}),
-        Cross({325, 134},{-1,0},30),
-      },
-      platforms_{
-          Platform(-100, -70, 250, 261),
-          Platform(0, 200, 250, 261),
-          Platform(100, 300, 200, 211),
-          Platform(250, 400, 150, 161),
-      },
       paused_(false), 
       finished_(false),
       reset_(false),
       cross_height_y_(0) {
-    for (int i = 1; i < 5000; i++) {
-        int cy = randomizer(-3,3);
+    
+    //Crosses inicials
+    crosses_.push_back(Cross({-100, 235}));
+    crosses_.push_back(Cross({325, 134},{-1,0},30));
+
+    //Plataformes inicials
+    platforms_.push_back(Platform(-100, -70, 250, 261));  // Platform 1
+    platforms_.push_back(Platform(0, 200, 250, 261));     // Platform 2
+    platforms_.push_back(Platform(100, 300, 200, 211));   // Platform 3
+    platforms_.push_back(Platform(230, 400, 150, 161));   // Platform 4
+
+    //Generar plataformes
+    for (int i = 1; i < 10000; i++) {
+        int random_height = randomizer(-3, 3);
+        int y_offset = random_height * 10;
+        int base_x = 250 + i * 200;
+        int x_range = 400 + i * 200;
+
+        //Plataformes d'abaix
         platforms_.push_back(Platform(
-            250 + i * 200, 400 + i * 200, //x
-            150+cy*10, 161+cy*10));     //y
-        
-        //Afegim les crosses
-        crosses_.push_back(Cross({
-            (randomizer(380,100) + i * 200 + 400 + i * 200) / 2,  //x
-            100 + cy*10                //y
-        }, {((i%2)*-1+1),((i%2)*-1)}, 15));
+            base_x, x_range,             // x 
+            150 + y_offset, 161 + y_offset  // y 
+        ));
+
+        int platforms_offset_x = 0;
+        int platforms_offset_y = 0;
+        if(randomizer(1,0)==0){
+            platforms_offset_x = 30;
+            platforms_offset_y = 10;
+        } else{
+            platforms_offset_x = -30;
+            platforms_offset_y = 0;
+        }
+
+        platforms_.push_back(Platform(
+            base_x + platforms_offset_x, x_range + platforms_offset_x - 20,            // x 
+            90 + y_offset - platforms_offset_y, 101 + y_offset - platforms_offset_y // y 
+        ));
+
+        if(randomizer(1,0)==0){ //si es 0 les fiquem abaix sino adalt -> randomitzat
+            crosses_.push_back(Cross({
+            (randomizer(380,100) + i * 200 + x_range) / 2,  //x
+            120 + random_height*10                //y
+            }, {1,0}, 20)); 
+        } else{
+            crosses_.push_back(Cross({
+            (randomizer(380,100) + i * 200 + x_range) / 2,  //x
+            50 + random_height*10                //y
+            }, {((i%2)*-1+1),((i%2)*-1)}, 10)); 
+        }
     }
 
-    //Afegim a la constructora el .add de les plataformes
     for (Platform& p : platforms_) {
         finder_platforms_.add(&p);
     }
 
-    //Afegim a la constructora el .add de les crosses
     for (Cross& c : crosses_) {
         finder_crosses_.add(&c);
     }
@@ -52,15 +79,14 @@ void Game::process_keys(pro2::Window& window) {
         finished_ = true;
         return;
     }
-    if (window.was_key_pressed('P')) {
+    if (!reset_ && window.was_key_pressed('P')) {
         paused_ = !paused_;
         return;
     }
     if (reset_ && window.is_key_down('R')) {
-        *this = Game(480, 320);
-        reset_ = false;
+        *this = Game(480, 320);  
         return;
-    }
+    }   
 }
 
 void Game::update_objects(pro2::Window& window) {
@@ -80,6 +106,7 @@ void Game::update_objects(pro2::Window& window) {
 
     //Mirem si estem tocant al sandglass
     if (!sandglass_.is_in_cooldown() && interseccionen(marioRect, sandglass_.get_rect())) {
+        mario_.collect_sandwatch();
         sandglass_.activate(960, 240); //5 segons d'efecte i 15 segons per apareixer
     }
 
@@ -105,9 +132,34 @@ void Game::update_objects(pro2::Window& window) {
         }
 
         //Iterem per les fireballs per veure si hem de borrar o no
-        for (auto it = fireballs_.begin(); it != fireballs_.end(); ) {
-            it->update();
-            if (!it->is_active()) {
+        for (auto it = fireballs_.begin(); it != fireballs_.end();) {
+            (*it).update();
+
+            //Si toquen amb plataforma les desectivem
+            pro2::Rect fireballRect = (*it).get_rect();
+            bool hit_platform = false;
+            for (const Platform& platform : platforms_) {
+                if (interseccionen(fireballRect, platform.get_rect())) {
+                    (*it).deactivate();
+                    hit_platform = true; //Vull utilitzar aixo per crear focs
+
+                    //Creació de focs 
+
+                    if (randomizer(0, 100) <= 150) {
+                        pro2::Rect fireballRect = (*it).get_rect();
+                        pro2::Rect platformRect = platform.get_rect();
+                        Pt fire_pos = {
+                            (fireballRect.left + fireballRect.right) / 2 - 4,  
+                            platformRect.top - 7  
+                        };
+                        fires_.push_back(Fire(fire_pos, 120));
+                    }
+
+                    break;
+                }
+            }
+
+            if (!(*it).is_active()) {
                 it = fireballs_.erase(it);  
             } else {
                 ++it;
@@ -125,7 +177,34 @@ void Game::update_objects(pro2::Window& window) {
             }
         }
 
+        //Desectivem focs
+        for (auto it = fires_.begin(); it != fires_.end(); ) {
+            (*it).update();
+            if (!(*it).is_active()) {
+                it = fires_.erase(it);
+            } else {
+                ++it;
+            }
+        }
+
+        //Mirem interseccions
+        for (auto& fires : fires_) {
+            if (fires.is_active() && interseccionen(marioRect, fires.get_rect())) {
+                fires.deactivate_fires();
+                reset_ = true;
+                return;
+            }
+        }
     } else{
+        //Mirem interseccions
+        for (auto& fires : fires_) {
+            if (fires.is_active() && interseccionen(marioRect, fires.get_rect())) {
+                fires.deactivate_fires();
+                reset_ = true;
+                return;
+            }
+        }
+
         //Fem tot menys deixar que es moguin
         //Mirem si hi ha intersecció
         for (auto& fireball : fireballs_) {
@@ -173,6 +252,7 @@ void Game::update_camera(pro2::Window& window) {
 
 void Game::update(pro2::Window& window) {
     process_keys(window);
+
     if(!paused_ and !reset_){
         update_objects(window);
         update_camera(window);
@@ -205,6 +285,10 @@ void Game::paint(pro2::Window& window) {
     
         for (const auto& fireball : fireballs_) {
             fireball.paint(window);
+        }  
+
+        for (auto it = fires_.begin(); it != fires_.end(); ++it) {
+            (*it).paint(window);
         }
 
         //pinta el nombre total de punts
@@ -215,21 +299,25 @@ void Game::paint(pro2::Window& window) {
         mario_.paint(window);
     } else if(paused_){
         //pantalla en gris amb el text PAUSED
-        window.clear(0x898989);
         //pinta el text PAUSED al mitg de la pantalla
-        int pos_x = window.topleft().x + window.width()/2 - 20;
-        int pos_y = window.topleft().y + window.height()/2 - 10;
-        paint_text(window, {pos_x, pos_y}, "PAUSED");
+        window.clear(0x898989);
+        std::string text = "PAUSED";
+        int pos_x = window.topleft().x + (window.width() - (text.length()*6)) / 2;
+        int pos_y = window.topleft().y + window.height() / 2 - 10;
+        paint_text(window, {pos_x, pos_y}, text);
     } else if(reset_){
          //pantalla en gris amb el text GAME OVER
         window.clear(0x7B1818);
         //pinta el text GAME OVER al mitg de la pantalla
         //a sota fiquem PRESS R TO RESTART
-        int pos_x = window.topleft().x + window.width()/2 - 20;
-        int pos_y = window.topleft().y + window.height()/2 - 10;
-        paint_text(window, {pos_x, pos_y}, "GAME OVER", 0xFF5733);
-        paint_text(window, {pos_x-25, pos_y+20}, "PRESS R TO RESTART", 0xFF5733);
-        paint_text(window, {pos_x, pos_y+40}, "SCORE: ", 0xFF5733);
+        int pos_y = window.topleft().y + window.height() / 2 - 10;
+        std::string text = "GAME OVER";
+        int pos_x = window.topleft().x + (window.width() - (text.length()*6)) / 2;
+        paint_text(window, {pos_x, pos_y}, text);
+        text = "PRESS R TO RESTART";
+        paint_text(window, {pos_x-25, pos_y+20}, text);
+        text = "SCORE: ";
+        paint_text(window, {pos_x, pos_y+40}, text);
         paint_number(window, {pos_x+40, pos_y+40}, mario_.check_points());
     }
     

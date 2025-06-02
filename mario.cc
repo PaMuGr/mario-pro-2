@@ -18,7 +18,6 @@ const int db = 0x5c3a1e;
 const int gl = 0xFFD700;
 //white
 const int wh = 0xf2f3f4;
-const int dr = 0x7c0a02;
 
 // clang-format off
 const vector<vector<int>> Mario::mario_sprite_normal_ = {
@@ -93,10 +92,11 @@ void Mario::update(pro2::Window& window, const vector<Platform>& platforms) {
     // Velocitat horitzontal
     speed_.x = 0; 
     if (window.is_key_down(left_key_)) {
-        speed_.x = -6;
+        speed_.x = -SPEED;
     } else if (window.is_key_down(right_key_)) {
-        speed_.x = 6;
-    }
+        speed_.x = SPEED;
+    } 
+    
     if (speed_.x != 0) {
         looking_left_ = speed_.x < 0;
     }
@@ -105,10 +105,12 @@ void Mario::update(pro2::Window& window, const vector<Platform>& platforms) {
 
     set_grounded(false);
 
-    for (const Platform& platform : platforms) {
-        if (platform.has_crossed_floor_downwards(last_pos_, pos_)) {
-            set_grounded(true);
-            set_y(platform.top());
+    if (!window.is_key_down(go_down_key_)) {
+        for (const Platform& platform : platforms) {
+            if (platform.has_crossed_floor_downwards(last_pos_, pos_)) {
+                set_grounded(true);
+                set_y(platform.top());
+            }
         }
     }
 }

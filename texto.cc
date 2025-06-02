@@ -7,9 +7,8 @@
 using namespace std;
 using namespace pro2;
 
-int TEXT_COLOR = 0x0000000;
 const int _ = -1;
-int r = TEXT_COLOR; 
+int r = 0x0000000; 
 
 const int sprite_width = 4;  
 const int sprite_height = 6; 
@@ -376,7 +375,7 @@ void paint_letter(Window& window, Pt pos_, char letter) {
 void paint_number(pro2::Window& window, pro2::Pt pos, int  number, int color){
 
     vector<int> digits;
-    TEXT_COLOR = color;
+    r = color;
     if (number == 0) digits.push_back(0);
 
     while(number > 0){
@@ -393,7 +392,7 @@ void paint_number(pro2::Window& window, pro2::Pt pos, int  number, int color){
 
 void paint_text(Window& window, Pt pos, const string& text, int color) {
 
-    TEXT_COLOR = color;
+    r = color;
 
     int offset = static_cast<int>(sprite_width + 2);  
     for (int i = 0; i < text.size(); ++i) {

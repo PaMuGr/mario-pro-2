@@ -16,11 +16,16 @@ class Demon {
     int fire_cooldown_; //Cooldown
     int fire_rate_; //Dispars per segons
 
+    //Velocitat del dimoni
+      int DEMON_SPEED = 4; 
+
     static const std::vector<std::vector<int>> demon_sprite_;
 	
  public:
+    Demon() : pos_({0,0}), speed_({0,0}), fire_cooldown_(0), fire_rate_(12) {}
+
     Demon(pro2::Pt pos) 
-        : pos_(pos), speed_({6, 0}), 
+        : pos_(pos), speed_({0, 0}), 
           fire_cooldown_(0), fire_rate_(12) {} //Dispars cada 0.25 segons
 
     void paint(pro2::Window& window) const;
@@ -66,6 +71,9 @@ class Fireball{
     static const std::vector<std::vector<int>> fireball_sprite_;
 
  public: 
+   
+    Fireball() : pos_({0,0}), speed_({0,0}), active_(false) {}
+    
     Fireball(pro2::Pt pos, pro2::Pt speed);
 
     void update();
@@ -77,6 +85,30 @@ class Fireball{
     bool is_active() const{return active_;}
     pro2::Rect get_rect() const;
     void deactivate(){active_ = false;}
+};
+
+class Fire {
+private:
+    pro2::Pt pos_;
+    int duracio_; 
+    bool active_;
+
+    static const std::vector<std::vector<int>> fire_sprite_;
+
+public:
+    Fire() : pos_({0,0}), duracio_(0), active_(false) {}
+    
+    Fire(pro2::Pt pos, int lifetime) : pos_(pos), duracio_(lifetime), active_(true) {}
+
+    void update();
+
+    void paint(pro2::Window& window) const;
+    
+    void deactivate_fires(){active_ = false;}
+
+    pro2::Rect get_rect() const;
+
+    bool is_active() const { return active_; }
 };
 
 #endif

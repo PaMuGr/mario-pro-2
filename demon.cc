@@ -1,7 +1,6 @@
-/** @file cross.cc
+/** @file demon.cc
  * @brief Funcions del Demon
  */
-
 #include "demon.hh"
 #include "utils.hh"
 using namespace pro2;
@@ -48,14 +47,22 @@ const vector<vector<int>> Fireball::fireball_sprite_ = {
 };
 // clang-format on
 
+const vector<vector<int>> Fire::fire_sprite_ = {
+    {y, _, y, y, y, _, _, _},
+    {y, y, y, o, o, y, _, _},
+    {y, y, o, r, r, o, y, _},
+    {_, y, o, r, d, o, y, _},
+    {_, y, o, r, d, o, y, _},
+    {_, _, y, d, r, o, y, _},
+    {_, _, y, o, o, o, y, _},
+    {_, _, _, y, y, y, _, _}
+};
+
 void Demon::update(pro2::Window& window) {
     //Marges de la camera
     pro2::Rect camera_rect = window.camera_rect();
     int camera_left = camera_rect.left + 50;
     int camera_right = camera_rect.right - 50;
-
-    //Velocitat del dimoni
-    const int DEMON_SPEED = 4;
     
     //Movem el dimoni
     pos_.x += speed_.x;
@@ -121,6 +128,34 @@ void Fireball::paint(pro2::Window& window) const {
 pro2::Rect Fireball::get_rect() const {
     int width = fireball_sprite_[0].size();
     int height = fireball_sprite_.size();
+    return pro2::Rect({
+        pos_.x,
+        pos_.y,
+        pos_.x + width,
+        pos_.y + height
+    });
+}
+
+/*############ IMPLEMENTACIÓ FOC ##############*/
+
+void Fire::update() {
+    if (active_) {
+        duracio_--;
+        if (duracio_ <= 0) {
+            active_ = false;
+        }
+    }
+}
+
+void Fire::paint(pro2::Window& window) const {
+    if (active_) {
+        paint_sprite(window, pos_, fire_sprite_, false);
+    }
+}
+
+pro2::Rect Fire::get_rect() const {
+    int width = fire_sprite_[0].size();
+    int height = fire_sprite_.size();
     return pro2::Rect({
         pos_.x,
         pos_.y,

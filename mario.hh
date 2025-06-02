@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <vector>
+#include "list.hh"
 #include "platform.hh"
 #include "window.hh"
 
@@ -17,9 +18,12 @@ class Mario {
     pro2::Pt accel_ = {0, 0};
     int      accel_time_ = 0;
     int redemtionPoints_ = 0;
+    int sandwatchCollected_ = 0;
     int mario_width = 6;
     int mario_height = 8;
-    int jump_key_, left_key_, right_key_;
+    int jump_key_, left_key_, right_key_, go_down_key_;
+
+    int SPEED = 6;
 
     bool grounded_ = false;
 	bool looking_left_ = false;
@@ -27,11 +31,12 @@ class Mario {
 	void apply_physics_();
 	
  public:
-    Mario(pro2::Pt pos, int jumpKey, int leftKey, int rightKey) : pos_(pos), 
+    Mario(pro2::Pt pos, int jumpKey, int leftKey, int rightKey, int godownKey) : pos_(pos), 
     last_pos_(pos), 
     jump_key_(jumpKey),
     left_key_(leftKey),
-    right_key_(rightKey)
+    right_key_(rightKey),
+    go_down_key_(godownKey)
     {}
 
      /**
@@ -41,8 +46,24 @@ class Mario {
         redemtionPoints_++;
     }
 
+    /**
+     * @brief Augmenta en 1 els sandwatched collected
+     */
+    void collect_sandwatch(){
+        sandwatchCollected_++;
+    }
+
+    /**
+     * @brief Retorna el valor privat sandwatchCollected 
+     * 
+     * @return int amb els sandwatches que ha recollit
+     */
+    int sandwatches_collected() const{
+        return sandwatchCollected_;
+    }
+
      /**
-     * @brief Retorna el valor privat touched_ 
+     * @brief Retorna el valor privat redemtionPoints_ 
      * 
      * @return int amb els punts que té al moment
      */

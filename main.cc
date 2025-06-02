@@ -33,6 +33,8 @@ const int ZOOM = 2;
 const int FPS = 48;
 
 int main() {
+    srand(time(0));
+    
     pro2::Window window("Mario Pro 2", WIDTH, HEIGHT, ZOOM);
     window.set_fps(FPS);
 
@@ -41,5 +43,5 @@ int main() {
     while (window.next_frame() && !game.is_finished()) {
         game.update(window);
         game.paint(window);
-    }
+    } 
 }

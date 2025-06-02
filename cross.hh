@@ -11,6 +11,7 @@
 #include "platform.hh"
 #include "window.hh"
 #include "geometry.hh"
+#include "list.hh"
 
 class Cross {
  private:
@@ -26,7 +27,9 @@ class Cross {
     static const std::vector<std::vector<int>> cross_sprite_normal_;
 	
  public:
-    Cross(pro2::Pt pos) : pos_(pos) {}
+    Cross() : pos_({0,0}), ini_pos_({0,0}), speed_({0,0}), dist_(0), grounded_(false), looking_left_(false) {}
+
+    Cross(pro2::Pt pos) : pos_(pos), ini_pos_(pos) {}
 
     Cross(pro2::Pt pos,pro2::Pt speed, int dist) : pos_(pos), ini_pos_(pos), speed_(speed), dist_(dist) {}
 
