@@ -7,64 +7,70 @@ using namespace pro2;
 
 const int _ = -1;
 const int h = black;  // dark red
-const int b = 0x63697A;
+const int b = 0x0000ff;
+const int y = 0xffff00; // yellow
+const int w = 0xffffff; // white
+const int g = 0xdddd00; // gold
 
-const vector<vector<int>> Ascended::ascended_sprite_ = {
-    {_, _, _, _, _, b, b, b, b, b, b, _, _, _, _, _},
-    {_, _, _, _, b, b, b, b, b, b, b, b, _, _, _, _},
-    {_, _, _, b, b, _, _, _, _, _, _, b, b, _, _, _},
-    {_, _, b, b, _, _, _, _, _, _, _, _, b, b, _, _},
-    {_, b, b, _, _, _, _, _, _, _, _, _, _, b, b, _},
-    {b, b, _, _, _, _, _, _, _, _, _, _, _, _, b, b},
-    {b, _, _, _, _, _, _, _, _, _, _, _, _, _, _, b},
-    {b, _, _, _, _, _, _, _, _, _, _, _, _, _, _, b},
-    {b, _, _, _, _, _, _, _, _, _, _, _, _, _, _, b},
-    {b, _, _, _, _, _, _, _, _, _, _, _, _, _, _, b},
-    {b, _, _, _, _, _, _, _, _, _, _, _, _, _, _, b},
-    {b, _, _, _, _, _, _, _, _, _, _, _, _, _, _, b},
-    {b, _, _, _, _, _, _, _, _, _, _, _, _, _, _, b},
-    {b, b, _, _, _, _, _, _, _, _, _, _, _, _, b, b},
-    {_, b, b, _, _, _, _, _, _, _, _, _, _, b, b, _},
-    {_, _, b, b, _, _, _, _, _, _, _, _, b, b, _, _},
-    {_, _, _, b, b, _, _, _, _, _, _, b, b, _, _, _},
-    {_, _, _, _, b, b, b, b, b, b, b, b, _, _, _, _},
-    {_, _, _, _, _, b, b, b, b, b, b, _, _, _, _, _}
+const std::vector<std::vector<int>> Ascended::ascended_sprite_ = {
+    {_, _, y, y, y, y, y, y, y, y, y, y, y, y, y, y, _, _},
+    {_, y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y, _},
+    {_, y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y, _},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y},
+    {y, y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y, y},
+    {_, y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y, _},
+    {_, y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y, _},
+    {_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _},
 };
-// clang-format on
 
-Ascended::Ascended(const Pt& pos, int duration) 
-    : pos_(pos), active_(false), duration_(duration) {}
 
-void Ascended::activate(const Pt& pos, int duration) {
-    pos_ = pos;
-    active_ = true;
-    duration_ = duration;
+void Ascended::activate(pro2::Pt mario_pos) {
+    if (can_activate() && !active) {
+        blessings.pop();  
+        active = true;
+        duration = 300;  
+        pos_ = mario_pos;
+    }
 }
 
-void Ascended::update() {
-    if (active_) {
-        duration_--;
-        if (duration_ <= 0) {
-            active_ = false;
+void Ascended::update(Pt mario_pos) {
+    if (active) {
+        pos_ = {mario_pos.x, mario_pos.y - 8}; 
+        duration--;
+        if (duration <= 0) {
+            active = false;
         }
     }
 }
 
-void Ascended::paint(Window& window) const {
-    if (active_) {
-        paint_sprite(window, pos_, ascended_sprite_, false);
-    }
-}
-
+// Get the shield's rectangle for collision detection
 pro2::Rect Ascended::get_rect() const {
-    if (!active_) return {0, 0, 0, 0};
-    
     int width = ascended_sprite_[0].size();
     int height = ascended_sprite_.size();
     return Rect{
-        pos_.x,
-        pos_.y,
-        pos_.x + width,
-        pos_.y + height
+        pos_.x - 9,
+        pos_.y - 9,
+        pos_.x + width - 9,
+        pos_.y + height - 9
     };
+}
+
+// Paint the shield
+void Ascended::paint(Window& window) const {
+    if (active) {
+        paint_sprite(window, {pos_.x - static_cast<int>(ascended_sprite_[0].size()/2), 
+                                pos_.y - static_cast<int>(ascended_sprite_.size()/2)}, 
+                    ascended_sprite_, false);
+    }
 }

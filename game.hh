@@ -5,6 +5,7 @@
 #ifndef GAME_HH
 #define GAME_HH
 
+/*INCLUDES*/
 #include <vector>
 #include "mario.hh"
 #include "cross.hh"
@@ -15,13 +16,16 @@
 #include "finder.hh"
 #include "sandglass.hh"
 #include "demon.hh"
+#include "ascended.hh"
 
+/*DEFINICIÓ DE LA CLASSE*/
 class Game {
     Mario                 mario_;
     std::vector<Platform> platforms_;
     std::list<Cross> crosses_;
     Sandglass sandglass_;
     Demon demon_;
+    pro2::Ascended ascended_;
     std::list<Fireball> fireballs_;
     std::list<Fire> fires_;
 
@@ -33,6 +37,7 @@ class Game {
     bool finished_;
     bool reset_;
     int cross_height_y_ = 0;
+    int last_blessed_points_ = 0;
 
     void process_keys(pro2::Window& window);
     void update_objects(pro2::Window& window);

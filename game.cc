@@ -5,6 +5,7 @@
 #include "game.hh"
 using namespace pro2;
 
+/*CONSTRUCTOR GENERAL*/
 Game::Game(int width, int height)
     : mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right, Keys::Down),
       sandglass_({200, 114}), 
@@ -76,6 +77,7 @@ Game::Game(int width, int height)
     }
 }
 
+/*PROCESSADOR DE TECLES*/
 void Game::process_keys(pro2::Window& window) {
     if (window.is_key_down(Keys::Escape)) {
         finished_ = true;
@@ -90,11 +92,16 @@ void Game::process_keys(pro2::Window& window) {
         reset_ = false;
         return;
     }
+    if (window.was_key_pressed('B') and ascended_.can_activate()) {
+        ascended_.activate({mario_.pos().x, mario_.pos().y});
+    }
 }
 
+/*UPDATE DELS OBJECTES*/
 void Game::update_objects(pro2::Window& window) {
-
+    
     mario_.update(window, platforms_);
+    ascended_.update(mario_.pos());
     pro2::Rect marioRect = mario_.get_rect();
 
     //Comprovació si mario esta caigut de les plataformes --> TORNA A INICIAR JOC
@@ -127,6 +134,12 @@ void Game::update_objects(pro2::Window& window) {
         
         //Mirem si hi ha intersecció
         for (auto& fireball : fireballs_) {
+            //si estem ascended i intersecciona la bola no ens fa mal "se suposa"
+            if (ascended_.is_active() && interseccionen(ascended_.get_rect(), fireball.get_rect())) {
+                fireball.deactivate();
+                //Saltem la intersecció mario
+                continue;
+            }
             if (fireball.is_active() && interseccionen(marioRect, fireball.get_rect())) {
                 fireball.deactivate();
                 reset_ = true;
@@ -191,6 +204,13 @@ void Game::update_objects(pro2::Window& window) {
 
         //Mirem interseccions
         for (auto& fires : fires_) {
+
+            if (ascended_.is_active() && interseccionen(ascended_.get_rect(), fires.get_rect())) {
+                fires.deactivate_fires();
+                //Saltem la intersecció mario
+                continue;
+            }
+
             if (fires.is_active() && interseccionen(marioRect, fires.get_rect())) {
                 fires.deactivate_fires();
                 reset_ = true;
@@ -198,8 +218,23 @@ void Game::update_objects(pro2::Window& window) {
             }
         }
 
+        int current_points = mario_.check_points();
+        if (current_points >= 5 && current_points / 5 > last_blessed_points_ / 5) {
+            ascended_.add_blessing();
+            last_blessed_points_ = current_points;
+        }
+
     } else{
+
+        if(mario_.check_points()%5 == 0) ascended_.add_blessing();
+
         for (auto& fires : fires_) {
+            if (ascended_.is_active() && interseccionen(ascended_.get_rect(), fires.get_rect())) {
+                fires.deactivate_fires();
+                //Saltem la intersecció mario
+                continue;
+            }
+
             if (fires.is_active() && interseccionen(marioRect, fires.get_rect())) {
                 fires.deactivate_fires();
                 reset_ = true;
@@ -209,6 +244,12 @@ void Game::update_objects(pro2::Window& window) {
         //Fem tot menys deixar que es moguin
         //Mirem si hi ha intersecció
         for (auto& fireball : fireballs_) {
+            if (ascended_.is_active() && interseccionen(ascended_.get_rect(), fireball.get_rect())) {
+                fireball.deactivate();
+                //Saltem la intersecció mario
+                continue;
+            }
+
             if (fireball.is_active() && interseccionen(marioRect, fireball.get_rect())) {
                 fireball.deactivate();
                 reset_ = true;
@@ -227,6 +268,7 @@ void Game::update_objects(pro2::Window& window) {
     }
 }
 
+/*UPDATE DE LA CAMERA*/
 void Game::update_camera(pro2::Window& window) {
     const Pt pos = mario_.pos();
     const Pt cam = window.camera_center();
@@ -251,6 +293,7 @@ void Game::update_camera(pro2::Window& window) {
     window.move_camera({dx, dy});
 }
 
+/*UPDATE GENERAL*/
 void Game::update(pro2::Window& window) {
     process_keys(window);
     if(!paused_ and !reset_){
@@ -259,6 +302,7 @@ void Game::update(pro2::Window& window) {
     } 
 }
 
+/*PAINT GENERAL*/
 void Game::paint(pro2::Window& window) {
     if(!paused_ and !reset_){
         if(!sandglass_.is_effect_active()){
@@ -291,6 +335,10 @@ void Game::paint(pro2::Window& window) {
             (*it).paint(window);
         }
 
+        if (ascended_.is_active()) {
+            ascended_.paint(window);
+        }
+
         //pinta el nombre total de punts
         paint_number(window, {window.camera_center().x - 230, window.camera_center().y - 150}, mario_.check_points());
         //pinta el text POINTS
@@ -305,12 +353,13 @@ void Game::paint(pro2::Window& window) {
         int pos_y = window.topleft().y + window.height()/2 - 10;
         paint_text(window, {pos_x, pos_y}, "PAUSED");
     } else if(reset_){
-         //pantalla en gris amb el text GAME OVER
+        //VERMELL
         window.clear(0x7B1818);
         //pinta el text GAME OVER al mitg de la pantalla
         //a sota fiquem PRESS R TO RESTART
         int pos_x = window.topleft().x + window.width()/2 - 20;
         int pos_y = window.topleft().y + window.height()/2 - 10;
+        
         paint_text(window, {pos_x, pos_y}, "GAME OVER", 0xFF5733);
         paint_text(window, {pos_x-25, pos_y+20}, "PRESS R TO RESTART", 0xFF5733);
         paint_text(window, {pos_x, pos_y+40}, "SCORE: ", 0xFF5733);

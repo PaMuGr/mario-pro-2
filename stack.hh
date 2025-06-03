@@ -84,7 +84,7 @@ public:
 
   // Standard functions:
   
-  int size() {
+  int size() const{
     return _size;
   }
 
