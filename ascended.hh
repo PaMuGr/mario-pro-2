@@ -14,7 +14,7 @@ private:
     
     static const std::vector<std::vector<int>> ascended_sprite_;
     
-    Stack<int> blessings;  // Using your stack implementation
+    Stack<int> blessings;  
     bool active = false;
     int duration = 0;
     Pt pos_;
@@ -32,6 +32,10 @@ public:
     
     bool is_active() const {
         return active;
+    }
+
+    int size() const{
+        return blessings.size();
     }
 
     void activate(Pt mario_pos);

@@ -16,6 +16,7 @@
 #include "finder.hh"
 #include "sandglass.hh"
 #include "demon.hh"
+#include "list.hh"
 #include "ascended.hh"
 
 /*DEFINICIÓ DE LA CLASSE*/
@@ -26,8 +27,10 @@ class Game {
     Sandglass sandglass_;
     Demon demon_;
     pro2::Ascended ascended_;
-    std::list<Fireball> fireballs_;
-    std::list<Fire> fires_;
+    
+    //Llistes usant l'implementació amb punters
+    List<Fireball> fireballs_;
+    List<Fire> fires_;
 
     //FINDER de les plataformes i crosses
     Finder<Platform> finder_platforms_;
@@ -75,6 +78,33 @@ class Game {
         return reset_;
     }
 
+    //PAINTING METHODS:
+
+    void paint_platforms(pro2::Window& window);
+    void paint_crosses(pro2::Window& window);
+    void paint_demon_objects(pro2::Window& window);
+    void paint_fireballs(pro2::Window& window);
+    void paint_blessings(pro2::Window& window);
+    void paint_points(pro2::Window& window);
+    void paint_paused_screen(pro2::Window& window);
+    void paint_gameover_screen(pro2::Window& window);
+    void paint_game_frame(pro2::Window& window); 
+    
+    //UPDATE METHODS:
+
+    bool check_fallen_off_screen(const pro2::Window& window);
+    void handle_sandglass_interaction(const pro2::Rect& marioRect);
+    void update_time_stoped_mode(pro2::Window& window, const pro2::Rect& marioRect);
+    void update_normal_mode(pro2::Window& window, const pro2::Rect& marioRect);
+    void try_shoot_fireball();
+    void update_fireballs();
+    bool check_fireball_hits_platform(Fireball& fireball);
+    void update_crosses(pro2::Window& window, const pro2::Rect& marioRect);
+    void update_fires();
+    void update_fireball_collisions(const pro2::Rect& marioRect, bool timeStoped);
+    void update_fire_collisions(const pro2::Rect& marioRect, bool timeStoped);
+    void check_blessing_points();
+    
  private:
     static constexpr int sky_blue = 0x5c94fc;
 };
