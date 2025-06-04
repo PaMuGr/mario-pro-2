@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['finder_0',['Finder',['../classFinder.html',1,'']]],
-  ['finder_3c_20cross_20_3e_1',['Finder&lt; Cross &gt;',['../classFinder.html',1,'']]],
-  ['finder_3c_20platform_20_3e_2',['Finder&lt; Platform &gt;',['../classFinder.html',1,'']]]
+  ['const_5fiterator_0',['const_iterator',['../classList_1_1const__iterator.html',1,'List']]],
+  ['cross_1',['Cross',['../classCross.html',1,'']]]
 ];

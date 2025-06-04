@@ -16,7 +16,55 @@ void \mbox{\hyperlink{classGame_af3e3428a12b9944fefb663f2fe560529}{paint}} (\mbo
 bool \mbox{\hyperlink{classGame_a3fef163aab28f7a4de1abb8d08794e7f}{is\+\_\+paused}} () const
 \begin{DoxyCompactList}\small\item\em Retorna un bool segons si el joc esta o no pausat. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{is\+\_\+finished}} () const
-\begin{DoxyCompactList}\small\item\em Retorna un bool segons si el joc esta o no pausat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retorna un bool segons si el joc esta o no finalitzat. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_ae4268b648bd696673acf3de0cddfc20b}{you\+\_\+died}} () const
+\begin{DoxyCompactList}\small\item\em Retorna un bool segons si el mario ha mort. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a24f8beafd9f0e1c435ff811b919dfa90}{paint\+\_\+platforms}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Pinten els diferents objectes a la finestra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a991a1522b4c597467d3b16be63167b43}{paint\+\_\+crosses}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_aaab77c2936ba25db40c7b7730056be40}{paint\+\_\+demon\+\_\+objects}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_a47f1dedca2b82e8c9ae89a35dd2ec1ad}{paint\+\_\+fireballs}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_ab2240ddc19ac41994ea1404e7d5a5bfb}{paint\+\_\+blessings}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_a5af625d2e56e43a9a2f8cc6de20e52b9}{paint\+\_\+points}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_a76a742bbf7281efcc1edf5b9d4e8367d}{paint\+\_\+paused\+\_\+screen}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_a1c8dc611af65f79c9080c8464c0b07ad}{paint\+\_\+gameover\+\_\+screen}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_a2f8c004d1908f2af444f4d9c561148c7}{paint\+\_\+starting\+\_\+screen}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_afac687ddf20d34c25f8d97962a9e0866}{paint\+\_\+game\+\_\+frame}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_aabadd5026e72b4a84cd0afdb505681fd}{center\+\_\+text}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} center, const std\+::string \&text, int y\+\_\+offset)
+\begin{DoxyCompactList}\small\item\em Centra un text al mitg de la pantalla. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_abbfcda5bf7c3a427a5d8f512dacec6e0}{check\+\_\+fallen\+\_\+off\+\_\+screen}} (const \mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{classGame_ad67466fb235ac2069efe278f6d35268a}{handle\+\_\+sandglass\+\_\+interaction}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
+\item 
+void \mbox{\hyperlink{classGame_a6e9c6cafeb4becc2183a220d1788062f}{update\+\_\+time\+\_\+stoped\+\_\+mode}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
+\item 
+void \mbox{\hyperlink{classGame_a83971c017e3001fe2df507dad4f893e0}{update\+\_\+normal\+\_\+mode}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
+\item 
+void \mbox{\hyperlink{classGame_a6e999b991c363fc200283e7323ff09f1}{try\+\_\+shoot\+\_\+fireball}} ()
+\item 
+void \mbox{\hyperlink{classGame_a97c6e6af66a497bd1d4f137ee08ddf33}{update\+\_\+fireballs}} ()
+\item 
+bool \mbox{\hyperlink{classGame_ad97e552e241587a12f86f392c3328050}{check\+\_\+fireball\+\_\+hits\+\_\+platform}} (\mbox{\hyperlink{classFireball}{Fireball}} \&fireball)
+\item 
+void \mbox{\hyperlink{classGame_a8052300120200684df461bb6aa2a2b9c}{update\+\_\+crosses}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
+\item 
+void \mbox{\hyperlink{classGame_acc149cfddc137cb5189e545f1a9dbbdd}{update\+\_\+fires}} ()
+\item 
+void \mbox{\hyperlink{classGame_a1db13df88cb8be7fe2e4905d0bb7b200}{update\+\_\+fireball\+\_\+collisions}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
+\item 
+void \mbox{\hyperlink{classGame_aafc22da4227f79831a3401e1c0412e27}{update\+\_\+fire\+\_\+collisions}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
+\item 
+void \mbox{\hyperlink{classGame_a7849d79c921e869e30923bf9974519b5}{check\+\_\+blessing\+\_\+points}} ()
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Métodos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,9 +81,21 @@ void \mbox{\hyperlink{classGame_ab146f2f8cec61b092586762267cf1e73}{update\+\_\+c
 \item 
 std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $>$ \mbox{\hyperlink{classGame_af8d7b0aefacb6a03fb6e2d28a2b49923}{platforms\+\_\+}}
 \item 
+\mbox{\hyperlink{classPlatform}{Platform}} \mbox{\hyperlink{classGame_a41f899e947ef89e1d9ad7db3557e1be5}{still\+\_\+platform\+\_\+}}
+\item 
+\mbox{\hyperlink{classMario}{Mario}} \mbox{\hyperlink{classGame_a18f58e292e852152f768639dfe4c0e47}{still\+\_\+mario\+\_\+}}
+\item 
 std\+::list$<$ \mbox{\hyperlink{classCross}{Cross}} $>$ \mbox{\hyperlink{classGame_a1766a1e6331c8458c040ad641f82b4ab}{crosses\+\_\+}}
 \item 
 \mbox{\hyperlink{classSandglass}{Sandglass}} \mbox{\hyperlink{classGame_a56d8b6fb9cff75879c0d70310b508ed3}{sandglass\+\_\+}}
+\item 
+\mbox{\hyperlink{classDemon}{Demon}} \mbox{\hyperlink{classGame_af2cb5925dfa39af72927ae512034cdac}{demon\+\_\+}}
+\item 
+\mbox{\hyperlink{classpro2_1_1Ascended}{pro2\+::\+Ascended}} \mbox{\hyperlink{classGame_aaba05b1a95dbabf977bf1d51cb67ce55}{ascended\+\_\+}}
+\item 
+\mbox{\hyperlink{classList}{List}}$<$ \mbox{\hyperlink{classFireball}{Fireball}} $>$ \mbox{\hyperlink{classGame_a0c2c016d29e8a36654c3b73ededddbb4}{fireballs\+\_\+}}
+\item 
+\mbox{\hyperlink{classList}{List}}$<$ \mbox{\hyperlink{classFire}{Fire}} $>$ \mbox{\hyperlink{classGame_ac79594eaeb2fc130366c8d79fb48e662}{fires\+\_\+}}
 \item 
 \mbox{\hyperlink{classFinder}{Finder}}$<$ \mbox{\hyperlink{classPlatform}{Platform}} $>$ \mbox{\hyperlink{classGame_a4ac62fcd6f881bcb94637e29015a7c7b}{finder\+\_\+platforms\+\_\+}}
 \item 
@@ -45,9 +105,13 @@ bool \mbox{\hyperlink{classGame_a0199e692575fbb7366551b469b066a6c}{paused\+\_\+}
 \item 
 bool \mbox{\hyperlink{classGame_ae68025f0c47e30423db4288e0038e5e8}{finished\+\_\+}}
 \item 
+bool \mbox{\hyperlink{classGame_a97a7cd4542b7556be2247ec7335e91a2}{reset\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classGame_aa962f49423cca6cbedfa91f4a4a127d5}{start\+\_\+game\+\_\+}}
+\item 
 int \mbox{\hyperlink{classGame_a6e8623dae36c0cac75255c40ceec5b35}{cross\+\_\+height\+\_\+y\+\_\+}} = 0
 \item 
-bool \mbox{\hyperlink{classGame_aa6b4a7d6ba751497f2ed43702ebc7fd6}{cross\+\_\+movingup\+\_\+}} = true
+int \mbox{\hyperlink{classGame_a201212d7739d9b0b2e35b62fccece153}{last\+\_\+blessed\+\_\+points\+\_\+}} = 0
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos estáticos privados}
 \begin{DoxyCompactItemize}
@@ -59,7 +123,7 @@ static constexpr int \mbox{\hyperlink{classGame_a636fa6f9369014f3aa1365b8cd3611b
 \doxysubsection{Descripción detallada}
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00018}{18}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 
@@ -72,7 +136,7 @@ Game\+::\+Game (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{heig
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8cc_source_l00008}{8}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00009}{9}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -80,6 +144,86 @@ Definición en la línea \mbox{\hyperlink{game_8cc_source_l00008}{8}} del archiv
 
 
 \doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classGame_aabadd5026e72b4a84cd0afdb505681fd}\index{Game@{Game}!center\_text@{center\_text}}
+\index{center\_text@{center\_text}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{center\_text()}{center\_text()}}
+{\footnotesize\ttfamily \label{classGame_aabadd5026e72b4a84cd0afdb505681fd} 
+void Game\+::center\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{, }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{center}{, }\item[{const std\+::string \&}]{text}{, }\item[{int}]{y\+\_\+offset}{}\end{DoxyParamCaption})}
+
+
+
+Centra un text al mitg de la pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra on anira el text \\
+\hline
+{\em center} & Mitg de la finestra \\
+\hline
+{\em text} & Text a pintar \\
+\hline
+{\em y\+\_\+offset} & Distancia del mitg de la pantalla (útil per més de un text) \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00387}{387}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a7849d79c921e869e30923bf9974519b5}\index{Game@{Game}!check\_blessing\_points@{check\_blessing\_points}}
+\index{check\_blessing\_points@{check\_blessing\_points}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{check\_blessing\_points()}{check\_blessing\_points()}}
+{\footnotesize\ttfamily \label{classGame_a7849d79c921e869e30923bf9974519b5} 
+void Game\+::check\+\_\+blessing\+\_\+points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00249}{249}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_abbfcda5bf7c3a427a5d8f512dacec6e0}\index{Game@{Game}!check\_fallen\_off\_screen@{check\_fallen\_off\_screen}}
+\index{check\_fallen\_off\_screen@{check\_fallen\_off\_screen}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{check\_fallen\_off\_screen()}{check\_fallen\_off\_screen()}}
+{\footnotesize\ttfamily \label{classGame_abbfcda5bf7c3a427a5d8f512dacec6e0} 
+bool Game\+::check\+\_\+fallen\+\_\+off\+\_\+screen (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00108}{108}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_ad97e552e241587a12f86f392c3328050}\index{Game@{Game}!check\_fireball\_hits\_platform@{check\_fireball\_hits\_platform}}
+\index{check\_fireball\_hits\_platform@{check\_fireball\_hits\_platform}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{check\_fireball\_hits\_platform()}{check\_fireball\_hits\_platform()}}
+{\footnotesize\ttfamily \label{classGame_ad97e552e241587a12f86f392c3328050} 
+bool Game\+::check\+\_\+fireball\+\_\+hits\+\_\+platform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFireball}{Fireball}} \&}]{fireball}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00172}{172}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_ad67466fb235ac2069efe278f6d35268a}\index{Game@{Game}!handle\_sandglass\_interaction@{handle\_sandglass\_interaction}}
+\index{handle\_sandglass\_interaction@{handle\_sandglass\_interaction}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{handle\_sandglass\_interaction()}{handle\_sandglass\_interaction()}}
+{\footnotesize\ttfamily \label{classGame_ad67466fb235ac2069efe278f6d35268a} 
+void Game\+::handle\+\_\+sandglass\+\_\+interaction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{mario\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00118}{118}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
 \Hypertarget{classGame_a48d38b110cb6558e69b1920bb31406db}\index{Game@{Game}!is\_finished@{is\_finished}}
 \index{is\_finished@{is\_finished}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{is\_finished()}{is\_finished()}}
@@ -88,14 +232,14 @@ bool Game\+::is\+\_\+finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption
 
 
 
-Retorna un bool segons si el joc esta o no pausat. 
+Retorna un bool segons si el joc esta o no finalitzat. 
 
 \begin{DoxyReturn}{Devuelve}
 True or False segons l\textquotesingle{}estat del joc 
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00056}{56}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00071}{71}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -115,7 +259,7 @@ True or False segons l\textquotesingle{}estat del joc
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00047}{47}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00062}{62}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -128,7 +272,134 @@ void Game\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8cc_source_l00139}{139}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00409}{409}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_ab2240ddc19ac41994ea1404e7d5a5bfb}\index{Game@{Game}!paint\_blessings@{paint\_blessings}}
+\index{paint\_blessings@{paint\_blessings}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_blessings()}{paint\_blessings()}}
+{\footnotesize\ttfamily \label{classGame_ab2240ddc19ac41994ea1404e7d5a5bfb} 
+void Game\+::paint\+\_\+blessings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00337}{337}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a991a1522b4c597467d3b16be63167b43}\index{Game@{Game}!paint\_crosses@{paint\_crosses}}
+\index{paint\_crosses@{paint\_crosses}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_crosses()}{paint\_crosses()}}
+{\footnotesize\ttfamily \label{classGame_a991a1522b4c597467d3b16be63167b43} 
+void Game\+::paint\+\_\+crosses (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00317}{317}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_aaab77c2936ba25db40c7b7730056be40}\index{Game@{Game}!paint\_demon\_objects@{paint\_demon\_objects}}
+\index{paint\_demon\_objects@{paint\_demon\_objects}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_demon\_objects()}{paint\_demon\_objects()}}
+{\footnotesize\ttfamily \label{classGame_aaab77c2936ba25db40c7b7730056be40} 
+void Game\+::paint\+\_\+demon\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00325}{325}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a47f1dedca2b82e8c9ae89a35dd2ec1ad}\index{Game@{Game}!paint\_fireballs@{paint\_fireballs}}
+\index{paint\_fireballs@{paint\_fireballs}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_fireballs()}{paint\_fireballs()}}
+{\footnotesize\ttfamily \label{classGame_a47f1dedca2b82e8c9ae89a35dd2ec1ad} 
+void Game\+::paint\+\_\+fireballs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGame_afac687ddf20d34c25f8d97962a9e0866}\index{Game@{Game}!paint\_game\_frame@{paint\_game\_frame}}
+\index{paint\_game\_frame@{paint\_game\_frame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_game\_frame()}{paint\_game\_frame()}}
+{\footnotesize\ttfamily \label{classGame_afac687ddf20d34c25f8d97962a9e0866} 
+void Game\+::paint\+\_\+game\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00377}{377}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a1c8dc611af65f79c9080c8464c0b07ad}\index{Game@{Game}!paint\_gameover\_screen@{paint\_gameover\_screen}}
+\index{paint\_gameover\_screen@{paint\_gameover\_screen}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_gameover\_screen()}{paint\_gameover\_screen()}}
+{\footnotesize\ttfamily \label{classGame_a1c8dc611af65f79c9080c8464c0b07ad} 
+void Game\+::paint\+\_\+gameover\+\_\+screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00364}{364}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a76a742bbf7281efcc1edf5b9d4e8367d}\index{Game@{Game}!paint\_paused\_screen@{paint\_paused\_screen}}
+\index{paint\_paused\_screen@{paint\_paused\_screen}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_paused\_screen()}{paint\_paused\_screen()}}
+{\footnotesize\ttfamily \label{classGame_a76a742bbf7281efcc1edf5b9d4e8367d} 
+void Game\+::paint\+\_\+paused\+\_\+screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00352}{352}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a24f8beafd9f0e1c435ff811b919dfa90}\index{Game@{Game}!paint\_platforms@{paint\_platforms}}
+\index{paint\_platforms@{paint\_platforms}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_platforms()}{paint\_platforms()}}
+{\footnotesize\ttfamily \label{classGame_a24f8beafd9f0e1c435ff811b919dfa90} 
+void Game\+::paint\+\_\+platforms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Pinten els diferents objectes a la finestra. 
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00309}{309}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a5af625d2e56e43a9a2f8cc6de20e52b9}\index{Game@{Game}!paint\_points@{paint\_points}}
+\index{paint\_points@{paint\_points}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_points()}{paint\_points()}}
+{\footnotesize\ttfamily \label{classGame_a5af625d2e56e43a9a2f8cc6de20e52b9} 
+void Game\+::paint\+\_\+points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00345}{345}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a2f8c004d1908f2af444f4d9c561148c7}\index{Game@{Game}!paint\_starting\_screen@{paint\_starting\_screen}}
+\index{paint\_starting\_screen@{paint\_starting\_screen}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paint\_starting\_screen()}{paint\_starting\_screen()}}
+{\footnotesize\ttfamily \label{classGame_a2f8c004d1908f2af444f4d9c561148c7} 
+void Game\+::paint\+\_\+starting\+\_\+screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00394}{394}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -141,7 +412,20 @@ void Game\+::process\+\_\+keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8cc_source_l00045}{45}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00084}{84}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a6e999b991c363fc200283e7323ff09f1}\index{Game@{Game}!try\_shoot\_fireball@{try\_shoot\_fireball}}
+\index{try\_shoot\_fireball@{try\_shoot\_fireball}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{try\_shoot\_fireball()}{try\_shoot\_fireball()}}
+{\footnotesize\ttfamily \label{classGame_a6e999b991c363fc200283e7323ff09f1} 
+void Game\+::try\+\_\+shoot\+\_\+fireball (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00151}{151}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -154,7 +438,7 @@ void Game\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8cc_source_l00131}{131}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00301}{301}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -167,7 +451,85 @@ void Game\+::update\+\_\+camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8cc_source_l00107}{107}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00276}{276}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a8052300120200684df461bb6aa2a2b9c}\index{Game@{Game}!update\_crosses@{update\_crosses}}
+\index{update\_crosses@{update\_crosses}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_crosses()}{update\_crosses()}}
+{\footnotesize\ttfamily \label{classGame_a8052300120200684df461bb6aa2a2b9c} 
+void Game\+::update\+\_\+crosses (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{, }\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{mario\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00197}{197}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_aafc22da4227f79831a3401e1c0412e27}\index{Game@{Game}!update\_fire\_collisions@{update\_fire\_collisions}}
+\index{update\_fire\_collisions@{update\_fire\_collisions}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_fire\_collisions()}{update\_fire\_collisions()}}
+{\footnotesize\ttfamily \label{classGame_aafc22da4227f79831a3401e1c0412e27} 
+void Game\+::update\+\_\+fire\+\_\+collisions (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{mario\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00235}{235}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a1db13df88cb8be7fe2e4905d0bb7b200}\index{Game@{Game}!update\_fireball\_collisions@{update\_fireball\_collisions}}
+\index{update\_fireball\_collisions@{update\_fireball\_collisions}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_fireball\_collisions()}{update\_fireball\_collisions()}}
+{\footnotesize\ttfamily \label{classGame_a1db13df88cb8be7fe2e4905d0bb7b200} 
+void Game\+::update\+\_\+fireball\+\_\+collisions (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{mario\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00221}{221}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a97c6e6af66a497bd1d4f137ee08ddf33}\index{Game@{Game}!update\_fireballs@{update\_fireballs}}
+\index{update\_fireballs@{update\_fireballs}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_fireballs()}{update\_fireballs()}}
+{\footnotesize\ttfamily \label{classGame_a97c6e6af66a497bd1d4f137ee08ddf33} 
+void Game\+::update\+\_\+fireballs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00160}{160}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_acc149cfddc137cb5189e545f1a9dbbdd}\index{Game@{Game}!update\_fires@{update\_fires}}
+\index{update\_fires@{update\_fires}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_fires()}{update\_fires()}}
+{\footnotesize\ttfamily \label{classGame_acc149cfddc137cb5189e545f1a9dbbdd} 
+void Game\+::update\+\_\+fires (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00210}{210}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a83971c017e3001fe2df507dad4f893e0}\index{Game@{Game}!update\_normal\_mode@{update\_normal\_mode}}
+\index{update\_normal\_mode@{update\_normal\_mode}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_normal\_mode()}{update\_normal\_mode()}}
+{\footnotesize\ttfamily \label{classGame_a83971c017e3001fe2df507dad4f893e0} 
+void Game\+::update\+\_\+normal\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{, }\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{mario\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00137}{137}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -180,7 +542,40 @@ void Game\+::update\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlin
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8cc_source_l00056}{56}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00258}{258}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_a6e9c6cafeb4becc2183a220d1788062f}\index{Game@{Game}!update\_time\_stoped\_mode@{update\_time\_stoped\_mode}}
+\index{update\_time\_stoped\_mode@{update\_time\_stoped\_mode}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update\_time\_stoped\_mode()}{update\_time\_stoped\_mode()}}
+{\footnotesize\ttfamily \label{classGame_a6e9c6cafeb4becc2183a220d1788062f} 
+void Game\+::update\+\_\+time\+\_\+stoped\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{, }\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{mario\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8cc_source_l00125}{125}} del archivo \mbox{\hyperlink{game_8cc_source}{game.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classGame_ae4268b648bd696673acf3de0cddfc20b}\index{Game@{Game}!you\_died@{you\_died}}
+\index{you\_died@{you\_died}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{you\_died()}{you\_died()}}
+{\footnotesize\ttfamily \label{classGame_ae4268b648bd696673acf3de0cddfc20b} 
+bool Game\+::you\+\_\+died (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna un bool segons si el mario ha mort. 
+
+\begin{DoxyReturn}{Devuelve}
+True or False segons el mario 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00080}{80}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -188,6 +583,16 @@ Definición en la línea \mbox{\hyperlink{game_8cc_source_l00056}{56}} del archi
 
 
 \doxysubsection{Documentación de datos miembro}
+\Hypertarget{classGame_aaba05b1a95dbabf977bf1d51cb67ce55}\index{Game@{Game}!ascended\_@{ascended\_}}
+\index{ascended\_@{ascended\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ascended\_}{ascended\_}}
+{\footnotesize\ttfamily \label{classGame_aaba05b1a95dbabf977bf1d51cb67ce55} 
+\mbox{\hyperlink{classpro2_1_1Ascended}{pro2\+::\+Ascended}} Game\+::ascended\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
 \Hypertarget{classGame_a6e8623dae36c0cac75255c40ceec5b35}\index{Game@{Game}!cross\_height\_y\_@{cross\_height\_y\_}}
 \index{cross\_height\_y\_@{cross\_height\_y\_}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{cross\_height\_y\_}{cross\_height\_y\_}}
@@ -196,17 +601,7 @@ int Game\+::cross\+\_\+height\+\_\+y\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
-
-\Hypertarget{classGame_aa6b4a7d6ba751497f2ed43702ebc7fd6}\index{Game@{Game}!cross\_movingup\_@{cross\_movingup\_}}
-\index{cross\_movingup\_@{cross\_movingup\_}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{cross\_movingup\_}{cross\_movingup\_}}
-{\footnotesize\ttfamily \label{classGame_aa6b4a7d6ba751497f2ed43702ebc7fd6} 
-bool Game\+::cross\+\_\+movingup\+\_\+ = true\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00030}{30}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00045}{45}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a1766a1e6331c8458c040ad641f82b4ab}\index{Game@{Game}!crosses\_@{crosses\_}}
 \index{crosses\_@{crosses\_}!Game@{Game}}
@@ -216,7 +611,17 @@ std\+::list$<$\mbox{\hyperlink{classCross}{Cross}}$>$ Game\+::crosses\+\_\+\hspa
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00028}{28}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
+\Hypertarget{classGame_af2cb5925dfa39af72927ae512034cdac}\index{Game@{Game}!demon\_@{demon\_}}
+\index{demon\_@{demon\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{demon\_}{demon\_}}
+{\footnotesize\ttfamily \label{classGame_af2cb5925dfa39af72927ae512034cdac} 
+\mbox{\hyperlink{classDemon}{Demon}} Game\+::demon\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00030}{30}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_ab1ee68975468409b25082bf66e9414d6}\index{Game@{Game}!finder\_crosses\_@{finder\_crosses\_}}
 \index{finder\_crosses\_@{finder\_crosses\_}!Game@{Game}}
@@ -226,7 +631,7 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00021}{21}} del archi
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00039}{39}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a4ac62fcd6f881bcb94637e29015a7c7b}\index{Game@{Game}!finder\_platforms\_@{finder\_platforms\_}}
 \index{finder\_platforms\_@{finder\_platforms\_}!Game@{Game}}
@@ -236,7 +641,7 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00025}{25}} del archi
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00038}{38}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_ae68025f0c47e30423db4288e0038e5e8}\index{Game@{Game}!finished\_@{finished\_}}
 \index{finished\_@{finished\_}!Game@{Game}}
@@ -246,7 +651,37 @@ bool Game\+::finished\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00028}{28}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00042}{42}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
+\Hypertarget{classGame_a0c2c016d29e8a36654c3b73ededddbb4}\index{Game@{Game}!fireballs\_@{fireballs\_}}
+\index{fireballs\_@{fireballs\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{fireballs\_}{fireballs\_}}
+{\footnotesize\ttfamily \label{classGame_a0c2c016d29e8a36654c3b73ededddbb4} 
+\mbox{\hyperlink{classList}{List}}$<$\mbox{\hyperlink{classFireball}{Fireball}}$>$ Game\+::fireballs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00034}{34}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
+\Hypertarget{classGame_ac79594eaeb2fc130366c8d79fb48e662}\index{Game@{Game}!fires\_@{fires\_}}
+\index{fires\_@{fires\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{fires\_}{fires\_}}
+{\footnotesize\ttfamily \label{classGame_ac79594eaeb2fc130366c8d79fb48e662} 
+\mbox{\hyperlink{classList}{List}}$<$\mbox{\hyperlink{classFire}{Fire}}$>$ Game\+::fires\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00035}{35}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
+\Hypertarget{classGame_a201212d7739d9b0b2e35b62fccece153}\index{Game@{Game}!last\_blessed\_points\_@{last\_blessed\_points\_}}
+\index{last\_blessed\_points\_@{last\_blessed\_points\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{last\_blessed\_points\_}{last\_blessed\_points\_}}
+{\footnotesize\ttfamily \label{classGame_a201212d7739d9b0b2e35b62fccece153} 
+int Game\+::last\+\_\+blessed\+\_\+points\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00046}{46}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a5ca6a91487a61b30528dd535bed1ce26}\index{Game@{Game}!mario\_@{mario\_}}
 \index{mario\_@{mario\_}!Game@{Game}}
@@ -256,7 +691,7 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00028}{28}} del archi
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00019}{19}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a0199e692575fbb7366551b469b066a6c}\index{Game@{Game}!paused\_@{paused\_}}
 \index{paused\_@{paused\_}!Game@{Game}}
@@ -266,7 +701,7 @@ bool Game\+::paused\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00041}{41}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_af8d7b0aefacb6a03fb6e2d28a2b49923}\index{Game@{Game}!platforms\_@{platforms\_}}
 \index{platforms\_@{platforms\_}!Game@{Game}}
@@ -276,7 +711,17 @@ std\+::vector$<$\mbox{\hyperlink{classPlatform}{Platform}}$>$ Game\+::platforms\
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
+\Hypertarget{classGame_a97a7cd4542b7556be2247ec7335e91a2}\index{Game@{Game}!reset\_@{reset\_}}
+\index{reset\_@{reset\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{reset\_}{reset\_}}
+{\footnotesize\ttfamily \label{classGame_a97a7cd4542b7556be2247ec7335e91a2} 
+bool Game\+::reset\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00043}{43}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a56d8b6fb9cff75879c0d70310b508ed3}\index{Game@{Game}!sandglass\_@{sandglass\_}}
 \index{sandglass\_@{sandglass\_}!Game@{Game}}
@@ -286,7 +731,7 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00020}{20}} del archi
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a636fa6f9369014f3aa1365b8cd3611b4}\index{Game@{Game}!sky\_blue@{sky\_blue}}
 \index{sky\_blue@{sky\_blue}!Game@{Game}}
@@ -296,7 +741,37 @@ int Game\+::sky\+\_\+blue = 0x5c94fc\hspace{0.3cm}{\ttfamily [static]}, {\ttfami
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00061}{61}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00127}{127}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
+\Hypertarget{classGame_aa962f49423cca6cbedfa91f4a4a127d5}\index{Game@{Game}!start\_game\_@{start\_game\_}}
+\index{start\_game\_@{start\_game\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{start\_game\_}{start\_game\_}}
+{\footnotesize\ttfamily \label{classGame_aa962f49423cca6cbedfa91f4a4a127d5} 
+bool Game\+::start\+\_\+game\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00044}{44}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
+\Hypertarget{classGame_a18f58e292e852152f768639dfe4c0e47}\index{Game@{Game}!still\_mario\_@{still\_mario\_}}
+\index{still\_mario\_@{still\_mario\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{still\_mario\_}{still\_mario\_}}
+{\footnotesize\ttfamily \label{classGame_a18f58e292e852152f768639dfe4c0e47} 
+\mbox{\hyperlink{classMario}{Mario}} Game\+::still\+\_\+mario\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+
+\Hypertarget{classGame_a41f899e947ef89e1d9ad7db3557e1be5}\index{Game@{Game}!still\_platform\_@{still\_platform\_}}
+\index{still\_platform\_@{still\_platform\_}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{still\_platform\_}{still\_platform\_}}
+{\footnotesize\ttfamily \label{classGame_a41f899e947ef89e1d9ad7db3557e1be5} 
+\mbox{\hyperlink{classPlatform}{Platform}} Game\+::still\+\_\+platform\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 

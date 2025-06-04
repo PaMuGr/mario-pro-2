@@ -7,17 +7,21 @@
 \doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classMario_ad88345556f10629d39a0d0939dd7b6b6}{Mario}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}, int jump\+Key, int left\+Key, int right\+Key)
+\mbox{\hyperlink{classMario_a99ffbd5c3dd7640ad6059ae8c458e578}{Mario}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}, int jump\+Key, int left\+Key, int right\+Key, int godown\+Key)
 \item 
 void \mbox{\hyperlink{classMario_a6a833fb3bb1f2c1a302cb5ed0e6787a2}{add\+\_\+points}} ()
 \begin{DoxyCompactList}\small\item\em Augmenta en 1 la puntuació \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMario_a454e0a6b462c41fc8d2394c68167c933}{collect\+\_\+sandwatch}} ()
+\begin{DoxyCompactList}\small\item\em Augmenta en 1 els sandwatched collected. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMario_a17c52358708350ffe1ca606cf0734ce3}{sandwatches\+\_\+collected}} () const
+\begin{DoxyCompactList}\small\item\em Retorna el valor privat sandwatch\+Collected. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_a40a06fa07b9b2956edde6bedddc3e8bb}{check\+\_\+points}} () const
-\begin{DoxyCompactList}\small\item\em Retorna el valor privat touched\+\_\+. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna el valor privat redemtion\+Points\+\_\+. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_aee49024d8542a3f425d53b7ca86aefc8}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
 \item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}} () const
 \item 
-void \mbox{\hyperlink{classMario_a807ce8785091bd609e156292409b376f}{set\+\_\+y}} (int \mbox{\hyperlink{mario_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})
+void \mbox{\hyperlink{classMario_a807ce8785091bd609e156292409b376f}{set\+\_\+y}} (int \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})
 \item 
 void \mbox{\hyperlink{classMario_a52e29f7688225e81da18bad4ed571a0e}{set\+\_\+x}} (int x)
 \item 
@@ -53,6 +57,8 @@ int \mbox{\hyperlink{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}{accel\+\_\+ti
 \item 
 int \mbox{\hyperlink{classMario_a4d323f2aeabc325e28a93ab4688e4459}{redemtion\+Points\+\_\+}} = 0
 \item 
+int \mbox{\hyperlink{classMario_a3aa42fbacf28f3b2c7eda7b40df68af4}{sandwatch\+Collected\+\_\+}} = 0
+\item 
 int \mbox{\hyperlink{classMario_a0b42594e92c17c8b0352ac4734a44620}{mario\+\_\+width}} = 6
 \item 
 int \mbox{\hyperlink{classMario_a3859ee4e14d8f9e30f2aca76f9de29f2}{mario\+\_\+height}} = 8
@@ -62,6 +68,10 @@ int \mbox{\hyperlink{classMario_a22dbf8a740c51b63f4bb24397910e734}{jump\+\_\+key
 int \mbox{\hyperlink{classMario_ae5b22ddb16e949a19ec7211772ce0ad7}{left\+\_\+key\+\_\+}}
 \item 
 int \mbox{\hyperlink{classMario_aeed62c8513146eaa6607d0a407fc158e}{right\+\_\+key\+\_\+}}
+\item 
+int \mbox{\hyperlink{classMario_a9edbc221bc23414c8048f39f82b5a662}{go\+\_\+down\+\_\+key\+\_\+}}
+\item 
+int \mbox{\hyperlink{classMario_aa3c41608bed735336005aac06838f605}{SPEED}} = 6
 \item 
 bool \mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\+\_\+}} = false
 \item 
@@ -77,20 +87,20 @@ static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{clas
 \doxysubsection{Descripción detallada}
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00013}{13}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00014}{14}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 
 \doxysubsection{Documentación de constructores y destructores}
-\Hypertarget{classMario_ad88345556f10629d39a0d0939dd7b6b6}\index{Mario@{Mario}!Mario@{Mario}}
+\Hypertarget{classMario_a99ffbd5c3dd7640ad6059ae8c458e578}\index{Mario@{Mario}!Mario@{Mario}}
 \index{Mario@{Mario}!Mario@{Mario}}
 \doxysubsubsection{\texorpdfstring{Mario()}{Mario()}}
-{\footnotesize\ttfamily \label{classMario_ad88345556f10629d39a0d0939dd7b6b6} 
-Mario\+::\+Mario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos}{, }\item[{int}]{jump\+Key}{, }\item[{int}]{left\+Key}{, }\item[{int}]{right\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \label{classMario_a99ffbd5c3dd7640ad6059ae8c458e578} 
+Mario\+::\+Mario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos}{, }\item[{int}]{jump\+Key}{, }\item[{int}]{left\+Key}{, }\item[{int}]{right\+Key}{, }\item[{int}]{godown\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00030}{30}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00034}{34}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -110,7 +120,7 @@ Augmenta en 1 la puntuació
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00045}{45}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -123,7 +133,7 @@ void Mario\+::apply\+\_\+physics\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00054}{54}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
+Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00048}{48}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -136,14 +146,31 @@ int Mario\+::check\+\_\+points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaptio
 
 
 
-Retorna el valor privat touched\+\_\+. 
+Retorna el valor privat redemtion\+Points\+\_\+. 
 
 \begin{DoxyReturn}{Devuelve}
 int amb els punts que té al moment 
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00049}{49}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00070}{70}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classMario_a454e0a6b462c41fc8d2394c68167c933}\index{Mario@{Mario}!collect\_sandwatch@{collect\_sandwatch}}
+\index{collect\_sandwatch@{collect\_sandwatch}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{collect\_sandwatch()}{collect\_sandwatch()}}
+{\footnotesize\ttfamily \label{classMario_a454e0a6b462c41fc8d2394c68167c933} 
+void Mario\+::collect\+\_\+sandwatch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Augmenta en 1 els sandwatched collected. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00052}{52}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -160,7 +187,7 @@ Retorna la hitbox del mario.
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00083}{83}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
+Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00077}{77}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -173,7 +200,7 @@ bool Mario\+::is\+\_\+grounded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaptio
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00067}{67}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00088}{88}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -186,7 +213,7 @@ void Mario\+::jump (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00075}{75}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
+Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00069}{69}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -199,7 +226,7 @@ void Mario\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00049}{49}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
+Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00043}{43}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -212,7 +239,27 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00049}{49}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00055}{55}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00076}{76}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classMario_a17c52358708350ffe1ca606cf0734ce3}\index{Mario@{Mario}!sandwatches\_collected@{sandwatches\_collected}}
+\index{sandwatches\_collected@{sandwatches\_collected}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{sandwatches\_collected()}{sandwatches\_collected()}}
+{\footnotesize\ttfamily \label{classMario_a17c52358708350ffe1ca606cf0734ce3} 
+int Mario\+::sandwatches\+\_\+collected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna el valor privat sandwatch\+Collected. 
+
+\begin{DoxyReturn}{Devuelve}
+int amb els sandwatches que ha recollit 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00061}{61}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -225,7 +272,7 @@ void Mario\+::set\+\_\+grounded (\begin{DoxyParamCaption}\item[{bool}]{grounded}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00071}{71}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00092}{92}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -238,7 +285,7 @@ void Mario\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{x}{}\end{DoxyPara
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00063}{63}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00084}{84}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -251,7 +298,7 @@ void Mario\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{y}{}\end{DoxyPara
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00059}{59}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00080}{80}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -264,7 +311,7 @@ void Mario\+::toggle\+\_\+grounded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCa
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00078}{78}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00099}{99}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -277,7 +324,7 @@ void Mario\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00092}{92}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
+Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00086}{86}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
 
 
 \begin{DoxyCode}{0}
@@ -293,7 +340,7 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00092}{92}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00017}{17}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00018}{18}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -306,7 +353,17 @@ int Mario\+::accel\+\_\+time\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00018}{18}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00019}{19}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+
+\Hypertarget{classMario_a9edbc221bc23414c8048f39f82b5a662}\index{Mario@{Mario}!go\_down\_key\_@{go\_down\_key\_}}
+\index{go\_down\_key\_@{go\_down\_key\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{go\_down\_key\_}{go\_down\_key\_}}
+{\footnotesize\ttfamily \label{classMario_a9edbc221bc23414c8048f39f82b5a662} 
+int Mario\+::go\+\_\+down\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a9a5079abae4f376e690bdb2d69c16217}\index{Mario@{Mario}!grounded\_@{grounded\_}}
 \index{grounded\_@{grounded\_}!Mario@{Mario}}
@@ -316,7 +373,7 @@ bool Mario\+::grounded\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00028}{28}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a22dbf8a740c51b63f4bb24397910e734}\index{Mario@{Mario}!jump\_key\_@{jump\_key\_}}
 \index{jump\_key\_@{jump\_key\_}!Mario@{Mario}}
@@ -326,7 +383,7 @@ int Mario\+::jump\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a55592c8a186b21c9688ec1e10736711f}\index{Mario@{Mario}!last\_pos\_@{last\_pos\_}}
 \index{last\_pos\_@{last\_pos\_}!Mario@{Mario}}
@@ -336,7 +393,7 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00022}{22}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00015}{15}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00016}{16}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_ae5b22ddb16e949a19ec7211772ce0ad7}\index{Mario@{Mario}!left\_key\_@{left\_key\_}}
 \index{left\_key\_@{left\_key\_}!Mario@{Mario}}
@@ -346,7 +403,7 @@ int Mario\+::left\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_ae0d25e2cdd2bcb16b2f97665d7482d8f}\index{Mario@{Mario}!looking\_left\_@{looking\_left\_}}
 \index{looking\_left\_@{looking\_left\_}!Mario@{Mario}}
@@ -356,7 +413,7 @@ bool Mario\+::looking\+\_\+left\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a3859ee4e14d8f9e30f2aca76f9de29f2}\index{Mario@{Mario}!mario\_height@{mario\_height}}
 \index{mario\_height@{mario\_height}!Mario@{Mario}}
@@ -366,7 +423,7 @@ int Mario\+::mario\+\_\+height = 8\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a98619bbc1f150dae63dcd5a398bc05e8}\index{Mario@{Mario}!mario\_sprite\_normal\_@{mario\_sprite\_normal\_}}
 \index{mario\_sprite\_normal\_@{mario\_sprite\_normal\_}!Mario@{Mario}}
@@ -379,15 +436,11 @@ const vector$<$ vector$<$ int $>$ $>$ Mario\+::mario\+\_\+sprite\+\_\+normal\+\_
 \end{DoxyCode}
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMario_a6a833fb3bb1f2c1a302cb5ed0e6787a2}{add\_points}}()\{}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a4d323f2aeabc325e28a93ab4688e4459}{redemtionPoints\_}}++;}
-\DoxyCodeLine{00042\ \ \ \ \ \}}
-\DoxyCodeLine{00043\ \end{DoxyCode}
+\end{DoxyCode}
 \Hypertarget{classMario_a0b42594e92c17c8b0352ac4734a44620}\index{Mario@{Mario}!mario\_width@{mario\_width}}
 \index{mario\_width@{mario\_width}!Mario@{Mario}}
 \doxysubsubsection{\texorpdfstring{mario\_width}{mario\_width}}
@@ -396,7 +449,7 @@ int Mario\+::mario\+\_\+width = 6\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_afe8565966d1bdea7201e182558d2d709}\index{Mario@{Mario}!pos\_@{pos\_}}
 \index{pos\_@{pos\_}!Mario@{Mario}}
@@ -406,7 +459,7 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00020}{20}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00015}{15}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00016}{16}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a4d323f2aeabc325e28a93ab4688e4459}\index{Mario@{Mario}!redemtionPoints\_@{redemtionPoints\_}}
 \index{redemtionPoints\_@{redemtionPoints\_}!Mario@{Mario}}
@@ -416,7 +469,7 @@ int Mario\+::redemtion\+Points\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00019}{19}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_aeed62c8513146eaa6607d0a407fc158e}\index{Mario@{Mario}!right\_key\_@{right\_key\_}}
 \index{right\_key\_@{right\_key\_}!Mario@{Mario}}
@@ -426,7 +479,27 @@ int Mario\+::right\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+
+\Hypertarget{classMario_a3aa42fbacf28f3b2c7eda7b40df68af4}\index{Mario@{Mario}!sandwatchCollected\_@{sandwatchCollected\_}}
+\index{sandwatchCollected\_@{sandwatchCollected\_}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{sandwatchCollected\_}{sandwatchCollected\_}}
+{\footnotesize\ttfamily \label{classMario_a3aa42fbacf28f3b2c7eda7b40df68af4} 
+int Mario\+::sandwatch\+Collected\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+
+\Hypertarget{classMario_aa3c41608bed735336005aac06838f605}\index{Mario@{Mario}!SPEED@{SPEED}}
+\index{SPEED@{SPEED}!Mario@{Mario}}
+\doxysubsubsection{\texorpdfstring{SPEED}{SPEED}}
+{\footnotesize\ttfamily \label{classMario_aa3c41608bed735336005aac06838f605} 
+int Mario\+::\+SPEED = 6\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}\index{Mario@{Mario}!speed\_@{speed\_}}
 \index{speed\_@{speed\_}!Mario@{Mario}}
@@ -436,7 +509,7 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00022}{22}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00016}{16}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00017}{17}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}

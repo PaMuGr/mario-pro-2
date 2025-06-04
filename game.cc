@@ -25,9 +25,11 @@ Game::Game(int width, int height)
       paused_(false), 
       finished_(false),
       reset_(false),
+      start_game_(false),
       cross_height_y_(0) {
     
-    for (int i = 1; i < 10000; i++) {
+    //100.000 ITEMS -> Una mica lent al restart (normal)
+    for (int i = 1; i < 100000; i++) {
         int cy = randomizer(-3,3);
         int random_height = randomizer(-3, 3);
         int y_offset = random_height * 10;
@@ -85,7 +87,7 @@ void Game::process_keys(pro2::Window& window) {
         finished_ = true;
         return;
     }
-    if (window.was_key_pressed('P')) {
+    if (start_game_ and window.was_key_pressed('P')) {
         paused_ = !paused_;
         return;
     }
@@ -122,12 +124,14 @@ void Game::handle_sandglass_interaction(const pro2::Rect& marioRect) {
 }
 
 void Game::update_time_stoped_mode(pro2::Window& window, const pro2::Rect& marioRect) {
-    update_fireball_collisions(marioRect, true);
+    update_fireball_collisions(marioRect);
     update_crosses(window, marioRect);
-    update_fire_collisions(marioRect, true);
+    update_fire_collisions(marioRect);
 
-    if (mario_.check_points() % 5 == 0) {
+    int current_points = mario_.check_points();
+    if (current_points >= 5 && current_points / 5 > last_blessed_points_ / 5) {
         ascended_.add_blessing();
+        last_blessed_points_ = current_points;
     }
 }
 
@@ -136,11 +140,11 @@ void Game::update_normal_mode(pro2::Window& window, const pro2::Rect& marioRect)
     try_shoot_fireball();
 
     update_fireballs();
-    update_fireball_collisions(marioRect, false);
+    update_fireball_collisions(marioRect);
 
     update_crosses(window, marioRect);
     update_fires();
-    update_fire_collisions(marioRect, false);
+    update_fire_collisions(marioRect);
 
     check_blessing_points();
 }
@@ -215,10 +219,10 @@ void Game::update_fires() {
     }
 }
 
-void Game::update_fireball_collisions(const pro2::Rect& marioRect, bool timeStoped) {
+void Game::update_fireball_collisions(const pro2::Rect& marioRect) {
     for (auto& fireball : fireballs_) {
         if (fireball.is_active()) {
-            if (timeStoped && interseccionen(ascended_.get_rect(), fireball.get_rect())) {
+            if (interseccionen(ascended_.get_rect(), fireball.get_rect())) {
                 fireball.deactivate();
             } else if (interseccionen(marioRect, fireball.get_rect())) {
                 fireball.deactivate();
@@ -229,10 +233,10 @@ void Game::update_fireball_collisions(const pro2::Rect& marioRect, bool timeStop
     }
 }
 
-void Game::update_fire_collisions(const pro2::Rect& marioRect, bool timeStoped) {
+void Game::update_fire_collisions(const pro2::Rect& marioRect) {
     for (auto& fire : fires_) {
         if (fire.is_active()) {
-            if (timeStoped && interseccionen(ascended_.get_rect(), fire.get_rect())) {
+            if (interseccionen(ascended_.get_rect(), fire.get_rect())) {
                 fire.deactivate_fires();
             } else if (interseccionen(marioRect, fire.get_rect())) {
                 fire.deactivate_fires();
@@ -350,9 +354,12 @@ void Game::paint_paused_screen(pro2::Window& window){
     //pantalla en gris amb el text PAUSED
     window.clear(0x898989);
     //pinta el text PAUSED al mitg de la pantalla
-    int pos_x = window.topleft().x + window.width()/2 - 20;
-    int pos_y = window.topleft().y + window.height()/2 - 10;
-    paint_text(window, {pos_x, pos_y}, "PAUSED");
+    int center_x = window.topleft().x + window.width() / 2;
+    int center_y = window.topleft().y + window.height() / 2;
+    pro2::Pt centered = {center_x, center_y};
+    
+    center_text(window, centered, "GAME PAUSED",  -10);
+    center_text(window, centered, "PRESS P TO CONTINUE", 10);
 }
 
 void Game::paint_gameover_screen(pro2::Window& window){

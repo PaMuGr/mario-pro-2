@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['next_5fframe_0',['next_frame',['../classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6',1,'pro2::Window']]],
-  ['numdigits_1',['numDigits',['../namespacepro2.html#ab3ebf066ff359420415633ebcc955393',1,'pro2']]]
+  ['left_0',['left',['../classPlatform.html#aaf35cacf5bafafd352607a6897990b65',1,'Platform']]],
+  ['list_1',['List',['../classList.html#a5c5e27671b21b3815d4e25b953c69454',1,'List::List()'],['../classList.html#a3f8cda0e5a9b4912759e782994e57735',1,'List::List(const List &amp;l)']]]
 ];

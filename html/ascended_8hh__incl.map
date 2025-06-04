@@ -1,0 +1,22 @@
+<map id="ascended.hh" name="ascended.hh">
+<area shape="rect" id="Node000001" title="Especificacions de la classe Ascended." alt="" coords="227,5,322,31"/>
+<area shape="rect" id="Node000002" href="$stack_8hh.html" title=" " alt="" coords="95,79,166,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,34,170,74,167,69,249,29"/>
+<area shape="rect" id="Node000005" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="185,153,276,178"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="273,32,241,138,236,137,268,31"/>
+<area shape="rect" id="Node000006" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="284,79,366,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="285,30,310,65,306,68,281,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="390,79,447,105"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="300,29,382,69,379,74,298,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,77,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,107,70,145,66,141,114,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="101,153,160,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="133,105,133,137,128,137,128,105"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="311,107,260,145,257,141,307,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="300,153,364,178"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="329,105,332,137,326,137,323,105"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="388,153,441,178"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="342,103,389,141,386,145,338,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="465,153,537,178"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="356,103,458,144,456,149,354,108"/>
+</map>

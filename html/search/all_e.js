@@ -3,7 +3,7 @@ var searchData=
   ['magenta_0',['magenta',['../namespacepro2.html#a6ca5ebed0b2082a3548fc5b827bd1fd5',1,'pro2']]],
   ['main_1',['main',['../main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cc']]],
   ['main_2ecc_2',['main.cc',['../main_8cc.html',1,'']]],
-  ['mario_3',['Mario',['../classMario.html',1,'Mario'],['../classMario.html#ad88345556f10629d39a0d0939dd7b6b6',1,'Mario::Mario()']]],
+  ['mario_3',['Mario',['../classMario.html',1,'Mario'],['../classMario.html#a99ffbd5c3dd7640ad6059ae8c458e578',1,'Mario::Mario()']]],
   ['mario_20pro_202_20documentació_20del_20joc_4',['Mario Pro 2 - Documentació del Joc',['../index.html',1,'']]],
   ['mario_2ecc_5',['mario.cc',['../mario_8cc.html',1,'']]],
   ['mario_2ehh_6',['mario.hh',['../mario_8hh.html',1,'']]],

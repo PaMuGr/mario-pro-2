@@ -100,13 +100,13 @@ $(function(){ initResizable(false); });
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a8a823378bec0a23c9fa080f2332999ad" id="r_a8a823378bec0a23c9fa080f2332999ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a823378bec0a23c9fa080f2332999ad">Finder</a> ()</td></tr>
 <tr class="separator:a8a823378bec0a23c9fa080f2332999ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c1952d79927548ce8fbde267628db3" id="r_a31c1952d79927548ce8fbde267628db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31c1952d79927548ce8fbde267628db3">add</a> (const T *t)</td></tr>
+<tr class="memitem:a31c1952d79927548ce8fbde267628db3" id="r_a31c1952d79927548ce8fbde267628db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31c1952d79927548ce8fbde267628db3">add</a> (const T *<a class="el" href="demon_8cc.html#a9d8bf90e74fd38c19ef18649b5613d7f">t</a>)</td></tr>
 <tr class="memdesc:a31c1952d79927548ce8fbde267628db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Afegeix a quadsOfObject les quadricules on es troba t, també afegeix a objectsTopLeft els punters dins de cada quadricula.  <br /></td></tr>
 <tr class="separator:a31c1952d79927548ce8fbde267628db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a9d5bf342c5a13048d7853b52557f7d" id="r_a8a9d5bf342c5a13048d7853b52557f7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a9d5bf342c5a13048d7853b52557f7d">remove</a> (const T *t)</td></tr>
+<tr class="memitem:a8a9d5bf342c5a13048d7853b52557f7d" id="r_a8a9d5bf342c5a13048d7853b52557f7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a9d5bf342c5a13048d7853b52557f7d">remove</a> (const T *<a class="el" href="demon_8cc.html#a9d8bf90e74fd38c19ef18649b5613d7f">t</a>)</td></tr>
 <tr class="memdesc:a8a9d5bf342c5a13048d7853b52557f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Treu de quadsOfObject les quadricules on es trobava t, també treu de objectsTopLeft els punters dins de cada quadricula.  <br /></td></tr>
 <tr class="separator:a8a9d5bf342c5a13048d7853b52557f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073967ec8a3f5189c1922aeaf161098c" id="r_a073967ec8a3f5189c1922aeaf161098c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a073967ec8a3f5189c1922aeaf161098c">update</a> (const T *t)</td></tr>
+<tr class="memitem:a073967ec8a3f5189c1922aeaf161098c" id="r_a073967ec8a3f5189c1922aeaf161098c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a073967ec8a3f5189c1922aeaf161098c">update</a> (const T *<a class="el" href="demon_8cc.html#a9d8bf90e74fd38c19ef18649b5613d7f">t</a>)</td></tr>
 <tr class="memdesc:a073967ec8a3f5189c1922aeaf161098c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Treiem l'antic i fiquem el nou ja mogut.  <br /></td></tr>
 <tr class="separator:a073967ec8a3f5189c1922aeaf161098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dc2d4339d1982a26caf9373f34e3084" id="r_a7dc2d4339d1982a26caf9373f34e3084"><td class="memItemLeft" align="right" valign="top">std::set&lt; const T * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dc2d4339d1982a26caf9373f34e3084">query</a> (<a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> rect) const</td></tr>
@@ -230,6 +230,7 @@ template&lt;typename T&gt; </div>
 
 <p>Retorna el conjunt d'objectes amb rectangles total o parcialment dins de <code>rect</code>. </p>
 <p>Si el nombre de rectangles del contenidor és <code>n</code>, el cost de l'algorisme ha de ser O(log n).</p>
+<p>Hem de primer trobar els elements en les quadricules i veure si aquestes estan dins del rectangle de la càmera</p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">rect</td><td>El rectangle de cerca</td></tr>
@@ -238,7 +239,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins de <code>rect</code> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00120">120</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00122">122</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>

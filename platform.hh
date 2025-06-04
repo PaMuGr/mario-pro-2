@@ -32,16 +32,24 @@ class Platform {
         return top_;
     }
 
+    void change_top(int top){
+        top_ += top;
+    }
+
     int left() const { 
         return left_; 
     }
-
+    
     int right() const { 
         return right_; 
     }
 
     int bottom() const { 
         return bottom_; 
+    }
+
+    void change_bottom(int bottom){
+        bottom_ += bottom;
     }
 
     pro2::Rect get_rect() const {

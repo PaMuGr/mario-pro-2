@@ -1,0 +1,16 @@
+<map id="demon.hh" name="demon.hh">
+<area shape="rect" id="Node000001" title="Especificació de la Classe Demon." alt="" coords="260,5,338,31"/>
+<area shape="rect" id="Node000002" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="166,79,248,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,34,236,72,232,67,282,29"/>
+<area shape="rect" id="Node000006" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="266,153,358,178"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="303,31,312,137,307,137,297,32"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="337,79,394,105"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="312,29,346,66,342,69,308,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,70,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,108,82,149,79,144,177,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="94,153,147,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="194,107,148,145,145,141,190,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="171,153,242,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="210,105,210,137,204,137,204,105"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="226,103,283,141,280,146,223,107"/>
+</map>

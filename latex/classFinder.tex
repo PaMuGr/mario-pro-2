@@ -9,11 +9,11 @@
 \item 
 \mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}} ()
 \item 
-void \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}} (const T \texorpdfstring{$\ast$}{*}t)
+void \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}} (const T \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})
 \begin{DoxyCompactList}\small\item\em Afegeix a quads\+Of\+Object les quadricules on es troba t, també afegeix a objects\+Top\+Left els punters dins de cada quadricula. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}} (const T \texorpdfstring{$\ast$}{*}t)
+void \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}} (const T \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})
 \begin{DoxyCompactList}\small\item\em Treu de quads\+Of\+Object les quadricules on es trobava t, també treu de objects\+Top\+Left els punters dins de cada quadricula. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{update}} (const T \texorpdfstring{$\ast$}{*}t)
+void \mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{update}} (const T \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})
 \begin{DoxyCompactList}\small\item\em Treiem l\textquotesingle{}antic i fiquem el nou ja mogut. \end{DoxyCompactList}\item 
 std\+::set$<$ const T \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classFinder_a7dc2d4339d1982a26caf9373f34e3084}{query}} (\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} rect) const
 \begin{DoxyCompactList}\small\item\em Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialment dins de {\ttfamily rect}. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -99,6 +99,8 @@ Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialmen
 
 Si el nombre de rectangles del contenidor és {\ttfamily n}, el cost de l\textquotesingle{}algorisme ha de ser O(log n).
 
+Hem de primer trobar els elements en les quadricules i veure si aquestes estan dins del rectangle de la càmera
+
 
 \begin{DoxyParams}{Parámetros}
 {\em rect} & El rectangle de cerca\\
@@ -109,7 +111,7 @@ Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00120}{120}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00122}{122}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 \begin{DoxyCode}{0}

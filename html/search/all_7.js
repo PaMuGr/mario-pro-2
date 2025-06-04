@@ -9,9 +9,17 @@ var searchData=
   ['finder_5fcrosses_5f_6',['finder_crosses_',['../classGame.html#ab1ee68975468409b25082bf66e9414d6',1,'Game']]],
   ['finder_5fplatforms_5f_7',['finder_platforms_',['../classGame.html#a4ac62fcd6f881bcb94637e29015a7c7b',1,'Game']]],
   ['finished_5f_8',['finished_',['../classGame.html#ae68025f0c47e30423db4288e0038e5e8',1,'Game']]],
-  ['fps_9',['FPS',['../main_8cc.html#ac5090a6568797128b0a5545228bb8b75',1,'main.cc']]],
-  ['fps_5f_10',['fps_',['../classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b',1,'pro2::Window']]],
-  ['frame_5fcount_11',['frame_count',['../classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964',1,'pro2::Window']]],
-  ['frame_5fcount_5f_12',['frame_count_',['../classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e',1,'pro2::Window']]],
-  ['frame_5fcounter_5f_13',['frame_counter_',['../classSandglass.html#a2ebce7bc7e36cb702eb91a79d5c8a415',1,'Sandglass']]]
+  ['fire_9',['Fire',['../classFire.html',1,'Fire'],['../classFire.html#a084894189971bd5d033241ada306658c',1,'Fire::Fire()'],['../classFire.html#aa74d78ef7a31a92cb06c9fa8c5def001',1,'Fire::Fire(pro2::Pt pos, int lifetime)']]],
+  ['fire_5fcooldown_5f_10',['fire_cooldown_',['../classDemon.html#ab5ef373effc8e88738977391534e97f8',1,'Demon']]],
+  ['fire_5frate_5f_11',['fire_rate_',['../classDemon.html#a568473b501ca27333b71137399fdba9a',1,'Demon']]],
+  ['fire_5fsprite_5f_12',['fire_sprite_',['../classFire.html#a7fe75c75ce92404b957630b97134d62f',1,'Fire']]],
+  ['fireball_13',['Fireball',['../classFireball.html',1,'Fireball'],['../classFireball.html#a7c7146ea91dd774c0bab5d7f605960d0',1,'Fireball::Fireball()'],['../classFireball.html#afb4af2a1e2f3794910d514a98890e084',1,'Fireball::Fireball(pro2::Pt pos, pro2::Pt speed)']]],
+  ['fireball_5fsprite_5f_14',['fireball_sprite_',['../classFireball.html#aa7d742cb8e1a1a8750438b8fe78eb42a',1,'Fireball']]],
+  ['fireballs_5f_15',['fireballs_',['../classGame.html#a0c2c016d29e8a36654c3b73ededddbb4',1,'Game']]],
+  ['fires_5f_16',['fires_',['../classGame.html#ac79594eaeb2fc130366c8d79fb48e662',1,'Game']]],
+  ['fps_17',['FPS',['../main_8cc.html#ac5090a6568797128b0a5545228bb8b75',1,'main.cc']]],
+  ['fps_5f_18',['fps_',['../classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b',1,'pro2::Window']]],
+  ['frame_5fcount_19',['frame_count',['../classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964',1,'pro2::Window']]],
+  ['frame_5fcount_5f_20',['frame_count_',['../classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e',1,'pro2::Window']]],
+  ['frame_5fcounter_5f_21',['frame_counter_',['../classSandglass.html#a2ebce7bc7e36cb702eb91a79d5c8a415',1,'Sandglass']]]
 ];

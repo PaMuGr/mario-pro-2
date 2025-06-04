@@ -1,0 +1,281 @@
+\doxysection{Referencia de la clase pro2\+::Ascended}
+\hypertarget{classpro2_1_1Ascended}{}\label{classpro2_1_1Ascended}\index{pro2::Ascended@{pro2::Ascended}}
+
+
+{\ttfamily \#include $<$ascended.\+hh$>$}
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpro2_1_1Ascended_a2b7e9c8b41b6379fcb4b11606ddf5cfd}{Ascended}} ()=default
+\item 
+void \mbox{\hyperlink{classpro2_1_1Ascended_a8d9cb8115a53ebe5373fde6f47f30d8f}{add\+\_\+blessing}} ()
+\begin{DoxyCompactList}\small\item\em Afegeix un blessing al \doxylink{classStack}{Stack}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Ascended_a21e730199e676bdb4b3170caf212cb90}{can\+\_\+activate}} () const
+\begin{DoxyCompactList}\small\item\em Retorna si el linked stack esta buit o no. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpro2_1_1Ascended_aec5b3cfe7cab1e45f57e42f274724687}{is\+\_\+active}} () const
+\begin{DoxyCompactList}\small\item\em Retorna si esta o no actiu el blessing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpro2_1_1Ascended_a444ada9544b5fbe310facc40de41829f}{size}} () const
+\begin{DoxyCompactList}\small\item\em Retorna la mida del stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Ascended_adaf670f2f333b254c5e8800f4afb450f}{activate}} (\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} mario\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Retorna si esta o no actiu el blessing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Ascended_a02417dfce2675c4a6c6ffc75cdd1c882}{update}} (\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} mario\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Per tenir sempre l\textquotesingle{}escut on el mario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{Rect}} \mbox{\hyperlink{classpro2_1_1Ascended_a6e4211ef568e0b21915e4bd91f885cec}{get\+\_\+rect}} () const
+\begin{DoxyCompactList}\small\item\em Retorna la hitbox de l\textquotesingle{}objecte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpro2_1_1Ascended_ad1b7d1a9399a6ccf3635e254b5660e49}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&window) const
+\begin{DoxyCompactList}\small\item\em Pinta l\textquotesingle{}objecte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStack}{Stack}}$<$ int $>$ \mbox{\hyperlink{classpro2_1_1Ascended_ad845d371767fadfec21589a5c904a31d}{blessings}}
+\item 
+bool \mbox{\hyperlink{classpro2_1_1Ascended_aca394ffb2db3681805bddcee207c9207}{active}} = false
+\item 
+int \mbox{\hyperlink{classpro2_1_1Ascended_a8c9f2ab6377de6255175f684aa0239c8}{duration}} = 0
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} \mbox{\hyperlink{classpro2_1_1Ascended_af984dc87888b5d5fadac6a6e5c633250}{pos\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos estáticos privados}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classpro2_1_1Ascended_a01923440737c8bfc60e9a898c4138cf9}{ascended\+\_\+sprite\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00015}{15}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classpro2_1_1Ascended_a2b7e9c8b41b6379fcb4b11606ddf5cfd}\index{pro2::Ascended@{pro2::Ascended}!Ascended@{Ascended}}
+\index{Ascended@{Ascended}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{Ascended()}{Ascended()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_a2b7e9c8b41b6379fcb4b11606ddf5cfd} 
+pro2\+::\+Ascended\+::\+Ascended (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classpro2_1_1Ascended_adaf670f2f333b254c5e8800f4afb450f}\index{pro2::Ascended@{pro2::Ascended}!activate@{activate}}
+\index{activate@{activate}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_adaf670f2f333b254c5e8800f4afb450f} 
+void Ascended\+::activate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{mario\+\_\+pos}{}\end{DoxyParamCaption})}
+
+
+
+Retorna si esta o no actiu el blessing. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em mario\+\_\+pos} & la posicio a on ficar l\textquotesingle{}escut \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8cc_source_l00039}{39}} del archivo \mbox{\hyperlink{ascended_8cc_source}{ascended.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Ascended_a8d9cb8115a53ebe5373fde6f47f30d8f}\index{pro2::Ascended@{pro2::Ascended}!add\_blessing@{add\_blessing}}
+\index{add\_blessing@{add\_blessing}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{add\_blessing()}{add\_blessing()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_a8d9cb8115a53ebe5373fde6f47f30d8f} 
+void pro2\+::\+Ascended\+::add\+\_\+blessing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Afegeix un blessing al \doxylink{classStack}{Stack}. 
+
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Ascended_a21e730199e676bdb4b3170caf212cb90}\index{pro2::Ascended@{pro2::Ascended}!can\_activate@{can\_activate}}
+\index{can\_activate@{can\_activate}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{can\_activate()}{can\_activate()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_a21e730199e676bdb4b3170caf212cb90} 
+bool pro2\+::\+Ascended\+::can\+\_\+activate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna si el linked stack esta buit o no. 
+
+\begin{DoxyReturn}{Devuelve}
+\doxylink{classStack}{Stack} buit 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Ascended_a6e4211ef568e0b21915e4bd91f885cec}\index{pro2::Ascended@{pro2::Ascended}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_a6e4211ef568e0b21915e4bd91f885cec} 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Ascended\+::get\+\_\+rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retorna la hitbox de l\textquotesingle{}objecte. 
+
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8cc_source_l00059}{59}} del archivo \mbox{\hyperlink{ascended_8cc_source}{ascended.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Ascended_aec5b3cfe7cab1e45f57e42f274724687}\index{pro2::Ascended@{pro2::Ascended}!is\_active@{is\_active}}
+\index{is\_active@{is\_active}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{is\_active()}{is\_active()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_aec5b3cfe7cab1e45f57e42f274724687} 
+bool pro2\+::\+Ascended\+::is\+\_\+active (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna si esta o no actiu el blessing. 
+
+\begin{DoxyReturn}{Devuelve}
+Retorna el valor privat active 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00049}{49}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Ascended_ad1b7d1a9399a6ccf3635e254b5660e49}\index{pro2::Ascended@{pro2::Ascended}!paint@{paint}}
+\index{paint@{paint}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_ad1b7d1a9399a6ccf3635e254b5660e49} 
+void Ascended\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&}]{window}{}\end{DoxyParamCaption}) const}
+
+
+
+Pinta l\textquotesingle{}objecte. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra on el pinta \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8cc_source_l00071}{71}} del archivo \mbox{\hyperlink{ascended_8cc_source}{ascended.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Ascended_a444ada9544b5fbe310facc40de41829f}\index{pro2::Ascended@{pro2::Ascended}!size@{size}}
+\index{size@{size}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_a444ada9544b5fbe310facc40de41829f} 
+int pro2\+::\+Ascended\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna la mida del stack. 
+
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00056}{56}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{classpro2_1_1Ascended_a02417dfce2675c4a6c6ffc75cdd1c882}\index{pro2::Ascended@{pro2::Ascended}!update@{update}}
+\index{update@{update}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_a02417dfce2675c4a6c6ffc75cdd1c882} 
+void Ascended\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{Pt}}}]{mario\+\_\+pos}{}\end{DoxyParamCaption})}
+
+
+
+Per tenir sempre l\textquotesingle{}escut on el mario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em mario\+\_\+pos} & la posicio a on s\textquotesingle{}ha de moure l\textquotesingle{}escut constantment \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8cc_source_l00048}{48}} del archivo \mbox{\hyperlink{ascended_8cc_source}{ascended.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classpro2_1_1Ascended_aca394ffb2db3681805bddcee207c9207}\index{pro2::Ascended@{pro2::Ascended}!active@{active}}
+\index{active@{active}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_aca394ffb2db3681805bddcee207c9207} 
+bool pro2\+::\+Ascended\+::active = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+\Hypertarget{classpro2_1_1Ascended_a01923440737c8bfc60e9a898c4138cf9}\index{pro2::Ascended@{pro2::Ascended}!ascended\_sprite\_@{ascended\_sprite\_}}
+\index{ascended\_sprite\_@{ascended\_sprite\_}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{ascended\_sprite\_}{ascended\_sprite\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_a01923440737c8bfc60e9a898c4138cf9} 
+const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ Ascended\+::ascended\+\_\+sprite\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00018}{18}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+\Hypertarget{classpro2_1_1Ascended_ad845d371767fadfec21589a5c904a31d}\index{pro2::Ascended@{pro2::Ascended}!blessings@{blessings}}
+\index{blessings@{blessings}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{blessings}{blessings}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_ad845d371767fadfec21589a5c904a31d} 
+\mbox{\hyperlink{classStack}{Stack}}$<$int$>$ pro2\+::\+Ascended\+::blessings\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+\Hypertarget{classpro2_1_1Ascended_a8c9f2ab6377de6255175f684aa0239c8}\index{pro2::Ascended@{pro2::Ascended}!duration@{duration}}
+\index{duration@{duration}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_a8c9f2ab6377de6255175f684aa0239c8} 
+int pro2\+::\+Ascended\+::duration = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+\Hypertarget{classpro2_1_1Ascended_af984dc87888b5d5fadac6a6e5c633250}\index{pro2::Ascended@{pro2::Ascended}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!pro2::Ascended@{pro2::Ascended}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \label{classpro2_1_1Ascended_af984dc87888b5d5fadac6a6e5c633250} 
+\mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pro2\+::\+Ascended\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{ascended_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{ascended_8hh_source}{ascended.\+hh}}.
+
+
+
+La documentación de esta clase está generada de los siguientes archivos\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ascended_8hh}{ascended.\+hh}}\item 
+\mbox{\hyperlink{ascended_8cc}{ascended.\+cc}}\end{DoxyCompactItemize}

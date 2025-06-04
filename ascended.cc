@@ -1,6 +1,7 @@
-/** @file demon.cc
- * @brief Funcions del Demon
+/** @file ascended.cc
+ * @brief Funcions del Ascended
  */
+
 #include "ascended.hh"
 #include "utils.hh"
 using namespace pro2;

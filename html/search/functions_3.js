@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['finder_0',['Finder',['../classFinder.html#a8a823378bec0a23c9fa080f2332999ad',1,'Finder']]],
-  ['frame_5fcount_1',['frame_count',['../classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964',1,'pro2::Window']]]
+  ['deactivate_0',['deactivate',['../classFireball.html#acae188342a0050ccd55c28524d7369b3',1,'Fireball']]],
+  ['deactivate_5ffires_1',['deactivate_fires',['../classFire.html#ae9c6737fb6df9603d838aebbde8515d7',1,'Fire']]],
+  ['deleteitems_2',['deleteItems',['../classStack.html#ab7db22f5c0fdd824495cb00c679a34ec',1,'Stack']]],
+  ['demon_3',['Demon',['../classDemon.html#a40c7ca5e5f8ad20bc832ed3188058657',1,'Demon::Demon()'],['../classDemon.html#ac904d7fd09132f310b38b13f61a4c1ad',1,'Demon::Demon(pro2::Pt pos)']]]
 ];

@@ -83,6 +83,9 @@ class Game {
 
     //PAINTING METHODS:
 
+    /**
+     * @brief Pinten els diferents objectes a la finestra
+     */
     void paint_platforms(pro2::Window& window);
     void paint_crosses(pro2::Window& window);
     void paint_demon_objects(pro2::Window& window);
@@ -91,10 +94,19 @@ class Game {
     void paint_points(pro2::Window& window);
     void paint_paused_screen(pro2::Window& window);
     void paint_gameover_screen(pro2::Window& window);
-    //centra un text
-    void center_text(pro2::Window& window, pro2::Pt center, const std::string& text, int y_offset);
     void paint_starting_screen(pro2::Window& window);
     void paint_game_frame(pro2::Window& window); 
+
+    /**
+     * @brief Centra un text al mitg de la pantalla
+     * 
+     * @param window Finestra on anira el text
+     * @param center Mitg de la finestra 
+     * @param text Text a pintar
+     * @param y_offset Distancia del mitg de la pantalla (útil per més de un text)
+     */
+    void center_text(pro2::Window& window, pro2::Pt center, const std::string& text, int y_offset);
+
     
     //UPDATE METHODS:
 
@@ -107,8 +119,8 @@ class Game {
     bool check_fireball_hits_platform(Fireball& fireball);
     void update_crosses(pro2::Window& window, const pro2::Rect& marioRect);
     void update_fires();
-    void update_fireball_collisions(const pro2::Rect& marioRect, bool timeStoped);
-    void update_fire_collisions(const pro2::Rect& marioRect, bool timeStoped);
+    void update_fireball_collisions(const pro2::Rect& marioRect);
+    void update_fire_collisions(const pro2::Rect& marioRect);
     void check_blessing_points();
     
  private:

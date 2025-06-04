@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['utils_2ecc_0',['utils.cc',['../utils_8cc.html',1,'']]],
-  ['utils_2ehh_1',['utils.hh',['../utils_8hh.html',1,'']]]
+  ['platform_2ecc_0',['platform.cc',['../platform_8cc.html',1,'']]],
+  ['platform_2ehh_1',['platform.hh',['../platform_8hh.html',1,'']]]
 ];

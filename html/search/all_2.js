@@ -2,9 +2,18 @@ var searchData=
 [
   ['accel_5f_0',['accel_',['../classMario.html#a1764d97c394e6e13e2754580b9c71452',1,'Mario']]],
   ['accel_5ftime_5f_1',['accel_time_',['../classMario.html#a4ceb8b00f8520dfbe01dda96d9afc472',1,'Mario']]],
-  ['add_2',['add',['../classFinder.html#a31c1952d79927548ce8fbde267628db3',1,'Finder']]],
-  ['add_5fpoints_3',['add_points',['../classMario.html#a6a833fb3bb1f2c1a302cb5ed0e6787a2',1,'Mario']]],
-  ['alt_4',['Alt',['../namespacepro2.html#afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b',1,'pro2']]],
-  ['animation_5fspeed_5f_5',['animation_speed_',['../classSandglass.html#ad42d5473d544c32852d1569c40284795',1,'Sandglass']]],
-  ['apply_5fphysics_5f_6',['apply_physics_',['../classCross.html#a8aaa1bab1fe679cda11438ce029efaf3',1,'Cross::apply_physics_()'],['../classMario.html#a58b73569c9d36b5443c4e0efcf5a1f95',1,'Mario::apply_physics_()'],['../classSandglass.html#a700c40d41a0ed8c0e3ac31f777462028',1,'Sandglass::apply_physics_()']]]
+  ['activate_2',['activate',['../classpro2_1_1Ascended.html#adaf670f2f333b254c5e8800f4afb450f',1,'pro2::Ascended::activate()'],['../classSandglass.html#a9abfad08730527bb3e928e88c44ec41d',1,'Sandglass::activate()']]],
+  ['active_3',['active',['../classpro2_1_1Ascended.html#aca394ffb2db3681805bddcee207c9207',1,'pro2::Ascended']]],
+  ['active_5f_4',['active_',['../classFireball.html#a1fd834290824de6a538d10f9ce245fa5',1,'Fireball::active_'],['../classFire.html#ad8fdfad93e2ce0ba252c26b39e73cfa9',1,'Fire::active_']]],
+  ['add_5',['add',['../classFinder.html#a31c1952d79927548ce8fbde267628db3',1,'Finder']]],
+  ['add_5fblessing_6',['add_blessing',['../classpro2_1_1Ascended.html#a8d9cb8115a53ebe5373fde6f47f30d8f',1,'pro2::Ascended']]],
+  ['add_5fpoints_7',['add_points',['../classMario.html#a6a833fb3bb1f2c1a302cb5ed0e6787a2',1,'Mario']]],
+  ['alt_8',['Alt',['../namespacepro2.html#afcb0c99f6bf9c97f754dcc56e9e9c4fdab7aceec72e902c43f2de875d2e93f85b',1,'pro2']]],
+  ['animation_5fspeed_5f_9',['animation_speed_',['../classSandglass.html#ad42d5473d544c32852d1569c40284795',1,'Sandglass']]],
+  ['apply_5fphysics_5f_10',['apply_physics_',['../classCross.html#a8aaa1bab1fe679cda11438ce029efaf3',1,'Cross::apply_physics_()'],['../classMario.html#a58b73569c9d36b5443c4e0efcf5a1f95',1,'Mario::apply_physics_()'],['../classSandglass.html#a700c40d41a0ed8c0e3ac31f777462028',1,'Sandglass::apply_physics_()']]],
+  ['ascended_11',['Ascended',['../classpro2_1_1Ascended.html',1,'pro2::Ascended'],['../classpro2_1_1Ascended.html#a2b7e9c8b41b6379fcb4b11606ddf5cfd',1,'pro2::Ascended::Ascended()']]],
+  ['ascended_2ecc_12',['ascended.cc',['../ascended_8cc.html',1,'']]],
+  ['ascended_2ehh_13',['ascended.hh',['../ascended_8hh.html',1,'']]],
+  ['ascended_5f_14',['ascended_',['../classGame.html#aaba05b1a95dbabf977bf1d51cb67ce55',1,'Game']]],
+  ['ascended_5fsprite_5f_15',['ascended_sprite_',['../classpro2_1_1Ascended.html#a01923440737c8bfc60e9a898c4138cf9',1,'pro2::Ascended']]]
 ];
