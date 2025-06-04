@@ -23,6 +23,8 @@
 class Game {
     Mario                 mario_;
     std::vector<Platform> platforms_;
+    Platform still_platform_;
+    Mario still_mario_;
     std::list<Cross> crosses_;
     Sandglass sandglass_;
     Demon demon_;
@@ -39,6 +41,7 @@ class Game {
     bool paused_;
     bool finished_;
     bool reset_;
+    bool start_game_;
     int cross_height_y_ = 0;
     int last_blessed_points_ = 0;
 
@@ -88,6 +91,9 @@ class Game {
     void paint_points(pro2::Window& window);
     void paint_paused_screen(pro2::Window& window);
     void paint_gameover_screen(pro2::Window& window);
+    //centra un text
+    void center_text(pro2::Window& window, pro2::Pt center, const std::string& text, int y_offset);
+    void paint_starting_screen(pro2::Window& window);
     void paint_game_frame(pro2::Window& window); 
     
     //UPDATE METHODS:

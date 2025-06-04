@@ -8,6 +8,8 @@ using namespace pro2;
 /*CONSTRUCTOR GENERAL*/
 Game::Game(int width, int height)
     : mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right, Keys::Down),
+      still_mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right, Keys::Down),
+      still_platform_({0, 480, 150, 480}),
       sandglass_({200, 114}), 
       demon_({0, 0}),
       crosses_{
@@ -94,6 +96,10 @@ void Game::process_keys(pro2::Window& window) {
     }
     if (window.was_key_pressed('B') and ascended_.can_activate()) {
         ascended_.activate({mario_.pos().x, mario_.pos().y});
+    }
+    if(window.was_key_pressed(Keys::Return)){
+        start_game_ = true;
+        return;
     }
 }
 
@@ -291,7 +297,7 @@ void Game::update_camera(pro2::Window& window) {
 /*UPDATE GENERAL*/
 void Game::update(pro2::Window& window) {
     process_keys(window);
-    if(!paused_ and !reset_){
+    if(!paused_ and !reset_ and start_game_){
         update_objects(window);
         update_camera(window);
     } 
@@ -354,13 +360,12 @@ void Game::paint_gameover_screen(pro2::Window& window){
     window.clear(0x7B1818);
     //pinta el text GAME OVER al mitg de la pantalla
     //a sota fiquem PRESS R TO RESTART
-    int pos_x = window.topleft().x + window.width()/2 - 20;
-    int pos_y = window.topleft().y + window.height()/2 - 10;
+    int center_x = window.topleft().x + window.width() / 2;
+    int center_y = window.topleft().y + window.height() / 2;
+    pro2::Pt centered = {center_x, center_y};
     
-    paint_text(window, {pos_x, pos_y}, "GAME OVER");
-    paint_text(window, {pos_x-25, pos_y+20}, "PRESS R TO RESTART");
-    paint_text(window, {pos_x, pos_y+40}, "SCORE: ");
-    paint_number(window, {pos_x+40, pos_y+40}, mario_.check_points());
+    center_text(window, centered, "GAME OVER",  -10);
+    center_text(window, centered, "PRESS R TO RESTART", 10);
 }
 
 void Game::paint_game_frame(pro2::Window& window){
@@ -373,26 +378,52 @@ void Game::paint_game_frame(pro2::Window& window){
     paint_empty_rect(window, rectg, black, 4);
 }
 
+void Game::center_text(pro2::Window& window, pro2::Pt center, const std::string& text, int y_offset) {
+    //4 correspon a l'amplada dels sprites
+    int text_pixel_width = static_cast<int>(text.length() * (4 + 2));
+    int start_x = center.x - text_pixel_width / 2;
+    paint_text(window, {start_x, center.y + y_offset}, text);
+}
+
+void Game::paint_starting_screen(pro2::Window& window){
+    window.clear(sky_blue);
+    int center_x = 240;
+    int center_y = 160;
+    pro2::Pt centered = {center_x, center_y};
+
+    still_mario_.paint(window);
+    still_platform_.paint(window);
+    center_text(window, centered, "JESUS X MARIO GAME", -100);
+    center_text(window, centered, "PRESS ENTER TO START", -80);
+    center_text(window, centered, "TIP: WHEN BLESSINGS AVAILABLE PRESS B", -60);
+    paint_text(window, {10, 10}, "PAU MURAS");
+}
+
 /*PAINT GENERAL*/
 void Game::paint(pro2::Window& window) {
-    if(!paused_ and !reset_){
-        if(!sandglass_.is_effect_active()){
-            window.clear(sky_blue);
-            sandglass_.paint(window);
-        } else{
-            window.clear(0xC2B280);
-            paint_number(window, {window.camera_center().x, window.camera_center().y}, sandglass_.cooldown());
-        }
-        
-        paint_platforms(window);
-        paint_crosses(window);
-        paint_demon_objects(window);
-        paint_blessings(window);
-        mario_.paint(window);
-        paint_points(window);
+    if(!start_game_){
+        window.set_camera_topleft({0,0});
+        paint_starting_screen(window);
+    } else{
+        if(!paused_ and !reset_){
+            if(!sandglass_.is_effect_active()){
+                window.clear(sky_blue);
+                sandglass_.paint(window);
+            } else{
+                window.clear(0xC2B280);
+                paint_number(window, {window.camera_center().x, window.camera_center().y}, sandglass_.cooldown());
+            }
+            
+            paint_platforms(window);
+            paint_crosses(window);
+            paint_demon_objects(window);
+            paint_blessings(window);
+            mario_.paint(window);
+            paint_points(window);
 
-    } else if(paused_) paint_paused_screen(window);
-    else if(reset_) paint_gameover_screen(window);
+        } else if(paused_) paint_paused_screen(window);
+        else if(reset_) paint_gameover_screen(window);
+    }
     
     paint_game_frame(window);
 }
