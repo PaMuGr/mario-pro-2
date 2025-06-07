@@ -15,11 +15,14 @@ class Demon {
     pro2::Pt speed_ = {0, 0};
     int fire_cooldown_; //Cooldown
     int fire_rate_; //Dispars per segons
+    bool is_decayed_ = false;
 
     //Velocitat del dimoni
-      int DEMON_SPEED = 4; 
+      int demon_speed_ = 4; 
 
     static const std::vector<std::vector<int>> demon_sprite_;
+
+    static const std::vector<std::vector<int>> decayed_demon_sprite_;
 	
  public:
     Demon() : pos_({0,0}), speed_({0,0}), fire_cooldown_(0), fire_rate_(12) {}
@@ -60,6 +63,14 @@ class Demon {
      * @brief Posa del nou el cooldown a fire rate
      */
     void reset_cooldown(){fire_cooldown_ = fire_rate_;}
+
+    /**
+     * @brief Canvi d'estat el dimoni
+     */
+    void decaying(){
+        is_decayed_ = true;
+        demon_speed_ = 5;
+    }
 };
 
 class Fireball{
@@ -76,7 +87,7 @@ class Fireball{
     
     Fireball(pro2::Pt pos, pro2::Pt speed);
 
-    void update();
+    void update(pro2::Window& window);
     void paint(pro2::Window& window) const;
 
     /**

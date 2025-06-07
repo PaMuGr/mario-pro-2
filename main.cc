@@ -33,16 +33,39 @@ const int WIDTH = 480, HEIGHT = 320;
 const int ZOOM = 2;
 const int FPS = 48;
 
+
 int main() {
+    
+
     srand(time(0));
     
     pro2::Window window("Mario Pro 2", WIDTH, HEIGHT, ZOOM);
     window.set_fps(FPS);
 
-    Game game(WIDTH, HEIGHT);
+    cout << endl << "###### MARIO X JESUS ######" << endl;
+    cout << "ESCULL LA DIFICULTAT DEL JOC" << endl;
+    cout << "1.- FACIL (Agafa 10 crosses)" << endl;
+    cout << "2.- INTERMEDI (Agafa 20 crosses)" << endl;
+    cout << "3.- DIFICIL (Agafa 40 crosses)" << endl;
+    cout << "4.- SPEEDRUN (Amb temps)" << endl;
+    cout << "5.- EXIT" << endl;
+    cout << "############################" << endl;
+    int gamemode;
+    cout << endl;
+    cout << "Inserta l'opció aqui: ";
+    cin >> gamemode;
+    cout << endl << "############################" << endl;
+    cout << endl;
 
-    while (window.next_frame() && !game.is_finished()) {
-        game.update(window);
-        game.paint(window);
-    } 
+    if(gamemode != 5){
+        cout << "Cargant el joc..." << endl << endl;
+        Game game(WIDTH, HEIGHT);
+        game.set_gamemode(gamemode);
+        cout << "JOC PREPARAT" << endl << endl;
+        cout << "############################" << endl << endl;
+        while (window.next_frame() && !game.is_finished()) {
+            game.update(window);
+            game.paint(window);
+        } 
+    }
 }

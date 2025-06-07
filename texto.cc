@@ -372,10 +372,9 @@ void paint_letter(Window& window, Pt pos_, char letter) {
     paint_sprite(window, top_left, letter_sprite_normal_[letter - 'A'], false);
 }
 
-void paint_number(pro2::Window& window, pro2::Pt pos, int  number, int color){
+void paint_number(pro2::Window& window, pro2::Pt pos, int  number){
 
     vector<int> digits;
-    r = color;
     if (number == 0) digits.push_back(0);
 
     while(number > 0){
@@ -390,9 +389,7 @@ void paint_number(pro2::Window& window, pro2::Pt pos, int  number, int color){
     }
 }
 
-void paint_text(Window& window, Pt pos, const string& text, int color) {
-
-    r = color;
+void paint_text(Window& window, Pt pos, const string& text) {
 
     int offset = static_cast<int>(sprite_width + 2);  
     for (int i = 0; i < text.size(); ++i) {

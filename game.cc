@@ -26,10 +26,13 @@ Game::Game(int width, int height)
       finished_(false),
       reset_(false),
       start_game_(false),
+      won_(false),
+      speedrun_won_(false),
       cross_height_y_(0) {
     
     //100.000 ITEMS -> Una mica lent al restart (normal)
-    for (int i = 1; i < 100000; i++) {
+    //50.000 ITEMS -> Millor per playtesting 
+    for (int i = 1; i < 100; i++) {
         int cy = randomizer(-3,3);
         int random_height = randomizer(-3, 3);
         int y_offset = random_height * 10;
@@ -91,8 +94,11 @@ void Game::process_keys(pro2::Window& window) {
         paused_ = !paused_;
         return;
     }
-    if (reset_ && window.is_key_down('R')) {
+    if ((reset_ || won_ || speedrun_won_) && window.is_key_down('R')) {
+        int prev_mode = game_mode_;
         *this = Game(480, 320);
+        game_mode_ = prev_mode;
+        apply_game_mode_settings();
         reset_ = false;
         return;
     }
@@ -102,6 +108,34 @@ void Game::process_keys(pro2::Window& window) {
     if(window.was_key_pressed(Keys::Return)){
         start_game_ = true;
         return;
+    }
+}
+
+void Game::apply_game_mode_settings() {
+    switch (game_mode_) {
+        case 1:  //Easy
+            has_time_limit_ = false;
+            timer_ = 0;
+            crosses_to_get_ = 10;
+            break;
+        case 2:  //Medium
+            has_time_limit_ = false;
+            timer_ = 0;
+            crosses_to_get_ = 20;
+            break;
+        case 3:  //Hard
+            has_time_limit_ = false;
+            timer_ = 0;
+            crosses_to_get_ = 40;
+            break;
+        case 4:  //Speedrun
+            has_time_limit_ = true;
+            timer_ = 2880; 
+            crosses_to_get_ = 9999;
+            break;
+        default:
+            finished_ = true;
+            break;
     }
 }
 
@@ -139,7 +173,7 @@ void Game::update_normal_mode(pro2::Window& window, const pro2::Rect& marioRect)
     demon_.update(window);
     try_shoot_fireball();
 
-    update_fireballs();
+    update_fireballs(window);
     update_fireball_collisions(marioRect);
 
     update_crosses(window, marioRect);
@@ -158,9 +192,9 @@ void Game::try_shoot_fireball() {
     }
 }
 
-void Game::update_fireballs() {
+void Game::update_fireballs(pro2::Window& window) {
     for (auto it = fireballs_.begin(); it != fireballs_.end();) {
-        (*it).update();
+        (*it).update(window);
 
         if (!(*it).is_active() || check_fireball_hits_platform(*it)) {
             it = fireballs_.erase(it);
@@ -247,6 +281,10 @@ void Game::update_fire_collisions(const pro2::Rect& marioRect) {
     }
 }
 
+void Game::update_demon_state(pro2::Window& window){
+
+}
+
 void Game::check_blessing_points() {
     int current_points = mario_.check_points();
     if (current_points >= 5 && current_points / 5 > last_blessed_points_ / 5) {
@@ -302,8 +340,13 @@ void Game::update_camera(pro2::Window& window) {
 void Game::update(pro2::Window& window) {
     process_keys(window);
     if(!paused_ and !reset_ and start_game_){
+        //Quan activat el sandglass el timer no es mou
+        if(!sandglass_.is_effect_active()){
+            update_timer();
+        }
         update_objects(window);
         update_camera(window);
+        if (!won_ and mario_.check_points() >= crosses_to_get_) won_ = true;
     } 
 }
 
@@ -324,6 +367,8 @@ void Game::paint_crosses(pro2::Window& window){
 }
 
 void Game::paint_demon_objects(pro2::Window& window){
+    //Si els punts del mario actuals son majors a la meitat --> demon canvia a "enraged/decayed"
+    if(mario_.check_points() >= crosses_to_get_/2) demon_.decaying();
     demon_.paint(window);
     
     for (const auto& fireball : fireballs_) {
@@ -375,6 +420,49 @@ void Game::paint_gameover_screen(pro2::Window& window){
     center_text(window, centered, "PRESS R TO RESTART", 10);
 }
 
+void Game::paint_winning_screen(pro2::Window& window){
+    //VERMELL
+    window.clear(0x454B1B);
+    //pinta el text GAME OVER al mitg de la pantalla
+    //a sota fiquem PRESS R TO RESTART
+    int center_x = window.topleft().x + window.width() / 2;
+    int center_y = window.topleft().y + window.height() / 2;
+    pro2::Pt centered = {center_x, center_y};
+    
+    center_text(window, centered, "YOU WIN",  -20);
+    center_text(window, centered, "PRESS R TO RESTART", 0);
+    center_text(window, centered, "OR PRESS ESC TO PLAY ANOTHER MODE", 20);
+}
+
+void Game::paint_speedrun_screen(pro2::Window& window){
+    //VERMELL
+    window.clear(0x454B1B);
+    //pinta el text GAME OVER al mitg de la pantalla
+    //a sota fiquem PRESS R TO RESTART
+    int center_x = window.topleft().x + window.width() / 2;
+    int center_y = window.topleft().y + window.height() / 2;
+    pro2::Pt centered = {center_x, center_y};
+    
+    center_text(window, centered, "SPEEDRUN ENDED",  -20);
+    
+    // Calculate the total width of "CROSSES COLLECTED: " plus the number
+    std::string crosses_text = "CROSSES COLLECTED: ";
+    int text_width = crosses_text.length() * (4 + 2); // Each character is 4 pixels wide + 2 spacing
+    int number_width = std::to_string(mario_.check_points()).length() * (4 + 2);
+    int total_width = text_width + number_width;
+    
+    // Calculate starting position for centered text
+    int start_x = center_x - total_width / 2;
+    
+    // Paint "CROSSES COLLECTED: "
+    paint_text(window, {start_x, center_y}, crosses_text);
+    
+    // Paint the number right after the text
+    paint_number(window, {start_x + text_width, center_y}, mario_.check_points());
+    
+    center_text(window, centered, "PRESS R TO RESTART", 20);
+}
+
 void Game::paint_game_frame(pro2::Window& window){
     //pintar recuadre
     int left = window.topleft().x;
@@ -406,30 +494,45 @@ void Game::paint_starting_screen(pro2::Window& window){
     paint_text(window, {10, 10}, "PAU MURAS");
 }
 
+void Game::paint_timer(pro2::Window& window){
+    if (ascended_.is_active()) {
+        ascended_.paint(window);
+    }
+    paint_text(window, {window.camera_center().x + 170, window.camera_center().y - 130}, "TIMER:");
+    paint_number(window, {window.camera_center().x + 210, window.camera_center().y - 130}, timer_/48);
+}
+
 /*PAINT GENERAL*/
 void Game::paint(pro2::Window& window) {
     if(!start_game_){
         window.set_camera_topleft({0,0});
         paint_starting_screen(window);
     } else{
-        if(!paused_ and !reset_){
-            if(!sandglass_.is_effect_active()){
+        if (won_) {
+        paint_winning_screen(window);
+        } else if (paused_) {
+            paint_paused_screen(window);
+        } else if (reset_) {
+            paint_gameover_screen(window);
+        } else if (speedrun_won_){
+            paint_speedrun_screen(window);
+        } else {
+            if (!sandglass_.is_effect_active()) {
                 window.clear(sky_blue);
                 sandglass_.paint(window);
-            } else{
+            } else {
                 window.clear(0xC2B280);
                 paint_number(window, {window.camera_center().x, window.camera_center().y}, sandglass_.cooldown());
             }
-            
+
+            paint_timer(window);
             paint_platforms(window);
             paint_crosses(window);
             paint_demon_objects(window);
             paint_blessings(window);
             mario_.paint(window);
             paint_points(window);
-
-        } else if(paused_) paint_paused_screen(window);
-        else if(reset_) paint_gameover_screen(window);
+        }
     }
     
     paint_game_frame(window);

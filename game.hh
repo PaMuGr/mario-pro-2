@@ -41,9 +41,15 @@ class Game {
     bool paused_;
     bool finished_;
     bool reset_;
+    bool won_;
+    bool speedrun_won_;
     bool start_game_;
+    bool has_time_limit_ = false;
     int cross_height_y_ = 0;
     int last_blessed_points_ = 0;
+    int crosses_to_get_ = 10; //Crosses al mode facil
+    int timer_ = 0;  //Timer per el mode speedrun
+    int game_mode_ = 1; //Inicialitzat a Easy
 
     void process_keys(pro2::Window& window);
     void update_objects(pro2::Window& window);
@@ -81,6 +87,39 @@ class Game {
         return reset_;
     }
 
+    /**
+     * @brief Retorna un bool segons si hem guanyat el joc
+     * 
+     * @return True or False segons l'estat de joc
+     */
+    bool you_won() const {
+        return won_;
+    }
+
+    /**
+     * @brief Canvia el mode de joc al seleccionat
+     * @param gamemode Mode de joc al que es jugarà
+     */
+    void set_gamemode(int gamemode){
+        game_mode_ = gamemode;
+        apply_game_mode_settings(); 
+    }
+
+    /**
+     * @brief Actualitza el temps del joc
+     */
+    void update_timer(){
+        if (has_time_limit_) {
+            timer_--;
+            if (timer_ <= 0) speedrun_won_ = true;
+        }
+    }
+
+    /**
+     * @brief Actualitza l'estat del joc utilitzant switch statements
+     */
+    void apply_game_mode_settings();
+
     //PAINTING METHODS:
 
     /**
@@ -95,7 +134,11 @@ class Game {
     void paint_paused_screen(pro2::Window& window);
     void paint_gameover_screen(pro2::Window& window);
     void paint_starting_screen(pro2::Window& window);
+    void paint_winning_screen(pro2::Window& window);
+    void paint_speedrun_screen(pro2::Window& window);
     void paint_game_frame(pro2::Window& window); 
+    void paint_timer(pro2::Window& window); 
+    
 
     /**
      * @brief Centra un text al mitg de la pantalla
@@ -115,12 +158,13 @@ class Game {
     void update_time_stoped_mode(pro2::Window& window, const pro2::Rect& marioRect);
     void update_normal_mode(pro2::Window& window, const pro2::Rect& marioRect);
     void try_shoot_fireball();
-    void update_fireballs();
+    void update_fireballs(pro2::Window& window);
     bool check_fireball_hits_platform(Fireball& fireball);
     void update_crosses(pro2::Window& window, const pro2::Rect& marioRect);
     void update_fires();
     void update_fireball_collisions(const pro2::Rect& marioRect);
     void update_fire_collisions(const pro2::Rect& marioRect);
+    void update_demon_state(pro2::Window& window);
     void check_blessing_points();
     
  private:
