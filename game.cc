@@ -24,55 +24,12 @@ Game::Game(int width, int height)
           Platform(250, 400, 150, 161),
       },
       paused_(false), 
-      finished_(false),
-      reset_(false),
-      start_game_(false),
-      won_(false),
-      speedrun_won_(false),
+      game_state_(0),
       cross_height_y_(0) {
     
-    //100.000 ITEMS -> Una mica lent al restart (normal)
+    //1.000.000 ITEMS -> Una mica lent al restart i al iniciar (pero molt eficient) (normal)
     //50.000 ITEMS -> Millor per playtesting 
-    for (int i = 1; i < 1000; i++) {
-        int cy = randomizer(-3,3);
-        int random_height = randomizer(-3, 3);
-        int y_offset = random_height * 10;
-        int base_x = 250 + i * 200;
-        int x_range = 400 + i * 200;
-
-        //Plataformes d'abaix
-        platforms_.push_back(Platform(
-            base_x, x_range,             // x 
-            150 + y_offset, 161 + y_offset  // y 
-        ));
-
-        int platforms_offset_x = 0;
-        int platforms_offset_y = 0;
-        if(randomizer(1,0)==0){
-            platforms_offset_x = 30;
-            platforms_offset_y = 10;
-        } else{
-            platforms_offset_x = -30;
-            platforms_offset_y = 0;
-        }
-
-        platforms_.push_back(Platform(
-            base_x + platforms_offset_x, x_range + platforms_offset_x - 20,            // x 
-            90 + y_offset - platforms_offset_y, 101 + y_offset - platforms_offset_y // y 
-        ));
-
-        if(randomizer(1,0)==0){ //si es 0 les fiquem abaix sino adalt -> randomitzat
-            crosses_.push_back(Cross({
-            (randomizer(380,100) + i * 200 + x_range) / 2,  //x
-            120 + random_height*10                //y
-            }, {1,0}, 20)); 
-        } else{
-            crosses_.push_back(Cross({
-            (randomizer(380,100) + i * 200 + x_range) / 2,  //x
-            50 + random_height*10                //y
-            }, {((i%2)*-1+1),((i%2)*-1)}, 10)); 
-        }
-    }
+    generate_level_objects(50000);
 
     //Afegim a la constructora el .add de les plataformes
     for (Platform& p : platforms_) {
@@ -85,35 +42,75 @@ Game::Game(int width, int height)
     }
 }
 
+/*GENERADOR DEL MAPA RANDOMITZAT*/
+void Game::generate_level_objects(int count) {
+    for (int i = 1; i < count; i++) {
+        int cy = randomizer(-3, 3);
+        int random_height = randomizer(-3, 3);
+        int y_offset = random_height * 10;
+        int base_x = 250 + i * 200;
+        int x_range = 400 + i * 200;
+
+        // Plataforma d'abaix
+        platforms_.push_back(Platform(
+            base_x, x_range,
+            150 + y_offset, 161 + y_offset
+        ));
+
+        int platforms_offset_x = 0;
+        int platforms_offset_y = 0;
+        if (randomizer(1, 0) == 0) {
+            platforms_offset_x = 30;
+            platforms_offset_y = 10;
+        } else {
+            platforms_offset_x = -30;
+            platforms_offset_y = 0;
+        }
+
+        // Plataforma de dalt
+        platforms_.push_back(Platform(
+            base_x + platforms_offset_x, x_range + platforms_offset_x - 20,
+            90 + y_offset - platforms_offset_y, 101 + y_offset - platforms_offset_y
+        ));
+
+        // Creu aleatòria
+        if (randomizer(1, 0) == 0) {
+            crosses_.push_back(Cross({
+                (randomizer(380, 100) + i * 200 + x_range) / 2,
+                120 + random_height * 10
+            }, {1, 0}, 20));
+        } else {
+            crosses_.push_back(Cross({
+                (randomizer(380, 100) + i * 200 + x_range) / 2,
+                50 + random_height * 10
+            }, {((i % 2) * -1 + 1), ((i % 2) * -1)}, 10));
+        }
+    }
+}
+
 /*PROCESSADOR DE TECLES*/
 void Game::process_keys(pro2::Window& window) {
     if (window.is_key_down(Keys::Escape)) {
-        game_state_ = 4;
-        //quitar
-        finished_ = true;
+        game_state_ = 4;  // exit
         return;
     }
-    if (start_game_ and window.was_key_pressed('P')) {
-        paused_ = !paused_;
+    if (game_state_ == 1 && window.was_key_pressed('P')) {
+        game_state_ = 6;  // pause
         return;
     }
-    if ((reset_ || won_ || speedrun_won_) && window.is_key_down('R')) {
+    if ((game_state_ == 2 || game_state_ == 3 || game_state_ == 5) && window.is_key_down('R')) {
         int prev_mode = game_mode_;
         *this = Game(480, 320);
         game_mode_ = prev_mode;
         apply_game_mode_settings();
-        game_state_ = 5;
-        //quitar
-        reset_ = false;
+        game_state_ = 0;
         return;
     }
-    if (window.was_key_pressed('B') and ascended_.can_activate()) {
+    if (window.was_key_pressed('B') && ascended_.can_activate()) {
         ascended_.activate({mario_.pos().x, mario_.pos().y});
     }
-    if(window.was_key_pressed(Keys::Return)){
-        game_state_ = 0;
-        //quitar
-        start_game_ = true;
+    if (window.was_key_pressed(Keys::Return)) {
+        game_state_ = 1;
         return;
     }
 }
@@ -148,8 +145,6 @@ void Game::apply_game_mode_settings() {
             break;
         default:
             game_state_ = 4;
-            //quitar
-            finished_ = true;
             break;
     }
 }
@@ -159,9 +154,7 @@ bool Game::check_fallen_off_screen(const pro2::Window& window) {
     //Comprovació si mario esta caigut de les plataformes --> TORNA A INICIAR JOC
     int floor = window.topleft().y + window.height() + 200;
     if (mario_.pos().y > floor) {
-        game_state_ = 5;
-        //quitar
-        reset_ = true;
+        game_state_ = 5;  // gameover
         return true;
     }
     return false;
@@ -188,9 +181,7 @@ void Game::update_normal_mode(pro2::Window& window, const pro2::Rect& marioRect)
     auto platforms_visibles = finder_platforms_.query(window.camera_rect());
     demon_.update(window,platforms_visibles);
     if(demon_.check_fireball_collisions(marioRect,ascended_.get_rect())){
-         game_state_ = 5;
-            //quitar
-        reset_ = true;
+        game_state_ = 5;    // game over
     }
     
     update_crosses(window, marioRect);
@@ -227,8 +218,15 @@ void Game::check_blessing_points() {
 
 /*UPDATE DELS OBJECTES EN GENERAL*/
 void Game::update_objects(pro2::Window& window) {
-    mario_.update(window, platforms_);
+    auto platforms_visibles = finder_platforms_.query(window.camera_rect());
+    std::vector<Platform> visibles_vec;
+    for (const Platform* p : platforms_visibles)
+        visibles_vec.push_back(*p);  // Copia l'objecte
+
+    mario_.update(window, visibles_vec);
+
     ascended_.update(mario_.pos());
+
     pro2::Rect marioRect = mario_.get_rect();
 
     if (check_fallen_off_screen(window)) return;
@@ -271,19 +269,16 @@ void Game::update_camera(pro2::Window& window) {
 /*UPDATE GENERAL*/
 void Game::update(pro2::Window& window) {
     process_keys(window);
-    if(!paused_ and !reset_ and start_game_){
-        //Quan activat el sandglass el timer no es mou
-        if(!sandglass_.is_effect_active()){
+    if (game_state_ == 1) {
+        if (!sandglass_.is_effect_active()) {
             update_timer();
         }
         update_objects(window);
         update_camera(window);
-        if (!won_ and mario_.check_points() >= crosses_to_get_){
-            game_state_ = 2;
-            //quitar
-            won_ = true;
+        if (mario_.check_points() >= crosses_to_get_) {
+            game_state_ = 2;  // won
         }
-    } 
+    }   
 }
 
 /*PAINTS DE CADA OBJECTE I PANTALLA DIFERENT*/
@@ -434,40 +429,38 @@ void Game::paint_timer(pro2::Window& window){
 
 /*PAINT GENERAL*/
 void Game::paint(pro2::Window& window) {
-    if(!start_game_){
+    if (game_state_ == 0) {
         window.set_camera_topleft({0,0});
         paint_starting_screen(window);
-    } else{
-        if (won_) {
+    } else if (game_state_ == 2) {
         paint_winning_screen(window);
-        } else if (paused_) {
-            paint_paused_screen(window);
-        } else if (reset_) {
-            paint_gameover_screen(window);
-        } else if (speedrun_won_){
-            paint_speedrun_screen(window);
-        } else if (is_dodging_mode_){
+    } else if (game_state_ == 6) {
+        paint_paused_screen(window);
+    } else if (game_state_ == 5) {
+        paint_gameover_screen(window);
+    } else if (game_state_ == 3) {
+        paint_speedrun_screen(window);
+    } else if (is_dodging_mode_) {
+        window.clear(sky_blue);
+        paint_demon_objects(window);
+        paint_platforms(window);
+        mario_.paint(window);
+    } else {
+        if (!sandglass_.is_effect_active()) {
             window.clear(sky_blue);
-            paint_demon_objects(window);
-            paint_platforms(window);
-            mario_.paint(window);
+            sandglass_.paint(window);
         } else {
-            if (!sandglass_.is_effect_active()) {
-                window.clear(sky_blue);
-                sandglass_.paint(window);
-            } else {
-                window.clear(0xC2B280);
-                paint_number(window, {window.camera_center().x, window.camera_center().y}, sandglass_.cooldown());
-            }
-            paint_timer(window);
-            paint_platforms(window);
-            paint_crosses(window);
-            paint_demon_objects(window);
-            paint_blessings(window);
-            mario_.paint(window);
-            paint_points(window);
+            window.clear(0xC2B280);
+            paint_number(window, {window.camera_center().x, window.camera_center().y}, sandglass_.cooldown());
         }
+        paint_timer(window);
+        paint_platforms(window);
+        paint_crosses(window);
+        paint_demon_objects(window);
+        paint_blessings(window);
+        mario_.paint(window);
+        paint_points(window);
     }
-    
     paint_game_frame(window);
+
 }

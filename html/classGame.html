@@ -99,16 +99,19 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a5bc07cf8947858f32637943836cc6f8e" id="r_a5bc07cf8947858f32637943836cc6f8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bc07cf8947858f32637943836cc6f8e">Game</a> (int width, int height)</td></tr>
+<tr class="memdesc:a5bc07cf8947858f32637943836cc6f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor del joc. Inicialitza els objectes i l'estat inicial.  <br /></td></tr>
 <tr class="separator:a5bc07cf8947858f32637943836cc6f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3661c777f12e357cdc0b3727b2f73412" id="r_a3661c777f12e357cdc0b3727b2f73412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3661c777f12e357cdc0b3727b2f73412">update</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a3661c777f12e357cdc0b3727b2f73412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza el joc cada frame.  <br /></td></tr>
 <tr class="separator:a3661c777f12e357cdc0b3727b2f73412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3e3428a12b9944fefb663f2fe560529" id="r_af3e3428a12b9944fefb663f2fe560529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3e3428a12b9944fefb663f2fe560529">paint</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:af3e3428a12b9944fefb663f2fe560529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta el joc cada frame.  <br /></td></tr>
 <tr class="separator:af3e3428a12b9944fefb663f2fe560529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fef163aab28f7a4de1abb8d08794e7f" id="r_a3fef163aab28f7a4de1abb8d08794e7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fef163aab28f7a4de1abb8d08794e7f">is_paused</a> () const</td></tr>
 <tr class="memdesc:a3fef163aab28f7a4de1abb8d08794e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un bool segons si el joc esta o no pausat.  <br /></td></tr>
 <tr class="separator:a3fef163aab28f7a4de1abb8d08794e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48d38b110cb6558e69b1920bb31406db" id="r_a48d38b110cb6558e69b1920bb31406db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48d38b110cb6558e69b1920bb31406db">is_finished</a> () const</td></tr>
-<tr class="memdesc:a48d38b110cb6558e69b1920bb31406db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un bool segons si el joc esta o no finalitzat.  <br /></td></tr>
+<tr class="memdesc:a48d38b110cb6558e69b1920bb31406db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un bool segons si el joc ha acabat.  <br /></td></tr>
 <tr class="separator:a48d38b110cb6558e69b1920bb31406db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4268b648bd696673acf3de0cddfc20b" id="r_ae4268b648bd696673acf3de0cddfc20b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4268b648bd696673acf3de0cddfc20b">you_died</a> () const</td></tr>
 <tr class="memdesc:ae4268b648bd696673acf3de0cddfc20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un bool segons si el mario ha mort.  <br /></td></tr>
@@ -120,75 +123,88 @@ Métodos públicos</h2></td></tr>
 <tr class="memdesc:a1cd0035e2b5ae89538eb741a4017dc0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canvia el mode de joc al seleccionat.  <br /></td></tr>
 <tr class="separator:a1cd0035e2b5ae89538eb741a4017dc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cb5b15762932c64246ac353a00394ef" id="r_a1cb5b15762932c64246ac353a00394ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cb5b15762932c64246ac353a00394ef">update_timer</a> ()</td></tr>
-<tr class="memdesc:a1cb5b15762932c64246ac353a00394ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza el temps del joc.  <br /></td></tr>
+<tr class="memdesc:a1cb5b15762932c64246ac353a00394ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza el temporitzador del joc si hi ha límit de temps.  <br /></td></tr>
 <tr class="separator:a1cb5b15762932c64246ac353a00394ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac779383b06a6ef5b24ba05d907e30b70" id="r_ac779383b06a6ef5b24ba05d907e30b70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac779383b06a6ef5b24ba05d907e30b70">apply_game_mode_settings</a> ()</td></tr>
-<tr class="memdesc:ac779383b06a6ef5b24ba05d907e30b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l'estat del joc utilitzant switch statements.  <br /></td></tr>
+<tr class="memdesc:ac779383b06a6ef5b24ba05d907e30b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica les configuracions específiquès segons el mode de joc seleccionat.  <br /></td></tr>
 <tr class="separator:ac779383b06a6ef5b24ba05d907e30b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf09733d523bd8c2faf41059a7f83988" id="r_adf09733d523bd8c2faf41059a7f83988"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf09733d523bd8c2faf41059a7f83988">generate_level_objects</a> (int count)</td></tr>
+<tr class="memdesc:adf09733d523bd8c2faf41059a7f83988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea un mapa diferent amb plataformes randomitzades per cada reinici del joc.  <br /></td></tr>
+<tr class="separator:adf09733d523bd8c2faf41059a7f83988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f8beafd9f0e1c435ff811b919dfa90" id="r_a24f8beafd9f0e1c435ff811b919dfa90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f8beafd9f0e1c435ff811b919dfa90">paint_platforms</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
-<tr class="memdesc:a24f8beafd9f0e1c435ff811b919dfa90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinten els diferents objectes a la finestra.  <br /></td></tr>
+<tr class="memdesc:a24f8beafd9f0e1c435ff811b919dfa90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta les plataformes visibles al mapa.  <br /></td></tr>
 <tr class="separator:a24f8beafd9f0e1c435ff811b919dfa90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a991a1522b4c597467d3b16be63167b43" id="r_a991a1522b4c597467d3b16be63167b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a991a1522b4c597467d3b16be63167b43">paint_crosses</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a991a1522b4c597467d3b16be63167b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta les creus visibles.  <br /></td></tr>
 <tr class="separator:a991a1522b4c597467d3b16be63167b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaab77c2936ba25db40c7b7730056be40" id="r_aaab77c2936ba25db40c7b7730056be40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaab77c2936ba25db40c7b7730056be40">paint_demon_objects</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:aaab77c2936ba25db40c7b7730056be40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta el dimoni i el seu estat.  <br /></td></tr>
 <tr class="separator:aaab77c2936ba25db40c7b7730056be40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47f1dedca2b82e8c9ae89a35dd2ec1ad" id="r_a47f1dedca2b82e8c9ae89a35dd2ec1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47f1dedca2b82e8c9ae89a35dd2ec1ad">paint_fireballs</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a47f1dedca2b82e8c9ae89a35dd2ec1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placeholder per pintar boles de foc.  <br /></td></tr>
 <tr class="separator:a47f1dedca2b82e8c9ae89a35dd2ec1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2240ddc19ac41994ea1404e7d5a5bfb" id="r_ab2240ddc19ac41994ea1404e7d5a5bfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2240ddc19ac41994ea1404e7d5a5bfb">paint_blessings</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:ab2240ddc19ac41994ea1404e7d5a5bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta les benediccions i el seu comptador.  <br /></td></tr>
 <tr class="separator:ab2240ddc19ac41994ea1404e7d5a5bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5af625d2e56e43a9a2f8cc6de20e52b9" id="r_a5af625d2e56e43a9a2f8cc6de20e52b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5af625d2e56e43a9a2f8cc6de20e52b9">paint_points</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a5af625d2e56e43a9a2f8cc6de20e52b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta els punts recollits pel jugador.  <br /></td></tr>
 <tr class="separator:a5af625d2e56e43a9a2f8cc6de20e52b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76a742bbf7281efcc1edf5b9d4e8367d" id="r_a76a742bbf7281efcc1edf5b9d4e8367d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76a742bbf7281efcc1edf5b9d4e8367d">paint_paused_screen</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a76a742bbf7281efcc1edf5b9d4e8367d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra la pantalla de pausa.  <br /></td></tr>
 <tr class="separator:a76a742bbf7281efcc1edf5b9d4e8367d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c8dc611af65f79c9080c8464c0b07ad" id="r_a1c8dc611af65f79c9080c8464c0b07ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c8dc611af65f79c9080c8464c0b07ad">paint_gameover_screen</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a1c8dc611af65f79c9080c8464c0b07ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra la pantalla de game over.  <br /></td></tr>
 <tr class="separator:a1c8dc611af65f79c9080c8464c0b07ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f8c004d1908f2af444f4d9c561148c7" id="r_a2f8c004d1908f2af444f4d9c561148c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f8c004d1908f2af444f4d9c561148c7">paint_starting_screen</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a2f8c004d1908f2af444f4d9c561148c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra la pantalla d'inici del joc.  <br /></td></tr>
 <tr class="separator:a2f8c004d1908f2af444f4d9c561148c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e903aa7540bba5cbba50a8030ea7002" id="r_a3e903aa7540bba5cbba50a8030ea7002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e903aa7540bba5cbba50a8030ea7002">paint_winning_screen</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a3e903aa7540bba5cbba50a8030ea7002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra la pantalla de victòria.  <br /></td></tr>
 <tr class="separator:a3e903aa7540bba5cbba50a8030ea7002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bf2f2fef6c881c8cbc69b32d73be5af" id="r_a8bf2f2fef6c881c8cbc69b32d73be5af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bf2f2fef6c881c8cbc69b32d73be5af">paint_speedrun_screen</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a8bf2f2fef6c881c8cbc69b32d73be5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra la pantalla quan s'acaba el mode speedrun.  <br /></td></tr>
 <tr class="separator:a8bf2f2fef6c881c8cbc69b32d73be5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac687ddf20d34c25f8d97962a9e0866" id="r_afac687ddf20d34c25f8d97962a9e0866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afac687ddf20d34c25f8d97962a9e0866">paint_game_frame</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:afac687ddf20d34c25f8d97962a9e0866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dibuixa el marc del joc (recuadre)  <br /></td></tr>
 <tr class="separator:afac687ddf20d34c25f8d97962a9e0866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a428db831d8e093be8720ee90534ae57d" id="r_a428db831d8e093be8720ee90534ae57d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a428db831d8e093be8720ee90534ae57d">paint_timer</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a428db831d8e093be8720ee90534ae57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta el temporitzador del joc a la pantalla.  <br /></td></tr>
 <tr class="separator:a428db831d8e093be8720ee90534ae57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabadd5026e72b4a84cd0afdb505681fd" id="r_aabadd5026e72b4a84cd0afdb505681fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, <a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> center, const std::string &amp;text, int y_offset)</td></tr>
 <tr class="memdesc:aabadd5026e72b4a84cd0afdb505681fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Centra un text al mitg de la pantalla.  <br /></td></tr>
 <tr class="separator:aabadd5026e72b4a84cd0afdb505681fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbfcda5bf7c3a427a5d8f512dacec6e0" id="r_abbfcda5bf7c3a427a5d8f512dacec6e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbfcda5bf7c3a427a5d8f512dacec6e0">check_fallen_off_screen</a> (const <a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:abbfcda5bf7c3a427a5d8f512dacec6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si el mario ha caigut fora de la pantalla.  <br /></td></tr>
 <tr class="separator:abbfcda5bf7c3a427a5d8f512dacec6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad67466fb235ac2069efe278f6d35268a" id="r_ad67466fb235ac2069efe278f6d35268a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad67466fb235ac2069efe278f6d35268a">handle_sandglass_interaction</a> (const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
+<tr class="memdesc:ad67466fb235ac2069efe278f6d35268a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si mario interactua amb el rellotge i l’activa.  <br /></td></tr>
 <tr class="separator:ad67466fb235ac2069efe278f6d35268a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9c6cafeb4becc2183a220d1788062f" id="r_a6e9c6cafeb4becc2183a220d1788062f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e9c6cafeb4becc2183a220d1788062f">update_time_stoped_mode</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
+<tr class="memdesc:a6e9c6cafeb4becc2183a220d1788062f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l’estat del joc quan el rellotge està activat.  <br /></td></tr>
 <tr class="separator:a6e9c6cafeb4becc2183a220d1788062f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83971c017e3001fe2df507dad4f893e0" id="r_a83971c017e3001fe2df507dad4f893e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83971c017e3001fe2df507dad4f893e0">update_normal_mode</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
+<tr class="memdesc:a83971c017e3001fe2df507dad4f893e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l’estat normal del joc (sense rellotge)  <br /></td></tr>
 <tr class="separator:a83971c017e3001fe2df507dad4f893e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e999b991c363fc200283e7323ff09f1" id="r_a6e999b991c363fc200283e7323ff09f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e999b991c363fc200283e7323ff09f1">try_shoot_fireball</a> ()</td></tr>
-<tr class="separator:a6e999b991c363fc200283e7323ff09f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad18f90c4cdd19c0fbdfb16659cc43b0" id="r_aad18f90c4cdd19c0fbdfb16659cc43b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad18f90c4cdd19c0fbdfb16659cc43b0">update_fireballs</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
-<tr class="separator:aad18f90c4cdd19c0fbdfb16659cc43b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97e552e241587a12f86f392c3328050" id="r_ad97e552e241587a12f86f392c3328050"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad97e552e241587a12f86f392c3328050">check_fireball_hits_platform</a> (<a class="el" href="classFireball.html">Fireball</a> &amp;fireball)</td></tr>
-<tr class="separator:ad97e552e241587a12f86f392c3328050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8052300120200684df461bb6aa2a2b9c" id="r_a8052300120200684df461bb6aa2a2b9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8052300120200684df461bb6aa2a2b9c">update_crosses</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
+<tr class="memdesc:a8052300120200684df461bb6aa2a2b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza les creus visibles i comprova si han estat recollides.  <br /></td></tr>
 <tr class="separator:a8052300120200684df461bb6aa2a2b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc149cfddc137cb5189e545f1a9dbbdd" id="r_acc149cfddc137cb5189e545f1a9dbbdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc149cfddc137cb5189e545f1a9dbbdd">update_fires</a> ()</td></tr>
-<tr class="separator:acc149cfddc137cb5189e545f1a9dbbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1db13df88cb8be7fe2e4905d0bb7b200" id="r_a1db13df88cb8be7fe2e4905d0bb7b200"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1db13df88cb8be7fe2e4905d0bb7b200">update_fireball_collisions</a> (const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
-<tr class="separator:a1db13df88cb8be7fe2e4905d0bb7b200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc22da4227f79831a3401e1c0412e27" id="r_aafc22da4227f79831a3401e1c0412e27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafc22da4227f79831a3401e1c0412e27">update_fire_collisions</a> (const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
-<tr class="separator:aafc22da4227f79831a3401e1c0412e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0457735c1ff2628264fdcfeae69ad1c1" id="r_a0457735c1ff2628264fdcfeae69ad1c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0457735c1ff2628264fdcfeae69ad1c1">update_demon_state</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a0457735c1ff2628264fdcfeae69ad1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza el comportament del dimoni.  <br /></td></tr>
 <tr class="separator:a0457735c1ff2628264fdcfeae69ad1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7849d79c921e869e30923bf9974519b5" id="r_a7849d79c921e869e30923bf9974519b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7849d79c921e869e30923bf9974519b5">check_blessing_points</a> ()</td></tr>
+<tr class="memdesc:a7849d79c921e869e30923bf9974519b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si el mario ha aconseguit prou punts per activar benediccions.  <br /></td></tr>
 <tr class="separator:a7849d79c921e869e30923bf9974519b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Métodos privados</h2></td></tr>
 <tr class="memitem:a0c6fbced92dbe00f94f96d899f02fdb8" id="r_a0c6fbced92dbe00f94f96d899f02fdb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c6fbced92dbe00f94f96d899f02fdb8">process_keys</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:a0c6fbced92dbe00f94f96d899f02fdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa les tecles premudes i actualitza l'estat del joc en conseqüència.  <br /></td></tr>
 <tr class="separator:a0c6fbced92dbe00f94f96d899f02fdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac837e84d3f63a3dac7b3942705203e" id="r_aeac837e84d3f63a3dac7b3942705203e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeac837e84d3f63a3dac7b3942705203e">update_objects</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:aeac837e84d3f63a3dac7b3942705203e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza tots els objectes del joc (mario, creus, rellotge, etc.)  <br /></td></tr>
 <tr class="separator:aeac837e84d3f63a3dac7b3942705203e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab146f2f8cec61b092586762267cf1e73" id="r_ab146f2f8cec61b092586762267cf1e73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab146f2f8cec61b092586762267cf1e73">update_camera</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
+<tr class="memdesc:ab146f2f8cec61b092586762267cf1e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mou la càmera seguint la posició del personatge principal.  <br /></td></tr>
 <tr class="separator:ab146f2f8cec61b092586762267cf1e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -207,28 +223,14 @@ Atributos privados</h2></td></tr>
 <tr class="separator:a56d8b6fb9cff75879c0d70310b508ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2cb5925dfa39af72927ae512034cdac" id="r_af2cb5925dfa39af72927ae512034cdac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDemon.html">Demon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a></td></tr>
 <tr class="separator:af2cb5925dfa39af72927ae512034cdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba05b1a95dbabf977bf1d51cb67ce55" id="r_aaba05b1a95dbabf977bf1d51cb67ce55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpro2_1_1Ascended.html">pro2::Ascended</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a></td></tr>
+<tr class="memitem:aaba05b1a95dbabf977bf1d51cb67ce55" id="r_aaba05b1a95dbabf977bf1d51cb67ce55"><td class="memItemLeft" align="right" valign="top">pro2::Ascended&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a></td></tr>
 <tr class="separator:aaba05b1a95dbabf977bf1d51cb67ce55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c2c016d29e8a36654c3b73ededddbb4" id="r_a0c2c016d29e8a36654c3b73ededddbb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classList.html">List</a>&lt; <a class="el" href="classFireball.html">Fireball</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c2c016d29e8a36654c3b73ededddbb4">fireballs_</a></td></tr>
-<tr class="separator:a0c2c016d29e8a36654c3b73ededddbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac79594eaeb2fc130366c8d79fb48e662" id="r_ac79594eaeb2fc130366c8d79fb48e662"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classList.html">List</a>&lt; <a class="el" href="classFire.html">Fire</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac79594eaeb2fc130366c8d79fb48e662">fires_</a></td></tr>
-<tr class="separator:ac79594eaeb2fc130366c8d79fb48e662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac62fcd6f881bcb94637e29015a7c7b" id="r_a4ac62fcd6f881bcb94637e29015a7c7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFinder.html">Finder</a>&lt; <a class="el" href="classPlatform.html">Platform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ac62fcd6f881bcb94637e29015a7c7b">finder_platforms_</a></td></tr>
 <tr class="separator:a4ac62fcd6f881bcb94637e29015a7c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ee68975468409b25082bf66e9414d6" id="r_ab1ee68975468409b25082bf66e9414d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFinder.html">Finder</a>&lt; <a class="el" href="classCross.html">Cross</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1ee68975468409b25082bf66e9414d6">finder_crosses_</a></td></tr>
 <tr class="separator:ab1ee68975468409b25082bf66e9414d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0199e692575fbb7366551b469b066a6c" id="r_a0199e692575fbb7366551b469b066a6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0199e692575fbb7366551b469b066a6c">paused_</a></td></tr>
 <tr class="separator:a0199e692575fbb7366551b469b066a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae68025f0c47e30423db4288e0038e5e8" id="r_ae68025f0c47e30423db4288e0038e5e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae68025f0c47e30423db4288e0038e5e8">finished_</a></td></tr>
-<tr class="separator:ae68025f0c47e30423db4288e0038e5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97a7cd4542b7556be2247ec7335e91a2" id="r_a97a7cd4542b7556be2247ec7335e91a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a></td></tr>
-<tr class="separator:a97a7cd4542b7556be2247ec7335e91a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a896e7227602577764fab7865da6e9ede" id="r_a896e7227602577764fab7865da6e9ede"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a896e7227602577764fab7865da6e9ede">won_</a></td></tr>
-<tr class="separator:a896e7227602577764fab7865da6e9ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab390d93b043b6b6dab09320d263f878c" id="r_ab390d93b043b6b6dab09320d263f878c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab390d93b043b6b6dab09320d263f878c">speedrun_won_</a></td></tr>
-<tr class="separator:ab390d93b043b6b6dab09320d263f878c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa962f49423cca6cbedfa91f4a4a127d5" id="r_aa962f49423cca6cbedfa91f4a4a127d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa962f49423cca6cbedfa91f4a4a127d5">start_game_</a></td></tr>
-<tr class="separator:aa962f49423cca6cbedfa91f4a4a127d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b46e9f0caf6c91855d6a32a1424a530" id="r_a8b46e9f0caf6c91855d6a32a1424a530"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b46e9f0caf6c91855d6a32a1424a530">has_time_limit_</a> = false</td></tr>
 <tr class="separator:a8b46e9f0caf6c91855d6a32a1424a530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b07603e39699979b08f5c27b7880f8" id="r_a74b07603e39699979b08f5c27b7880f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74b07603e39699979b08f5c27b7880f8">is_dodging_mode_</a> = false</td></tr>
@@ -253,7 +255,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00027">27</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00026">26</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a5bc07cf8947858f32637943836cc6f8e" name="a5bc07cf8947858f32637943836cc6f8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5bc07cf8947858f32637943836cc6f8e">&#9670;&#160;</a></span>Game()</h2>
@@ -274,102 +276,17 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor del joc. Inicialitza els objectes i l'estat inicial. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Amplada de la finestra </td></tr>
+    <tr><td class="paramname">height</td><td>Alçada de la finestra </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00009">9</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>    : <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right, Keys::Down),</div>
-<div class="line"><span class="lineno">   11</span>      <span class="comment">//MARIO I PLATAFORMES PER SER DIBUIXADES EN LA PANTALLA D&#39;INICI</span></div>
-<div class="line"><span class="lineno">   12</span>      <a class="code hl_variable" href="#a18f58e292e852152f768639dfe4c0e47">still_mario_</a>({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right, Keys::Down),</div>
-<div class="line"><span class="lineno">   13</span>      <a class="code hl_variable" href="#a41f899e947ef89e1d9ad7db3557e1be5">still_platform_</a>({0, 480, 150, 480}),</div>
-<div class="line"><span class="lineno">   14</span>      <a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>({200, 114}), </div>
-<div class="line"><span class="lineno">   15</span>      <a class="code hl_variable" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a>({0, 0}),</div>
-<div class="line"><span class="lineno">   16</span>      <a class="code hl_variable" href="#a1766a1e6331c8458c040ad641f82b4ab">crosses_</a>{</div>
-<div class="line"><span class="lineno">   17</span>        Cross({-100, 235}),</div>
-<div class="line"><span class="lineno">   18</span>        Cross({325, 134},{-1,0},30),</div>
-<div class="line"><span class="lineno">   19</span>      },</div>
-<div class="line"><span class="lineno">   20</span>      <a class="code hl_variable" href="#af8d7b0aefacb6a03fb6e2d28a2b49923">platforms_</a>{</div>
-<div class="line"><span class="lineno">   21</span>          Platform(-100, -70, 250, 261),</div>
-<div class="line"><span class="lineno">   22</span>          Platform(0, 200, 250, 261),</div>
-<div class="line"><span class="lineno">   23</span>          Platform(100, 300, 200, 211),</div>
-<div class="line"><span class="lineno">   24</span>          Platform(250, 400, 150, 161),</div>
-<div class="line"><span class="lineno">   25</span>      },</div>
-<div class="line"><span class="lineno">   26</span>      <a class="code hl_variable" href="#a0199e692575fbb7366551b469b066a6c">paused_</a>(<span class="keyword">false</span>), </div>
-<div class="line"><span class="lineno">   27</span>      <a class="code hl_variable" href="#ae68025f0c47e30423db4288e0038e5e8">finished_</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   28</span>      <a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   29</span>      <a class="code hl_variable" href="#aa962f49423cca6cbedfa91f4a4a127d5">start_game_</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   30</span>      <a class="code hl_variable" href="#a896e7227602577764fab7865da6e9ede">won_</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   31</span>      <a class="code hl_variable" href="#ab390d93b043b6b6dab09320d263f878c">speedrun_won_</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   32</span>      <a class="code hl_variable" href="#a6e8623dae36c0cac75255c40ceec5b35">cross_height_y_</a>(0) {</div>
-<div class="line"><span class="lineno">   33</span>    </div>
-<div class="line"><span class="lineno">   34</span>    <span class="comment">//100.000 ITEMS -&gt; Una mica lent al restart (normal)</span></div>
-<div class="line"><span class="lineno">   35</span>    <span class="comment">//50.000 ITEMS -&gt; Millor per playtesting </span></div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; 10000; i++) {</div>
-<div class="line"><span class="lineno">   37</span>        <span class="keywordtype">int</span> cy = <a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(-3,3);</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordtype">int</span> random_height = <a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(-3, 3);</div>
-<div class="line"><span class="lineno">   39</span>        <span class="keywordtype">int</span> y_offset = random_height * 10;</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordtype">int</span> base_x = 250 + i * 200;</div>
-<div class="line"><span class="lineno">   41</span>        <span class="keywordtype">int</span> x_range = 400 + i * 200;</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>        <span class="comment">//Plataformes d&#39;abaix</span></div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="#af8d7b0aefacb6a03fb6e2d28a2b49923">platforms_</a>.push_back(Platform(</div>
-<div class="line"><span class="lineno">   45</span>            base_x, x_range,             <span class="comment">// x </span></div>
-<div class="line"><span class="lineno">   46</span>            150 + y_offset, 161 + y_offset  <span class="comment">// y </span></div>
-<div class="line"><span class="lineno">   47</span>        ));</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>        <span class="keywordtype">int</span> platforms_offset_x = 0;</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordtype">int</span> platforms_offset_y = 0;</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(1,0)==0){</div>
-<div class="line"><span class="lineno">   52</span>            platforms_offset_x = 30;</div>
-<div class="line"><span class="lineno">   53</span>            platforms_offset_y = 10;</div>
-<div class="line"><span class="lineno">   54</span>        } <span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">   55</span>            platforms_offset_x = -30;</div>
-<div class="line"><span class="lineno">   56</span>            platforms_offset_y = 0;</div>
-<div class="line"><span class="lineno">   57</span>        }</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="#af8d7b0aefacb6a03fb6e2d28a2b49923">platforms_</a>.push_back(Platform(</div>
-<div class="line"><span class="lineno">   60</span>            base_x + platforms_offset_x, x_range + platforms_offset_x - 20,            <span class="comment">// x </span></div>
-<div class="line"><span class="lineno">   61</span>            90 + y_offset - platforms_offset_y, 101 + y_offset - platforms_offset_y <span class="comment">// y </span></div>
-<div class="line"><span class="lineno">   62</span>        ));</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(1,0)==0){ <span class="comment">//si es 0 les fiquem abaix sino adalt -&gt; randomitzat</span></div>
-<div class="line"><span class="lineno">   65</span>            <a class="code hl_variable" href="#a1766a1e6331c8458c040ad641f82b4ab">crosses_</a>.push_back(Cross({</div>
-<div class="line"><span class="lineno">   66</span>            (<a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(380,100) + i * 200 + x_range) / 2,  <span class="comment">//x</span></div>
-<div class="line"><span class="lineno">   67</span>            120 + random_height*10                <span class="comment">//y</span></div>
-<div class="line"><span class="lineno">   68</span>            }, {1,0}, 20)); </div>
-<div class="line"><span class="lineno">   69</span>        } <span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">   70</span>            <a class="code hl_variable" href="#a1766a1e6331c8458c040ad641f82b4ab">crosses_</a>.push_back(Cross({</div>
-<div class="line"><span class="lineno">   71</span>            (<a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(380,100) + i * 200 + x_range) / 2,  <span class="comment">//x</span></div>
-<div class="line"><span class="lineno">   72</span>            50 + random_height*10                <span class="comment">//y</span></div>
-<div class="line"><span class="lineno">   73</span>            }, {((i%2)*-1+1),((i%2)*-1)}, 10)); </div>
-<div class="line"><span class="lineno">   74</span>        }</div>
-<div class="line"><span class="lineno">   75</span>    }</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <span class="comment">//Afegim a la constructora el .add de les plataformes</span></div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">for</span> (Platform&amp; p : <a class="code hl_variable" href="#af8d7b0aefacb6a03fb6e2d28a2b49923">platforms_</a>) {</div>
-<div class="line"><span class="lineno">   79</span>        <a class="code hl_variable" href="#a4ac62fcd6f881bcb94637e29015a7c7b">finder_platforms_</a>.add(&amp;p);</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>    <span class="comment">//Afegim a la constructora el .add de les crosses</span></div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">for</span> (Cross&amp; c : <a class="code hl_variable" href="#a1766a1e6331c8458c040ad641f82b4ab">crosses_</a>) {</div>
-<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="#ab1ee68975468409b25082bf66e9414d6">finder_crosses_</a>.add(&amp;c);</div>
-<div class="line"><span class="lineno">   85</span>    }</div>
-<div class="line"><span class="lineno">   86</span>}</div>
-<div class="ttc" id="aclassGame_html_a0199e692575fbb7366551b469b066a6c"><div class="ttname"><a href="#a0199e692575fbb7366551b469b066a6c">Game::paused_</a></div><div class="ttdeci">bool paused_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00045">game.hh:45</a></div></div>
-<div class="ttc" id="aclassGame_html_a1766a1e6331c8458c040ad641f82b4ab"><div class="ttname"><a href="#a1766a1e6331c8458c040ad641f82b4ab">Game::crosses_</a></div><div class="ttdeci">std::list&lt; Cross &gt; crosses_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00032">game.hh:32</a></div></div>
-<div class="ttc" id="aclassGame_html_a18f58e292e852152f768639dfe4c0e47"><div class="ttname"><a href="#a18f58e292e852152f768639dfe4c0e47">Game::still_mario_</a></div><div class="ttdeci">Mario still_mario_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00031">game.hh:31</a></div></div>
-<div class="ttc" id="aclassGame_html_a41f899e947ef89e1d9ad7db3557e1be5"><div class="ttname"><a href="#a41f899e947ef89e1d9ad7db3557e1be5">Game::still_platform_</a></div><div class="ttdeci">Platform still_platform_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00030">game.hh:30</a></div></div>
-<div class="ttc" id="aclassGame_html_a4ac62fcd6f881bcb94637e29015a7c7b"><div class="ttname"><a href="#a4ac62fcd6f881bcb94637e29015a7c7b">Game::finder_platforms_</a></div><div class="ttdeci">Finder&lt; Platform &gt; finder_platforms_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00042">game.hh:42</a></div></div>
-<div class="ttc" id="aclassGame_html_a56d8b6fb9cff75879c0d70310b508ed3"><div class="ttname"><a href="#a56d8b6fb9cff75879c0d70310b508ed3">Game::sandglass_</a></div><div class="ttdeci">Sandglass sandglass_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00033">game.hh:33</a></div></div>
-<div class="ttc" id="aclassGame_html_a5ca6a91487a61b30528dd535bed1ce26"><div class="ttname"><a href="#a5ca6a91487a61b30528dd535bed1ce26">Game::mario_</a></div><div class="ttdeci">Mario mario_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00028">game.hh:28</a></div></div>
-<div class="ttc" id="aclassGame_html_a6e8623dae36c0cac75255c40ceec5b35"><div class="ttname"><a href="#a6e8623dae36c0cac75255c40ceec5b35">Game::cross_height_y_</a></div><div class="ttdeci">int cross_height_y_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00058">game.hh:58</a></div></div>
-<div class="ttc" id="aclassGame_html_a896e7227602577764fab7865da6e9ede"><div class="ttname"><a href="#a896e7227602577764fab7865da6e9ede">Game::won_</a></div><div class="ttdeci">bool won_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00049">game.hh:49</a></div></div>
-<div class="ttc" id="aclassGame_html_a97a7cd4542b7556be2247ec7335e91a2"><div class="ttname"><a href="#a97a7cd4542b7556be2247ec7335e91a2">Game::reset_</a></div><div class="ttdeci">bool reset_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00048">game.hh:48</a></div></div>
-<div class="ttc" id="aclassGame_html_aa962f49423cca6cbedfa91f4a4a127d5"><div class="ttname"><a href="#aa962f49423cca6cbedfa91f4a4a127d5">Game::start_game_</a></div><div class="ttdeci">bool start_game_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00051">game.hh:51</a></div></div>
-<div class="ttc" id="aclassGame_html_ab1ee68975468409b25082bf66e9414d6"><div class="ttname"><a href="#ab1ee68975468409b25082bf66e9414d6">Game::finder_crosses_</a></div><div class="ttdeci">Finder&lt; Cross &gt; finder_crosses_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00043">game.hh:43</a></div></div>
-<div class="ttc" id="aclassGame_html_ab390d93b043b6b6dab09320d263f878c"><div class="ttname"><a href="#ab390d93b043b6b6dab09320d263f878c">Game::speedrun_won_</a></div><div class="ttdeci">bool speedrun_won_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00050">game.hh:50</a></div></div>
-<div class="ttc" id="aclassGame_html_ae68025f0c47e30423db4288e0038e5e8"><div class="ttname"><a href="#ae68025f0c47e30423db4288e0038e5e8">Game::finished_</a></div><div class="ttdeci">bool finished_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00047">game.hh:47</a></div></div>
-<div class="ttc" id="aclassGame_html_af2cb5925dfa39af72927ae512034cdac"><div class="ttname"><a href="#af2cb5925dfa39af72927ae512034cdac">Game::demon_</a></div><div class="ttdeci">Demon demon_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00034">game.hh:34</a></div></div>
-<div class="ttc" id="aclassGame_html_af8d7b0aefacb6a03fb6e2d28a2b49923"><div class="ttname"><a href="#af8d7b0aefacb6a03fb6e2d28a2b49923">Game::platforms_</a></div><div class="ttdeci">std::vector&lt; Platform &gt; platforms_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00029">game.hh:29</a></div></div>
-<div class="ttc" id="anamespacepro2_html_afc58ae0c5cb2b4abcb963e3406ed8ee6"><div class="ttname"><a href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">pro2::randomizer</a></div><div class="ttdeci">int randomizer(int max, int min)</div><div class="ttdoc">Retorna un nombre random entre max i min.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00069">utils.cc:69</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
@@ -388,51 +305,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Actualitza l'estat del joc utilitzant switch statements. </p>
+<p>Aplica les configuracions específiquès segons el mode de joc seleccionat. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00121">121</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>                                    {</div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">switch</span> (<a class="code hl_variable" href="#a64fe40edeca8f95bc8ba668438ed5794">game_mode_</a>) {</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">case</span> 1:  <span class="comment">//Easy</span></div>
-<div class="line"><span class="lineno">  124</span>            <a class="code hl_variable" href="#a8b46e9f0caf6c91855d6a32a1424a530">has_time_limit_</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  125</span>            <a class="code hl_variable" href="#ab8a39c21375e10001f8d43dcd608211d">timer_</a> = 0;</div>
-<div class="line"><span class="lineno">  126</span>            <a class="code hl_variable" href="#af2d2757cd96e823c08098addbda9e648">crosses_to_get_</a> = 10;</div>
-<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">case</span> 2:  <span class="comment">//Medium</span></div>
-<div class="line"><span class="lineno">  129</span>            <a class="code hl_variable" href="#a8b46e9f0caf6c91855d6a32a1424a530">has_time_limit_</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  130</span>            <a class="code hl_variable" href="#ab8a39c21375e10001f8d43dcd608211d">timer_</a> = 0;</div>
-<div class="line"><span class="lineno">  131</span>            <a class="code hl_variable" href="#af2d2757cd96e823c08098addbda9e648">crosses_to_get_</a> = 20;</div>
-<div class="line"><span class="lineno">  132</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">case</span> 3:  <span class="comment">//Hard</span></div>
-<div class="line"><span class="lineno">  134</span>            <a class="code hl_variable" href="#a8b46e9f0caf6c91855d6a32a1424a530">has_time_limit_</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  135</span>            <a class="code hl_variable" href="#ab8a39c21375e10001f8d43dcd608211d">timer_</a> = 0;</div>
-<div class="line"><span class="lineno">  136</span>            <a class="code hl_variable" href="#af2d2757cd96e823c08098addbda9e648">crosses_to_get_</a> = 40;</div>
-<div class="line"><span class="lineno">  137</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">case</span> 4:  <span class="comment">//Speedrun</span></div>
-<div class="line"><span class="lineno">  139</span>            <a class="code hl_variable" href="#a8b46e9f0caf6c91855d6a32a1424a530">has_time_limit_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  140</span>            <a class="code hl_variable" href="#ab8a39c21375e10001f8d43dcd608211d">timer_</a> = 2880; </div>
-<div class="line"><span class="lineno">  141</span>            <a class="code hl_variable" href="#af2d2757cd96e823c08098addbda9e648">crosses_to_get_</a> = 9999;</div>
-<div class="line"><span class="lineno">  142</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">case</span> 5:  <span class="comment">//Dodge</span></div>
-<div class="line"><span class="lineno">  144</span>            <a class="code hl_variable" href="#a8b46e9f0caf6c91855d6a32a1424a530">has_time_limit_</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  145</span>            <a class="code hl_variable" href="#ab8a39c21375e10001f8d43dcd608211d">timer_</a> = 0; </div>
-<div class="line"><span class="lineno">  146</span>            <a class="code hl_variable" href="#af2d2757cd96e823c08098addbda9e648">crosses_to_get_</a> = 9999;</div>
-<div class="line"><span class="lineno">  147</span>            <a class="code hl_variable" href="#a74b07603e39699979b08f5c27b7880f8">is_dodging_mode_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  150</span>            <a class="code hl_variable" href="#af603811af3c32b9441fd0ee8b0283c75">game_state_</a> = 4;</div>
-<div class="line"><span class="lineno">  151</span>            <span class="comment">//quitar</span></div>
-<div class="line"><span class="lineno">  152</span>            <a class="code hl_variable" href="#ae68025f0c47e30423db4288e0038e5e8">finished_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  154</span>    }</div>
-<div class="line"><span class="lineno">  155</span>}</div>
-<div class="ttc" id="aclassGame_html_a64fe40edeca8f95bc8ba668438ed5794"><div class="ttname"><a href="#a64fe40edeca8f95bc8ba668438ed5794">Game::game_mode_</a></div><div class="ttdeci">int game_mode_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00062">game.hh:62</a></div></div>
-<div class="ttc" id="aclassGame_html_a74b07603e39699979b08f5c27b7880f8"><div class="ttname"><a href="#a74b07603e39699979b08f5c27b7880f8">Game::is_dodging_mode_</a></div><div class="ttdeci">bool is_dodging_mode_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00054">game.hh:54</a></div></div>
-<div class="ttc" id="aclassGame_html_a8b46e9f0caf6c91855d6a32a1424a530"><div class="ttname"><a href="#a8b46e9f0caf6c91855d6a32a1424a530">Game::has_time_limit_</a></div><div class="ttdeci">bool has_time_limit_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00053">game.hh:53</a></div></div>
-<div class="ttc" id="aclassGame_html_ab8a39c21375e10001f8d43dcd608211d"><div class="ttname"><a href="#ab8a39c21375e10001f8d43dcd608211d">Game::timer_</a></div><div class="ttdeci">int timer_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00061">game.hh:61</a></div></div>
-<div class="ttc" id="aclassGame_html_af2d2757cd96e823c08098addbda9e648"><div class="ttname"><a href="#af2d2757cd96e823c08098addbda9e648">Game::crosses_to_get_</a></div><div class="ttdeci">int crosses_to_get_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00060">game.hh:60</a></div></div>
-<div class="ttc" id="aclassGame_html_af603811af3c32b9441fd0ee8b0283c75"><div class="ttname"><a href="#af603811af3c32b9441fd0ee8b0283c75">Game::game_state_</a></div><div class="ttdeci">int game_state_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00056">game.hh:56</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00118">118</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="aabadd5026e72b4a84cd0afdb505681fd" name="aabadd5026e72b4a84cd0afdb505681fd"></a>
@@ -470,22 +346,13 @@ Atributos estáticos privados</h2></td></tr>
     <tr><td class="paramname">window</td><td>Finestra on anira el text </td></tr>
     <tr><td class="paramname">center</td><td>Mitg de la finestra </td></tr>
     <tr><td class="paramname">text</td><td>Text a pintar </td></tr>
-    <tr><td class="paramname">y_offset</td><td>Distancia del mitg de la pantalla (útil per més de un text) </td></tr>
+    <tr><td class="paramname">y_offset</td><td>Distancia del mitg de la pantalla (útil per més de un text) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00502">502</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  502</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  503</span>    <span class="comment">//4 correspon a l&#39;amplada dels sprites</span></div>
-<div class="line"><span class="lineno">  504</span>    <span class="keywordtype">int</span> text_pixel_width = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(text.length() * (4 + 2));</div>
-<div class="line"><span class="lineno">  505</span>    <span class="keywordtype">int</span> start_x = center.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - text_pixel_width / 2;</div>
-<div class="line"><span class="lineno">  506</span>    <a class="code hl_function" href="texto_8cc.html#a028a25b715954f1b84dff17b3ee7304f">paint_text</a>(window, {start_x, center.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> + y_offset}, text);</div>
-<div class="line"><span class="lineno">  507</span>}</div>
-<div class="ttc" id="astructpro2_1_1Pt_html_a66aed2131ecee1ac8d9b7a114beead56"><div class="ttname"><a href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">pro2::Pt::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00011">geometry.hh:11</a></div></div>
-<div class="ttc" id="astructpro2_1_1Pt_html_ac3bf243622bd81d35086e7adb53c9b74"><div class="ttname"><a href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">pro2::Pt::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00011">geometry.hh:11</a></div></div>
-<div class="ttc" id="atexto_8cc_html_a028a25b715954f1b84dff17b3ee7304f"><div class="ttname"><a href="texto_8cc.html#a028a25b715954f1b84dff17b3ee7304f">paint_text</a></div><div class="ttdeci">void paint_text(Window &amp;window, Pt pos, const string &amp;text)</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00392">texto.cc:392</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00401">401</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a7849d79c921e869e30923bf9974519b5" name="a7849d79c921e869e30923bf9974519b5"></a>
@@ -503,17 +370,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00309">309</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  309</span>                                 {</div>
-<div class="line"><span class="lineno">  310</span>    <span class="keywordtype">int</span> current_points = <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.check_points();</div>
-<div class="line"><span class="lineno">  311</span>    <span class="keywordflow">if</span> (current_points &gt;= 5 &amp;&amp; current_points / 5 &gt; <a class="code hl_variable" href="#a201212d7739d9b0b2e35b62fccece153">last_blessed_points_</a> / 5) {</div>
-<div class="line"><span class="lineno">  312</span>        <a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.add_blessing();</div>
-<div class="line"><span class="lineno">  313</span>        <a class="code hl_variable" href="#a201212d7739d9b0b2e35b62fccece153">last_blessed_points_</a> = current_points;</div>
-<div class="line"><span class="lineno">  314</span>    }</div>
-<div class="line"><span class="lineno">  315</span>}</div>
-<div class="ttc" id="aclassGame_html_a201212d7739d9b0b2e35b62fccece153"><div class="ttname"><a href="#a201212d7739d9b0b2e35b62fccece153">Game::last_blessed_points_</a></div><div class="ttdeci">int last_blessed_points_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00059">game.hh:59</a></div></div>
-<div class="ttc" id="aclassGame_html_aaba05b1a95dbabf977bf1d51cb67ce55"><div class="ttname"><a href="#aaba05b1a95dbabf977bf1d51cb67ce55">Game::ascended_</a></div><div class="ttdeci">pro2::Ascended ascended_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00035">game.hh:35</a></div></div>
-</div><!-- fragment -->
+<p>Comprova si el mario ha aconseguit prou punts per activar benediccions. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00211">211</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="abbfcda5bf7c3a427a5d8f512dacec6e0" name="abbfcda5bf7c3a427a5d8f512dacec6e0"></a>
@@ -531,71 +391,44 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00158">158</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  158</span>                                                           {</div>
-<div class="line"><span class="lineno">  159</span>    <span class="comment">//Comprovació si mario esta caigut de les plataformes --&gt; TORNA A INICIAR JOC</span></div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">int</span> floor = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>() + 200;</div>
-<div class="line"><span class="lineno">  161</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.pos().y &gt; floor) {</div>
-<div class="line"><span class="lineno">  162</span>        <a class="code hl_variable" href="#af603811af3c32b9441fd0ee8b0283c75">game_state_</a> = 5;</div>
-<div class="line"><span class="lineno">  163</span>        <span class="comment">//quitar</span></div>
-<div class="line"><span class="lineno">  164</span>        <a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  166</span>    }</div>
-<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  168</span>}</div>
-<div class="ttc" id="aclasspro2_1_1Window_html_a3a9de727550a76cd1b33d470f79db00d"><div class="ttname"><a href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">pro2::Window::height</a></div><div class="ttdeci">int height() const</div><div class="ttdoc">Devuelve el alto de la ventana.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00181">window.hh:181</a></div></div>
-<div class="ttc" id="aclasspro2_1_1Window_html_ada2e1a70077ac2011bd5e2c3716dd96c"><div class="ttname"><a href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">pro2::Window::topleft</a></div><div class="ttdeci">Pt topleft() const</div><div class="ttdoc">Devuelve la posición de la esquina superior izquierda de la cámara.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00461">window.hh:461</a></div></div>
-</div><!-- fragment -->
+<p>Comprova si el mario ha caigut fora de la pantalla. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si ha caigut, fals si encara està a la pantalla </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00153">153</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
-<a id="ad97e552e241587a12f86f392c3328050" name="ad97e552e241587a12f86f392c3328050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad97e552e241587a12f86f392c3328050">&#9670;&#160;</a></span>check_fireball_hits_platform()</h2>
+<a id="adf09733d523bd8c2faf41059a7f83988" name="adf09733d523bd8c2faf41059a7f83988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf09733d523bd8c2faf41059a7f83988">&#9670;&#160;</a></span>generate_level_objects()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Game::check_fireball_hits_platform </td>
+          <td class="memname">void Game::generate_level_objects </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classFireball.html">Fireball</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>fireball</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00224">224</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  224</span>                                                          {</div>
-<div class="line"><span class="lineno">  225</span>    pro2::Rect fireballRect = fireball.<a class="code hl_function" href="classFireball.html#a0c12e22c23baa801b34c8c941db6062a">get_rect</a>();</div>
-<div class="line"><span class="lineno">  226</span> </div>
-<div class="line"><span class="lineno">  227</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> Platform&amp; platform : <a class="code hl_variable" href="#af8d7b0aefacb6a03fb6e2d28a2b49923">platforms_</a>) {</div>
-<div class="line"><span class="lineno">  228</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacepro2.html#a081d28eb2022e1785285df38f0844a4a">interseccionen</a>(fireballRect, platform.get_rect())) {</div>
-<div class="line"><span class="lineno">  229</span>            fireball.<a class="code hl_function" href="classFireball.html#acae188342a0050ccd55c28524d7369b3">deactivate</a>();</div>
-<div class="line"><span class="lineno">  230</span> </div>
-<div class="line"><span class="lineno">  231</span>            <span class="comment">//Creació de focs </span></div>
-<div class="line"><span class="lineno">  232</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(0, 4) &lt; 6) {</div>
-<div class="line"><span class="lineno">  233</span>                pro2::Rect fireballRect = fireball.<a class="code hl_function" href="classFireball.html#a0c12e22c23baa801b34c8c941db6062a">get_rect</a>();</div>
-<div class="line"><span class="lineno">  234</span>                pro2::Rect platformRect = platform.get_rect();</div>
-<div class="line"><span class="lineno">  235</span>                Pt fire_pos = {</div>
-<div class="line"><span class="lineno">  236</span>                    (fireballRect.<a class="code hl_variable" href="structpro2_1_1Rect.html#a68877597032a2bb4630f37e44b885e81">left</a> + fireballRect.<a class="code hl_variable" href="structpro2_1_1Rect.html#aae04a074de42a64bff8e9781b8e2af2b">right</a>) / 2 - 4,  </div>
-<div class="line"><span class="lineno">  237</span>                    platformRect.<a class="code hl_variable" href="structpro2_1_1Rect.html#abea25fc7da9516fc9e1e88fb54e49737">top</a> - 7  </div>
-<div class="line"><span class="lineno">  238</span>                };</div>
-<div class="line"><span class="lineno">  239</span>                <a class="code hl_variable" href="#ac79594eaeb2fc130366c8d79fb48e662">fires_</a>.push_back(Fire(fire_pos, 120));</div>
-<div class="line"><span class="lineno">  240</span>            }</div>
-<div class="line"><span class="lineno">  241</span> </div>
-<div class="line"><span class="lineno">  242</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  243</span>        }</div>
-<div class="line"><span class="lineno">  244</span>    }</div>
-<div class="line"><span class="lineno">  245</span> </div>
-<div class="line"><span class="lineno">  246</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  247</span>}</div>
-<div class="ttc" id="aclassFireball_html_a0c12e22c23baa801b34c8c941db6062a"><div class="ttname"><a href="classFireball.html#a0c12e22c23baa801b34c8c941db6062a">Fireball::get_rect</a></div><div class="ttdeci">pro2::Rect get_rect() const</div><div class="ttdef"><b>Definition</b> <a href="demon_8cc_source.html#l00157">demon.cc:157</a></div></div>
-<div class="ttc" id="aclassFireball_html_acae188342a0050ccd55c28524d7369b3"><div class="ttname"><a href="classFireball.html#acae188342a0050ccd55c28524d7369b3">Fireball::deactivate</a></div><div class="ttdeci">void deactivate()</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00102">demon.hh:102</a></div></div>
-<div class="ttc" id="aclassGame_html_ac79594eaeb2fc130366c8d79fb48e662"><div class="ttname"><a href="#ac79594eaeb2fc130366c8d79fb48e662">Game::fires_</a></div><div class="ttdeci">List&lt; Fire &gt; fires_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00039">game.hh:39</a></div></div>
-<div class="ttc" id="anamespacepro2_html_a081d28eb2022e1785285df38f0844a4a"><div class="ttname"><a href="namespacepro2.html#a081d28eb2022e1785285df38f0844a4a">pro2::interseccionen</a></div><div class="ttdeci">bool interseccionen(const pro2::Rect &amp;a, const pro2::Rect &amp;b)</div><div class="ttdoc">Mira si una hitbox esta a sobre de l&#39;altre.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00065">utils.cc:65</a></div></div>
-<div class="ttc" id="astructpro2_1_1Rect_html_a68877597032a2bb4630f37e44b885e81"><div class="ttname"><a href="structpro2_1_1Rect.html#a68877597032a2bb4630f37e44b885e81">pro2::Rect::left</a></div><div class="ttdeci">int left</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00040">geometry.hh:40</a></div></div>
-<div class="ttc" id="astructpro2_1_1Rect_html_aae04a074de42a64bff8e9781b8e2af2b"><div class="ttname"><a href="structpro2_1_1Rect.html#aae04a074de42a64bff8e9781b8e2af2b">pro2::Rect::right</a></div><div class="ttdeci">int right</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00040">geometry.hh:40</a></div></div>
-<div class="ttc" id="astructpro2_1_1Rect_html_abea25fc7da9516fc9e1e88fb54e49737"><div class="ttname"><a href="structpro2_1_1Rect.html#abea25fc7da9516fc9e1e88fb54e49737">pro2::Rect::top</a></div><div class="ttdeci">int top</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00040">geometry.hh:40</a></div></div>
-</div><!-- fragment -->
+<p>Crea un mapa diferent amb plataformes randomitzades per cada reinici del joc. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>Nombre de elements a pantalla a randomitzar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00046">46</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="ad67466fb235ac2069efe278f6d35268a" name="ad67466fb235ac2069efe278f6d35268a"></a>
@@ -613,14 +446,16 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00170">170</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  170</span>                                                                 {</div>
-<div class="line"><span class="lineno">  171</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.is_in_cooldown() &amp;&amp; <a class="code hl_function" href="namespacepro2.html#a081d28eb2022e1785285df38f0844a4a">interseccionen</a>(marioRect, <a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.get_rect())) {</div>
-<div class="line"><span class="lineno">  172</span>        <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.collect_sandwatch();</div>
-<div class="line"><span class="lineno">  173</span>        <a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.activate(960, 240);</div>
-<div class="line"><span class="lineno">  174</span>    }</div>
-<div class="line"><span class="lineno">  175</span>}</div>
-</div><!-- fragment -->
+<p>Comprova si mario interactua amb el rellotge i l’activa. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">marioRect</td><td>Rectangle del mario </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00163">163</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a48d38b110cb6558e69b1920bb31406db" name="a48d38b110cb6558e69b1920bb31406db"></a>
@@ -646,14 +481,11 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna un bool segons si el joc esta o no finalitzat. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>True or False segons l'estat del joc </dd></dl>
+<p>Retorna un bool segons si el joc ha acabat. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>True si el jugador ha sortit del joc, fals en cas contrari </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00087">87</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>                             {</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae68025f0c47e30423db4288e0038e5e8">finished_</a>;</div>
-<div class="line"><span class="lineno">   89</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00104">104</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a3fef163aab28f7a4de1abb8d08794e7f" name="a3fef163aab28f7a4de1abb8d08794e7f"></a>
@@ -682,11 +514,8 @@ Atributos estáticos privados</h2></td></tr>
 <p>Retorna un bool segons si el joc esta o no pausat. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>True or False segons l'estat del joc </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00078">78</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>                           {</div>
-<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a0199e692575fbb7366551b469b066a6c">paused_</a>;</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00096">96</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="af3e3428a12b9944fefb663f2fe560529" name="af3e3428a12b9944fefb663f2fe560529"></a>
@@ -704,63 +533,16 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00532">532</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  532</span>                                   {</div>
-<div class="line"><span class="lineno">  533</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="#aa962f49423cca6cbedfa91f4a4a127d5">start_game_</a>){</div>
-<div class="line"><span class="lineno">  534</span>        window.<a class="code hl_function" href="classpro2_1_1Window.html#a1393bc8d5c74455c1b25e3b38db7af92">set_camera_topleft</a>({0,0});</div>
-<div class="line"><span class="lineno">  535</span>        <a class="code hl_function" href="#a2f8c004d1908f2af444f4d9c561148c7">paint_starting_screen</a>(window);</div>
-<div class="line"><span class="lineno">  536</span>    } <span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">  537</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a896e7227602577764fab7865da6e9ede">won_</a>) {</div>
-<div class="line"><span class="lineno">  538</span>        <a class="code hl_function" href="#a3e903aa7540bba5cbba50a8030ea7002">paint_winning_screen</a>(window);</div>
-<div class="line"><span class="lineno">  539</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0199e692575fbb7366551b469b066a6c">paused_</a>) {</div>
-<div class="line"><span class="lineno">  540</span>            <a class="code hl_function" href="#a76a742bbf7281efcc1edf5b9d4e8367d">paint_paused_screen</a>(window);</div>
-<div class="line"><span class="lineno">  541</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a>) {</div>
-<div class="line"><span class="lineno">  542</span>            <a class="code hl_function" href="#a1c8dc611af65f79c9080c8464c0b07ad">paint_gameover_screen</a>(window);</div>
-<div class="line"><span class="lineno">  543</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ab390d93b043b6b6dab09320d263f878c">speedrun_won_</a>){</div>
-<div class="line"><span class="lineno">  544</span>            <a class="code hl_function" href="#a8bf2f2fef6c881c8cbc69b32d73be5af">paint_speedrun_screen</a>(window);</div>
-<div class="line"><span class="lineno">  545</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a74b07603e39699979b08f5c27b7880f8">is_dodging_mode_</a>){</div>
-<div class="line"><span class="lineno">  546</span>            window.<a class="code hl_function" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">clear</a>(<a class="code hl_variable" href="#a636fa6f9369014f3aa1365b8cd3611b4">sky_blue</a>);</div>
-<div class="line"><span class="lineno">  547</span>            <a class="code hl_function" href="#aaab77c2936ba25db40c7b7730056be40">paint_demon_objects</a>(window);</div>
-<div class="line"><span class="lineno">  548</span>            <a class="code hl_function" href="#a24f8beafd9f0e1c435ff811b919dfa90">paint_platforms</a>(window);</div>
-<div class="line"><span class="lineno">  549</span>            <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.paint(window);</div>
-<div class="line"><span class="lineno">  550</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  551</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.is_effect_active()) {</div>
-<div class="line"><span class="lineno">  552</span>                window.<a class="code hl_function" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">clear</a>(<a class="code hl_variable" href="#a636fa6f9369014f3aa1365b8cd3611b4">sky_blue</a>);</div>
-<div class="line"><span class="lineno">  553</span>                <a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.paint(window);</div>
-<div class="line"><span class="lineno">  554</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  555</span>                window.<a class="code hl_function" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">clear</a>(0xC2B280);</div>
-<div class="line"><span class="lineno">  556</span>                <a class="code hl_function" href="texto_8cc.html#ab30f60478b347bf1135dbbcc53482214">paint_number</a>(window, {window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a>, window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>}, <a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.cooldown());</div>
-<div class="line"><span class="lineno">  557</span>            }</div>
-<div class="line"><span class="lineno">  558</span>            <a class="code hl_function" href="#a428db831d8e093be8720ee90534ae57d">paint_timer</a>(window);</div>
-<div class="line"><span class="lineno">  559</span>            <a class="code hl_function" href="#a24f8beafd9f0e1c435ff811b919dfa90">paint_platforms</a>(window);</div>
-<div class="line"><span class="lineno">  560</span>            <a class="code hl_function" href="#a991a1522b4c597467d3b16be63167b43">paint_crosses</a>(window);</div>
-<div class="line"><span class="lineno">  561</span>            <a class="code hl_function" href="#aaab77c2936ba25db40c7b7730056be40">paint_demon_objects</a>(window);</div>
-<div class="line"><span class="lineno">  562</span>            <a class="code hl_function" href="#ab2240ddc19ac41994ea1404e7d5a5bfb">paint_blessings</a>(window);</div>
-<div class="line"><span class="lineno">  563</span>            <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.paint(window);</div>
-<div class="line"><span class="lineno">  564</span>            <a class="code hl_function" href="#a5af625d2e56e43a9a2f8cc6de20e52b9">paint_points</a>(window);</div>
-<div class="line"><span class="lineno">  565</span>        }</div>
-<div class="line"><span class="lineno">  566</span>    }</div>
-<div class="line"><span class="lineno">  567</span>    </div>
-<div class="line"><span class="lineno">  568</span>    <a class="code hl_function" href="#afac687ddf20d34c25f8d97962a9e0866">paint_game_frame</a>(window);</div>
-<div class="line"><span class="lineno">  569</span>}</div>
-<div class="ttc" id="aclassGame_html_a1c8dc611af65f79c9080c8464c0b07ad"><div class="ttname"><a href="#a1c8dc611af65f79c9080c8464c0b07ad">Game::paint_gameover_screen</a></div><div class="ttdeci">void paint_gameover_screen(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00436">game.cc:436</a></div></div>
-<div class="ttc" id="aclassGame_html_a24f8beafd9f0e1c435ff811b919dfa90"><div class="ttname"><a href="#a24f8beafd9f0e1c435ff811b919dfa90">Game::paint_platforms</a></div><div class="ttdeci">void paint_platforms(pro2::Window &amp;window)</div><div class="ttdoc">Pinten els diferents objectes a la finestra.</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00379">game.cc:379</a></div></div>
-<div class="ttc" id="aclassGame_html_a2f8c004d1908f2af444f4d9c561148c7"><div class="ttname"><a href="#a2f8c004d1908f2af444f4d9c561148c7">Game::paint_starting_screen</a></div><div class="ttdeci">void paint_starting_screen(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00509">game.cc:509</a></div></div>
-<div class="ttc" id="aclassGame_html_a3e903aa7540bba5cbba50a8030ea7002"><div class="ttname"><a href="#a3e903aa7540bba5cbba50a8030ea7002">Game::paint_winning_screen</a></div><div class="ttdeci">void paint_winning_screen(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00449">game.cc:449</a></div></div>
-<div class="ttc" id="aclassGame_html_a428db831d8e093be8720ee90534ae57d"><div class="ttname"><a href="#a428db831d8e093be8720ee90534ae57d">Game::paint_timer</a></div><div class="ttdeci">void paint_timer(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00523">game.cc:523</a></div></div>
-<div class="ttc" id="aclassGame_html_a5af625d2e56e43a9a2f8cc6de20e52b9"><div class="ttname"><a href="#a5af625d2e56e43a9a2f8cc6de20e52b9">Game::paint_points</a></div><div class="ttdeci">void paint_points(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00417">game.cc:417</a></div></div>
-<div class="ttc" id="aclassGame_html_a636fa6f9369014f3aa1365b8cd3611b4"><div class="ttname"><a href="#a636fa6f9369014f3aa1365b8cd3611b4">Game::sky_blue</a></div><div class="ttdeci">static constexpr int sky_blue</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00183">game.hh:183</a></div></div>
-<div class="ttc" id="aclassGame_html_a76a742bbf7281efcc1edf5b9d4e8367d"><div class="ttname"><a href="#a76a742bbf7281efcc1edf5b9d4e8367d">Game::paint_paused_screen</a></div><div class="ttdeci">void paint_paused_screen(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00424">game.cc:424</a></div></div>
-<div class="ttc" id="aclassGame_html_a8bf2f2fef6c881c8cbc69b32d73be5af"><div class="ttname"><a href="#a8bf2f2fef6c881c8cbc69b32d73be5af">Game::paint_speedrun_screen</a></div><div class="ttdeci">void paint_speedrun_screen(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00463">game.cc:463</a></div></div>
-<div class="ttc" id="aclassGame_html_a991a1522b4c597467d3b16be63167b43"><div class="ttname"><a href="#a991a1522b4c597467d3b16be63167b43">Game::paint_crosses</a></div><div class="ttdeci">void paint_crosses(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00387">game.cc:387</a></div></div>
-<div class="ttc" id="aclassGame_html_aaab77c2936ba25db40c7b7730056be40"><div class="ttname"><a href="#aaab77c2936ba25db40c7b7730056be40">Game::paint_demon_objects</a></div><div class="ttdeci">void paint_demon_objects(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00395">game.cc:395</a></div></div>
-<div class="ttc" id="aclassGame_html_ab2240ddc19ac41994ea1404e7d5a5bfb"><div class="ttname"><a href="#ab2240ddc19ac41994ea1404e7d5a5bfb">Game::paint_blessings</a></div><div class="ttdeci">void paint_blessings(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00409">game.cc:409</a></div></div>
-<div class="ttc" id="aclassGame_html_afac687ddf20d34c25f8d97962a9e0866"><div class="ttname"><a href="#afac687ddf20d34c25f8d97962a9e0866">Game::paint_game_frame</a></div><div class="ttdeci">void paint_game_frame(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00492">game.cc:492</a></div></div>
-<div class="ttc" id="aclasspro2_1_1Window_html_a1393bc8d5c74455c1b25e3b38db7af92"><div class="ttname"><a href="classpro2_1_1Window.html#a1393bc8d5c74455c1b25e3b38db7af92">pro2::Window::set_camera_topleft</a></div><div class="ttdeci">void set_camera_topleft(Pt topleft)</div><div class="ttdoc">Establece la posición de la esquina superior izquierda de la cámara.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00451">window.hh:451</a></div></div>
-<div class="ttc" id="aclasspro2_1_1Window_html_aba9caf9f926e540c6697f690ae6d3c68"><div class="ttname"><a href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">pro2::Window::camera_center</a></div><div class="ttdeci">Pt camera_center() const</div><div class="ttdoc">Devuelve la posición del centro de la cámara.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00425">window.hh:425</a></div></div>
-<div class="ttc" id="aclasspro2_1_1Window_html_adb1c39426484aa6776b0cd7d1253932f"><div class="ttname"><a href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">pro2::Window::clear</a></div><div class="ttdeci">void clear(Color color=black)</div><div class="ttdoc">Rellena la ventana con un color.</div><div class="ttdef"><b>Definition</b> <a href="window_8cc_source.html#l00057">window.cc:57</a></div></div>
-<div class="ttc" id="atexto_8cc_html_ab30f60478b347bf1135dbbcc53482214"><div class="ttname"><a href="texto_8cc.html#ab30f60478b347bf1135dbbcc53482214">paint_number</a></div><div class="ttdeci">void paint_number(pro2::Window &amp;window, pro2::Pt pos, int number)</div><div class="ttdoc">Pinta un nombre.</div><div class="ttdef"><b>Definition</b> <a href="texto_8cc_source.html#l00375">texto.cc:375</a></div></div>
-</div><!-- fragment -->
+<p>Pinta el joc cada frame. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00431">431</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="ab2240ddc19ac41994ea1404e7d5a5bfb" name="ab2240ddc19ac41994ea1404e7d5a5bfb"></a>
@@ -778,15 +560,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00409">409</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  409</span>                                            {</div>
-<div class="line"><span class="lineno">  410</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.is_active()) {</div>
-<div class="line"><span class="lineno">  411</span>        <a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.paint(window);</div>
-<div class="line"><span class="lineno">  412</span>    }</div>
-<div class="line"><span class="lineno">  413</span>    <a class="code hl_function" href="texto_8cc.html#a028a25b715954f1b84dff17b3ee7304f">paint_text</a>(window, {window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + 170, window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - 150}, <span class="stringliteral">&quot;BLESSINGS:&quot;</span>);</div>
-<div class="line"><span class="lineno">  414</span>    <a class="code hl_function" href="texto_8cc.html#ab30f60478b347bf1135dbbcc53482214">paint_number</a>(window, {window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + 230, window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - 150}, <a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.size());</div>
-<div class="line"><span class="lineno">  415</span>}</div>
-</div><!-- fragment -->
+<p>Pinta les benediccions i el seu comptador. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00308">308</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a991a1522b4c597467d3b16be63167b43" name="a991a1522b4c597467d3b16be63167b43"></a>
@@ -804,16 +581,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00387">387</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  387</span>                                          {</div>
-<div class="line"><span class="lineno">  388</span>    pro2::Rect windowRect = window.<a class="code hl_function" href="classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3">camera_rect</a>();</div>
-<div class="line"><span class="lineno">  389</span>    <span class="keyword">auto</span> visible_crosses = <a class="code hl_variable" href="#ab1ee68975468409b25082bf66e9414d6">finder_crosses_</a>.query(windowRect);</div>
-<div class="line"><span class="lineno">  390</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> Cross* cross : visible_crosses) {</div>
-<div class="line"><span class="lineno">  391</span>        cross-&gt;paint(window, 1 ,cross-&gt;pos().x, cross-&gt;pos().y + <a class="code hl_variable" href="#a6e8623dae36c0cac75255c40ceec5b35">cross_height_y_</a>);</div>
-<div class="line"><span class="lineno">  392</span>    }</div>
-<div class="line"><span class="lineno">  393</span>}</div>
-<div class="ttc" id="aclasspro2_1_1Window_html_a7fa5335bc584ac503f6ad336314773c3"><div class="ttname"><a href="classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3">pro2::Window::camera_rect</a></div><div class="ttdeci">Rect camera_rect() const</div><div class="ttdoc">Rectorna el rectangle de la camera.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00434">window.hh:434</a></div></div>
-</div><!-- fragment -->
+<p>Pinta les creus visibles. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00293">293</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="aaab77c2936ba25db40c7b7730056be40" name="aaab77c2936ba25db40c7b7730056be40"></a>
@@ -831,22 +602,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00395">395</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  395</span>                                                {</div>
-<div class="line"><span class="lineno">  396</span>    <span class="comment">//Si els punts del mario actuals son majors a la meitat --&gt; demon canvia a &quot;enraged/decayed&quot;</span></div>
-<div class="line"><span class="lineno">  397</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.check_points() &gt;= <a class="code hl_variable" href="#af2d2757cd96e823c08098addbda9e648">crosses_to_get_</a>/2) <a class="code hl_variable" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a>.decaying();</div>
-<div class="line"><span class="lineno">  398</span>    <a class="code hl_variable" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a>.paint(window);</div>
-<div class="line"><span class="lineno">  399</span>    </div>
-<div class="line"><span class="lineno">  400</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; fireball : <a class="code hl_variable" href="#a0c2c016d29e8a36654c3b73ededddbb4">fireballs_</a>) {</div>
-<div class="line"><span class="lineno">  401</span>        fireball.paint(window);</div>
-<div class="line"><span class="lineno">  402</span>    }</div>
-<div class="line"><span class="lineno">  403</span> </div>
-<div class="line"><span class="lineno">  404</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="#ac79594eaeb2fc130366c8d79fb48e662">fires_</a>.begin(); it != <a class="code hl_variable" href="#ac79594eaeb2fc130366c8d79fb48e662">fires_</a>.end(); ++it) {</div>
-<div class="line"><span class="lineno">  405</span>        (*it).paint(window);</div>
-<div class="line"><span class="lineno">  406</span>    }</div>
-<div class="line"><span class="lineno">  407</span>}</div>
-<div class="ttc" id="aclassGame_html_a0c2c016d29e8a36654c3b73ededddbb4"><div class="ttname"><a href="#a0c2c016d29e8a36654c3b73ededddbb4">Game::fireballs_</a></div><div class="ttdeci">List&lt; Fireball &gt; fireballs_</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00038">game.hh:38</a></div></div>
-</div><!-- fragment -->
+<p>Pinta el dimoni i el seu estat. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00301">301</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a47f1dedca2b82e8c9ae89a35dd2ec1ad" name="a47f1dedca2b82e8c9ae89a35dd2ec1ad"></a>
@@ -863,6 +622,8 @@ Atributos estáticos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Placeholder per pintar boles de foc. </p>
 
 </div>
 </div>
@@ -881,20 +642,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00492">492</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  492</span>                                             {</div>
-<div class="line"><span class="lineno">  493</span>    <span class="comment">//pintar recuadre</span></div>
-<div class="line"><span class="lineno">  494</span>    <span class="keywordtype">int</span> left = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a>;</div>
-<div class="line"><span class="lineno">  495</span>    <span class="keywordtype">int</span> right = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a>();</div>
-<div class="line"><span class="lineno">  496</span>    <span class="keywordtype">int</span> top = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>;</div>
-<div class="line"><span class="lineno">  497</span>    <span class="keywordtype">int</span> bottom = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>();</div>
-<div class="line"><span class="lineno">  498</span>    pro2::Rect rectg({left, top, right, bottom});</div>
-<div class="line"><span class="lineno">  499</span>    <a class="code hl_function" href="namespacepro2.html#acf1dcf2adb11869d05e7c463eb83fdb0">paint_empty_rect</a>(window, rectg, <a class="code hl_variable" href="namespacepro2.html#ad75418ec194604dc97f1efe077788d53">black</a>, 4);</div>
-<div class="line"><span class="lineno">  500</span>}</div>
-<div class="ttc" id="aclasspro2_1_1Window_html_a2dae6ae56e14dbec41f724866e1cd898"><div class="ttname"><a href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">pro2::Window::width</a></div><div class="ttdeci">int width() const</div><div class="ttdoc">Devuelve el ancho de la ventana.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00174">window.hh:174</a></div></div>
-<div class="ttc" id="anamespacepro2_html_acf1dcf2adb11869d05e7c463eb83fdb0"><div class="ttname"><a href="namespacepro2.html#acf1dcf2adb11869d05e7c463eb83fdb0">pro2::paint_empty_rect</a></div><div class="ttdeci">void paint_empty_rect(pro2::Window &amp;window, pro2::Rect &amp;rect, pro2::Color color, int size)</div><div class="ttdoc">Dibuixa una recuadre seguint la càmara.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00037">utils.cc:37</a></div></div>
-<div class="ttc" id="anamespacepro2_html_ad75418ec194604dc97f1efe077788d53"><div class="ttname"><a href="namespacepro2.html#ad75418ec194604dc97f1efe077788d53">pro2::black</a></div><div class="ttdeci">const Color black</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00034">window.hh:34</a></div></div>
-</div><!-- fragment -->
+<p>Dibuixa el marc del joc (recuadre) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00391">391</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a1c8dc611af65f79c9080c8464c0b07ad" name="a1c8dc611af65f79c9080c8464c0b07ad"></a>
@@ -912,21 +663,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00436">436</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  436</span>                                                  {</div>
-<div class="line"><span class="lineno">  437</span>    <span class="comment">//VERMELL</span></div>
-<div class="line"><span class="lineno">  438</span>    window.<a class="code hl_function" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">clear</a>(0x7B1818);</div>
-<div class="line"><span class="lineno">  439</span>    <span class="comment">//pinta el text GAME OVER al mitg de la pantalla</span></div>
-<div class="line"><span class="lineno">  440</span>    <span class="comment">//a sota fiquem PRESS R TO RESTART</span></div>
-<div class="line"><span class="lineno">  441</span>    <span class="keywordtype">int</span> center_x = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a>() / 2;</div>
-<div class="line"><span class="lineno">  442</span>    <span class="keywordtype">int</span> center_y = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>() / 2;</div>
-<div class="line"><span class="lineno">  443</span>    pro2::Pt centered = {center_x, center_y};</div>
-<div class="line"><span class="lineno">  444</span>    </div>
-<div class="line"><span class="lineno">  445</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;GAME OVER&quot;</span>,  -10);</div>
-<div class="line"><span class="lineno">  446</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;PRESS R TO RESTART&quot;</span>, 10);</div>
-<div class="line"><span class="lineno">  447</span>}</div>
-<div class="ttc" id="aclassGame_html_aabadd5026e72b4a84cd0afdb505681fd"><div class="ttname"><a href="#aabadd5026e72b4a84cd0afdb505681fd">Game::center_text</a></div><div class="ttdeci">void center_text(pro2::Window &amp;window, pro2::Pt center, const std::string &amp;text, int y_offset)</div><div class="ttdoc">Centra un text al mitg de la pantalla.</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00502">game.cc:502</a></div></div>
-</div><!-- fragment -->
+<p>Mostra la pantalla de game over. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00335">335</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a76a742bbf7281efcc1edf5b9d4e8367d" name="a76a742bbf7281efcc1edf5b9d4e8367d"></a>
@@ -944,19 +684,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00424">424</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  424</span>                                                {</div>
-<div class="line"><span class="lineno">  425</span>    <span class="comment">//pantalla en gris amb el text PAUSED</span></div>
-<div class="line"><span class="lineno">  426</span>    window.<a class="code hl_function" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">clear</a>(0x898989);</div>
-<div class="line"><span class="lineno">  427</span>    <span class="comment">//pinta el text PAUSED al mitg de la pantalla</span></div>
-<div class="line"><span class="lineno">  428</span>    <span class="keywordtype">int</span> center_x = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a>() / 2;</div>
-<div class="line"><span class="lineno">  429</span>    <span class="keywordtype">int</span> center_y = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>() / 2;</div>
-<div class="line"><span class="lineno">  430</span>    pro2::Pt centered = {center_x, center_y};</div>
-<div class="line"><span class="lineno">  431</span>    </div>
-<div class="line"><span class="lineno">  432</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;GAME PAUSED&quot;</span>,  -10);</div>
-<div class="line"><span class="lineno">  433</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;PRESS P TO CONTINUE&quot;</span>, 10);</div>
-<div class="line"><span class="lineno">  434</span>}</div>
-</div><!-- fragment -->
+<p>Mostra la pantalla de pausa. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00323">323</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a24f8beafd9f0e1c435ff811b919dfa90" name="a24f8beafd9f0e1c435ff811b919dfa90"></a>
@@ -974,23 +705,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pinten els diferents objectes a la finestra. </p>
-<dl class="params"><dt>Parámetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">window</td><td>Finestra on es pitaran els diferents objectes i pantalles del joc </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Pinta les plataformes visibles al mapa. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00379">379</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  379</span>                                            {</div>
-<div class="line"><span class="lineno">  380</span>    pro2::Rect windowRect = window.<a class="code hl_function" href="classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3">camera_rect</a>();</div>
-<div class="line"><span class="lineno">  381</span>    std::set&lt;const Platform*&gt; visibles = <a class="code hl_variable" href="#a4ac62fcd6f881bcb94637e29015a7c7b">finder_platforms_</a>.query(windowRect);</div>
-<div class="line"><span class="lineno">  382</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> Platform* p : visibles) {</div>
-<div class="line"><span class="lineno">  383</span>        p-&gt;paint(window);</div>
-<div class="line"><span class="lineno">  384</span>    }</div>
-<div class="line"><span class="lineno">  385</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00285">285</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a5af625d2e56e43a9a2f8cc6de20e52b9" name="a5af625d2e56e43a9a2f8cc6de20e52b9"></a>
@@ -1008,14 +726,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00417">417</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  417</span>                                         {</div>
-<div class="line"><span class="lineno">  418</span>    <span class="comment">//pinta el nombre total de punts</span></div>
-<div class="line"><span class="lineno">  419</span>    <a class="code hl_function" href="texto_8cc.html#ab30f60478b347bf1135dbbcc53482214">paint_number</a>(window, {window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - 230, window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - 150}, <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.check_points());</div>
-<div class="line"><span class="lineno">  420</span>    <span class="comment">//pinta el text POINTS</span></div>
-<div class="line"><span class="lineno">  421</span>    <a class="code hl_function" href="texto_8cc.html#a028a25b715954f1b84dff17b3ee7304f">paint_text</a>(window, {window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - 215, window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - 150}, <span class="stringliteral">&quot;POINTS&quot;</span>);</div>
-<div class="line"><span class="lineno">  422</span>}</div>
-</div><!-- fragment -->
+<p>Pinta els punts recollits pel jugador. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00316">316</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a8bf2f2fef6c881c8cbc69b32d73be5af" name="a8bf2f2fef6c881c8cbc69b32d73be5af"></a>
@@ -1033,36 +747,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00463">463</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  463</span>                                                  {</div>
-<div class="line"><span class="lineno">  464</span>    <span class="comment">//VERMELL</span></div>
-<div class="line"><span class="lineno">  465</span>    window.<a class="code hl_function" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">clear</a>(0x454B1B);</div>
-<div class="line"><span class="lineno">  466</span>    <span class="comment">//pinta el text GAME OVER al mitg de la pantalla</span></div>
-<div class="line"><span class="lineno">  467</span>    <span class="comment">//a sota fiquem PRESS R TO RESTART</span></div>
-<div class="line"><span class="lineno">  468</span>    <span class="keywordtype">int</span> center_x = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a>() / 2;</div>
-<div class="line"><span class="lineno">  469</span>    <span class="keywordtype">int</span> center_y = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>() / 2;</div>
-<div class="line"><span class="lineno">  470</span>    pro2::Pt centered = {center_x, center_y};</div>
-<div class="line"><span class="lineno">  471</span>    </div>
-<div class="line"><span class="lineno">  472</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;SPEEDRUN ENDED&quot;</span>,  -20);</div>
-<div class="line"><span class="lineno">  473</span>    </div>
-<div class="line"><span class="lineno">  474</span>    <span class="comment">// Calculate the total width of &quot;CROSSES COLLECTED: &quot; plus the number</span></div>
-<div class="line"><span class="lineno">  475</span>    std::string crosses_text = <span class="stringliteral">&quot;CROSSES COLLECTED: &quot;</span>;</div>
-<div class="line"><span class="lineno">  476</span>    <span class="keywordtype">int</span> text_width = crosses_text.length() * (4 + 2); <span class="comment">// Each character is 4 pixels wide + 2 spacing</span></div>
-<div class="line"><span class="lineno">  477</span>    <span class="keywordtype">int</span> number_width = std::to_string(<a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.check_points()).length() * (4 + 2);</div>
-<div class="line"><span class="lineno">  478</span>    <span class="keywordtype">int</span> total_width = text_width + number_width;</div>
-<div class="line"><span class="lineno">  479</span>    </div>
-<div class="line"><span class="lineno">  480</span>    <span class="comment">// Calculate starting position for centered text</span></div>
-<div class="line"><span class="lineno">  481</span>    <span class="keywordtype">int</span> start_x = center_x - total_width / 2;</div>
-<div class="line"><span class="lineno">  482</span>    </div>
-<div class="line"><span class="lineno">  483</span>    <span class="comment">// Paint &quot;CROSSES COLLECTED: &quot;</span></div>
-<div class="line"><span class="lineno">  484</span>    <a class="code hl_function" href="texto_8cc.html#a028a25b715954f1b84dff17b3ee7304f">paint_text</a>(window, {start_x, center_y}, crosses_text);</div>
-<div class="line"><span class="lineno">  485</span>    </div>
-<div class="line"><span class="lineno">  486</span>    <span class="comment">// Paint the number right after the text</span></div>
-<div class="line"><span class="lineno">  487</span>    <a class="code hl_function" href="texto_8cc.html#ab30f60478b347bf1135dbbcc53482214">paint_number</a>(window, {start_x + text_width, center_y}, <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.check_points());</div>
-<div class="line"><span class="lineno">  488</span>    </div>
-<div class="line"><span class="lineno">  489</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;PRESS R TO RESTART&quot;</span>, 20);</div>
-<div class="line"><span class="lineno">  490</span>}</div>
-</div><!-- fragment -->
+<p>Mostra la pantalla quan s'acaba el mode speedrun. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00362">362</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a2f8c004d1908f2af444f4d9c561148c7" name="a2f8c004d1908f2af444f4d9c561148c7"></a>
@@ -1080,21 +768,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00509">509</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  509</span>                                                  {</div>
-<div class="line"><span class="lineno">  510</span>    window.<a class="code hl_function" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">clear</a>(<a class="code hl_variable" href="#a636fa6f9369014f3aa1365b8cd3611b4">sky_blue</a>);</div>
-<div class="line"><span class="lineno">  511</span>    <span class="keywordtype">int</span> center_x = 240;</div>
-<div class="line"><span class="lineno">  512</span>    <span class="keywordtype">int</span> center_y = 160;</div>
-<div class="line"><span class="lineno">  513</span>    pro2::Pt centered = {center_x, center_y};</div>
-<div class="line"><span class="lineno">  514</span> </div>
-<div class="line"><span class="lineno">  515</span>    <a class="code hl_variable" href="#a18f58e292e852152f768639dfe4c0e47">still_mario_</a>.paint(window);</div>
-<div class="line"><span class="lineno">  516</span>    <a class="code hl_variable" href="#a41f899e947ef89e1d9ad7db3557e1be5">still_platform_</a>.paint(window);</div>
-<div class="line"><span class="lineno">  517</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;JESUS X MARIO GAME&quot;</span>, -100);</div>
-<div class="line"><span class="lineno">  518</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;PRESS ENTER TO START&quot;</span>, -80);</div>
-<div class="line"><span class="lineno">  519</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;TIP: WHEN BLESSINGS AVAILABLE PRESS B&quot;</span>, -60);</div>
-<div class="line"><span class="lineno">  520</span>    <a class="code hl_function" href="texto_8cc.html#a028a25b715954f1b84dff17b3ee7304f">paint_text</a>(window, {10, 10}, <span class="stringliteral">&quot;PAU MURAS&quot;</span>);</div>
-<div class="line"><span class="lineno">  521</span>}</div>
-</div><!-- fragment -->
+<p>Mostra la pantalla d'inici del joc. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00408">408</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a428db831d8e093be8720ee90534ae57d" name="a428db831d8e093be8720ee90534ae57d"></a>
@@ -1112,15 +789,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00523">523</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  523</span>                                        {</div>
-<div class="line"><span class="lineno">  524</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.is_active()) {</div>
-<div class="line"><span class="lineno">  525</span>        <a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.paint(window);</div>
-<div class="line"><span class="lineno">  526</span>    }</div>
-<div class="line"><span class="lineno">  527</span>    <a class="code hl_function" href="texto_8cc.html#a028a25b715954f1b84dff17b3ee7304f">paint_text</a>(window, {window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + 170, window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - 130}, <span class="stringliteral">&quot;TIMER:&quot;</span>);</div>
-<div class="line"><span class="lineno">  528</span>    <a class="code hl_function" href="texto_8cc.html#ab30f60478b347bf1135dbbcc53482214">paint_number</a>(window, {window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + 210, window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - 130}, <a class="code hl_variable" href="#ab8a39c21375e10001f8d43dcd608211d">timer_</a>/48);</div>
-<div class="line"><span class="lineno">  529</span>}</div>
-</div><!-- fragment -->
+<p>Pinta el temporitzador del joc a la pantalla. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00422">422</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a3e903aa7540bba5cbba50a8030ea7002" name="a3e903aa7540bba5cbba50a8030ea7002"></a>
@@ -1138,21 +810,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00449">449</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  449</span>                                                 {</div>
-<div class="line"><span class="lineno">  450</span>    <span class="comment">//VERMELL</span></div>
-<div class="line"><span class="lineno">  451</span>    window.<a class="code hl_function" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">clear</a>(0x454B1B);</div>
-<div class="line"><span class="lineno">  452</span>    <span class="comment">//pinta el text GAME OVER al mitg de la pantalla</span></div>
-<div class="line"><span class="lineno">  453</span>    <span class="comment">//a sota fiquem PRESS R TO RESTART</span></div>
-<div class="line"><span class="lineno">  454</span>    <span class="keywordtype">int</span> center_x = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a>() / 2;</div>
-<div class="line"><span class="lineno">  455</span>    <span class="keywordtype">int</span> center_y = window.<a class="code hl_function" href="classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>().<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>() / 2;</div>
-<div class="line"><span class="lineno">  456</span>    pro2::Pt centered = {center_x, center_y};</div>
-<div class="line"><span class="lineno">  457</span>    </div>
-<div class="line"><span class="lineno">  458</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;YOU WIN&quot;</span>,  -20);</div>
-<div class="line"><span class="lineno">  459</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;PRESS R TO RESTART&quot;</span>, 0);</div>
-<div class="line"><span class="lineno">  460</span>    <a class="code hl_function" href="#aabadd5026e72b4a84cd0afdb505681fd">center_text</a>(window, centered, <span class="stringliteral">&quot;OR PRESS ESC TO PLAY ANOTHER MODE&quot;</span>, 20);</div>
-<div class="line"><span class="lineno">  461</span>}</div>
-</div><!-- fragment -->
+<p>Mostra la pantalla de victòria. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00348">348</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a0c6fbced92dbe00f94f96d899f02fdb8" name="a0c6fbced92dbe00f94f96d899f02fdb8"></a>
@@ -1178,43 +839,16 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00089">89</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>                                          {</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (window.<a class="code hl_function" href="classpro2_1_1Window.html#a475d4644d6f1f082a15bf6b1eaf2631b">is_key_down</a>(Keys::Escape)) {</div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="#af603811af3c32b9441fd0ee8b0283c75">game_state_</a> = 4;</div>
-<div class="line"><span class="lineno">   92</span>        <span class="comment">//quitar</span></div>
-<div class="line"><span class="lineno">   93</span>        <a class="code hl_variable" href="#ae68025f0c47e30423db4288e0038e5e8">finished_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   95</span>    }</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa962f49423cca6cbedfa91f4a4a127d5">start_game_</a> and window.<a class="code hl_function" href="classpro2_1_1Window.html#aaa4fa6c518d090dcbaca4e6211f35522">was_key_pressed</a>(<span class="charliteral">&#39;P&#39;</span>)) {</div>
-<div class="line"><span class="lineno">   97</span>        <a class="code hl_variable" href="#a0199e692575fbb7366551b469b066a6c">paused_</a> = !<a class="code hl_variable" href="#a0199e692575fbb7366551b469b066a6c">paused_</a>;</div>
-<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span> ((<a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a> || <a class="code hl_variable" href="#a896e7227602577764fab7865da6e9ede">won_</a> || <a class="code hl_variable" href="#ab390d93b043b6b6dab09320d263f878c">speedrun_won_</a>) &amp;&amp; window.<a class="code hl_function" href="classpro2_1_1Window.html#a475d4644d6f1f082a15bf6b1eaf2631b">is_key_down</a>(<span class="charliteral">&#39;R&#39;</span>)) {</div>
-<div class="line"><span class="lineno">  101</span>        <span class="keywordtype">int</span> prev_mode = <a class="code hl_variable" href="#a64fe40edeca8f95bc8ba668438ed5794">game_mode_</a>;</div>
-<div class="line"><span class="lineno">  102</span>        *<span class="keyword">this</span> = <a class="code hl_function" href="#a5bc07cf8947858f32637943836cc6f8e">Game</a>(480, 320);</div>
-<div class="line"><span class="lineno">  103</span>        <a class="code hl_variable" href="#a64fe40edeca8f95bc8ba668438ed5794">game_mode_</a> = prev_mode;</div>
-<div class="line"><span class="lineno">  104</span>        <a class="code hl_function" href="#ac779383b06a6ef5b24ba05d907e30b70">apply_game_mode_settings</a>();</div>
-<div class="line"><span class="lineno">  105</span>        <a class="code hl_variable" href="#af603811af3c32b9441fd0ee8b0283c75">game_state_</a> = 5;</div>
-<div class="line"><span class="lineno">  106</span>        <span class="comment">//quitar</span></div>
-<div class="line"><span class="lineno">  107</span>        <a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  109</span>    }</div>
-<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (window.<a class="code hl_function" href="classpro2_1_1Window.html#aaa4fa6c518d090dcbaca4e6211f35522">was_key_pressed</a>(<span class="charliteral">&#39;B&#39;</span>) and <a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.can_activate()) {</div>
-<div class="line"><span class="lineno">  111</span>        <a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.activate({<a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.pos().x, <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.pos().y});</div>
-<div class="line"><span class="lineno">  112</span>    }</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">if</span>(window.<a class="code hl_function" href="classpro2_1_1Window.html#aaa4fa6c518d090dcbaca4e6211f35522">was_key_pressed</a>(Keys::Return)){</div>
-<div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="#af603811af3c32b9441fd0ee8b0283c75">game_state_</a> = 0;</div>
-<div class="line"><span class="lineno">  115</span>        <span class="comment">//quitar</span></div>
-<div class="line"><span class="lineno">  116</span>        <a class="code hl_variable" href="#aa962f49423cca6cbedfa91f4a4a127d5">start_game_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span>}</div>
-<div class="ttc" id="aclassGame_html_a5bc07cf8947858f32637943836cc6f8e"><div class="ttname"><a href="#a5bc07cf8947858f32637943836cc6f8e">Game::Game</a></div><div class="ttdeci">Game(int width, int height)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00009">game.cc:9</a></div></div>
-<div class="ttc" id="aclassGame_html_ac779383b06a6ef5b24ba05d907e30b70"><div class="ttname"><a href="#ac779383b06a6ef5b24ba05d907e30b70">Game::apply_game_mode_settings</a></div><div class="ttdeci">void apply_game_mode_settings()</div><div class="ttdoc">Actualitza l&#39;estat del joc utilitzant switch statements.</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00121">game.cc:121</a></div></div>
-<div class="ttc" id="aclasspro2_1_1Window_html_a475d4644d6f1f082a15bf6b1eaf2631b"><div class="ttname"><a href="classpro2_1_1Window.html#a475d4644d6f1f082a15bf6b1eaf2631b">pro2::Window::is_key_down</a></div><div class="ttdeci">bool is_key_down(int code) const</div><div class="ttdoc">Determina si cierta tecla estuvo presionada en el fotograma anterior.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00275">window.hh:275</a></div></div>
-<div class="ttc" id="aclasspro2_1_1Window_html_aaa4fa6c518d090dcbaca4e6211f35522"><div class="ttname"><a href="classpro2_1_1Window.html#aaa4fa6c518d090dcbaca4e6211f35522">pro2::Window::was_key_pressed</a></div><div class="ttdeci">bool was_key_pressed(int code) const</div><div class="ttdoc">Determina si cierta tecla se presionó entre el fotograma anterior y el actual.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00298">window.hh:298</a></div></div>
-</div><!-- fragment -->
+<p>Processa les tecles premudes i actualitza l'estat del joc en conseqüència. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra principal del joc </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00092">92</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a1cd0035e2b5ae89538eb741a4017dc0f" name="a1cd0035e2b5ae89538eb741a4017dc0f"></a>
@@ -1248,39 +882,8 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00113">113</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>                                   {</div>
-<div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="#a64fe40edeca8f95bc8ba668438ed5794">game_mode_</a> = gamemode;</div>
-<div class="line"><span class="lineno">  115</span>        <a class="code hl_function" href="#ac779383b06a6ef5b24ba05d907e30b70">apply_game_mode_settings</a>(); </div>
-<div class="line"><span class="lineno">  116</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6e999b991c363fc200283e7323ff09f1" name="a6e999b991c363fc200283e7323ff09f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e999b991c363fc200283e7323ff09f1">&#9670;&#160;</a></span>try_shoot_fireball()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Game::try_shoot_fireball </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00203">203</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  203</span>                              {</div>
-<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a>.should_shoot()){</div>
-<div class="line"><span class="lineno">  205</span>        <a class="code hl_variable" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a>.reset_cooldown();</div>
-<div class="line"><span class="lineno">  206</span>        pro2::Pt fireball_pos = {<a class="code hl_variable" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a>.pos().x + 8, <a class="code hl_variable" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a>.pos().y + 16};</div>
-<div class="line"><span class="lineno">  207</span>        pro2::Pt fireball_speed = {0, 5}; <span class="comment">//Cap abaix</span></div>
-<div class="line"><span class="lineno">  208</span>        <a class="code hl_variable" href="#a0c2c016d29e8a36654c3b73ededddbb4">fireballs_</a>.push_back(Fireball(fireball_pos, fireball_speed)); <span class="comment">//Afegim element nou amb propietats escollides</span></div>
-<div class="line"><span class="lineno">  209</span>    }</div>
-<div class="line"><span class="lineno">  210</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00128">128</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a3661c777f12e357cdc0b3727b2f73412" name="a3661c777f12e357cdc0b3727b2f73412"></a>
@@ -1298,28 +901,16 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00361">361</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  361</span>                                    {</div>
-<div class="line"><span class="lineno">  362</span>    <a class="code hl_function" href="#a0c6fbced92dbe00f94f96d899f02fdb8">process_keys</a>(window);</div>
-<div class="line"><span class="lineno">  363</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="#a0199e692575fbb7366551b469b066a6c">paused_</a> and !<a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a> and <a class="code hl_variable" href="#aa962f49423cca6cbedfa91f4a4a127d5">start_game_</a>){</div>
-<div class="line"><span class="lineno">  364</span>        <span class="comment">//Quan activat el sandglass el timer no es mou</span></div>
-<div class="line"><span class="lineno">  365</span>        <span class="keywordflow">if</span>(!<a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.is_effect_active()){</div>
-<div class="line"><span class="lineno">  366</span>            <a class="code hl_function" href="#a1cb5b15762932c64246ac353a00394ef">update_timer</a>();</div>
-<div class="line"><span class="lineno">  367</span>        }</div>
-<div class="line"><span class="lineno">  368</span>        <a class="code hl_function" href="#aeac837e84d3f63a3dac7b3942705203e">update_objects</a>(window);</div>
-<div class="line"><span class="lineno">  369</span>        <a class="code hl_function" href="#ab146f2f8cec61b092586762267cf1e73">update_camera</a>(window);</div>
-<div class="line"><span class="lineno">  370</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a896e7227602577764fab7865da6e9ede">won_</a> and <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.check_points() &gt;= <a class="code hl_variable" href="#af2d2757cd96e823c08098addbda9e648">crosses_to_get_</a>){</div>
-<div class="line"><span class="lineno">  371</span>            <a class="code hl_variable" href="#af603811af3c32b9441fd0ee8b0283c75">game_state_</a> = 2;</div>
-<div class="line"><span class="lineno">  372</span>            <span class="comment">//quitar</span></div>
-<div class="line"><span class="lineno">  373</span>            <a class="code hl_variable" href="#a896e7227602577764fab7865da6e9ede">won_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  374</span>        }</div>
-<div class="line"><span class="lineno">  375</span>    } </div>
-<div class="line"><span class="lineno">  376</span>}</div>
-<div class="ttc" id="aclassGame_html_a0c6fbced92dbe00f94f96d899f02fdb8"><div class="ttname"><a href="#a0c6fbced92dbe00f94f96d899f02fdb8">Game::process_keys</a></div><div class="ttdeci">void process_keys(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00089">game.cc:89</a></div></div>
-<div class="ttc" id="aclassGame_html_a1cb5b15762932c64246ac353a00394ef"><div class="ttname"><a href="#a1cb5b15762932c64246ac353a00394ef">Game::update_timer</a></div><div class="ttdeci">void update_timer()</div><div class="ttdoc">Actualitza el temps del joc.</div><div class="ttdef"><b>Definition</b> <a href="game_8hh_source.html#l00121">game.hh:121</a></div></div>
-<div class="ttc" id="aclassGame_html_ab146f2f8cec61b092586762267cf1e73"><div class="ttname"><a href="#ab146f2f8cec61b092586762267cf1e73">Game::update_camera</a></div><div class="ttdeci">void update_camera(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00336">game.cc:336</a></div></div>
-<div class="ttc" id="aclassGame_html_aeac837e84d3f63a3dac7b3942705203e"><div class="ttname"><a href="#aeac837e84d3f63a3dac7b3942705203e">Game::update_objects</a></div><div class="ttdeci">void update_objects(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00318">game.cc:318</a></div></div>
-</div><!-- fragment -->
+<p>Actualitza el joc cada frame. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00270">270</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="ab146f2f8cec61b092586762267cf1e73" name="ab146f2f8cec61b092586762267cf1e73"></a>
@@ -1345,32 +936,16 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00336">336</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  336</span>                                           {</div>
-<div class="line"><span class="lineno">  337</span>    <span class="keyword">const</span> Pt pos = <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.pos();</div>
-<div class="line"><span class="lineno">  338</span>    <span class="keyword">const</span> Pt cam = window.<a class="code hl_function" href="classpro2_1_1Window.html#aba9caf9f926e540c6697f690ae6d3c68">camera_center</a>();</div>
-<div class="line"><span class="lineno">  339</span> </div>
-<div class="line"><span class="lineno">  340</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> left = cam.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - window.<a class="code hl_function" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a>() / 4;</div>
-<div class="line"><span class="lineno">  341</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> right = cam.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a>() / 4;</div>
-<div class="line"><span class="lineno">  342</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> top = cam.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>() / 4;</div>
-<div class="line"><span class="lineno">  343</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> bottom = cam.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> + window.<a class="code hl_function" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>() / 4;</div>
-<div class="line"><span class="lineno">  344</span> </div>
-<div class="line"><span class="lineno">  345</span>    <span class="keywordtype">int</span> dx = 0, dy = 0;</div>
-<div class="line"><span class="lineno">  346</span>    <span class="keywordflow">if</span> (pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &gt; right) {</div>
-<div class="line"><span class="lineno">  347</span>        dx = pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - right;</div>
-<div class="line"><span class="lineno">  348</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &lt; left) {</div>
-<div class="line"><span class="lineno">  349</span>        dx = pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - left;</div>
-<div class="line"><span class="lineno">  350</span>    }</div>
-<div class="line"><span class="lineno">  351</span>    <span class="keywordflow">if</span> (pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> &lt; top) {</div>
-<div class="line"><span class="lineno">  352</span>        dy = pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - top;</div>
-<div class="line"><span class="lineno">  353</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> &gt; bottom) {</div>
-<div class="line"><span class="lineno">  354</span>        dy = pos.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - bottom;</div>
-<div class="line"><span class="lineno">  355</span>    }</div>
-<div class="line"><span class="lineno">  356</span>    </div>
-<div class="line"><span class="lineno">  357</span>    window.<a class="code hl_function" href="classpro2_1_1Window.html#afbc70ada8de42a0db90e11e9f3803a1e">move_camera</a>({dx, dy});</div>
-<div class="line"><span class="lineno">  358</span>}</div>
-<div class="ttc" id="aclasspro2_1_1Window_html_afbc70ada8de42a0db90e11e9f3803a1e"><div class="ttname"><a href="classpro2_1_1Window.html#afbc70ada8de42a0db90e11e9f3803a1e">pro2::Window::move_camera</a></div><div class="ttdeci">void move_camera(Pt desplazamiento)</div><div class="ttdoc">Indica que la posición de la esquina superior izquierda de la ventana debería moverse según el vector...</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00413">window.hh:413</a></div></div>
-</div><!-- fragment -->
+<p>Mou la càmera seguint la posició del personatge principal. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra principal del joc </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00245">245</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a8052300120200684df461bb6aa2a2b9c" name="a8052300120200684df461bb6aa2a2b9c"></a>
@@ -1392,22 +967,17 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00249">249</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  249</span>                                                                       {</div>
-<div class="line"><span class="lineno">  250</span>    <span class="keyword">auto</span> visibles = <a class="code hl_variable" href="#ab1ee68975468409b25082bf66e9414d6">finder_crosses_</a>.query(window.<a class="code hl_function" href="classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3">camera_rect</a>());</div>
-<div class="line"><span class="lineno">  251</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> Cross* c : visibles) {</div>
-<div class="line"><span class="lineno">  252</span>        Cross* cc = <span class="keyword">const_cast&lt;</span>Cross*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><span class="lineno">  253</span>        cc-&gt;<a class="code hl_function" href="classCross.html#a933be6cc26313b9a4dbea577a564fedf">update</a>(window);</div>
-<div class="line"><span class="lineno">  254</span>        <a class="code hl_variable" href="#ab1ee68975468409b25082bf66e9414d6">finder_crosses_</a>.update(c);</div>
-<div class="line"><span class="lineno">  255</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacepro2.html#a081d28eb2022e1785285df38f0844a4a">interseccionen</a>(marioRect, cc-&gt;<a class="code hl_function" href="classCross.html#a419a5213809c2921cdf751de8b49b729">get_rect</a>(<a class="code hl_variable" href="#a6e8623dae36c0cac75255c40ceec5b35">cross_height_y_</a>))) {</div>
-<div class="line"><span class="lineno">  256</span>            <a class="code hl_variable" href="#ab1ee68975468409b25082bf66e9414d6">finder_crosses_</a>.remove(c);</div>
-<div class="line"><span class="lineno">  257</span>            <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.add_points();</div>
-<div class="line"><span class="lineno">  258</span>        }</div>
-<div class="line"><span class="lineno">  259</span>    }</div>
-<div class="line"><span class="lineno">  260</span>}</div>
-<div class="ttc" id="aclassCross_html_a419a5213809c2921cdf751de8b49b729"><div class="ttname"><a href="classCross.html#a419a5213809c2921cdf751de8b49b729">Cross::get_rect</a></div><div class="ttdeci">pro2::Rect get_rect(int height_y=0) const</div><div class="ttdoc">Crea una hitbox utilitzant height_y.</div><div class="ttdef"><b>Definition</b> <a href="cross_8cc_source.html#l00049">cross.cc:49</a></div></div>
-<div class="ttc" id="aclassCross_html_a933be6cc26313b9a4dbea577a564fedf"><div class="ttname"><a href="classCross.html#a933be6cc26313b9a4dbea577a564fedf">Cross::update</a></div><div class="ttdeci">void update(pro2::Window &amp;window)</div><div class="ttdoc">actualitza el moviment de la creu</div><div class="ttdef"><b>Definition</b> <a href="cross_8cc_source.html#l00060">cross.cc:60</a></div></div>
-</div><!-- fragment -->
+<p>Actualitza les creus visibles i comprova si han estat recollides. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
+    <tr><td class="paramname">marioRect</td><td>Rectangle del mario </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00192">192</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a0457735c1ff2628264fdcfeae69ad1c1" name="a0457735c1ff2628264fdcfeae69ad1c1"></a>
@@ -1425,139 +995,16 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00305">305</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  305</span>                                               {</div>
-<div class="line"><span class="lineno">  306</span> </div>
-<div class="line"><span class="lineno">  307</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aafc22da4227f79831a3401e1c0412e27" name="aafc22da4227f79831a3401e1c0412e27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafc22da4227f79831a3401e1c0412e27">&#9670;&#160;</a></span>update_fire_collisions()</h2>
+<p>Actualitza el comportament del dimoni. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Game::update_fire_collisions </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marioRect</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00289">289</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  289</span>                                                           {</div>
-<div class="line"><span class="lineno">  290</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; fire : <a class="code hl_variable" href="#ac79594eaeb2fc130366c8d79fb48e662">fires_</a>) {</div>
-<div class="line"><span class="lineno">  291</span>        <span class="keywordflow">if</span> (fire.is_active()) {</div>
-<div class="line"><span class="lineno">  292</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacepro2.html#a081d28eb2022e1785285df38f0844a4a">interseccionen</a>(<a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.get_rect(), fire.get_rect())) {</div>
-<div class="line"><span class="lineno">  293</span>                fire.deactivate_fires();</div>
-<div class="line"><span class="lineno">  294</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacepro2.html#a081d28eb2022e1785285df38f0844a4a">interseccionen</a>(marioRect, fire.get_rect())) {</div>
-<div class="line"><span class="lineno">  295</span>                fire.deactivate_fires();</div>
-<div class="line"><span class="lineno">  296</span>                <a class="code hl_variable" href="#af603811af3c32b9441fd0ee8b0283c75">game_state_</a> = 5;</div>
-<div class="line"><span class="lineno">  297</span>                <span class="comment">//quitar</span></div>
-<div class="line"><span class="lineno">  298</span>                <a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  299</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  300</span>            }</div>
-<div class="line"><span class="lineno">  301</span>        }</div>
-<div class="line"><span class="lineno">  302</span>    }</div>
-<div class="line"><span class="lineno">  303</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1db13df88cb8be7fe2e4905d0bb7b200" name="a1db13df88cb8be7fe2e4905d0bb7b200"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1db13df88cb8be7fe2e4905d0bb7b200">&#9670;&#160;</a></span>update_fireball_collisions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Game::update_fireball_collisions </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marioRect</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00273">273</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  273</span>                                                               {</div>
-<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; fireball : <a class="code hl_variable" href="#a0c2c016d29e8a36654c3b73ededddbb4">fireballs_</a>) {</div>
-<div class="line"><span class="lineno">  275</span>        <span class="keywordflow">if</span> (fireball.is_active()) {</div>
-<div class="line"><span class="lineno">  276</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacepro2.html#a081d28eb2022e1785285df38f0844a4a">interseccionen</a>(<a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.get_rect(), fireball.get_rect())) {</div>
-<div class="line"><span class="lineno">  277</span>                fireball.deactivate();</div>
-<div class="line"><span class="lineno">  278</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacepro2.html#a081d28eb2022e1785285df38f0844a4a">interseccionen</a>(marioRect, fireball.get_rect())) {</div>
-<div class="line"><span class="lineno">  279</span>                fireball.deactivate();</div>
-<div class="line"><span class="lineno">  280</span>                <a class="code hl_variable" href="#af603811af3c32b9441fd0ee8b0283c75">game_state_</a> = 5;</div>
-<div class="line"><span class="lineno">  281</span>                <span class="comment">//quitar</span></div>
-<div class="line"><span class="lineno">  282</span>                <a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  283</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  284</span>            }</div>
-<div class="line"><span class="lineno">  285</span>        }</div>
-<div class="line"><span class="lineno">  286</span>    }</div>
-<div class="line"><span class="lineno">  287</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aad18f90c4cdd19c0fbdfb16659cc43b0" name="aad18f90c4cdd19c0fbdfb16659cc43b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad18f90c4cdd19c0fbdfb16659cc43b0">&#9670;&#160;</a></span>update_fireballs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Game::update_fireballs </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>window</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00212">212</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  212</span>                                              {</div>
-<div class="line"><span class="lineno">  213</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="#a0c2c016d29e8a36654c3b73ededddbb4">fireballs_</a>.begin(); it != <a class="code hl_variable" href="#a0c2c016d29e8a36654c3b73ededddbb4">fireballs_</a>.end();) {</div>
-<div class="line"><span class="lineno">  214</span>        (*it).update(window);</div>
-<div class="line"><span class="lineno">  215</span> </div>
-<div class="line"><span class="lineno">  216</span>        <span class="keywordflow">if</span> (!(*it).is_active() || <a class="code hl_function" href="#ad97e552e241587a12f86f392c3328050">check_fireball_hits_platform</a>(*it)) {</div>
-<div class="line"><span class="lineno">  217</span>            it = <a class="code hl_variable" href="#a0c2c016d29e8a36654c3b73ededddbb4">fireballs_</a>.erase(it);</div>
-<div class="line"><span class="lineno">  218</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  219</span>            ++it;</div>
-<div class="line"><span class="lineno">  220</span>        }</div>
-<div class="line"><span class="lineno">  221</span>    }</div>
-<div class="line"><span class="lineno">  222</span>}</div>
-<div class="ttc" id="aclassGame_html_ad97e552e241587a12f86f392c3328050"><div class="ttname"><a href="#ad97e552e241587a12f86f392c3328050">Game::check_fireball_hits_platform</a></div><div class="ttdeci">bool check_fireball_hits_platform(Fireball &amp;fireball)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00224">game.cc:224</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="acc149cfddc137cb5189e545f1a9dbbdd" name="acc149cfddc137cb5189e545f1a9dbbdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc149cfddc137cb5189e545f1a9dbbdd">&#9670;&#160;</a></span>update_fires()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Game::update_fires </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00262">262</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  262</span>                        {</div>
-<div class="line"><span class="lineno">  263</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="#ac79594eaeb2fc130366c8d79fb48e662">fires_</a>.begin(); it != <a class="code hl_variable" href="#ac79594eaeb2fc130366c8d79fb48e662">fires_</a>.end();) {</div>
-<div class="line"><span class="lineno">  264</span>        (*it).update();</div>
-<div class="line"><span class="lineno">  265</span>        <span class="keywordflow">if</span> (!(*it).is_active()) {</div>
-<div class="line"><span class="lineno">  266</span>            it = <a class="code hl_variable" href="#ac79594eaeb2fc130366c8d79fb48e662">fires_</a>.erase(it);</div>
-<div class="line"><span class="lineno">  267</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  268</span>            ++it;</div>
-<div class="line"><span class="lineno">  269</span>        }</div>
-<div class="line"><span class="lineno">  270</span>    }</div>
-<div class="line"><span class="lineno">  271</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00207">207</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a83971c017e3001fe2df507dad4f893e0" name="a83971c017e3001fe2df507dad4f893e0"></a>
@@ -1579,28 +1026,17 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00189">189</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  189</span>                                                                           {</div>
-<div class="line"><span class="lineno">  190</span>    <a class="code hl_variable" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a>.update(window);</div>
-<div class="line"><span class="lineno">  191</span>    <a class="code hl_function" href="#a6e999b991c363fc200283e7323ff09f1">try_shoot_fireball</a>();</div>
-<div class="line"><span class="lineno">  192</span> </div>
-<div class="line"><span class="lineno">  193</span>    <a class="code hl_function" href="#aad18f90c4cdd19c0fbdfb16659cc43b0">update_fireballs</a>(window);</div>
-<div class="line"><span class="lineno">  194</span>    <a class="code hl_function" href="#a1db13df88cb8be7fe2e4905d0bb7b200">update_fireball_collisions</a>(marioRect);</div>
-<div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>    <a class="code hl_function" href="#a8052300120200684df461bb6aa2a2b9c">update_crosses</a>(window, marioRect);</div>
-<div class="line"><span class="lineno">  197</span>    <a class="code hl_function" href="#acc149cfddc137cb5189e545f1a9dbbdd">update_fires</a>();</div>
-<div class="line"><span class="lineno">  198</span>    <a class="code hl_function" href="#aafc22da4227f79831a3401e1c0412e27">update_fire_collisions</a>(marioRect);</div>
-<div class="line"><span class="lineno">  199</span> </div>
-<div class="line"><span class="lineno">  200</span>    <a class="code hl_function" href="#a7849d79c921e869e30923bf9974519b5">check_blessing_points</a>();</div>
-<div class="line"><span class="lineno">  201</span>}</div>
-<div class="ttc" id="aclassGame_html_a1db13df88cb8be7fe2e4905d0bb7b200"><div class="ttname"><a href="#a1db13df88cb8be7fe2e4905d0bb7b200">Game::update_fireball_collisions</a></div><div class="ttdeci">void update_fireball_collisions(const pro2::Rect &amp;marioRect)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00273">game.cc:273</a></div></div>
-<div class="ttc" id="aclassGame_html_a6e999b991c363fc200283e7323ff09f1"><div class="ttname"><a href="#a6e999b991c363fc200283e7323ff09f1">Game::try_shoot_fireball</a></div><div class="ttdeci">void try_shoot_fireball()</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00203">game.cc:203</a></div></div>
-<div class="ttc" id="aclassGame_html_a7849d79c921e869e30923bf9974519b5"><div class="ttname"><a href="#a7849d79c921e869e30923bf9974519b5">Game::check_blessing_points</a></div><div class="ttdeci">void check_blessing_points()</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00309">game.cc:309</a></div></div>
-<div class="ttc" id="aclassGame_html_a8052300120200684df461bb6aa2a2b9c"><div class="ttname"><a href="#a8052300120200684df461bb6aa2a2b9c">Game::update_crosses</a></div><div class="ttdeci">void update_crosses(pro2::Window &amp;window, const pro2::Rect &amp;marioRect)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00249">game.cc:249</a></div></div>
-<div class="ttc" id="aclassGame_html_aad18f90c4cdd19c0fbdfb16659cc43b0"><div class="ttname"><a href="#aad18f90c4cdd19c0fbdfb16659cc43b0">Game::update_fireballs</a></div><div class="ttdeci">void update_fireballs(pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00212">game.cc:212</a></div></div>
-<div class="ttc" id="aclassGame_html_aafc22da4227f79831a3401e1c0412e27"><div class="ttname"><a href="#aafc22da4227f79831a3401e1c0412e27">Game::update_fire_collisions</a></div><div class="ttdeci">void update_fire_collisions(const pro2::Rect &amp;marioRect)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00289">game.cc:289</a></div></div>
-<div class="ttc" id="aclassGame_html_acc149cfddc137cb5189e545f1a9dbbdd"><div class="ttname"><a href="#acc149cfddc137cb5189e545f1a9dbbdd">Game::update_fires</a></div><div class="ttdeci">void update_fires()</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00262">game.cc:262</a></div></div>
-</div><!-- fragment -->
+<p>Actualitza l’estat normal del joc (sense rellotge) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
+    <tr><td class="paramname">marioRect</td><td>Posició del jugador </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00180">180</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="aeac837e84d3f63a3dac7b3942705203e" name="aeac837e84d3f63a3dac7b3942705203e"></a>
@@ -1626,28 +1062,16 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00318">318</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  318</span>                                            {</div>
-<div class="line"><span class="lineno">  319</span>    <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.update(window, <a class="code hl_variable" href="#af8d7b0aefacb6a03fb6e2d28a2b49923">platforms_</a>);</div>
-<div class="line"><span class="lineno">  320</span>    <a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.update(<a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.pos());</div>
-<div class="line"><span class="lineno">  321</span>    pro2::Rect marioRect = <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.get_rect();</div>
-<div class="line"><span class="lineno">  322</span> </div>
-<div class="line"><span class="lineno">  323</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="#abbfcda5bf7c3a427a5d8f512dacec6e0">check_fallen_off_screen</a>(window)) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  324</span> </div>
-<div class="line"><span class="lineno">  325</span>    <a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.update(window);</div>
-<div class="line"><span class="lineno">  326</span>    <a class="code hl_function" href="#ad67466fb235ac2069efe278f6d35268a">handle_sandglass_interaction</a>(marioRect);</div>
-<div class="line"><span class="lineno">  327</span> </div>
-<div class="line"><span class="lineno">  328</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a56d8b6fb9cff75879c0d70310b508ed3">sandglass_</a>.is_effect_active()) {</div>
-<div class="line"><span class="lineno">  329</span>        <a class="code hl_function" href="#a6e9c6cafeb4becc2183a220d1788062f">update_time_stoped_mode</a>(window, marioRect);</div>
-<div class="line"><span class="lineno">  330</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  331</span>        <a class="code hl_function" href="#a83971c017e3001fe2df507dad4f893e0">update_normal_mode</a>(window, marioRect);</div>
-<div class="line"><span class="lineno">  332</span>    }</div>
-<div class="line"><span class="lineno">  333</span>}</div>
-<div class="ttc" id="aclassGame_html_a6e9c6cafeb4becc2183a220d1788062f"><div class="ttname"><a href="#a6e9c6cafeb4becc2183a220d1788062f">Game::update_time_stoped_mode</a></div><div class="ttdeci">void update_time_stoped_mode(pro2::Window &amp;window, const pro2::Rect &amp;marioRect)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00177">game.cc:177</a></div></div>
-<div class="ttc" id="aclassGame_html_a83971c017e3001fe2df507dad4f893e0"><div class="ttname"><a href="#a83971c017e3001fe2df507dad4f893e0">Game::update_normal_mode</a></div><div class="ttdeci">void update_normal_mode(pro2::Window &amp;window, const pro2::Rect &amp;marioRect)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00189">game.cc:189</a></div></div>
-<div class="ttc" id="aclassGame_html_abbfcda5bf7c3a427a5d8f512dacec6e0"><div class="ttname"><a href="#abbfcda5bf7c3a427a5d8f512dacec6e0">Game::check_fallen_off_screen</a></div><div class="ttdeci">bool check_fallen_off_screen(const pro2::Window &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00158">game.cc:158</a></div></div>
-<div class="ttc" id="aclassGame_html_ad67466fb235ac2069efe278f6d35268a"><div class="ttname"><a href="#ad67466fb235ac2069efe278f6d35268a">Game::handle_sandglass_interaction</a></div><div class="ttdeci">void handle_sandglass_interaction(const pro2::Rect &amp;marioRect)</div><div class="ttdef"><b>Definition</b> <a href="game_8cc_source.html#l00170">game.cc:170</a></div></div>
-</div><!-- fragment -->
+<p>Actualitza tots els objectes del joc (mario, creus, rellotge, etc.) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra principal del joc </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00220">220</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a6e9c6cafeb4becc2183a220d1788062f" name="a6e9c6cafeb4becc2183a220d1788062f"></a>
@@ -1669,19 +1093,17 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00177">177</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  177</span>                                                                                {</div>
-<div class="line"><span class="lineno">  178</span>    <a class="code hl_function" href="#a1db13df88cb8be7fe2e4905d0bb7b200">update_fireball_collisions</a>(marioRect);</div>
-<div class="line"><span class="lineno">  179</span>    <a class="code hl_function" href="#a8052300120200684df461bb6aa2a2b9c">update_crosses</a>(window, marioRect);</div>
-<div class="line"><span class="lineno">  180</span>    <a class="code hl_function" href="#aafc22da4227f79831a3401e1c0412e27">update_fire_collisions</a>(marioRect);</div>
-<div class="line"><span class="lineno">  181</span> </div>
-<div class="line"><span class="lineno">  182</span>    <span class="keywordtype">int</span> current_points = <a class="code hl_variable" href="#a5ca6a91487a61b30528dd535bed1ce26">mario_</a>.check_points();</div>
-<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">if</span> (current_points &gt;= 5 &amp;&amp; current_points / 5 &gt; <a class="code hl_variable" href="#a201212d7739d9b0b2e35b62fccece153">last_blessed_points_</a> / 5) {</div>
-<div class="line"><span class="lineno">  184</span>        <a class="code hl_variable" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a>.add_blessing();</div>
-<div class="line"><span class="lineno">  185</span>        <a class="code hl_variable" href="#a201212d7739d9b0b2e35b62fccece153">last_blessed_points_</a> = current_points;</div>
-<div class="line"><span class="lineno">  186</span>    }</div>
-<div class="line"><span class="lineno">  187</span>}</div>
-</div><!-- fragment -->
+<p>Actualitza l’estat del joc quan el rellotge està activat. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
+    <tr><td class="paramname">marioRect</td><td>Posició del jugador </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00170">170</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="a1cb5b15762932c64246ac353a00394ef" name="a1cb5b15762932c64246ac353a00394ef"></a>
@@ -1707,16 +1129,10 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Actualitza el temps del joc. </p>
+<p>Actualitza el temporitzador del joc si hi ha límit de temps. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00121">121</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>                       {</div>
-<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a8b46e9f0caf6c91855d6a32a1424a530">has_time_limit_</a>) {</div>
-<div class="line"><span class="lineno">  123</span>            <a class="code hl_variable" href="#ab8a39c21375e10001f8d43dcd608211d">timer_</a>--;</div>
-<div class="line"><span class="lineno">  124</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ab8a39c21375e10001f8d43dcd608211d">timer_</a> &lt;= 0) <a class="code hl_variable" href="#ab390d93b043b6b6dab09320d263f878c">speedrun_won_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  125</span>        }</div>
-<div class="line"><span class="lineno">  126</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00136">136</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="ae4268b648bd696673acf3de0cddfc20b" name="ae4268b648bd696673acf3de0cddfc20b"></a>
@@ -1743,13 +1159,10 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retorna un bool segons si el mario ha mort. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>True or False segons el mario </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si el mario ha caigut o ha estat colpejat, fals en cas contrari </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00096">96</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   96</span>                          {</div>
-<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a97a7cd4542b7556be2247ec7335e91a2">reset_</a>;</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00112">112</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <a id="aa29df894d1d25abb59738a7651f05c7d" name="aa29df894d1d25abb59738a7651f05c7d"></a>
@@ -1776,13 +1189,10 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retorna un bool segons si hem guanyat el joc. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>True or False segons l'estat de joc </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si el jugador ha guanyat, fals en cas contrari </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00105">105</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  105</span>                         {</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a896e7227602577764fab7865da6e9ede">won_</a>;</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00120">120</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
@@ -1796,7 +1206,7 @@ Atributos estáticos privados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpro2_1_1Ascended.html">pro2::Ascended</a> Game::ascended_</td>
+          <td class="memname">pro2::Ascended Game::ascended_</td>
         </tr>
       </table>
   </td>
@@ -1806,7 +1216,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00035">35</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00034">34</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1830,7 +1240,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00058">58</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00047">47</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1854,7 +1264,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00032">32</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00031">31</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1878,7 +1288,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00060">60</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00049">49</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1902,7 +1312,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00034">34</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00033">33</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1926,7 +1336,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00043">43</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00038">38</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1950,79 +1360,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00042">42</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-
-</div>
-</div>
-<a id="ae68025f0c47e30423db4288e0038e5e8" name="ae68025f0c47e30423db4288e0038e5e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae68025f0c47e30423db4288e0038e5e8">&#9670;&#160;</a></span>finished_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Game::finished_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00047">47</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-
-</div>
-</div>
-<a id="a0c2c016d29e8a36654c3b73ededddbb4" name="a0c2c016d29e8a36654c3b73ededddbb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c2c016d29e8a36654c3b73ededddbb4">&#9670;&#160;</a></span>fireballs_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classList.html">List</a>&lt;<a class="el" href="classFireball.html">Fireball</a>&gt; Game::fireballs_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00038">38</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-
-</div>
-</div>
-<a id="ac79594eaeb2fc130366c8d79fb48e662" name="ac79594eaeb2fc130366c8d79fb48e662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac79594eaeb2fc130366c8d79fb48e662">&#9670;&#160;</a></span>fires_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classList.html">List</a>&lt;<a class="el" href="classFire.html">Fire</a>&gt; Game::fires_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00039">39</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00037">37</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2046,7 +1384,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00062">62</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00051">51</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2070,7 +1408,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00056">56</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00045">45</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2094,7 +1432,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00053">53</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00042">42</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2118,7 +1456,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00054">54</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00043">43</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2142,7 +1480,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00059">59</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00048">48</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2166,7 +1504,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00028">28</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00027">27</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2190,7 +1528,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00045">45</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00040">40</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2214,31 +1552,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00029">29</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-
-</div>
-</div>
-<a id="a97a7cd4542b7556be2247ec7335e91a2" name="a97a7cd4542b7556be2247ec7335e91a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97a7cd4542b7556be2247ec7335e91a2">&#9670;&#160;</a></span>reset_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Game::reset_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00048">48</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00028">28</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2262,7 +1576,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00033">33</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00032">32</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2286,55 +1600,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00183">183</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-
-</div>
-</div>
-<a id="ab390d93b043b6b6dab09320d263f878c" name="ab390d93b043b6b6dab09320d263f878c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab390d93b043b6b6dab09320d263f878c">&#9670;&#160;</a></span>speedrun_won_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Game::speedrun_won_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00050">50</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-
-</div>
-</div>
-<a id="aa962f49423cca6cbedfa91f4a4a127d5" name="aa962f49423cca6cbedfa91f4a4a127d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa962f49423cca6cbedfa91f4a4a127d5">&#9670;&#160;</a></span>start_game_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Game::start_game_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00051">51</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00254">254</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2358,7 +1624,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00031">31</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00030">30</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2382,7 +1648,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00030">30</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00029">29</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -2406,31 +1672,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00061">61</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
-
-</div>
-</div>
-<a id="a896e7227602577764fab7865da6e9ede" name="a896e7227602577764fab7865da6e9ede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a896e7227602577764fab7865da6e9ede">&#9670;&#160;</a></span>won_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Game::won_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00049">49</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00050">50</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>

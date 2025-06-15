@@ -13,8 +13,6 @@
 #include <vector>
 #endif
 
-namespace pro2 {
-
 class Ascended {
 private:
     
@@ -77,7 +75,7 @@ public:
     /**
      * @brief Retorna la hitbox de l'objecte
      */
-    Rect get_rect() const;
+    pro2::Rect get_rect() const;
     
     /**
      * @brief Pinta l'objecte
@@ -86,7 +84,5 @@ public:
      */
     void paint(Window& window) const;
 };
-
-} // namespace pro2
 
 #endif // ASCENDED_HH

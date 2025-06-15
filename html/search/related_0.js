@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['list_0',['List',['../classList_1_1iterator.html#a8cee552d09eaeb60a09d95309a87b498',1,'List::iterator::List()'],['../classList_1_1const__iterator.html#a8cee552d09eaeb60a09d95309a87b498',1,'List::const_iterator::List()']]]
+  ['fireball_0',['Fireball',['../classDemon.html#a2bf7a415cc2e7956cc500453b15d45b9',1,'Demon']]]
 ];

@@ -9,12 +9,11 @@ var searchData=
   ['remove_6',['remove',['../classFinder.html#a8a9d5bf342c5a13048d7853b52557f7d',1,'Finder']]],
   ['removeitem_7',['removeItem',['../classList.html#a2ea3317c23dcd423005de82afe561162',1,'List']]],
   ['removeitems_8',['removeItems',['../classList.html#af182d32106bbb72db881a202416c28b0',1,'List']]],
-  ['reset_5f_9',['reset_',['../classGame.html#a97a7cd4542b7556be2247ec7335e91a2',1,'Game']]],
-  ['reset_5fcooldown_10',['reset_cooldown',['../classDemon.html#a434c3b12eca9da1cfa1a875e6e6ebc25',1,'Demon']]],
-  ['respawn_5fdelay_5f_11',['respawn_delay_',['../classSandglass.html#aa92f00cd29f9715b819d95ad452de18f',1,'Sandglass']]],
-  ['return_12',['Return',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700a9c0991b9a25e9528ff02075ff9315f50',1,'pro2']]],
-  ['right_13',['Right',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700abe12e513a5eaa5225e9f6101a826b20d',1,'pro2']]],
-  ['right_14',['right',['../structpro2_1_1Rect.html#aae04a074de42a64bff8e9781b8e2af2b',1,'pro2::Rect::right'],['../classPlatform.html#a4ce552d100551482cd970bc11ea203cd',1,'Platform::right() const']]],
-  ['right_5f_15',['right_',['../classPlatform.html#a46b87ba8300f0ab0338fd570ee9c49d6',1,'Platform']]],
-  ['right_5fkey_5f_16',['right_key_',['../classMario.html#aeed62c8513146eaa6607d0a407fc158e',1,'Mario']]]
+  ['reset_5fcooldown_9',['reset_cooldown',['../classDemon.html#a434c3b12eca9da1cfa1a875e6e6ebc25',1,'Demon']]],
+  ['respawn_5fdelay_5f_10',['respawn_delay_',['../classSandglass.html#aa92f00cd29f9715b819d95ad452de18f',1,'Sandglass']]],
+  ['return_11',['Return',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700a9c0991b9a25e9528ff02075ff9315f50',1,'pro2']]],
+  ['right_12',['Right',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700abe12e513a5eaa5225e9f6101a826b20d',1,'pro2']]],
+  ['right_13',['right',['../structpro2_1_1Rect.html#aae04a074de42a64bff8e9781b8e2af2b',1,'pro2::Rect::right'],['../classPlatform.html#a4ce552d100551482cd970bc11ea203cd',1,'Platform::right() const']]],
+  ['right_5f_14',['right_',['../classPlatform.html#a46b87ba8300f0ab0338fd570ee9c49d6',1,'Platform']]],
+  ['right_5fkey_5f_15',['right_key_',['../classMario.html#aeed62c8513146eaa6607d0a407fc158e',1,'Mario']]]
 ];

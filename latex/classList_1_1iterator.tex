@@ -58,10 +58,6 @@ Definición en la línea \mbox{\hyperlink{list_8hh_source_l00296}{296}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00299\ \ \ \ \ \{}
-\DoxyCodeLine{00300\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList}{not}}\ (\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ ==\ \mbox{\hyperlink{classList}{it}}.plist\ \mbox{\hyperlink{classList}{and}}\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \mbox{\hyperlink{classList}{it}}.pitem);}
-\DoxyCodeLine{00301\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classList_1_1iterator_abd843604d7d0cf419c962e04b075d7cd}\index{List$<$ T $>$::iterator@{List$<$ T $>$::iterator}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
 \index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!List$<$ T $>$::iterator@{List$<$ T $>$::iterator}}
@@ -76,14 +72,6 @@ Definición en la línea \mbox{\hyperlink{list_8hh_source_l00277}{277}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00281\ \ \ \ \ \{}
-\DoxyCodeLine{00282\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
-\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ ++iterator\ at\ the\ end\ of\ list"{}}\ <<\ \mbox{\hyperlink{classList}{endl}};}
-\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{exit}}(1);}
-\DoxyCodeLine{00285\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00286\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>value;}
-\DoxyCodeLine{00287\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classList_1_1iterator_a28bcadde315a7044f4e7ed89efcaf8d8}\index{List$<$ T $>$::iterator@{List$<$ T $>$::iterator}!operator++@{operator++}}
 \index{operator++@{operator++}!List$<$ T $>$::iterator@{List$<$ T $>$::iterator}}
@@ -98,15 +86,6 @@ Definición en la línea \mbox{\hyperlink{list_8hh_source_l00214}{214}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00219\ \ \ \ \ \{}
-\DoxyCodeLine{00220\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
-\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ ++iterator\ at\ the\ end\ of\ list"{}}\ <<\ \mbox{\hyperlink{classList}{endl}};}
-\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{exit}}(1);}
-\DoxyCodeLine{00223\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00224\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>next;}
-\DoxyCodeLine{00225\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00226\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classList_1_1iterator_a03d5920ec99ec81284b4a622b4781e14}\index{List$<$ T $>$::iterator@{List$<$ T $>$::iterator}!operator++@{operator++}}
 \index{operator++@{operator++}!List$<$ T $>$::iterator@{List$<$ T $>$::iterator}}
@@ -121,16 +100,6 @@ Definición en la línea \mbox{\hyperlink{list_8hh_source_l00229}{229}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00235\ \ \ \ \ \{}
-\DoxyCodeLine{00236\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
-\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator++\ at\ the\ end\ of\ list"{}}\ <<\ \mbox{\hyperlink{classList}{endl}};}
-\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{exit}}(1);}
-\DoxyCodeLine{00239\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00240\ \ \ \ \ \ \ \mbox{\hyperlink{classList}{iterator}}\ \mbox{\hyperlink{classList}{aux}}\ =\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00241\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>next;}
-\DoxyCodeLine{00242\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList}{aux}};}
-\DoxyCodeLine{00243\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classList_1_1iterator_a3fff00ac1f8ef0b2b5f5c3eeece533bc}\index{List$<$ T $>$::iterator@{List$<$ T $>$::iterator}!operator-\/-\/@{operator-\/-\/}}
 \index{operator-\/-\/@{operator-\/-\/}!List$<$ T $>$::iterator@{List$<$ T $>$::iterator}}
@@ -145,15 +114,6 @@ Definición en la línea \mbox{\hyperlink{list_8hh_source_l00246}{246}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00251\ \ \ \ \ \{}
-\DoxyCodeLine{00252\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>iteminf.next)\ \{}
-\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ -\/-\/iterator\ at\ the\ beginning\ of\ list"{}}\ <<\ \mbox{\hyperlink{classList}{endl}};}
-\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{exit}}(1);}
-\DoxyCodeLine{00255\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00256\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>prev;}
-\DoxyCodeLine{00257\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00258\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classList_1_1iterator_aa4e0c6e0ef83b07cfd035ff6720f0f07}\index{List$<$ T $>$::iterator@{List$<$ T $>$::iterator}!operator-\/-\/@{operator-\/-\/}}
 \index{operator-\/-\/@{operator-\/-\/}!List$<$ T $>$::iterator@{List$<$ T $>$::iterator}}
@@ -168,17 +128,6 @@ Definición en la línea \mbox{\hyperlink{list_8hh_source_l00261}{261}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00266\ \ \ \ \ \{}
-\DoxyCodeLine{00267\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>iteminf.next)\ \{}
-\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator-\/-\/\ at\ the\ beginning\ of\ list"{}}\ <<\ \mbox{\hyperlink{classList}{endl}};}
-\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classList}{exit}}(1);}
-\DoxyCodeLine{00270\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00271\ \ \ \ \ \ \ \mbox{\hyperlink{classList}{iterator}}\ \mbox{\hyperlink{classList}{aux}};}
-\DoxyCodeLine{00272\ \ \ \ \ \ \ \mbox{\hyperlink{classList}{aux}}\ =\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00273\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>prev;}
-\DoxyCodeLine{00274\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList}{aux}};}
-\DoxyCodeLine{00275\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classList_1_1iterator_ab35845a1e219b980303420b53a384bd9}\index{List$<$ T $>$::iterator@{List$<$ T $>$::iterator}!operator==@{operator==}}
 \index{operator==@{operator==}!List$<$ T $>$::iterator@{List$<$ T $>$::iterator}}
@@ -193,10 +142,6 @@ Definición en la línea \mbox{\hyperlink{list_8hh_source_l00289}{289}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00292\ \ \ \ \ \{}
-\DoxyCodeLine{00293\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ ==\ \mbox{\hyperlink{classList}{it}}.plist\ \mbox{\hyperlink{classList}{and}}\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \mbox{\hyperlink{classList}{it}}.pitem;}
-\DoxyCodeLine{00294\ \ \ \ \ \}}
-
 \end{DoxyCode}
 
 

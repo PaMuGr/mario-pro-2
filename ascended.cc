@@ -13,6 +13,7 @@ const int y = 0xffff00; // yellow
 const int w = 0xffffff; // white
 const int g = 0xdddd00; // gold
 
+// clang-format off
 const std::vector<std::vector<int>> Ascended::ascended_sprite_ = {
     {_, _, y, y, y, y, y, y, y, y, y, y, y, y, y, y, _, _},
     {_, y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y, _},
@@ -34,7 +35,7 @@ const std::vector<std::vector<int>> Ascended::ascended_sprite_ = {
     {_, y, _, _, _, _, _, _, _, _, _, _, _, _, _, _, y, _},
     {_, _, y, y, y, y, y, y, y, y, y, y, y, y, y, y, _, _},
 };
-
+// clang-format on
 
 void Ascended::activate(pro2::Pt mario_pos) {
     if (can_activate() && !active) {

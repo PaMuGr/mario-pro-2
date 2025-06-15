@@ -11,5 +11,5 @@ var searchData=
   ['topleft_8',['topleft',['../classpro2_1_1Window.html#ada2e1a70077ac2011bd5e2c3716dd96c',1,'pro2::Window']]],
   ['topleft_5f_9',['topleft_',['../classPlatform.html#ad4040f2665d0b9c731170701139e1fd1',1,'Platform::topleft_'],['../classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf',1,'pro2::Window::topleft_']]],
   ['topleft_5ftarget_5f_10',['topleft_target_',['../classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811',1,'pro2::Window']]],
-  ['try_5fshoot_5ffireball_11',['try_shoot_fireball',['../classGame.html#a6e999b991c363fc200283e7323ff09f1',1,'Game']]]
+  ['try_5fshoot_5ffireball_11',['try_shoot_fireball',['../classDemon.html#ae9f3b23e25bb341f8f23122822c3f23f',1,'Demon']]]
 ];

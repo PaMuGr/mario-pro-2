@@ -9,6 +9,7 @@ var searchData=
   ['demon_5fsprite_5f_6',['demon_sprite_',['../classDemon.html#a43ac122d774cd3fe56963e84c8a4bddc',1,'Demon']]],
   ['dist_5f_7',['dist_',['../classCross.html#a564997e15445514dfaa6bb23753b6f3f',1,'Cross::dist_'],['../classSandglass.html#a2f17370ff7b25cc37f9f810b33ae12ea',1,'Sandglass::dist_']]],
   ['dr_8',['dr',['../cross_8cc.html#aa33168cff1d279f6e65c45a31df2084e',1,'cross.cc']]],
-  ['duracio_5f_9',['duracio_',['../classFire.html#a844dae1a1342bdbb893f451a88038b4d',1,'Fire']]],
-  ['duration_10',['duration',['../classpro2_1_1Ascended.html#a8c9f2ab6377de6255175f684aa0239c8',1,'pro2::Ascended']]]
+  ['duracio_5f_9',['duracio_',['../classFireball.html#a7b25ceaf3afdc4ad4cd5617945816b60',1,'Fireball']]],
+  ['duracio_5ffire_10',['duracio_fire',['../classFireball.html#ac84133824828f6c34f30d6625a04c232',1,'Fireball']]],
+  ['duration_11',['duration',['../classAscended.html#a32e45a33427046549c8316825a1f6224',1,'Ascended']]]
 ];

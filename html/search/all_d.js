@@ -14,7 +14,6 @@ var searchData=
   ['letter_5fsprite_5fnormal_5f_11',['letter_sprite_normal_',['../texto_8cc.html#adc8d0e360bf9ea6f83d5383688f88593',1,'texto.cc']]],
   ['list_12',['List',['../classList.html',1,'List&lt; T &gt;'],['../classList_1_1iterator.html#a8cee552d09eaeb60a09d95309a87b498',1,'List::iterator::List()'],['../classList_1_1const__iterator.html#a8cee552d09eaeb60a09d95309a87b498',1,'List::const_iterator::List()'],['../classList.html#a5c5e27671b21b3815d4e25b953c69454',1,'List::List()'],['../classList.html#a3f8cda0e5a9b4912759e782994e57735',1,'List::List(const List &amp;l)']]],
   ['list_2ehh_13',['list.hh',['../list_8hh.html',1,'']]],
-  ['list_3c_20fire_20_3e_14',['List&lt; Fire &gt;',['../classList.html',1,'']]],
-  ['list_3c_20fireball_20_3e_15',['List&lt; Fireball &gt;',['../classList.html',1,'']]],
-  ['looking_5fleft_5f_16',['looking_left_',['../classCross.html#a482bcba62e91411483169d0c3a0a341e',1,'Cross::looking_left_'],['../classMario.html#ae0d25e2cdd2bcb16b2f97665d7482d8f',1,'Mario::looking_left_']]]
+  ['list_3c_20fireball_20_3e_14',['List&lt; Fireball &gt;',['../classList.html',1,'']]],
+  ['looking_5fleft_5f_15',['looking_left_',['../classCross.html#a482bcba62e91411483169d0c3a0a341e',1,'Cross::looking_left_'],['../classMario.html#ae0d25e2cdd2bcb16b2f97665d7482d8f',1,'Mario::looking_left_']]]
 ];

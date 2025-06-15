@@ -13,10 +13,10 @@ Un juego 2D donde juegas como Jesús, coge cruces, evita morir por caída o por 
 
 ## Game Features
 
-- **Crosses**: Cógelas para ganar el juego. Cogiendo 5, te proporciona un escudo.
+- **Cross**: Cógelas para ganar el juego. Cogiendo 5, te proporciona un escudo.
 - **Sandglass**: Temporalmente para el juego y los enemigos
 - **Demon**: Crea bolas de fuego que hacen aparecer fuegos a todo lo que tocan.
-- **Blesser**: Un escudo que es proporcionado si se clica B al haber conseguido 5 crosses.
+- **Ascended**: Un escudo que es proporcionado si se clica B al haber conseguido 5 crosses.
 
 ### Main Files
 
@@ -38,8 +38,8 @@ Un juego 2D donde juegas como Jesús, coge cruces, evita morir por caída o por 
 
 ## Notes
 
-- El Sandglass tiene 10 segundos de countdown
+- El Sandglass tiene 10 segundos de cooldown
 - Las bolas de fuego pueden ser aturadas o bloqueadas usando poderes.
 - Si consigues la mitad de la puntuación para matar el demon este se enfadara y ira más rápido.
 
-Pau Muras Grané
+Creado por Pau Muras Grané

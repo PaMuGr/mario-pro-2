@@ -104,14 +104,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00037}{37}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}(\mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}),\ }
-\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classMario_a55592c8a186b21c9688ec1e10736711f}{last\_pos\_}}(\mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}),\ }
-\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classMario_a22dbf8a740c51b63f4bb24397910e734}{jump\_key\_}}(jumpKey),}
-\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classMario_ae5b22ddb16e949a19ec7211772ce0ad7}{left\_key\_}}(leftKey),}
-\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classMario_aeed62c8513146eaa6607d0a407fc158e}{right\_key\_}}(rightKey),}
-\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{classMario_a9edbc221bc23414c8048f39f82b5a662}{go\_down\_key\_}}(godownKey)}
-\DoxyCodeLine{00043\ \ \ \ \ \{\}}
-
 \end{DoxyCode}
 
 
@@ -132,10 +124,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00048}{48}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a4d323f2aeabc325e28a93ab4688e4459}{redemtionPoints\_}}++;}
-\DoxyCodeLine{00050\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a58b73569c9d36b5443c4e0efcf5a1f95}\index{Mario@{Mario}!apply\_physics\_@{apply\_physics\_}}
 \index{apply\_physics\_@{apply\_physics\_}!Mario@{Mario}}
@@ -149,27 +137,6 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00048}{48}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\_}})\ \{}
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.y\ =\ 0;}
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a1764d97c394e6e13e2754580b9c71452}{accel\_}}.y\ =\ 0;}
-\DoxyCodeLine{00052\ \ \ \ \ \}}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ Always\ falling\ to\ check\ if\ we\ aren't\ grounded}}
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ If\ we\ are,\ we\ will\ return\ to\ the\ same\ spot}}
-\DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ gravity\ =\ 1;\ \ \textcolor{comment}{//\ gravity\ =\ 1\ pixel\ /\ frame\_time\string^2}}
-\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.y\ +=\ gravity;}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}{accel\_time\_}}\ >\ 0)\ \{}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.y\ +=\ \mbox{\hyperlink{classMario_a1764d97c394e6e13e2754580b9c71452}{accel\_}}.y;}
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}{accel\_time\_}}-\/-\/;}
-\DoxyCodeLine{00063\ \ \ \ \ \}}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.x\ +=\ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.x;}
-\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.y\ +=\ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.y;}
-\DoxyCodeLine{00067\ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a40a06fa07b9b2956edde6bedddc3e8bb}\index{Mario@{Mario}!check\_points@{check\_points}}
 \index{check\_points@{check\_points}!Mario@{Mario}}
@@ -190,10 +157,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00073}{73}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMario_a4d323f2aeabc325e28a93ab4688e4459}{redemtionPoints\_}};}
-\DoxyCodeLine{00075\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a454e0a6b462c41fc8d2394c68167c933}\index{Mario@{Mario}!collect\_sandwatch@{collect\_sandwatch}}
 \index{collect\_sandwatch@{collect\_sandwatch}!Mario@{Mario}}
@@ -211,10 +174,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00055}{55}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a3aa42fbacf28f3b2c7eda7b40df68af4}{sandwatchCollected\_}}++;}
-\DoxyCodeLine{00057\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_acc0a64d028654c6bddca364379147bb4}\index{Mario@{Mario}!get\_rect@{get\_rect}}
 \index{get\_rect@{get\_rect}!Mario@{Mario}}
@@ -232,15 +191,6 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00077}{77}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{return}\ pro2::Rect(\{}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.x\ -\/\ 6,\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.y\ -\/\ 15,\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.x\ +\ 6,\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.y\ +\ 1\ \ \ \ }
-\DoxyCodeLine{00083\ \ \ \ \ \});}
-\DoxyCodeLine{00084\ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_adb7c1e4fe5678628216c3110a8eb10c0}\index{Mario@{Mario}!is\_grounded@{is\_grounded}}
 \index{is\_grounded@{is\_grounded}!Mario@{Mario}}
@@ -254,10 +204,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00091}{91}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\_}};}
-\DoxyCodeLine{00093\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_ac3b75d0650fb2a149d33fd9f1420da99}\index{Mario@{Mario}!jump@{jump}}
 \index{jump@{jump}!Mario@{Mario}}
@@ -271,14 +217,6 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00069}{69}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\_}})\ \{}
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a1764d97c394e6e13e2754580b9c71452}{accel\_}}.y\ =\ -\/6;}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\_}}\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}{accel\_time\_}}\ =\ 2;}
-\DoxyCodeLine{00074\ \ \ \ \ \}}
-\DoxyCodeLine{00075\ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_aee49024d8542a3f425d53b7ca86aefc8}\index{Mario@{Mario}!paint@{paint}}
 \index{paint@{paint}!Mario@{Mario}}
@@ -292,11 +230,6 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00043}{43}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{const}\ Pt\ top\_left\ =\ \{\mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.x\ -\/\ 6,\ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.y\ -\/\ 15\};}
-\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{namespacepro2_a80f038548a7ea3d520759a04437e096a}{paint\_sprite}}(window,\ top\_left,\ \mbox{\hyperlink{classMario_a98619bbc1f150dae63dcd5a398bc05e8}{mario\_sprite\_normal\_}},\ \mbox{\hyperlink{classMario_ae0d25e2cdd2bcb16b2f97665d7482d8f}{looking\_left\_}});}
-\DoxyCodeLine{00046\ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}\index{Mario@{Mario}!pos@{pos}}
 \index{pos@{pos}!Mario@{Mario}}
@@ -310,10 +243,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00079}{79}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}};}
-\DoxyCodeLine{00081\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a17c52358708350ffe1ca606cf0734ce3}\index{Mario@{Mario}!sandwatches\_collected@{sandwatches\_collected}}
 \index{sandwatches\_collected@{sandwatches\_collected}!Mario@{Mario}}
@@ -334,10 +263,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00064}{64}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMario_a3aa42fbacf28f3b2c7eda7b40df68af4}{sandwatchCollected\_}};}
-\DoxyCodeLine{00066\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a970f238b3538fa175b0f73aa29aa2c48}\index{Mario@{Mario}!set\_grounded@{set\_grounded}}
 \index{set\_grounded@{set\_grounded}!Mario@{Mario}}
@@ -351,13 +276,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00095}{95}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\_}}\ =\ grounded;}
-\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\_}})\ \{}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.y\ =\ 0;}
-\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00100\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a52e29f7688225e81da18bad4ed571a0e}\index{Mario@{Mario}!set\_x@{set\_x}}
 \index{set\_x@{set\_x}!Mario@{Mario}}
@@ -371,10 +289,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00087}{87}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.x\ =\ x;}
-\DoxyCodeLine{00089\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a807ce8785091bd609e156292409b376f}\index{Mario@{Mario}!set\_y@{set\_y}}
 \index{set\_y@{set\_y}!Mario@{Mario}}
@@ -388,10 +302,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00083}{83}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}.y\ =\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}};}
-\DoxyCodeLine{00085\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a4b8785eae84e2d5f0f45bf5290054f92}\index{Mario@{Mario}!toggle\_grounded@{toggle\_grounded}}
 \index{toggle\_grounded@{toggle\_grounded}!Mario@{Mario}}
@@ -405,10 +315,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00102}{102}} del arc
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a970f238b3538fa175b0f73aa29aa2c48}{set\_grounded}}(!\mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\_}});}
-\DoxyCodeLine{00104\ \ \ \ \ \}}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a785b80003703d5213894a4999035484c}\index{Mario@{Mario}!update@{update}}
 \index{update@{update}!Mario@{Mario}}
@@ -422,38 +328,6 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00086}{86}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{classMario_a55592c8a186b21c9688ec1e10736711f}{last\_pos\_}}\ =\ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}};}
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{if}\ (window.\mbox{\hyperlink{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b}{is\_key\_down}}(\mbox{\hyperlink{classMario_a22dbf8a740c51b63f4bb24397910e734}{jump\_key\_}}))\ \{}
-\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_ac3b75d0650fb2a149d33fd9f1420da99}{jump}}();}
-\DoxyCodeLine{00090\ \ \ \ \ \}}
-\DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ \ \ \ \ \textcolor{comment}{//\ Velocitat\ horitzontal}}
-\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.x\ =\ 0;\ }
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{if}\ (window.\mbox{\hyperlink{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b}{is\_key\_down}}(\mbox{\hyperlink{classMario_ae5b22ddb16e949a19ec7211772ce0ad7}{left\_key\_}}))\ \{}
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.x\ =\ -\/\mbox{\hyperlink{classMario_aa3c41608bed735336005aac06838f605}{SPEED}};}
-\DoxyCodeLine{00096\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (window.\mbox{\hyperlink{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b}{is\_key\_down}}(\mbox{\hyperlink{classMario_aeed62c8513146eaa6607d0a407fc158e}{right\_key\_}}))\ \{}
-\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.x\ =\ \mbox{\hyperlink{classMario_aa3c41608bed735336005aac06838f605}{SPEED}};}
-\DoxyCodeLine{00098\ \ \ \ \ \}\ }
-\DoxyCodeLine{00099\ \ \ \ \ }
-\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.x\ !=\ 0)\ \{}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_ae0d25e2cdd2bcb16b2f97665d7482d8f}{looking\_left\_}}\ =\ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}.x\ <\ 0;}
-\DoxyCodeLine{00102\ \ \ \ \ \}}
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{classMario_a58b73569c9d36b5443c4e0efcf5a1f95}{apply\_physics\_}}();}
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{classMario_a970f238b3538fa175b0f73aa29aa2c48}{set\_grounded}}(\textcolor{keyword}{false});}
-\DoxyCodeLine{00107\ }
-\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordflow}{if}\ (!window.\mbox{\hyperlink{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b}{is\_key\_down}}(\mbox{\hyperlink{classMario_a9edbc221bc23414c8048f39f82b5a662}{go\_down\_key\_}}))\ \{}
-\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ Platform\&\ platform\ :\ platforms)\ \{}
-\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (platform.has\_crossed\_floor\_downwards(\mbox{\hyperlink{classMario_a55592c8a186b21c9688ec1e10736711f}{last\_pos\_}},\ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}))\ \{}
-\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a970f238b3538fa175b0f73aa29aa2c48}{set\_grounded}}(\textcolor{keyword}{true});}
-\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMario_a807ce8785091bd609e156292409b376f}{set\_y}}(platform.top());}
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00115\ \ \ \ \ \}}
-\DoxyCodeLine{00116\ \}}
-
 \end{DoxyCode}
 
 
@@ -470,8 +344,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00021}{21}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00021\ \{0,\ 0\};}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}\index{Mario@{Mario}!accel\_time\_@{accel\_time\_}}
 \index{accel\_time\_@{accel\_time\_}!Mario@{Mario}}
@@ -561,25 +433,6 @@ const vector$<$ vector$<$ int $>$ $>$ Mario\+::mario\+\_\+sprite\+\_\+normal\+\_
 
 {\bfseries Valor inicial\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{=\ \{}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
-\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}}\},}
-\DoxyCodeLine{\}}
-
 \end{DoxyCode}
 
 
@@ -587,12 +440,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00023}{23}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ :}
-\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{classMario_a99ffbd5c3dd7640ad6059ae8c458e578}{Mario}}(pro2::Pt\ \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}},\ \textcolor{keywordtype}{int}\ jumpKey,\ \textcolor{keywordtype}{int}\ leftKey,\ \textcolor{keywordtype}{int}\ rightKey,\ \textcolor{keywordtype}{int}\ godownKey)\ :\ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}}(\mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}),\ }
-\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classMario_a55592c8a186b21c9688ec1e10736711f}{last\_pos\_}}(\mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}),\ }
-\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classMario_a22dbf8a740c51b63f4bb24397910e734}{jump\_key\_}}(jumpKey),}
-\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classMario_ae5b22ddb16e949a19ec7211772ce0ad7}{left\_key\_}}(leftKey),}
-
 \end{DoxyCode}
 \Hypertarget{classMario_a0b42594e92c17c8b0352ac4734a44620}\index{Mario@{Mario}!mario\_width@{mario\_width}}
 \index{mario\_width@{mario\_width}!Mario@{Mario}}
@@ -666,8 +513,6 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00020}{20}} del arch
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00020\ \{0,\ 0\};}
-
 \end{DoxyCode}
 
 

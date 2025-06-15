@@ -12,7 +12,8 @@ var searchData=
   ['set_5fy_9',['set_y',['../classCross.html#ab09cff983b7474df075e2c7000e88af7',1,'Cross::set_y()'],['../classMario.html#a807ce8785091bd609e156292409b376f',1,'Mario::set_y()'],['../classSandglass.html#a46ba3d11c1711d6fb5f598775e57c772',1,'Sandglass::set_y()']]],
   ['setpts_10',['setPts',['../classFinder.html#a505460974de6b20a36a98b4062d0ea12',1,'Finder']]],
   ['should_5fshoot_11',['should_shoot',['../classDemon.html#a3ae903c65dbc8a572aaccd82db30f644',1,'Demon']]],
-  ['size_12',['size',['../classpro2_1_1Ascended.html#a444ada9544b5fbe310facc40de41829f',1,'pro2::Ascended::size()'],['../classList.html#aec8852ab225094e14ad424e8d71a4dac',1,'List::size()'],['../classStack.html#aeecf178c7865fa4957798a0f5d7e1686',1,'Stack::size()']]],
+  ['size_12',['size',['../classAscended.html#a7ffca6010f02954247623729f49d6628',1,'Ascended::size()'],['../classList.html#aec8852ab225094e14ad424e8d71a4dac',1,'List::size()'],['../classStack.html#aeecf178c7865fa4957798a0f5d7e1686',1,'Stack::size()']]],
   ['sleep_13',['sleep',['../classpro2_1_1Window.html#abbe66e79c657fd8939c3df975a825214',1,'pro2::Window']]],
-  ['stack_14',['Stack',['../classStack.html#aefee698059467258bbd79045aca62a63',1,'Stack::Stack()'],['../classStack.html#afa5627f1e330118c767736958d7e373a',1,'Stack::Stack(const Stack&lt; T &gt; &amp;s)']]]
+  ['stack_14',['Stack',['../classStack.html#aefee698059467258bbd79045aca62a63',1,'Stack::Stack()'],['../classStack.html#afa5627f1e330118c767736958d7e373a',1,'Stack::Stack(const Stack&lt; T &gt; &amp;s)']]],
+  ['start_5ffire_15',['start_fire',['../classFireball.html#ae047b73f626d2f2390a8732105cbfd97',1,'Fireball']]]
 ];
