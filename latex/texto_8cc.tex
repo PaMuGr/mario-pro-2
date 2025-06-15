@@ -10,7 +10,7 @@ Gráfico de dependencias incluidas en texto.\+cc\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{texto_8cc__incl}
+\includegraphics[width=220pt]{texto_8cc__incl}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Funciones}
@@ -20,9 +20,9 @@ void \mbox{\hyperlink{texto_8cc_aa6b9099420c9a52fab9ffb702cb1d368}{paint\+\_\+di
 \begin{DoxyCompactList}\small\item\em Pinta un sol digit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{texto_8cc_a1caf77231a2f801617052bf107cefc27}{paint\+\_\+letter}} (\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pos\+\_\+, char letter)
 \begin{DoxyCompactList}\small\item\em Pinta una sola lletra. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{texto_8cc_afdeb8898d4e28a9b36786e3145542284}{paint\+\_\+number}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, int number, int color)
+void \mbox{\hyperlink{texto_8cc_ab30f60478b347bf1135dbbcc53482214}{paint\+\_\+number}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, int number)
 \begin{DoxyCompactList}\small\item\em Pinta un nombre. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{texto_8cc_a8cf8e490f7968f8ed0b8877e7e6400c3}{paint\+\_\+text}} (\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pos, const string \&text, int color)
+void \mbox{\hyperlink{texto_8cc_a028a25b715954f1b84dff17b3ee7304f}{paint\+\_\+text}} (\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} pos, const string \&text)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -114,11 +114,11 @@ Definición en la línea \mbox{\hyperlink{texto_8cc_source_l00369}{369}} del arc
 \DoxyCodeLine{00373\ \}}
 
 \end{DoxyCode}
-\Hypertarget{texto_8cc_afdeb8898d4e28a9b36786e3145542284}\index{texto.cc@{texto.cc}!paint\_number@{paint\_number}}
+\Hypertarget{texto_8cc_ab30f60478b347bf1135dbbcc53482214}\index{texto.cc@{texto.cc}!paint\_number@{paint\_number}}
 \index{paint\_number@{paint\_number}!texto.cc@{texto.cc}}
 \doxysubsubsection{\texorpdfstring{paint\_number()}{paint\_number()}}
-{\footnotesize\ttfamily \label{texto_8cc_afdeb8898d4e28a9b36786e3145542284} 
-void paint\+\_\+number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{, }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos}{, }\item[{int}]{number}{, }\item[{int}]{color}{ = {\ttfamily 0x000000}}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{texto_8cc_ab30f60478b347bf1135dbbcc53482214} 
+void paint\+\_\+number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window}{, }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos}{, }\item[{int}]{number}{}\end{DoxyParamCaption})}
 
 
 
@@ -141,48 +141,45 @@ Definición en la línea \mbox{\hyperlink{texto_8cc_source_l00375}{375}} del arc
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00376\ }
 \DoxyCodeLine{00377\ \ \ \ \ vector<int>\ digits;}
-\DoxyCodeLine{00378\ \ \ \ \ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}}\ =\ color;}
-\DoxyCodeLine{00379\ \ \ \ \ \textcolor{keywordflow}{if}\ (number\ ==\ 0)\ digits.push\_back(0);}
-\DoxyCodeLine{00380\ }
-\DoxyCodeLine{00381\ \ \ \ \ \textcolor{keywordflow}{while}(number\ >\ 0)\{}
-\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ digits.push\_back(number\ \%\ 10);}
-\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ number\ /=\ 10;}
-\DoxyCodeLine{00384\ \ \ \ \ \}}
-\DoxyCodeLine{00385\ }
-\DoxyCodeLine{00386\ \ \ \ \ \textcolor{comment}{//distancia\ del\ width\ del\ sprite\ +\ 2,\ un\ offset}}
-\DoxyCodeLine{00387\ \ \ \ \ \textcolor{keywordtype}{int}\ offset\ =\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{texto_8cc_ac071359538010b98b3af55d4094de40f}{sprite\_width}}\ +\ 2);}
-\DoxyCodeLine{00388\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ digits.size();\ i++)\{}
-\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{texto_8cc_aa6b9099420c9a52fab9ffb702cb1d368}{paint\_digit}}(window,\ \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ +\ i\ *\ offset,\ pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\},\ digits[digits.size()\ -\/\ 1\ -\/\ i]);}
-\DoxyCodeLine{00390\ \ \ \ \ \}}
-\DoxyCodeLine{00391\ \}}
+\DoxyCodeLine{00378\ \ \ \ \ \textcolor{keywordflow}{if}\ (number\ ==\ 0)\ digits.push\_back(0);}
+\DoxyCodeLine{00379\ }
+\DoxyCodeLine{00380\ \ \ \ \ \textcolor{keywordflow}{while}(number\ >\ 0)\{}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ digits.push\_back(number\ \%\ 10);}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ number\ /=\ 10;}
+\DoxyCodeLine{00383\ \ \ \ \ \}}
+\DoxyCodeLine{00384\ }
+\DoxyCodeLine{00385\ \ \ \ \ \textcolor{comment}{//distancia\ del\ width\ del\ sprite\ +\ 2,\ un\ offset}}
+\DoxyCodeLine{00386\ \ \ \ \ \textcolor{keywordtype}{int}\ offset\ =\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{texto_8cc_ac071359538010b98b3af55d4094de40f}{sprite\_width}}\ +\ 2);}
+\DoxyCodeLine{00387\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ digits.size();\ i++)\{}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{texto_8cc_aa6b9099420c9a52fab9ffb702cb1d368}{paint\_digit}}(window,\ \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ +\ i\ *\ offset,\ pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\},\ digits[digits.size()\ -\/\ 1\ -\/\ i]);}
+\DoxyCodeLine{00389\ \ \ \ \ \}}
+\DoxyCodeLine{00390\ \}}
 
 \end{DoxyCode}
-\Hypertarget{texto_8cc_a8cf8e490f7968f8ed0b8877e7e6400c3}\index{texto.cc@{texto.cc}!paint\_text@{paint\_text}}
+\Hypertarget{texto_8cc_a028a25b715954f1b84dff17b3ee7304f}\index{texto.cc@{texto.cc}!paint\_text@{paint\_text}}
 \index{paint\_text@{paint\_text}!texto.cc@{texto.cc}}
 \doxysubsubsection{\texorpdfstring{paint\_text()}{paint\_text()}}
-{\footnotesize\ttfamily \label{texto_8cc_a8cf8e490f7968f8ed0b8877e7e6400c3} 
-void paint\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&}]{window}{, }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{Pt}}}]{pos}{, }\item[{const string \&}]{text}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{texto_8cc_a028a25b715954f1b84dff17b3ee7304f} 
+void paint\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{Window}} \&}]{window}{, }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{Pt}}}]{pos}{, }\item[{const string \&}]{text}{}\end{DoxyParamCaption})}
 
 
 
-Definición en la línea \mbox{\hyperlink{texto_8cc_source_l00393}{393}} del archivo \mbox{\hyperlink{texto_8cc_source}{texto.\+cc}}.
+Definición en la línea \mbox{\hyperlink{texto_8cc_source_l00392}{392}} del archivo \mbox{\hyperlink{texto_8cc_source}{texto.\+cc}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00394\ }
-\DoxyCodeLine{00395\ \ \ \ \ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}}\ =\ color;}
-\DoxyCodeLine{00396\ }
-\DoxyCodeLine{00397\ \ \ \ \ \textcolor{keywordtype}{int}\ offset\ =\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{texto_8cc_ac071359538010b98b3af55d4094de40f}{sprite\_width}}\ +\ 2);\ \ }
-\DoxyCodeLine{00398\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ text.size();\ ++i)\ \{}
-\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(text[i]\ ==\ \textcolor{charliteral}{'\ '})\ \mbox{\hyperlink{texto_8cc_a1caf77231a2f801617052bf107cefc27}{paint\_letter}}(window,\ \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ +\ i\ *\ offset,\ pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\},\ \textcolor{charliteral}{'['});}
-\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(text[i]\ ==\ \textcolor{charliteral}{':'})\ \mbox{\hyperlink{texto_8cc_a1caf77231a2f801617052bf107cefc27}{paint\_letter}}(window,\ \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ +\ i\ *\ offset,\ pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\},\ char(92));}
-\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \mbox{\hyperlink{texto_8cc_a1caf77231a2f801617052bf107cefc27}{paint\_letter}}(window,\ \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ +\ i\ *\ offset,\ pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\},\ text[i]);}
-\DoxyCodeLine{00402\ \ \ \ \ \}}
-\DoxyCodeLine{00403\ \}}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00393\ }
+\DoxyCodeLine{00394\ \ \ \ \ \textcolor{keywordtype}{int}\ offset\ =\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{texto_8cc_ac071359538010b98b3af55d4094de40f}{sprite\_width}}\ +\ 2);\ \ }
+\DoxyCodeLine{00395\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ text.size();\ ++i)\ \{}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(text[i]\ ==\ \textcolor{charliteral}{'\ '})\ \mbox{\hyperlink{texto_8cc_a1caf77231a2f801617052bf107cefc27}{paint\_letter}}(window,\ \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ +\ i\ *\ offset,\ pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\},\ \textcolor{charliteral}{'['});}
+\DoxyCodeLine{00397\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(text[i]\ ==\ \textcolor{charliteral}{':'})\ \mbox{\hyperlink{texto_8cc_a1caf77231a2f801617052bf107cefc27}{paint\_letter}}(window,\ \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ +\ i\ *\ offset,\ pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\},\ char(92));}
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \mbox{\hyperlink{texto_8cc_a1caf77231a2f801617052bf107cefc27}{paint\_letter}}(window,\ \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ +\ i\ *\ offset,\ pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\},\ text[i]);}
+\DoxyCodeLine{00399\ \ \ \ \ \}}
+\DoxyCodeLine{00400\ \}}
 
 \end{DoxyCode}
 

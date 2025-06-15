@@ -2,11 +2,11 @@
  * @brief Especificació de Funcions del Game
  */
 
+
 #ifndef GAME_HH
 #define GAME_HH
 
 /*INCLUDES*/
-#include <vector>
 #include "mario.hh"
 #include "cross.hh"
 #include "platform.hh"
@@ -19,6 +19,10 @@
 #include "list.hh"
 #include "ascended.hh"
 
+#ifndef NO_DIAGRAM
+#include <vector>
+#endif
+
 /*DEFINICIÓ DE LA CLASSE*/
 class Game {
     Mario                 mario_;
@@ -30,21 +34,23 @@ class Game {
     Demon demon_;
     pro2::Ascended ascended_;
     
-    //Llistes usant l'implementació amb punters
-    List<Fireball> fireballs_;
-    List<Fire> fires_;
-
     //FINDER de les plataformes i crosses
     Finder<Platform> finder_platforms_;
     Finder<Cross> finder_crosses_;
 
     bool paused_;
-    bool finished_;
-    bool reset_;
-    bool won_;
-    bool speedrun_won_;
-    bool start_game_;
+
+    bool finished_; //state 4
+    bool reset_; //state 5
+    bool won_; //state 2
+    bool speedrun_won_; //state 3
+    bool start_game_; //state 0
+
     bool has_time_limit_ = false;
+    bool is_dodging_mode_ = false;
+
+    int game_state_ = 0;
+
     int cross_height_y_ = 0;
     int last_blessed_points_ = 0;
     int crosses_to_get_ = 10; //Crosses al mode facil
@@ -124,6 +130,8 @@ class Game {
 
     /**
      * @brief Pinten els diferents objectes a la finestra
+     * 
+     * @param window Finestra on es pitaran els diferents objectes i pantalles del joc
      */
     void paint_platforms(pro2::Window& window);
     void paint_crosses(pro2::Window& window);
@@ -157,13 +165,7 @@ class Game {
     void handle_sandglass_interaction(const pro2::Rect& marioRect);
     void update_time_stoped_mode(pro2::Window& window, const pro2::Rect& marioRect);
     void update_normal_mode(pro2::Window& window, const pro2::Rect& marioRect);
-    void try_shoot_fireball();
-    void update_fireballs(pro2::Window& window);
-    bool check_fireball_hits_platform(Fireball& fireball);
     void update_crosses(pro2::Window& window, const pro2::Rect& marioRect);
-    void update_fires();
-    void update_fireball_collisions(const pro2::Rect& marioRect);
-    void update_fire_collisions(const pro2::Rect& marioRect);
     void update_demon_state(pro2::Window& window);
     void check_blessing_points();
     

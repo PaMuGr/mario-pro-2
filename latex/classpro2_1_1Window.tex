@@ -93,7 +93,7 @@ static constexpr int \mbox{\hyperlink{classpro2_1_1Window_a3fc2ec7b7dcd41b28be12
 \doxysubsection{Descripción detallada}
 La clase {\ttfamily \doxylink{classpro2_1_1Window}{Window}} permite abrir ventanas en modo gráfico en Linux, Mac\+OS y Windows. Tiene unos pocos métodos que permiten hacer programas simples que muestran gráficos, como pequeños juegos o editores. 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00076}{76}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00077}{77}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 
@@ -129,6 +129,16 @@ Definición en la línea \mbox{\hyperlink{window_8cc_source_l00014}{14}} del arc
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00015\ \ \ \ \ :\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}\{.title\ =\ title.c\_str(),\ .width\ =\ \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}\ *\ zoom,\ .height\ =\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}\ *\ zoom\},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}}(zoom),}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_afd582a445ca5857ead1627e5b2b07df9}{pixels\_size\_}}(\mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}\ *\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}\ *\ zoom\ *\ zoom)\ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a66caf9db1012c67bac35e8170ea84b67}{pixels\_}}\ =\ \textcolor{keyword}{new}\ uint32\_t[\mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}\ *\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}\ *\ zoom\ *\ zoom];}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.buf\ =\ \mbox{\hyperlink{classpro2_1_1Window_a66caf9db1012c67bac35e8170ea84b67}{pixels\_}};}
+\DoxyCodeLine{00021\ \ \ \ \ fenster\_open(\&\mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}});}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a1f849469330d4d2e208862cdf91184e0}{last\_time\_}}\ =\ fenster\_time();}
+\DoxyCodeLine{00023\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_aa0a63c4b3d431d8e5e71633b107bbe69}\index{pro2::Window@{pro2::Window}!````~Window@{\texorpdfstring{$\sim$}{\string~}Window}}
 \index{````~Window@{\texorpdfstring{$\sim$}{\string~}Window}!pro2::Window@{pro2::Window}}
@@ -142,10 +152,15 @@ Destruye una ventana, es decir, cierra la ventana abierta en el constructor.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00165}{165}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00166}{166}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ fenster\_close(\&\mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}});}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ \mbox{\hyperlink{classpro2_1_1Window_a66caf9db1012c67bac35e8170ea84b67}{pixels\_}};}
+\DoxyCodeLine{00169\ \ \ \ \ \}}
+
 \end{DoxyCode}
 
 
@@ -165,10 +180,16 @@ Un {\ttfamily \doxylink{structpro2_1_1Pt}{Pt}} con las coordenadas del centro de
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00424}{424}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00425}{425}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00426\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.width\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00427\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.height\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00428\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ +\ \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}\ /\ 2,\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ +\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}\ /\ 2\};}
+\DoxyCodeLine{00429\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_ac36cada6562bd2bf7807fe8b5b76efee}\index{pro2::Window@{pro2::Window}!camera\_moving\_@{camera\_moving\_}}
 \index{camera\_moving\_@{camera\_moving\_}!pro2::Window@{pro2::Window}}
@@ -182,10 +203,14 @@ Determina si la cámara está en movimiento (su posición final es distinta de l
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00135}{135}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00136}{136}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ !=\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.x\ ||\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ !=\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.y;}
+\DoxyCodeLine{00138\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}\index{pro2::Window@{pro2::Window}!camera\_rect@{camera\_rect}}
 \index{camera\_rect@{camera\_rect}!pro2::Window@{pro2::Window}}
@@ -199,10 +224,20 @@ Rectorna el rectangle de la camera.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00433}{433}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00434}{434}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00434\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.width\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00436\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.height\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00437\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ left\ =\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x;}
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ top\ =\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y;}
+\DoxyCodeLine{00439\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ right\ =\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ +\ \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}};}
+\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ bottom\ =\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ +\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}};}
+\DoxyCodeLine{00441\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\ left,\ top,\ right,\ bottom\ \};}
+\DoxyCodeLine{00442\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_adb1c39426484aa6776b0cd7d1253932f}\index{pro2::Window@{pro2::Window}!clear@{clear}}
 \index{clear@{clear}!pro2::Window@{pro2::Window}}
@@ -227,6 +262,12 @@ Definición en la línea \mbox{\hyperlink{window_8cc_source_l00057}{57}} del arc
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classpro2_1_1Window_afd582a445ca5857ead1627e5b2b07df9}{pixels\_size\_}};\ i++)\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a66caf9db1012c67bac35e8170ea84b67}{pixels\_}}[i]\ =\ color;}
+\DoxyCodeLine{00060\ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}\index{pro2::Window@{pro2::Window}!frame\_count@{frame\_count}}
 \index{frame\_count@{frame\_count}!pro2::Window@{pro2::Window}}
@@ -247,10 +288,14 @@ Un entero que corresponde al contador de fotogramas mostrados desde que la venta
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00247}{247}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00248}{248}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classpro2_1_1Window_ac919f2ff4f15e2b3e2694101f7da587e}{frame\_count\_}};}
+\DoxyCodeLine{00250\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a964b632d53a61b7602dfb909e9b7457f}\index{pro2::Window@{pro2::Window}!get\_pixel@{get\_pixel}}
 \index{get\_pixel@{get\_pixel}!pro2::Window@{pro2::Window}}
@@ -272,10 +317,14 @@ El color del pixel en las coordenadas indicadas.
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00368}{368}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00369}{369}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00369\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00370\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ fenster\_pixel(\&\mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}},\ xy.x\ *\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}},\ xy.y\ *\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}});}
+\DoxyCodeLine{00371\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}\index{pro2::Window@{pro2::Window}!height@{height}}
 \index{height@{height}!pro2::Window@{pro2::Window}}
@@ -289,10 +338,14 @@ Devuelve el alto de la ventana.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00180}{180}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00181}{181}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.height\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00183\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a475d4644d6f1f082a15bf6b1eaf2631b}\index{pro2::Window@{pro2::Window}!is\_key\_down@{is\_key\_down}}
 \index{is\_key\_down@{is\_key\_down}!pro2::Window@{pro2::Window}}
@@ -308,6 +361,10 @@ El método {\ttfamily next\+\_\+frame} recoge todas los eventos de teclado y rat
 
 Ejemplo\+: 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (window.is\_key\_down(\textcolor{charliteral}{'S'}))\ \{\ ...\ \}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (window.is\_key\_down(\textcolor{charliteral}{'1'}))\ \{\ ...\ \}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (window.is\_key\_down(Key::Escape))\ \{\ ...\ \}}
+
 \end{DoxyCode}
 
 
@@ -321,10 +378,14 @@ Ejemplo\+:
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00274}{274}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00275}{275}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ code\ >=\ 0\ \&\&\ code\ <\ 128\ \&\&\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.keys[code];}
+\DoxyCodeLine{00277\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a261158f414bb77270be1dc7339418e5e}\index{pro2::Window@{pro2::Window}!is\_modkey\_down@{is\_modkey\_down}}
 \index{is\_modkey\_down@{is\_modkey\_down}!pro2::Window@{pro2::Window}}
@@ -348,10 +409,14 @@ Método análogo a {\ttfamily is\+\_\+key\+\_\+down} pero para las teclas de con
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00313}{313}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00314}{314}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.mod\ \&\ uint8\_t(key);}
+\DoxyCodeLine{00316\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a2f3f28c0ff1122e8171534001a1892a3}\index{pro2::Window@{pro2::Window}!is\_mouse\_down@{is\_mouse\_down}}
 \index{is\_mouse\_down@{is\_mouse\_down}!pro2::Window@{pro2::Window}}
@@ -370,10 +435,14 @@ Este método se comporta como {\ttfamily is\+\_\+key\+\_\+down}, consulta la doc
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00325}{325}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00326}{326}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ bool(\mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.mouse);}
+\DoxyCodeLine{00328\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a1362ea74501506424e5b8c4177d19aa1}\index{pro2::Window@{pro2::Window}!mouse\_pos@{mouse\_pos}}
 \index{mouse\_pos@{mouse\_pos}!pro2::Window@{pro2::Window}}
@@ -394,6 +463,26 @@ Definición en la línea \mbox{\hyperlink{window_8cc_source_l00063}{63}} del arc
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.width\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.height\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.x\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.y\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordflow}{if}\ (x\ >=\ \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}})\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ x\ =\ \mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}\ -\/\ 1;}
+\DoxyCodeLine{00071\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (x\ <\ 0)\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ x\ =\ 0;}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ >=\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}})\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}\ -\/\ 1;}
+\DoxyCodeLine{00076\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ <\ 0)\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ =\ 0;}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{return}\ Pt\{x\ +\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x,\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ +\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\};}
+\DoxyCodeLine{00081\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_afbc70ada8de42a0db90e11e9f3803a1e}\index{pro2::Window@{pro2::Window}!move\_camera@{move\_camera}}
 \index{move\_camera@{move\_camera}!pro2::Window@{pro2::Window}}
@@ -414,10 +503,17 @@ La cámara no se mueve instantáneamente, sino que se desplaza a la nueva posici
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00412}{412}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00413}{413}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00414\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classpro2_1_1Window_ac36cada6562bd2bf7807fe8b5b76efee}{camera\_moving\_}}())\ \{}
+\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.x\ =\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ +\ desplazamiento.x;}
+\DoxyCodeLine{00416\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.y\ =\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ +\ desplazamiento.y;}
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00418\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a3a2e9797e7da3874fd62727531e711d6}\index{pro2::Window@{pro2::Window}!next\_frame@{next\_frame}}
 \index{next\_frame@{next\_frame}!pro2::Window@{pro2::Window}}
@@ -435,6 +531,10 @@ En todo programa gráfico es necesario\+: 1) pintar en una superfície, típicam
 
 El uso típico es el siguiente\+: 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{while}\ (window.next\_frame())\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ usar\ los\ métodos\ de\ detección\ de\ teclas\ o\ ratón,\ y\ set\_pixel\ para\ pintar...}}
+\DoxyCodeLine{\}}
+
 \end{DoxyCode}
  Es decir, hasta que no se cierre la ventana llamamos métodos de la ventana para hacer operaciones que resulten en el pintado de la ventana de cierta manera y {\ttfamily next\+\_\+frame} se hace cargo del resto.
 
@@ -449,6 +549,24 @@ Definición en la línea \mbox{\hyperlink{window_8cc_source_l00039}{39}} del arc
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_ab7e10a36f347292e5fb9a0bffd0e3b49}{update\_camera\_}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ wait\ =\ int(1000.0\ /\ \mbox{\hyperlink{classpro2_1_1Window_a660d498936402b0395f151836f27ec4b}{fps\_}})\ -\/\ (fenster\_time()\ -\/\ \mbox{\hyperlink{classpro2_1_1Window_a1f849469330d4d2e208862cdf91184e0}{last\_time\_}});}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{if}\ (wait\ >\ 0)\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ fenster\_sleep(wait);}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a1f849469330d4d2e208862cdf91184e0}{last\_time\_}}\ =\ fenster\_time();}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_ac919f2ff4f15e2b3e2694101f7da587e}{frame\_count\_}}++;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ Copy\ the\ keys\ array}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ 256;\ i++)\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a75da6563d9789fc8c8fde8d20891ce40}{last\_keys\_}}[i]\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.keys[i];}
+\DoxyCodeLine{00051\ \ \ \ \ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a435df41b0b5042199d4a73f08ce0fcbe}{last\_mouse\_}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.mouse;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{return}\ fenster\_loop(\&\mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}})\ ==\ 0;}
+\DoxyCodeLine{00055\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a1393bc8d5c74455c1b25e3b38db7af92}\index{pro2::Window@{pro2::Window}!set\_camera\_topleft@{set\_camera\_topleft}}
 \index{set\_camera\_topleft@{set\_camera\_topleft}!pro2::Window@{pro2::Window}}
@@ -469,10 +587,15 @@ Este método mueve la cámara instantáneamente a la nueva posición.\+Alt
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00450}{450}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00451}{451}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c}{topleft}};}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}\ =\ \mbox{\hyperlink{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c}{topleft}};}
+\DoxyCodeLine{00454\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_aaa39faf0a0dfa480661c314341638548}\index{pro2::Window@{pro2::Window}!set\_fps@{set\_fps}}
 \index{set\_fps@{set\_fps}!pro2::Window@{pro2::Window}}
@@ -496,10 +619,15 @@ En función de la velocidad de refresco de la pantalla que queramos, el tiempo a
 \end{DoxyPrecond}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00398}{398}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00399}{399}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ assert(fps\ >\ 0\ \&\&\ fps\ <\ 240);}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a660d498936402b0395f151836f27ec4b}{fps\_}}\ =\ fps;}
+\DoxyCodeLine{00402\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_af656aaa062615c33e183199ba2387cac}\index{pro2::Window@{pro2::Window}!set\_pixel@{set\_pixel}}
 \index{set\_pixel@{set\_pixel}!pro2::Window@{pro2::Window}}
@@ -526,6 +654,19 @@ Definición en la línea \mbox{\hyperlink{window_8cc_source_l00083}{83}} del arc
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{const}\ Pt\ camera\_pt\ =\ \{pt.x\ -\/\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x,\ pt.y\ -\/\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\};}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};\ i++)\ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};\ j++)\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \_i\ =\ camera\_pt.x\ *\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}}\ +\ i;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \_j\ =\ camera\_pt.y\ *\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}}\ +\ j;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_i\ >=\ 0\ \&\&\ \_i\ <\ fenster\_.width\ \&\&\ \_j\ >=\ 0\ \&\&\ \_j\ <\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.height)\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fenster\_pixel(\&\mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}},\ \_i,\ \_j)\ =\ color;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+\DoxyCodeLine{00094\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_abbe66e79c657fd8939c3df975a825214}\index{pro2::Window@{pro2::Window}!sleep@{sleep}}
 \index{sleep@{sleep}!pro2::Window@{pro2::Window}}
@@ -546,10 +687,14 @@ En ese intervalo de tiempo el programa estará esperando que el método vuelva d
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00358}{358}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00359}{359}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ fenster\_sleep(ms);}
+\DoxyCodeLine{00361\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c}\index{pro2::Window@{pro2::Window}!topleft@{topleft}}
 \index{topleft@{topleft}!pro2::Window@{pro2::Window}}
@@ -566,10 +711,14 @@ Un {\ttfamily \doxylink{structpro2_1_1Pt}{Pt}} con las coordenadas de la esquina
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00460}{460}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00461}{461}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00461\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00462\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}};}
+\DoxyCodeLine{00463\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_ab7e10a36f347292e5fb9a0bffd0e3b49}\index{pro2::Window@{pro2::Window}!update\_camera\_@{update\_camera\_}}
 \index{update\_camera\_@{update\_camera\_}!pro2::Window@{pro2::Window}}
@@ -587,6 +736,20 @@ Definición en la línea \mbox{\hyperlink{window_8cc_source_l00025}{25}} del arc
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ <\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.x)\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ +=\ std::min(\mbox{\hyperlink{classpro2_1_1Window_a3fc2ec7b7dcd41b28be129634463e20f}{camera\_speed\_}},\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.x\ -\/\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x);}
+\DoxyCodeLine{00028\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ >\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.x)\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ -\/=\ std::min(\mbox{\hyperlink{classpro2_1_1Window_a3fc2ec7b7dcd41b28be129634463e20f}{camera\_speed\_}},\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.x\ -\/\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.x);}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ <\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.y)\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ +=\ std::min(\mbox{\hyperlink{classpro2_1_1Window_a3fc2ec7b7dcd41b28be129634463e20f}{camera\_speed\_}},\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.y\ -\/\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y);}
+\DoxyCodeLine{00034\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ >\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.y)\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ -\/=\ std::min(\mbox{\hyperlink{classpro2_1_1Window_a3fc2ec7b7dcd41b28be129634463e20f}{camera\_speed\_}},\ \mbox{\hyperlink{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}{topleft\_}}.y\ -\/\ \mbox{\hyperlink{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}{topleft\_target\_}}.y);}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_aaa4fa6c518d090dcbaca4e6211f35522}\index{pro2::Window@{pro2::Window}!was\_key\_pressed@{was\_key\_pressed}}
 \index{was\_key\_pressed@{was\_key\_pressed}!pro2::Window@{pro2::Window}}
@@ -602,6 +765,10 @@ Determina si cierta tecla se presionó entre el fotograma anterior y el actual.
 
 Ejemplo\+: 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (window.was\_key\_pressed(\textcolor{charliteral}{'S'}))\ \{\ ...\ \}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (window.was\_key\_pressed(\textcolor{charliteral}{'1'}))\ \{\ ...\ \}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (window.was\_key\_pressed(Key::Escape))\ \{\ ...\ \}}
+
 \end{DoxyCode}
 
 
@@ -615,10 +782,14 @@ Ejemplo\+:
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00297}{297}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00298}{298}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ code\ >=\ 0\ \&\&\ code\ <\ 128\ \&\&\ !\mbox{\hyperlink{classpro2_1_1Window_a75da6563d9789fc8c8fde8d20891ce40}{last\_keys\_}}[code]\ \&\&\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.keys[code];}
+\DoxyCodeLine{00300\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_af0950b857d97f12a4a3f9bd082f50dcb}\index{pro2::Window@{pro2::Window}!was\_mouse\_pressed@{was\_mouse\_pressed}}
 \index{was\_mouse\_pressed@{was\_mouse\_pressed}!pro2::Window@{pro2::Window}}
@@ -637,10 +808,14 @@ Este método se comporta como {\ttfamily was\+\_\+key\+\_\+pressed}, consulta la
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00338}{338}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00339}{339}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !\mbox{\hyperlink{classpro2_1_1Window_a435df41b0b5042199d4a73f08ce0fcbe}{last\_mouse\_}}\ \&\&\ bool(\mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.mouse);}
+\DoxyCodeLine{00341\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}\index{pro2::Window@{pro2::Window}!width@{width}}
 \index{width@{width}!pro2::Window@{pro2::Window}}
@@ -654,10 +829,14 @@ Devuelve el ancho de la ventana.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00173}{173}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00174}{174}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}{fenster\_}}.width\ /\ \mbox{\hyperlink{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}{zoom\_}};}
+\DoxyCodeLine{00176\ \ \ \ \ \}}
+
 \end{DoxyCode}
 
 
@@ -674,7 +853,7 @@ Constante de la velocidad a la que la cámara se desplaza a la nueva posición.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00142}{142}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00143}{143}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_a848d23fa62759162a118cce27a7378a7}\index{pro2::Window@{pro2::Window}!fenster\_@{fenster\_}}
 \index{fenster\_@{fenster\_}!pro2::Window@{pro2::Window}}
@@ -684,7 +863,7 @@ fenster pro2\+::\+Window\+::fenster\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00083}{83}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00084}{84}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_a660d498936402b0395f151836f27ec4b}\index{pro2::Window@{pro2::Window}!fps\_@{fps\_}}
 \index{fps\_@{fps\_}!pro2::Window@{pro2::Window}}
@@ -698,7 +877,7 @@ Fotogramas por segundo (FPS)
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00116}{116}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00117}{117}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_ac919f2ff4f15e2b3e2694101f7da587e}\index{pro2::Window@{pro2::Window}!frame\_count\_@{frame\_count\_}}
 \index{frame\_count\_@{frame\_count\_}!pro2::Window@{pro2::Window}}
@@ -712,7 +891,7 @@ Contador de frames (o fotogramas)
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00111}{111}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00112}{112}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_a75da6563d9789fc8c8fde8d20891ce40}\index{pro2::Window@{pro2::Window}!last\_keys\_@{last\_keys\_}}
 \index{last\_keys\_@{last\_keys\_}!pro2::Window@{pro2::Window}}
@@ -726,7 +905,7 @@ La estructura de datos que Fenster necesita para trabajar.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00081}{81}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00082}{82}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_a435df41b0b5042199d4a73f08ce0fcbe}\index{pro2::Window@{pro2::Window}!last\_mouse\_@{last\_mouse\_}}
 \index{last\_mouse\_@{last\_mouse\_}!pro2::Window@{pro2::Window}}
@@ -736,7 +915,7 @@ int pro2\+::\+Window\+::last\+\_\+mouse\+\_\+\hspace{0.3cm}{\ttfamily [private]}
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00082}{82}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00083}{83}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_a1f849469330d4d2e208862cdf91184e0}\index{pro2::Window@{pro2::Window}!last\_time\_@{last\_time\_}}
 \index{last\_time\_@{last\_time\_}!pro2::Window@{pro2::Window}}
@@ -750,7 +929,7 @@ Instance del último fotograma (epoch)
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00106}{106}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00107}{107}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_a66caf9db1012c67bac35e8170ea84b67}\index{pro2::Window@{pro2::Window}!pixels\_@{pixels\_}}
 \index{pixels\_@{pixels\_}!pro2::Window@{pro2::Window}}
@@ -764,7 +943,7 @@ El buffer de pixels que se reserva como zona de pintado.
 
 Cada pixel tiene 32bits, o 4 bytes, y los 3 bytes de menos peso son los valores (entre 0 y 255) de los canales R, G y B (red, green y blue). 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00091}{91}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00092}{92}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_afd582a445ca5857ead1627e5b2b07df9}\index{pro2::Window@{pro2::Window}!pixels\_size\_@{pixels\_size\_}}
 \index{pixels\_size\_@{pixels\_size\_}!pro2::Window@{pro2::Window}}
@@ -778,7 +957,7 @@ Tamaño del buffer en bytes.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00096}{96}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00097}{97}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 \Hypertarget{classpro2_1_1Window_a82a44da7790b45e5b8168ec67519fadf}\index{pro2::Window@{pro2::Window}!topleft\_@{topleft\_}}
 \index{topleft\_@{topleft\_}!pro2::Window@{pro2::Window}}
@@ -792,10 +971,12 @@ Camera topleft.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00123}{123}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00124}{124}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \{0,\ 0\};}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_ab127fa03b52a81750424dd84c9a40811}\index{pro2::Window@{pro2::Window}!topleft\_target\_@{topleft\_target\_}}
 \index{topleft\_target\_@{topleft\_target\_}!pro2::Window@{pro2::Window}}
@@ -805,10 +986,12 @@ Definición en la línea \mbox{\hyperlink{window_8hh_source_l00123}{123}} del ar
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00124}{124}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00125}{125}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00125\ \{0,\ 0\};}
+
 \end{DoxyCode}
 \Hypertarget{classpro2_1_1Window_a5818f0989d62d00402330b317e11cb0a}\index{pro2::Window@{pro2::Window}!zoom\_@{zoom\_}}
 \index{zoom\_@{zoom\_}!pro2::Window@{pro2::Window}}
@@ -822,7 +1005,7 @@ Parámetro de {\ttfamily zoom} para esta ventana.
 
 
 
-Definición en la línea \mbox{\hyperlink{window_8hh_source_l00101}{101}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
+Definición en la línea \mbox{\hyperlink{window_8hh_source_l00102}{102}} del archivo \mbox{\hyperlink{window_8hh_source}{window.\+hh}}.
 
 
 

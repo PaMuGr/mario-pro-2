@@ -1,13 +1,5 @@
 \doxysection{Referencia del archivo list.\+hh}
 \hypertarget{list_8hh}{}\label{list_8hh}\index{list.hh@{list.hh}}
-{\ttfamily \#include $<$iostream$>$}\newline
-Gráfico de dependencias incluidas en list.\+hh\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=134pt]{list_8hh__incl}
-\end{center}
-\end{figure}
 \doxysubsubsection*{Clases}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,16 +30,16 @@ ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os}{, }\i
 
 
 
-Definición en la línea \mbox{\hyperlink{list_8hh_source_l00538}{538}} del archivo \mbox{\hyperlink{list_8hh_source}{list.\+hh}}.
+Definición en la línea \mbox{\hyperlink{list_8hh_source_l00541}{541}} del archivo \mbox{\hyperlink{list_8hh_source}{list.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00539\ \{}
-\DoxyCodeLine{00540\ \ \ os\ <<\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.\_size;}
-\DoxyCodeLine{00541\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{typename}\ \mbox{\hyperlink{classList_1_1Item}{List<T>::Item}}*\ pitem\ =\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.iteminf.next;\ pitem\ !=\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup;\ pitem\ =\ pitem-\/>next)}
-\DoxyCodeLine{00542\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ pitem-\/>value;}
-\DoxyCodeLine{00543\ \ \ \textcolor{keywordflow}{return}\ os;}
-\DoxyCodeLine{00544\ \}}
+\DoxyCodeLine{00542\ \{}
+\DoxyCodeLine{00543\ \ \ os\ <<\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.\_size;}
+\DoxyCodeLine{00544\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{typename}\ \mbox{\hyperlink{classList_1_1Item}{List<T>::Item}}*\ pitem\ =\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.iteminf.next;\ pitem\ !=\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup;\ pitem\ =\ pitem-\/>next)}
+\DoxyCodeLine{00545\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ pitem-\/>value;}
+\DoxyCodeLine{00546\ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00547\ \}}
 
 \end{DoxyCode}
 \Hypertarget{list_8hh_a5e1d4427af55fda44f24b3b53f3010fa}\index{list.hh@{list.hh}!operator$>$$>$@{operator$>$$>$}}
@@ -59,20 +51,20 @@ istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is}{, }\i
 
 
 
-Definición en la línea \mbox{\hyperlink{list_8hh_source_l00525}{525}} del archivo \mbox{\hyperlink{list_8hh_source}{list.\+hh}}.
+Definición en la línea \mbox{\hyperlink{list_8hh_source_l00528}{528}} del archivo \mbox{\hyperlink{list_8hh_source}{list.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00526\ \{}
-\DoxyCodeLine{00527\ \ \ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.removeItems();}
-\DoxyCodeLine{00528\ \ \ \textcolor{keywordtype}{int}\ size;}
-\DoxyCodeLine{00529\ \ \ cin\ >>\ size;}
-\DoxyCodeLine{00530\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ ++i)\ \{}
-\DoxyCodeLine{00531\ \ \ \ \ T\ value;}
-\DoxyCodeLine{00532\ \ \ \ \ cin\ >>\ value;}
-\DoxyCodeLine{00533\ \ \ \ \ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.insertItem(\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup.prev,\ value);}
-\DoxyCodeLine{00534\ \ \ \}}
-\DoxyCodeLine{00535\ \ \ \textcolor{keywordflow}{return}\ is;}
-\DoxyCodeLine{00536\ \}}
+\DoxyCodeLine{00529\ \{}
+\DoxyCodeLine{00530\ \ \ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.removeItems();}
+\DoxyCodeLine{00531\ \ \ \textcolor{keywordtype}{int}\ size;}
+\DoxyCodeLine{00532\ \ \ cin\ >>\ size;}
+\DoxyCodeLine{00533\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ ++i)\ \{}
+\DoxyCodeLine{00534\ \ \ \ \ T\ value;}
+\DoxyCodeLine{00535\ \ \ \ \ cin\ >>\ value;}
+\DoxyCodeLine{00536\ \ \ \ \ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.insertItem(\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup.prev,\ value);}
+\DoxyCodeLine{00537\ \ \ \}}
+\DoxyCodeLine{00538\ \ \ \textcolor{keywordflow}{return}\ is;}
+\DoxyCodeLine{00539\ \}}
 
 \end{DoxyCode}

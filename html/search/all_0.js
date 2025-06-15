@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['2_20documentació_20del_20joc_0',['Mario Pro 2 - Documentació del Joc',['../index.html',1,'']]]
+  ['2d_0',['Juego Platformer 2D',['../index.html#autotoc_md0',1,'']]]
 ];

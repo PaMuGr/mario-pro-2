@@ -62,7 +62,7 @@ int \mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\+\_\+size}}
 class Stack$<$ T $>$}
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00007}{7}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00009}{9}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 
@@ -76,10 +76,15 @@ template$<$typename T$>$ \\
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00060}{60}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00062}{62}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ =\ \mbox{\hyperlink{classStack}{NULL}};}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}}\ =\ 0;}
+\DoxyCodeLine{00065\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_afa5627f1e330118c767736958d7e373a}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!Stack@{Stack}}
 \index{Stack@{Stack}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -90,10 +95,15 @@ template$<$typename T$>$ \\
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00065}{65}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00067}{67}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ =\ \mbox{\hyperlink{classStack_a108da89766111ab3fe6adfc3b3f4d097}{copyItems}}(\mbox{\hyperlink{classStack}{s}}.\mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}});}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}}\ =\ \mbox{\hyperlink{classStack}{s}}.\mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}};}
+\DoxyCodeLine{00070\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_a9e7a00875aefbdac560ab189b7bc61d1}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}}
 \index{````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -104,10 +114,14 @@ template$<$typename T$>$ \\
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00070}{70}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00072}{72}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classStack_ab7db22f5c0fdd824495cb00c679a34ec}{deleteItems}}();}
+\DoxyCodeLine{00074\ \ \ \}}
+
 \end{DoxyCode}
 
 
@@ -121,10 +135,24 @@ template$<$typename T$>$ \\
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classStack}{pitem}}\ ==\ \mbox{\hyperlink{classStack}{NULL}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classStack}{NULL}};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{structStack_1_1Item}{Item}}\ *\mbox{\hyperlink{classStack}{pfirstitem}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{structStack_1_1Item}{Item}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{structStack_1_1Item}{Item}}\ *\mbox{\hyperlink{classStack}{pcurrentitem}}\ =\ \mbox{\hyperlink{classStack}{pfirstitem}};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classStack}{pitem}}\ !=\ \mbox{\hyperlink{classStack}{NULL}})\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{pcurrentitem}}-\/>value\ =\ \mbox{\hyperlink{classStack}{pitem}}-\/>value;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classStack}{pitem}}-\/>next\ !=\ \mbox{\hyperlink{classStack}{NULL}})\ \mbox{\hyperlink{classStack}{pcurrentitem}}-\/>next\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{structStack_1_1Item}{Item}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \mbox{\hyperlink{classStack}{pcurrentitem}}-\/>next\ =\ \mbox{\hyperlink{classStack}{NULL}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{pcurrentitem}}\ =\ \mbox{\hyperlink{classStack}{pcurrentitem}}-\/>next;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{pitem}}\ =\ \mbox{\hyperlink{classStack}{pitem}}-\/>next;}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classStack}{pfirstitem}};}
+\DoxyCodeLine{00038\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_ab7db22f5c0fdd824495cb00c679a34ec}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!deleteItems@{deleteItems}}
 \index{deleteItems@{deleteItems}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -135,10 +163,20 @@ void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::delete\+Items (\begin{Doxy
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00038}{38}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{structStack_1_1Item}{Item}}\ *\mbox{\hyperlink{classStack}{pitem}}\ =\ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classStack}{pitem}}\ !=\ \mbox{\hyperlink{classStack}{NULL}})\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \mbox{\hyperlink{structStack_1_1Item}{Item}}\ *\mbox{\hyperlink{classStack}{pitemaux}}\ =\ \mbox{\hyperlink{classStack}{pitem}};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{pitem}}\ =\ \mbox{\hyperlink{classStack}{pitem}}-\/>next;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classStack}{pitemaux}};}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}}\ =\ 0;}
+\DoxyCodeLine{00049\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_a275d43ff89b91a9c6c5636cc8539d285}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!empty@{empty}}
 \index{empty@{empty}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -149,10 +187,14 @@ bool \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::empty (\begin{DoxyParamCap
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00091}{91}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00093}{93}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ ==\ \mbox{\hyperlink{classStack}{NULL}};}
+\DoxyCodeLine{00095\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_a92674a1e037dee06064c8e455adab7d5}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!operator=@{operator=}}
 \index{operator=@{operator=}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -163,10 +205,19 @@ template$<$typename T$>$ \\
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00076}{76}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00078}{78}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&\mbox{\hyperlink{classStack}{s}})\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \mbox{\hyperlink{classStack_ab7db22f5c0fdd824495cb00c679a34ec}{deleteItems}}();}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ =\ \mbox{\hyperlink{classStack_a108da89766111ab3fe6adfc3b3f4d097}{copyItems}}(\mbox{\hyperlink{classStack}{s}}.\mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}});}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}}\ =\ \mbox{\hyperlink{classStack}{s}}.\mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}};}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00085\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_a2723aec5c7e2611b97fcffeb7709de33}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!pop@{pop}}
 \index{pop@{pop}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -177,10 +228,21 @@ void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::pop (\begin{DoxyParamCapti
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00103}{103}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00105}{105}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ ==\ \mbox{\hyperlink{classStack}{NULL}})\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ pop\ on\ empty\ stack"{}}\ <<\ \mbox{\hyperlink{classStack}{endl}};}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{exit}}(1);}
+\DoxyCodeLine{00109\ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{structStack_1_1Item}{Item}}\ *\mbox{\hyperlink{classStack}{paux}}\ =\ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}};}
+\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ =\ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}-\/>next;}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classStack}{paux}};}
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}}-\/-\/;}
+\DoxyCodeLine{00114\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_aeee4ffc98e568a1e9ce2436fe8dfdea1}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!printRec@{printRec}}
 \index{printRec@{printRec}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -191,10 +253,17 @@ void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::print\+Rec (\begin{DoxyPar
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00049}{49}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00051}{51}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00052\ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classStack}{pitem}}\ ==\ \mbox{\hyperlink{classStack}{NULL}})\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{classStack_aeee4ffc98e568a1e9ce2436fe8dfdea1}{printRec}}(\mbox{\hyperlink{classStack}{os}},\ \mbox{\hyperlink{classStack}{pitem}}-\/>next);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{classStack}{os}}\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{classStack}{os}}\ <<\ \mbox{\hyperlink{classStack}{pitem}}-\/>value;}
+\DoxyCodeLine{00057\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_a892e33693ec391dd20c09a978b038a87}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!push@{push}}
 \index{push@{push}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -205,10 +274,18 @@ void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::push (\begin{DoxyParamCapt
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00095}{95}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00097}{97}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{structStack_1_1Item}{Item}}\ *\mbox{\hyperlink{classStack}{pnewitem}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{structStack_1_1Item}{Item}}();}
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{classStack}{pnewitem}}-\/>value\ =\ \mbox{\hyperlink{classStack}{value}};}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{classStack}{pnewitem}}-\/>next\ =\ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}};}
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ =\ \mbox{\hyperlink{classStack}{pnewitem}};}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}}++;}
+\DoxyCodeLine{00103\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_aeecf178c7865fa4957798a0f5d7e1686}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!size@{size}}
 \index{size@{size}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -219,10 +296,14 @@ int \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::size (\begin{DoxyParamCapti
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00087}{87}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00089}{89}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}};}
+\DoxyCodeLine{00091\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_ad461f6de40c8672dbf743068f4515061}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!top@{top}}
 \index{top@{top}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -233,10 +314,18 @@ T \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::top (\begin{DoxyParamCaption}
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00114}{114}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00116}{116}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ ==\ \mbox{\hyperlink{classStack}{NULL}})\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ accessing\ top\ of\ empty\ stack"{}}\ <<\ \mbox{\hyperlink{classStack}{endl}};}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{exit}}(1);}
+\DoxyCodeLine{00120\ \ \ \ \ \}}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}-\/>value;}
+\DoxyCodeLine{00122\ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_ab7405430716775fde9548474fb5b8e7a}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!top@{top}}
 \index{top@{top}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -247,10 +336,18 @@ const T \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::top (\begin{DoxyParamCa
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00122}{122}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00124}{124}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}\ ==\ \mbox{\hyperlink{classStack}{NULL}})\ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{cerr}}\ <<\ \textcolor{stringliteral}{"{}Error:\ accessing\ top\ of\ empty\ stack"{}}\ <<\ \mbox{\hyperlink{classStack}{endl}};}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \mbox{\hyperlink{classStack}{exit}}(1);}
+\DoxyCodeLine{00128\ \ \ \ \ \}}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}}-\/>value;}
+\DoxyCodeLine{00130\ \ \ \}}
+
 \end{DoxyCode}
 
 
@@ -265,10 +362,16 @@ ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os}{, }\i
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00138}{138}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00140}{140}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00141\ \{}
+\DoxyCodeLine{00142\ \ \ \mbox{\hyperlink{classStack}{os}}\ <<\ \mbox{\hyperlink{classStack}{s}}.\mbox{\hyperlink{classStack_a0cb7c040983b565c09616f29ddb4eebb}{\_size}};}
+\DoxyCodeLine{00143\ \ \ \mbox{\hyperlink{classStack}{s}}.\mbox{\hyperlink{classStack_aeee4ffc98e568a1e9ce2436fe8dfdea1}{printRec}}(\mbox{\hyperlink{classStack}{os}},\ \mbox{\hyperlink{classStack}{s}}.\mbox{\hyperlink{classStack_ad4a68d9094166b79bbe9425524f67ac1}{ptopitem}});}
+\DoxyCodeLine{00144\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classStack}{os}};}
+\DoxyCodeLine{00145\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classStack_a0562ac138005a8877e8e37bec41179ab}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!operator$>$$>$@{operator$>$$>$}}
 \index{operator$>$$>$@{operator$>$$>$}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -280,10 +383,22 @@ istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is}{, }\i
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00145}{145}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00147}{147}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00148\ \{}
+\DoxyCodeLine{00149\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classStack}{n}};}
+\DoxyCodeLine{00150\ \ \ \mbox{\hyperlink{classStack}{is}}\ >>\ \mbox{\hyperlink{classStack}{n}};}
+\DoxyCodeLine{00151\ \ \ \mbox{\hyperlink{classStack}{s}}\ =\ \mbox{\hyperlink{classStack_aefee698059467258bbd79045aca62a63}{Stack<U>}}\ ();}
+\DoxyCodeLine{00152\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classStack}{i}}\ =\ 0;\ \mbox{\hyperlink{classStack}{i}}\ <\ \mbox{\hyperlink{classStack}{n}};\ \mbox{\hyperlink{classStack}{i}}++)\ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \mbox{\hyperlink{classStack}{U}}\ \mbox{\hyperlink{classStack}{u}};}
+\DoxyCodeLine{00154\ \ \ \ \ \mbox{\hyperlink{classStack}{is}}\ >>\ \mbox{\hyperlink{classStack}{u}};}
+\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{classStack}{s}}.\mbox{\hyperlink{classStack_a892e33693ec391dd20c09a978b038a87}{push}}(\mbox{\hyperlink{classStack}{u}});}
+\DoxyCodeLine{00156\ \ \ \}}
+\DoxyCodeLine{00157\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classStack}{is}};}
+\DoxyCodeLine{00158\ \}}
+
 \end{DoxyCode}
 
 
@@ -297,7 +412,7 @@ int \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::\+\_\+size\hspace{0.3cm}{\t
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00019}{19}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 \Hypertarget{classStack_ad4a68d9094166b79bbe9425524f67ac1}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!ptopitem@{ptopitem}}
 \index{ptopitem@{ptopitem}!Stack$<$ T $>$@{Stack$<$ T $>$}}
@@ -308,7 +423,7 @@ template$<$typename T$>$ \\
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 

@@ -5,8 +5,11 @@
 #ifndef PLATFORM_HH
 #define PLATFORM_HH
 
-#include <vector>
 #include "window.hh"
+
+#ifndef NO_DIAGRAM
+#include <vector>
+#endif
 
 class Platform {
  private:

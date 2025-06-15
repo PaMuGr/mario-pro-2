@@ -6,9 +6,12 @@
 #define TEXT_HH
 #include "utils.hh"
 #include "window.hh"
+
+#ifndef NO_DIAGRAM
 #include <vector>
 #include <map>
 #include <list>
+#endif
 
 /**
  * @brief Pinta un sol digit

@@ -2,9 +2,9 @@ var searchData=
 [
   ['t_0',['t',['../demon_8cc.html#a9d8bf90e74fd38c19ef18649b5613d7f',1,'demon.cc']]],
   ['tab_1',['Tab',['../namespacepro2.html#ab62eff5c9fe11f9ab23e7f3a5ab79700a90361512ecabd0d9df6eb1cef17600ae',1,'pro2']]],
-  ['tecnics_2',['Detalls Tecnics',['../index.html#tech_sec',1,'']]],
-  ['texto_2ecc_3',['texto.cc',['../texto_8cc.html',1,'']]],
-  ['texto_2ehh_4',['texto.hh',['../texto_8hh.html',1,'']]],
+  ['texto_2ecc_2',['texto.cc',['../texto_8cc.html',1,'']]],
+  ['texto_2ehh_3',['texto.hh',['../texto_8hh.html',1,'']]],
+  ['timer_5f_4',['timer_',['../classGame.html#ab8a39c21375e10001f8d43dcd608211d',1,'Game']]],
   ['toggle_5fgrounded_5',['toggle_grounded',['../classMario.html#a4b8785eae84e2d5f0f45bf5290054f92',1,'Mario']]],
   ['top_6',['top',['../structpro2_1_1Rect.html#abea25fc7da9516fc9e1e88fb54e49737',1,'pro2::Rect::top'],['../classPlatform.html#ae2f6ce1275d5add01a7af60474321bd5',1,'Platform::top()'],['../classStack.html#ad461f6de40c8672dbf743068f4515061',1,'Stack::top()'],['../classStack.html#ab7405430716775fde9548474fb5b8e7a',1,'Stack::top() const']]],
   ['top_5f_7',['top_',['../classPlatform.html#a7fea78553cad4641c4f597ce155ae1c5',1,'Platform']]],

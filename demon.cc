@@ -7,7 +7,7 @@ using namespace pro2;
 using namespace std;
 
 const int _ = -1;
-const int h = black;  // dark red
+const int h = black;  
 const int o = 0xFF6600;  // orange
 const int y = 0xFFFF00;  // yellow
 const int d = 0x7c0a02;  // dark red
@@ -72,9 +72,8 @@ const vector<vector<int>> Fireball::fireball_sprite_ = {
     {_, y, o, o, o, o, y, _},
     {_, _, y, y, y, y, _, _}
 };
-// clang-format on
 
-const vector<vector<int>> Fire::fire_sprite_ = {
+const vector<vector<int>> Fireball::fire_sprite_ = {
     {y, _, y, y, y, _, _, _},
     {y, y, y, o, o, y, _, _},
     {y, y, o, r, r, o, y, _},
@@ -84,8 +83,9 @@ const vector<vector<int>> Fire::fire_sprite_ = {
     {_, _, y, o, o, o, y, _},
     {_, _, _, y, y, y, _, _}
 };
+// clang-format on
 
-void Demon::update(pro2::Window& window) {
+void Demon::update(pro2::Window& window,const std::set<const Platform*>& platforms) {
     //Marges de la camera
     pro2::Rect camera_rect = window.camera_rect();
     int camera_left = camera_rect.left + 50;
@@ -110,6 +110,8 @@ void Demon::update(pro2::Window& window) {
     if (fire_cooldown_ > 0) {
         fire_cooldown_--;
     }
+    try_shoot_fireball();
+    update_fireballs(window,platforms);
 }
 
 pro2::Rect Demon::get_rect() const {
@@ -131,26 +133,79 @@ void Demon::paint(pro2::Window& window) const {
     if(!is_decayed_){
         paint_sprite(window, pos_, demon_sprite_, false);
     } else  paint_sprite(window, pos_, decayed_demon_sprite_, false);
+
+
+    for (auto it = fireballs_.cbegin(); it != fireballs_.cend();++it) {
+        (*it).paint(window);
+    }
+
+}
+
+
+void Demon::try_shoot_fireball() {
+    if(should_shoot()){
+        reset_cooldown();
+        pro2::Pt fireball_pos = {pos_.x + 8, pos_.y + 16};
+        pro2::Pt fireball_speed = {0, 5}; //Cap abaix
+        fireballs_.push_back(Fireball(fireball_pos, fireball_speed)); //Afegim element nou amb propietats escollides
+    }
+}
+
+void Demon::update_fireballs(pro2::Window& window, const std::set<const Platform*>& platforms) {
+    for (auto it = fireballs_.begin(); it != fireballs_.end();) {
+        (*it).update(window,platforms);
+        bool erase = false;
+
+        if ((*it).is_expired()) {
+            erase = true;
+        }
+        //Si fora de lloc desactivar
+        else if ((*it).pos().y > window.camera_rect().bottom) {
+            erase = true;
+        }
+        else if ((*it).is_falling()) { 
+            for (const Platform* platform : platforms) {
+                pro2::Rect fireballRect = (*it).get_rect();
+                if (interseccionen(fireballRect, platform->get_rect())) {
+                    if (randomizer(4, 0) < 3) {
+                        (*it).start_fire();
+                    }
+                    else {
+                        erase = true;
+                    }
+                    break;
+                }
+            }                
+        }                
+        
+        if(erase) it = fireballs_.erase(it);
+        else ++it;
+
+    }
+
 }
 
 /*######### IMPLEMENTACIÓ FIREBALL #########*/
 
 Fireball::Fireball(pro2::Pt pos, pro2::Pt speed) 
-    : pos_(pos), speed_(speed), active_(true) {}
+    : pos_(pos), speed_(speed), falling_(true) {}
 
-void Fireball::update(pro2::Window& window) {
-    pos_.x += speed_.x;
-    pos_.y += speed_.y;
-    
-    //Si fora de lloc desactivar
-    if (pos_.y > window.camera_rect().bottom) {
-        active_ = false;
+void Fireball::update(pro2::Window& window,const std::set<const Platform*>& platforms){    
+    if(falling_) {
+        pos_.x += speed_.x;
+        pos_.y += speed_.y;
+    }
+    else if(duracio_ > 0) {
+        duracio_--;
     }
 }
 
 void Fireball::paint(pro2::Window& window) const {
-    if (active_) {
+    if (falling_) {
         paint_sprite(window, pos_, fireball_sprite_, false);
+    }
+    else{
+         paint_sprite(window, pos_, fire_sprite_, false);
     }
 }
 
@@ -165,30 +220,16 @@ pro2::Rect Fireball::get_rect() const {
     });
 }
 
-/*############ IMPLEMENTACIÓ FOC ##############*/
 
-void Fire::update() {
-    if (active_) {
-        duracio_--;
-        if (duracio_ <= 0) {
-            active_ = false;
+bool Demon::check_fireball_collisions(const pro2::Rect& marioRect, const pro2::Rect& ascendedRect) {
+    for (auto it = fireballs_.begin(); it != fireballs_.end();) {
+            if (interseccionen(ascendedRect, (*it).get_rect())) {
+            it = fireballs_.erase(it);
+
+        } else if (interseccionen(marioRect, (*it).get_rect())) {
+            return true;
         }
+        else ++it;
     }
-}
-
-void Fire::paint(pro2::Window& window) const {
-    if (active_) {
-        paint_sprite(window, pos_, fire_sprite_, false);
-    }
-}
-
-pro2::Rect Fire::get_rect() const {
-    int width = fire_sprite_[0].size();
-    int height = fire_sprite_.size();
-    return pro2::Rect({
-        pos_.x,
-        pos_.y,
-        pos_.x + width,
-        pos_.y + height
-    });
+    return false;
 }

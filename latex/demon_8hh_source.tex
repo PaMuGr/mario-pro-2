@@ -10,84 +10,96 @@
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{geometry_8hh}{geometry.hh}}"{}}}
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <vector>}}
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00011}00011\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00012}\mbox{\hyperlink{classDemon}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDemon_a40c7ca5e5f8ad20bc832ed3188058657}{Demon}}\ \{}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00013}00013\ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00014}\mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{00014}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00015}\mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{00015}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}\ =\ \{0,\ 0\};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00016}\mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{00016}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}};\ \textcolor{comment}{//Cooldown}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00017}\mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{00017}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}};\ \textcolor{comment}{//Dispars\ per\ segons}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00018}00018\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00019}\mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{00019}}\ \ \ \ \ \textcolor{comment}{//Velocitat\ del\ dimoni}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00020}\mbox{\hyperlink{classDemon_a5f7a9ff3aa18b2a43ca3386cac1666fe}{00020}}\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDemon_a5f7a9ff3aa18b2a43ca3386cac1666fe}{DEMON\_SPEED}}\ =\ 4;\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00021}00021\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00022}00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{demon\_sprite\_}};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00023}00023\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00024}00024\ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00025}\mbox{\hyperlink{classDemon_a40c7ca5e5f8ad20bc832ed3188058657}{00025}}\ \ \ \ \ \mbox{\hyperlink{classDemon_a40c7ca5e5f8ad20bc832ed3188058657}{Demon}}()\ :\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}(\{0,0\}),\ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}(0),\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}}(12)\ \{\}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00026}00026\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00027}\mbox{\hyperlink{classDemon_ac904d7fd09132f310b38b13f61a4c1ad}{00027}}\ \ \ \ \ \mbox{\hyperlink{classDemon_ac904d7fd09132f310b38b13f61a4c1ad}{Demon}}(\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}})\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00028}00028\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}(\mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}}),\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}(\{0,\ 0\}),\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}(0),\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}}(12)\ \{\}\ \textcolor{comment}{//Dispars\ cada\ 0.25\ segons}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00030}00030\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_a8781fe344bdcda6423720fa071c90474}{paint}}(pro2::Window\&\ window)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00032}00032\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00038}\mbox{\hyperlink{classFireball_aa7d742cb8e1a1a8750438b8fe78eb42a}{00038}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFireball_a7346abd5936ff504ae0514060be3eabe}{pos\_}};\ \}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00012}00012\ \textcolor{preprocessor}{\#ifndef\ NO\_DIAGRAM}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00014}00014\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00016}\mbox{\hyperlink{classDemon}{00016}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDemon_a40c7ca5e5f8ad20bc832ed3188058657}{Demon}}\ \{}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00017}00017\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00018}\mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{00018}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00019}\mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{00019}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}\ =\ \{0,\ 0\};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00020}\mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{00020}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}};\ \textcolor{comment}{//Cooldown}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00021}\mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{00021}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}};\ \textcolor{comment}{//Dispars\ per\ segons}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00022}\mbox{\hyperlink{classDemon_a5aa2fdd2e381a04843fa22ff945eafdd}{00022}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDemon_a5aa2fdd2e381a04843fa22ff945eafdd}{is\_decayed\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00024}00024\ \ \ \ \ \textcolor{comment}{//Velocitat\ del\ dimoni}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00025}\mbox{\hyperlink{classDemon_ae777480d43077e1bed9884bebbf3f05b}{00025}}\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDemon_ae777480d43077e1bed9884bebbf3f05b}{demon\_speed\_}}\ =\ 4;\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00026}\mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{00026}}\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00027}00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{demon\_sprite\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classDemon_a048469cee7d42f952ef95f5d8efd75c3}{decayed\_demon\_sprite\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00030}00030\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00031}00031\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00032}\mbox{\hyperlink{classDemon_a40c7ca5e5f8ad20bc832ed3188058657}{00032}}\ \ \ \ \ \mbox{\hyperlink{classDemon_a40c7ca5e5f8ad20bc832ed3188058657}{Demon}}()\ :\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}(\{0,0\}),\ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}(0),\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}}(12)\ \{\}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00034}\mbox{\hyperlink{classDemon_ac904d7fd09132f310b38b13f61a4c1ad}{00034}}\ \ \ \ \ \mbox{\hyperlink{classDemon_ac904d7fd09132f310b38b13f61a4c1ad}{Demon}}(\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}})\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00035}00035\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}(\mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}}),\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}(\{0,\ 0\}),\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}(0),\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}}(12)\ \{\}\ \textcolor{comment}{//Dispars\ cada\ 0.25\ segons}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00038}00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_a8781fe344bdcda6423720fa071c90474}{paint}}(pro2::Window\&\ window)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00039}00039\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ \mbox{\hyperlink{classDemon_a9c94ed1871bb0bc814da9119d8f2c876}{get\_rect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00045}\mbox{\hyperlink{classDemon_a048469cee7d42f952ef95f5d8efd75c3}{00045}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}};\ \}}
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00046}00046\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00052}00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_ae21f15477a5363d07088b1378db8d4e7}{update}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ \mbox{\hyperlink{classDemon_a9c94ed1871bb0bc814da9119d8f2c876}{get\_rect}}()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00053}00053\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDemon_a3ae903c65dbc8a572aaccd82db30f644}{should\_shoot}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00058}00058\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00062}\mbox{\hyperlink{classDemon_a434c3b12eca9da1cfa1a875e6e6ebc25}{00062}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_a434c3b12eca9da1cfa1a875e6e6ebc25}{reset\_cooldown}}()\{\mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}\ =\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}};\}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00063}00063\ \};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00064}00064\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00065}\mbox{\hyperlink{classFireball}{00065}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFireball_a7c7146ea91dd774c0bab5d7f605960d0}{Fireball}}\{}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00066}00066\ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00067}\mbox{\hyperlink{classFireball_a7346abd5936ff504ae0514060be3eabe}{00067}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classFireball_a7346abd5936ff504ae0514060be3eabe}{pos\_}};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00068}\mbox{\hyperlink{classFireball_a0bded5ce4b784c44915d2aebc825d120}{00068}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classFireball_a0bded5ce4b784c44915d2aebc825d120}{speed\_}};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00069}\mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{00069}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{active\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00059}00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_ae21f15477a5363d07088b1378db8d4e7}{update}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00064}00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDemon_a3ae903c65dbc8a572aaccd82db30f644}{should\_shoot}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00065}\mbox{\hyperlink{classFireball_aa7d742cb8e1a1a8750438b8fe78eb42a}{00065}}\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00069}\mbox{\hyperlink{classDemon_a434c3b12eca9da1cfa1a875e6e6ebc25}{00069}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_a434c3b12eca9da1cfa1a875e6e6ebc25}{reset\_cooldown}}()\{\mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}\ =\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}};\}}
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00070}00070\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00071}00071\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classFireball_aa7d742cb8e1a1a8750438b8fe78eb42a}{fireball\_sprite\_}};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00072}00072\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00073}00073\ \ \textcolor{keyword}{public}:\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00074}00074\ \ \ \ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00075}\mbox{\hyperlink{classFireball_a7c7146ea91dd774c0bab5d7f605960d0}{00075}}\ \ \ \ \ \mbox{\hyperlink{classFireball_a7c7146ea91dd774c0bab5d7f605960d0}{Fireball}}()\ :\ \mbox{\hyperlink{classFireball_a7346abd5936ff504ae0514060be3eabe}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classFireball_a0bded5ce4b784c44915d2aebc825d120}{speed\_}}(\{0,0\}),\ \mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{active\_}}(\textcolor{keyword}{false})\ \{\}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00076}00076\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00077}00077\ \ \ \ \ \mbox{\hyperlink{classFireball_a7c7146ea91dd774c0bab5d7f605960d0}{Fireball}}(pro2::Pt\ pos,\ pro2::Pt\ speed);}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00078}00078\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00079}00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFireball_aa28282f80ed0780f460c25c162ef0205}{update}}();}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00080}00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFireball_a522f236bde6146136aa8025873c3b0ef}{paint}}(pro2::Window\&\ window)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00081}00081\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00085}\mbox{\hyperlink{classFireball_a6c693d91a2691150d5af75ab25169cc0}{00085}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFireball_a6c693d91a2691150d5af75ab25169cc0}{is\_active}}()\textcolor{keyword}{\ const}\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{active\_}};\}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00086}00086\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ \mbox{\hyperlink{classFireball_a0c12e22c23baa801b34c8c941db6062a}{get\_rect}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00087}\mbox{\hyperlink{classFireball_acae188342a0050ccd55c28524d7369b3}{00087}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFireball_acae188342a0050ccd55c28524d7369b3}{deactivate}}()\{\mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{active\_}}\ =\ \textcolor{keyword}{false};\}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00088}00088\ \};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00089}00089\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00090}\mbox{\hyperlink{classFire}{00090}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFire_a084894189971bd5d033241ada306658c}{Fire}}\ \{}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00091}00091\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00092}\mbox{\hyperlink{classFire_a86287f31a2552e29589dc7de51ad7d0d}{00092}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classFire_a86287f31a2552e29589dc7de51ad7d0d}{pos\_}};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00093}\mbox{\hyperlink{classFire_a844dae1a1342bdbb893f451a88038b4d}{00093}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFire_a844dae1a1342bdbb893f451a88038b4d}{duracio\_}};\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00094}\mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{00094}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00095}00095\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00096}00096\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classFire_a7fe75c75ce92404b957630b97134d62f}{fire\_sprite\_}};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00097}00097\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00098}00098\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00099}\mbox{\hyperlink{classFire_a084894189971bd5d033241ada306658c}{00099}}\ \ \ \ \ \mbox{\hyperlink{classFire_a084894189971bd5d033241ada306658c}{Fire}}()\ :\ \mbox{\hyperlink{classFire_a86287f31a2552e29589dc7de51ad7d0d}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classFire_a844dae1a1342bdbb893f451a88038b4d}{duracio\_}}(0),\ \mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}}(\textcolor{keyword}{false})\ \{\}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00100}00100\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00101}\mbox{\hyperlink{classFire_aa74d78ef7a31a92cb06c9fa8c5def001}{00101}}\ \ \ \ \ \mbox{\hyperlink{classFire_aa74d78ef7a31a92cb06c9fa8c5def001}{Fire}}(\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ pos,\ \textcolor{keywordtype}{int}\ lifetime)\ :\ \mbox{\hyperlink{classFire_a86287f31a2552e29589dc7de51ad7d0d}{pos\_}}(pos),\ \mbox{\hyperlink{classFire_a844dae1a1342bdbb893f451a88038b4d}{duracio\_}}(lifetime),\ \mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}}(true)\ \{\}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00102}00102\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00103}00103\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFire_a561d4b6f691b9350dfbe83782e4152a2}{update}}();}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00074}\mbox{\hyperlink{classDemon_a43b456996640d0c9d9f50a30387e455e}{00074}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_a43b456996640d0c9d9f50a30387e455e}{decaying}}()\{}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00075}00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_a5aa2fdd2e381a04843fa22ff945eafdd}{is\_decayed\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00076}00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ae777480d43077e1bed9884bebbf3f05b}{demon\_speed\_}}\ =\ 5;}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00077}\mbox{\hyperlink{classFire_a7fe75c75ce92404b957630b97134d62f}{00077}}\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00078}00078\ \};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00080}\mbox{\hyperlink{classFireball}{00080}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFireball_a7c7146ea91dd774c0bab5d7f605960d0}{Fireball}}\{}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00081}00081\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00082}\mbox{\hyperlink{classFireball_a7346abd5936ff504ae0514060be3eabe}{00082}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classFireball_a7346abd5936ff504ae0514060be3eabe}{pos\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00083}\mbox{\hyperlink{classFireball_a0bded5ce4b784c44915d2aebc825d120}{00083}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classFireball_a0bded5ce4b784c44915d2aebc825d120}{speed\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00084}\mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{00084}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{active\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00086}00086\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classFireball_aa7d742cb8e1a1a8750438b8fe78eb42a}{fireball\_sprite\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00088}00088\ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00089}00089\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00090}\mbox{\hyperlink{classFireball_a7c7146ea91dd774c0bab5d7f605960d0}{00090}}\ \ \ \ \ \mbox{\hyperlink{classFireball_a7c7146ea91dd774c0bab5d7f605960d0}{Fireball}}()\ :\ \mbox{\hyperlink{classFireball_a7346abd5936ff504ae0514060be3eabe}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classFireball_a0bded5ce4b784c44915d2aebc825d120}{speed\_}}(\{0,0\}),\ \mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{active\_}}(\textcolor{keyword}{false})\ \{\}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00091}00091\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00092}00092\ \ \ \ \ \mbox{\hyperlink{classFireball_a7c7146ea91dd774c0bab5d7f605960d0}{Fireball}}(pro2::Pt\ pos,\ pro2::Pt\ speed);}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00094}00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFireball_a2f8a3792976ec8a8c2bcc2f5bdb52bcd}{update}}(pro2::Window\&\ window);}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00095}00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFireball_a522f236bde6146136aa8025873c3b0ef}{paint}}(pro2::Window\&\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00100}\mbox{\hyperlink{classFireball_a6c693d91a2691150d5af75ab25169cc0}{00100}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFireball_a6c693d91a2691150d5af75ab25169cc0}{is\_active}}()\textcolor{keyword}{\ const}\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{active\_}};\}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00101}00101\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ \mbox{\hyperlink{classFireball_a0c12e22c23baa801b34c8c941db6062a}{get\_rect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00102}\mbox{\hyperlink{classFireball_acae188342a0050ccd55c28524d7369b3}{00102}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFireball_acae188342a0050ccd55c28524d7369b3}{deactivate}}()\{\mbox{\hyperlink{classFireball_a1fd834290824de6a538d10f9ce245fa5}{active\_}}\ =\ \textcolor{keyword}{false};\}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00103}00103\ \};}
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00104}00104\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00105}00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFire_ad059fb470fab542877f9eb2447a3bb26}{paint}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00106}00106\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00107}\mbox{\hyperlink{classFire_ae9c6737fb6df9603d838aebbde8515d7}{00107}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFire_ae9c6737fb6df9603d838aebbde8515d7}{deactivate\_fires}}()\{\mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}}\ =\ \textcolor{keyword}{false};\}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00108}00108\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00109}00109\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ \mbox{\hyperlink{classFire_a1a4a789efd77d4d3b44471ec0741b89c}{get\_rect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00105}\mbox{\hyperlink{classFire}{00105}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFire_a084894189971bd5d033241ada306658c}{Fire}}\ \{}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00106}00106\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00107}\mbox{\hyperlink{classFire_a86287f31a2552e29589dc7de51ad7d0d}{00107}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classFire_a86287f31a2552e29589dc7de51ad7d0d}{pos\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00108}\mbox{\hyperlink{classFire_a844dae1a1342bdbb893f451a88038b4d}{00108}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFire_a844dae1a1342bdbb893f451a88038b4d}{duracio\_}};\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00109}\mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{00109}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}};}
 \DoxyCodeLine{\Hypertarget{demon_8hh_source_l00110}00110\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00111}\mbox{\hyperlink{classFire_aa11063edf9bf030d5e5e8c08f016f9a8}{00111}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFire_aa11063edf9bf030d5e5e8c08f016f9a8}{is\_active}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}};\ \}}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00112}00112\ \};}
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00113}00113\ }
-\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00114}00114\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00111}00111\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classFire_a7fe75c75ce92404b957630b97134d62f}{fire\_sprite\_}};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00113}00113\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00114}\mbox{\hyperlink{classFire_a084894189971bd5d033241ada306658c}{00114}}\ \ \ \ \ \mbox{\hyperlink{classFire_a084894189971bd5d033241ada306658c}{Fire}}()\ :\ \mbox{\hyperlink{classFire_a86287f31a2552e29589dc7de51ad7d0d}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classFire_a844dae1a1342bdbb893f451a88038b4d}{duracio\_}}(0),\ \mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}}(\textcolor{keyword}{false})\ \{\}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00115}00115\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00116}\mbox{\hyperlink{classFire_aa74d78ef7a31a92cb06c9fa8c5def001}{00116}}\ \ \ \ \ \mbox{\hyperlink{classFire_aa74d78ef7a31a92cb06c9fa8c5def001}{Fire}}(\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ pos,\ \textcolor{keywordtype}{int}\ lifetime)\ :\ \mbox{\hyperlink{classFire_a86287f31a2552e29589dc7de51ad7d0d}{pos\_}}(pos),\ \mbox{\hyperlink{classFire_a844dae1a1342bdbb893f451a88038b4d}{duracio\_}}(lifetime),\ \mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}}(true)\ \{\}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00118}00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFire_a561d4b6f691b9350dfbe83782e4152a2}{update}}();}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00120}00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFire_ad059fb470fab542877f9eb2447a3bb26}{paint}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00121}00121\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00122}\mbox{\hyperlink{classFire_ae9c6737fb6df9603d838aebbde8515d7}{00122}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFire_ae9c6737fb6df9603d838aebbde8515d7}{deactivate\_fires}}()\{\mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}}\ =\ \textcolor{keyword}{false};\}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00124}00124\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ \mbox{\hyperlink{classFire_a1a4a789efd77d4d3b44471ec0741b89c}{get\_rect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00126}\mbox{\hyperlink{classFire_aa11063edf9bf030d5e5e8c08f016f9a8}{00126}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFire_aa11063edf9bf030d5e5e8c08f016f9a8}{is\_active}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFire_ad8fdfad93e2ce0ba252c26b39e73cfa9}{active\_}};\ \}}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00127}00127\ \};}
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{demon_8hh_source_l00129}00129\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

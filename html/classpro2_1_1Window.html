@@ -220,7 +220,7 @@ Atributos estáticos privados</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>La clase <code><a class="el" href="classpro2_1_1Window.html">Window</a></code> permite abrir ventanas en modo gráfico en Linux, MacOS y Windows. Tiene unos pocos métodos que permiten hacer programas simples que muestran gráficos, como pequeños juegos o editores. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00076">76</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00077">77</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a64ffe9a6cd8e21cdb17546f7d53a8e0f" name="a64ffe9a6cd8e21cdb17546f7d53a8e0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64ffe9a6cd8e21cdb17546f7d53a8e0f">&#9670;&#160;</a></span>Window()</h2>
@@ -265,7 +265,23 @@ Atributos estáticos privados</h2></td></tr>
 </dl>
 
 <p class="definition">Definición en la línea <a class="el" href="window_8cc_source.html#l00014">14</a> del archivo <a class="el" href="window_8cc_source.html">window.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   15</span>    : <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>{.title = title.c_str(), .width = <a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a> * zoom, .height = <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a> * zoom},</div>
+<div class="line"><span class="lineno">   16</span>      <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>(zoom),</div>
+<div class="line"><span class="lineno">   17</span>      <a class="code hl_variable" href="#afd582a445ca5857ead1627e5b2b07df9">pixels_size_</a>(<a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a> * <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a> * zoom * zoom)  <span class="comment">//</span></div>
+<div class="line"><span class="lineno">   18</span>{</div>
+<div class="line"><span class="lineno">   19</span>    <a class="code hl_variable" href="#a66caf9db1012c67bac35e8170ea84b67">pixels_</a> = <span class="keyword">new</span> uint32_t[<a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a> * <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a> * zoom * zoom];</div>
+<div class="line"><span class="lineno">   20</span>    <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.buf = <a class="code hl_variable" href="#a66caf9db1012c67bac35e8170ea84b67">pixels_</a>;</div>
+<div class="line"><span class="lineno">   21</span>    fenster_open(&amp;<a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>);</div>
+<div class="line"><span class="lineno">   22</span>    <a class="code hl_variable" href="#a1f849469330d4d2e208862cdf91184e0">last_time_</a> = fenster_time();</div>
+<div class="line"><span class="lineno">   23</span>}</div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a1f849469330d4d2e208862cdf91184e0"><div class="ttname"><a href="#a1f849469330d4d2e208862cdf91184e0">pro2::Window::last_time_</a></div><div class="ttdeci">int64_t last_time_</div><div class="ttdoc">Instance del último fotograma (epoch)</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00107">window.hh:107</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a2dae6ae56e14dbec41f724866e1cd898"><div class="ttname"><a href="#a2dae6ae56e14dbec41f724866e1cd898">pro2::Window::width</a></div><div class="ttdeci">int width() const</div><div class="ttdoc">Devuelve el ancho de la ventana.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00174">window.hh:174</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a3a9de727550a76cd1b33d470f79db00d"><div class="ttname"><a href="#a3a9de727550a76cd1b33d470f79db00d">pro2::Window::height</a></div><div class="ttdeci">int height() const</div><div class="ttdoc">Devuelve el alto de la ventana.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00181">window.hh:181</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a5818f0989d62d00402330b317e11cb0a"><div class="ttname"><a href="#a5818f0989d62d00402330b317e11cb0a">pro2::Window::zoom_</a></div><div class="ttdeci">int zoom_</div><div class="ttdoc">Parámetro de zoom para esta ventana.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00102">window.hh:102</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a66caf9db1012c67bac35e8170ea84b67"><div class="ttname"><a href="#a66caf9db1012c67bac35e8170ea84b67">pro2::Window::pixels_</a></div><div class="ttdeci">uint32_t * pixels_</div><div class="ttdoc">El buffer de pixels que se reserva como zona de pintado.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00092">window.hh:92</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a848d23fa62759162a118cce27a7378a7"><div class="ttname"><a href="#a848d23fa62759162a118cce27a7378a7">pro2::Window::fenster_</a></div><div class="ttdeci">fenster fenster_</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00084">window.hh:84</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_afd582a445ca5857ead1627e5b2b07df9"><div class="ttname"><a href="#afd582a445ca5857ead1627e5b2b07df9">pro2::Window::pixels_size_</a></div><div class="ttdeci">size_t pixels_size_</div><div class="ttdoc">Tamaño del buffer en bytes.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00097">window.hh:97</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa0a63c4b3d431d8e5e71633b107bbe69" name="aa0a63c4b3d431d8e5e71633b107bbe69"></a>
@@ -293,8 +309,12 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Destruye una ventana, es decir, cierra la ventana abierta en el constructor. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00165">165</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00166">166</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  166</span>              {</div>
+<div class="line"><span class="lineno">  167</span>        fenster_close(&amp;<a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>);</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keyword">delete</span>[] <a class="code hl_variable" href="#a66caf9db1012c67bac35e8170ea84b67">pixels_</a>;</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
@@ -324,8 +344,14 @@ Atributos estáticos privados</h2></td></tr>
 <p>Devuelve la posición del centro de la cámara. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>Un <code><a class="el" href="structpro2_1_1Pt.html">Pt</a></code> con las coordenadas del centro de la cámara. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00424">424</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00425">425</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  425</span>                             {</div>
+<div class="line"><span class="lineno">  426</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a> = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.width / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">  427</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a> = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.height / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">  428</span>        <span class="keywordflow">return</span> {<a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x + <a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a> / 2, <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y + <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a> / 2};</div>
+<div class="line"><span class="lineno">  429</span>    }</div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a82a44da7790b45e5b8168ec67519fadf"><div class="ttname"><a href="#a82a44da7790b45e5b8168ec67519fadf">pro2::Window::topleft_</a></div><div class="ttdeci">Pt topleft_</div><div class="ttdoc">Camera topleft.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00124">window.hh:124</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac36cada6562bd2bf7807fe8b5b76efee" name="ac36cada6562bd2bf7807fe8b5b76efee"></a>
@@ -353,8 +379,12 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Determina si la cámara está en movimiento (su posición final es distinta de la actual). </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00135">135</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00136">136</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>                                {</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x != <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.x || <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y != <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.y;</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+<div class="ttc" id="aclasspro2_1_1Window_html_ab127fa03b52a81750424dd84c9a40811"><div class="ttname"><a href="#ab127fa03b52a81750424dd84c9a40811">pro2::Window::topleft_target_</a></div><div class="ttdeci">Pt topleft_target_</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00125">window.hh:125</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7fa5335bc584ac503f6ad336314773c3" name="a7fa5335bc584ac503f6ad336314773c3"></a>
@@ -382,8 +412,17 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Rectorna el rectangle de la camera. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00433">433</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00434">434</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  434</span>                             {</div>
+<div class="line"><span class="lineno">  435</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a> = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.width / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a> = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.height / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">  437</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> left = <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x;</div>
+<div class="line"><span class="lineno">  438</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> top = <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y;</div>
+<div class="line"><span class="lineno">  439</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> right = <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x + <a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a>;</div>
+<div class="line"><span class="lineno">  440</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> bottom = <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y + <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a>;</div>
+<div class="line"><span class="lineno">  441</span>        <span class="keywordflow">return</span> { left, top, right, bottom };</div>
+<div class="line"><span class="lineno">  442</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adb1c39426484aa6776b0cd7d1253932f" name="adb1c39426484aa6776b0cd7d1253932f"></a>
@@ -412,7 +451,12 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </dl>
 
 <p class="definition">Definición en la línea <a class="el" href="window_8cc_source.html#l00057">57</a> del archivo <a class="el" href="window_8cc_source.html">window.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                              {</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="#afd582a445ca5857ead1627e5b2b07df9">pixels_size_</a>; i++) {</div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="#a66caf9db1012c67bac35e8170ea84b67">pixels_</a>[i] = color;</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a36747221fc49f9b5dcf42d2d7bdf6964" name="a36747221fc49f9b5dcf42d2d7bdf6964"></a>
@@ -443,8 +487,12 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 <p>Este valor es útil al hacer animaciones, ya que permite saber, de una secuencia de imágenes, cuál habría que usar en cada momento.</p>
 <dl class="section return"><dt>Devuelve</dt><dd>Un entero que corresponde al contador de fotogramas mostrados desde que la ventana se creó. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00247">247</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00248">248</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  248</span>                            {</div>
+<div class="line"><span class="lineno">  249</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac919f2ff4f15e2b3e2694101f7da587e">frame_count_</a>;</div>
+<div class="line"><span class="lineno">  250</span>    }</div>
+<div class="ttc" id="aclasspro2_1_1Window_html_ac919f2ff4f15e2b3e2694101f7da587e"><div class="ttname"><a href="#ac919f2ff4f15e2b3e2694101f7da587e">pro2::Window::frame_count_</a></div><div class="ttdeci">int frame_count_</div><div class="ttdoc">Contador de frames (o fotogramas)</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00112">window.hh:112</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a964b632d53a61b7602dfb909e9b7457f" name="a964b632d53a61b7602dfb909e9b7457f"></a>
@@ -479,8 +527,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>El color del pixel en las coordenadas indicadas. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00368">368</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00369">369</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  369</span>                                 {</div>
+<div class="line"><span class="lineno">  370</span>        <span class="keywordflow">return</span> fenster_pixel(&amp;<a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>, xy.x * <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>, xy.y * <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>);</div>
+<div class="line"><span class="lineno">  371</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3a9de727550a76cd1b33d470f79db00d" name="a3a9de727550a76cd1b33d470f79db00d"></a>
@@ -508,8 +559,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Devuelve el alto de la ventana. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00180">180</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00181">181</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  181</span>                       {</div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.height / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">  183</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a475d4644d6f1f082a15bf6b1eaf2631b" name="a475d4644d6f1f082a15bf6b1eaf2631b"></a>
@@ -537,7 +591,10 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Determina si cierta tecla estuvo presionada en el fotograma anterior. </p>
 <p>El método <code>next_frame</code> recoge todas los eventos de teclado y ratón que han ocurrido desde la llamada anterior a <code>next_frame</code> (o desde la creación de la ventana) y mantiene el estado de todas las teclas y botones del ratón fijo durante el fotograma actual. Así pues, el método <code>is_key_down</code> simplemente consulta ese estado, que se mantiene fijo hasta la siguiente llamada a <code>next_frame</code>.</p>
-<p>Ejemplo: </p><div class="fragment"></div><!-- fragment --><dl class="params"><dt>Parámetros</dt><dd>
+<p>Ejemplo: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (window.is_key_down(<span class="charliteral">&#39;S&#39;</span>)) { ... }</div>
+<div class="line"><span class="keywordflow">if</span> (window.is_key_down(<span class="charliteral">&#39;1&#39;</span>)) { ... }</div>
+<div class="line"><span class="keywordflow">if</span> (window.is_key_down(Key::Escape)) { ... }</div>
+</div><!-- fragment --><dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>El código de la tecla de la que se quiere saber si estaba presionada. El código de la letra es, o bien el código ASCII de la letra mayúscula correspondiente, el código ASCII del dígito correspondiente, o bien uno de los valores del <code>enum</code> <code>Key</code>, que recoge las teclas más típicas, incluyendo flechas, return, esc, tab, etc.</td></tr>
   </table>
@@ -545,8 +602,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd><code>true</code> cuando la tecla <code>code</code> estaba presionada al empezar el fotograma actual. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00274">274</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00275">275</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  275</span>                                     {</div>
+<div class="line"><span class="lineno">  276</span>        <span class="keywordflow">return</span> code &gt;= 0 &amp;&amp; code &lt; 128 &amp;&amp; <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.keys[code];</div>
+<div class="line"><span class="lineno">  277</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a261158f414bb77270be1dc7339418e5e" name="a261158f414bb77270be1dc7339418e5e"></a>
@@ -582,8 +642,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd><code>true</code> si el estado de la tecla era "presionado" al entrar al fotograma actual. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00313">313</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00314">314</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  314</span>                                          {</div>
+<div class="line"><span class="lineno">  315</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.mod &amp; uint8_t(key);</div>
+<div class="line"><span class="lineno">  316</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2f3f28c0ff1122e8171534001a1892a3" name="a2f3f28c0ff1122e8171534001a1892a3"></a>
@@ -613,8 +676,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 <p>Este método se comporta como <code>is_key_down</code>, consulta la documentación de <code>is_key_down</code> para saber cómo opera.</p>
 <dl class="section return"><dt>Devuelve</dt><dd><code>true</code> si el botón del ratón quedó clicado al final del fotograma actual. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00325">325</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00326">326</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  326</span>                               {</div>
+<div class="line"><span class="lineno">  327</span>        <span class="keywordflow">return</span> bool(<a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.mouse);</div>
+<div class="line"><span class="lineno">  328</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1362ea74501506424e5b8c4177d19aa1" name="a1362ea74501506424e5b8c4177d19aa1"></a>
@@ -636,7 +702,27 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 <dl class="section return"><dt>Devuelve</dt><dd>Una tupla de tipo <code><a class="el" href="structpro2_1_1Pt.html">Pt</a></code>, con campos <code>x</code> e <code>y</code>, que se corresponden con las coordenadas de la posición del ratón. </dd></dl>
 
 <p class="definition">Definición en la línea <a class="el" href="window_8cc_source.html#l00063">63</a> del archivo <a class="el" href="window_8cc_source.html">window.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                           {</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a> = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.width / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a> = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.height / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">int</span> x = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.x / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.y / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> (x &gt;= <a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a>) {</div>
+<div class="line"><span class="lineno">   70</span>        x = <a class="code hl_function" href="#a2dae6ae56e14dbec41f724866e1cd898">width</a> - 1;</div>
+<div class="line"><span class="lineno">   71</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x &lt; 0) {</div>
+<div class="line"><span class="lineno">   72</span>        x = 0;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> &gt;= <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a>) {</div>
+<div class="line"><span class="lineno">   75</span>        <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> = <a class="code hl_function" href="#a3a9de727550a76cd1b33d470f79db00d">height</a> - 1;</div>
+<div class="line"><span class="lineno">   76</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> &lt; 0) {</div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> = 0;</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> Pt{x + <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> + <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y};</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+<div class="ttc" id="aascended_8cc_html_a536c339057ad4fa1840581ffde1bec6b"><div class="ttname"><a href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a></div><div class="ttdeci">const int y</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00012">ascended.cc:12</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afbc70ada8de42a0db90e11e9f3803a1e" name="afbc70ada8de42a0db90e11e9f3803a1e"></a>
@@ -671,8 +757,15 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00412">412</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00413">413</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  413</span>                                        {</div>
+<div class="line"><span class="lineno">  414</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="#ac36cada6562bd2bf7807fe8b5b76efee">camera_moving_</a>()) {</div>
+<div class="line"><span class="lineno">  415</span>            <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.x = <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x + desplazamiento.x;</div>
+<div class="line"><span class="lineno">  416</span>            <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.y = <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y + desplazamiento.y;</div>
+<div class="line"><span class="lineno">  417</span>        }</div>
+<div class="line"><span class="lineno">  418</span>    }</div>
+<div class="ttc" id="aclasspro2_1_1Window_html_ac36cada6562bd2bf7807fe8b5b76efee"><div class="ttname"><a href="#ac36cada6562bd2bf7807fe8b5b76efee">pro2::Window::camera_moving_</a></div><div class="ttdeci">bool camera_moving_() const</div><div class="ttdoc">Determina si la cámara está en movimiento (su posición final es distinta de la actual).</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00136">window.hh:136</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3a2e9797e7da3874fd62727531e711d6" name="a3a2e9797e7da3874fd62727531e711d6"></a>
@@ -693,12 +786,36 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 <p>Gestiona las tareas necesarias para pasar al siguiente fotograma. </p>
 <p>En todo programa gráfico es necesario: 1) pintar en una superfície, típicamente en memoria, 2) transferir lo que se ha pintado a la pantalla, 3) procesar eventos ocurridos como presión de teclas o movimiento del ratón y actualizar su estado, y 4) esperar el tiempo que quede hasta el siguiente fotograma (en función de la velocidad de refresco, que suele ser de 60Hz, lo que equivale a 16ms por fotograma).</p>
 <p><code>next_frame</code> hace todas estas cosas en una sola llamada. Además devuelve <code>false</code> cuando se ha clicado el botón de cerrar la ventana (típicamente arriba a la derecha, y con una "x"), de forma que se pueda saber si se debe continuar en un bucle de pintado de fotogramas.</p>
-<p>El uso típico es el siguiente: </p><div class="fragment"></div><!-- fragment --><p> Es decir, hasta que no se cierre la ventana llamamos métodos de la ventana para hacer operaciones que resulten en el pintado de la ventana de cierta manera y <code>next_frame</code> se hace cargo del resto.</p>
+<p>El uso típico es el siguiente: </p><div class="fragment"><div class="line"><span class="keywordflow">while</span> (window.next_frame()) {</div>
+<div class="line">    <span class="comment">// usar los métodos de detección de teclas o ratón, y set_pixel para pintar...</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><p> Es decir, hasta que no se cierre la ventana llamamos métodos de la ventana para hacer operaciones que resulten en el pintado de la ventana de cierta manera y <code>next_frame</code> se hace cargo del resto.</p>
 <p>Con respecto al teclado y ratón, <code>next_frame</code> recoge todos los eventos (presión y soltado de teclas, clicks y movimiento del ratón) que han ocurrido entre el fotograma anterior y el actual, y con todos ellos actualiza el estado final de cada tecla, botón del ratón y posición. Así pues, el usuario de la clase <code><a class="el" href="classpro2_1_1Window.html">Window</a></code> tiene acceso al estado exacto de las teclas y el ratón en el instante en que se pasa al fotograma actual, y ese estado se conserva fijo mientras transcurre el tiempo entre el fotograma actual y el siguiente, en el que <code>next_frame</code> vuelve a revisar los eventos ocurridos en ese intervalo de tiempo.</p>
 <dl class="section return"><dt>Devuelve</dt><dd><code>true</code> si el programa debe seguir (NO se ha clicado el botón de cerrar la ventana), <code>false</code> en caso contrario. </dd></dl>
 
 <p class="definition">Definición en la línea <a class="el" href="window_8cc_source.html#l00039">39</a> del archivo <a class="el" href="window_8cc_source.html">window.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                        {</div>
+<div class="line"><span class="lineno">   40</span>    <a class="code hl_function" href="#ab7e10a36f347292e5fb9a0bffd0e3b49">update_camera_</a>();</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordtype">int</span> wait = int(1000.0 / <a class="code hl_variable" href="#a660d498936402b0395f151836f27ec4b">fps_</a>) - (fenster_time() - <a class="code hl_variable" href="#a1f849469330d4d2e208862cdf91184e0">last_time_</a>);</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (wait &gt; 0) {</div>
+<div class="line"><span class="lineno">   43</span>        fenster_sleep(wait);</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="line"><span class="lineno">   45</span>    <a class="code hl_variable" href="#a1f849469330d4d2e208862cdf91184e0">last_time_</a> = fenster_time();</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_variable" href="#ac919f2ff4f15e2b3e2694101f7da587e">frame_count_</a>++;</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="comment">// Copy the keys array</span></div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 256; i++) {</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_variable" href="#a75da6563d9789fc8c8fde8d20891ce40">last_keys_</a>[i] = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.keys[i];</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_variable" href="#a435df41b0b5042199d4a73f08ce0fcbe">last_mouse_</a> = <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.mouse;</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> fenster_loop(&amp;<a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>) == 0;</div>
+<div class="line"><span class="lineno">   55</span>}</div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a435df41b0b5042199d4a73f08ce0fcbe"><div class="ttname"><a href="#a435df41b0b5042199d4a73f08ce0fcbe">pro2::Window::last_mouse_</a></div><div class="ttdeci">int last_mouse_</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00083">window.hh:83</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a660d498936402b0395f151836f27ec4b"><div class="ttname"><a href="#a660d498936402b0395f151836f27ec4b">pro2::Window::fps_</a></div><div class="ttdeci">uint8_t fps_</div><div class="ttdoc">Fotogramas por segundo (FPS)</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00117">window.hh:117</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a75da6563d9789fc8c8fde8d20891ce40"><div class="ttname"><a href="#a75da6563d9789fc8c8fde8d20891ce40">pro2::Window::last_keys_</a></div><div class="ttdeci">int last_keys_[256]</div><div class="ttdoc">La estructura de datos que Fenster necesita para trabajar.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00082">window.hh:82</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_ab7e10a36f347292e5fb9a0bffd0e3b49"><div class="ttname"><a href="#ab7e10a36f347292e5fb9a0bffd0e3b49">pro2::Window::update_camera_</a></div><div class="ttdeci">void update_camera_()</div><div class="ttdoc">Este método actualiza la cámara en función de la velocidad.</div><div class="ttdef"><b>Definition</b> <a href="window_8cc_source.html#l00025">window.cc:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1393bc8d5c74455c1b25e3b38db7af92" name="a1393bc8d5c74455c1b25e3b38db7af92"></a>
@@ -733,8 +850,13 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00450">450</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00451">451</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  451</span>                                        {</div>
+<div class="line"><span class="lineno">  452</span>        <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a> = <a class="code hl_function" href="#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>;</div>
+<div class="line"><span class="lineno">  453</span>        <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a> = <a class="code hl_function" href="#ada2e1a70077ac2011bd5e2c3716dd96c">topleft</a>;</div>
+<div class="line"><span class="lineno">  454</span>    }</div>
+<div class="ttc" id="aclasspro2_1_1Window_html_ada2e1a70077ac2011bd5e2c3716dd96c"><div class="ttname"><a href="#ada2e1a70077ac2011bd5e2c3716dd96c">pro2::Window::topleft</a></div><div class="ttdeci">Pt topleft() const</div><div class="ttdoc">Devuelve la posición de la esquina superior izquierda de la cámara.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00461">window.hh:461</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaa39faf0a0dfa480661c314341638548" name="aaa39faf0a0dfa480661c314341638548"></a>
@@ -770,8 +892,12 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </dl>
 <dl class="section pre"><dt>Precondición</dt><dd><code>fps</code> &gt; 0 &amp;&amp; <code>fps</code> &lt; 240. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00398">398</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00399">399</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  399</span>                          {</div>
+<div class="line"><span class="lineno">  400</span>        assert(fps &gt; 0 &amp;&amp; fps &lt; 240);</div>
+<div class="line"><span class="lineno">  401</span>        <a class="code hl_variable" href="#a660d498936402b0395f151836f27ec4b">fps_</a> = fps;</div>
+<div class="line"><span class="lineno">  402</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af656aaa062615c33e183199ba2387cac" name="af656aaa062615c33e183199ba2387cac"></a>
@@ -804,7 +930,19 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </dl>
 
 <p class="definition">Definición en la línea <a class="el" href="window_8cc_source.html#l00083">83</a> del archivo <a class="el" href="window_8cc_source.html">window.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                                         {</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keyword">const</span> Pt camera_pt = {pt.x - <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x, pt.y - <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y};</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>; i++) {</div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>; j++) {</div>
+<div class="line"><span class="lineno">   87</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> _i = camera_pt.x * <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a> + i;</div>
+<div class="line"><span class="lineno">   88</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> _j = camera_pt.y * <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a> + j;</div>
+<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">if</span> (_i &gt;= 0 &amp;&amp; _i &lt; fenster_.width &amp;&amp; _j &gt;= 0 &amp;&amp; _j &lt; <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.height) {</div>
+<div class="line"><span class="lineno">   90</span>                fenster_pixel(&amp;<a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>, _i, _j) = color;</div>
+<div class="line"><span class="lineno">   91</span>            }</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abbe66e79c657fd8939c3df975a825214" name="abbe66e79c657fd8939c3df975a825214"></a>
@@ -839,8 +977,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00358">358</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00359">359</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  359</span>                             {</div>
+<div class="line"><span class="lineno">  360</span>        fenster_sleep(ms);</div>
+<div class="line"><span class="lineno">  361</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ada2e1a70077ac2011bd5e2c3716dd96c" name="ada2e1a70077ac2011bd5e2c3716dd96c"></a>
@@ -869,8 +1010,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 <p>Devuelve la posición de la esquina superior izquierda de la cámara. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>Un <code><a class="el" href="structpro2_1_1Pt.html">Pt</a></code> con las coordenadas de la esquina superior izquierda de la cámara. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00460">460</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00461">461</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  461</span>                       {</div>
+<div class="line"><span class="lineno">  462</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>;</div>
+<div class="line"><span class="lineno">  463</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab7e10a36f347292e5fb9a0bffd0e3b49" name="ab7e10a36f347292e5fb9a0bffd0e3b49"></a>
@@ -899,7 +1043,21 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 <p>Este método actualiza la cámara en función de la velocidad. </p>
 
 <p class="definition">Definición en la línea <a class="el" href="window_8cc_source.html#l00025">25</a> del archivo <a class="el" href="window_8cc_source.html">window.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                            {</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x &lt; <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.x) {</div>
+<div class="line"><span class="lineno">   27</span>        <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x += std::min(<a class="code hl_variable" href="#a3fc2ec7b7dcd41b28be129634463e20f">camera_speed_</a>, <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.x - <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x);</div>
+<div class="line"><span class="lineno">   28</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x &gt; <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.x) {</div>
+<div class="line"><span class="lineno">   29</span>        <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x -= std::min(<a class="code hl_variable" href="#a3fc2ec7b7dcd41b28be129634463e20f">camera_speed_</a>, <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.x - <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.x);</div>
+<div class="line"><span class="lineno">   30</span>    }</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y &lt; <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.y) {</div>
+<div class="line"><span class="lineno">   33</span>        <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y += std::min(<a class="code hl_variable" href="#a3fc2ec7b7dcd41b28be129634463e20f">camera_speed_</a>, <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.y - <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y);</div>
+<div class="line"><span class="lineno">   34</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y &gt; <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.y) {</div>
+<div class="line"><span class="lineno">   35</span>        <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y -= std::min(<a class="code hl_variable" href="#a3fc2ec7b7dcd41b28be129634463e20f">camera_speed_</a>, <a class="code hl_variable" href="#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.y - <a class="code hl_variable" href="#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.y);</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a3fc2ec7b7dcd41b28be129634463e20f"><div class="ttname"><a href="#a3fc2ec7b7dcd41b28be129634463e20f">pro2::Window::camera_speed_</a></div><div class="ttdeci">static constexpr int camera_speed_</div><div class="ttdoc">Constante de la velocidad a la que la cámara se desplaza a la nueva posición.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00143">window.hh:143</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaa4fa6c518d090dcbaca4e6211f35522" name="aaa4fa6c518d090dcbaca4e6211f35522"></a>
@@ -927,7 +1085,10 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Determina si cierta tecla se presionó entre el fotograma anterior y el actual. </p>
 <p>(En el método <code>is_key_down</code> se explica mejor el funcionamiento de los eventos.)</p>
-<p>Ejemplo: </p><div class="fragment"></div><!-- fragment --><dl class="params"><dt>Parámetros</dt><dd>
+<p>Ejemplo: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (window.was_key_pressed(<span class="charliteral">&#39;S&#39;</span>)) { ... }</div>
+<div class="line"><span class="keywordflow">if</span> (window.was_key_pressed(<span class="charliteral">&#39;1&#39;</span>)) { ... }</div>
+<div class="line"><span class="keywordflow">if</span> (window.was_key_pressed(Key::Escape)) { ... }</div>
+</div><!-- fragment --><dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>El código de la tecla de la que se quiere saber si estaba presionada. El código de la letra es, o bien el código ASCII de la letra mayúscula correspondiente, el código ASCII del dígito correspondiente, o bien uno de los valores del <code>enum</code> <code>Key</code>, que recoge las teclas más típicas, incluyendo flechas, return, esc, tab, etc.</td></tr>
   </table>
@@ -935,8 +1096,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd><code>true</code> cuando la tecla <code>code</code> estaba presionada al empezar el fotograma actual. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00297">297</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00298">298</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  298</span>                                         {</div>
+<div class="line"><span class="lineno">  299</span>        <span class="keywordflow">return</span> code &gt;= 0 &amp;&amp; code &lt; 128 &amp;&amp; !<a class="code hl_variable" href="#a75da6563d9789fc8c8fde8d20891ce40">last_keys_</a>[code] &amp;&amp; <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.keys[code];</div>
+<div class="line"><span class="lineno">  300</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af0950b857d97f12a4a3f9bd082f50dcb" name="af0950b857d97f12a4a3f9bd082f50dcb"></a>
@@ -966,8 +1130,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 <p>Este método se comporta como <code>was_key_pressed</code>, consulta la documentación de <code>was_key_pressed</code> para saber cómo opera.</p>
 <dl class="section return"><dt>Devuelve</dt><dd><code>true</code> si el botón del ratón se clicó entre el fotograma anterior y el actual. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00338">338</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00339">339</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  339</span>                                   {</div>
+<div class="line"><span class="lineno">  340</span>        <span class="keywordflow">return</span> !<a class="code hl_variable" href="#a435df41b0b5042199d4a73f08ce0fcbe">last_mouse_</a> &amp;&amp; bool(<a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.mouse);</div>
+<div class="line"><span class="lineno">  341</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2dae6ae56e14dbec41f724866e1cd898" name="a2dae6ae56e14dbec41f724866e1cd898"></a>
@@ -995,8 +1162,11 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Devuelve el ancho de la ventana. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00173">173</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00174">174</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  174</span>                      {</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a848d23fa62759162a118cce27a7378a7">fenster_</a>.width / <a class="code hl_variable" href="#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
@@ -1022,7 +1192,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Constante de la velocidad a la que la cámara se desplaza a la nueva posición. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00142">142</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00143">143</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1216,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00083">83</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00084">84</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1242,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Fotogramas por segundo (FPS) </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00116">116</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00117">117</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1268,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Contador de frames (o fotogramas) </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00111">111</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00112">112</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1294,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>La estructura de datos que Fenster necesita para trabajar. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00081">81</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00082">82</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1318,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00082">82</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00083">83</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1174,7 +1344,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Instance del último fotograma (epoch) </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00106">106</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00107">107</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1371,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 <p>El buffer de pixels que se reserva como zona de pintado. </p>
 <p>Cada pixel tiene 32bits, o 4 bytes, y los 3 bytes de menos peso son los valores (entre 0 y 255) de los canales R, G y B (red, green y blue). </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00091">91</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00092">92</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1397,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Tamaño del buffer en bytes. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00096">96</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00097">97</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>
@@ -1253,8 +1423,9 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Camera topleft. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00123">123</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00124">124</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>{0, 0};</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab127fa03b52a81750424dd84c9a40811" name="ab127fa03b52a81750424dd84c9a40811"></a>
@@ -1277,8 +1448,9 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00124">124</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00125">125</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  125</span>{0, 0};</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5818f0989d62d00402330b317e11cb0a" name="a5818f0989d62d00402330b317e11cb0a"></a>
@@ -1303,7 +1475,7 @@ picker" de la web suele mostrar el color hexadecimal en la notación <code>#0084
 
 <p>Parámetro de <code>zoom</code> para esta ventana. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00101">101</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="window_8hh_source.html#l00102">102</a> del archivo <a class="el" href="window_8hh_source.html">window.hh</a>.</p>
 
 </div>
 </div>

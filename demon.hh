@@ -1,21 +1,90 @@
 /** @file demon.hh
- * @brief Especificació de la Classe Demon
- */
+* @brief Especificació de la Classe Demon
+*/
 
 #ifndef DEMON_HH
 #define DEMON_HH
 
 #include "window.hh"
 #include "geometry.hh"
+#include "platform.hh"
+#include "list.hh"
+
+#ifndef NO_DIAGRAM
+#include <set>
 #include <vector>
+#endif
+
+
+class Fireball{
+ private:
+    pro2::Pt pos_;
+    pro2::Pt speed_;
+    bool falling_;
+    int duracio_; 
+    int duracio_fire = 2*48;
+
+    static const std::vector<std::vector<int>> fireball_sprite_;
+    static const std::vector<std::vector<int>> fire_sprite_;
+
+ public: 
+   
+    Fireball() : pos_({0,0}), speed_({0,0}), falling_(true) {}
+    
+    Fireball(pro2::Pt pos, pro2::Pt speed);
+
+    void update(pro2::Window& window,const std::set<const Platform*>& platforms);
+    void paint(pro2::Window& window) const;
+
+    pro2::Pt pos() const {
+        return pos_;
+    }
+
+    /**
+     * @brief Retorna el rectangle del objecte
+     * 
+     * @return un Rectangle corresponent al objecte
+     */
+    pro2::Rect get_rect() const;
+
+    void start_fire(){
+        pos_.y -= 2;
+        falling_ = false;
+        duracio_ = duracio_fire;
+    }
+
+    /**
+     * @brief Retorna si esta o no cayent el fireball
+     * 
+     * @return El bool falling_
+     */
+    bool is_falling() const { return falling_; }
+
+    /**
+     * @brief Retorna si esta encara actiu el foc
+     * 
+     * @return Comprovació de si el foc esta o no apagat
+     */
+    bool is_expired() const { return !falling_ && duracio_ <= 0; }
+    
+};
+
+
+
+
+
 
 class Demon {
+
+    friend class Fireball;
  private:
     pro2::Pt pos_;
     pro2::Pt speed_ = {0, 0};
     int fire_cooldown_; //Cooldown
     int fire_rate_; //Dispars per segons
     bool is_decayed_ = false;
+    List<Fireball> fireballs_;
+    
 
     //Velocitat del dimoni
       int demon_speed_ = 4; 
@@ -52,7 +121,8 @@ class Demon {
      * 
      * @param window finestra on ho dibuixem
      */
-    void update(pro2::Window& window);
+    void update(pro2::Window& window,const std::set<const   Platform*>& platforms);
+    
 
     /**
      * @brief Retorna si ha acabat amb les bales i ha de tornar a disparar
@@ -71,55 +141,15 @@ class Demon {
         is_decayed_ = true;
         demon_speed_ = 5;
     }
+
+    void try_shoot_fireball();
+    void update_fireballs(pro2::Window& window,const std::set<const Platform*>& platforms);
+    bool check_fireball_collisions(const pro2::Rect& marioRect, const pro2::Rect& ascendedRect);
+
+
+
 };
 
-class Fireball{
- private:
-    pro2::Pt pos_;
-    pro2::Pt speed_;
-    bool active_;
 
-    static const std::vector<std::vector<int>> fireball_sprite_;
-
- public: 
-   
-    Fireball() : pos_({0,0}), speed_({0,0}), active_(false) {}
-    
-    Fireball(pro2::Pt pos, pro2::Pt speed);
-
-    void update(pro2::Window& window);
-    void paint(pro2::Window& window) const;
-
-    /**
-     * @brief Retorna si esta actiu o no la fireball
-     */
-    bool is_active() const{return active_;}
-    pro2::Rect get_rect() const;
-    void deactivate(){active_ = false;}
-};
-
-class Fire {
-private:
-    pro2::Pt pos_;
-    int duracio_; 
-    bool active_;
-
-    static const std::vector<std::vector<int>> fire_sprite_;
-
-public:
-    Fire() : pos_({0,0}), duracio_(0), active_(false) {}
-    
-    Fire(pro2::Pt pos, int lifetime) : pos_(pos), duracio_(lifetime), active_(true) {}
-
-    void update();
-
-    void paint(pro2::Window& window) const;
-    
-    void deactivate_fires(){active_ = false;}
-
-    pro2::Rect get_rect() const;
-
-    bool is_active() const { return active_; }
-};
 
 #endif

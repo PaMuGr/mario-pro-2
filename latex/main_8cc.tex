@@ -2,114 +2,15 @@
 \hypertarget{main_8cc}{}\label{main_8cc}\index{main.cc@{main.cc}}
 
 
-\doxylink{classMario}{Mario}.  
+Main page of the \doxylink{classMario}{Mario} \doxylink{classGame}{Game}.  
 
 
-{\ttfamily \#include $<$vector$>$}\newline
-{\ttfamily \#include "{}game.\+hh"{}}\newline
-{\ttfamily \#include "{}window.\+hh"{}}\newline
-Gráfico de dependencias incluidas en main.\+cc\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{main_8cc__incl}
-\end{center}
-\end{figure}
-\doxysubsubsection*{Funciones}
-\begin{DoxyCompactItemize}
-\item 
-int \mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-const int \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}} = 480
-\item 
-const int \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}} = 320
-\item 
-const int \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}} = 2
-\item 
-const int \mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}} = 48
-\end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
-\doxylink{classMario}{Mario}. 
+Main page of the \doxylink{classMario}{Mario} \doxylink{classGame}{Game}. 
 
 
 
 Definición en el archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
-
-
-
-\doxysubsection{Documentación de funciones}
-\Hypertarget{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cc@{main.cc}!main@{main}}
-\index{main@{main}!main.cc@{main.cc}}
-\doxysubsubsection{\texorpdfstring{main()}{main()}}
-{\footnotesize\ttfamily \label{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4} 
-int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00036}{36}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00037\ \ \ \ \ srand(time(0));}
-\DoxyCodeLine{00038\ \ \ \ \ }
-\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\ window(\textcolor{stringliteral}{"{}Mario\ Pro\ 2"{}},\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}},\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}});}
-\DoxyCodeLine{00040\ \ \ \ \ window.set\_fps(\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}});}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{classGame}{Game}}\ game(\mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}});}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{while}\ (window.next\_frame()\ \&\&\ !game.is\_finished())\ \{}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ game.update(window);}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ game.paint(window);}
-\DoxyCodeLine{00047\ \ \ \ \ \}\ }
-\DoxyCodeLine{00048\ \}}
-
-\end{DoxyCode}
-
-
-\doxysubsection{Documentación de variables}
-\Hypertarget{main_8cc_ac5090a6568797128b0a5545228bb8b75}\index{main.cc@{main.cc}!FPS@{FPS}}
-\index{FPS@{FPS}!main.cc@{main.cc}}
-\doxysubsubsection{\texorpdfstring{FPS}{FPS}}
-{\footnotesize\ttfamily \label{main_8cc_ac5090a6568797128b0a5545228bb8b75} 
-const int FPS = 48}
-
-
-
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00034}{34}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
-
-\Hypertarget{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}\index{main.cc@{main.cc}!HEIGHT@{HEIGHT}}
-\index{HEIGHT@{HEIGHT}!main.cc@{main.cc}}
-\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
-{\footnotesize\ttfamily \label{main_8cc_af728b7647e0b8c49832983a31f9a2e9b} 
-const int HEIGHT = 320}
-
-
-
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00032}{32}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
-
-\Hypertarget{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}\index{main.cc@{main.cc}!WIDTH@{WIDTH}}
-\index{WIDTH@{WIDTH}!main.cc@{main.cc}}
-\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
-{\footnotesize\ttfamily \label{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05} 
-const int WIDTH = 480}
-
-
-
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00032}{32}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
-
-\Hypertarget{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}\index{main.cc@{main.cc}!ZOOM@{ZOOM}}
-\index{ZOOM@{ZOOM}!main.cc@{main.cc}}
-\doxysubsubsection{\texorpdfstring{ZOOM}{ZOOM}}
-{\footnotesize\ttfamily \label{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40} 
-const int ZOOM = 2}
-
-
-
-Definición en la línea \mbox{\hyperlink{main_8cc_source_l00033}{33}} del archivo \mbox{\hyperlink{main_8cc_source}{main.\+cc}}.
 

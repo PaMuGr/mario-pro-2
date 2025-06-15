@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mario_20pro_202_20documentació_20del_20joc_0',['Mario Pro 2 - Documentació del Joc',['../index.html',1,'']]]
+  ['x_20jesus_20christ_0',['Mario_PRO_2 X Jesus Christ',['../index.html',1,'']]]
 ];

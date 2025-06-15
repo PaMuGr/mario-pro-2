@@ -2,548 +2,551 @@
 \hypertarget{list_8hh_source}{}\label{list_8hh_source}\mbox{\hyperlink{list_8hh}{Ir a la documentación de este archivo.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{list_8hh_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00003}00003\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00004}00004\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00005}00005\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00006}\mbox{\hyperlink{classList}{00006}}\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00007}00007\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00008}00008\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00009}00009\ \ \ \textcolor{comment}{//\ Items:}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00010}00010\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00011}\mbox{\hyperlink{classList_1_1Item}{00011}}\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{Item}}\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00012}00012\ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00013}\mbox{\hyperlink{classList_1_1Item_adbbb039fe5427c8ddf28c3607c84130c}{00013}}\ \ \ \ \ T\ \mbox{\hyperlink{classList_1_1Item_adbbb039fe5427c8ddf28c3607c84130c}{value}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00014}\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{00014}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{Item}}\ *\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00015}\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{00015}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{Item}}\ *\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00016}00016\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00017}\mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{00017}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{Item}}()\ :\ \mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}(nullptr),\ \mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}(nullptr)\{\}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00018}00018\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00019}\mbox{\hyperlink{classList_1_1Item_a378809c70b35a6a07e55c26598311af8}{00019}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item_a378809c70b35a6a07e55c26598311af8}{Item}}(\textcolor{keyword}{const}\ T\&\ val)\ :\ \mbox{\hyperlink{classList_1_1Item_adbbb039fe5427c8ddf28c3607c84130c}{value}}(val),\ \mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}(nullptr),\ \mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}(nullptr)\{\}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00020}00020\ \ \ \};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00003}00003\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ NO\_DIAGRAM}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00007}00007\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00009}\mbox{\hyperlink{classList}{00009}}\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00010}00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00011}00011\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00012}00012\ \ \ \textcolor{comment}{//\ Items:}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00013}00013\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00014}\mbox{\hyperlink{classList_1_1Item}{00014}}\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{Item}}\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00015}00015\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00016}\mbox{\hyperlink{classList_1_1Item_adbbb039fe5427c8ddf28c3607c84130c}{00016}}\ \ \ \ \ T\ \mbox{\hyperlink{classList_1_1Item_adbbb039fe5427c8ddf28c3607c84130c}{value}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00017}\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{00017}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{Item}}\ *\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00018}\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{00018}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{Item}}\ *\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00020}\mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{00020}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item_a7d754959658b304e9c69e0ea57a52e43}{Item}}()\ :\ \mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}(nullptr),\ \mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}(nullptr)\{\}}
 \DoxyCodeLine{\Hypertarget{list_8hh_source_l00021}00021\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00022}00022\ \ \ \textcolor{comment}{//\ Data:}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00023}00023\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00024}\mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{00024}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00025}\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{00025}}\ \ \ \mbox{\hyperlink{classList_1_1Item}{Item}}\ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}},\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00026}00026\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00027}00027\ \ \ \textcolor{comment}{//\ Mètodes\ auxiliars}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00028}00028\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00029}\mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{00029}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitemprev,\ \mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00030}00030\ \ \ \textcolor{comment}{/*\ Pre:\ pitemprev\ apunta\ a\ un\ element\ del\ p.i.}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ pitemprev\ !=\ pitem,\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ pitemprev.next\ =\ P,\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00033}00033\ \textcolor{comment}{\ \ \ \ \ pitem\ !=\ nullptr,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ pitem\ apunta\ a\ un\ element\ singular\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00035}00035\ \ \ \textcolor{comment}{/*\ Post:\ inserta\ al\ p.i.\ el\ node\ apuntat\ per\ pitem\ entre\ el\ node\ apuntat}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ per\ pitemprev\ i\ P,\ augmenta\ \_size\ en\ 1\ */}\ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00037}00037\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00038}00038\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}\ =\ pitemprev-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00039}00039\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}\ =\ pitem;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00040}00040\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}\ =\ pitemprev;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00041}00041\ \ \ \ \ pitemprev-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}\ =\ pitem;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}++;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00043}00043\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00044}00044\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00045}\mbox{\hyperlink{classList_a38809e736925c274563ed7253d84b436}{00045}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a38809e736925c274563ed7253d84b436}{insertItem}}(\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitemprev,\ \textcolor{keyword}{const}\ T\ \&value)\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00046}00046\ \ \ \textcolor{comment}{/*\ Pre:\ pitemprev\ apunta\ un\ element\ del\ p.i.}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ pitemprev.next\ =\ P\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00048}00048\ \ \ \textcolor{comment}{/*\ Post:\ inserta\ al\ p.i.\ un\ node\ amb\ valor\ value\ entre\ el\ node\ apuntat}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00049}00049\ \textcolor{comment}{\ \ \ \ \ per\ pitemprev\ i\ P,\ augmenta\ \_size\ en\ 1\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00050}00050\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classList_1_1Item}{Item}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00052}00052\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_adbbb039fe5427c8ddf28c3607c84130c}{value}}\ =\ value;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(pitemprev,\ pitem);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00054}00054\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00055}00055\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00056}\mbox{\hyperlink{classList_a9d358b955f4f0dd0000213fd6fcc4085}{00056}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a9d358b955f4f0dd0000213fd6fcc4085}{extractItem}}(\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00057}00057\ \ \ \textcolor{comment}{/*\ Pre:\ pitem\ !=\ \&\ iteminf,\ pitem\ !=\ \&itemsup}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00058}00058\ \textcolor{comment}{\ \ \ \ \ pitem\ apunta\ a\ un\ element\ del\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00059}00059\ \ \ \textcolor{comment}{/*\ Post:\ enllaça\ doblement\ el\ node\ anterior\ a\ pitem\ amb\ el\ posterior}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00060}00060\ \textcolor{comment}{\ \ \ \ \ a\ pitem,\ disminueix\ en\ 1\ \_size\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00061}00061\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00062}00062\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}\ =\ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00063}00063\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}\ =\ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00064}00064\ \ \ \ \ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}-\/-\/;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00065}00065\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00066}00066\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00067}\mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{00067}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem)\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00068}00068\ \ \ \textcolor{comment}{/*\ Pre:\ pitem\ !=\ \&\ iteminf,\ pitem\ !=\ \&itemsup\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00069}00069\ \ \ \textcolor{comment}{/*\ Post:\ enllaça\ doblement\ el\ node\ anterior\ a\ pitem\ amb\ el\ posterior}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00070}00070\ \textcolor{comment}{\ \ \ \ \ a\ pitem,\ s'allibera\ la\ memòria\ del\ node\ apuntat\ per\ pitem\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00071}00071\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00072}00072\ \ \ \ \ \mbox{\hyperlink{classList_a9d358b955f4f0dd0000213fd6fcc4085}{extractItem}}(pitem);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00073}00073\ \ \ \ \ \textcolor{keyword}{delete}\ pitem;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00074}00074\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00075}00075\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00076}\mbox{\hyperlink{classList_af182d32106bbb72db881a202416c28b0}{00076}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_af182d32106bbb72db881a202416c28b0}{removeItems}}()\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00077}00077\ \ \ \textcolor{comment}{/*\ Pre:\ \_size\ =\ S\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00078}00078\ \ \ \textcolor{comment}{/*\ Post:\ s'ha\ alliberat\ la\ memòria\ dels\ S\ nodes\ entre\ iteminf\ i\ itemsup,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00079}00079\ \textcolor{comment}{\ \ \ \ \ iteminf.next\ =\ \&itemsup,\ itemsup.prev\ =\ \&iteminf,\ \_size\ =\ 0*/}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00080}00080\ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ >\ 0)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00081}00081\ \ \ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00082}00082\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00083}00083\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00084}\mbox{\hyperlink{classList_acbb434f08b96159d653d4898c39ec1eb}{00084}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_acbb434f08b96159d653d4898c39ec1eb}{copyItems}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \&\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00085}00085\ \ \ \textcolor{comment}{/*\ Pre:\ cert*/}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00086}00086\ \ \ \textcolor{comment}{/*\ Post:\ copia\ els\ elements\ de\ la\ llista\ l\ al\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00087}00087\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem\ =\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup.prev;\ pitem\ !=\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.iteminf;\ pitem\ =\ pitem-\/>prev)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00088}00088\ \ \ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(\&\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}},\ pitem-\/>value);\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00089}00089\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00090}00090\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00091}00091\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00092}00092\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00093}00093\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00094}00094\ \ \ \textcolor{comment}{//\ Constructors/Destructors:}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00095}00095\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00096}\mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{00096}}\ \ \ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}()\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00097}00097\ \ \ \textcolor{comment}{/*\ Pre:\ cert*/}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00098}00098\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ una\ llista\ sense\ elements\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00099}00099\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00100}00100\ \ \ \ \ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ =\ 0;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00101}00101\ \ \ \ \ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next\ =\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00102}00102\ \ \ \ \ \mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}}.prev\ =\ \&\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00103}00103\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00104}00104\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00105}\mbox{\hyperlink{classList_a3f8cda0e5a9b4912759e782994e57735}{00105}}\ \ \ \mbox{\hyperlink{classList_a3f8cda0e5a9b4912759e782994e57735}{List}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00106}00106\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00107}00107\ \ \ \textcolor{comment}{/*\ Post:\ El\ resultat\ és\ una\ còpia\ d’l\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00108}00108\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00109}00109\ \ \ \ \ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ =\ 0;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00110}00110\ \ \ \ \ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next\ =\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00111}00111\ \ \ \ \ \mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}}.prev\ =\ \&\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00112}00112\ \ \ \ \ \mbox{\hyperlink{classList_acbb434f08b96159d653d4898c39ec1eb}{copyItems}}(\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}});}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00113}00113\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00114}00114\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00115}\mbox{\hyperlink{classList_a2b58189090f6e5ce52939c9195e59e85}{00115}}\ \ \ \mbox{\hyperlink{classList_a2b58189090f6e5ce52939c9195e59e85}{\string~List}}()\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00116}00116\ \ \ \textcolor{comment}{//\ Destructora:\ Esborra\ automàticament\ els\ objectes\ locals\ en}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00117}00117\ \ \ \textcolor{comment}{//\ sortir\ d’un\ àmbit\ de\ visibilitat}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00118}00118\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00119}00119\ \ \ \ \ \mbox{\hyperlink{classList_af182d32106bbb72db881a202416c28b0}{removeItems}}();}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00120}00120\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00121}00121\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00122}00122\ \ \ \textcolor{comment}{//\ Assignment:}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00123}00123\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00124}\mbox{\hyperlink{classList_aaa0f996a55fd3c2ac0b926542198fbfb}{00124}}\ \ \ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \&\mbox{\hyperlink{classList_aaa0f996a55fd3c2ac0b926542198fbfb}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00125}00125\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00126}00126\ \ \ \textcolor{comment}{/*\ Post:\ El\ p.i.\ passa\ a\ ser\ una\ còpia\ d’l\ i\ qualsevol}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00127}00127\ \textcolor{comment}{\ \ \ \ \ contingut\ anterior\ del\ p.i.\ ha\ estat\ esborrat}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00128}00128\ \textcolor{comment}{\ \ \ \ (excepte\ si\ el\ p.i.\ i\ l\ ja\ eren\ el\ mateix\ objecte)\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00129}00129\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00130}00130\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00131}00131\ \ \ \ \ \ \ \mbox{\hyperlink{classList_af182d32106bbb72db881a202416c28b0}{removeItems}}();}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00132}00132\ \ \ \ \ \ \ \mbox{\hyperlink{classList_acbb434f08b96159d653d4898c39ec1eb}{copyItems}}(\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}});}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00133}00133\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00134}00134\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00135}00135\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00136}00136\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00137}00137\ \ \ \textcolor{comment}{//\ Standard\ operations:}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00138}00138\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00139}\mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{00139}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{size}}()\ const}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00140}00140\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00141}00141\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ el\ nombre\ de\ nodes\ del\ p.i}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00142}00142\ \textcolor{comment}{\ \ \ \ \ (els\ nodes\ iteminf\ i\ itemsup\ no\ es\ conten)\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00143}00143\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00144}00144\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00145}00145\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00146}00146\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00147}\mbox{\hyperlink{classList_a48efb87cad20cc377b6894f28fa1f3d6}{00147}}\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_a48efb87cad20cc377b6894f28fa1f3d6}{empty}}()\ const}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00148}00148\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00149}00149\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ si\ el\ p.i\ té\ nodes\ o\ no}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00150}00150\ \textcolor{comment}{\ \ \ \ \ (els\ nodes\ iteminf\ i\ itemsup\ no\ conten)\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00151}00151\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00152}00152\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ ==\ 0;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00153}00153\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00154}00154\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00155}00155\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00156}\mbox{\hyperlink{classList_a7832b1190cd0debf0994ce44403e8e21}{00156}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a7832b1190cd0debf0994ce44403e8e21}{push\_back}}(\textcolor{keyword}{const}\ T\ \&value)\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00157}00157\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00158}00158\ \ \ \textcolor{comment}{/*\ Post:\ s'inserta\ un\ node\ amb\ valor\ value\ al\ final\ del\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00159}00159\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00160}00160\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}}.prev,\ value);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00161}00161\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00162}00162\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00163}\mbox{\hyperlink{classList_a728eaf5e9a9f9339af38e0c6aea7d988}{00163}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a728eaf5e9a9f9339af38e0c6aea7d988}{push\_front}}(\textcolor{keyword}{const}\ T\ \&value)\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00164}00164\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00165}00165\ \ \ \textcolor{comment}{/*\ Post:\ s'inserta\ un\ node\ amb\ valor\ value\ al\ principi\ del\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00166}00166\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00167}00167\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(\&\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}},\ value);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00168}00168\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00169}00169\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00170}\mbox{\hyperlink{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}{00170}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}{pop\_back}}()\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00171}00171\ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i.\ no\ és\ buit\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00172}00172\ \ \ \textcolor{comment}{/*\ Post:\ s'esborra\ el\ primer\ node\ del\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00173}00173\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00174}00174\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ ==\ 0)\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00175}00175\ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ pop\_back\ on\ empty\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00176}00176\ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00177}00177\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00178}00178\ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}}.prev);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00179}00179\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00180}00180\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00181}\mbox{\hyperlink{classList_a024af4543f71544345351a45850c42d8}{00181}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a024af4543f71544345351a45850c42d8}{pop\_front}}()}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00182}00182\ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i.\ no\ és\ buit\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00183}00183\ \ \ \textcolor{comment}{/*\ Post:\ s'esborra\ el\ darrer\ node\ del\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00184}00184\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00185}00185\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ ==\ 0)\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00186}00186\ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ pop\_front\ on\ empty\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00187}00187\ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00188}00188\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00189}00189\ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00190}00190\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00191}00191\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00192}00192\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00193}00193\ \ \ \textcolor{comment}{//\ Read\ and\ write:}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00194}00194\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00195}\mbox{\hyperlink{classList_a82f619e236be1e09855c7c2dcbd8002c}{00195}}\ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ U>\ \textcolor{keyword}{friend}\ istream\ \&\mbox{\hyperlink{classList_a82f619e236be1e09855c7c2dcbd8002c}{operator>>}}(istream\ \&is,\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List<U>}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}});}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00196}00196\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00197}\mbox{\hyperlink{classList_ad5ddc93bf3294f36c772bf0b451fb052}{00197}}\ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ U>\ \textcolor{keyword}{friend}\ ostream\ \&\mbox{\hyperlink{classList_ad5ddc93bf3294f36c772bf0b451fb052}{operator<<}}(ostream\ \&os,\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List<U>}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}});}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00198}00198\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00022}\mbox{\hyperlink{classList_1_1Item_a378809c70b35a6a07e55c26598311af8}{00022}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item_a378809c70b35a6a07e55c26598311af8}{Item}}(\textcolor{keyword}{const}\ T\&\ val)\ :\ \mbox{\hyperlink{classList_1_1Item_adbbb039fe5427c8ddf28c3607c84130c}{value}}(val),\ \mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}(nullptr),\ \mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}(nullptr)\{\}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00023}00023\ \ \ \};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00025}00025\ \ \ \textcolor{comment}{//\ Data:}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00026}00026\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00027}\mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{00027}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00028}\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{00028}}\ \ \ \mbox{\hyperlink{classList_1_1Item}{Item}}\ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}},\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00030}00030\ \ \ \textcolor{comment}{//\ Mètodes\ auxiliars}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00032}\mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{00032}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitemprev,\ \mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00033}00033\ \ \ \textcolor{comment}{/*\ Pre:\ pitemprev\ apunta\ a\ un\ element\ del\ p.i.}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ pitemprev\ !=\ pitem,\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ pitemprev.next\ =\ P,\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ pitem\ !=\ nullptr,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00037}00037\ \textcolor{comment}{\ \ \ \ \ pitem\ apunta\ a\ un\ element\ singular\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00038}00038\ \ \ \textcolor{comment}{/*\ Post:\ inserta\ al\ p.i.\ el\ node\ apuntat\ per\ pitem\ entre\ el\ node\ apuntat}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ per\ pitemprev\ i\ P,\ augmenta\ \_size\ en\ 1\ */}\ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00040}00040\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00041}00041\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}\ =\ pitemprev-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00042}00042\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}\ =\ pitem;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00043}00043\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}\ =\ pitemprev;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00044}00044\ \ \ \ \ pitemprev-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}\ =\ pitem;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}++;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00046}00046\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00047}00047\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00048}\mbox{\hyperlink{classList_a38809e736925c274563ed7253d84b436}{00048}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a38809e736925c274563ed7253d84b436}{insertItem}}(\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitemprev,\ \textcolor{keyword}{const}\ T\ \&value)\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00049}00049\ \ \ \textcolor{comment}{/*\ Pre:\ pitemprev\ apunta\ un\ element\ del\ p.i.}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00050}00050\ \textcolor{comment}{\ \ \ \ \ pitemprev.next\ =\ P\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00051}00051\ \ \ \textcolor{comment}{/*\ Post:\ inserta\ al\ p.i.\ un\ node\ amb\ valor\ value\ entre\ el\ node\ apuntat}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00052}00052\ \textcolor{comment}{\ \ \ \ \ per\ pitemprev\ i\ P,\ augmenta\ \_size\ en\ 1\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00053}00053\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00054}00054\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classList_1_1Item}{Item}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00055}00055\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_adbbb039fe5427c8ddf28c3607c84130c}{value}}\ =\ value;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00056}00056\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(pitemprev,\ pitem);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00057}00057\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00059}\mbox{\hyperlink{classList_a9d358b955f4f0dd0000213fd6fcc4085}{00059}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a9d358b955f4f0dd0000213fd6fcc4085}{extractItem}}(\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00060}00060\ \ \ \textcolor{comment}{/*\ Pre:\ pitem\ !=\ \&\ iteminf,\ pitem\ !=\ \&itemsup}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00061}00061\ \textcolor{comment}{\ \ \ \ \ pitem\ apunta\ a\ un\ element\ del\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00062}00062\ \ \ \textcolor{comment}{/*\ Post:\ enllaça\ doblement\ el\ node\ anterior\ a\ pitem\ amb\ el\ posterior}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00063}00063\ \textcolor{comment}{\ \ \ \ \ a\ pitem,\ disminueix\ en\ 1\ \_size\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00064}00064\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00065}00065\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}\ =\ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00066}00066\ \ \ \ \ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}}-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}}\ =\ pitem-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00067}00067\ \ \ \ \ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00068}00068\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00070}\mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{00070}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem)\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00071}00071\ \ \ \textcolor{comment}{/*\ Pre:\ pitem\ !=\ \&\ iteminf,\ pitem\ !=\ \&itemsup\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00072}00072\ \ \ \textcolor{comment}{/*\ Post:\ enllaça\ doblement\ el\ node\ anterior\ a\ pitem\ amb\ el\ posterior}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00073}00073\ \textcolor{comment}{\ \ \ \ \ a\ pitem,\ s'allibera\ la\ memòria\ del\ node\ apuntat\ per\ pitem\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00074}00074\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00075}00075\ \ \ \ \ \mbox{\hyperlink{classList_a9d358b955f4f0dd0000213fd6fcc4085}{extractItem}}(pitem);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00076}00076\ \ \ \ \ \textcolor{keyword}{delete}\ pitem;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00077}00077\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00078}00078\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00079}\mbox{\hyperlink{classList_af182d32106bbb72db881a202416c28b0}{00079}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_af182d32106bbb72db881a202416c28b0}{removeItems}}()\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00080}00080\ \ \ \textcolor{comment}{/*\ Pre:\ \_size\ =\ S\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00081}00081\ \ \ \textcolor{comment}{/*\ Post:\ s'ha\ alliberat\ la\ memòria\ dels\ S\ nodes\ entre\ iteminf\ i\ itemsup,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00082}00082\ \textcolor{comment}{\ \ \ \ \ iteminf.next\ =\ \&itemsup,\ itemsup.prev\ =\ \&iteminf,\ \_size\ =\ 0*/}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00083}00083\ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00084}00084\ \ \ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00085}00085\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00086}00086\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00087}\mbox{\hyperlink{classList_acbb434f08b96159d653d4898c39ec1eb}{00087}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_acbb434f08b96159d653d4898c39ec1eb}{copyItems}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \&\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00088}00088\ \ \ \textcolor{comment}{/*\ Pre:\ cert*/}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00089}00089\ \ \ \textcolor{comment}{/*\ Post:\ copia\ els\ elements\ de\ la\ llista\ l\ al\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00090}00090\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{classList_1_1Item}{Item}}\ *pitem\ =\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup.prev;\ pitem\ !=\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.iteminf;\ pitem\ =\ pitem-\/>prev)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00091}00091\ \ \ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(\&\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}},\ pitem-\/>value);\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00092}00092\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00093}00093\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00094}00094\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00095}00095\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00097}00097\ \ \ \textcolor{comment}{//\ Constructors/Destructors:}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00098}00098\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00099}\mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{00099}}\ \ \ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}()\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00100}00100\ \ \ \textcolor{comment}{/*\ Pre:\ cert*/}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00101}00101\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ una\ llista\ sense\ elements\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00102}00102\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00103}00103\ \ \ \ \ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00104}00104\ \ \ \ \ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next\ =\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00105}00105\ \ \ \ \ \mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}}.prev\ =\ \&\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00106}00106\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00108}\mbox{\hyperlink{classList_a3f8cda0e5a9b4912759e782994e57735}{00108}}\ \ \ \mbox{\hyperlink{classList_a3f8cda0e5a9b4912759e782994e57735}{List}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00109}00109\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00110}00110\ \ \ \textcolor{comment}{/*\ Post:\ El\ resultat\ és\ una\ còpia\ d’l\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00111}00111\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00112}00112\ \ \ \ \ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00113}00113\ \ \ \ \ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next\ =\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00114}00114\ \ \ \ \ \mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}}.prev\ =\ \&\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00115}00115\ \ \ \ \ \mbox{\hyperlink{classList_acbb434f08b96159d653d4898c39ec1eb}{copyItems}}(\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}});}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00116}00116\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00118}\mbox{\hyperlink{classList_a2b58189090f6e5ce52939c9195e59e85}{00118}}\ \ \ \mbox{\hyperlink{classList_a2b58189090f6e5ce52939c9195e59e85}{\string~List}}()\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00119}00119\ \ \ \textcolor{comment}{//\ Destructora:\ Esborra\ automàticament\ els\ objectes\ locals\ en}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00120}00120\ \ \ \textcolor{comment}{//\ sortir\ d’un\ àmbit\ de\ visibilitat}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00121}00121\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00122}00122\ \ \ \ \ \mbox{\hyperlink{classList_af182d32106bbb72db881a202416c28b0}{removeItems}}();}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00123}00123\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00125}00125\ \ \ \textcolor{comment}{//\ Assignment:}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00126}00126\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00127}\mbox{\hyperlink{classList_aaa0f996a55fd3c2ac0b926542198fbfb}{00127}}\ \ \ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \&\mbox{\hyperlink{classList_aaa0f996a55fd3c2ac0b926542198fbfb}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00128}00128\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00129}00129\ \ \ \textcolor{comment}{/*\ Post:\ El\ p.i.\ passa\ a\ ser\ una\ còpia\ d’l\ i\ qualsevol}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00130}00130\ \textcolor{comment}{\ \ \ \ \ contingut\ anterior\ del\ p.i.\ ha\ estat\ esborrat}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00131}00131\ \textcolor{comment}{\ \ \ \ (excepte\ si\ el\ p.i.\ i\ l\ ja\ eren\ el\ mateix\ objecte)\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00132}00132\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00133}00133\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00134}00134\ \ \ \ \ \ \ \mbox{\hyperlink{classList_af182d32106bbb72db881a202416c28b0}{removeItems}}();}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00135}00135\ \ \ \ \ \ \ \mbox{\hyperlink{classList_acbb434f08b96159d653d4898c39ec1eb}{copyItems}}(\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}});}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00136}00136\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00137}00137\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00138}00138\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00140}00140\ \ \ \textcolor{comment}{//\ Standard\ operations:}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00141}00141\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00142}\mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{00142}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{size}}()\ const}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00143}00143\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00144}00144\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ el\ nombre\ de\ nodes\ del\ p.i}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00145}00145\ \textcolor{comment}{\ \ \ \ \ (els\ nodes\ iteminf\ i\ itemsup\ no\ es\ conten)\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00146}00146\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00147}00147\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00148}00148\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00149}00149\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00150}\mbox{\hyperlink{classList_a48efb87cad20cc377b6894f28fa1f3d6}{00150}}\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_a48efb87cad20cc377b6894f28fa1f3d6}{empty}}()\ const}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00151}00151\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00152}00152\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ si\ el\ p.i\ té\ nodes\ o\ no}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00153}00153\ \textcolor{comment}{\ \ \ \ \ (els\ nodes\ iteminf\ i\ itemsup\ no\ conten)\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00154}00154\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00155}00155\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ ==\ 0;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00156}00156\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00159}\mbox{\hyperlink{classList_a7832b1190cd0debf0994ce44403e8e21}{00159}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a7832b1190cd0debf0994ce44403e8e21}{push\_back}}(\textcolor{keyword}{const}\ T\ \&value)\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00160}00160\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00161}00161\ \ \ \textcolor{comment}{/*\ Post:\ s'inserta\ un\ node\ amb\ valor\ value\ al\ final\ del\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00162}00162\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00163}00163\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}}.prev,\ value);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00164}00164\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00165}00165\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00166}\mbox{\hyperlink{classList_a728eaf5e9a9f9339af38e0c6aea7d988}{00166}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a728eaf5e9a9f9339af38e0c6aea7d988}{push\_front}}(\textcolor{keyword}{const}\ T\ \&value)\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00167}00167\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00168}00168\ \ \ \textcolor{comment}{/*\ Post:\ s'inserta\ un\ node\ amb\ valor\ value\ al\ principi\ del\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00169}00169\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00170}00170\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(\&\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}},\ value);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00171}00171\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00172}00172\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00173}\mbox{\hyperlink{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}{00173}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}{pop\_back}}()\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00174}00174\ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i.\ no\ és\ buit\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00175}00175\ \ \ \textcolor{comment}{/*\ Post:\ s'esborra\ el\ primer\ node\ del\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00176}00176\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00177}00177\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00178}00178\ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ pop\_back\ on\ empty\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00179}00179\ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00180}00180\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00181}00181\ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}}.prev);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00182}00182\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00183}00183\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00184}\mbox{\hyperlink{classList_a024af4543f71544345351a45850c42d8}{00184}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classList_a024af4543f71544345351a45850c42d8}{pop\_front}}()}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00185}00185\ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i.\ no\ és\ buit\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00186}00186\ \ \ \textcolor{comment}{/*\ Post:\ s'esborra\ el\ darrer\ node\ del\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00187}00187\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00188}00188\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_ad56fcbd2da2271dce020bb933349cba4}{\_size}}\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00189}00189\ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ pop\_front\ on\ empty\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00190}00190\ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00191}00191\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00192}00192\ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(\mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00193}00193\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00195}00195\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00196}00196\ \ \ \textcolor{comment}{//\ Read\ and\ write:}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00197}00197\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00198}\mbox{\hyperlink{classList_a82f619e236be1e09855c7c2dcbd8002c}{00198}}\ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ U>\ \textcolor{keyword}{friend}\ istream\ \&\mbox{\hyperlink{classList_a82f619e236be1e09855c7c2dcbd8002c}{operator>>}}(istream\ \&is,\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List<U>}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}});}
 \DoxyCodeLine{\Hypertarget{list_8hh_source_l00199}00199\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00200}00200\ \ \ \textcolor{comment}{//\ Iterators\ mutables}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00201}00201\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00202}\mbox{\hyperlink{classList_1_1iterator}{00202}}\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00203}\mbox{\hyperlink{classList_1_1iterator_a8cee552d09eaeb60a09d95309a87b498}{00203}}\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1iterator_a8cee552d09eaeb60a09d95309a87b498}{List}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00204}00204\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00205}\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{00205}}\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_a8cee552d09eaeb60a09d95309a87b498}{List}}\ *\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00206}\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{00206}}\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1Item}{Item}}\ *\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00207}00207\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00208}00208\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00209}00209\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00210}00210\ \ \ \ \ \textcolor{comment}{//\ Preincrement}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00211}\mbox{\hyperlink{classList_1_1iterator_a28bcadde315a7044f4e7ed89efcaf8d8}{00211}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_1_1iterator_a28bcadde315a7044f4e7ed89efcaf8d8}{operator++}}()}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00212}00212\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00213}00213\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00214}00214\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ següent\ a\ E\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00215}00215\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ el\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00216}00216\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00217}00217\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00218}00218\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ ++iterator\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00219}00219\ \ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00220}00220\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00221}00221\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>next;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00222}00222\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00223}00223\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00224}00224\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00225}00225\ \ \ \ \ \textcolor{comment}{//\ Postincrement}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00226}\mbox{\hyperlink{classList_1_1iterator_a03d5920ec99ec81284b4a622b4781e14}{00226}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_1_1iterator_a03d5920ec99ec81284b4a622b4781e14}{operator++}}(\textcolor{keywordtype}{int})}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00227}00227\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ p.i.\ =\ I,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00228}00228\ \textcolor{comment}{\ \ \ \ \ \ \ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00229}00229\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00230}00230\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ següent\ a\ E,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00231}00231\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ I\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00232}00232\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00233}00233\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00234}00234\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator++\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00235}00235\ \ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00236}00236\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00237}00237\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ aux\ =\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00238}00238\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>next;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00239}00239\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00240}00240\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00241}00241\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00242}00242\ \ \ \ \ \textcolor{comment}{//\ Predecrement}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00243}\mbox{\hyperlink{classList_1_1iterator_a3fff00ac1f8ef0b2b5f5c3eeece533bc}{00243}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_1_1iterator_a3fff00ac1f8ef0b2b5f5c3eeece533bc}{operator-\/-\/}}()}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00244}00244\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista\ que}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00245}00245\ \textcolor{comment}{\ \ \ \ \ \ \ no\ és\ el\ begin()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00246}00246\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ anterior\ a\ E,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00247}00247\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ el\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00248}00248\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00249}00249\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>iteminf.next)\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00250}00250\ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ -\/-\/iterator\ at\ the\ beginning\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00251}00251\ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00252}00252\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00253}00253\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>prev;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00254}00254\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00255}00255\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00256}00256\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00257}00257\ \ \ \ \ \textcolor{comment}{//\ Postdecrement}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00258}\mbox{\hyperlink{classList_1_1iterator_aa4e0c6e0ef83b07cfd035ff6720f0f07}{00258}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_1_1iterator_aa4e0c6e0ef83b07cfd035ff6720f0f07}{operator-\/-\/}}(\textcolor{keywordtype}{int})}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00259}00259\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ p.i.\ =\ I,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00260}00260\ \textcolor{comment}{\ \ \ \ \ \ \ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista\ que\ no\ és\ el\ begin()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00261}00261\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ anterior\ a\ E,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00262}00262\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ I\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00263}00263\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00264}00264\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>iteminf.next)\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00265}00265\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator-\/-\/\ at\ the\ beginning\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00266}00266\ \ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00267}00267\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00268}00268\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ aux;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00269}00269\ \ \ \ \ \ \ aux\ =\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00270}00270\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>prev;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00271}00271\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00272}00272\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00273}00273\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00274}\mbox{\hyperlink{classList_1_1iterator_abd843604d7d0cf419c962e04b075d7cd}{00274}}\ \ \ \ \ T\&\ \mbox{\hyperlink{classList_1_1iterator_abd843604d7d0cf419c962e04b075d7cd}{operator*}}()}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00275}00275\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00276}00276\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00277}00277\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ el\ valor\ de\ l'element\ E\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00278}00278\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00279}00279\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00280}00280\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ ++iterator\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00281}00281\ \ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00282}00282\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00283}00283\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>value;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00284}00284\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00285}00285\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00286}\mbox{\hyperlink{classList_1_1iterator_ab35845a1e219b980303420b53a384bd9}{00286}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_1_1iterator_ab35845a1e219b980303420b53a384bd9}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \&it)\ \textcolor{keyword}{const}\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00287}00287\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00288}00288\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ ens\ diu\ si\ els\ dos\ iteradors\ són\ iguals\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00289}00289\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00290}00290\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ ==\ it.plist\ and\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ it.pitem;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00291}00291\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00292}00292\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00293}\mbox{\hyperlink{classList_1_1iterator_aae4e692d19f7b487af0cbb124633e259}{00293}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_1_1iterator_aae4e692d19f7b487af0cbb124633e259}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \&it)\ \textcolor{keyword}{const}\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00294}00294\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00295}00295\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ ens\ diu\ si\ els\ dos\ iteradors\ són\ diferents\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00296}00296\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00297}00297\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ not\ (\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ ==\ it.plist\ and\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ it.pitem);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00298}00298\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00299}00299\ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00300}00300\ \ \ \};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00301}00301\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00302}00302\ \ \ \textcolor{comment}{//\ Operations\ with\ iterators:}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00303}00303\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00304}\mbox{\hyperlink{classList_a119aa1ef679745145e3689966dee5dc6}{00304}}\ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_a119aa1ef679745145e3689966dee5dc6}{begin}}\ ()\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00305}00305\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00306}00306\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ apunta\ al\ primer\ element\ del\ p.i\ o\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00307}00307\ \textcolor{comment}{\ \ \ \ \ a\ l'element\ fictici\ si\ el\ p.i.\ no\ té\ cap\ element\ no}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00308}00308\ \textcolor{comment}{\ \ \ \ \ fictici\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00309}00309\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00310}00310\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00311}00311\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ =\ \textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00312}00312\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00313}00313\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00314}00314\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00315}00315\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00316}\mbox{\hyperlink{classList_ac99b68e09742bb6173d16d03bcfbe5ff}{00316}}\ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_ac99b68e09742bb6173d16d03bcfbe5ff}{end}}()\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00317}00317\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00318}00318\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ apunta\ a\ l'element\ fictici\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00319}00319\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00320}00320\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00321}00321\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ =\ \textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00322}00322\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00323}00323\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00324}00324\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00325}00325\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00326}\mbox{\hyperlink{classList_a2d0b71e0bd786e49e8199df69f763285}{00326}}\ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_a2d0b71e0bd786e49e8199df69f763285}{insert}}(\mbox{\hyperlink{classList_1_1iterator}{iterator}}\ it,\ \textcolor{keyword}{const}\ T\ \&\ value)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00327}00327\ \ \ \textcolor{comment}{/*\ Pre:\ it\ ha\ d'apuntar\ a\ un\ element\ del\ p.i}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00328}00328\ \textcolor{comment}{\ \ \ \ \ o\ a\ l'element\ fictici\ end()\ del\ p.i\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00329}00329\ \ \ \textcolor{comment}{/*\ Post:\ s'inserta\ un\ element\ amb\ valor\ value\ abans\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00330}00330\ \textcolor{comment}{\ \ \ \ \ de\ l'element\ al\ que\ apunta\ it\ i\ el\ resultat\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00331}00331\ \textcolor{comment}{\ \ \ \ \ apunta\ al\ nou\ element\ inserit\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00332}00332\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00333}00333\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ !=\ \textcolor{keyword}{this})\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00334}00334\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ insert\ with\ an\ iterator\ not\ on\ this\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00335}00335\ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00336}00336\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00337}00337\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ res\ =\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00338}00338\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}},\ value);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00339}00339\ \ \ \ \ res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00340}00340\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00341}00341\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00342}00342\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00343}\mbox{\hyperlink{classList_ad61050d023f90d3e55a360321b4d3b85}{00343}}\ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_ad61050d023f90d3e55a360321b4d3b85}{erase}}(\mbox{\hyperlink{classList_1_1iterator}{iterator}}\ it)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00344}00344\ \ \ \textcolor{comment}{/*\ Pre:\ it\ ha\ d'apuntar\ a\ un\ element\ del\ p.i\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00345}00345\ \textcolor{comment}{\ \ \ \ \ que\ no\ sigui\ l'end()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00346}00346\ \ \ \textcolor{comment}{/*\ Post:\ s'elimina\ l'element\ apuntat\ per\ it,\ el\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00347}00347\ \textcolor{comment}{\ \ \ \ \ resultat\ apunta\ a\ l'element\ posterior\ a\ l'eliminat\ */}\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00348}00348\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00349}00349\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ !=\ \textcolor{keyword}{this})\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00350}00350\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ erase\ with\ an\ iterator\ not\ on\ this\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00351}00351\ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00352}00352\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00353}00353\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}})\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00354}00354\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ erase\ with\ an\ iterator\ pointing\ to\ the\ end\ of\ the\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00355}00355\ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00356}00356\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00357}00357\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ res\ =\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00358}00358\ \ \ \ \ res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00359}00359\ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}});}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00360}00360\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00361}00361\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00362}00362\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00363}00363\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00364}00364\ \ \ \textcolor{comment}{//\ Iteradors\ constants}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00200}\mbox{\hyperlink{classList_ad5ddc93bf3294f36c772bf0b451fb052}{00200}}\ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ U>\ \textcolor{keyword}{friend}\ ostream\ \&\mbox{\hyperlink{classList_ad5ddc93bf3294f36c772bf0b451fb052}{operator<<}}(ostream\ \&os,\ \mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List<U>}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}});}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00201}00201\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00202}00202\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00203}00203\ \ \ \textcolor{comment}{//\ Iterators\ mutables}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00204}00204\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00205}\mbox{\hyperlink{classList_1_1iterator}{00205}}\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00206}\mbox{\hyperlink{classList_1_1iterator_a8cee552d09eaeb60a09d95309a87b498}{00206}}\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1iterator_a8cee552d09eaeb60a09d95309a87b498}{List}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00207}00207\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00208}\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{00208}}\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_a8cee552d09eaeb60a09d95309a87b498}{List}}\ *\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00209}\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{00209}}\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1Item}{Item}}\ *\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00210}00210\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00211}00211\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00212}00212\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00213}00213\ \ \ \ \ \textcolor{comment}{//\ Preincrement}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00214}\mbox{\hyperlink{classList_1_1iterator_a28bcadde315a7044f4e7ed89efcaf8d8}{00214}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_1_1iterator_a28bcadde315a7044f4e7ed89efcaf8d8}{operator++}}()}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00215}00215\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00216}00216\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00217}00217\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ següent\ a\ E\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00218}00218\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ el\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00219}00219\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00220}00220\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00221}00221\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ ++iterator\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00222}00222\ \ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00223}00223\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00224}00224\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>next;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00225}00225\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00226}00226\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00227}00227\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00228}00228\ \ \ \ \ \textcolor{comment}{//\ Postincrement}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00229}\mbox{\hyperlink{classList_1_1iterator_a03d5920ec99ec81284b4a622b4781e14}{00229}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_1_1iterator_a03d5920ec99ec81284b4a622b4781e14}{operator++}}(\textcolor{keywordtype}{int})}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00230}00230\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ p.i.\ =\ I,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00231}00231\ \textcolor{comment}{\ \ \ \ \ \ \ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00232}00232\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00233}00233\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ següent\ a\ E,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00234}00234\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ I\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00235}00235\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00236}00236\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00237}00237\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator++\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00238}00238\ \ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00239}00239\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00240}00240\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ aux\ =\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00241}00241\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>next;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00242}00242\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00243}00243\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00244}00244\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00245}00245\ \ \ \ \ \textcolor{comment}{//\ Predecrement}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00246}\mbox{\hyperlink{classList_1_1iterator_a3fff00ac1f8ef0b2b5f5c3eeece533bc}{00246}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_1_1iterator_a3fff00ac1f8ef0b2b5f5c3eeece533bc}{operator-\/-\/}}()}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00247}00247\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista\ que}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00248}00248\ \textcolor{comment}{\ \ \ \ \ \ \ no\ és\ el\ begin()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00249}00249\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ anterior\ a\ E,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00250}00250\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ el\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00251}00251\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00252}00252\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>iteminf.next)\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00253}00253\ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ -\/-\/iterator\ at\ the\ beginning\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00254}00254\ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00255}00255\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00256}00256\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>prev;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00257}00257\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00258}00258\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00259}00259\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00260}00260\ \ \ \ \ \textcolor{comment}{//\ Postdecrement}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00261}\mbox{\hyperlink{classList_1_1iterator_aa4e0c6e0ef83b07cfd035ff6720f0f07}{00261}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_1_1iterator_aa4e0c6e0ef83b07cfd035ff6720f0f07}{operator-\/-\/}}(\textcolor{keywordtype}{int})}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00262}00262\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ p.i.\ =\ I,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00263}00263\ \textcolor{comment}{\ \ \ \ \ \ \ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista\ que\ no\ és\ el\ begin()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00264}00264\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ anterior\ a\ E,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00265}00265\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ I\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00266}00266\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00267}00267\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>iteminf.next)\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00268}00268\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator-\/-\/\ at\ the\ beginning\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00269}00269\ \ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00270}00270\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00271}00271\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ aux;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00272}00272\ \ \ \ \ \ \ aux\ =\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00273}00273\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>prev;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00274}00274\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00275}00275\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00276}00276\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00277}\mbox{\hyperlink{classList_1_1iterator_abd843604d7d0cf419c962e04b075d7cd}{00277}}\ \ \ \ \ T\&\ \mbox{\hyperlink{classList_1_1iterator_abd843604d7d0cf419c962e04b075d7cd}{operator*}}()}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00278}00278\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00279}00279\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00280}00280\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ el\ valor\ de\ l'element\ E\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00281}00281\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00282}00282\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}-\/>itemsup))\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00283}00283\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ ++iterator\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00284}00284\ \ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00285}00285\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00286}00286\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>value;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00287}00287\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00288}00288\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00289}\mbox{\hyperlink{classList_1_1iterator_ab35845a1e219b980303420b53a384bd9}{00289}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_1_1iterator_ab35845a1e219b980303420b53a384bd9}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \&it)\ \textcolor{keyword}{const}\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00290}00290\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00291}00291\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ ens\ diu\ si\ els\ dos\ iteradors\ són\ iguals\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00292}00292\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00293}00293\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ ==\ it.plist\ and\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ it.pitem;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00294}00294\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00295}00295\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00296}\mbox{\hyperlink{classList_1_1iterator_aae4e692d19f7b487af0cbb124633e259}{00296}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_1_1iterator_aae4e692d19f7b487af0cbb124633e259}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \&it)\ \textcolor{keyword}{const}\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00297}00297\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00298}00298\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ ens\ diu\ si\ els\ dos\ iteradors\ són\ diferents\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00299}00299\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00300}00300\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ not\ (\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ ==\ it.plist\ and\ \mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ it.pitem);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00301}00301\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00302}00302\ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00303}00303\ \ \ \};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00304}00304\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00305}00305\ \ \ \textcolor{comment}{//\ Operations\ with\ iterators:}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00306}00306\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00307}\mbox{\hyperlink{classList_a119aa1ef679745145e3689966dee5dc6}{00307}}\ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_a119aa1ef679745145e3689966dee5dc6}{begin}}\ ()\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00308}00308\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00309}00309\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ apunta\ al\ primer\ element\ del\ p.i\ o\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00310}00310\ \textcolor{comment}{\ \ \ \ \ a\ l'element\ fictici\ si\ el\ p.i.\ no\ té\ cap\ element\ no}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00311}00311\ \textcolor{comment}{\ \ \ \ \ fictici\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00312}00312\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00313}00313\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00314}00314\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00315}00315\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00316}00316\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00317}00317\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00318}00318\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00319}\mbox{\hyperlink{classList_ac99b68e09742bb6173d16d03bcfbe5ff}{00319}}\ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_ac99b68e09742bb6173d16d03bcfbe5ff}{end}}()\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00320}00320\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00321}00321\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ apunta\ a\ l'element\ fictici\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00322}00322\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00323}00323\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00324}00324\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00325}00325\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00326}00326\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00327}00327\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00328}00328\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00329}\mbox{\hyperlink{classList_a2d0b71e0bd786e49e8199df69f763285}{00329}}\ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_a2d0b71e0bd786e49e8199df69f763285}{insert}}(\mbox{\hyperlink{classList_1_1iterator}{iterator}}\ it,\ \textcolor{keyword}{const}\ T\ \&\ value)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00330}00330\ \ \ \textcolor{comment}{/*\ Pre:\ it\ ha\ d'apuntar\ a\ un\ element\ del\ p.i}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00331}00331\ \textcolor{comment}{\ \ \ \ \ o\ a\ l'element\ fictici\ end()\ del\ p.i\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00332}00332\ \ \ \textcolor{comment}{/*\ Post:\ s'inserta\ un\ element\ amb\ valor\ value\ abans\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00333}00333\ \textcolor{comment}{\ \ \ \ \ de\ l'element\ al\ que\ apunta\ it\ i\ el\ resultat\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00334}00334\ \textcolor{comment}{\ \ \ \ \ apunta\ al\ nou\ element\ inserit\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00335}00335\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00336}00336\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ !=\ \textcolor{keyword}{this})\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00337}00337\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ insert\ with\ an\ iterator\ not\ on\ this\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00338}00338\ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00339}00339\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00340}00340\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ res\ =\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00341}00341\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}},\ value);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00342}00342\ \ \ \ \ res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00343}00343\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00344}00344\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00345}00345\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00346}\mbox{\hyperlink{classList_ad61050d023f90d3e55a360321b4d3b85}{00346}}\ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ \mbox{\hyperlink{classList_ad61050d023f90d3e55a360321b4d3b85}{erase}}(\mbox{\hyperlink{classList_1_1iterator}{iterator}}\ it)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00347}00347\ \ \ \textcolor{comment}{/*\ Pre:\ it\ ha\ d'apuntar\ a\ un\ element\ del\ p.i\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00348}00348\ \textcolor{comment}{\ \ \ \ \ que\ no\ sigui\ l'end()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00349}00349\ \ \ \textcolor{comment}{/*\ Post:\ s'elimina\ l'element\ apuntat\ per\ it,\ el\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00350}00350\ \textcolor{comment}{\ \ \ \ \ resultat\ apunta\ a\ l'element\ posterior\ a\ l'eliminat\ */}\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00351}00351\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00352}00352\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1iterator_a23e186117daddfc07a3fe50dbcbfcf3a}{plist}}\ !=\ \textcolor{keyword}{this})\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00353}00353\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ erase\ with\ an\ iterator\ not\ on\ this\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00354}00354\ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00355}00355\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00356}00356\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ ==\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}})\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00357}00357\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ erase\ with\ an\ iterator\ pointing\ to\ the\ end\ of\ the\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00358}00358\ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00359}00359\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00360}00360\ \ \ \ \ \mbox{\hyperlink{classList_1_1iterator}{iterator}}\ res\ =\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00361}00361\ \ \ \ \ res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}\ =\ res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00362}00362\ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(res.\mbox{\hyperlink{classList_1_1iterator_ab3c0eb8f491443ab38bb4f5b9aa6bff6}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}});}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00363}00363\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00364}00364\ \ \ \}}
 \DoxyCodeLine{\Hypertarget{list_8hh_source_l00365}00365\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00366}\mbox{\hyperlink{classList_1_1const__iterator}{00366}}\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00367}\mbox{\hyperlink{classList_1_1const__iterator_a8cee552d09eaeb60a09d95309a87b498}{00367}}\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1const__iterator_a8cee552d09eaeb60a09d95309a87b498}{List}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00368}00368\ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00369}\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{00369}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a8cee552d09eaeb60a09d95309a87b498}{List}}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00370}\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{00370}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item}{Item}}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00371}00371\ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00372}00372\ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00373}00373\ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00374}00374\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00375}00375\ \ \ \ \ \textcolor{comment}{//\ Preincrement}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00376}\mbox{\hyperlink{classList_1_1const__iterator_ae42ed9956fdaa6911f10dea549267ddf}{00376}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_1_1const__iterator_ae42ed9956fdaa6911f10dea549267ddf}{operator++}}()}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00377}00377\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00378}00378\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00379}00379\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ següent\ a\ E,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00380}00380\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ el\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00381}00381\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00382}00382\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}-\/>itemsup))\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00383}00383\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ ++iterator\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00384}00384\ \ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00385}00385\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00386}00386\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>next;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00387}00387\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00388}00388\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00389}00389\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00390}00390\ \ \ \ \ \textcolor{comment}{//\ Postincrement}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00391}\mbox{\hyperlink{classList_1_1const__iterator_ad33d9fb3bcbc5e460459317f04c28a78}{00391}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_1_1const__iterator_ad33d9fb3bcbc5e460459317f04c28a78}{operator++}}(\textcolor{keywordtype}{int})}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00392}00392\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ p.i.\ =\ I,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00393}00393\ \textcolor{comment}{\ \ \ \ \ \ \ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,\ que\ no\ és\ el\ end()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00394}00394\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ següent\ a\ E,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00395}00395\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ I\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00396}00396\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00397}00397\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}-\/>itemsup))\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00398}00398\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator++\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00399}00399\ \ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00400}00400\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00401}00401\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ aux\ =\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00402}00402\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>next;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00403}00403\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00404}00404\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00405}00405\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00406}00406\ \ \ \ \ \textcolor{comment}{//\ Predecrement}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00407}\mbox{\hyperlink{classList_1_1const__iterator_aec3dcfa69d75c1fda7e37840da6d1774}{00407}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_1_1const__iterator_aec3dcfa69d75c1fda7e37840da6d1774}{operator-\/-\/}}()}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00408}00408\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista\ que}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00409}00409\ \textcolor{comment}{\ \ \ \ \ \ \ no\ és\ el\ begin()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00410}00410\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ anterior\ a\ E,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00411}00411\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ el\ p.i.\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00412}00412\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00413}00413\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}-\/>iteminf.next)\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00414}00414\ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ -\/-\/iterator\ at\ the\ beginning\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00415}00415\ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00416}00416\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00417}00417\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>prev;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00418}00418\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00419}00419\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00420}00420\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00421}00421\ \ \ \ \ \textcolor{comment}{//\ Postdecrement}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00422}\mbox{\hyperlink{classList_1_1const__iterator_afc371e17d95507b573e9979767b9143d}{00422}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_1_1const__iterator_afc371e17d95507b573e9979767b9143d}{operator-\/-\/}}(\textcolor{keywordtype}{int})}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00423}00423\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ p.i.\ =\ I,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00424}00424\ \textcolor{comment}{\ \ \ \ \ \ \ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista\ que\ no\ és\ el\ begin()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00425}00425\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ anterior\ a\ E,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00426}00426\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ I\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00427}00427\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00428}00428\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}-\/>iteminf.next)\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00429}00429\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator-\/-\/\ at\ the\ beginning\ of\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00430}00430\ \ \ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00431}00431\ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00432}00432\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ aux;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00433}00433\ \ \ \ \ \ \ aux\ =\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00434}00434\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>prev;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00435}00435\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00436}00436\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00437}00437\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00438}\mbox{\hyperlink{classList_1_1const__iterator_a0be12752adb70708d45dd912dfbef182}{00438}}\ \ \ \ \ \textcolor{keyword}{const}\ T\&\ \mbox{\hyperlink{classList_1_1const__iterator_a0be12752adb70708d45dd912dfbef182}{operator*}}()}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00439}00439\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00440}00440\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00441}00441\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ el\ valor\ de\ l'element\ E\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00442}00442\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00443}00443\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>value;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00444}00444\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00445}00445\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00446}\mbox{\hyperlink{classList_1_1const__iterator_a01f9c2619f9ef88b830eaee119a0f6c5}{00446}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_1_1const__iterator_a01f9c2619f9ef88b830eaee119a0f6c5}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \&it)\ \textcolor{keyword}{const}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00447}00447\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00448}00448\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ ens\ diu\ si\ els\ dos\ iteradors\ són\ iguals\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00449}00449\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00450}00450\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ ==\ it.plist\ and\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ it.pitem;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00451}00451\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00452}00452\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00453}\mbox{\hyperlink{classList_1_1const__iterator_add2de4d6dc08c97c30879f4b24ca6d73}{00453}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_1_1const__iterator_add2de4d6dc08c97c30879f4b24ca6d73}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \&it)\ \textcolor{keyword}{const}\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00454}00454\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00455}00455\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ ens\ diu\ si\ els\ dos\ iteradors\ són\ diferents\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00456}00456\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00457}00457\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ not\ (\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ ==\ it.plist\ and\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ it.pitem);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00458}00458\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00459}00459\ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00460}00460\ \ \ \};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00461}00461\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00462}\mbox{\hyperlink{classList_ac5cab3c8bdce73655b82ba38a3e96ecc}{00462}}\ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_ac5cab3c8bdce73655b82ba38a3e96ecc}{cbegin}}()\ const}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00463}00463\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00464}00464\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ apunta\ al\ primer\ element\ del\ p.i\ o\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00465}00465\ \textcolor{comment}{\ \ \ \ \ a\ l'element\ fictici\ si\ el\ p.i.\ no\ té\ cap\ element\ no}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00466}00466\ \textcolor{comment}{\ \ \ \ \ fictici\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00467}00467\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00468}00468\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00469}00469\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ =\ \textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00470}00470\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00471}00471\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00472}00472\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00473}00473\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00474}\mbox{\hyperlink{classList_a2a045dee0440bccba4b9f03c508e119b}{00474}}\ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_a2a045dee0440bccba4b9f03c508e119b}{cend}}()\ const}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00475}00475\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00476}00476\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ apunta\ a\ l'element\ fictici\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00477}00477\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00478}00478\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00479}00479\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ =\ \textcolor{keyword}{this};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00480}00480\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00481}00481\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00482}00482\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00483}00483\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00484}\mbox{\hyperlink{classList_adda07f6a0b794bad298df25a2f42d173}{00484}}\ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_adda07f6a0b794bad298df25a2f42d173}{insert}}(\mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ it,\ \textcolor{keyword}{const}\ T\ \&\ value)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00485}00485\ \ \ \textcolor{comment}{/*\ Pre:\ it\ ha\ d'apuntar\ a\ un\ element\ del\ p.i}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00486}00486\ \textcolor{comment}{\ \ \ \ \ o\ a\ l'element\ fictici\ end()\ del\ p.i\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00487}00487\ \ \ \textcolor{comment}{/*\ Post:\ s'inserta\ un\ element\ amb\ valor\ value\ abans\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00488}00488\ \textcolor{comment}{\ \ \ \ \ de\ l'element\ al\ que\ apunta\ it\ i\ el\ resultat\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00489}00489\ \textcolor{comment}{\ \ \ \ \ apunta\ al\ nou\ element\ inserit\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00490}00490\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00491}00491\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ !=\ \textcolor{keyword}{this})\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00492}00492\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ insert\ with\ an\ iterator\ not\ on\ this\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00493}00493\ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00494}00494\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00495}00495\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ res\ =\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00496}00496\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}},\ value);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00497}00497\ \ \ \ \ res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00498}00498\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00499}00499\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00500}00500\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00501}\mbox{\hyperlink{classList_a3359f50658c7b403bc58e92ec8ebf362}{00501}}\ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_a3359f50658c7b403bc58e92ec8ebf362}{erase}}(\mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ it)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00502}00502\ \ \ \textcolor{comment}{/*\ Pre:\ it\ ha\ d'apuntar\ a\ un\ element\ del\ p.i\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00503}00503\ \textcolor{comment}{\ \ \ \ \ que\ no\ sigui\ l'end()\ */}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00504}00504\ \ \ \textcolor{comment}{/*\ Post:\ s'elimina\ l'element\ apuntat\ per\ it,\ el\ }}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00505}00505\ \textcolor{comment}{\ \ \ \ \ resultat\ apunta\ a\ l'element\ posterior\ a\ l'eliminat\ */}\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00506}00506\ \ \ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00507}00507\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ !=\ \textcolor{keyword}{this})\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00508}00508\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ erase\ with\ an\ iterator\ not\ on\ this\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00509}00509\ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00510}00510\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00511}00511\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}})\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00512}00512\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ erase\ with\ an\ iterator\ pointing\ to\ the\ end\ of\ the\ list"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00513}00513\ \ \ \ \ \ \ exit(1);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00514}00514\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00515}00515\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ res\ =\ it;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00516}00516\ \ \ \ \ res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00517}00517\ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}});}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00518}00518\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00519}00519\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00520}00520\ \ \ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00521}00521\ \};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00522}00522\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00523}00523\ \textcolor{comment}{//\ Implementation\ of\ read\ and\ write\ lists.}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00524}00524\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00525}\mbox{\hyperlink{list_8hh_a5e1d4427af55fda44f24b3b53f3010fa}{00525}}\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ istream\ \&\mbox{\hyperlink{list_8hh_a5e1d4427af55fda44f24b3b53f3010fa}{operator>>}}(istream\ \&is,\ \mbox{\hyperlink{classList}{List<T>}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00526}00526\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00527}00527\ \ \ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.removeItems();}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00528}00528\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{size}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00529}00529\ \ \ cin\ >>\ \mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{size}};}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00530}00530\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{size}};\ ++i)\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00531}00531\ \ \ \ \ T\ value;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00532}00532\ \ \ \ \ cin\ >>\ value;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00533}00533\ \ \ \ \ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.insertItem(\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup.prev,\ value);}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00534}00534\ \ \ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00535}00535\ \ \ \textcolor{keywordflow}{return}\ is;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00536}00536\ \}}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00537}00537\ }
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00538}\mbox{\hyperlink{list_8hh_a391b7910731b7a3b882d04e7ad990241}{00538}}\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>\ ostream\ \&\mbox{\hyperlink{list_8hh_a391b7910731b7a3b882d04e7ad990241}{operator<<}}(ostream\ \&os,\ \mbox{\hyperlink{classList}{List<T>}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00539}00539\ \{}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00540}00540\ \ \ os\ <<\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.\_size;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00541}00541\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{typename}\ \mbox{\hyperlink{classList_1_1Item}{List<T>::Item}}*\ pitem\ =\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.iteminf.next;\ pitem\ !=\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup;\ pitem\ =\ pitem-\/>next)}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00542}00542\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ pitem-\/>value;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00543}00543\ \ \ \textcolor{keywordflow}{return}\ os;}
-\DoxyCodeLine{\Hypertarget{list_8hh_source_l00544}00544\ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00366}00366\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00367}00367\ \ \ \textcolor{comment}{//\ Iteradors\ constants}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00368}00368\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00369}\mbox{\hyperlink{classList_1_1const__iterator}{00369}}\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00370}\mbox{\hyperlink{classList_1_1const__iterator_a8cee552d09eaeb60a09d95309a87b498}{00370}}\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classList_1_1const__iterator_a8cee552d09eaeb60a09d95309a87b498}{List}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00371}00371\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00372}\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{00372}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a8cee552d09eaeb60a09d95309a87b498}{List}}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00373}\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{00373}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1Item}{Item}}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00374}00374\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00375}00375\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00376}00376\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00377}00377\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00378}00378\ \ \ \ \ \textcolor{comment}{//\ Preincrement}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00379}\mbox{\hyperlink{classList_1_1const__iterator_ae42ed9956fdaa6911f10dea549267ddf}{00379}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_1_1const__iterator_ae42ed9956fdaa6911f10dea549267ddf}{operator++}}()}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00380}00380\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00381}00381\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00382}00382\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ següent\ a\ E,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00383}00383\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ el\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00384}00384\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00385}00385\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}-\/>itemsup))\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00386}00386\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ ++iterator\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00387}00387\ \ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00388}00388\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00389}00389\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>next;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00390}00390\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00391}00391\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00392}00392\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00393}00393\ \ \ \ \ \textcolor{comment}{//\ Postincrement}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00394}\mbox{\hyperlink{classList_1_1const__iterator_ad33d9fb3bcbc5e460459317f04c28a78}{00394}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_1_1const__iterator_ad33d9fb3bcbc5e460459317f04c28a78}{operator++}}(\textcolor{keywordtype}{int})}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00395}00395\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ p.i.\ =\ I,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00396}00396\ \textcolor{comment}{\ \ \ \ \ \ \ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,\ que\ no\ és\ el\ end()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00397}00397\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ següent\ a\ E,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00398}00398\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ I\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00399}00399\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00400}00400\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \&(\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}-\/>itemsup))\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00401}00401\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator++\ at\ the\ end\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00402}00402\ \ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00403}00403\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00404}00404\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ aux\ =\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00405}00405\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>next;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00406}00406\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00407}00407\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00408}00408\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00409}00409\ \ \ \ \ \textcolor{comment}{//\ Predecrement}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00410}\mbox{\hyperlink{classList_1_1const__iterator_aec3dcfa69d75c1fda7e37840da6d1774}{00410}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_1_1const__iterator_aec3dcfa69d75c1fda7e37840da6d1774}{operator-\/-\/}}()}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00411}00411\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista\ que}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00412}00412\ \textcolor{comment}{\ \ \ \ \ \ \ no\ és\ el\ begin()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00413}00413\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ anterior\ a\ E,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00414}00414\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ el\ p.i.\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00415}00415\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00416}00416\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}-\/>iteminf.next)\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00417}00417\ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ -\/-\/iterator\ at\ the\ beginning\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00418}00418\ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00419}00419\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00420}00420\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>prev;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00421}00421\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00422}00422\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00423}00423\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00424}00424\ \ \ \ \ \textcolor{comment}{//\ Postdecrement}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00425}\mbox{\hyperlink{classList_1_1const__iterator_afc371e17d95507b573e9979767b9143d}{00425}}\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_1_1const__iterator_afc371e17d95507b573e9979767b9143d}{operator-\/-\/}}(\textcolor{keywordtype}{int})}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00426}00426\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ p.i.\ =\ I,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00427}00427\ \textcolor{comment}{\ \ \ \ \ \ \ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista\ que\ no\ és\ el\ begin()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00428}00428\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ p.i\ apunta\ a\ l'element\ anterior\ a\ E,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00429}00429\ \textcolor{comment}{\ \ \ \ \ \ \ el\ resultat\ és\ I\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00430}00430\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00431}00431\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}-\/>iteminf.next)\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00432}00432\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ iterator-\/-\/\ at\ the\ beginning\ of\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00433}00433\ \ \ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00434}00434\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00435}00435\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ aux;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00436}00436\ \ \ \ \ \ \ aux\ =\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00437}00437\ \ \ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>prev;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00438}00438\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00439}00439\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00440}00440\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00441}\mbox{\hyperlink{classList_1_1const__iterator_a0be12752adb70708d45dd912dfbef182}{00441}}\ \ \ \ \ \textcolor{keyword}{const}\ T\&\ \mbox{\hyperlink{classList_1_1const__iterator_a0be12752adb70708d45dd912dfbef182}{operator*}}()}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00442}00442\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ el\ p.i\ apunta\ a\ un\ element\ E\ de\ la\ llista,}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00443}00443\ \textcolor{comment}{\ \ \ \ \ \ \ que\ no\ és\ el\ end()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00444}00444\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ és\ el\ valor\ de\ l'element\ E\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00445}00445\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00446}00446\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>value;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00447}00447\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00448}00448\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00449}\mbox{\hyperlink{classList_1_1const__iterator_a01f9c2619f9ef88b830eaee119a0f6c5}{00449}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_1_1const__iterator_a01f9c2619f9ef88b830eaee119a0f6c5}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \&it)\ \textcolor{keyword}{const}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00450}00450\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00451}00451\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ ens\ diu\ si\ els\ dos\ iteradors\ són\ iguals\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00452}00452\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00453}00453\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ ==\ it.plist\ and\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ it.pitem;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00454}00454\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00455}00455\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00456}\mbox{\hyperlink{classList_1_1const__iterator_add2de4d6dc08c97c30879f4b24ca6d73}{00456}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classList_1_1const__iterator_add2de4d6dc08c97c30879f4b24ca6d73}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \&it)\ \textcolor{keyword}{const}\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00457}00457\ \ \ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00458}00458\ \ \ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ ens\ diu\ si\ els\ dos\ iteradors\ són\ diferents\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00459}00459\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00460}00460\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ not\ (\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ ==\ it.plist\ and\ \mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ it.pitem);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00461}00461\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00462}00462\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00463}00463\ \ \ \};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00464}00464\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00465}\mbox{\hyperlink{classList_ac5cab3c8bdce73655b82ba38a3e96ecc}{00465}}\ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_ac5cab3c8bdce73655b82ba38a3e96ecc}{cbegin}}()\ const}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00466}00466\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00467}00467\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ apunta\ al\ primer\ element\ del\ p.i\ o\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00468}00468\ \textcolor{comment}{\ \ \ \ \ a\ l'element\ fictici\ si\ el\ p.i.\ no\ té\ cap\ element\ no}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00469}00469\ \textcolor{comment}{\ \ \ \ \ fictici\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00470}00470\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00471}00471\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00472}00472\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00473}00473\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \mbox{\hyperlink{classList_ade3405baf39c494f2ad80b62eed6ed63}{iteminf}}.next;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00474}00474\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00475}00475\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00476}00476\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00477}\mbox{\hyperlink{classList_a2a045dee0440bccba4b9f03c508e119b}{00477}}\ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_a2a045dee0440bccba4b9f03c508e119b}{cend}}()\ const}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00478}00478\ \ \ \textcolor{comment}{/*\ Pre:\ cert\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00479}00479\ \ \ \textcolor{comment}{/*\ Post:\ el\ resultat\ apunta\ a\ l'element\ fictici\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00480}00480\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00481}00481\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00482}00482\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00483}00483\ \ \ \ \ it.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00484}00484\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00485}00485\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00486}00486\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00487}\mbox{\hyperlink{classList_adda07f6a0b794bad298df25a2f42d173}{00487}}\ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_adda07f6a0b794bad298df25a2f42d173}{insert}}(\mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ it,\ \textcolor{keyword}{const}\ T\ \&\ value)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00488}00488\ \ \ \textcolor{comment}{/*\ Pre:\ it\ ha\ d'apuntar\ a\ un\ element\ del\ p.i}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00489}00489\ \textcolor{comment}{\ \ \ \ \ o\ a\ l'element\ fictici\ end()\ del\ p.i\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00490}00490\ \ \ \textcolor{comment}{/*\ Post:\ s'inserta\ un\ element\ amb\ valor\ value\ abans\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00491}00491\ \textcolor{comment}{\ \ \ \ \ de\ l'element\ al\ que\ apunta\ it\ i\ el\ resultat\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00492}00492\ \textcolor{comment}{\ \ \ \ \ apunta\ al\ nou\ element\ inserit\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00493}00493\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00494}00494\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ !=\ \textcolor{keyword}{this})\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00495}00495\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ insert\ with\ an\ iterator\ not\ on\ this\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00496}00496\ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00497}00497\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00498}00498\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ res\ =\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00499}00499\ \ \ \ \ \mbox{\hyperlink{classList_a4908da5292ab139ffe193d02429a32f3}{insertItem}}(res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}},\ value);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00500}00500\ \ \ \ \ res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00501}00501\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00502}00502\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00503}00503\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00504}\mbox{\hyperlink{classList_a3359f50658c7b403bc58e92ec8ebf362}{00504}}\ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classList_a3359f50658c7b403bc58e92ec8ebf362}{erase}}(\mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ it)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00505}00505\ \ \ \textcolor{comment}{/*\ Pre:\ it\ ha\ d'apuntar\ a\ un\ element\ del\ p.i\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00506}00506\ \textcolor{comment}{\ \ \ \ \ que\ no\ sigui\ l'end()\ */}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00507}00507\ \ \ \textcolor{comment}{/*\ Post:\ s'elimina\ l'element\ apuntat\ per\ it,\ el\ }}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00508}00508\ \textcolor{comment}{\ \ \ \ \ resultat\ apunta\ a\ l'element\ posterior\ a\ l'eliminat\ */}\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00509}00509\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00510}00510\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1const__iterator_a12868e7a5d69109528d1169b50ee573d}{plist}}\ !=\ \textcolor{keyword}{this})\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00511}00511\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ erase\ with\ an\ iterator\ not\ on\ this\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00512}00512\ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00513}00513\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00514}00514\ \ \ \ \ \textcolor{keywordflow}{if}\ (it.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ ==\ \&\mbox{\hyperlink{classList_aa8571917827c672b59250dbfb0e0af0e}{itemsup}})\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00515}00515\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Error:\ erase\ with\ an\ iterator\ pointing\ to\ the\ end\ of\ the\ list"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00516}00516\ \ \ \ \ \ \ exit(1);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00517}00517\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00518}00518\ \ \ \ \ \mbox{\hyperlink{classList_1_1const__iterator}{const\_iterator}}\ res\ =\ it;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00519}00519\ \ \ \ \ res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}\ =\ res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a1471edc78e68604273decfc5cf0590a3}{next}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00520}00520\ \ \ \ \ \mbox{\hyperlink{classList_a2ea3317c23dcd423005de82afe561162}{removeItem}}(res.\mbox{\hyperlink{classList_1_1const__iterator_a1c7d04c4ffc66523b8d4c44b491d0c8a}{pitem}}-\/>\mbox{\hyperlink{classList_1_1Item_a153cf392070c9150e52a8d1426609410}{prev}});}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00521}00521\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00522}00522\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00523}00523\ \ \ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00524}00524\ \};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00525}00525\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00526}00526\ \textcolor{comment}{//\ Implementation\ of\ read\ and\ write\ lists.}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00527}00527\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00528}\mbox{\hyperlink{list_8hh_a5e1d4427af55fda44f24b3b53f3010fa}{00528}}\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ istream\ \&\mbox{\hyperlink{list_8hh_a5e1d4427af55fda44f24b3b53f3010fa}{operator>>}}(istream\ \&is,\ \mbox{\hyperlink{classList}{List<T>}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00529}00529\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00530}00530\ \ \ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.removeItems();}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00531}00531\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{size}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00532}00532\ \ \ cin\ >>\ \mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{size}};}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00533}00533\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classList_aec8852ab225094e14ad424e8d71a4dac}{size}};\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00534}00534\ \ \ \ \ T\ value;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00535}00535\ \ \ \ \ cin\ >>\ value;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00536}00536\ \ \ \ \ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.insertItem(\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup.prev,\ value);}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00537}00537\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00538}00538\ \ \ \textcolor{keywordflow}{return}\ is;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00539}00539\ \}}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00540}00540\ }
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00541}\mbox{\hyperlink{list_8hh_a391b7910731b7a3b882d04e7ad990241}{00541}}\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>\ ostream\ \&\mbox{\hyperlink{list_8hh_a391b7910731b7a3b882d04e7ad990241}{operator<<}}(ostream\ \&os,\ \mbox{\hyperlink{classList}{List<T>}}\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}})}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00542}00542\ \{}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00543}00543\ \ \ os\ <<\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.\_size;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00544}00544\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{typename}\ \mbox{\hyperlink{classList_1_1Item}{List<T>::Item}}*\ pitem\ =\ \mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.iteminf.next;\ pitem\ !=\ \&\mbox{\hyperlink{sandglass_8cc_aa5dc270843155b0fc1f3974621e19985}{l}}.itemsup;\ pitem\ =\ pitem-\/>next)}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00545}00545\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ pitem-\/>value;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00546}00546\ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{\Hypertarget{list_8hh_source_l00547}00547\ \}}
 
 \end{DoxyCode}

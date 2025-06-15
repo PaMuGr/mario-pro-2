@@ -8,6 +8,7 @@ using namespace pro2;
 /*CONSTRUCTOR GENERAL*/
 Game::Game(int width, int height)
     : mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right, Keys::Down),
+      //MARIO I PLATAFORMES PER SER DIBUIXADES EN LA PANTALLA D'INICI
       still_mario_({width / 2, 150}, Keys::Space, Keys::Left, Keys::Right, Keys::Down),
       still_platform_({0, 480, 150, 480}),
       sandglass_({200, 114}), 
@@ -32,7 +33,7 @@ Game::Game(int width, int height)
     
     //100.000 ITEMS -> Una mica lent al restart (normal)
     //50.000 ITEMS -> Millor per playtesting 
-    for (int i = 1; i < 100; i++) {
+    for (int i = 1; i < 1000; i++) {
         int cy = randomizer(-3,3);
         int random_height = randomizer(-3, 3);
         int y_offset = random_height * 10;
@@ -87,6 +88,8 @@ Game::Game(int width, int height)
 /*PROCESSADOR DE TECLES*/
 void Game::process_keys(pro2::Window& window) {
     if (window.is_key_down(Keys::Escape)) {
+        game_state_ = 4;
+        //quitar
         finished_ = true;
         return;
     }
@@ -99,6 +102,8 @@ void Game::process_keys(pro2::Window& window) {
         *this = Game(480, 320);
         game_mode_ = prev_mode;
         apply_game_mode_settings();
+        game_state_ = 5;
+        //quitar
         reset_ = false;
         return;
     }
@@ -106,6 +111,8 @@ void Game::process_keys(pro2::Window& window) {
         ascended_.activate({mario_.pos().x, mario_.pos().y});
     }
     if(window.was_key_pressed(Keys::Return)){
+        game_state_ = 0;
+        //quitar
         start_game_ = true;
         return;
     }
@@ -133,7 +140,15 @@ void Game::apply_game_mode_settings() {
             timer_ = 2880; 
             crosses_to_get_ = 9999;
             break;
+        case 5:  //Dodge
+            has_time_limit_ = false;
+            timer_ = 0; 
+            crosses_to_get_ = 9999;
+            is_dodging_mode_ = true;
+            break;
         default:
+            game_state_ = 4;
+            //quitar
             finished_ = true;
             break;
     }
@@ -144,6 +159,8 @@ bool Game::check_fallen_off_screen(const pro2::Window& window) {
     //Comprovació si mario esta caigut de les plataformes --> TORNA A INICIAR JOC
     int floor = window.topleft().y + window.height() + 200;
     if (mario_.pos().y > floor) {
+        game_state_ = 5;
+        //quitar
         reset_ = true;
         return true;
     }
@@ -158,10 +175,8 @@ void Game::handle_sandglass_interaction(const pro2::Rect& marioRect) {
 }
 
 void Game::update_time_stoped_mode(pro2::Window& window, const pro2::Rect& marioRect) {
-    update_fireball_collisions(marioRect);
     update_crosses(window, marioRect);
-    update_fire_collisions(marioRect);
-
+    
     int current_points = mario_.check_points();
     if (current_points >= 5 && current_points / 5 > last_blessed_points_ / 5) {
         ascended_.add_blessing();
@@ -170,63 +185,17 @@ void Game::update_time_stoped_mode(pro2::Window& window, const pro2::Rect& mario
 }
 
 void Game::update_normal_mode(pro2::Window& window, const pro2::Rect& marioRect) {
-    demon_.update(window);
-    try_shoot_fireball();
-
-    update_fireballs(window);
-    update_fireball_collisions(marioRect);
-
+    auto platforms_visibles = finder_platforms_.query(window.camera_rect());
+    demon_.update(window,platforms_visibles);
+    if(demon_.check_fireball_collisions(marioRect,ascended_.get_rect())){
+         game_state_ = 5;
+            //quitar
+        reset_ = true;
+    }
+    
     update_crosses(window, marioRect);
-    update_fires();
-    update_fire_collisions(marioRect);
-
+    
     check_blessing_points();
-}
-
-void Game::try_shoot_fireball() {
-    if(demon_.should_shoot()){
-        demon_.reset_cooldown();
-        pro2::Pt fireball_pos = {demon_.pos().x + 8, demon_.pos().y + 16};
-        pro2::Pt fireball_speed = {0, 5}; //Cap abaix
-        fireballs_.push_back(Fireball(fireball_pos, fireball_speed)); //Afegim element nou amb propietats escollides
-    }
-}
-
-void Game::update_fireballs(pro2::Window& window) {
-    for (auto it = fireballs_.begin(); it != fireballs_.end();) {
-        (*it).update(window);
-
-        if (!(*it).is_active() || check_fireball_hits_platform(*it)) {
-            it = fireballs_.erase(it);
-        } else {
-            ++it;
-        }
-    }
-}
-
-bool Game::check_fireball_hits_platform(Fireball& fireball) {
-    pro2::Rect fireballRect = fireball.get_rect();
-
-    for (const Platform& platform : platforms_) {
-        if (interseccionen(fireballRect, platform.get_rect())) {
-            fireball.deactivate();
-
-            //Creació de focs 
-            if (randomizer(0, 4) < 6) {
-                pro2::Rect fireballRect = fireball.get_rect();
-                pro2::Rect platformRect = platform.get_rect();
-                Pt fire_pos = {
-                    (fireballRect.left + fireballRect.right) / 2 - 4,  
-                    platformRect.top - 7  
-                };
-                fires_.push_back(Fire(fire_pos, 120));
-            }
-
-            break;
-        }
-    }
-
-    return false;
 }
 
 void Game::update_crosses(pro2::Window& window, const pro2::Rect& marioRect) {
@@ -242,44 +211,7 @@ void Game::update_crosses(pro2::Window& window, const pro2::Rect& marioRect) {
     }
 }
 
-void Game::update_fires() {
-    for (auto it = fires_.begin(); it != fires_.end();) {
-        (*it).update();
-        if (!(*it).is_active()) {
-            it = fires_.erase(it);
-        } else {
-            ++it;
-        }
-    }
-}
 
-void Game::update_fireball_collisions(const pro2::Rect& marioRect) {
-    for (auto& fireball : fireballs_) {
-        if (fireball.is_active()) {
-            if (interseccionen(ascended_.get_rect(), fireball.get_rect())) {
-                fireball.deactivate();
-            } else if (interseccionen(marioRect, fireball.get_rect())) {
-                fireball.deactivate();
-                reset_ = true;
-                return;
-            }
-        }
-    }
-}
-
-void Game::update_fire_collisions(const pro2::Rect& marioRect) {
-    for (auto& fire : fires_) {
-        if (fire.is_active()) {
-            if (interseccionen(ascended_.get_rect(), fire.get_rect())) {
-                fire.deactivate_fires();
-            } else if (interseccionen(marioRect, fire.get_rect())) {
-                fire.deactivate_fires();
-                reset_ = true;
-                return;
-            }
-        }
-    }
-}
 
 void Game::update_demon_state(pro2::Window& window){
 
@@ -346,10 +278,15 @@ void Game::update(pro2::Window& window) {
         }
         update_objects(window);
         update_camera(window);
-        if (!won_ and mario_.check_points() >= crosses_to_get_) won_ = true;
+        if (!won_ and mario_.check_points() >= crosses_to_get_){
+            game_state_ = 2;
+            //quitar
+            won_ = true;
+        }
     } 
 }
 
+/*PAINTS DE CADA OBJECTE I PANTALLA DIFERENT*/
 void Game::paint_platforms(pro2::Window& window){
     pro2::Rect windowRect = window.camera_rect();
     std::set<const Platform*> visibles = finder_platforms_.query(windowRect);
@@ -371,13 +308,6 @@ void Game::paint_demon_objects(pro2::Window& window){
     if(mario_.check_points() >= crosses_to_get_/2) demon_.decaying();
     demon_.paint(window);
     
-    for (const auto& fireball : fireballs_) {
-        fireball.paint(window);
-    }
-
-    for (auto it = fires_.begin(); it != fires_.end(); ++it) {
-        (*it).paint(window);
-    }
 }
 
 void Game::paint_blessings(pro2::Window& window){
@@ -516,6 +446,11 @@ void Game::paint(pro2::Window& window) {
             paint_gameover_screen(window);
         } else if (speedrun_won_){
             paint_speedrun_screen(window);
+        } else if (is_dodging_mode_){
+            window.clear(sky_blue);
+            paint_demon_objects(window);
+            paint_platforms(window);
+            mario_.paint(window);
         } else {
             if (!sandglass_.is_effect_active()) {
                 window.clear(sky_blue);
@@ -524,7 +459,6 @@ void Game::paint(pro2::Window& window) {
                 window.clear(0xC2B280);
                 paint_number(window, {window.camera_center().x, window.camera_center().y}, sandglass_.cooldown());
             }
-
             paint_timer(window);
             paint_platforms(window);
             paint_crosses(window);

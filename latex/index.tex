@@ -1,21 +1,44 @@
-\chapter{Mario Pro 2 -\/ Documentació del Joc}
-\hypertarget{index}{}\label{index}\index{Mario Pro 2 -\/ Documentació del Joc@{Mario Pro 2 -\/ Documentació del Joc}}
-\hypertarget{index_intro_sec}{}\doxysection{\texorpdfstring{Introducció}{Introducció}}\label{index_intro_sec}
-Aquesta és la documentació per el joc de \doxylink{classMario}{Mario} Pro 2, un plataformer 2D amb Jesus com a protagonista
-\begin{DoxyItemize}
-\item Hi podem trobar les Creus que haurem d\textquotesingle{}agafar
-\item Enemic -\/\texorpdfstring{$>$}{>} Dimoni
-\item Un rellotge que para el temps 10 segons
-\end{DoxyItemize}\hypertarget{index_tech_sec}{}\doxysection{\texorpdfstring{Detalls Tecnics}{Detalls Tecnics}}\label{index_tech_sec}
+\chapter{Mario\+\_\+\+PRO\+\_\+2 X Jesus Christ}
+\hypertarget{index}{}\label{index}\index{Mario\_PRO\_2 X Jesus Christ@{Mario\_PRO\_2 X Jesus Christ}}
+\hypertarget{index_autotoc_md0}{}\doxysection{\texorpdfstring{Juego Platformer 2D}{Juego Platformer 2D}}\label{index_autotoc_md0}
+Un juego 2D donde juegas como Jesús, coge cruces, evita morir por caída o por las bolas de fuego demoniacas. El juego incluye poderes como el de parar el tiempo con el RELOJ DE ARENA y un escudo activando el BLESSER.\hypertarget{index_autotoc_md1}{}\doxysubsection{\texorpdfstring{Controls}{Controls}}\label{index_autotoc_md1}
 
 \begin{DoxyItemize}
-\item Resolució\+: 480x320
-\item Target FPS\+: 48
-\end{DoxyItemize}\hypertarget{index_usage_sec}{}\doxysection{\texorpdfstring{Controls del Joc}{Controls del Joc}}\label{index_usage_sec}
-Controls\+:
+\item {\bfseries{Arrow Keys}}\+: Para mover al personaje de Derecha a Izquierda
+\item {\bfseries{Down Key}}\+: Para bajar al personaje a la plataforma de abajo (o al vacio)
+\item {\bfseries{Spacebar}}\+: Saltar
+\item {\bfseries{B}}\+: Activate Blesser shield (if available)
+\end{DoxyItemize}\hypertarget{index_autotoc_md2}{}\doxysubsection{\texorpdfstring{Game Features}{Game Features}}\label{index_autotoc_md2}
+
 \begin{DoxyItemize}
-\item Fletxes per moure\textquotesingle{}s (Fletxa d\textquotesingle{}abaix per baixar plataformes)
-\item Espai per saltar
-\item "{}\+B"{} per utilitzar escut
-\item Si caus o mors, R per reiniciar 
+\item {\bfseries{Crosses}}\+: Cógelas para ganar el juego. Cogiendo 5, te proporciona un escudo.
+\item {\bfseries{\doxylink{classSandglass}{Sandglass}}}\+: Temporalmente para el juego y los enemigos
+\item {\bfseries{\doxylink{classDemon}{Demon}}}\+: Crea bolas de fuego que hacen aparecer fuegos a todo lo que tocan.
+\item {\bfseries{Blesser}}\+: Un escudo que es proporcionado si se clica B al haber conseguido 5 crosses.
+\end{DoxyItemize}\hypertarget{index_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{Main Files}{Main Files}}\label{index_autotoc_md3}
+
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{main_8cc}{main.\+cc}}\+: Inicia el joc
+\item {\ttfamily \doxylink{game_8hh}{game.\+hh}} / {\ttfamily \doxylink{game_8cc}{game.\+cc}}\+: Maneja el bucle del juego y actualiza los objetos.
+\item {\ttfamily \doxylink{mario_8hh}{mario.\+hh}} / {\ttfamily \doxylink{mario_8cc}{mario.\+cc}}\+: Personaje principal
+\item {\ttfamily \doxylink{demon_8hh}{demon.\+hh}} / {\ttfamily \doxylink{demon_8cc}{demon.\+cc}}\+: Funciones del demon y todo lo que hace.
+\item {\ttfamily \doxylink{cross_8hh}{cross.\+hh}} / {\ttfamily \doxylink{cross_8cc}{cross.\+cc}}\+: Las cruces colecionables.
+\item {\ttfamily \doxylink{sandglass_8hh}{sandglass.\+hh}} / {\ttfamily \doxylink{sandglass_8cc}{sandglass.\+cc}}\+: Implementación del reloj de arena.
+\item {\ttfamily \doxylink{ascended_8hh}{ascended.\+hh}} / {\ttfamily \doxylink{ascended_8cc}{ascended.\+cc}}\+: El escudo y su implementación usando punteros y la classe stack.
+\item {\ttfamily \doxylink{platform_8hh}{platform.\+hh}} / {\ttfamily \doxylink{platform_8cc}{platform.\+cc}}\+: Las plataformas y sus funciones.
+\item {\ttfamily \doxylink{stack_8hh}{stack.\+hh}}\+: \doxylink{classStack}{Stack} de punteros
+\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysubsection{\texorpdfstring{Build Instructions}{Build Instructions}}\label{index_autotoc_md4}
+
+\begin{DoxyEnumerate}
+\item Recuerda tener un compilador de C++ y la libreria SDL2.
+\item Run {\ttfamily make} para compilar.
+\item Run {\ttfamily ./mario\+\_\+pro\+\_\+2} para empezar a jugar.
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md5}{}\doxysubsection{\texorpdfstring{Notes}{Notes}}\label{index_autotoc_md5}
+
+\begin{DoxyItemize}
+\item El \doxylink{classSandglass}{Sandglass} tiene 10 segundos de countdown
+\item Las bolas de fuego pueden ser aturadas o bloqueadas usando poderes.
+\item Si consigues la mitad de la puntuación para matar el demon este se enfadara y ira más rápido.
 \end{DoxyItemize}
+
+Pau Muras Grané 

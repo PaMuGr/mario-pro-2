@@ -5,13 +5,14 @@
 #ifndef WINDOW_HH
 #define WINDOW_HH
 
-#include <cassert>
-#include <string>
-
 #define FENSTER_HEADER
 #include "fenster.h"
-
 #include "geometry.hh"
+
+#ifndef NO_DIAGRAM
+#include <cassert>
+#include <string>
+#endif
 
 namespace pro2 {
 

@@ -1,5 +1,9 @@
+#ifndef STACK_HH
+#define STACK_HH
+#ifndef NO_DIAGRAM
 #include <iostream>
 #include <cstdlib>
+#endif
 
 using namespace std;
 
@@ -154,3 +158,4 @@ template <typename U> istream &operator>>(istream &is, Stack<U> &s)
   }
   return is;
 }
+#endif

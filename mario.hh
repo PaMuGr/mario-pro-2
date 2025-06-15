@@ -5,11 +5,14 @@
 #ifndef MARIO_HH
 #define MARIO_HH
 
-#include <iostream>
-#include <vector>
 #include "list.hh"
 #include "platform.hh"
 #include "window.hh"
+
+#ifndef NO_DIAGRAM
+#include <iostream>
+#include <vector>
+#endif
 
 class Mario {
  private:

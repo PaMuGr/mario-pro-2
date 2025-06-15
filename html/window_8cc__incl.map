@@ -1,14 +1,10 @@
 <map id="window.cc" name="window.cc">
-<area shape="rect" id="Node000001" title="Funcions del Window." alt="" coords="46,5,127,31"/>
+<area shape="rect" id="Node000001" title="Funcions del Window." alt="" coords="39,5,120,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,153,77,178"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,32,52,138,47,137,80,31"/>
-<area shape="rect" id="Node000003" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="92,79,174,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,30,119,64,115,67,92,33"/>
-<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="119,107,70,145,67,141,116,103"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="101,153,165,178"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="136,105,136,137,130,137,130,105"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="189,153,242,178"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="149,103,192,140,189,144,145,107"/>
-<area shape="rect" id="Node000006" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="266,153,357,178"/>
-<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="164,103,268,144,266,149,162,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,32,51,138,46,137,74,31"/>
+<area shape="rect" id="Node000003" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="79,79,160,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="89,30,108,64,103,67,84,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="108,107,67,144,64,140,105,103"/>
+<area shape="rect" id="Node000004" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="101,153,192,178"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="127,104,139,137,134,139,122,106"/>
 </map>

@@ -1,29 +1,11 @@
 /** @file main.cc
- * @brief Mario
+ * @brief Main page of the Mario Game
  */
 
-/**
- * @mainpage Mario Pro 2 - Documentació del Joc
- * 
- * @section intro_sec Introducció
- * Aquesta és la documentació per el joc de Mario Pro 2, un plataformer 2D amb Jesus com a protagonista
- * - Hi podem trobar les Creus que haurem d'agafar
- * - Enemic -> Dimoni
- * - Un rellotge que para el temps 10 segons
- * 
- * @section tech_sec Detalls Tecnics
- * - Resolució: 480x320 
- * - Target FPS: 48
- * 
- * @section usage_sec Controls del Joc
- * Controls:
- * - Fletxes per moure's (Fletxa d'abaix per baixar plataformes)
- * - Espai per saltar
- * - "B" per utilitzar escut
- * - Si caus o mors, R per reiniciar
- */
-
+#ifndef NO_DIAGRAM
 #include <vector>
+#endif
+
 #include "game.hh"
 #include "window.hh"
 
@@ -48,7 +30,8 @@ int main() {
     cout << "2.- INTERMEDI (Agafa 20 crosses)" << endl;
     cout << "3.- DIFICIL (Agafa 40 crosses)" << endl;
     cout << "4.- SPEEDRUN (Amb temps)" << endl;
-    cout << "5.- EXIT" << endl;
+    cout << "5.- DODGING MODE (Sense temps)" << endl;
+    cout << "6.- EXIT" << endl;
     cout << "############################" << endl;
     int gamemode;
     cout << endl;
@@ -57,7 +40,7 @@ int main() {
     cout << endl << "############################" << endl;
     cout << endl;
 
-    if(gamemode != 5){
+    if(gamemode != 6){
         cout << "Cargant el joc..." << endl << endl;
         Game game(WIDTH, HEIGHT);
         game.set_gamemode(gamemode);

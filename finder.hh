@@ -2,11 +2,13 @@
  * @brief Especificació de les Funcions del Finder
  */
 
-#include <map>
-#include <set>
 #include "geometry.hh"
 #include "utils.hh"
 
+#ifndef NO_DIAGRAM
+#include <map>
+#include <set>
+#endif
 
 template <typename T>
 class Finder {
@@ -103,7 +105,6 @@ public:
         remove(t);
         add(t);
     }
-
 
     /**
      * @brief Retorna el conjunt d'objectes amb rectangles 

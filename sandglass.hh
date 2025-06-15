@@ -5,12 +5,15 @@
 #ifndef SANDGLASS_HH
 #define SANDGLASS_HH
 
-#include <iostream>
-#include <vector>
-#include <list>
 #include "platform.hh"
 #include "window.hh"
 #include "geometry.hh"
+
+#ifndef NO_DIAGRAM
+#include <iostream>
+#include <vector>
+#include <list>
+#endif
 
 class Sandglass {
  private:

@@ -1,14 +1,5 @@
 \doxysection{Referencia del archivo stack.\+hh}
 \hypertarget{stack_8hh}{}\label{stack_8hh}\index{stack.hh@{stack.hh}}
-{\ttfamily \#include $<$iostream$>$}\newline
-{\ttfamily \#include $<$cstdlib$>$}\newline
-Gráfico de dependencias incluidas en stack.\+hh\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=196pt]{stack_8hh__incl}
-\end{center}
-\end{figure}
 \doxysubsubsection*{Clases}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,15 +26,15 @@ ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os}{, }\i
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00138}{138}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00140}{140}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00139\ \{}
-\DoxyCodeLine{00140\ \ \ os\ <<\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.\_size;}
-\DoxyCodeLine{00141\ \ \ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.printRec(os,\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.ptopitem);}
-\DoxyCodeLine{00142\ \ \ \textcolor{keywordflow}{return}\ os;}
-\DoxyCodeLine{00143\ \}}
+\DoxyCodeLine{00141\ \{}
+\DoxyCodeLine{00142\ \ \ os\ <<\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.\_size;}
+\DoxyCodeLine{00143\ \ \ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.printRec(os,\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.ptopitem);}
+\DoxyCodeLine{00144\ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00145\ \}}
 
 \end{DoxyCode}
 \Hypertarget{stack_8hh_a0562ac138005a8877e8e37bec41179ab}\index{stack.hh@{stack.hh}!operator$>$$>$@{operator$>$$>$}}
@@ -55,20 +46,20 @@ istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is}{, }\i
 
 
 
-Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00145}{145}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
+Definición en la línea \mbox{\hyperlink{stack_8hh_source_l00147}{147}} del archivo \mbox{\hyperlink{stack_8hh_source}{stack.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00146\ \{}
-\DoxyCodeLine{00147\ \ \ \textcolor{keywordtype}{int}\ n;}
-\DoxyCodeLine{00148\ \ \ is\ >>\ n;}
-\DoxyCodeLine{00149\ \ \ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\ =\ \mbox{\hyperlink{classStack}{Stack<U>}}\ ();}
-\DoxyCodeLine{00150\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)\ \{}
-\DoxyCodeLine{00151\ \ \ \ \ U\ u;}
-\DoxyCodeLine{00152\ \ \ \ \ is\ >>\ u;}
-\DoxyCodeLine{00153\ \ \ \ \ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.push(u);}
-\DoxyCodeLine{00154\ \ \ \}}
-\DoxyCodeLine{00155\ \ \ \textcolor{keywordflow}{return}\ is;}
-\DoxyCodeLine{00156\ \}}
+\DoxyCodeLine{00148\ \{}
+\DoxyCodeLine{00149\ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00150\ \ \ is\ >>\ n;}
+\DoxyCodeLine{00151\ \ \ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\ =\ \mbox{\hyperlink{classStack}{Stack<U>}}\ ();}
+\DoxyCodeLine{00152\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)\ \{}
+\DoxyCodeLine{00153\ \ \ \ \ U\ u;}
+\DoxyCodeLine{00154\ \ \ \ \ is\ >>\ u;}
+\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.push(u);}
+\DoxyCodeLine{00156\ \ \ \}}
+\DoxyCodeLine{00157\ \ \ \textcolor{keywordflow}{return}\ is;}
+\DoxyCodeLine{00158\ \}}
 
 \end{DoxyCode}

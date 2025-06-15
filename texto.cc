@@ -13,6 +13,7 @@ int r = 0x0000000;
 const int sprite_width = 4;  
 const int sprite_height = 6; 
 
+// clang-format off
 const vector<vector<vector<int>>> num_sprite_normal_ = {
     //0
     {
@@ -360,6 +361,7 @@ const vector<vector<vector<int>>> letter_sprite_normal_ = {
         {_, r, r, _}
     }
 };
+// clang-format on
 
 void paint_digit(Window& window, Pt pos_, int digit){
     const Pt top_left = {pos_.x - sprite_width/2 , pos_.y - sprite_height/2 + 1};

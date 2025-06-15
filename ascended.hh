@@ -8,7 +8,10 @@
 #include "stack.hh"
 #include "geometry.hh"
 #include "window.hh"
+
+#ifndef NO_DIAGRAM
 #include <vector>
+#endif
 
 namespace pro2 {
 

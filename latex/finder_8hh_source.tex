@@ -3,103 +3,104 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{finder_8hh_source_l00001}00001\ }
 \DoxyCodeLine{\Hypertarget{finder_8hh_source_l00004}00004\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <map>}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <set>}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{geometry_8hh}{geometry.hh}}"{}}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8hh}{utils.hh}}"{}}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00009}00009\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00010}00010\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00011}00011\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00012}\mbox{\hyperlink{classFinder}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}}\ \{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00013}00013\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00014}00014\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00015}00015\ \ \ \ \ \textcolor{comment}{//Per\ cada\ punter\ tenim\ en\ quines\ quadricules\ (set\ de\ topleft's)}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00016}\mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{00016}}\ \ \ \ \ std::map<const\ T*,\ std::set<pro2::Pt>>\ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}};}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//Pt\ es\ el\ top\ left\ de\ la\ quadricula\ i\ el\ set\ correspon\ als\ objectes\ en\ la\ quadricula}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00018}\mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{00018}}\ \ \ \ \ std::map<pro2::Pt,\ std::set<const\ T*>>\ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}};}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00019}00019\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00020}00020\ \ \ \ \ \textcolor{comment}{//Tamany\ de\ les\ quadricules\ en\ les\ quals\ es\ dividira\ el\ mon}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00021}\mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{00021}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}}\ =\ 80;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00022}00022\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00031}\mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{00031}}\ \ \ \ \ std::set<pro2::Pt>\ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{setPts}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\&\ rObj)\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00032}00032\ \ \ \ \ \ \ \ \ std::set<pro2::Pt>\ result;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Si\ tenim\ objecte\ de\ topleft\ (524,17)\ llavors\ les\ quadricules\ van\ del\ topleft\ minim\ (500,0)\ al\ bottom\ right\ maxim,\ iterem\ com\ una\ matriu}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ left\ =\ (rObj.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}}\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ right\ =\ (rObj.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}}\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ top\ =\ (rObj.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}}\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ bottom\ =\ (rObj.\mbox{\hyperlink{structpro2_1_1Rect_a5240a907c581979ec7981419286a8637}{bottom}}\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00038}00038\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ x\ =\ left;\ x\ <=\ right;\ x\ +=\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ \{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ =\ top;\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ <=\ bottom;\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ +=\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ \{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Tots\ els\ top\ lefts\ dels\ quads\ on\ esta\ r\ (rect\ del\ objecte)}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.insert(\{x,\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\});}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00044}00044\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00046}00046\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00047}00047\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00048}00048\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00049}\mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{00049}}\ \ \ \ \ \mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}}()\ \{\}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00050}00050\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00058}\mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{00058}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}}(\textcolor{keyword}{const}\ T\ *\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00059}00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ rect\ =\ \mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}}-\/>get\_rect();}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00060}00060\ \ \ \ \ \ \ \ \ std::set<pro2::Pt>\ quadricules\ =\ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{setPts}}(rect);}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00061}00061\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00062}00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}[\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}}]\ =\ quadricules;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00063}00063\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ quadricules.begin();}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(it\ !=\ quadricules.end())\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*it].insert(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00069}00069\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00070}00070\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00078}\mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{00078}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}}(\textcolor{keyword}{const}\ T\ *\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.find(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00080}00080\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00081}00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it\ !=\ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.end())\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ std::set<pro2::Pt>\ quadricules\ =\ it-\/>second;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it2\ =\ quadricules.begin();}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00084}00084\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(it2\ !=\ quadricules.end())\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*it2].erase(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*it2].empty())\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.erase(*it2);}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ it2++;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.erase(it);}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00093}00093\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00094}00094\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00095}00095\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00102}\mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{00102}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{update}}(\textcolor{keyword}{const}\ T\ *\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00103}00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}}(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00104}00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}}(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00105}00105\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00106}00106\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00107}00107\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00122}\mbox{\hyperlink{classFinder_a7dc2d4339d1982a26caf9373f34e3084}{00122}}\ \ \ \ \ std::set<const\ T\ *>\ \mbox{\hyperlink{classFinder_a7dc2d4339d1982a26caf9373f34e3084}{query}}(\mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ rect)\textcolor{keyword}{\ const}\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00123}00123\ \ \ \ \ \ \ \ \ std::set<const\ T*>\ result;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00124}00124\ \ \ \ \ \ \ \ \ std::set<pro2::Pt>\ quadricules\ =\ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{setPts}}(rect);}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00125}00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ quadricules.begin();}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00126}00126\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00127}00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(it\ !=\ quadricules.end())\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it2\ =\ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.find(*it);}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it2\ !=\ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.end())\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::set<const\ T*>\ setPunters\ =\ it2-\/>second;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it3\ =\ setPunters.begin();\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00132}00132\ }
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00133}00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(it3\ !=\ setPunters.end())\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(interseccionen((*it3)\ -\/>\ get\_rect(),\ rect))\{}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.insert(*it3);}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ it3++;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00141}00141\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00142}00142\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00143}00143\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00144}00144\ \};}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{geometry_8hh}{geometry.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8hh}{utils.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00008}00008\ \textcolor{preprocessor}{\#ifndef\ NO\_DIAGRAM}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00011}00011\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00013}00013\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00014}\mbox{\hyperlink{classFinder}{00014}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}}\ \{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00016}00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//Per\ cada\ punter\ tenim\ en\ quines\ quadricules\ (set\ de\ topleft's)}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00018}\mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{00018}}\ \ \ \ \ std::map<const\ T*,\ std::set<pro2::Pt>>\ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}};}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00019}00019\ \ \ \ \ \textcolor{comment}{//Pt\ es\ el\ top\ left\ de\ la\ quadricula\ i\ el\ set\ correspon\ als\ objectes\ en\ la\ quadricula}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00020}\mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{00020}}\ \ \ \ \ std::map<pro2::Pt,\ std::set<const\ T*>>\ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}};}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00021}00021\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00022}00022\ \ \ \ \ \textcolor{comment}{//Tamany\ de\ les\ quadricules\ en\ les\ quals\ es\ dividira\ el\ mon}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00023}\mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{00023}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}}\ =\ 80;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00033}\mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{00033}}\ \ \ \ \ std::set<pro2::Pt>\ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{setPts}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\&\ rObj)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00034}00034\ \ \ \ \ \ \ \ \ std::set<pro2::Pt>\ result;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Si\ tenim\ objecte\ de\ topleft\ (524,17)\ llavors\ les\ quadricules\ van\ del\ topleft\ minim\ (500,0)\ al\ bottom\ right\ maxim,\ iterem\ com\ una\ matriu}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ left\ =\ (rObj.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}}\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ right\ =\ (rObj.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}}\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ top\ =\ (rObj.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}}\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ bottom\ =\ (rObj.\mbox{\hyperlink{structpro2_1_1Rect_a5240a907c581979ec7981419286a8637}{bottom}}\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ x\ =\ left;\ x\ <=\ right;\ x\ +=\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ \{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ =\ top;\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ <=\ bottom;\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\ +=\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ \{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Tots\ els\ top\ lefts\ dels\ quads\ on\ esta\ r\ (rect\ del\ objecte)}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.insert(\{x,\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}\});}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00046}00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00048}00048\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00050}00050\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00051}\mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{00051}}\ \ \ \ \ \mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00052}00052\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00060}\mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{00060}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}}(\textcolor{keyword}{const}\ T\ *\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00061}00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ rect\ =\ \mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}}-\/>get\_rect();}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00062}00062\ \ \ \ \ \ \ \ \ std::set<pro2::Pt>\ quadricules\ =\ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{setPts}}(rect);}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00063}00063\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00064}00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}[\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}}]\ =\ quadricules;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ quadricules.begin();}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(it\ !=\ quadricules.end())\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*it].insert(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00070}00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00071}00071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00080}\mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{00080}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}}(\textcolor{keyword}{const}\ T\ *\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00081}00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.find(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00083}00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it\ !=\ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.end())\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ std::set<pro2::Pt>\ quadricules\ =\ it-\/>second;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it2\ =\ quadricules.begin();}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(it2\ !=\ quadricules.end())\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*it2].erase(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*it2].empty())\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.erase(*it2);}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ it2++;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.erase(it);}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00095}00095\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00096}00096\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00104}\mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{00104}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFinder_a073967ec8a3f5189c1922aeaf161098c}{update}}(\textcolor{keyword}{const}\ T\ *\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00105}00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}}(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00106}00106\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}}(\mbox{\hyperlink{demon_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00107}00107\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00123}\mbox{\hyperlink{classFinder_a7dc2d4339d1982a26caf9373f34e3084}{00123}}\ \ \ \ \ std::set<const\ T\ *>\ \mbox{\hyperlink{classFinder_a7dc2d4339d1982a26caf9373f34e3084}{query}}(\mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ rect)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00124}00124\ \ \ \ \ \ \ \ \ std::set<const\ T*>\ result;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00125}00125\ \ \ \ \ \ \ \ \ std::set<pro2::Pt>\ quadricules\ =\ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{setPts}}(rect);}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00126}00126\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ quadricules.begin();}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(it\ !=\ quadricules.end())\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it2\ =\ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.find(*it);}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it2\ !=\ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.end())\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::set<const\ T*>\ setPunters\ =\ it2-\/>second;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it3\ =\ setPunters.begin();\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(it3\ !=\ setPunters.end())\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(interseccionen((*it3)\ -\/>\ get\_rect(),\ rect))\{}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.insert(*it3);}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ it3++;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ it++;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00142}00142\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00143}00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00144}00144\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{finder_8hh_source_l00145}00145\ \};}
 
 \end{DoxyCode}

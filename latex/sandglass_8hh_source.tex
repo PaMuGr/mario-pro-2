@@ -6,71 +6,74 @@
 \DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ SANDGLASS\_HH}}
 \DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00006}00006\ \textcolor{preprocessor}{\#define\ SANDGLASS\_HH}}
 \DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00007}00007\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <list>}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{platform_8hh}{platform.hh}}"{}}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{window_8hh}{window.hh}}"{}}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{geometry_8hh}{geometry.hh}}"{}}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00014}00014\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00015}\mbox{\hyperlink{classSandglass}{00015}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}}\ \{}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00016}00016\ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00017}\mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{00017}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}},\mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{ini\_pos\_}};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00018}\mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{00018}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{speed\_}}\ =\ \{0,\ 0\};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00019}\mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{00019}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{dist\_}}\ =\ 0;}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00020}00020\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00021}\mbox{\hyperlink{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}{00021}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}{frame\_counter\_}}\ =\ 0;\ \ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00022}\mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{00022}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}}\ =\ \textcolor{keyword}{false};\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00023}\mbox{\hyperlink{classSandglass_ad42d5473d544c32852d1569c40284795}{00023}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_ad42d5473d544c32852d1569c40284795}{animation\_speed\_}}\ =\ 20;}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00024}00024\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00025}\mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{00025}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}}\ =\ \textcolor{keyword}{false};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Efecte\ actiu}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00026}\mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{00026}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}}\ =\ \textcolor{keyword}{false};\ \ \ \ \textcolor{comment}{//Esperant\ per\ respawnejar}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00027}\mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{00027}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}}\ =\ 0;\ \ \ \ \ \ \ \ \textcolor{comment}{//Duració\ de\ l'efecte\ }}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00028}\mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{00028}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}\ =\ 0;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Temps\ abans\ d'apareixer\ de\ nou}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00029}00029\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00030}\mbox{\hyperlink{classSandglass_a700c40d41a0ed8c0e3ac31f777462028}{00030}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a700c40d41a0ed8c0e3ac31f777462028}{apply\_physics\_}}();}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00031}00031\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00032}00032\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classSandglass_a8d7592d47ba54e28ed294e1a3ece2fa6}{sandglass\_sprite\_normal\_}};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00033}00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classSandglass_a1a21cc4667f7932a66c8774a60239eaf}{sandglass\_sprite\_brighter\_}};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00034}00034\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00035}00035\ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00036}\mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{00036}}\ \ \ \ \ \mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}}(\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ \{\}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00037}\mbox{\hyperlink{classSandglass_ace0b02043cf0d62ca8f66f5528724d6e}{00037}}\ \ \ \ \ \mbox{\hyperlink{classSandglass_ace0b02043cf0d62ca8f66f5528724d6e}{Sandglass}}(\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}},\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ speed,\ \textcolor{keywordtype}{int}\ dist)\ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}),\ \mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{ini\_pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}),\ \mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{speed\_}}(speed),\mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{dist\_}}(dist)\ \{\}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00038}00038\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00039}00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_aa5e5db525aa2aa1b376470a20af08d35}{paint}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00040}00040\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00046}\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{00046}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00048}00048\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00049}00049\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00055}\mbox{\hyperlink{classSandglass_ac05e55c975cb51646fc96ab9ac738e92}{00055}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_ac05e55c975cb51646fc96ab9ac738e92}{set\_x}}(\textcolor{keywordtype}{int}\ x)\ \{}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00056}00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.x\ =\ x;}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00057}00057\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00058}00058\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00064}\mbox{\hyperlink{classSandglass_a46ba3d11c1711d6fb5f598775e57c772}{00064}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a46ba3d11c1711d6fb5f598775e57c772}{set\_y}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})\ \{}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00065}00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.y\ =\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00066}00066\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00067}00067\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00075}00075\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ \mbox{\hyperlink{classSandglass_a774f9e157ab3b93c9ef9b503b0ca5bf7}{get\_rect}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00076}00076\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00082}00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a143ba242353a941463d6725f2ac53693}{update}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00083}00083\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00089}\mbox{\hyperlink{classSandglass_a6606aee0a03371b629d118b11c425e6e}{00089}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a6606aee0a03371b629d118b11c425e6e}{set\_bright}}(\textcolor{keywordtype}{bool}\ bright)\ \{\ \mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}}\ =\ bright;\ \}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00090}00090\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00094}\mbox{\hyperlink{classSandglass_a9abfad08730527bb3e928e88c44ec41d}{00094}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a9abfad08730527bb3e928e88c44ec41d}{activate}}(\textcolor{keywordtype}{int}\ total\_duration,\ \textcolor{keywordtype}{int}\ effect\_frames)\ \{}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00095}00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}}\ =\ \textcolor{keyword}{true};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00096}00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}}\ =\ \textcolor{keyword}{true};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00097}00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}}\ =\ effect\_frames;}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00098}00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}\ =\ total\_duration\ -\/\ effect\_frames;}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00099}00099\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00100}00100\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00104}\mbox{\hyperlink{classSandglass_a581a7852da72ff4615edcc8b8673a728}{00104}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a581a7852da72ff4615edcc8b8673a728}{is\_in\_cooldown}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}};\ \}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00105}00105\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00109}\mbox{\hyperlink{classSandglass_a235a124e0078fd63d52d857bd0678dd7}{00109}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a235a124e0078fd63d52d857bd0678dd7}{is\_effect\_active}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}};\ \}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00110}00110\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00114}\mbox{\hyperlink{classSandglass_ad11356cc66a8fba457da2cb220ad8ca6}{00114}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_ad11356cc66a8fba457da2cb220ad8ca6}{cooldown}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}};\ \}}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00115}00115\ \};}
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00116}00116\ }
-\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00117}00117\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{platform_8hh}{platform.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{window_8hh}{window.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{geometry_8hh}{geometry.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00012}00012\ \textcolor{preprocessor}{\#ifndef\ NO\_DIAGRAM}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00016}00016\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00018}\mbox{\hyperlink{classSandglass}{00018}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}}\ \{}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00019}00019\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00020}\mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{00020}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}},\mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{ini\_pos\_}};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00021}\mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{00021}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{speed\_}}\ =\ \{0,\ 0\};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00022}\mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{00022}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{dist\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00023}\mbox{\hyperlink{classSandglass_a8d7592d47ba54e28ed294e1a3ece2fa6}{00023}}\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00024}\mbox{\hyperlink{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}{00024}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}{frame\_counter\_}}\ =\ 0;\ \ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00025}\mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{00025}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}}\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00026}\mbox{\hyperlink{classSandglass_ad42d5473d544c32852d1569c40284795}{00026}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_ad42d5473d544c32852d1569c40284795}{animation\_speed\_}}\ =\ 20;}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00028}\mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{00028}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}}\ =\ \textcolor{keyword}{false};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Efecte\ actiu}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00029}\mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{00029}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}}\ =\ \textcolor{keyword}{false};\ \ \ \ \textcolor{comment}{//Esperant\ per\ respawnejar}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00030}\mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{00030}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}}\ =\ 0;\ \ \ \ \ \ \ \ \textcolor{comment}{//Duració\ de\ l'efecte\ }}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00031}\mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{00031}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}\ =\ 0;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Temps\ abans\ d'apareixer\ de\ nou}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00032}00032\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00033}\mbox{\hyperlink{classSandglass_a700c40d41a0ed8c0e3ac31f777462028}{00033}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a700c40d41a0ed8c0e3ac31f777462028}{apply\_physics\_}}();}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00035}00035\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classSandglass_a8d7592d47ba54e28ed294e1a3ece2fa6}{sandglass\_sprite\_normal\_}};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{classSandglass_a1a21cc4667f7932a66c8774a60239eaf}{sandglass\_sprite\_brighter\_}};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00037}00037\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00038}00038\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00039}\mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{00039}}\ \ \ \ \ \mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}}(\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00040}\mbox{\hyperlink{classSandglass_ace0b02043cf0d62ca8f66f5528724d6e}{00040}}\ \ \ \ \ \mbox{\hyperlink{classSandglass_ace0b02043cf0d62ca8f66f5528724d6e}{Sandglass}}(\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}},\mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ speed,\ \textcolor{keywordtype}{int}\ dist)\ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}),\ \mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{ini\_pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}),\ \mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{speed\_}}(speed),\mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{dist\_}}(dist)\ \{\}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_aa5e5db525aa2aa1b376470a20af08d35}{paint}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00043}\mbox{\hyperlink{classSandglass_a1a21cc4667f7932a66c8774a60239eaf}{00043}}\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00049}\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{00049}}\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}}\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00058}\mbox{\hyperlink{classSandglass_ac05e55c975cb51646fc96ab9ac738e92}{00058}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_ac05e55c975cb51646fc96ab9ac738e92}{set\_x}}(\textcolor{keywordtype}{int}\ x)\ \{}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00059}00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.x\ =\ x;}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00067}\mbox{\hyperlink{classSandglass_a46ba3d11c1711d6fb5f598775e57c772}{00067}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a46ba3d11c1711d6fb5f598775e57c772}{set\_y}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})\ \{}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00068}00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.y\ =\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00078}00078\ \ \ \ \ \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}}\ \mbox{\hyperlink{classSandglass_a774f9e157ab3b93c9ef9b503b0ca5bf7}{get\_rect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00085}00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a143ba242353a941463d6725f2ac53693}{update}}(\mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\&\ window);}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00092}\mbox{\hyperlink{classSandglass_a6606aee0a03371b629d118b11c425e6e}{00092}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a6606aee0a03371b629d118b11c425e6e}{set\_bright}}(\textcolor{keywordtype}{bool}\ bright)\ \{\ \mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}}\ =\ bright;\ \}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00097}\mbox{\hyperlink{classSandglass_a9abfad08730527bb3e928e88c44ec41d}{00097}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_a9abfad08730527bb3e928e88c44ec41d}{activate}}(\textcolor{keywordtype}{int}\ total\_duration,\ \textcolor{keywordtype}{int}\ effect\_frames)\ \{}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00098}00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00099}00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00100}00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}}\ =\ effect\_frames;}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00101}00101\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}\ =\ total\_duration\ -\/\ effect\_frames;}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00102}00102\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00107}\mbox{\hyperlink{classSandglass_a581a7852da72ff4615edcc8b8673a728}{00107}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a581a7852da72ff4615edcc8b8673a728}{is\_in\_cooldown}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}};\ \}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00112}\mbox{\hyperlink{classSandglass_a235a124e0078fd63d52d857bd0678dd7}{00112}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a235a124e0078fd63d52d857bd0678dd7}{is\_effect\_active}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}};\ \}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00117}\mbox{\hyperlink{classSandglass_ad11356cc66a8fba457da2cb220ad8ca6}{00117}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_ad11356cc66a8fba457da2cb220ad8ca6}{cooldown}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}};\ \}}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00118}00118\ \};}
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{sandglass_8hh_source_l00120}00120\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -1,5 +1,8 @@
-#pragma once
+#ifndef LIST_HH
+#define LIST_HH
+#ifndef NO_DIAGRAM
 #include <iostream>
+#endif
 
 using namespace std;
 
@@ -542,3 +545,5 @@ template<typename T> ostream &operator<<(ostream &os, List<T> &l)
     cout << " " << pitem->value;
   return os;
 }
+
+#endif

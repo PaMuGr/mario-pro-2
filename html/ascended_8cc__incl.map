@@ -1,29 +1,18 @@
 <map id="ascended.cc" name="ascended.cc">
-<area shape="rect" id="Node000001" title="Funcions del Ascended." alt="" coords="357,5,453,31"/>
-<area shape="rect" id="Node000002" href="$ascended_8hh.html" title="Especificacions de la classe Ascended." alt="" coords="305,79,401,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="399,33,373,68,369,65,394,30"/>
-<area shape="rect" id="Node000012" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="425,79,489,105"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="416,30,441,65,437,68,411,33"/>
-<area shape="rect" id="Node000003" href="$stack_8hh.html" title=" " alt="" coords="95,153,166,178"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="316,108,182,151,180,146,314,103"/>
-<area shape="rect" id="Node000006" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="445,226,536,252"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="363,103,386,137,419,176,463,215,459,219,415,180,382,141,358,106"/>
-<area shape="rect" id="Node000007" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="271,153,352,178"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="348,106,329,141,324,138,344,104"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="428,153,486,178"/>
-<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="372,103,428,141,425,146,369,107"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,226,77,252"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="117,181,70,219,66,214,114,177"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="101,226,160,252"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="133,179,133,211,128,211,128,179"/>
-<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="343,176,447,218,445,223,341,181"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="280,226,344,252"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="314,179,314,211,309,211,309,179"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="368,226,421,252"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="327,177,371,214,367,218,324,181"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="184,226,255,252"/>
-<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="298,181,249,219,245,215,294,177"/>
-<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="471,104,487,125,501,152,504,183,501,212,495,211,499,183,496,153,483,128,467,107"/>
-<area shape="poly" id="edge15_Node000012_Node000007" title=" " alt="" coords="434,108,351,148,349,143,431,103"/>
-<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="460,105,460,137,454,137,454,105"/>
+<area shape="rect" id="Node000001" title="Funcions del Ascended." alt="" coords="119,5,214,31"/>
+<area shape="rect" id="Node000002" href="$ascended_8hh.html" title="Especificacions de la classe Ascended." alt="" coords="67,79,162,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,33,134,68,130,65,156,30"/>
+<area shape="rect" id="Node000007" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="187,79,250,105"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="177,30,203,65,198,68,173,33"/>
+<area shape="rect" id="Node000003" href="$stack_8hh.html" title=" " alt="" coords="5,153,77,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,107,66,144,62,140,100,103"/>
+<area shape="rect" id="Node000004" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="186,226,277,252"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="118,104,124,139,131,159,142,177,164,199,191,217,188,221,161,203,138,180,127,161,119,140,113,105"/>
+<area shape="rect" id="Node000005" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="152,153,234,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="129,103,170,140,167,144,126,107"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="202,177,220,211,216,214,197,180"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="91,226,162,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="184,180,150,217,146,213,180,177"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="228,104,240,125,249,152,250,184,244,212,239,211,245,183,244,153,235,128,223,106"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="217,106,205,139,200,137,212,104"/>
 </map>

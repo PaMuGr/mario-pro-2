@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mario_PRO_2 X Jesus Christ: Mario Pro 2 - Documentació del Joc</title>
+<title>Mario_PRO_2 X Jesus Christ: Mario_PRO_2 X Jesus Christ</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,30 +84,56 @@ $(function(){ initResizable(false); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title"><a class="el" href="classMario.html">Mario</a> Pro 2 - Documentació del Joc </div></div>
+  <div class="headertitle"><div class="title">Mario_PRO_2 X Jesus Christ </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
-Introducció</h1>
-<p>Aquesta és la documentació per el joc de <a class="el" href="classMario.html">Mario</a> Pro 2, un plataformer 2D amb Jesus com a protagonista</p><ul>
-<li>Hi podem trobar les Creus que haurem d'agafar</li>
-<li>Enemic -&gt; Dimoni</li>
-<li>Un rellotge que para el temps 10 segons</li>
-</ul>
-<h1><a class="anchor" id="tech_sec"></a>
-Detalls Tecnics</h1>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
+Juego Platformer 2D</h1>
+<p>Un juego 2D donde juegas como Jesús, coge cruces, evita morir por caída o por las bolas de fuego demoniacas. El juego incluye poderes como el de parar el tiempo con el RELOJ DE ARENA y un escudo activando el BLESSER.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Controls</h2>
 <ul>
-<li>Resolució: 480x320</li>
-<li>Target FPS: 48</li>
+<li><b>Arrow Keys</b>: Para mover al personaje de Derecha a Izquierda</li>
+<li><b>Down Key</b>: Para bajar al personaje a la plataforma de abajo (o al vacio)</li>
+<li><b>Spacebar</b>: Saltar</li>
+<li><b>B</b>: Activate Blesser shield (if available)</li>
 </ul>
-<h1><a class="anchor" id="usage_sec"></a>
-Controls del Joc</h1>
-<p>Controls:</p><ul>
-<li>Fletxes per moure's (Fletxa d'abaix per baixar plataformes)</li>
-<li>Espai per saltar</li>
-<li>"B" per utilitzar escut</li>
-<li>Si caus o mors, R per reiniciar </li>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Game Features</h2>
+<ul>
+<li><b>Crosses</b>: Cógelas para ganar el juego. Cogiendo 5, te proporciona un escudo.</li>
+<li><b><a class="el" href="classSandglass.html">Sandglass</a></b>: Temporalmente para el juego y los enemigos</li>
+<li><b><a class="el" href="classDemon.html">Demon</a></b>: Crea bolas de fuego que hacen aparecer fuegos a todo lo que tocan.</li>
+<li><b>Blesser</b>: Un escudo que es proporcionado si se clica B al haber conseguido 5 crosses.</li>
 </ul>
+<h3><a class="anchor" id="autotoc_md3"></a>
+Main Files</h3>
+<ul>
+<li><code><a class="el" href="main_8cc.html" title="Main page of the Mario Game.">main.cc</a></code>: Inicia el joc</li>
+<li><code><a class="el" href="game_8hh.html" title="Especificació de Funcions del Game.">game.hh</a></code> / <code><a class="el" href="game_8cc.html" title="Funcions del Game.">game.cc</a></code>: Maneja el bucle del juego y actualiza los objetos.</li>
+<li><code><a class="el" href="mario_8hh.html" title="Especificacions de Funcions del Mario.">mario.hh</a></code> / <code><a class="el" href="mario_8cc.html" title="Funcions del Mario.">mario.cc</a></code>: Personaje principal</li>
+<li><code><a class="el" href="demon_8hh.html" title="Especificació de la Classe Demon.">demon.hh</a></code> / <code><a class="el" href="demon_8cc.html" title="Funcions del Demon.">demon.cc</a></code>: Funciones del demon y todo lo que hace.</li>
+<li><code><a class="el" href="cross_8hh.html" title="Especificació de les Funcions del Cross.">cross.hh</a></code> / <code><a class="el" href="cross_8cc.html" title="Funcions del Cross.">cross.cc</a></code>: Las cruces colecionables.</li>
+<li><code><a class="el" href="sandglass_8hh.html" title="Especificació de les Funcions del SandGlass.">sandglass.hh</a></code> / <code><a class="el" href="sandglass_8cc.html" title="Funcions del SandGlass.">sandglass.cc</a></code>: Implementación del reloj de arena.</li>
+<li><code><a class="el" href="ascended_8hh.html" title="Especificacions de la classe Ascended.">ascended.hh</a></code> / <code><a class="el" href="ascended_8cc.html" title="Funcions del Ascended.">ascended.cc</a></code>: El escudo y su implementación usando punteros y la classe stack.</li>
+<li><code><a class="el" href="platform_8hh.html" title="Especificacions de Funcions del Platforms.">platform.hh</a></code> / <code><a class="el" href="platform_8cc.html" title="Funcions del Platforms.">platform.cc</a></code>: Las plataformas y sus funciones.</li>
+<li><code><a class="el" href="stack_8hh.html">stack.hh</a></code>: <a class="el" href="classStack.html">Stack</a> de punteros</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Build Instructions</h2>
+<ol type="1">
+<li>Recuerda tener un compilador de C++ y la libreria SDL2.</li>
+<li>Run <code>make</code> para compilar.</li>
+<li>Run <code>./mario_pro_2</code> para empezar a jugar.</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Notes</h2>
+<ul>
+<li>El <a class="el" href="classSandglass.html">Sandglass</a> tiene 10 segundos de countdown</li>
+<li>Las bolas de fuego pueden ser aturadas o bloqueadas usando poderes.</li>
+<li>Si consigues la mitad de la puntuación para matar el demon este se enfadara y ira más rápido.</li>
+</ul>
+<p>Pau Muras Grané </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

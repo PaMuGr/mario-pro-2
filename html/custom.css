@@ -1,0 +1,89 @@
+/* Base styles: dark background, military green highlights */
+body {
+  background-color: #0d0d0d;  /* Almost black */
+  color: #d0d0d0;             /* Light grey text */
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Containers */
+div.header, div.footer, div.contents {
+  background-color: #1a1a1a;  /* Dark grey containers */
+  border: 1px solid #2e2e2e;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #a8c66c;  /* Muted military green */
+  border-bottom: 1px solid #3c3c3c;
+  padding-bottom: 5px;
+}
+
+/* Links */
+a {
+  color: #88b04b;  /* Military green */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #c3d69b;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  background-color: #1f1f1f;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 8px;
+  color: #d0d0d0;
+}
+th {
+  background-color: #2a2f24;
+  color: #cdd9a4;
+}
+
+/* Code blocks */
+div.fragment {
+  background-color: #111;
+  border: 1px solid #3a3a3a;
+  padding: 8px;
+  font-family: "Courier New", monospace;
+  font-size: 0.95em;
+  color: #b5f58e;  /* Pale green code */
+}
+
+/* Navigation bar */
+.navpath {
+  background-color: #222;
+  padding: 5px;
+  border-radius: 4px;
+  color: #d0d0d0;
+}
+
+/* Horizontal rules */
+hr {
+  border-color: #333;
+}
+
+/* Improve sidebar/tree if enabled */
+.tablist, .tabnav {
+  background-color: #131313;
+  border: 1px solid #2c2c2c;
+}
+
+/* Selected tab */
+.tabactive {
+  background-color: #2a2f24;
+  color: #cdd9a4;
+}
+
+/* Optional: tooltips/popups */
+div.ttc {
+  background-color: #2f2f2f;
+  color: #e0ffe0;
+  border: 1px solid #5a5a5a;
+  padding: 5px;
+}

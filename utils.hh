@@ -5,9 +5,12 @@
 #ifndef UTILS_HH
 #define UTILS_HH
 
-#include <vector>
 #include "geometry.hh"
 #include "window.hh"
+
+#ifndef NO_DIAGRAM
+#include <vector>
+#endif
 
 namespace pro2 {
 

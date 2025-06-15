@@ -1,31 +1,20 @@
 <map id="mario.cc" name="mario.cc">
-<area shape="rect" id="Node000001" title="Funcions del Mario." alt="" coords="190,5,261,31"/>
-<area shape="rect" id="Node000002" href="$mario_8hh.html" title="Especificacions de Funcions del Mario." alt="" coords="154,79,225,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,32,205,66,200,64,217,30"/>
-<area shape="rect" id="Node000012" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="347,153,410,178"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="240,29,357,140,353,144,236,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="31,226,102,252"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="181,107,89,216,85,213,177,103"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="188,226,245,252"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="187,106,176,139,175,158,177,178,186,196,197,213,193,216,181,199,172,179,169,159,171,138,181,104"/>
-<area shape="rect" id="Node000005" href="$list_8hh.html" title=" " alt="" coords="5,153,62,178"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="164,108,75,148,73,143,162,103"/>
-<area shape="rect" id="Node000006" href="$platform_8hh.html" title="Especificacions de Funcions del Platforms." alt="" coords="186,153,273,178"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="198,104,218,138,213,140,194,106"/>
-<area shape="rect" id="Node000007" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="269,226,350,252"/>
-<area shape="poly" id="edge13_Node000002_Node000007" title=" " alt="" coords="221,103,255,122,286,151,301,181,309,210,304,212,296,182,282,154,252,127,218,108"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="41,177,57,211,52,213,37,180"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="230,179,224,211,219,210,225,178"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="245,177,287,214,283,218,241,181"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="108,300,172,326"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="282,255,184,296,182,291,280,250"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="196,300,250,326"/>
-<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="296,255,251,292,247,288,293,250"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="274,300,345,326"/>
-<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="312,252,312,284,307,284,307,252"/>
-<area shape="rect" id="Node000011" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="369,300,460,326"/>
-<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="329,250,386,289,383,293,326,255"/>
-<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="352,181,259,222,257,217,350,176"/>
-<area shape="poly" id="edge17_Node000012_Node000007" title=" " alt="" coords="369,180,334,217,330,213,365,177"/>
-<area shape="poly" id="edge16_Node000012_Node000011" title=" " alt="" coords="384,178,411,284,406,286,379,179"/>
+<area shape="rect" id="Node000001" title="Funcions del Mario." alt="" coords="167,5,238,31"/>
+<area shape="rect" id="Node000002" href="$mario_8hh.html" title="Especificacions de Funcions del Mario." alt="" coords="131,79,202,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,32,182,66,177,64,195,30"/>
+<area shape="rect" id="Node000008" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="247,153,310,178"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="211,30,268,138,263,140,207,33"/>
+<area shape="rect" id="Node000003" href="$list_8hh.html" title=" " alt="" coords="5,153,62,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,108,71,147,68,143,143,103"/>
+<area shape="rect" id="Node000004" href="$platform_8hh.html" title="Especificacions de Funcions del Platforms." alt="" coords="86,153,173,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="163,106,145,140,140,138,158,104"/>
+<area shape="rect" id="Node000005" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="164,226,245,252"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="173,104,187,152,201,211,196,212,182,153,168,106"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="144,177,183,214,179,218,140,181"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="142,300,213,326"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="202,253,190,286,185,284,197,251"/>
+<area shape="rect" id="Node000007" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="237,300,328,326"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="219,251,260,287,257,291,216,255"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="268,181,229,218,226,214,264,177"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="282,179,285,285,279,285,276,179"/>
 </map>

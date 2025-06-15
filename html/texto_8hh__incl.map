@@ -1,24 +1,13 @@
 <map id="texto.hh" name="texto.hh">
-<area shape="rect" id="Node000001" title="Especificació de les Funcions del Text." alt="" coords="138,5,207,31"/>
-<area shape="rect" id="Node000002" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="72,79,135,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,33,127,70,124,66,159,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,63,178"/>
-<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="139,32,98,51,78,64,61,81,46,109,39,138,34,137,41,107,57,77,75,60,96,46,137,27"/>
-<area shape="rect" id="Node000005" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="139,153,220,178"/>
-<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="176,31,181,137,175,137,171,31"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="210,79,256,105"/>
-<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="185,30,215,65,211,69,181,33"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="280,79,319,105"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="195,29,268,70,265,75,193,34"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,107,58,143,54,140,90,103"/>
-<area shape="rect" id="Node000004" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="32,226,124,252"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="104,105,85,211,80,210,99,105"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="118,103,157,140,154,144,114,107"/>
-<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="164,181,109,219,106,215,161,177"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="147,226,212,252"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="182,179,182,211,177,211,177,179"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="235,226,289,252"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="195,177,238,214,235,218,192,181"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="313,226,384,252"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="209,176,307,217,305,222,207,181"/>
+<area shape="rect" id="Node000001" title="Especificació de les Funcions del Text." alt="" coords="61,5,129,31"/>
+<area shape="rect" id="Node000002" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="29,79,92,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,32,75,66,71,64,87,30"/>
+<area shape="rect" id="Node000004" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="89,153,170,178"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="100,31,126,137,121,138,95,32"/>
+<area shape="rect" id="Node000003" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="5,226,97,252"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="62,105,55,211,50,211,57,105"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="74,103,109,140,106,143,70,107"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="118,181,77,218,74,214,115,177"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="121,226,192,252"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,178,149,211,144,213,132,179"/>
 </map>

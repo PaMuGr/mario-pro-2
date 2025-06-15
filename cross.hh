@@ -5,13 +5,16 @@
 #ifndef CROSS_HH
 #define CROSS_HH
 
-#include <iostream>
-#include <vector>
-#include <list>
 #include "platform.hh"
 #include "window.hh"
 #include "geometry.hh"
 #include "list.hh"
+
+#ifndef NO_DIAGRAM
+#include <iostream>
+#include <vector>
+#include <list>
+#endif
 
 class Cross {
  private:
