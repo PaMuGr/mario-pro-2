@@ -13,7 +13,8 @@ var searchData=
   ['mario_5fsprite_5fnormal_5f_10',['mario_sprite_normal_',['../classMario.html#a98619bbc1f150dae63dcd5a398bc05e8',1,'Mario']]],
   ['mario_5fwidth_11',['mario_width',['../classMario.html#a0b42594e92c17c8b0352ac4734a44620',1,'Mario']]],
   ['meta_12',['Meta',['../namespacepro2.html#afcb0c99f6bf9c97f754dcc56e9e9c4fda24b0a64ee223639589b72a25bc4a156c',1,'pro2']]],
-  ['modkey_13',['ModKey',['../namespacepro2.html#afcb0c99f6bf9c97f754dcc56e9e9c4fd',1,'pro2']]],
-  ['mouse_5fpos_14',['mouse_pos',['../classpro2_1_1Window.html#a1362ea74501506424e5b8c4177d19aa1',1,'pro2::Window']]],
-  ['move_5fcamera_15',['move_camera',['../classpro2_1_1Window.html#afbc70ada8de42a0db90e11e9f3803a1e',1,'pro2::Window']]]
+  ['modes_13',['Game Modes',['../index.html#autotoc_md4',1,'']]],
+  ['modkey_14',['ModKey',['../namespacepro2.html#afcb0c99f6bf9c97f754dcc56e9e9c4fd',1,'pro2']]],
+  ['mouse_5fpos_15',['mouse_pos',['../classpro2_1_1Window.html#a1362ea74501506424e5b8c4177d19aa1',1,'pro2::Window']]],
+  ['move_5fcamera_16',['move_camera',['../classpro2_1_1Window.html#afbc70ada8de42a0db90e11e9f3803a1e',1,'pro2::Window']]]
 ];

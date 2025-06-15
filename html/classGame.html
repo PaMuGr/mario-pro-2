@@ -188,9 +188,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a83971c017e3001fe2df507dad4f893e0" id="r_a83971c017e3001fe2df507dad4f893e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83971c017e3001fe2df507dad4f893e0">update_normal_mode</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
 <tr class="memdesc:a83971c017e3001fe2df507dad4f893e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l’estat normal del joc (sense rellotge).  <br /></td></tr>
 <tr class="separator:a83971c017e3001fe2df507dad4f893e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8052300120200684df461bb6aa2a2b9c" id="r_a8052300120200684df461bb6aa2a2b9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8052300120200684df461bb6aa2a2b9c">update_crosses</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
-<tr class="memdesc:a8052300120200684df461bb6aa2a2b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza les creus visibles i comprova si han estat recollides.  <br /></td></tr>
-<tr class="separator:a8052300120200684df461bb6aa2a2b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93adccff8214ef7b734e60812cdb8fc7" id="r_a93adccff8214ef7b734e60812cdb8fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93adccff8214ef7b734e60812cdb8fc7">update_crosses</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect, bool timestoped)</td></tr>
+<tr class="memdesc:a93adccff8214ef7b734e60812cdb8fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza les creus visibles i comprova si han estat recollides.  <br /></td></tr>
+<tr class="separator:a93adccff8214ef7b734e60812cdb8fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0457735c1ff2628264fdcfeae69ad1c1" id="r_a0457735c1ff2628264fdcfeae69ad1c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0457735c1ff2628264fdcfeae69ad1c1">update_demon_state</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
 <tr class="memdesc:a0457735c1ff2628264fdcfeae69ad1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza el comportament del dimoni.  <br /></td></tr>
 <tr class="separator:a0457735c1ff2628264fdcfeae69ad1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,7 +312,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Aplica les configuracions específiques segons el mode de joc seleccionat. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00118">118</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00119">119</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -356,7 +356,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00401">401</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00409">409</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -377,7 +377,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Comprova si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> ha aconseguit prou punts per activar benediccions. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00211">211</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00219">219</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -405,7 +405,7 @@ Atributos estáticos privados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>True si ha caigut, fals si encara està a la pantalla </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00153">153</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00154">154</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -459,7 +459,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00163">163</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00164">164</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -546,7 +546,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00431">431</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00439">439</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -567,7 +567,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Pinta les benediccions i el seu comptador. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00308">308</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00316">316</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -588,7 +588,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Pinta les creus visibles. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00293">293</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00301">301</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -609,7 +609,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Pinta el dimoni i el seu estat. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00301">301</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00309">309</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -649,7 +649,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Dibuixa el marc del joc (recuadre) </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00391">391</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00399">399</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -670,7 +670,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Mostra la pantalla de game over. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00335">335</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00343">343</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -691,7 +691,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Mostra la pantalla de pausa. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00323">323</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00331">331</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -712,7 +712,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Pinta les plataformes visibles al mapa. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00285">285</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00293">293</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -733,7 +733,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Pinta els punts recollits pel jugador. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00316">316</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00324">324</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -754,7 +754,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Mostra la pantalla quan s'acaba el mode speedrun. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00362">362</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00370">370</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -775,7 +775,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Mostra la pantalla d'inici del joc. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00408">408</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00416">416</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -796,7 +796,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Pinta el temporitzador del joc a la pantalla. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00422">422</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00430">430</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -817,7 +817,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Mostra la pantalla de victòria. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00348">348</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00356">356</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -914,7 +914,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00270">270</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00278">278</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -949,12 +949,12 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00245">245</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00253">253</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
-<a id="a8052300120200684df461bb6aa2a2b9c" name="a8052300120200684df461bb6aa2a2b9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8052300120200684df461bb6aa2a2b9c">&#9670;&#160;</a></span>update_crosses()</h2>
+<a id="a93adccff8214ef7b734e60812cdb8fc7" name="a93adccff8214ef7b734e60812cdb8fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93adccff8214ef7b734e60812cdb8fc7">&#9670;&#160;</a></span>update_crosses()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -967,7 +967,12 @@ Atributos estáticos privados</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marioRect</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marioRect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>timestoped</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -977,11 +982,12 @@ Atributos estáticos privados</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
     <tr><td class="paramname">marioRect</td><td>Rectangle de <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> </td></tr>
+    <tr><td class="paramname">timestoped</td><td>Mira si el temps està parat </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00192">192</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00196">196</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -1008,7 +1014,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00207">207</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00215">215</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -1040,7 +1046,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00180">180</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00184">184</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -1075,7 +1081,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00220">220</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00228">228</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -1107,7 +1113,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00170">170</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00171">171</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -1622,7 +1628,7 @@ Atributos estáticos privados</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="platform_8cc.html#a1cf275c5d221949062bba6a49b3daa13">Color</a> blau cel per pintar fons </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00260">260</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00261">261</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>

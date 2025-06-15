@@ -12,5 +12,5 @@ var searchData=
   ['bottomright_5f_9',['bottomright_',['../classPlatform.html#acd2db189e0fcda4683aea0b5ee7d06cc',1,'Platform']]],
   ['br_10',['br',['../cross_8cc.html#a79f221932ddea28e0bebf65e4ed17977',1,'br:&#160;cross.cc'],['../mario_8cc.html#a79f221932ddea28e0bebf65e4ed17977',1,'br:&#160;mario.cc'],['../sandglass_8cc.html#a79f221932ddea28e0bebf65e4ed17977',1,'br:&#160;sandglass.cc']]],
   ['br_5fbright_11',['br_bright',['../sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff',1,'sandglass.cc']]],
-  ['build_20instructions_12',['Build Instructions',['../index.html#autotoc_md4',1,'']]]
+  ['build_20instructions_12',['Build Instructions',['../index.html#autotoc_md5',1,'']]]
 ];
