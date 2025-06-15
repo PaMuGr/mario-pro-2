@@ -2,6 +2,11 @@
 \hypertarget{classGame}{}\label{classGame}\index{Game@{Game}}
 
 
+Classe principal que gestiona l\textquotesingle{}estat i la lògica del joc.  
+
+
+
+
 {\ttfamily \#include $<$game.\+hh$>$}
 
 \doxysubsubsection*{Métodos públicos}
@@ -14,19 +19,19 @@ void \mbox{\hyperlink{classGame_a3661c777f12e357cdc0b3727b2f73412}{update}} (\mb
 void \mbox{\hyperlink{classGame_af3e3428a12b9944fefb663f2fe560529}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
 \begin{DoxyCompactList}\small\item\em Pinta el joc cada frame. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classGame_a3fef163aab28f7a4de1abb8d08794e7f}{is\+\_\+paused}} () const
-\begin{DoxyCompactList}\small\item\em Retorna un bool segons si el joc esta o no pausat. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna true si el joc està pausat. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{is\+\_\+finished}} () const
-\begin{DoxyCompactList}\small\item\em Retorna un bool segons si el joc ha acabat. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna true si el joc ha acabat. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classGame_ae4268b648bd696673acf3de0cddfc20b}{you\+\_\+died}} () const
-\begin{DoxyCompactList}\small\item\em Retorna un bool segons si el mario ha mort. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna true si \doxylink{classMario}{Mario} ha mort (caigut o colpejat). \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classGame_aa29df894d1d25abb59738a7651f05c7d}{you\+\_\+won}} () const
-\begin{DoxyCompactList}\small\item\em Retorna un bool segons si hem guanyat el joc. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna true si el jugador ha guanyat. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a1cd0035e2b5ae89538eb741a4017dc0f}{set\+\_\+gamemode}} (int gamemode)
 \begin{DoxyCompactList}\small\item\em Canvia el mode de joc al seleccionat. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a1cb5b15762932c64246ac353a00394ef}{update\+\_\+timer}} ()
 \begin{DoxyCompactList}\small\item\em Actualitza el temporitzador del joc si hi ha límit de temps. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_ac779383b06a6ef5b24ba05d907e30b70}{apply\+\_\+game\+\_\+mode\+\_\+settings}} ()
-\begin{DoxyCompactList}\small\item\em Aplica les configuracions específiquès segons el mode de joc seleccionat. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Aplica les configuracions específiques segons el mode de joc seleccionat. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_adf09733d523bd8c2faf41059a7f83988}{generate\+\_\+level\+\_\+objects}} (int count)
 \begin{DoxyCompactList}\small\item\em Crea un mapa diferent amb plataformes randomitzades per cada reinici del joc. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a24f8beafd9f0e1c435ff811b919dfa90}{paint\+\_\+platforms}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
@@ -58,26 +63,26 @@ void \mbox{\hyperlink{classGame_a428db831d8e093be8720ee90534ae57d}{paint\+\_\+ti
 void \mbox{\hyperlink{classGame_aabadd5026e72b4a84cd0afdb505681fd}{center\+\_\+text}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} center, const std\+::string \&text, int y\+\_\+offset)
 \begin{DoxyCompactList}\small\item\em Centra un text al mitg de la pantalla. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classGame_abbfcda5bf7c3a427a5d8f512dacec6e0}{check\+\_\+fallen\+\_\+off\+\_\+screen}} (const \mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
-\begin{DoxyCompactList}\small\item\em Comprova si el mario ha caigut fora de la pantalla. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Comprova si \doxylink{classMario}{Mario} ha caigut fora de la pantalla. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_ad67466fb235ac2069efe278f6d35268a}{handle\+\_\+sandglass\+\_\+interaction}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
-\begin{DoxyCompactList}\small\item\em Comprova si mario interactua amb el rellotge i l’activa. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Comprova si \doxylink{classMario}{Mario} interactua amb el rellotge i l’activa. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a6e9c6cafeb4becc2183a220d1788062f}{update\+\_\+time\+\_\+stoped\+\_\+mode}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
 \begin{DoxyCompactList}\small\item\em Actualitza l’estat del joc quan el rellotge està activat. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a83971c017e3001fe2df507dad4f893e0}{update\+\_\+normal\+\_\+mode}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
-\begin{DoxyCompactList}\small\item\em Actualitza l’estat normal del joc (sense rellotge) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Actualitza l’estat normal del joc (sense rellotge). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a8052300120200684df461bb6aa2a2b9c}{update\+\_\+crosses}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect)
 \begin{DoxyCompactList}\small\item\em Actualitza les creus visibles i comprova si han estat recollides. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a0457735c1ff2628264fdcfeae69ad1c1}{update\+\_\+demon\+\_\+state}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
 \begin{DoxyCompactList}\small\item\em Actualitza el comportament del dimoni. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a7849d79c921e869e30923bf9974519b5}{check\+\_\+blessing\+\_\+points}} ()
-\begin{DoxyCompactList}\small\item\em Comprova si el mario ha aconseguit prou punts per activar benediccions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Comprova si \doxylink{classMario}{Mario} ha aconseguit prou punts per activar benediccions. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Métodos privados}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classGame_a0c6fbced92dbe00f94f96d899f02fdb8}{process\+\_\+keys}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
 \begin{DoxyCompactList}\small\item\em Processa les tecles premudes i actualitza l\textquotesingle{}estat del joc en conseqüència. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_aeac837e84d3f63a3dac7b3942705203e}{update\+\_\+objects}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
-\begin{DoxyCompactList}\small\item\em Actualitza tots els objectes del joc (mario, creus, rellotge, etc.) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Actualitza tots els objectes del joc (\doxylink{classMario}{Mario}, creus, rellotge, etc.) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_ab146f2f8cec61b092586762267cf1e73}{update\+\_\+camera}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
 \begin{DoxyCompactList}\small\item\em Mou la càmera seguint la posició del personatge principal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos privados}
@@ -97,7 +102,7 @@ std\+::list$<$ \mbox{\hyperlink{classCross}{Cross}} $>$ \mbox{\hyperlink{classGa
 \item 
 \mbox{\hyperlink{classDemon}{Demon}} \mbox{\hyperlink{classGame_af2cb5925dfa39af72927ae512034cdac}{demon\+\_\+}}
 \item 
-pro2\+::\+Ascended \mbox{\hyperlink{classGame_aaba05b1a95dbabf977bf1d51cb67ce55}{ascended\+\_\+}}
+\mbox{\hyperlink{classAscended}{Ascended}} \mbox{\hyperlink{classGame_a13497efadc50c3a335fbb39f57e01690}{ascended\+\_\+}}
 \item 
 \mbox{\hyperlink{classFinder}{Finder}}$<$ \mbox{\hyperlink{classPlatform}{Platform}} $>$ \mbox{\hyperlink{classGame_a4ac62fcd6f881bcb94637e29015a7c7b}{finder\+\_\+platforms\+\_\+}}
 \item 
@@ -129,9 +134,11 @@ static constexpr int \mbox{\hyperlink{classGame_a636fa6f9369014f3aa1365b8cd3611b
 
 
 \doxysubsection{Descripción detallada}
+Classe principal que gestiona l\textquotesingle{}estat i la lògica del joc. 
 
+La classe \doxylink{classGame}{Game} conté totes les dades i funcionalitats necessàries per controlar el personatge, plataformes, creus, dimoni, temporitzadors, i les diferents pantalles i estats del joc. 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00033}{33}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 
@@ -171,7 +178,7 @@ void Game\+::apply\+\_\+game\+\_\+mode\+\_\+settings (\begin{DoxyParamCaption}{}
 
 
 
-Aplica les configuracions específiquès segons el mode de joc seleccionat. 
+Aplica les configuracions específiques segons el mode de joc seleccionat. 
 
 
 
@@ -192,13 +199,13 @@ Centra un text al mitg de la pantalla.
 
 
 \begin{DoxyParams}{Parámetros}
-{\em window} & Finestra on anira el text \\
+{\em window} & Finestra on anirà el text \\
 \hline
-{\em center} & Mitg de la finestra \\
+{\em center} & Punt central de la finestra \\
 \hline
 {\em text} & Text a pintar \\
 \hline
-{\em y\+\_\+offset} & Distancia del mitg de la pantalla (útil per més de un text) \\
+{\em y\+\_\+offset} & Desplaçament vertical respecte al centre (per multiples textos) \\
 \hline
 \end{DoxyParams}
 
@@ -216,7 +223,7 @@ void Game\+::check\+\_\+blessing\+\_\+points (\begin{DoxyParamCaption}{}{}\end{D
 
 
 
-Comprova si el mario ha aconseguit prou punts per activar benediccions. 
+Comprova si \doxylink{classMario}{Mario} ha aconseguit prou punts per activar benediccions. 
 
 
 
@@ -233,7 +240,7 @@ bool Game\+::check\+\_\+fallen\+\_\+off\+\_\+screen (\begin{DoxyParamCaption}\it
 
 
 
-Comprova si el mario ha caigut fora de la pantalla. 
+Comprova si \doxylink{classMario}{Mario} ha caigut fora de la pantalla. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -262,7 +269,7 @@ Crea un mapa diferent amb plataformes randomitzades per cada reinici del joc.
 
 
 \begin{DoxyParams}{Parámetros}
-{\em count} & Nombre de elements a pantalla a randomitzar \\
+{\em count} & Nombre d\textquotesingle{}elements a pantalla a randomitzar \\
 \hline
 \end{DoxyParams}
 
@@ -280,11 +287,11 @@ void Game\+::handle\+\_\+sandglass\+\_\+interaction (\begin{DoxyParamCaption}\it
 
 
 
-Comprova si mario interactua amb el rellotge i l’activa. 
+Comprova si \doxylink{classMario}{Mario} interactua amb el rellotge i l’activa. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em mario\+Rect} & Rectangle del mario \\
+{\em mario\+Rect} & Rectangle de \doxylink{classMario}{Mario} \\
 \hline
 \end{DoxyParams}
 
@@ -302,14 +309,14 @@ bool Game\+::is\+\_\+finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption
 
 
 
-Retorna un bool segons si el joc ha acabat. 
+Retorna true si el joc ha acabat. 
 
 \begin{DoxyReturn}{Devuelve}
-True si el jugador ha sortit del joc, fals en cas contrari 
+bool 
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00104}{104}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00110}{110}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -322,14 +329,14 @@ bool Game\+::is\+\_\+paused (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})
 
 
 
-Retorna un bool segons si el joc esta o no pausat. 
+Retorna true si el joc està pausat. 
 
 \begin{DoxyReturn}{Devuelve}
-True or False segons l\textquotesingle{}estat del joc 
+bool 
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00096}{96}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00102}{102}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -609,7 +616,7 @@ Canvia el mode de joc al seleccionat.
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00128}{128}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00134}{134}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -672,7 +679,7 @@ Actualitza les creus visibles i comprova si han estat recollides.
 \begin{DoxyParams}{Parámetros}
 {\em window} & Finestra del joc \\
 \hline
-{\em mario\+Rect} & Rectangle del mario \\
+{\em mario\+Rect} & Rectangle de \doxylink{classMario}{Mario} \\
 \hline
 \end{DoxyParams}
 
@@ -712,7 +719,7 @@ void Game\+::update\+\_\+normal\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{
 
 
 
-Actualitza l’estat normal del joc (sense rellotge) 
+Actualitza l’estat normal del joc (sense rellotge). 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -736,7 +743,7 @@ void Game\+::update\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlin
 
 
 
-Actualitza tots els objectes del joc (mario, creus, rellotge, etc.) 
+Actualitza tots els objectes del joc (\doxylink{classMario}{Mario}, creus, rellotge, etc.) 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -786,7 +793,7 @@ Actualitza el temporitzador del joc si hi ha límit de temps.
 
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00136}{136}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00142}{142}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -799,14 +806,14 @@ bool Game\+::you\+\_\+died (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) 
 
 
 
-Retorna un bool segons si el mario ha mort. 
+Retorna true si \doxylink{classMario}{Mario} ha mort (caigut o colpejat). 
 
 \begin{DoxyReturn}{Devuelve}
-True si el mario ha caigut o ha estat colpejat, fals en cas contrari 
+bool 
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00112}{112}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00118}{118}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -819,14 +826,14 @@ bool Game\+::you\+\_\+won (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) c
 
 
 
-Retorna un bool segons si hem guanyat el joc. 
+Retorna true si el jugador ha guanyat. 
 
 \begin{DoxyReturn}{Devuelve}
-True si el jugador ha guanyat, fals en cas contrari 
+bool 
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00120}{120}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00126}{126}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -834,15 +841,15 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00120}{120}} del arch
 
 
 \doxysubsection{Documentación de datos miembro}
-\Hypertarget{classGame_aaba05b1a95dbabf977bf1d51cb67ce55}\index{Game@{Game}!ascended\_@{ascended\_}}
+\Hypertarget{classGame_a13497efadc50c3a335fbb39f57e01690}\index{Game@{Game}!ascended\_@{ascended\_}}
 \index{ascended\_@{ascended\_}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{ascended\_}{ascended\_}}
-{\footnotesize\ttfamily \label{classGame_aaba05b1a95dbabf977bf1d51cb67ce55} 
-pro2\+::\+Ascended Game\+::ascended\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classGame_a13497efadc50c3a335fbb39f57e01690} 
+\mbox{\hyperlink{classAscended}{Ascended}} Game\+::ascended\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Objecte de benedicció activada 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00034}{34}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00041}{41}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a6e8623dae36c0cac75255c40ceec5b35}\index{Game@{Game}!cross\_height\_y\_@{cross\_height\_y\_}}
 \index{cross\_height\_y\_@{cross\_height\_y\_}!Game@{Game}}
@@ -850,9 +857,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00034}{34}} del archi
 {\footnotesize\ttfamily \label{classGame_a6e8623dae36c0cac75255c40ceec5b35} 
 int Game\+::cross\+\_\+height\+\_\+y\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
+Alçada de les creus 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00047}{47}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00053}{53}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a1766a1e6331c8458c040ad641f82b4ab}\index{Game@{Game}!crosses\_@{crosses\_}}
 \index{crosses\_@{crosses\_}!Game@{Game}}
@@ -860,9 +867,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00047}{47}} del archi
 {\footnotesize\ttfamily \label{classGame_a1766a1e6331c8458c040ad641f82b4ab} 
 std\+::list$<$\mbox{\hyperlink{classCross}{Cross}}$>$ Game\+::crosses\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Llista de creus per recollir 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00038}{38}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_af2d2757cd96e823c08098addbda9e648}\index{Game@{Game}!crosses\_to\_get\_@{crosses\_to\_get\_}}
 \index{crosses\_to\_get\_@{crosses\_to\_get\_}!Game@{Game}}
@@ -870,9 +877,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00031}{31}} del archi
 {\footnotesize\ttfamily \label{classGame_af2d2757cd96e823c08098addbda9e648} 
 int Game\+::crosses\+\_\+to\+\_\+get\+\_\+ = 10\hspace{0.3cm}{\ttfamily [private]}}
 
+Nombre de creus per mode fàcil 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00049}{49}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00055}{55}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_af2cb5925dfa39af72927ae512034cdac}\index{Game@{Game}!demon\_@{demon\_}}
 \index{demon\_@{demon\_}!Game@{Game}}
@@ -880,9 +887,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00049}{49}} del archi
 {\footnotesize\ttfamily \label{classGame_af2cb5925dfa39af72927ae512034cdac} 
 \mbox{\hyperlink{classDemon}{Demon}} Game\+::demon\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Dimoni enemic 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00033}{33}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_ab1ee68975468409b25082bf66e9414d6}\index{Game@{Game}!finder\_crosses\_@{finder\_crosses\_}}
 \index{finder\_crosses\_@{finder\_crosses\_}!Game@{Game}}
@@ -890,9 +897,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00033}{33}} del archi
 {\footnotesize\ttfamily \label{classGame_ab1ee68975468409b25082bf66e9414d6} 
 \mbox{\hyperlink{classFinder}{Finder}}$<$\mbox{\hyperlink{classCross}{Cross}}$>$ Game\+::finder\+\_\+crosses\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+\doxylink{classFinder}{Finder} per a creus 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00038}{38}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00044}{44}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a4ac62fcd6f881bcb94637e29015a7c7b}\index{Game@{Game}!finder\_platforms\_@{finder\_platforms\_}}
 \index{finder\_platforms\_@{finder\_platforms\_}!Game@{Game}}
@@ -900,9 +907,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00038}{38}} del archi
 {\footnotesize\ttfamily \label{classGame_a4ac62fcd6f881bcb94637e29015a7c7b} 
 \mbox{\hyperlink{classFinder}{Finder}}$<$\mbox{\hyperlink{classPlatform}{Platform}}$>$ Game\+::finder\+\_\+platforms\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+\doxylink{classFinder}{Finder} per a plataformes 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00037}{37}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00043}{43}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a64fe40edeca8f95bc8ba668438ed5794}\index{Game@{Game}!game\_mode\_@{game\_mode\_}}
 \index{game\_mode\_@{game\_mode\_}!Game@{Game}}
@@ -910,9 +917,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00037}{37}} del archi
 {\footnotesize\ttfamily \label{classGame_a64fe40edeca8f95bc8ba668438ed5794} 
 int Game\+::game\+\_\+mode\+\_\+ = 1\hspace{0.3cm}{\ttfamily [private]}}
 
+Mode de joc actual (ex\+: 1 = Easy) 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00051}{51}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00057}{57}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_af603811af3c32b9441fd0ee8b0283c75}\index{Game@{Game}!game\_state\_@{game\_state\_}}
 \index{game\_state\_@{game\_state\_}!Game@{Game}}
@@ -920,9 +927,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00051}{51}} del archi
 {\footnotesize\ttfamily \label{classGame_af603811af3c32b9441fd0ee8b0283c75} 
 int Game\+::game\+\_\+state\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
+Estat actual del joc (menus, jugant, etc.) 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00045}{45}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00051}{51}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a8b46e9f0caf6c91855d6a32a1424a530}\index{Game@{Game}!has\_time\_limit\_@{has\_time\_limit\_}}
 \index{has\_time\_limit\_@{has\_time\_limit\_}!Game@{Game}}
@@ -930,9 +937,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00045}{45}} del archi
 {\footnotesize\ttfamily \label{classGame_a8b46e9f0caf6c91855d6a32a1424a530} 
 bool Game\+::has\+\_\+time\+\_\+limit\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
 
+Indica si el joc té límit de temps 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00042}{42}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00048}{48}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a74b07603e39699979b08f5c27b7880f8}\index{Game@{Game}!is\_dodging\_mode\_@{is\_dodging\_mode\_}}
 \index{is\_dodging\_mode\_@{is\_dodging\_mode\_}!Game@{Game}}
@@ -940,9 +947,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00042}{42}} del archi
 {\footnotesize\ttfamily \label{classGame_a74b07603e39699979b08f5c27b7880f8} 
 bool Game\+::is\+\_\+dodging\+\_\+mode\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
 
+Indica si el mode esquiva està activat 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00043}{43}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00049}{49}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a201212d7739d9b0b2e35b62fccece153}\index{Game@{Game}!last\_blessed\_points\_@{last\_blessed\_points\_}}
 \index{last\_blessed\_points\_@{last\_blessed\_points\_}!Game@{Game}}
@@ -950,9 +957,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00043}{43}} del archi
 {\footnotesize\ttfamily \label{classGame_a201212d7739d9b0b2e35b62fccece153} 
 int Game\+::last\+\_\+blessed\+\_\+points\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
+Últims punts per activar benedicció 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00048}{48}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00054}{54}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a5ca6a91487a61b30528dd535bed1ce26}\index{Game@{Game}!mario\_@{mario\_}}
 \index{mario\_@{mario\_}!Game@{Game}}
@@ -960,9 +967,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00048}{48}} del archi
 {\footnotesize\ttfamily \label{classGame_a5ca6a91487a61b30528dd535bed1ce26} 
 \mbox{\hyperlink{classMario}{Mario}} Game\+::mario\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Personatge principal \doxylink{classMario}{Mario} 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00034}{34}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a0199e692575fbb7366551b469b066a6c}\index{Game@{Game}!paused\_@{paused\_}}
 \index{paused\_@{paused\_}!Game@{Game}}
@@ -970,9 +977,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00027}{27}} del archi
 {\footnotesize\ttfamily \label{classGame_a0199e692575fbb7366551b469b066a6c} 
 bool Game\+::paused\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Estat de pausa del joc 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00046}{46}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_af8d7b0aefacb6a03fb6e2d28a2b49923}\index{Game@{Game}!platforms\_@{platforms\_}}
 \index{platforms\_@{platforms\_}!Game@{Game}}
@@ -980,9 +987,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00040}{40}} del archi
 {\footnotesize\ttfamily \label{classGame_af8d7b0aefacb6a03fb6e2d28a2b49923} 
 std\+::vector$<$\mbox{\hyperlink{classPlatform}{Platform}}$>$ Game\+::platforms\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Llista de plataformes al mapa 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00028}{28}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00035}{35}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a56d8b6fb9cff75879c0d70310b508ed3}\index{Game@{Game}!sandglass\_@{sandglass\_}}
 \index{sandglass\_@{sandglass\_}!Game@{Game}}
@@ -990,9 +997,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00028}{28}} del archi
 {\footnotesize\ttfamily \label{classGame_a56d8b6fb9cff75879c0d70310b508ed3} 
 \mbox{\hyperlink{classSandglass}{Sandglass}} Game\+::sandglass\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Objecte rellotge de sorra 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00032}{32}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00039}{39}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a636fa6f9369014f3aa1365b8cd3611b4}\index{Game@{Game}!sky\_blue@{sky\_blue}}
 \index{sky\_blue@{sky\_blue}!Game@{Game}}
@@ -1000,9 +1007,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00032}{32}} del archi
 {\footnotesize\ttfamily \label{classGame_a636fa6f9369014f3aa1365b8cd3611b4} 
 int Game\+::sky\+\_\+blue = 0x5c94fc\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
 
+\doxylink{platform_8cc_a1cf275c5d221949062bba6a49b3daa13}{Color} blau cel per pintar fons 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00254}{254}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00260}{260}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a18f58e292e852152f768639dfe4c0e47}\index{Game@{Game}!still\_mario\_@{still\_mario\_}}
 \index{still\_mario\_@{still\_mario\_}!Game@{Game}}
@@ -1010,9 +1017,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00254}{254}} del arch
 {\footnotesize\ttfamily \label{classGame_a18f58e292e852152f768639dfe4c0e47} 
 \mbox{\hyperlink{classMario}{Mario}} Game\+::still\+\_\+mario\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+\doxylink{classMario}{Mario} estàtic per proves o estat 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00030}{30}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00037}{37}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_a41f899e947ef89e1d9ad7db3557e1be5}\index{Game@{Game}!still\_platform\_@{still\_platform\_}}
 \index{still\_platform\_@{still\_platform\_}!Game@{Game}}
@@ -1020,9 +1027,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00030}{30}} del archi
 {\footnotesize\ttfamily \label{classGame_a41f899e947ef89e1d9ad7db3557e1be5} 
 \mbox{\hyperlink{classPlatform}{Platform}} Game\+::still\+\_\+platform\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Plataforma estàtica per proves o estat 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00036}{36}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 \Hypertarget{classGame_ab8a39c21375e10001f8d43dcd608211d}\index{Game@{Game}!timer\_@{timer\_}}
 \index{timer\_@{timer\_}!Game@{Game}}
@@ -1030,9 +1037,9 @@ Definición en la línea \mbox{\hyperlink{game_8hh_source_l00029}{29}} del archi
 {\footnotesize\ttfamily \label{classGame_ab8a39c21375e10001f8d43dcd608211d} 
 int Game\+::timer\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
+Temporitzador per mode speedrun 
 
-
-Definición en la línea \mbox{\hyperlink{game_8hh_source_l00050}{50}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
+Definición en la línea \mbox{\hyperlink{game_8hh_source_l00056}{56}} del archivo \mbox{\hyperlink{game_8hh_source}{game.\+hh}}.
 
 
 

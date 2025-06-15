@@ -88,87 +88,88 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 <a href="ascended_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef ASCENDED_HH</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define ASCENDED_HH</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="stack_8hh.html">stack.hh</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="geometry_8hh.html">geometry.hh</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="window_8hh.html">window.hh</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classAscended.html">   16</a></span><span class="keyword">class </span><a class="code hl_function" href="classAscended.html#ab9e8465bdcd853e9b80e7427b7d4dbe3">Ascended</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef ASCENDED_HH</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define ASCENDED_HH</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="stack_8hh.html">stack.hh</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="geometry_8hh.html">geometry.hh</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="window_8hh.html">window.hh</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classAscended.html#a01923440737c8bfc60e9a898c4138cf9">   17</a></span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code hl_variable" href="classAscended.html#a01923440737c8bfc60e9a898c4138cf9">ascended_sprite_</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">   21</a></span>    <a class="code hl_class" href="classStack.html">Stack&lt;int&gt;</a> <a class="code hl_variable" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">blessings</a>;  </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classAscended.html#a1f7c03b34eabc303c7bf681fda520a6e">   22</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classAscended.html#a1f7c03b34eabc303c7bf681fda520a6e">active</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classAscended.html#a32e45a33427046549c8316825a1f6224">   23</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classAscended.html#a32e45a33427046549c8316825a1f6224">duration</a> = 0;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classAscended.html#a4a8771d9ada6e1dc3012dbde53061e48">   24</a></span>    Pt <a class="code hl_variable" href="classAscended.html#a4a8771d9ada6e1dc3012dbde53061e48">pos_</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classAscended.html#ab9e8465bdcd853e9b80e7427b7d4dbe3">   27</a></span>    <a class="code hl_function" href="classAscended.html#ab9e8465bdcd853e9b80e7427b7d4dbe3">Ascended</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classAscended.html#a01923440737c8bfc60e9a898c4138cf9">   17</a></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classAscended.html">   26</a></span><span class="keyword">class </span><a class="code hl_function" href="classAscended.html#ab9e8465bdcd853e9b80e7427b7d4dbe3">Ascended</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classAscended.html#a1f8c2d48cb4ff04c9a97e59389b5d662">   32</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAscended.html#a1f8c2d48cb4ff04c9a97e59389b5d662">add_blessing</a>() {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_variable" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">blessings</a>.push(1);  </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
-</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code hl_variable" href="classAscended.html#a01923440737c8bfc60e9a898c4138cf9">ascended_sprite_</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">   31</a></span>    <a class="code hl_class" href="classStack.html">Stack&lt;int&gt;</a> <a class="code hl_variable" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">blessings</a>;  </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classAscended.html#a1f7c03b34eabc303c7bf681fda520a6e">   32</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classAscended.html#a1f7c03b34eabc303c7bf681fda520a6e">active</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classAscended.html#a32e45a33427046549c8316825a1f6224">   33</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classAscended.html#a32e45a33427046549c8316825a1f6224">duration</a> = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classAscended.html#a285fb9ecedc7baf5779480a48a74b129">   34</a></span>    <a class="code hl_struct" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code hl_variable" href="classAscended.html#a285fb9ecedc7baf5779480a48a74b129">pos_</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classAscended.html#ab9e8465bdcd853e9b80e7427b7d4dbe3">   37</a></span>    <a class="code hl_function" href="classAscended.html#ab9e8465bdcd853e9b80e7427b7d4dbe3">Ascended</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classAscended.html#a1f8c2d48cb4ff04c9a97e59389b5d662">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAscended.html#a1f8c2d48cb4ff04c9a97e59389b5d662">add_blessing</a>() {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_variable" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">blessings</a>.push(1);  </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classAscended.html#a5e98f451324758057071a9647fad0ad7">   41</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classAscended.html#a5e98f451324758057071a9647fad0ad7">can_activate</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> !<a class="code hl_variable" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">blessings</a>.empty();  </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classAscended.html#a5e98f451324758057071a9647fad0ad7">   51</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classAscended.html#a5e98f451324758057071a9647fad0ad7">can_activate</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> !<a class="code hl_variable" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">blessings</a>.empty();  </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    </div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classAscended.html#ad48374de77c01938f5a5d4fb82825813">   50</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classAscended.html#ad48374de77c01938f5a5d4fb82825813">is_active</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classAscended.html#a1f7c03b34eabc303c7bf681fda520a6e">active</a>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classAscended.html#ad48374de77c01938f5a5d4fb82825813">   60</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classAscended.html#ad48374de77c01938f5a5d4fb82825813">is_active</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classAscended.html#a1f7c03b34eabc303c7bf681fda520a6e">active</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
-<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classAscended.html#a7ffca6010f02954247623729f49d6628">   57</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classAscended.html#a7ffca6010f02954247623729f49d6628">size</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">blessings</a>.size();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classAscended.html#a7ffca6010f02954247623729f49d6628">   67</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classAscended.html#a7ffca6010f02954247623729f49d6628">size</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">blessings</a>.size();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAscended.html#adaf670f2f333b254c5e8800f4afb450f">activate</a>(Pt mario_pos);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAscended.html#a02417dfce2675c4a6c6ffc75cdd1c882">update</a>(Pt mario_pos);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_struct" href="structpro2_1_1Rect.html">pro2::Rect</a> <a class="code hl_function" href="classAscended.html#a6e4211ef568e0b21915e4bd91f885cec">get_rect</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAscended.html#ad1b7d1a9399a6ccf3635e254b5660e49">paint</a>(Window&amp; window) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAscended.html#a30b7350a89f4efc9c4092525567c4a05">activate</a>(<a class="code hl_struct" href="structpro2_1_1Pt.html">pro2::Pt</a> mario_pos);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAscended.html#aa6f121a94cbede30d9ef521a5091040e">update</a>(<a class="code hl_struct" href="structpro2_1_1Pt.html">pro2::Pt</a> mario_pos);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_struct" href="structpro2_1_1Rect.html">pro2::Rect</a> <a class="code hl_function" href="classAscended.html#a6e4211ef568e0b21915e4bd91f885cec">get_rect</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAscended.html#aaaf3e17a9d9fd5ef87928b1ea9f542e9">paint</a>(<a class="code hl_class" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif </span><span class="comment">// ASCENDED_HH</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif </span><span class="comment">// ASCENDED_HH</span></div>
+</div>
 <div class="ttc" id="aclassAscended_html_a01923440737c8bfc60e9a898c4138cf9"><div class="ttname"><a href="classAscended.html#a01923440737c8bfc60e9a898c4138cf9">Ascended::ascended_sprite_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; ascended_sprite_</div><div class="ttdef"><b>Definition</b> <a href="#l00017">ascended.hh:17</a></div></div>
-<div class="ttc" id="aclassAscended_html_a02417dfce2675c4a6c6ffc75cdd1c882"><div class="ttname"><a href="classAscended.html#a02417dfce2675c4a6c6ffc75cdd1c882">Ascended::update</a></div><div class="ttdeci">void update(Pt mario_pos)</div><div class="ttdoc">Per tenir sempre l&#39;escut on el mario.</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00049">ascended.cc:49</a></div></div>
-<div class="ttc" id="aclassAscended_html_a1f7c03b34eabc303c7bf681fda520a6e"><div class="ttname"><a href="classAscended.html#a1f7c03b34eabc303c7bf681fda520a6e">Ascended::active</a></div><div class="ttdeci">bool active</div><div class="ttdef"><b>Definition</b> <a href="#l00022">ascended.hh:22</a></div></div>
-<div class="ttc" id="aclassAscended_html_a1f8c2d48cb4ff04c9a97e59389b5d662"><div class="ttname"><a href="classAscended.html#a1f8c2d48cb4ff04c9a97e59389b5d662">Ascended::add_blessing</a></div><div class="ttdeci">void add_blessing()</div><div class="ttdoc">Afegeix un blessing al Stack.</div><div class="ttdef"><b>Definition</b> <a href="#l00032">ascended.hh:32</a></div></div>
-<div class="ttc" id="aclassAscended_html_a32e45a33427046549c8316825a1f6224"><div class="ttname"><a href="classAscended.html#a32e45a33427046549c8316825a1f6224">Ascended::duration</a></div><div class="ttdeci">int duration</div><div class="ttdef"><b>Definition</b> <a href="#l00023">ascended.hh:23</a></div></div>
-<div class="ttc" id="aclassAscended_html_a4a8771d9ada6e1dc3012dbde53061e48"><div class="ttname"><a href="classAscended.html#a4a8771d9ada6e1dc3012dbde53061e48">Ascended::pos_</a></div><div class="ttdeci">Pt pos_</div><div class="ttdef"><b>Definition</b> <a href="#l00024">ascended.hh:24</a></div></div>
-<div class="ttc" id="aclassAscended_html_a5e98f451324758057071a9647fad0ad7"><div class="ttname"><a href="classAscended.html#a5e98f451324758057071a9647fad0ad7">Ascended::can_activate</a></div><div class="ttdeci">bool can_activate() const</div><div class="ttdoc">Retorna si el linked stack esta buit o no.</div><div class="ttdef"><b>Definition</b> <a href="#l00041">ascended.hh:41</a></div></div>
+<div class="ttc" id="aclassAscended_html_a1f7c03b34eabc303c7bf681fda520a6e"><div class="ttname"><a href="classAscended.html#a1f7c03b34eabc303c7bf681fda520a6e">Ascended::active</a></div><div class="ttdeci">bool active</div><div class="ttdef"><b>Definition</b> <a href="#l00032">ascended.hh:32</a></div></div>
+<div class="ttc" id="aclassAscended_html_a1f8c2d48cb4ff04c9a97e59389b5d662"><div class="ttname"><a href="classAscended.html#a1f8c2d48cb4ff04c9a97e59389b5d662">Ascended::add_blessing</a></div><div class="ttdeci">void add_blessing()</div><div class="ttdoc">Afegeix un blessing al Stack.</div><div class="ttdef"><b>Definition</b> <a href="#l00042">ascended.hh:42</a></div></div>
+<div class="ttc" id="aclassAscended_html_a285fb9ecedc7baf5779480a48a74b129"><div class="ttname"><a href="classAscended.html#a285fb9ecedc7baf5779480a48a74b129">Ascended::pos_</a></div><div class="ttdeci">pro2::Pt pos_</div><div class="ttdef"><b>Definition</b> <a href="#l00034">ascended.hh:34</a></div></div>
+<div class="ttc" id="aclassAscended_html_a30b7350a89f4efc9c4092525567c4a05"><div class="ttname"><a href="classAscended.html#a30b7350a89f4efc9c4092525567c4a05">Ascended::activate</a></div><div class="ttdeci">void activate(pro2::Pt mario_pos)</div><div class="ttdoc">Retorna si esta o no actiu el blessing.</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00040">ascended.cc:40</a></div></div>
+<div class="ttc" id="aclassAscended_html_a32e45a33427046549c8316825a1f6224"><div class="ttname"><a href="classAscended.html#a32e45a33427046549c8316825a1f6224">Ascended::duration</a></div><div class="ttdeci">int duration</div><div class="ttdef"><b>Definition</b> <a href="#l00033">ascended.hh:33</a></div></div>
+<div class="ttc" id="aclassAscended_html_a5e98f451324758057071a9647fad0ad7"><div class="ttname"><a href="classAscended.html#a5e98f451324758057071a9647fad0ad7">Ascended::can_activate</a></div><div class="ttdeci">bool can_activate() const</div><div class="ttdoc">Retorna si el linked stack esta buit o no.</div><div class="ttdef"><b>Definition</b> <a href="#l00051">ascended.hh:51</a></div></div>
 <div class="ttc" id="aclassAscended_html_a6e4211ef568e0b21915e4bd91f885cec"><div class="ttname"><a href="classAscended.html#a6e4211ef568e0b21915e4bd91f885cec">Ascended::get_rect</a></div><div class="ttdeci">pro2::Rect get_rect() const</div><div class="ttdoc">Retorna la hitbox de l&#39;objecte.</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00060">ascended.cc:60</a></div></div>
-<div class="ttc" id="aclassAscended_html_a7ffca6010f02954247623729f49d6628"><div class="ttname"><a href="classAscended.html#a7ffca6010f02954247623729f49d6628">Ascended::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Retorna la mida del stack.</div><div class="ttdef"><b>Definition</b> <a href="#l00057">ascended.hh:57</a></div></div>
+<div class="ttc" id="aclassAscended_html_a7ffca6010f02954247623729f49d6628"><div class="ttname"><a href="classAscended.html#a7ffca6010f02954247623729f49d6628">Ascended::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Retorna la mida del stack.</div><div class="ttdef"><b>Definition</b> <a href="#l00067">ascended.hh:67</a></div></div>
+<div class="ttc" id="aclassAscended_html_aa6f121a94cbede30d9ef521a5091040e"><div class="ttname"><a href="classAscended.html#aa6f121a94cbede30d9ef521a5091040e">Ascended::update</a></div><div class="ttdeci">void update(pro2::Pt mario_pos)</div><div class="ttdoc">Per tenir sempre l&#39;escut on el mario.</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00049">ascended.cc:49</a></div></div>
+<div class="ttc" id="aclassAscended_html_aaaf3e17a9d9fd5ef87928b1ea9f542e9"><div class="ttname"><a href="classAscended.html#aaaf3e17a9d9fd5ef87928b1ea9f542e9">Ascended::paint</a></div><div class="ttdeci">void paint(pro2::Window &amp;window) const</div><div class="ttdoc">Pinta l&#39;objecte.</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00072">ascended.cc:72</a></div></div>
 <div class="ttc" id="aclassAscended_html_ab9e8465bdcd853e9b80e7427b7d4dbe3"><div class="ttname"><a href="classAscended.html#ab9e8465bdcd853e9b80e7427b7d4dbe3">Ascended::Ascended</a></div><div class="ttdeci">Ascended()=default</div></div>
-<div class="ttc" id="aclassAscended_html_ad1b7d1a9399a6ccf3635e254b5660e49"><div class="ttname"><a href="classAscended.html#ad1b7d1a9399a6ccf3635e254b5660e49">Ascended::paint</a></div><div class="ttdeci">void paint(Window &amp;window) const</div><div class="ttdoc">Pinta l&#39;objecte.</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00072">ascended.cc:72</a></div></div>
-<div class="ttc" id="aclassAscended_html_ad48374de77c01938f5a5d4fb82825813"><div class="ttname"><a href="classAscended.html#ad48374de77c01938f5a5d4fb82825813">Ascended::is_active</a></div><div class="ttdeci">bool is_active() const</div><div class="ttdoc">Retorna si esta o no actiu el blessing.</div><div class="ttdef"><b>Definition</b> <a href="#l00050">ascended.hh:50</a></div></div>
-<div class="ttc" id="aclassAscended_html_adaf670f2f333b254c5e8800f4afb450f"><div class="ttname"><a href="classAscended.html#adaf670f2f333b254c5e8800f4afb450f">Ascended::activate</a></div><div class="ttdeci">void activate(Pt mario_pos)</div><div class="ttdoc">Retorna si esta o no actiu el blessing.</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00040">ascended.cc:40</a></div></div>
-<div class="ttc" id="aclassAscended_html_aeaae4d9e563ea95e8623f7eb16afc8a0"><div class="ttname"><a href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">Ascended::blessings</a></div><div class="ttdeci">Stack&lt; int &gt; blessings</div><div class="ttdef"><b>Definition</b> <a href="#l00021">ascended.hh:21</a></div></div>
-<div class="ttc" id="aclassStack_html"><div class="ttname"><a href="classStack.html">Stack</a></div><div class="ttdef"><b>Definition</b> <a href="stack_8hh_source.html#l00011">stack.hh:11</a></div></div>
+<div class="ttc" id="aclassAscended_html_ad48374de77c01938f5a5d4fb82825813"><div class="ttname"><a href="classAscended.html#ad48374de77c01938f5a5d4fb82825813">Ascended::is_active</a></div><div class="ttdeci">bool is_active() const</div><div class="ttdoc">Retorna si esta o no actiu el blessing.</div><div class="ttdef"><b>Definition</b> <a href="#l00060">ascended.hh:60</a></div></div>
+<div class="ttc" id="aclassAscended_html_aeaae4d9e563ea95e8623f7eb16afc8a0"><div class="ttname"><a href="classAscended.html#aeaae4d9e563ea95e8623f7eb16afc8a0">Ascended::blessings</a></div><div class="ttdeci">Stack&lt; int &gt; blessings</div><div class="ttdef"><b>Definition</b> <a href="#l00031">ascended.hh:31</a></div></div>
+<div class="ttc" id="aclassStack_html"><div class="ttname"><a href="classStack.html">Stack</a></div><div class="ttdoc">Implementació genèrica d&#39;una pila (stack) amb operacions bàsiques.</div><div class="ttdef"><b>Definition</b> <a href="stack_8hh_source.html#l00024">stack.hh:24</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html"><div class="ttname"><a href="classpro2_1_1Window.html">pro2::Window</a></div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00077">window.hh:77</a></div></div>
 <div class="ttc" id="ageometry_8hh_html"><div class="ttname"><a href="geometry_8hh.html">geometry.hh</a></div><div class="ttdoc">Funcions relacionades amb geometria.</div></div>
-<div class="ttc" id="astack_8hh_html"><div class="ttname"><a href="stack_8hh.html">stack.hh</a></div></div>
+<div class="ttc" id="astack_8hh_html"><div class="ttname"><a href="stack_8hh.html">stack.hh</a></div><div class="ttdoc">Implementació genèrica d&#39;una pila (stack) amb plantilles.</div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html"><div class="ttname"><a href="structpro2_1_1Pt.html">pro2::Pt</a></div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00010">geometry.hh:10</a></div></div>
 <div class="ttc" id="astructpro2_1_1Rect_html"><div class="ttname"><a href="structpro2_1_1Rect.html">pro2::Rect</a></div><div class="ttdoc">Compara dos rects del pla.</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00039">geometry.hh:39</a></div></div>
 <div class="ttc" id="awindow_8hh_html"><div class="ttname"><a href="window_8hh.html">window.hh</a></div><div class="ttdoc">Especificació de les Funcions del Window.</div></div>
 </div><!-- fragment --></div><!-- contents -->

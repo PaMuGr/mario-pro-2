@@ -1,8 +1,8 @@
 <map id="mario.hh" name="mario.hh">
-<area shape="rect" id="Node000001" title="Especificacions de Funcions del Mario." alt="" coords="94,5,165,31"/>
+<area shape="rect" id="Node000001" title="Definició de la classe Mario per al control del personatge principal del joc." alt="" coords="94,5,165,31"/>
 <area shape="rect" id="Node000002" href="$list_8hh.html" title=" " alt="" coords="5,79,62,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,34,63,72,60,68,112,29"/>
-<area shape="rect" id="Node000003" href="$platform_8hh.html" title="Especificacions de Funcions del Platforms." alt="" coords="86,79,173,105"/>
+<area shape="rect" id="Node000003" href="$platform_8hh.html" title="Definició de la classe Platform que representa plataformes en el joc." alt="" coords="86,79,173,105"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,31,132,63,127,63,127,31"/>
 <area shape="rect" id="Node000004" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="129,153,210,178"/>
 <area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="148,30,169,50,187,78,190,109,184,139,178,138,185,109,182,80,165,54,144,33"/>

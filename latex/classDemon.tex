@@ -2,35 +2,42 @@
 \hypertarget{classDemon}{}\label{classDemon}\index{Demon@{Demon}}
 
 
+Classe que modela un dimoni que es mou i dispara boles de foc.  
+
+
+
+
 {\ttfamily \#include $<$demon.\+hh$>$}
 
 \doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classDemon_a40c7ca5e5f8ad20bc832ed3188058657}{Demon}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor per defecte, situa el dimoni a (0,0). \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classDemon_ac904d7fd09132f310b38b13f61a4c1ad}{Demon}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor amb posició inicial. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDemon_a8781fe344bdcda6423720fa071c90474}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
-\item 
+\begin{DoxyCompactList}\small\item\em Dibuixa el dimoni a la finestra. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}} () const
-\begin{DoxyCompactList}\small\item\em Retorna la posició \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna la posició actual del dimoni. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classDemon_a9c94ed1871bb0bc814da9119d8f2c876}{get\+\_\+rect}} () const
-\begin{DoxyCompactList}\small\item\em Crea una hitbox. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna la hitbox del dimoni. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDemon_abda83e7c567fd7d20e9261f03b64e1ca}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const std\+::set$<$ const \mbox{\hyperlink{classPlatform}{Platform}} \texorpdfstring{$\ast$}{*} $>$ \&platforms)
-\begin{DoxyCompactList}\small\item\em actualitza el moviment del \doxylink{classDemon}{Demon} \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Actualitza el moviment i estat del dimoni. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classDemon_a3ae903c65dbc8a572aaccd82db30f644}{should\+\_\+shoot}} () const
-\begin{DoxyCompactList}\small\item\em Retorna si ha acabat amb les bales i ha de tornar a disparar. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Indica si el dimoni ha acabat el cooldown i pot disparar. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDemon_a434c3b12eca9da1cfa1a875e6e6ebc25}{reset\+\_\+cooldown}} ()
-\begin{DoxyCompactList}\small\item\em Posa del nou el cooldown a fire rate. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Reinicia el cooldown per al següent dispar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDemon_adb96632b8fe73f9cc432887f3c299a80}{set\+\_\+fire\+\_\+rate}} (int new\+\_\+fire\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em Fica els focs per segon al parametre. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDemon_a43b456996640d0c9d9f50a30387e455e}{decaying}} ()
-\begin{DoxyCompactList}\small\item\em Canvi d\textquotesingle{}estat el dimoni. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Canvia l\textquotesingle{}estat del dimoni a decaigut i augmenta la velocitat. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDemon_ae9f3b23e25bb341f8f23122822c3f23f}{try\+\_\+shoot\+\_\+fireball}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Intenta disparar una nova bola de foc. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDemon_aa157d3bd98568d00f2a4577ec5947f7a}{update\+\_\+fireballs}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const std\+::set$<$ const \mbox{\hyperlink{classPlatform}{Platform}} \texorpdfstring{$\ast$}{*} $>$ \&platforms)
-\item 
+\begin{DoxyCompactList}\small\item\em Actualitza totes les boles de foc actives. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classDemon_a6e57f5a52448be5557068afc5b8d621b}{check\+\_\+fireball\+\_\+collisions}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&mario\+Rect, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&ascended\+Rect)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Comprova si alguna bola de foc col·lisiona amb el \doxylink{classMario}{Mario} o un escut. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,6 +48,8 @@ bool \mbox{\hyperlink{classDemon_a6e57f5a52448be5557068afc5b8d621b}{check\+\_\+f
 int \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\+\_\+cooldown\+\_\+}}
 \item 
 int \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\+\_\+rate\+\_\+}}
+\item 
+int \mbox{\hyperlink{classDemon_ae23a7d393c668c7e9b6a060da00afdf0}{fires\+\_\+per\+\_\+second\+\_\+}} = 12
 \item 
 bool \mbox{\hyperlink{classDemon_a5aa2fdd2e381a04843fa22ff945eafdd}{is\+\_\+decayed\+\_\+}} = false
 \item 
@@ -63,9 +72,11 @@ class \mbox{\hyperlink{classDemon_a2bf7a415cc2e7956cc500453b15d45b9}{Fireball}}
 
 
 \doxysubsection{Descripción detallada}
+Classe que modela un dimoni que es mou i dispara boles de foc. 
 
+El dimoni pot entrar en estat "{}decayed"{}, canviar la seva velocitat, i gestionar una llista de boles de foc disparades. 
 
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00077}{77}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00112}{112}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 
@@ -78,10 +89,16 @@ Demon\+::\+Demon (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3
 
 
 
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00097}{97}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Constructor per defecte, situa el dimoni a (0,0). 
+
+
+
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00134}{134}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00134\ :\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}(\{0,0\}),\ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}(0),\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}}(12)\ \{\}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_ac904d7fd09132f310b38b13f61a4c1ad}\index{Demon@{Demon}!Demon@{Demon}}
 \index{Demon@{Demon}!Demon@{Demon}}
@@ -91,10 +108,22 @@ Demon\+::\+Demon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1
 
 
 
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00099}{99}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Constructor amb posició inicial. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & Posició inicial del dimoni. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00140}{140}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}(\mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}}),\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}(\{0,\ 0\}),\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}(0),\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}}(12)\ \{\}}
+
 \end{DoxyCode}
 
 
@@ -107,10 +136,37 @@ bool Demon\+::check\+\_\+fireball\+\_\+collisions (\begin{DoxyParamCaption}\item
 
 
 
+Comprova si alguna bola de foc col·lisiona amb el \doxylink{classMario}{Mario} o un escut. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em mario\+Rect} & Rectangle de \doxylink{classMario}{Mario}. \\
+\hline
+{\em ascended\+Rect} & Rectangle de l\textquotesingle{}escut \doxylink{classAscended}{Ascended}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si hi ha col·lisió, false si no. 
+\end{DoxyReturn}
+
+
 Definición en la línea \mbox{\hyperlink{demon_8cc_source_l00224}{224}} del archivo \mbox{\hyperlink{demon_8cc_source}{demon.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ it\ =\ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.begin();\ it\ !=\ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.end();)\ \{}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespacepro2_a081d28eb2022e1785285df38f0844a4a}{interseccionen}}(ascendedRect,\ (*it).get\_rect()))\ \{}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ it\ =\ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.erase(it);}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespacepro2_a081d28eb2022e1785285df38f0844a4a}{interseccionen}}(marioRect,\ (*it).get\_rect()))\ \{}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ ++it;}
+\DoxyCodeLine{00233\ \ \ \ \ \}}
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00235\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_a43b456996640d0c9d9f50a30387e455e}\index{Demon@{Demon}!decaying@{decaying}}
 \index{decaying@{decaying}!Demon@{Demon}}
@@ -120,14 +176,20 @@ void Demon\+::decaying (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspa
 
 
 
-Canvi d\textquotesingle{}estat el dimoni. 
+Canvia l\textquotesingle{}estat del dimoni a decaigut i augmenta la velocitat. 
 
 
 
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00140}{140}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00196}{196}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_a5aa2fdd2e381a04843fa22ff945eafdd}{is\_decayed\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ae777480d43077e1bed9884bebbf3f05b}{demon\_speed\_}}\ =\ 6;}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_adb96632b8fe73f9cc432887f3c299a80}{set\_fire\_rate}}(8);}
+\DoxyCodeLine{00200\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_a9c94ed1871bb0bc814da9119d8f2c876}\index{Demon@{Demon}!get\_rect@{get\_rect}}
 \index{get\_rect@{get\_rect}!Demon@{Demon}}
@@ -137,10 +199,10 @@ Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00140}{140}} del arc
 
 
 
-Crea una hitbox. 
+Retorna la hitbox del dimoni. 
 
 \begin{DoxyReturn}{Devuelve}
-Un Rectangle amb la hitbox de demon 
+Rectangle que representa la hitbox. 
 \end{DoxyReturn}
 
 
@@ -148,6 +210,17 @@ Definición en la línea \mbox{\hyperlink{demon_8cc_source_l00117}{117}} del arc
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{int}\ width\ =\ \mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{demon\_sprite\_}}[0].size();}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{int}\ height\ =\ \mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{demon\_sprite\_}}.size();}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{return}\ pro2::Rect(\{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.x,}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.y,}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.x\ +\ width,}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.y\ +\ height}
+\DoxyCodeLine{00125\ \ \ \ \ \});}
+\DoxyCodeLine{00126\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_a8781fe344bdcda6423720fa071c90474}\index{Demon@{Demon}!paint@{paint}}
 \index{paint@{paint}!Demon@{Demon}}
@@ -157,10 +230,31 @@ void Demon\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1
 
 
 
+Dibuixa el dimoni a la finestra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra on es dibuixa. \\
+\hline
+\end{DoxyParams}
+
+
 Definición en la línea \mbox{\hyperlink{demon_8cc_source_l00132}{132}} del archivo \mbox{\hyperlink{demon_8cc_source}{demon.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classDemon_a5aa2fdd2e381a04843fa22ff945eafdd}{is\_decayed\_}})\{}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacepro2_a80f038548a7ea3d520759a04437e096a}{paint\_sprite}}(window,\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}},\ \mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{demon\_sprite\_}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00135\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \ \mbox{\hyperlink{namespacepro2_a80f038548a7ea3d520759a04437e096a}{paint\_sprite}}(window,\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}},\ \mbox{\hyperlink{classDemon_a048469cee7d42f952ef95f5d8efd75c3}{decayed\_demon\_sprite\_}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ it\ =\ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.cbegin();\ it\ !=\ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.cend();++it)\ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ (*it).paint(window);}
+\DoxyCodeLine{00140\ \ \ \ \ \}}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}\index{Demon@{Demon}!pos@{pos}}
 \index{pos@{pos}!Demon@{Demon}}
@@ -170,17 +264,19 @@ Definición en la línea \mbox{\hyperlink{demon_8cc_source_l00132}{132}} del arc
 
 
 
-Retorna la posició 
+Retorna la posició actual del dimoni. 
 
 \begin{DoxyReturn}{Devuelve}
-Un Pt amb la pos\+\_\+ del demon 
+Posició (\doxylink{structpro2_1_1Pt}{pro2\+::\+Pt}). 
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00110}{110}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00155}{155}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00155\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}};\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_a434c3b12eca9da1cfa1a875e6e6ebc25}\index{Demon@{Demon}!reset\_cooldown@{reset\_cooldown}}
 \index{reset\_cooldown@{reset\_cooldown}!Demon@{Demon}}
@@ -190,14 +286,42 @@ void Demon\+::reset\+\_\+cooldown (\begin{DoxyParamCaption}{}{}\end{DoxyParamCap
 
 
 
-Posa del nou el cooldown a fire rate. 
+Reinicia el cooldown per al següent dispar. 
 
 
 
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00135}{135}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00182}{182}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00182\ \{\ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}\ =\ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classDemon_adb96632b8fe73f9cc432887f3c299a80}\index{Demon@{Demon}!set\_fire\_rate@{set\_fire\_rate}}
+\index{set\_fire\_rate@{set\_fire\_rate}!Demon@{Demon}}
+\doxysubsubsection{\texorpdfstring{set\_fire\_rate()}{set\_fire\_rate()}}
+{\footnotesize\ttfamily \label{classDemon_adb96632b8fe73f9cc432887f3c299a80} 
+void Demon\+::set\+\_\+fire\+\_\+rate (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+fire\+\_\+rate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fica els focs per segon al parametre. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em new\+\_\+fire\+\_\+rate} & Focs per segon que volem \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00189}{189}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_a568473b501ca27333b71137399fdba9a}{fire\_rate\_}}\ =\ new\_fire\_rate;}
+\DoxyCodeLine{00191\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_a3ae903c65dbc8a572aaccd82db30f644}\index{Demon@{Demon}!should\_shoot@{should\_shoot}}
 \index{should\_shoot@{should\_shoot}!Demon@{Demon}}
@@ -207,14 +331,21 @@ bool Demon\+::should\+\_\+shoot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCapti
 
 
 
-Retorna si ha acabat amb les bales i ha de tornar a disparar. 
+Indica si el dimoni ha acabat el cooldown i pot disparar. 
 
+\begin{DoxyReturn}{Devuelve}
+true si pot disparar, false si encara té cooldown. 
+\end{DoxyReturn}
 
 
 Definición en la línea \mbox{\hyperlink{demon_8cc_source_l00128}{128}} del archivo \mbox{\hyperlink{demon_8cc_source}{demon.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}\ ==\ 0;}
+\DoxyCodeLine{00130\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_ae9f3b23e25bb341f8f23122822c3f23f}\index{Demon@{Demon}!try\_shoot\_fireball@{try\_shoot\_fireball}}
 \index{try\_shoot\_fireball@{try\_shoot\_fireball}!Demon@{Demon}}
@@ -224,10 +355,23 @@ void Demon\+::try\+\_\+shoot\+\_\+fireball (\begin{DoxyParamCaption}{}{}\end{Dox
 
 
 
+Intenta disparar una nova bola de foc. 
+
+
+
 Definición en la línea \mbox{\hyperlink{demon_8cc_source_l00145}{145}} del archivo \mbox{\hyperlink{demon_8cc_source}{demon.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classDemon_a3ae903c65dbc8a572aaccd82db30f644}{should\_shoot}}())\{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_a434c3b12eca9da1cfa1a875e6e6ebc25}{reset\_cooldown}}();}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ pro2::Pt\ fireball\_pos\ =\ \{\mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.x\ +\ 8,\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.y\ +\ 16\};}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ pro2::Pt\ fireball\_speed\ =\ \{0,\ 5\};\ \textcolor{comment}{//Cap\ abaix}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.push\_back(\mbox{\hyperlink{classDemon_a2bf7a415cc2e7956cc500453b15d45b9}{Fireball}}(fireball\_pos,\ fireball\_speed));\ \textcolor{comment}{//Afegim\ element\ nou\ amb\ propietats\ escollides}}
+\DoxyCodeLine{00151\ \ \ \ \ \}}
+\DoxyCodeLine{00152\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_abda83e7c567fd7d20e9261f03b64e1ca}\index{Demon@{Demon}!update@{update}}
 \index{update@{update}!Demon@{Demon}}
@@ -237,11 +381,13 @@ void Demon\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_
 
 
 
-actualitza el moviment del \doxylink{classDemon}{Demon} 
+Actualitza el moviment i estat del dimoni. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em window} & finestra on ho dibuixem \\
+{\em window} & Finestra on es dibuixa. \\
+\hline
+{\em platforms} & Conjunt de plataformes per detectar col·lisions. \\
 \hline
 \end{DoxyParams}
 
@@ -250,6 +396,35 @@ Definición en la línea \mbox{\hyperlink{demon_8cc_source_l00088}{88}} del arch
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{//Marges\ de\ la\ camera}}
+\DoxyCodeLine{00090\ \ \ \ \ pro2::Rect\ camera\_rect\ =\ window.\mbox{\hyperlink{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}{camera\_rect}}();}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ camera\_left\ =\ camera\_rect.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}}\ +\ 50;}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{int}\ camera\_right\ =\ camera\_rect.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}}\ -\/\ 50;}
+\DoxyCodeLine{00093\ \ \ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//Movem\ el\ dimoni}}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.x\ +=\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}.x;}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{comment}{//Canvi\ de\ direcció}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.x\ <=\ camera\_left)\ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.x\ =\ camera\_left;}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}.x\ =\ \mbox{\hyperlink{classDemon_ae777480d43077e1bed9884bebbf3f05b}{demon\_speed\_}};\ }
+\DoxyCodeLine{00101\ \ \ \ \ \}\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.x\ +\ \mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{demon\_sprite\_}}[0].size()\ >=\ camera\_right)\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.x\ =\ camera\_right\ -\/\ \mbox{\hyperlink{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}{demon\_sprite\_}}[0].size();}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}.x\ =\ -\/\mbox{\hyperlink{classDemon_ae777480d43077e1bed9884bebbf3f05b}{demon\_speed\_}};\ }
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{comment}{//Mantenint\ el\ dimoni\ a\ dalt}}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}.y\ =\ camera\_rect.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}}\ +\ 10;}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}\ >\ 0)\ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDemon_ab5ef373effc8e88738977391534e97f8}{fire\_cooldown\_}}-\/-\/;}
+\DoxyCodeLine{00112\ \ \ \ \ \}}
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{classDemon_ae9f3b23e25bb341f8f23122822c3f23f}{try\_shoot\_fireball}}();}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{classDemon_aa157d3bd98568d00f2a4577ec5947f7a}{update\_fireballs}}(window,platforms);}
+\DoxyCodeLine{00115\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classDemon_aa157d3bd98568d00f2a4577ec5947f7a}\index{Demon@{Demon}!update\_fireballs@{update\_fireballs}}
 \index{update\_fireballs@{update\_fireballs}!Demon@{Demon}}
@@ -259,10 +434,55 @@ void Demon\+::update\+\_\+fireballs (\begin{DoxyParamCaption}\item[{\mbox{\hyper
 
 
 
+Actualitza totes les boles de foc actives. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra on es dibuixa. \\
+\hline
+{\em platforms} & Plataformes per detectar col·lisions. \\
+\hline
+\end{DoxyParams}
+
+
 Definición en la línea \mbox{\hyperlink{demon_8cc_source_l00154}{154}} del archivo \mbox{\hyperlink{demon_8cc_source}{demon.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ it\ =\ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.begin();\ it\ !=\ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.end();)\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ (*it).update(window,platforms);}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ erase\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((*it).is\_expired())\ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ erase\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Si\ fora\ de\ lloc\ desactivar}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ ((*it).pos().y\ >\ window.\mbox{\hyperlink{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}{camera\_rect}}().\mbox{\hyperlink{structpro2_1_1Rect_a5240a907c581979ec7981419286a8637}{bottom}})\ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ erase\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ ((*it).is\_falling())\ \{\ }
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ Platform*\ platform\ :\ platforms)\ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pro2::Rect\ fireballRect\ =\ (*it).get\_rect();}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespacepro2_a081d28eb2022e1785285df38f0844a4a}{interseccionen}}(fireballRect,\ platform-\/>get\_rect()))\ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespacepro2_afc58ae0c5cb2b4abcb963e3406ed8ee6}{randomizer}}(4,\ 0)\ <\ 3)\ \{}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (*it).start\_fire();}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ erase\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(erase)\ it\ =\ \mbox{\hyperlink{classDemon_a053f16fc9239054238d9e250874dbec5}{fireballs\_}}.erase(it);}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ ++it;}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \ \ \ \ \}}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \}}
+
 \end{DoxyCode}
 
 
@@ -275,7 +495,7 @@ friend class \mbox{\hyperlink{classFireball}{Fireball}}\hspace{0.3cm}{\ttfamily 
 
 
 
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00079}{79}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00114}{114}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 
@@ -288,27 +508,39 @@ const vector$<$ vector$<$ int $>$ $>$ Demon\+::decayed\+\_\+demon\+\_\+sprite\+\
 
 {\bfseries Valor inicial\+:}
 \begin{DoxyCode}{0}
-\end{DoxyCode}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_ac340509cd896839fc124c2c24716b82f}{E}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_a4b7ae007b449bc3a3b6d4bc57fea3ca2}{C}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_aefcba2436e62e516a63bdad51613a2e5}{B}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_acf1e03a8a1d3f8754ef7ed73b2577adb}{D}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{demon_8cc_a1c83625ec20fd09ecaf0e5b37c75f6f8}{F}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\}}
 
+\end{DoxyCode}
+Sprite del dimoni decaigut 
 
 Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00045}{45}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
-
-\begin{DoxyCode}{0}
-}
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_falling()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ falling\_;\ \}}
-\DoxyCodeLine{00062\ }
-
-\end{DoxyCode}
 \Hypertarget{classDemon_ae777480d43077e1bed9884bebbf3f05b}\index{Demon@{Demon}!demon\_speed\_@{demon\_speed\_}}
 \index{demon\_speed\_@{demon\_speed\_}!Demon@{Demon}}
 \doxysubsubsection{\texorpdfstring{demon\_speed\_}{demon\_speed\_}}
 {\footnotesize\ttfamily \label{classDemon_ae777480d43077e1bed9884bebbf3f05b} 
 int Demon\+::demon\+\_\+speed\+\_\+ = 4\hspace{0.3cm}{\ttfamily [private]}}
 
+Velocitat del dimoni 
 
-
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00090}{90}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00125}{125}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 \Hypertarget{classDemon_a43ac122d774cd3fe56963e84c8a4bddc}\index{Demon@{Demon}!demon\_sprite\_@{demon\_sprite\_}}
 \index{demon\_sprite\_@{demon\_sprite\_}!Demon@{Demon}}
@@ -338,34 +570,34 @@ const vector$<$ vector$<$ int $>$ $>$ Demon\+::demon\+\_\+sprite\+\_\+\hspace{0.
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
-
+Sprite del dimoni 
 
 Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ :\ }
-\DoxyCodeLine{00031\ \ \ \ }
-\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classDemon_a2bf7a415cc2e7956cc500453b15d45b9}{Fireball}}()\ :\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}(\{0,0\}),\ falling\_(\textcolor{keyword}{true})\ \{\}}
-\DoxyCodeLine{00033\ \ \ \ \ }
-\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classDemon_a2bf7a415cc2e7956cc500453b15d45b9}{Fireball}}(pro2::Pt\ \mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}},\ pro2::Pt\ speed);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ :}
+\DoxyCodeLine{00027\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ falling\_;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ duracio\_;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ duracio\_fire\ =\ 2*48;\ \ \ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ fireball\_sprite\_;\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<std::vector<int>>\ fire\_sprite\_;\ \ \ \ \ }
 \DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_abda83e7c567fd7d20e9261f03b64e1ca}{update}}(pro2::Window\&\ window,\textcolor{keyword}{const}\ std::set<const\ Platform*>\&\ platforms);}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDemon_a8781fe344bdcda6423720fa071c90474}{paint}}(pro2::Window\&\ window)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classDemon_a8745eb3c2130c6e2b276a66f0bc7405f}{pos}}()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}};}
-\DoxyCodeLine{00041\ \ \ \ \ \}}
-\DoxyCodeLine{00042\ \end{DoxyCode}
+\DoxyCodeLine{00036\ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classDemon_a2bf7a415cc2e7956cc500453b15d45b9}{Fireball}}()\ :\ \mbox{\hyperlink{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}{pos\_}}(\{0,0\}),\ \mbox{\hyperlink{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}{speed\_}}(\{0,0\}),\ falling\_(\textcolor{keyword}{true})\ \{\}}
+\DoxyCodeLine{00041\ \end{DoxyCode}
 \Hypertarget{classDemon_ab5ef373effc8e88738977391534e97f8}\index{Demon@{Demon}!fire\_cooldown\_@{fire\_cooldown\_}}
 \index{fire\_cooldown\_@{fire\_cooldown\_}!Demon@{Demon}}
 \doxysubsubsection{\texorpdfstring{fire\_cooldown\_}{fire\_cooldown\_}}
 {\footnotesize\ttfamily \label{classDemon_ab5ef373effc8e88738977391534e97f8} 
 int Demon\+::fire\+\_\+cooldown\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Comptador de cooldown per disparar 
 
-
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00083}{83}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00119}{119}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 \Hypertarget{classDemon_a568473b501ca27333b71137399fdba9a}\index{Demon@{Demon}!fire\_rate\_@{fire\_rate\_}}
 \index{fire\_rate\_@{fire\_rate\_}!Demon@{Demon}}
@@ -373,9 +605,9 @@ Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00083}{83}} del arch
 {\footnotesize\ttfamily \label{classDemon_a568473b501ca27333b71137399fdba9a} 
 int Demon\+::fire\+\_\+rate\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Frames entre dispars 
 
-
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00084}{84}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00120}{120}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 \Hypertarget{classDemon_a053f16fc9239054238d9e250874dbec5}\index{Demon@{Demon}!fireballs\_@{fireballs\_}}
 \index{fireballs\_@{fireballs\_}!Demon@{Demon}}
@@ -383,9 +615,19 @@ Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00084}{84}} del arch
 {\footnotesize\ttfamily \label{classDemon_a053f16fc9239054238d9e250874dbec5} 
 \mbox{\hyperlink{classList}{List}}$<$\mbox{\hyperlink{classFireball}{Fireball}}$>$ Demon\+::fireballs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Llista de boles de foc actives 
 
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00123}{123}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00086}{86}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+\Hypertarget{classDemon_ae23a7d393c668c7e9b6a060da00afdf0}\index{Demon@{Demon}!fires\_per\_second\_@{fires\_per\_second\_}}
+\index{fires\_per\_second\_@{fires\_per\_second\_}!Demon@{Demon}}
+\doxysubsubsection{\texorpdfstring{fires\_per\_second\_}{fires\_per\_second\_}}
+{\footnotesize\ttfamily \label{classDemon_ae23a7d393c668c7e9b6a060da00afdf0} 
+int Demon\+::fires\+\_\+per\+\_\+second\+\_\+ = 12\hspace{0.3cm}{\ttfamily [private]}}
+
+Focs per segon 
+
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00121}{121}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 \Hypertarget{classDemon_a5aa2fdd2e381a04843fa22ff945eafdd}\index{Demon@{Demon}!is\_decayed\_@{is\_decayed\_}}
 \index{is\_decayed\_@{is\_decayed\_}!Demon@{Demon}}
@@ -393,9 +635,9 @@ Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00086}{86}} del arch
 {\footnotesize\ttfamily \label{classDemon_a5aa2fdd2e381a04843fa22ff945eafdd} 
 bool Demon\+::is\+\_\+decayed\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
 
+Estat de decaigut del dimoni 
 
-
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00085}{85}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00122}{122}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 \Hypertarget{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7}\index{Demon@{Demon}!pos\_@{pos\_}}
 \index{pos\_@{pos\_}!Demon@{Demon}}
@@ -403,9 +645,9 @@ Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00085}{85}} del arch
 {\footnotesize\ttfamily \label{classDemon_ac7b7e89f1d0f6640b089aa2bb69d98d7} 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Demon\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+Posició actual del dimoni 
 
-
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00081}{81}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00117}{117}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 \Hypertarget{classDemon_a22e563f9dd8a67a3c8bfe054427e799d}\index{Demon@{Demon}!speed\_@{speed\_}}
 \index{speed\_@{speed\_}!Demon@{Demon}}
@@ -413,12 +655,14 @@ Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00081}{81}} del arch
 {\footnotesize\ttfamily \label{classDemon_a22e563f9dd8a67a3c8bfe054427e799d} 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Demon\+::speed\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
 
+Velocitat actual 
 
-
-Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00082}{82}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
+Definición en la línea \mbox{\hyperlink{demon_8hh_source_l00118}{118}} del archivo \mbox{\hyperlink{demon_8hh_source}{demon.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+}
+
 \end{DoxyCode}
 
 

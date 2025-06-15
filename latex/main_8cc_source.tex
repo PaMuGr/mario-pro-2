@@ -19,39 +19,38 @@
 \DoxyCodeLine{\Hypertarget{main_8cc_source_l00018}00018\ }
 \DoxyCodeLine{\Hypertarget{main_8cc_source_l00019}\mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{00019}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\ \{}
 \DoxyCodeLine{\Hypertarget{main_8cc_source_l00020}00020\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00021}00021\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00022}00022\ \ \ \ \ srand(time(0));}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00023}00023\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\ window(\textcolor{stringliteral}{"{}Mario\ Pro\ 2"{}},\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}},\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}});}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00025}00025\ \ \ \ \ window.\mbox{\hyperlink{classpro2_1_1Window_aaa39faf0a0dfa480661c314341638548}{set\_fps}}(\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}});}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00026}00026\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00027}00027\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}\#\#\#\#\#\#\ MARIO\ X\ JESUS\ \#\#\#\#\#\#"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00028}00028\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}ESCULL\ LA\ DIFICULTAT\ DEL\ JOC"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00029}00029\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}1.-\/\ FACIL\ (Agafa\ 10\ crosses)"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00030}00030\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}2.-\/\ INTERMEDI\ (Agafa\ 20\ crosses)"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00031}00031\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}3.-\/\ DIFICIL\ (Agafa\ 40\ crosses)"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00032}00032\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}4.-\/\ SPEEDRUN\ (Amb\ temps)"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00033}00033\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}5.-\/\ DODGING\ MODE\ (Sense\ temps)"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00034}00034\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}6.-\/\ EXIT"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00035}00035\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{int}\ gamemode;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00037}00037\ \ \ \ \ cout\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00038}00038\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Inserta\ l'opció\ aqui:\ "{}};}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00039}00039\ \ \ \ \ cin\ >>\ gamemode;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00040}00040\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00041}00041\ \ \ \ \ cout\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00042}00042\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{if}(gamemode\ !=\ 6)\{}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00044}00044\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Cargant\ el\ joc..."{}}\ <<\ endl\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00045}00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGame}{Game}}\ game(\mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}});}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00046}00046\ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_a1cd0035e2b5ae89538eb741a4017dc0f}{set\_gamemode}}(gamemode);}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00047}00047\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}JOC\ PREPARAT"{}}\ <<\ endl\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00048}00048\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#"{}}\ <<\ endl\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (window.\mbox{\hyperlink{classpro2_1_1Window_a3a2e9797e7da3874fd62727531e711d6}{next\_frame}}()\ \&\&\ !game.\mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{is\_finished}}())\ \{}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_a3661c777f12e357cdc0b3727b2f73412}{update}}(window);}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_af3e3428a12b9944fefb663f2fe560529}{paint}}(window);}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00052}00052\ \ \ \ \ \ \ \ \ \}\ }
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00053}00053\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{main_8cc_source_l00054}00054\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00021}00021\ \ \ \ \ srand(time(0));}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00022}00022\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00023}00023\ \ \ \ \ \mbox{\hyperlink{classpro2_1_1Window}{pro2::Window}}\ window(\textcolor{stringliteral}{"{}Mario\ Pro\ 2"{}},\ \mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}},\ \mbox{\hyperlink{main_8cc_a3166bb8af25e8c3ed92b68e2bd869d40}{ZOOM}});}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00024}00024\ \ \ \ \ window.\mbox{\hyperlink{classpro2_1_1Window_aaa39faf0a0dfa480661c314341638548}{set\_fps}}(\mbox{\hyperlink{main_8cc_ac5090a6568797128b0a5545228bb8b75}{FPS}});}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00026}00026\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}\#\#\#\#\#\#\ MARIO\ X\ JESUS\ \#\#\#\#\#\#"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00027}00027\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}ESCULL\ LA\ DIFICULTAT\ DEL\ JOC"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00028}00028\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}1.-\/\ FACIL\ (Agafa\ 10\ crosses)"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00029}00029\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}2.-\/\ INTERMEDI\ (Agafa\ 20\ crosses)"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00030}00030\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}3.-\/\ DIFICIL\ (Agafa\ 40\ crosses)"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00031}00031\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}4.-\/\ SPEEDRUN\ (Amb\ temps)"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00032}00032\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}5.-\/\ DODGING\ MODE\ (Sense\ temps)"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00033}00033\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}6.-\/\ EXIT"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00034}00034\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00035}00035\ \ \ \ \ \textcolor{keywordtype}{int}\ gamemode;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00036}00036\ \ \ \ \ cout\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00037}00037\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Inserta\ l'opció\ aqui:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00038}00038\ \ \ \ \ cin\ >>\ gamemode;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00039}00039\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00040}00040\ \ \ \ \ cout\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{if}(gamemode\ !=\ 6)\{}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00043}00043\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Cargant\ el\ joc..."{}}\ <<\ endl\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00044}00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGame}{Game}}\ game(\mbox{\hyperlink{main_8cc_a9649ab8139c4c2ea5c93625b30d92a05}{WIDTH}},\ \mbox{\hyperlink{main_8cc_af728b7647e0b8c49832983a31f9a2e9b}{HEIGHT}});}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00045}00045\ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_a1cd0035e2b5ae89538eb741a4017dc0f}{set\_gamemode}}(gamemode);}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00046}00046\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}JOC\ PREPARAT"{}}\ <<\ endl\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00047}00047\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#"{}}\ <<\ endl\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (window.\mbox{\hyperlink{classpro2_1_1Window_a3a2e9797e7da3874fd62727531e711d6}{next\_frame}}()\ \&\&\ !game.\mbox{\hyperlink{classGame_a48d38b110cb6558e69b1920bb31406db}{is\_finished}}())\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_a3661c777f12e357cdc0b3727b2f73412}{update}}(window);}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_af3e3428a12b9944fefb663f2fe560529}{paint}}(window);}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00051}00051\ \ \ \ \ \ \ \ \ \}\ }
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00052}00052\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cc_source_l00053}00053\ \}}
 
 \end{DoxyCode}

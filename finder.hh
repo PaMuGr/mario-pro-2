@@ -10,6 +10,13 @@
 #include <set>
 #endif
 
+/**
+ * @class Finder
+ * 
+ * Implementa una divisió del món en quadricular per organitzar objectes en un grid de cel·les fixes (80x80).
+ * Permet afegir, treure, actualitzar i fer consultes eficients (O(log n)) sobre objectes 
+ * que tenen un mètode get_rect() que retorna un rectangle.
+ */
 template <typename T>
 class Finder {
 

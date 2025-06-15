@@ -2,44 +2,49 @@
 \hypertarget{classPlatform}{}\label{classPlatform}\index{Platform@{Platform}}
 
 
+Representa una plataforma rectangular en el món de joc.  
+
+
+
+
 {\ttfamily \#include $<$platform.\+hh$>$}
 
 \doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classPlatform_a52028ea2984cbfdf8e9f42ee87f66cfe}{Platform}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor per defecte, inicialitza la plataforma buida. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classPlatform_a5d56264f91430d6a44be86cb5f9075a5}{Platform}} (const \mbox{\hyperlink{classPlatform}{Platform}} \&other)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor còpia. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classPlatform_a91871e5a88901d48593ba752f8f71c54}{Platform}} (int \mbox{\hyperlink{classPlatform_aaf35cacf5bafafd352607a6897990b65}{left}}, int \mbox{\hyperlink{classPlatform_a4ce552d100551482cd970bc11ea203cd}{right}}, int \mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}}, int \mbox{\hyperlink{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd}{bottom}})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor que inicialitza les coordenades de la plataforma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPlatform_a73a1afa2b57fce20cb692f1679ea782e}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
-\item 
+\begin{DoxyCompactList}\small\item\em Dibuixa la plataforma a la finestra de joc. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classPlatform_a433b419b896a57783db4c8ad2f5534b2}{has\+\_\+crossed\+\_\+floor\+\_\+downwards}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
-\item 
+\begin{DoxyCompactList}\small\item\em Indica si un punt ha travessat la plataforma cap avall entre dos moments. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classPlatform_a3b2bedf80878d1d3fd2f37ba776d33a1}{is\+\_\+pt\+\_\+inside}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pt) const
-\item 
+\begin{DoxyCompactList}\small\item\em Indica si un punt està dins de la plataforma. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Retorna la coordenada superior de la plataforma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPlatform_a2097a2d8150fab6b674fb255d3a58bd3}{change\+\_\+top}} (int \mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}})
-\item 
+\begin{DoxyCompactList}\small\item\em Modifica la coordenada superior de la plataforma sumant-\/hi un valor. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classPlatform_aaf35cacf5bafafd352607a6897990b65}{left}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Retorna la coordenada esquerra de la plataforma. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classPlatform_a4ce552d100551482cd970bc11ea203cd}{right}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Retorna la coordenada dreta de la plataforma. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd}{bottom}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Retorna la coordenada inferior de la plataforma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPlatform_ae4c203eae3e17e365bc582a660346e95}{change\+\_\+bottom}} (int \mbox{\hyperlink{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd}{bottom}})
-\item 
+\begin{DoxyCompactList}\small\item\em Modifica la coordenada inferior de la plataforma sumant-\/hi un valor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classPlatform_a16a47c819406b8b30b8c28d63f272447}{get\+\_\+rect}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retorna el rectangle que representa la hitbox de la plataforma. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classPlatform_ad4040f2665d0b9c731170701139e1fd1}{topleft\+\_\+}}
 \item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classPlatform_acd2db189e0fcda4683aea0b5ee7d06cc}{bottomright\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Vèrtexs superior esquerre i inferior dret (no s\textquotesingle{}utilitzen al codi actual) \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\+\_\+}}
 \item 
 int \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\+\_\+}}
@@ -47,18 +52,20 @@ int \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\+\_\
 int \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\+\_\+}}
 \item 
 int \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Coordenades de les vores de la plataforma. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos estáticos privados}
 \begin{DoxyCompactItemize}
 \item 
 static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classPlatform_aa64d771d840a33ce382048f47a521435}{platform\+\_\+texture\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sprite o textura de la plataforma. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
+Representa una plataforma rectangular en el món de joc. 
 
+La classe emmagatzema la posició de la plataforma mitjançant coordenades i proporciona funcionalitats per pintar-\/la, detectar col·lisions i obtenir la seva hitbox. 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00014}{14}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 
@@ -71,10 +78,16 @@ Platform\+::\+Platform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspa
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Constructor per defecte, inicialitza la plataforma buida. 
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00034}{34}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00034\ :\ \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}}(0),\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}}(0),\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}(0),\ \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}}(0)\ \{\}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a5d56264f91430d6a44be86cb5f9075a5}\index{Platform@{Platform}!Platform@{Platform}}
 \index{Platform@{Platform}!Platform@{Platform}}
@@ -84,10 +97,21 @@ Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{cl
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Constructor còpia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em other} & Plataforma a copiar \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}}(other.\mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}}),\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}}(other.\mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}}),\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}(other.\mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}),\ \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}}(other.\mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}})\ \{\}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a91871e5a88901d48593ba752f8f71c54}\index{Platform@{Platform}!Platform@{Platform}}
 \index{Platform@{Platform}!Platform@{Platform}}
@@ -97,10 +121,27 @@ Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{int}]{left}{, }\item[{int
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Constructor que inicialitza les coordenades de la plataforma. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em left} & Coordinada esquerra \\
+\hline
+{\em right} & Coordinada dreta \\
+\hline
+{\em top} & Coordinada superior \\
+\hline
+{\em bottom} & Coordinada inferior \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00050}{50}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}}(\mbox{\hyperlink{classPlatform_aaf35cacf5bafafd352607a6897990b65}{left}}),\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}}(\mbox{\hyperlink{classPlatform_a4ce552d100551482cd970bc11ea203cd}{right}}),\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}(\mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}}),\ \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}}(\mbox{\hyperlink{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd}{bottom}})\ \{\}}
+
 \end{DoxyCode}
 
 
@@ -113,10 +154,21 @@ int Platform\+::bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) cons
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00050}{50}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Retorna la coordenada inferior de la plataforma. 
+
+\begin{DoxyReturn}{Devuelve}
+Coordenada bottom 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00110}{110}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}};\ }
+\DoxyCodeLine{00112\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_ae4c203eae3e17e365bc582a660346e95}\index{Platform@{Platform}!change\_bottom@{change\_bottom}}
 \index{change\_bottom@{change\_bottom}!Platform@{Platform}}
@@ -126,10 +178,23 @@ void Platform\+::change\+\_\+bottom (\begin{DoxyParamCaption}\item[{int}]{bottom
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00054}{54}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Modifica la coordenada inferior de la plataforma sumant-\/hi un valor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em bottom} & Increment a sumar a la coordenada bottom \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00118}{118}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}}\ +=\ \mbox{\hyperlink{classPlatform_a3ecf2d404215154d7abcd692aa16e3cd}{bottom}};}
+\DoxyCodeLine{00120\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a2097a2d8150fab6b674fb255d3a58bd3}\index{Platform@{Platform}!change\_top@{change\_top}}
 \index{change\_top@{change\_top}!Platform@{Platform}}
@@ -139,10 +204,23 @@ void Platform\+::change\+\_\+top (\begin{DoxyParamCaption}\item[{int}]{top}{}\en
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00038}{38}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Modifica la coordenada superior de la plataforma sumant-\/hi un valor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em top} & Increment a sumar a la coordenada top \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00086}{86}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}\ +=\ \mbox{\hyperlink{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}{top}};}
+\DoxyCodeLine{00088\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a16a47c819406b8b30b8c28d63f272447}\index{Platform@{Platform}!get\_rect@{get\_rect}}
 \index{get\_rect@{get\_rect}!Platform@{Platform}}
@@ -152,10 +230,21 @@ Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00038}{38}} del a
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00058}{58}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Retorna el rectangle que representa la hitbox de la plataforma. 
+
+\begin{DoxyReturn}{Devuelve}
+Rectangular amb la posició de la plataforma 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00126}{126}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}},\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}},\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}},\ \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}}\};}
+\DoxyCodeLine{00128\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a433b419b896a57783db4c8ad2f5534b2}\index{Platform@{Platform}!has\_crossed\_floor\_downwards@{has\_crossed\_floor\_downwards}}
 \index{has\_crossed\_floor\_downwards@{has\_crossed\_floor\_downwards}!Platform@{Platform}}
@@ -165,10 +254,29 @@ bool Platform\+::has\+\_\+crossed\+\_\+floor\+\_\+downwards (\begin{DoxyParamCap
 
 
 
+Indica si un punt ha travessat la plataforma cap avall entre dos moments. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em plast} & Posició anterior del punt \\
+\hline
+{\em pcurr} & Posició actual del punt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el punt ha travessat la plataforma cap avall 
+\end{DoxyReturn}
+
+
 Definición en la línea \mbox{\hyperlink{platform_8cc_source_l00036}{36}} del archivo \mbox{\hyperlink{platform_8cc_source}{platform.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}}\ <=\ plast.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ \&\&\ plast.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ <=\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}})\ \&\&\ (\mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}}\ <=\ pcurr.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ \&\&\ pcurr.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ <=\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}})\ \&\&}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ (plast.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\ <=\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}\ \&\&\ pcurr.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\ >=\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}});}
+\DoxyCodeLine{00039\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a3b2bedf80878d1d3fd2f37ba776d33a1}\index{Platform@{Platform}!is\_pt\_inside@{is\_pt\_inside}}
 \index{is\_pt\_inside@{is\_pt\_inside}!Platform@{Platform}}
@@ -178,10 +286,26 @@ bool Platform\+::is\+\_\+pt\+\_\+inside (\begin{DoxyParamCaption}\item[{\mbox{\h
 
 
 
+Indica si un punt està dins de la plataforma. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pt} & Punt a comprovar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el punt està dins la plataforma 
+\end{DoxyReturn}
+
+
 Definición en la línea \mbox{\hyperlink{platform_8cc_source_l00041}{41}} del archivo \mbox{\hyperlink{platform_8cc_source}{platform.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}}\ <=\ pt.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ \&\&\ pt.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}}\ <=\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}}\ \&\&\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}\ <=\ pt.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\ \&\&\ pt.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\ <=\ \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}};}
+\DoxyCodeLine{00043\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_aaf35cacf5bafafd352607a6897990b65}\index{Platform@{Platform}!left@{left}}
 \index{left@{left}!Platform@{Platform}}
@@ -191,10 +315,21 @@ int Platform\+::left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00042}{42}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Retorna la coordenada esquerra de la plataforma. 
+
+\begin{DoxyReturn}{Devuelve}
+Coordenada left 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00094}{94}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}};\ }
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a73a1afa2b57fce20cb692f1679ea782e}\index{Platform@{Platform}!paint@{paint}}
 \index{paint@{paint}!Platform@{Platform}}
@@ -204,10 +339,29 @@ void Platform\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro
 
 
 
+Dibuixa la plataforma a la finestra de joc. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra on es dibuixa la plataforma \\
+\hline
+\end{DoxyParams}
+
+
 Definición en la línea \mbox{\hyperlink{platform_8cc_source_l00026}{26}} del archivo \mbox{\hyperlink{platform_8cc_source}{platform.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ xsz\ =\ \mbox{\hyperlink{classPlatform_aa64d771d840a33ce382048f47a521435}{platform\_texture\_}}.size();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ysz\ =\ \mbox{\hyperlink{classPlatform_aa64d771d840a33ce382048f47a521435}{platform\_texture\_}}[0].size();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}\ +\ 1;\ i\ <=\ \mbox{\hyperlink{classPlatform_a15a4798385af5225ac32250b0e3647d6}{bottom\_}};\ i++)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}};\ j\ <=\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}};\ j++)\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ window.\mbox{\hyperlink{classpro2_1_1Window_af656aaa062615c33e183199ba2387cac}{set\_pixel}}(\{j,\ i\},\ \mbox{\hyperlink{classPlatform_aa64d771d840a33ce382048f47a521435}{platform\_texture\_}}[(i\ -\/\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}}\ -\/\ 1)\ \%\ xsz][(j\ -\/\ \mbox{\hyperlink{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}{left\_}})\ \%\ ysz]);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a4ce552d100551482cd970bc11ea203cd}\index{Platform@{Platform}!right@{right}}
 \index{right@{right}!Platform@{Platform}}
@@ -217,10 +371,21 @@ int Platform\+::right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00046}{46}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Retorna la coordenada dreta de la plataforma. 
+
+\begin{DoxyReturn}{Devuelve}
+Coordenada right 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00102}{102}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}{right\_}};\ }
+\DoxyCodeLine{00104\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_ae2f6ce1275d5add01a7af60474321bd5}\index{Platform@{Platform}!top@{top}}
 \index{top@{top}!Platform@{Platform}}
@@ -230,10 +395,21 @@ int Platform\+::top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\h
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00034}{34}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Retorna la coordenada superior de la plataforma. 
+
+\begin{DoxyReturn}{Devuelve}
+Coordenada top 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00078}{78}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}{top\_}};}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+
 \end{DoxyCode}
 
 
@@ -246,7 +422,11 @@ int Platform\+::bottom\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00017}{17}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Coordenades de les vores de la plataforma. 
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 \Hypertarget{classPlatform_acd2db189e0fcda4683aea0b5ee7d06cc}\index{Platform@{Platform}!bottomright\_@{bottomright\_}}
 \index{bottomright\_@{bottomright\_}!Platform@{Platform}}
@@ -256,7 +436,11 @@ Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00017}{17}} del a
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00016}{16}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Vèrtexs superior esquerre i inferior dret (no s\textquotesingle{}utilitzen al codi actual) 
+
+
+
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 \Hypertarget{classPlatform_a33ec0a0cb0cd5716001d5fdf6884fe7c}\index{Platform@{Platform}!left\_@{left\_}}
 \index{left\_@{left\_}!Platform@{Platform}}
@@ -266,7 +450,7 @@ int Platform\+::left\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00017}{17}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 \Hypertarget{classPlatform_aa64d771d840a33ce382048f47a521435}\index{Platform@{Platform}!platform\_texture\_@{platform\_texture\_}}
 \index{platform\_texture\_@{platform\_texture\_}!Platform@{Platform}}
@@ -276,13 +460,30 @@ const vector$<$ vector$<$ int $>$ $>$ Platform\+::platform\+\_\+texture\+\_\+\hs
 
 {\bfseries Valor inicial\+:}
 \begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}},\ \mbox{\hyperlink{ascended_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},\ }
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\}}
+
 \end{DoxyCode}
+
+
+Sprite o textura de la plataforma. 
+
 
 
 Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00014}{14}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+
 \end{DoxyCode}
 \Hypertarget{classPlatform_a46b87ba8300f0ab0338fd570ee9c49d6}\index{Platform@{Platform}!right\_@{right\_}}
 \index{right\_@{right\_}!Platform@{Platform}}
@@ -292,7 +493,7 @@ int Platform\+::right\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00017}{17}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 \Hypertarget{classPlatform_a7fea78553cad4641c4f597ce155ae1c5}\index{Platform@{Platform}!top\_@{top\_}}
 \index{top\_@{top\_}!Platform@{Platform}}
@@ -302,7 +503,7 @@ int Platform\+::top\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00017}{17}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 \Hypertarget{classPlatform_ad4040f2665d0b9c731170701139e1fd1}\index{Platform@{Platform}!topleft\_@{topleft\_}}
 \index{topleft\_@{topleft\_}!Platform@{Platform}}
@@ -312,7 +513,7 @@ Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00017}{17}} del a
 
 
 
-Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00016}{16}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
+Definición en la línea \mbox{\hyperlink{platform_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{platform_8hh_source}{platform.\+hh}}.
 
 
 

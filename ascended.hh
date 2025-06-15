@@ -1,5 +1,8 @@
 /** @file ascended.hh
  * @brief Especificacions de la classe Ascended
+ * 
+ *  Aquesta classe representa un escut activable (blessing) que segueix el personatge
+ *  principal (Mario) quan és activat. Utilitza una pila per gestionar múltiples blessings.
  */
 
 #ifndef ASCENDED_HH
@@ -13,6 +16,13 @@
 #include <vector>
 #endif
 
+/**
+ * @class Ascended
+ * @brief Classe que representa un escut que pot ser activat per protegir el personatge.
+ *
+ * La classe utilitza una pila per emmagatzemar blessings (escuts). Quan un blessing s’activa,
+ * l’escut apareix a la posició del personatge i el segueix mentre està actiu.
+ */
 class Ascended {
 private:
     
@@ -21,7 +31,7 @@ private:
     Stack<int> blessings;  
     bool active = false;
     int duration = 0;
-    Pt pos_;
+    pro2::Pt pos_;
     
 public:
     Ascended() = default;
@@ -63,14 +73,14 @@ public:
      * 
      * @param mario_pos la posicio a on ficar l'escut
      */
-    void activate(Pt mario_pos);
+    void activate(pro2::Pt mario_pos);
 
     /**
      * @brief Per tenir sempre l'escut on el mario
      * 
      * @param mario_pos la posicio a on s'ha de moure l'escut constantment
      */
-    void update(Pt mario_pos);
+    void update(pro2::Pt mario_pos);
 
     /**
      * @brief Retorna la hitbox de l'objecte
@@ -82,7 +92,7 @@ public:
      * 
      * @param window Finestra on el pinta
      */
-    void paint(Window& window) const;
+    void paint(pro2::Window& window) const;
 };
 
 #endif // ASCENDED_HH

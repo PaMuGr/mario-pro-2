@@ -94,87 +94,109 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Representa un rellotge de sorra que el jugador pot recollir i activar.  
+ <a href="#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a29078c60764dba2b87728aa6d151b01e" id="r_a29078c60764dba2b87728aa6d151b01e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29078c60764dba2b87728aa6d151b01e">Sandglass</a> (<a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="el" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>)</td></tr>
+<tr class="memdesc:a29078c60764dba2b87728aa6d151b01e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor bàsic amb posició inicial.  <br /></td></tr>
 <tr class="separator:a29078c60764dba2b87728aa6d151b01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0b02043cf0d62ca8f66f5528724d6e" id="r_ace0b02043cf0d62ca8f66f5528724d6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace0b02043cf0d62ca8f66f5528724d6e">Sandglass</a> (<a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="el" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>, <a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> speed, int dist)</td></tr>
+<tr class="memdesc:ace0b02043cf0d62ca8f66f5528724d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor complet amb posició, velocitat i distància.  <br /></td></tr>
 <tr class="separator:ace0b02043cf0d62ca8f66f5528724d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e5db525aa2aa1b376470a20af08d35" id="r_aa5e5db525aa2aa1b376470a20af08d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5e5db525aa2aa1b376470a20af08d35">paint</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window) const</td></tr>
+<tr class="memdesc:aa5e5db525aa2aa1b376470a20af08d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dibuixa el rellotge a la finestra indicada.  <br /></td></tr>
 <tr class="separator:aa5e5db525aa2aa1b376470a20af08d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373e17ed8567215ac7e60928a8c43567" id="r_a373e17ed8567215ac7e60928a8c43567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a373e17ed8567215ac7e60928a8c43567">pos</a> () const</td></tr>
-<tr class="memdesc:a373e17ed8567215ac7e60928a8c43567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la posicio a la que es troba la <a class="el" href="classSandglass.html">Sandglass</a>.  <br /></td></tr>
+<tr class="memdesc:a373e17ed8567215ac7e60928a8c43567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la posició actual del rellotge.  <br /></td></tr>
 <tr class="separator:a373e17ed8567215ac7e60928a8c43567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05e55c975cb51646fc96ab9ac738e92" id="r_ac05e55c975cb51646fc96ab9ac738e92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac05e55c975cb51646fc96ab9ac738e92">set_x</a> (int x)</td></tr>
-<tr class="memdesc:ac05e55c975cb51646fc96ab9ac738e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canvia la posició horitzontal per x.  <br /></td></tr>
+<tr class="memdesc:ac05e55c975cb51646fc96ab9ac738e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canvia la posició horitzontal del rellotge.  <br /></td></tr>
 <tr class="separator:ac05e55c975cb51646fc96ab9ac738e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ba3d11c1711d6fb5f598775e57c772" id="r_a46ba3d11c1711d6fb5f598775e57c772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ba3d11c1711d6fb5f598775e57c772">set_y</a> (int <a class="el" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>)</td></tr>
-<tr class="memdesc:a46ba3d11c1711d6fb5f598775e57c772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canvia la posició vertical per y.  <br /></td></tr>
+<tr class="memdesc:a46ba3d11c1711d6fb5f598775e57c772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canvia la posició vertical del rellotge.  <br /></td></tr>
 <tr class="separator:a46ba3d11c1711d6fb5f598775e57c772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a774f9e157ab3b93c9ef9b503b0ca5bf7" id="r_a774f9e157ab3b93c9ef9b503b0ca5bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a774f9e157ab3b93c9ef9b503b0ca5bf7">get_rect</a> () const</td></tr>
-<tr class="memdesc:a774f9e157ab3b93c9ef9b503b0ca5bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea una hitbox utilitzant height_y.  <br /></td></tr>
+<tr class="memdesc:a774f9e157ab3b93c9ef9b503b0ca5bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la hitbox actual del rellotge com un rectangle.  <br /></td></tr>
 <tr class="separator:a774f9e157ab3b93c9ef9b503b0ca5bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a143ba242353a941463d6725f2ac53693" id="r_a143ba242353a941463d6725f2ac53693"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a143ba242353a941463d6725f2ac53693">update</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
-<tr class="memdesc:a143ba242353a941463d6725f2ac53693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza el moviment de la creu.  <br /></td></tr>
+<tr class="memdesc:a143ba242353a941463d6725f2ac53693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l'estat i moviment del rellotge.  <br /></td></tr>
 <tr class="separator:a143ba242353a941463d6725f2ac53693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6606aee0a03371b629d118b11c425e6e" id="r_a6606aee0a03371b629d118b11c425e6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6606aee0a03371b629d118b11c425e6e">set_bright</a> (bool bright)</td></tr>
-<tr class="memdesc:a6606aee0a03371b629d118b11c425e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza quin sprite utilitzem a un més brillant.  <br /></td></tr>
+<tr class="memdesc:a6606aee0a03371b629d118b11c425e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defineix si el sprite del rellotge ha de ser més brillant.  <br /></td></tr>
 <tr class="separator:a6606aee0a03371b629d118b11c425e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9abfad08730527bb3e928e88c44ec41d" id="r_a9abfad08730527bb3e928e88c44ec41d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9abfad08730527bb3e928e88c44ec41d">activate</a> (int total_duration, int effect_frames)</td></tr>
-<tr class="memdesc:a9abfad08730527bb3e928e88c44ec41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activa l'efecte del <a class="el" href="classSandglass.html">Sandglass</a> (inicia el temps actiu)  <br /></td></tr>
+<tr class="memdesc:a9abfad08730527bb3e928e88c44ec41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activa l'efecte del rellotge, inicialitzant durada i cooldown.  <br /></td></tr>
 <tr class="separator:a9abfad08730527bb3e928e88c44ec41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a581a7852da72ff4615edcc8b8673a728" id="r_a581a7852da72ff4615edcc8b8673a728"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a581a7852da72ff4615edcc8b8673a728">is_in_cooldown</a> () const</td></tr>
-<tr class="memdesc:a581a7852da72ff4615edcc8b8673a728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si està en fase de cooldown (esperant reapareixer)  <br /></td></tr>
+<tr class="memdesc:a581a7852da72ff4615edcc8b8673a728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el rellotge està en període de cooldown (esperant reapareixer).  <br /></td></tr>
 <tr class="separator:a581a7852da72ff4615edcc8b8673a728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a235a124e0078fd63d52d857bd0678dd7" id="r_a235a124e0078fd63d52d857bd0678dd7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235a124e0078fd63d52d857bd0678dd7">is_effect_active</a> () const</td></tr>
-<tr class="memdesc:a235a124e0078fd63d52d857bd0678dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si l'efecte està actiu.  <br /></td></tr>
+<tr class="memdesc:a235a124e0078fd63d52d857bd0678dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si l'efecte del rellotge està actiu.  <br /></td></tr>
 <tr class="separator:a235a124e0078fd63d52d857bd0678dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad11356cc66a8fba457da2cb220ad8ca6" id="r_ad11356cc66a8fba457da2cb220ad8ca6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad11356cc66a8fba457da2cb220ad8ca6">cooldown</a> () const</td></tr>
-<tr class="memdesc:ad11356cc66a8fba457da2cb220ad8ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el cooldown.  <br /></td></tr>
+<tr class="memdesc:ad11356cc66a8fba457da2cb220ad8ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la durada restant del cooldown o de l'efecte.  <br /></td></tr>
 <tr class="separator:ad11356cc66a8fba457da2cb220ad8ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Métodos privados</h2></td></tr>
 <tr class="memitem:a700c40d41a0ed8c0e3ac31f777462028" id="r_a700c40d41a0ed8c0e3ac31f777462028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a700c40d41a0ed8c0e3ac31f777462028">apply_physics_</a> ()</td></tr>
+<tr class="memdesc:a700c40d41a0ed8c0e3ac31f777462028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica la física al rellotge (moviment, gravetat, etc.)  <br /></td></tr>
 <tr class="separator:a700c40d41a0ed8c0e3ac31f777462028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atributos privados</h2></td></tr>
 <tr class="memitem:a7e298b88c54a23b56ebf4ce5d40dbf32" id="r_a7e298b88c54a23b56ebf4ce5d40dbf32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a></td></tr>
+<tr class="memdesc:a7e298b88c54a23b56ebf4ce5d40dbf32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posició actual del rellotge.  <br /></td></tr>
 <tr class="separator:a7e298b88c54a23b56ebf4ce5d40dbf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae62520b91534743016322530116424af" id="r_ae62520b91534743016322530116424af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae62520b91534743016322530116424af">ini_pos_</a></td></tr>
+<tr class="memdesc:ae62520b91534743016322530116424af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posició inicial del rellotge.  <br /></td></tr>
 <tr class="separator:ae62520b91534743016322530116424af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a650867c3a41b7bd99daaa54fd049d" id="r_a39a650867c3a41b7bd99daaa54fd049d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39a650867c3a41b7bd99daaa54fd049d">speed_</a> = {0, 0}</td></tr>
+<tr class="memdesc:a39a650867c3a41b7bd99daaa54fd049d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocitat del rellotge (si es mou)  <br /></td></tr>
 <tr class="separator:a39a650867c3a41b7bd99daaa54fd049d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f17370ff7b25cc37f9f810b33ae12ea" id="r_a2f17370ff7b25cc37f9f810b33ae12ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f17370ff7b25cc37f9f810b33ae12ea">dist_</a> = 0</td></tr>
+<tr class="memdesc:a2f17370ff7b25cc37f9f810b33ae12ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distància recorreguda (o un altre propòsit, segons implementació)  <br /></td></tr>
 <tr class="separator:a2f17370ff7b25cc37f9f810b33ae12ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ebce7bc7e36cb702eb91a79d5c8a415" id="r_a2ebce7bc7e36cb702eb91a79d5c8a415"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ebce7bc7e36cb702eb91a79d5c8a415">frame_counter_</a> = 0</td></tr>
+<tr class="memdesc:a2ebce7bc7e36cb702eb91a79d5c8a415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comptador de frames per animació  <br /></td></tr>
 <tr class="separator:a2ebce7bc7e36cb702eb91a79d5c8a415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0825d9c6df5fac09dfe48660f2dba616" id="r_a0825d9c6df5fac09dfe48660f2dba616"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0825d9c6df5fac09dfe48660f2dba616">is_bright_</a> = false</td></tr>
+<tr class="memdesc:a0825d9c6df5fac09dfe48660f2dba616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag per a canviar a sprite més brillant.  <br /></td></tr>
 <tr class="separator:a0825d9c6df5fac09dfe48660f2dba616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad42d5473d544c32852d1569c40284795" id="r_ad42d5473d544c32852d1569c40284795"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad42d5473d544c32852d1569c40284795">animation_speed_</a> = 20</td></tr>
+<tr class="memdesc:ad42d5473d544c32852d1569c40284795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocitat de l'animació (frames)  <br /></td></tr>
 <tr class="separator:ad42d5473d544c32852d1569c40284795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a656c0a60309e56686cd516eb416ba5e3" id="r_a656c0a60309e56686cd516eb416ba5e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a656c0a60309e56686cd516eb416ba5e3">is_active_</a> = false</td></tr>
+<tr class="memdesc:a656c0a60309e56686cd516eb416ba5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si l'efecte està actiu.  <br /></td></tr>
 <tr class="separator:a656c0a60309e56686cd516eb416ba5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60f7fe8ef1a92987465ead87a66ccff0" id="r_a60f7fe8ef1a92987465ead87a66ccff0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60f7fe8ef1a92987465ead87a66ccff0">is_in_cooldown_</a> = false</td></tr>
+<tr class="memdesc:a60f7fe8ef1a92987465ead87a66ccff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si està en període de cooldown (esperant reapareixer)  <br /></td></tr>
 <tr class="separator:a60f7fe8ef1a92987465ead87a66ccff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdcd6abff7520c36125fe92cb80ffee8" id="r_afdcd6abff7520c36125fe92cb80ffee8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdcd6abff7520c36125fe92cb80ffee8">effect_duration_</a> = 0</td></tr>
+<tr class="memdesc:afdcd6abff7520c36125fe92cb80ffee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Durada restant de l'efecte actiu (frames)  <br /></td></tr>
 <tr class="separator:afdcd6abff7520c36125fe92cb80ffee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92f00cd29f9715b819d95ad452de18f" id="r_aa92f00cd29f9715b819d95ad452de18f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa92f00cd29f9715b819d95ad452de18f">respawn_delay_</a> = 0</td></tr>
+<tr class="memdesc:aa92f00cd29f9715b819d95ad452de18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temps restant abans de reapareixer (frames)  <br /></td></tr>
 <tr class="separator:aa92f00cd29f9715b819d95ad452de18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Atributos estáticos privados</h2></td></tr>
 <tr class="memitem:a8d7592d47ba54e28ed294e1a3ece2fa6" id="r_a8d7592d47ba54e28ed294e1a3ece2fa6"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d7592d47ba54e28ed294e1a3ece2fa6">sandglass_sprite_normal_</a></td></tr>
+<tr class="memdesc:a8d7592d47ba54e28ed294e1a3ece2fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite normal.  <br /></td></tr>
 <tr class="separator:a8d7592d47ba54e28ed294e1a3ece2fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a21cc4667f7932a66c8774a60239eaf" id="r_a1a21cc4667f7932a66c8774a60239eaf"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a21cc4667f7932a66c8774a60239eaf">sandglass_sprite_brighter_</a></td></tr>
+<tr class="memdesc:a1a21cc4667f7932a66c8774a60239eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite brillant.  <br /></td></tr>
 <tr class="separator:a1a21cc4667f7932a66c8774a60239eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00018">18</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="textblock"><p>Representa un rellotge de sorra que el jugador pot recollir i activar. </p>
+<p>La classe gestiona la posició, moviment, animació i estat d'activació del rellotge. També controla els períodes d'activació i cooldown (respawn). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00026">26</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a29078c60764dba2b87728aa6d151b01e" name="a29078c60764dba2b87728aa6d151b01e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29078c60764dba2b87728aa6d151b01e">&#9670;&#160;</a></span>Sandglass() <span class="overload">[1/2]</span></h2>
@@ -199,8 +221,19 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00039">39</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Constructor bàsic amb posició inicial. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Posició inicial del rellotge </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00053">53</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>: <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>(<a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>) {}</div>
+<div class="ttc" id="aclassSandglass_html_a373e17ed8567215ac7e60928a8c43567"><div class="ttname"><a href="#a373e17ed8567215ac7e60928a8c43567">Sandglass::pos</a></div><div class="ttdeci">pro2::Pt pos() const</div><div class="ttdoc">Retorna la posició actual del rellotge.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00074">sandglass.hh:74</a></div></div>
+<div class="ttc" id="aclassSandglass_html_a7e298b88c54a23b56ebf4ce5d40dbf32"><div class="ttname"><a href="#a7e298b88c54a23b56ebf4ce5d40dbf32">Sandglass::pos_</a></div><div class="ttdeci">pro2::Pt pos_</div><div class="ttdoc">Posició actual del rellotge.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00028">sandglass.hh:28</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ace0b02043cf0d62ca8f66f5528724d6e" name="ace0b02043cf0d62ca8f66f5528724d6e"></a>
@@ -235,8 +268,22 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00040">40</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Constructor complet amb posició, velocitat i distància. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Posició inicial </td></tr>
+    <tr><td class="paramname">speed</td><td>Velocitat inicial </td></tr>
+    <tr><td class="paramname">dist</td><td>Distància (ús específic) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00061">61</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>        : <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>(<a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>), <a class="code hl_variable" href="#ae62520b91534743016322530116424af">ini_pos_</a>(<a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>), <a class="code hl_variable" href="#a39a650867c3a41b7bd99daaa54fd049d">speed_</a>(speed), <a class="code hl_variable" href="#a2f17370ff7b25cc37f9f810b33ae12ea">dist_</a>(dist) {}</div>
+<div class="ttc" id="aclassSandglass_html_a2f17370ff7b25cc37f9f810b33ae12ea"><div class="ttname"><a href="#a2f17370ff7b25cc37f9f810b33ae12ea">Sandglass::dist_</a></div><div class="ttdeci">int dist_</div><div class="ttdoc">Distància recorreguda (o un altre propòsit, segons implementació)</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00031">sandglass.hh:31</a></div></div>
+<div class="ttc" id="aclassSandglass_html_a39a650867c3a41b7bd99daaa54fd049d"><div class="ttname"><a href="#a39a650867c3a41b7bd99daaa54fd049d">Sandglass::speed_</a></div><div class="ttdeci">pro2::Pt speed_</div><div class="ttdoc">Velocitat del rellotge (si es mou)</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00030">sandglass.hh:30</a></div></div>
+<div class="ttc" id="aclassSandglass_html_ae62520b91534743016322530116424af"><div class="ttname"><a href="#ae62520b91534743016322530116424af">Sandglass::ini_pos_</a></div><div class="ttdeci">pro2::Pt ini_pos_</div><div class="ttdoc">Posició inicial del rellotge.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00029">sandglass.hh:29</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
@@ -267,10 +314,27 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Activa l'efecte del <a class="el" href="classSandglass.html">Sandglass</a> (inicia el temps actiu) </p>
+<p>Activa l'efecte del rellotge, inicialitzant durada i cooldown. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">total_duration</td><td>Durada total del rellotge (activació + cooldown) </td></tr>
+    <tr><td class="paramname">effect_frames</td><td>Durada de l'efecte actiu (frames) </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00097">97</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00117">117</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  117</span>                                                         {</div>
+<div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="#a656c0a60309e56686cd516eb416ba5e3">is_active_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="#a60f7fe8ef1a92987465ead87a66ccff0">is_in_cooldown_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_variable" href="#afdcd6abff7520c36125fe92cb80ffee8">effect_duration_</a> = effect_frames;</div>
+<div class="line"><span class="lineno">  121</span>        <a class="code hl_variable" href="#aa92f00cd29f9715b819d95ad452de18f">respawn_delay_</a> = total_duration - effect_frames;</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="ttc" id="aclassSandglass_html_a60f7fe8ef1a92987465ead87a66ccff0"><div class="ttname"><a href="#a60f7fe8ef1a92987465ead87a66ccff0">Sandglass::is_in_cooldown_</a></div><div class="ttdeci">bool is_in_cooldown_</div><div class="ttdoc">Indica si està en període de cooldown (esperant reapareixer)</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00038">sandglass.hh:38</a></div></div>
+<div class="ttc" id="aclassSandglass_html_a656c0a60309e56686cd516eb416ba5e3"><div class="ttname"><a href="#a656c0a60309e56686cd516eb416ba5e3">Sandglass::is_active_</a></div><div class="ttdeci">bool is_active_</div><div class="ttdoc">Indica si l&#39;efecte està actiu.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00037">sandglass.hh:37</a></div></div>
+<div class="ttc" id="aclassSandglass_html_aa92f00cd29f9715b819d95ad452de18f"><div class="ttname"><a href="#aa92f00cd29f9715b819d95ad452de18f">Sandglass::respawn_delay_</a></div><div class="ttdeci">int respawn_delay_</div><div class="ttdoc">Temps restant abans de reapareixer (frames)</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00040">sandglass.hh:40</a></div></div>
+<div class="ttc" id="aclassSandglass_html_afdcd6abff7520c36125fe92cb80ffee8"><div class="ttname"><a href="#afdcd6abff7520c36125fe92cb80ffee8">Sandglass::effect_duration_</a></div><div class="ttdeci">int effect_duration_</div><div class="ttdoc">Durada restant de l&#39;efecte actiu (frames)</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00039">sandglass.hh:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a700c40d41a0ed8c0e3ac31f777462028" name="a700c40d41a0ed8c0e3ac31f777462028"></a>
@@ -295,6 +359,8 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Aplica la física al rellotge (moviment, gravetat, etc.) </p>
 
 </div>
 </div>
@@ -321,10 +387,12 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna el cooldown. </p>
+<p>Retorna la durada restant del cooldown o de l'efecte. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Nombre de frames restants </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00117">117</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00140">140</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#afdcd6abff7520c36125fe92cb80ffee8">effect_duration_</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a774f9e157ab3b93c9ef9b503b0ca5bf7" name="a774f9e157ab3b93c9ef9b503b0ca5bf7"></a>
@@ -342,17 +410,25 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Crea una hitbox utilitzant height_y. </p>
-<dl class="params"><dt>Parámetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">height_y</td><td>altura que te al moment la <a class="el" href="classSandglass.html">Sandglass</a></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Devuelve</dt><dd>Un Rectangle amb la hitbox de <a class="el" href="classSandglass.html">Sandglass</a> </dd></dl>
+<p>Retorna la hitbox actual del rellotge com un rectangle. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Rect amb la posició i mides del rellotge </dd></dl>
 
 <p class="definition">Definición en la línea <a class="el" href="sandglass_8cc_source.html#l00071">71</a> del archivo <a class="el" href="sandglass_8cc_source.html">sandglass.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   71</span>                                   {</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 11;  </div>
+<div class="line"><span class="lineno">   73</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> height = 17;</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> hitbox_width = 9;   </div>
+<div class="line"><span class="lineno">   76</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> hitbox_height = 15;</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> pro2::Rect({</div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.x + (width - hitbox_width) / 2,      <span class="comment">// left</span></div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.y + (height - hitbox_height) / 2,    <span class="comment">// top</span></div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.x + (width + hitbox_width) / 2,      <span class="comment">// right</span></div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.y + (height + hitbox_height) / 2     <span class="comment">// bottom</span></div>
+<div class="line"><span class="lineno">   83</span>    });</div>
+<div class="line"><span class="lineno">   84</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a235a124e0078fd63d52d857bd0678dd7" name="a235a124e0078fd63d52d857bd0678dd7"></a>
@@ -378,10 +454,12 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna si l'efecte està actiu. </p>
+<p>Indica si l'efecte del rellotge està actiu. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si està actiu </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00112">112</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00134">134</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a656c0a60309e56686cd516eb416ba5e3">is_active_</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a581a7852da72ff4615edcc8b8673a728" name="a581a7852da72ff4615edcc8b8673a728"></a>
@@ -407,10 +485,12 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna si està en fase de cooldown (esperant reapareixer) </p>
+<p>Indica si el rellotge està en període de cooldown (esperant reapareixer). </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si està en cooldown </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00107">107</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00128">128</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a60f7fe8ef1a92987465ead87a66ccff0">is_in_cooldown_</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa5e5db525aa2aa1b376470a20af08d35" name="aa5e5db525aa2aa1b376470a20af08d35"></a>
@@ -428,8 +508,26 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Dibuixa el rellotge a la finestra indicada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra on pintar el rellotge </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definición en la línea <a class="el" href="sandglass_8cc_source.html#l00064">64</a> del archivo <a class="el" href="sandglass_8cc_source.html">sandglass.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   64</span>                                              {</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">const</span> Pt top_left = {<a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.x, <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.y};</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a0825d9c6df5fac09dfe48660f2dba616">is_bright_</a>){</div>
+<div class="line"><span class="lineno">   67</span>        <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, top_left, <a class="code hl_variable" href="#a1a21cc4667f7932a66c8774a60239eaf">sandglass_sprite_brighter_</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   68</span>    } <span class="keywordflow">else</span> <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, top_left, <a class="code hl_variable" href="#a8d7592d47ba54e28ed294e1a3ece2fa6">sandglass_sprite_normal_</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   69</span>}</div>
+<div class="ttc" id="aclassSandglass_html_a0825d9c6df5fac09dfe48660f2dba616"><div class="ttname"><a href="#a0825d9c6df5fac09dfe48660f2dba616">Sandglass::is_bright_</a></div><div class="ttdeci">bool is_bright_</div><div class="ttdoc">Flag per a canviar a sprite més brillant.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00034">sandglass.hh:34</a></div></div>
+<div class="ttc" id="aclassSandglass_html_a1a21cc4667f7932a66c8774a60239eaf"><div class="ttname"><a href="#a1a21cc4667f7932a66c8774a60239eaf">Sandglass::sandglass_sprite_brighter_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; sandglass_sprite_brighter_</div><div class="ttdoc">Sprite brillant.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00043">sandglass.hh:43</a></div></div>
+<div class="ttc" id="aclassSandglass_html_a8d7592d47ba54e28ed294e1a3ece2fa6"><div class="ttname"><a href="#a8d7592d47ba54e28ed294e1a3ece2fa6">Sandglass::sandglass_sprite_normal_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; sandglass_sprite_normal_</div><div class="ttdoc">Sprite normal.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00023">sandglass.hh:23</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a80f038548a7ea3d520759a04437e096a"><div class="ttname"><a href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">pro2::paint_sprite</a></div><div class="ttdeci">void paint_sprite(pro2::Window &amp;window, pro2::Pt orig, const vector&lt; vector&lt; int &gt; &gt; &amp;sprite, bool mirror)</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00022">utils.cc:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a373e17ed8567215ac7e60928a8c43567" name="a373e17ed8567215ac7e60928a8c43567"></a>
@@ -455,11 +553,14 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna la posicio a la que es troba la <a class="el" href="classSandglass.html">Sandglass</a>. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>Un Pt amb la posició x i y de la <a class="el" href="classSandglass.html">Sandglass</a> </dd></dl>
+<p>Retorna la posició actual del rellotge. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Posició (Pt) del rellotge </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00049">49</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00074">74</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                       {</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>;</div>
+<div class="line"><span class="lineno">   76</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6606aee0a03371b629d118b11c425e6e" name="a6606aee0a03371b629d118b11c425e6e"></a>
@@ -485,16 +586,17 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Actualitza quin sprite utilitzem a un més brillant. </p>
+<p>Defineix si el sprite del rellotge ha de ser més brillant. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bright</td><td>si == true bright </td></tr>
+    <tr><td class="paramname">bright</td><td>true per activar la brillantor, false per normal </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00092">92</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00110">110</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>{ <a class="code hl_variable" href="#a0825d9c6df5fac09dfe48660f2dba616">is_bright_</a> = bright; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac05e55c975cb51646fc96ab9ac738e92" name="ac05e55c975cb51646fc96ab9ac738e92"></a>
@@ -520,16 +622,19 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Canvia la posició horitzontal per x. </p>
+<p>Canvia la posició horitzontal del rellotge. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>Posició a intercanviar </td></tr>
+    <tr><td class="paramname">x</td><td>Nova coordenada X </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00058">58</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00082">82</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                      {</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.x = x;</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a46ba3d11c1711d6fb5f598775e57c772" name="a46ba3d11c1711d6fb5f598775e57c772"></a>
@@ -555,16 +660,20 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Canvia la posició vertical per y. </p>
+<p>Canvia la posició vertical del rellotge. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">y</td><td>Posició a intercanviar </td></tr>
+    <tr><td class="paramname">y</td><td>Nova coordenada Y </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00067">67</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00090">90</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>                      {</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.y = <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="ttc" id="aascended_8cc_html_a536c339057ad4fa1840581ffde1bec6b"><div class="ttname"><a href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a></div><div class="ttdeci">const int y</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00012">ascended.cc:12</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a143ba242353a941463d6725f2ac53693" name="a143ba242353a941463d6725f2ac53693"></a>
@@ -582,16 +691,72 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Actualitza el moviment de la creu. </p>
+<p>Actualitza l'estat i moviment del rellotge. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">window</td><td>finestra on ho dibuixem </td></tr>
+    <tr><td class="paramname">window</td><td>Finestra on es dibuixa (pot ser útil per col·lisions o altres) </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definición en la línea <a class="el" href="sandglass_8cc_source.html#l00086">86</a> del archivo <a class="el" href="sandglass_8cc_source.html">sandglass.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                         {</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_variable" href="#a2ebce7bc7e36cb702eb91a79d5c8a415">frame_counter_</a>++;</div>
+<div class="line"><span class="lineno">   88</span>    </div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a2ebce7bc7e36cb702eb91a79d5c8a415">frame_counter_</a> % <a class="code hl_variable" href="#ad42d5473d544c32852d1569c40284795">animation_speed_</a> == 0) {</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_variable" href="#a0825d9c6df5fac09dfe48660f2dba616">is_bright_</a> = !<a class="code hl_variable" href="#a0825d9c6df5fac09dfe48660f2dba616">is_bright_</a>;</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a656c0a60309e56686cd516eb416ba5e3">is_active_</a>) {</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_variable" href="#afdcd6abff7520c36125fe92cb80ffee8">effect_duration_</a>--;</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#afdcd6abff7520c36125fe92cb80ffee8">effect_duration_</a> &lt;= 0) {</div>
+<div class="line"><span class="lineno">   96</span>            <a class="code hl_variable" href="#a656c0a60309e56686cd516eb416ba5e3">is_active_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   97</span>            <a class="code hl_variable" href="#a60f7fe8ef1a92987465ead87a66ccff0">is_in_cooldown_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   98</span>            <a class="code hl_variable" href="#aa92f00cd29f9715b819d95ad452de18f">respawn_delay_</a> = 240;  <span class="comment">//5 segons abans de respawnejar</span></div>
+<div class="line"><span class="lineno">   99</span>        }</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span>;  </div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span>    </div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">//Quan cooldown = 0 -&gt;&gt; pos random</span></div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a60f7fe8ef1a92987465ead87a66ccff0">is_in_cooldown_</a>) {</div>
+<div class="line"><span class="lineno">  105</span>        <a class="code hl_variable" href="#aa92f00cd29f9715b819d95ad452de18f">respawn_delay_</a>--;</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa92f00cd29f9715b819d95ad452de18f">respawn_delay_</a> &lt;= 0) {</div>
+<div class="line"><span class="lineno">  107</span>            <a class="code hl_variable" href="#a60f7fe8ef1a92987465ead87a66ccff0">is_in_cooldown_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  108</span>            </div>
+<div class="line"><span class="lineno">  109</span>            pro2::Rect camera = window.<a class="code hl_function" href="classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3">camera_rect</a>();</div>
+<div class="line"><span class="lineno">  110</span>            <span class="comment">//Agafem els punts del rectangle de camera</span></div>
+<div class="line"><span class="lineno">  111</span>            <span class="keywordtype">int</span> cam_left = camera.<a class="code hl_variable" href="structpro2_1_1Rect.html#a68877597032a2bb4630f37e44b885e81">left</a>;</div>
+<div class="line"><span class="lineno">  112</span>            <span class="keywordtype">int</span> cam_right = camera.<a class="code hl_variable" href="structpro2_1_1Rect.html#aae04a074de42a64bff8e9781b8e2af2b">right</a>;</div>
+<div class="line"><span class="lineno">  113</span>            <span class="keywordtype">int</span> cam_top = camera.<a class="code hl_variable" href="structpro2_1_1Rect.html#abea25fc7da9516fc9e1e88fb54e49737">top</a>;</div>
+<div class="line"><span class="lineno">  114</span>            <span class="keywordtype">int</span> cam_bottom = camera.<a class="code hl_variable" href="structpro2_1_1Rect.html#a5240a907c581979ec7981419286a8637">bottom</a>;</div>
+<div class="line"><span class="lineno">  115</span>            </div>
+<div class="line"><span class="lineno">  116</span>            <span class="comment">//Calculem un marge de 20% aixi el objecte estarà a 10% de dalt i baix i dels costats </span></div>
+<div class="line"><span class="lineno">  117</span>            <span class="keywordtype">int</span> width_margin = (cam_right - cam_left) * 0.1;</div>
+<div class="line"><span class="lineno">  118</span>            <span class="keywordtype">int</span> height_margin = (cam_bottom - cam_top) * 0.1;</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>            <span class="comment">//Randomitzem els valors</span></div>
+<div class="line"><span class="lineno">  121</span>            <span class="keywordtype">int</span> new_x = <a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(cam_right - width_margin, cam_left + width_margin);</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>            <span class="comment">//Ens assegurem que no estigui massa abaix</span></div>
+<div class="line"><span class="lineno">  124</span>            <span class="keywordtype">int</span> min_y = cam_top + height_margin*2 + 50;</div>
+<div class="line"><span class="lineno">  125</span>            <span class="keywordtype">int</span> max_y = cam_top + (cam_bottom - cam_top) * 3 / 5;</div>
+<div class="line"><span class="lineno">  126</span>            <span class="keywordtype">int</span> new_y = <a class="code hl_function" href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">randomizer</a>(max_y, min_y);</div>
+<div class="line"><span class="lineno">  127</span>            </div>
+<div class="line"><span class="lineno">  128</span>            <span class="comment">//Actualitzem posicions</span></div>
+<div class="line"><span class="lineno">  129</span>            <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.x = new_x;</div>
+<div class="line"><span class="lineno">  130</span>            <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.y = new_y;</div>
+<div class="line"><span class="lineno">  131</span>        }</div>
+<div class="line"><span class="lineno">  132</span>    }</div>
+<div class="line"><span class="lineno">  133</span>}</div>
+<div class="ttc" id="aclassSandglass_html_a2ebce7bc7e36cb702eb91a79d5c8a415"><div class="ttname"><a href="#a2ebce7bc7e36cb702eb91a79d5c8a415">Sandglass::frame_counter_</a></div><div class="ttdeci">int frame_counter_</div><div class="ttdoc">Comptador de frames per animació</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00033">sandglass.hh:33</a></div></div>
+<div class="ttc" id="aclassSandglass_html_ad42d5473d544c32852d1569c40284795"><div class="ttname"><a href="#ad42d5473d544c32852d1569c40284795">Sandglass::animation_speed_</a></div><div class="ttdeci">int animation_speed_</div><div class="ttdoc">Velocitat de l&#39;animació (frames)</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00035">sandglass.hh:35</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a7fa5335bc584ac503f6ad336314773c3"><div class="ttname"><a href="classpro2_1_1Window.html#a7fa5335bc584ac503f6ad336314773c3">pro2::Window::camera_rect</a></div><div class="ttdeci">Rect camera_rect() const</div><div class="ttdoc">Rectorna el rectangle de la camera.</div><div class="ttdef"><b>Definition</b> <a href="window_8hh_source.html#l00434">window.hh:434</a></div></div>
+<div class="ttc" id="anamespacepro2_html_afc58ae0c5cb2b4abcb963e3406ed8ee6"><div class="ttname"><a href="namespacepro2.html#afc58ae0c5cb2b4abcb963e3406ed8ee6">pro2::randomizer</a></div><div class="ttdeci">int randomizer(int max, int min)</div><div class="ttdoc">Retorna un nombre random entre max i min.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00069">utils.cc:69</a></div></div>
+<div class="ttc" id="astructpro2_1_1Rect_html_a5240a907c581979ec7981419286a8637"><div class="ttname"><a href="structpro2_1_1Rect.html#a5240a907c581979ec7981419286a8637">pro2::Rect::bottom</a></div><div class="ttdeci">int bottom</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00040">geometry.hh:40</a></div></div>
+<div class="ttc" id="astructpro2_1_1Rect_html_a68877597032a2bb4630f37e44b885e81"><div class="ttname"><a href="structpro2_1_1Rect.html#a68877597032a2bb4630f37e44b885e81">pro2::Rect::left</a></div><div class="ttdeci">int left</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00040">geometry.hh:40</a></div></div>
+<div class="ttc" id="astructpro2_1_1Rect_html_aae04a074de42a64bff8e9781b8e2af2b"><div class="ttname"><a href="structpro2_1_1Rect.html#aae04a074de42a64bff8e9781b8e2af2b">pro2::Rect::right</a></div><div class="ttdeci">int right</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00040">geometry.hh:40</a></div></div>
+<div class="ttc" id="astructpro2_1_1Rect_html_abea25fc7da9516fc9e1e88fb54e49737"><div class="ttname"><a href="structpro2_1_1Rect.html#abea25fc7da9516fc9e1e88fb54e49737">pro2::Rect::top</a></div><div class="ttdeci">int top</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00040">geometry.hh:40</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
@@ -615,7 +780,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00026">26</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Velocitat de l'animació (frames) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00035">35</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -639,7 +806,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00022">22</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Distància recorreguda (o un altre propòsit, segons implementació) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00031">31</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -663,7 +832,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00030">30</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Durada restant de l'efecte actiu (frames) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00039">39</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -687,7 +858,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00024">24</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Comptador de frames per animació </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00033">33</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -711,7 +884,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00020">20</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Posició inicial del rellotge. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00029">29</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -735,7 +910,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00028">28</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Indica si l'efecte està actiu. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00037">37</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -759,7 +936,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00025">25</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Flag per a canviar a sprite més brillant. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00034">34</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -783,7 +962,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00029">29</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Indica si està en període de cooldown (esperant reapareixer) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00038">38</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -807,7 +988,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00020">20</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Posició actual del rellotge. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00028">28</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -831,7 +1014,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00031">31</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<p>Temps restant abans de reapareixer (frames) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00040">40</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
 
 </div>
 </div>
@@ -854,14 +1039,40 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Valor inicial:</b><div class="fragment"></div><!-- fragment -->
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#aece2eeedca2f58e31a680503a9b7e972">g</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#aece2eeedca2f58e31a680503a9b7e972">g</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#aece2eeedca2f58e31a680503a9b7e972">g</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#aece2eeedca2f58e31a680503a9b7e972">g</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>},</div>
+<div class="line">        {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>, <a class="code hl_variable" href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a>}</div>
+<div class="line">}</div>
+<div class="ttc" id="aascended_8cc_html_a4d82239905175fe792bc2c8faf35bd1b"><div class="ttname"><a href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a></div><div class="ttdeci">const int _</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00009">ascended.cc:9</a></div></div>
+<div class="ttc" id="aascended_8cc_html_aece2eeedca2f58e31a680503a9b7e972"><div class="ttname"><a href="ascended_8cc.html#aece2eeedca2f58e31a680503a9b7e972">g</a></div><div class="ttdeci">const int g</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00014">ascended.cc:14</a></div></div>
+<div class="ttc" id="asandglass_8cc_html_a292616de5fdb7817271a7cac1e9305a8"><div class="ttname"><a href="sandglass_8cc.html#a292616de5fdb7817271a7cac1e9305a8">g_bright</a></div><div class="ttdeci">const int g_bright</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8cc_source.html#l00017">sandglass.cc:17</a></div></div>
+<div class="ttc" id="asandglass_8cc_html_a46e42948f2964e10c595ddab2c8b703f"><div class="ttname"><a href="sandglass_8cc.html#a46e42948f2964e10c595ddab2c8b703f">s_bright</a></div><div class="ttdeci">const int s_bright</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8cc_source.html#l00019">sandglass.cc:19</a></div></div>
+<div class="ttc" id="asandglass_8cc_html_a50ff6611e56940dd713ba5d320c10daa"><div class="ttname"><a href="sandglass_8cc.html#a50ff6611e56940dd713ba5d320c10daa">l_bright</a></div><div class="ttdeci">const int l_bright</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8cc_source.html#l00018">sandglass.cc:18</a></div></div>
+<div class="ttc" id="asandglass_8cc_html_a75fb9bd2a2cdca6aaa8a172266df81ff"><div class="ttname"><a href="sandglass_8cc.html#a75fb9bd2a2cdca6aaa8a172266df81ff">br_bright</a></div><div class="ttdeci">const int br_bright</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8cc_source.html#l00020">sandglass.cc:20</a></div></div>
+</div><!-- fragment -->
+<p>Sprite brillant. </p>
+
 <p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00043">43</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"></div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="#ac05e55c975cb51646fc96ab9ac738e92">set_x</a>(<span class="keywordtype">int</span> x) {</div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>.x = x;</div>
-<div class="line"><span class="lineno">   60</span>    }</div>
-<div class="line"><span class="lineno">   61</span> </div>
-<div class="ttc" id="aclassSandglass_html_ac05e55c975cb51646fc96ab9ac738e92"><div class="ttname"><a href="#ac05e55c975cb51646fc96ab9ac738e92">Sandglass::set_x</a></div><div class="ttdeci">void set_x(int x)</div><div class="ttdoc">Canvia la posició horitzontal per x.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00058">sandglass.hh:58</a></div></div>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>       :</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_function" href="#a29078c60764dba2b87728aa6d151b01e">Sandglass</a>(pro2::Pt <a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>) : <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>(<a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>) {}</div>
+<div class="line"><span class="lineno">   54</span></div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_function" href="#a29078c60764dba2b87728aa6d151b01e">Sandglass</a>(pro2::Pt <a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>, pro2::Pt speed, <span class="keywordtype">int</span> dist) </div>
+<div class="ttc" id="aclassSandglass_html_a29078c60764dba2b87728aa6d151b01e"><div class="ttname"><a href="#a29078c60764dba2b87728aa6d151b01e">Sandglass::Sandglass</a></div><div class="ttdeci">Sandglass(pro2::Pt pos)</div><div class="ttdoc">Constructor bàsic amb posició inicial.</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00053">sandglass.hh:53</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -907,12 +1118,25 @@ Atributos estáticos privados</h2></td></tr>
 <div class="ttc" id="amario_8cc_html_af8696c95f62af6274dc8b026e8cad660"><div class="ttname"><a href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a></div><div class="ttdeci">const int s</div><div class="ttdef"><b>Definition</b> <a href="mario_8cc_source.html#l00012">mario.cc:12</a></div></div>
 <div class="ttc" id="asandglass_8cc_html_aa5dc270843155b0fc1f3974621e19985"><div class="ttname"><a href="sandglass_8cc.html#aa5dc270843155b0fc1f3974621e19985">l</a></div><div class="ttdeci">const int l</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8cc_source.html#l00012">sandglass.cc:12</a></div></div>
 </div><!-- fragment -->
+<p>Sprite normal. </p>
+
 <p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00023">23</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>       :</div>
-<div class="line"><span class="lineno">   39</span>    <a class="code hl_function" href="#a29078c60764dba2b87728aa6d151b01e">Sandglass</a>(pro2::Pt <a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>) : <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>(<a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>) {}</div>
-<div class="line"><span class="lineno">   40</span>    <a class="code hl_function" href="#a29078c60764dba2b87728aa6d151b01e">Sandglass</a>(pro2::Pt <a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>,pro2::Pt speed, <span class="keywordtype">int</span> dist) : <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>(<a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>), <a class="code hl_variable" href="#ae62520b91534743016322530116424af">ini_pos_</a>(<a class="code hl_function" href="#a373e17ed8567215ac7e60928a8c43567">pos</a>), <a class="code hl_variable" href="#a39a650867c3a41b7bd99daaa54fd049d">speed_</a>(speed),<a class="code hl_variable" href="#a2f17370ff7b25cc37f9f810b33ae12ea">dist_</a>(dist) {}</div>
-<div class="line"><span class="lineno">   41</span> </div>
-<div class="ttc" id="aclassSandglass_html_a29078c60764dba2b87728aa6d151b01e"><div class="ttname"><a href="#a29078c60764dba2b87728aa6d151b01e">Sandglass::Sandglass</a></div><div class="ttdeci">Sandglass(pro2::Pt pos)</div><div class="ttdef"><b>Definition</b> <a href="sandglass_8hh_source.html#l00039">sandglass.hh:39</a></div></div>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                {</div>
+<div class="line"><span class="lineno">   27</span> <span class="keyword">private</span>:</div>
+<div class="line"><span class="lineno">   28</span>    pro2::Pt <a class="code hl_variable" href="#a7e298b88c54a23b56ebf4ce5d40dbf32">pos_</a>;             </div>
+<div class="line"><span class="lineno">   29</span>    pro2::Pt <a class="code hl_variable" href="#ae62520b91534743016322530116424af">ini_pos_</a>;         </div>
+<div class="line"><span class="lineno">   30</span>    pro2::Pt <a class="code hl_variable" href="#a39a650867c3a41b7bd99daaa54fd049d">speed_</a> = {0, 0};  </div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="#a2f17370ff7b25cc37f9f810b33ae12ea">dist_</a> = 0;             </div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="#a2ebce7bc7e36cb702eb91a79d5c8a415">frame_counter_</a> = 0;    </div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="#a0825d9c6df5fac09dfe48660f2dba616">is_bright_</a> = <span class="keyword">false</span>;   </div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="#ad42d5473d544c32852d1569c40284795">animation_speed_</a> = 20; </div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="#a656c0a60309e56686cd516eb416ba5e3">is_active_</a> = <span class="keyword">false</span>;         </div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="#a60f7fe8ef1a92987465ead87a66ccff0">is_in_cooldown_</a> = <span class="keyword">false</span>;    </div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="#afdcd6abff7520c36125fe92cb80ffee8">effect_duration_</a> = 0;        </div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="#aa92f00cd29f9715b819d95ad452de18f">respawn_delay_</a> = 0;          </div>
+<div class="line"><span class="lineno">   41</span>    </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -936,8 +1160,10 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00021">21</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>{0, 0};</div>
+<p>Velocitat del rellotge (si es mou) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sandglass_8hh_source.html#l00030">30</a> del archivo <a class="el" href="sandglass_8hh_source.html">sandglass.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>{0, 0};  </div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -93,35 +93,51 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Representa una plataforma rectangular en el món de joc.  
+ <a href="#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="platform_8hh_source.html">platform.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a52028ea2984cbfdf8e9f42ee87f66cfe" id="r_a52028ea2984cbfdf8e9f42ee87f66cfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52028ea2984cbfdf8e9f42ee87f66cfe">Platform</a> ()</td></tr>
+<tr class="memdesc:a52028ea2984cbfdf8e9f42ee87f66cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor per defecte, inicialitza la plataforma buida.  <br /></td></tr>
 <tr class="separator:a52028ea2984cbfdf8e9f42ee87f66cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d56264f91430d6a44be86cb5f9075a5" id="r_a5d56264f91430d6a44be86cb5f9075a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d56264f91430d6a44be86cb5f9075a5">Platform</a> (const <a class="el" href="classPlatform.html">Platform</a> &amp;other)</td></tr>
+<tr class="memdesc:a5d56264f91430d6a44be86cb5f9075a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor còpia.  <br /></td></tr>
 <tr class="separator:a5d56264f91430d6a44be86cb5f9075a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91871e5a88901d48593ba752f8f71c54" id="r_a91871e5a88901d48593ba752f8f71c54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91871e5a88901d48593ba752f8f71c54">Platform</a> (int <a class="el" href="#aaf35cacf5bafafd352607a6897990b65">left</a>, int <a class="el" href="#a4ce552d100551482cd970bc11ea203cd">right</a>, int <a class="el" href="#ae2f6ce1275d5add01a7af60474321bd5">top</a>, int <a class="el" href="#a3ecf2d404215154d7abcd692aa16e3cd">bottom</a>)</td></tr>
+<tr class="memdesc:a91871e5a88901d48593ba752f8f71c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor que inicialitza les coordenades de la plataforma.  <br /></td></tr>
 <tr class="separator:a91871e5a88901d48593ba752f8f71c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a1afa2b57fce20cb692f1679ea782e" id="r_a73a1afa2b57fce20cb692f1679ea782e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73a1afa2b57fce20cb692f1679ea782e">paint</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window) const</td></tr>
+<tr class="memdesc:a73a1afa2b57fce20cb692f1679ea782e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dibuixa la plataforma a la finestra de joc.  <br /></td></tr>
 <tr class="separator:a73a1afa2b57fce20cb692f1679ea782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a433b419b896a57783db4c8ad2f5534b2" id="r_a433b419b896a57783db4c8ad2f5534b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a433b419b896a57783db4c8ad2f5534b2">has_crossed_floor_downwards</a> (<a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> plast, <a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> pcurr) const</td></tr>
+<tr class="memdesc:a433b419b896a57783db4c8ad2f5534b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si un punt ha travessat la plataforma cap avall entre dos moments.  <br /></td></tr>
 <tr class="separator:a433b419b896a57783db4c8ad2f5534b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b2bedf80878d1d3fd2f37ba776d33a1" id="r_a3b2bedf80878d1d3fd2f37ba776d33a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b2bedf80878d1d3fd2f37ba776d33a1">is_pt_inside</a> (<a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> pt) const</td></tr>
+<tr class="memdesc:a3b2bedf80878d1d3fd2f37ba776d33a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si un punt està dins de la plataforma.  <br /></td></tr>
 <tr class="separator:a3b2bedf80878d1d3fd2f37ba776d33a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f6ce1275d5add01a7af60474321bd5" id="r_ae2f6ce1275d5add01a7af60474321bd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f6ce1275d5add01a7af60474321bd5">top</a> () const</td></tr>
+<tr class="memdesc:ae2f6ce1275d5add01a7af60474321bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la coordenada superior de la plataforma.  <br /></td></tr>
 <tr class="separator:ae2f6ce1275d5add01a7af60474321bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2097a2d8150fab6b674fb255d3a58bd3" id="r_a2097a2d8150fab6b674fb255d3a58bd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2097a2d8150fab6b674fb255d3a58bd3">change_top</a> (int <a class="el" href="#ae2f6ce1275d5add01a7af60474321bd5">top</a>)</td></tr>
+<tr class="memdesc:a2097a2d8150fab6b674fb255d3a58bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifica la coordenada superior de la plataforma sumant-hi un valor.  <br /></td></tr>
 <tr class="separator:a2097a2d8150fab6b674fb255d3a58bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf35cacf5bafafd352607a6897990b65" id="r_aaf35cacf5bafafd352607a6897990b65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf35cacf5bafafd352607a6897990b65">left</a> () const</td></tr>
+<tr class="memdesc:aaf35cacf5bafafd352607a6897990b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la coordenada esquerra de la plataforma.  <br /></td></tr>
 <tr class="separator:aaf35cacf5bafafd352607a6897990b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce552d100551482cd970bc11ea203cd" id="r_a4ce552d100551482cd970bc11ea203cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ce552d100551482cd970bc11ea203cd">right</a> () const</td></tr>
+<tr class="memdesc:a4ce552d100551482cd970bc11ea203cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la coordenada dreta de la plataforma.  <br /></td></tr>
 <tr class="separator:a4ce552d100551482cd970bc11ea203cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ecf2d404215154d7abcd692aa16e3cd" id="r_a3ecf2d404215154d7abcd692aa16e3cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ecf2d404215154d7abcd692aa16e3cd">bottom</a> () const</td></tr>
+<tr class="memdesc:a3ecf2d404215154d7abcd692aa16e3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la coordenada inferior de la plataforma.  <br /></td></tr>
 <tr class="separator:a3ecf2d404215154d7abcd692aa16e3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c203eae3e17e365bc582a660346e95" id="r_ae4c203eae3e17e365bc582a660346e95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4c203eae3e17e365bc582a660346e95">change_bottom</a> (int <a class="el" href="#a3ecf2d404215154d7abcd692aa16e3cd">bottom</a>)</td></tr>
+<tr class="memdesc:ae4c203eae3e17e365bc582a660346e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifica la coordenada inferior de la plataforma sumant-hi un valor.  <br /></td></tr>
 <tr class="separator:ae4c203eae3e17e365bc582a660346e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a47c819406b8b30b8c28d63f272447" id="r_a16a47c819406b8b30b8c28d63f272447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16a47c819406b8b30b8c28d63f272447">get_rect</a> () const</td></tr>
+<tr class="memdesc:a16a47c819406b8b30b8c28d63f272447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el rectangle que representa la hitbox de la plataforma.  <br /></td></tr>
 <tr class="separator:a16a47c819406b8b30b8c28d63f272447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -129,6 +145,7 @@ Atributos privados</h2></td></tr>
 <tr class="memitem:ad4040f2665d0b9c731170701139e1fd1" id="r_ad4040f2665d0b9c731170701139e1fd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4040f2665d0b9c731170701139e1fd1">topleft_</a></td></tr>
 <tr class="separator:ad4040f2665d0b9c731170701139e1fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2db189e0fcda4683aea0b5ee7d06cc" id="r_acd2db189e0fcda4683aea0b5ee7d06cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd2db189e0fcda4683aea0b5ee7d06cc">bottomright_</a></td></tr>
+<tr class="memdesc:acd2db189e0fcda4683aea0b5ee7d06cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vèrtexs superior esquerre i inferior dret (no s'utilitzen al codi actual)  <br /></td></tr>
 <tr class="separator:acd2db189e0fcda4683aea0b5ee7d06cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ec0a0cb0cd5716001d5fdf6884fe7c" id="r_a33ec0a0cb0cd5716001d5fdf6884fe7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a></td></tr>
 <tr class="separator:a33ec0a0cb0cd5716001d5fdf6884fe7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,16 +154,20 @@ Atributos privados</h2></td></tr>
 <tr class="memitem:a7fea78553cad4641c4f597ce155ae1c5" id="r_a7fea78553cad4641c4f597ce155ae1c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a></td></tr>
 <tr class="separator:a7fea78553cad4641c4f597ce155ae1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15a4798385af5225ac32250b0e3647d6" id="r_a15a4798385af5225ac32250b0e3647d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a></td></tr>
+<tr class="memdesc:a15a4798385af5225ac32250b0e3647d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordenades de les vores de la plataforma.  <br /></td></tr>
 <tr class="separator:a15a4798385af5225ac32250b0e3647d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Atributos estáticos privados</h2></td></tr>
 <tr class="memitem:aa64d771d840a33ce382048f47a521435" id="r_aa64d771d840a33ce382048f47a521435"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa64d771d840a33ce382048f47a521435">platform_texture_</a></td></tr>
+<tr class="memdesc:aa64d771d840a33ce382048f47a521435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite o textura de la plataforma.  <br /></td></tr>
 <tr class="separator:aa64d771d840a33ce382048f47a521435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00014">14</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="textblock"><p>Representa una plataforma rectangular en el món de joc. </p>
+<p>La classe emmagatzema la posició de la plataforma mitjançant coordenades i proporciona funcionalitats per pintar-la, detectar col·lisions i obtenir la seva hitbox. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00023">23</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a52028ea2984cbfdf8e9f42ee87f66cfe" name="a52028ea2984cbfdf8e9f42ee87f66cfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52028ea2984cbfdf8e9f42ee87f66cfe">&#9670;&#160;</a></span>Platform() <span class="overload">[1/3]</span></h2>
@@ -171,8 +192,15 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00022">22</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Constructor per defecte, inicialitza la plataforma buida. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00034">34</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>: <a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a>(0), <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>(0), <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a>(0), <a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a>(0) {}</div>
+<div class="ttc" id="aclassPlatform_html_a15a4798385af5225ac32250b0e3647d6"><div class="ttname"><a href="#a15a4798385af5225ac32250b0e3647d6">Platform::bottom_</a></div><div class="ttdeci">int bottom_</div><div class="ttdoc">Coordenades de les vores de la plataforma.</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00026">platform.hh:26</a></div></div>
+<div class="ttc" id="aclassPlatform_html_a33ec0a0cb0cd5716001d5fdf6884fe7c"><div class="ttname"><a href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">Platform::left_</a></div><div class="ttdeci">int left_</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00026">platform.hh:26</a></div></div>
+<div class="ttc" id="aclassPlatform_html_a46b87ba8300f0ab0338fd570ee9c49d6"><div class="ttname"><a href="#a46b87ba8300f0ab0338fd570ee9c49d6">Platform::right_</a></div><div class="ttdeci">int right_</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00026">platform.hh:26</a></div></div>
+<div class="ttc" id="aclassPlatform_html_a7fea78553cad4641c4f597ce155ae1c5"><div class="ttname"><a href="#a7fea78553cad4641c4f597ce155ae1c5">Platform::top_</a></div><div class="ttdeci">int top_</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00026">platform.hh:26</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5d56264f91430d6a44be86cb5f9075a5" name="a5d56264f91430d6a44be86cb5f9075a5"></a>
@@ -198,8 +226,17 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00024">24</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Constructor còpia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Plataforma a copiar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00040">40</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>        : <a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a>(other.<a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a>), <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>(other.<a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>), <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a>(other.<a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a>), <a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a>(other.<a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a>) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a91871e5a88901d48593ba752f8f71c54" name="a91871e5a88901d48593ba752f8f71c54"></a>
@@ -239,8 +276,24 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00027">27</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Constructor que inicialitza les coordenades de la plataforma. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Coordinada esquerra </td></tr>
+    <tr><td class="paramname">right</td><td>Coordinada dreta </td></tr>
+    <tr><td class="paramname">top</td><td>Coordinada superior </td></tr>
+    <tr><td class="paramname">bottom</td><td>Coordinada inferior </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00050">50</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>        : <a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a>(<a class="code hl_function" href="#aaf35cacf5bafafd352607a6897990b65">left</a>), <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>(<a class="code hl_function" href="#a4ce552d100551482cd970bc11ea203cd">right</a>), <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a>(<a class="code hl_function" href="#ae2f6ce1275d5add01a7af60474321bd5">top</a>), <a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a>(<a class="code hl_function" href="#a3ecf2d404215154d7abcd692aa16e3cd">bottom</a>) {}</div>
+<div class="ttc" id="aclassPlatform_html_a3ecf2d404215154d7abcd692aa16e3cd"><div class="ttname"><a href="#a3ecf2d404215154d7abcd692aa16e3cd">Platform::bottom</a></div><div class="ttdeci">int bottom() const</div><div class="ttdoc">Retorna la coordenada inferior de la plataforma.</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00110">platform.hh:110</a></div></div>
+<div class="ttc" id="aclassPlatform_html_a4ce552d100551482cd970bc11ea203cd"><div class="ttname"><a href="#a4ce552d100551482cd970bc11ea203cd">Platform::right</a></div><div class="ttdeci">int right() const</div><div class="ttdoc">Retorna la coordenada dreta de la plataforma.</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00102">platform.hh:102</a></div></div>
+<div class="ttc" id="aclassPlatform_html_aaf35cacf5bafafd352607a6897990b65"><div class="ttname"><a href="#aaf35cacf5bafafd352607a6897990b65">Platform::left</a></div><div class="ttdeci">int left() const</div><div class="ttdoc">Retorna la coordenada esquerra de la plataforma.</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00094">platform.hh:94</a></div></div>
+<div class="ttc" id="aclassPlatform_html_ae2f6ce1275d5add01a7af60474321bd5"><div class="ttname"><a href="#ae2f6ce1275d5add01a7af60474321bd5">Platform::top</a></div><div class="ttdeci">int top() const</div><div class="ttdoc">Retorna la coordenada superior de la plataforma.</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00078">platform.hh:78</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
@@ -267,8 +320,14 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00050">50</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Retorna la coordenada inferior de la plataforma. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Coordenada bottom </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00110">110</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>                       { </div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a>; </div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae4c203eae3e17e365bc582a660346e95" name="ae4c203eae3e17e365bc582a660346e95"></a>
@@ -294,8 +353,19 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00054">54</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Modifica la coordenada inferior de la plataforma sumant-hi un valor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bottom</td><td>Increment a sumar a la coordenada bottom </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00118">118</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>                                  {</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a> += <a class="code hl_function" href="#a3ecf2d404215154d7abcd692aa16e3cd">bottom</a>;</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2097a2d8150fab6b674fb255d3a58bd3" name="a2097a2d8150fab6b674fb255d3a58bd3"></a>
@@ -321,8 +391,19 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00038">38</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Modifica la coordenada superior de la plataforma sumant-hi un valor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">top</td><td>Increment a sumar a la coordenada top </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00086">86</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                            {</div>
+<div class="line"><span class="lineno">   87</span>        <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a> += <a class="code hl_function" href="#ae2f6ce1275d5add01a7af60474321bd5">top</a>;</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a16a47c819406b8b30b8c28d63f272447" name="a16a47c819406b8b30b8c28d63f272447"></a>
@@ -348,8 +429,14 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00058">58</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Retorna el rectangle que representa la hitbox de la plataforma. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Rectangular amb la posició de la plataforma </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00126">126</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>                              {</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> {<a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a>, <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a>, <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>, <a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a>};</div>
+<div class="line"><span class="lineno">  128</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a433b419b896a57783db4c8ad2f5534b2" name="a433b419b896a57783db4c8ad2f5534b2"></a>
@@ -371,8 +458,24 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Indica si un punt ha travessat la plataforma cap avall entre dos moments. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plast</td><td>Posició anterior del punt </td></tr>
+    <tr><td class="paramname">pcurr</td><td>Posició actual del punt </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si el punt ha travessat la plataforma cap avall </dd></dl>
+
 <p class="definition">Definición en la línea <a class="el" href="platform_8cc_source.html#l00036">36</a> del archivo <a class="el" href="platform_8cc_source.html">platform.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                                                           {</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a> &lt;= plast.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &amp;&amp; plast.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &lt;= <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>) &amp;&amp; (<a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a> &lt;= pcurr.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &amp;&amp; pcurr.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &lt;= <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>) &amp;&amp;</div>
+<div class="line"><span class="lineno">   38</span>           (plast.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> &lt;= <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a> &amp;&amp; pcurr.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> &gt;= <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a>);</div>
+<div class="line"><span class="lineno">   39</span>}</div>
+<div class="ttc" id="astructpro2_1_1Pt_html_a66aed2131ecee1ac8d9b7a114beead56"><div class="ttname"><a href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">pro2::Pt::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00011">geometry.hh:11</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html_ac3bf243622bd81d35086e7adb53c9b74"><div class="ttname"><a href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">pro2::Pt::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> <a href="geometry_8hh_source.html#l00011">geometry.hh:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3b2bedf80878d1d3fd2f37ba776d33a1" name="a3b2bedf80878d1d3fd2f37ba776d33a1"></a>
@@ -390,8 +493,20 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Indica si un punt està dins de la plataforma. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pt</td><td>Punt a comprovar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si el punt està dins la plataforma </dd></dl>
+
 <p class="definition">Definición en la línea <a class="el" href="platform_8cc_source.html#l00041">41</a> del archivo <a class="el" href="platform_8cc_source.html">platform.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                                           {</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a> &lt;= pt.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &amp;&amp; pt.<a class="code hl_variable" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &lt;= <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a> &amp;&amp; <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a> &lt;= pt.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> &amp;&amp; pt.<a class="code hl_variable" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> &lt;= <a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a>;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaf35cacf5bafafd352607a6897990b65" name="aaf35cacf5bafafd352607a6897990b65"></a>
@@ -417,8 +532,14 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00042">42</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Retorna la coordenada esquerra de la plataforma. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Coordenada left </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00094">94</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                     { </div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a>; </div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a73a1afa2b57fce20cb692f1679ea782e" name="a73a1afa2b57fce20cb692f1679ea782e"></a>
@@ -436,8 +557,27 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Dibuixa la plataforma a la finestra de joc. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Finestra on es dibuixa la plataforma </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definición en la línea <a class="el" href="platform_8cc_source.html#l00026">26</a> del archivo <a class="el" href="platform_8cc_source.html">platform.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                                             {</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> xsz = <a class="code hl_variable" href="#aa64d771d840a33ce382048f47a521435">platform_texture_</a>.size();</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> ysz = <a class="code hl_variable" href="#aa64d771d840a33ce382048f47a521435">platform_texture_</a>[0].size();</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a> + 1; i &lt;= <a class="code hl_variable" href="#a15a4798385af5225ac32250b0e3647d6">bottom_</a>; i++) {</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = <a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a>; j &lt;= <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>; j++) {</div>
+<div class="line"><span class="lineno">   31</span>            window.<a class="code hl_function" href="classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac">set_pixel</a>({j, i}, <a class="code hl_variable" href="#aa64d771d840a33ce382048f47a521435">platform_texture_</a>[(i - <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a> - 1) % xsz][(j - <a class="code hl_variable" href="#a33ec0a0cb0cd5716001d5fdf6884fe7c">left_</a>) % ysz]);</div>
+<div class="line"><span class="lineno">   32</span>        }</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+<div class="line"><span class="lineno">   34</span>}</div>
+<div class="ttc" id="aclassPlatform_html_aa64d771d840a33ce382048f47a521435"><div class="ttname"><a href="#aa64d771d840a33ce382048f47a521435">Platform::platform_texture_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; platform_texture_</div><div class="ttdoc">Sprite o textura de la plataforma.</div><div class="ttdef"><b>Definition</b> <a href="platform_8hh_source.html#l00014">platform.hh:14</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_af656aaa062615c33e183199ba2387cac"><div class="ttname"><a href="classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac">pro2::Window::set_pixel</a></div><div class="ttdeci">void set_pixel(Pt xy, Color color)</div><div class="ttdoc">Cambia un pixel de la ventana.</div><div class="ttdef"><b>Definition</b> <a href="window_8cc_source.html#l00083">window.cc:83</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4ce552d100551482cd970bc11ea203cd" name="a4ce552d100551482cd970bc11ea203cd"></a>
@@ -463,8 +603,14 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00046">46</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Retorna la coordenada dreta de la plataforma. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Coordenada right </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00102">102</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>                      { </div>
+<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a46b87ba8300f0ab0338fd570ee9c49d6">right_</a>; </div>
+<div class="line"><span class="lineno">  104</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae2f6ce1275d5add01a7af60474321bd5" name="ae2f6ce1275d5add01a7af60474321bd5"></a>
@@ -490,8 +636,14 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00034">34</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Retorna la coordenada superior de la plataforma. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Coordenada top </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00078">78</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                    {</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a7fea78553cad4641c4f597ce155ae1c5">top_</a>;</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
@@ -515,7 +667,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00017">17</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<p>Coordenades de les vores de la plataforma. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00026">26</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
 
 </div>
 </div>
@@ -539,7 +693,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00016">16</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<p>Vèrtexs superior esquerre i inferior dret (no s'utilitzen al codi actual) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00025">25</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
 
 </div>
 </div>
@@ -563,7 +719,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00017">17</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00026">26</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
 
 </div>
 </div>
@@ -586,9 +742,24 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Valor inicial:</b><div class="fragment"></div><!-- fragment -->
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>}, </div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>}, </div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>}, </div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>}, </div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>}, </div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>, <a class="code hl_variable" href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a>}, </div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">}</div>
+<div class="ttc" id="aascended_8cc_html_a4d82239905175fe792bc2c8faf35bd1b"><div class="ttname"><a href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a></div><div class="ttdeci">const int _</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00009">ascended.cc:9</a></div></div>
+<div class="ttc" id="aascended_8cc_html_a68ebe1bbeda1aa2968b5053d1a205219"><div class="ttname"><a href="ascended_8cc.html#a68ebe1bbeda1aa2968b5053d1a205219">b</a></div><div class="ttdeci">const int b</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00011">ascended.cc:11</a></div></div>
+</div><!-- fragment -->
+<p>Sprite o textura de la plataforma. </p>
+
 <p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00014">14</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   23</span>               {</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a46b87ba8300f0ab0338fd570ee9c49d6" name="a46b87ba8300f0ab0338fd570ee9c49d6"></a>
@@ -611,7 +782,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00017">17</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00026">26</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
 
 </div>
 </div>
@@ -635,7 +806,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00017">17</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00026">26</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
 
 </div>
 </div>
@@ -659,7 +830,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00016">16</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="platform_8hh_source.html#l00025">25</a> del archivo <a class="el" href="platform_8hh_source.html">platform.hh</a>.</p>
 
 </div>
 </div>

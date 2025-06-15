@@ -1,6 +1,6 @@
 <map id="ascended.hh" name="ascended.hh">
 <area shape="rect" id="Node000001" title="Especificacions de la classe Ascended." alt="" coords="67,5,162,31"/>
-<area shape="rect" id="Node000002" href="$stack_8hh.html" title=" " alt="" coords="5,79,77,105"/>
+<area shape="rect" id="Node000002" href="$stack_8hh.html" title="Implementació genèrica d&#39;una pila (stack) amb plantilles." alt="" coords="5,79,77,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,33,66,70,62,66,100,29"/>
 <area shape="rect" id="Node000003" href="$geometry_8hh.html" title="Funcions relacionades amb geometria." alt="" coords="69,153,160,178"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,31,117,137,112,137,112,31"/>

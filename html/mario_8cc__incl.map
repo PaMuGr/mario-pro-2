@@ -1,12 +1,12 @@
 <map id="mario.cc" name="mario.cc">
 <area shape="rect" id="Node000001" title="Funcions del Mario." alt="" coords="167,5,238,31"/>
-<area shape="rect" id="Node000002" href="$mario_8hh.html" title="Especificacions de Funcions del Mario." alt="" coords="131,79,202,105"/>
+<area shape="rect" id="Node000002" href="$mario_8hh.html" title="Definició de la classe Mario per al control del personatge principal del joc." alt="" coords="131,79,202,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,32,182,66,177,64,195,30"/>
 <area shape="rect" id="Node000008" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="247,153,310,178"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="211,30,268,138,263,140,207,33"/>
 <area shape="rect" id="Node000003" href="$list_8hh.html" title=" " alt="" coords="5,153,62,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,108,71,147,68,143,143,103"/>
-<area shape="rect" id="Node000004" href="$platform_8hh.html" title="Especificacions de Funcions del Platforms." alt="" coords="86,153,173,178"/>
+<area shape="rect" id="Node000004" href="$platform_8hh.html" title="Definició de la classe Platform que representa plataformes en el joc." alt="" coords="86,153,173,178"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="163,106,145,140,140,138,158,104"/>
 <area shape="rect" id="Node000005" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="164,226,245,252"/>
 <area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="173,104,187,152,201,211,196,212,182,153,168,106"/>

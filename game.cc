@@ -28,7 +28,7 @@ Game::Game(int width, int height)
       cross_height_y_(0) {
     
     //1.000.000 ITEMS -> Una mica lent al restart i al iniciar (pero molt eficient) (normal)
-    //50.000 ITEMS -> Millor per playtesting 
+    //50.000 ITEMS -> Millor per playtesting  (100 000 plataformes i 50 000 crosses)
     generate_level_objects(50000);
 
     //Afegim a la constructora el .add de les plataformes
@@ -91,6 +91,7 @@ void Game::generate_level_objects(int count) {
 /*PROCESSADOR DE TECLES*/
 void Game::process_keys(pro2::Window& window) {
     if (window.is_key_down(Keys::Escape)) {
+        game_state_ = 0;
         game_state_ = 4;  // exit
         return;
     }
@@ -168,7 +169,10 @@ void Game::handle_sandglass_interaction(const pro2::Rect& marioRect) {
 }
 
 void Game::update_time_stoped_mode(pro2::Window& window, const pro2::Rect& marioRect) {
-    update_crosses(window, marioRect);
+    update_crosses(window, marioRect, true);
+    if(demon_.check_fireball_collisions(marioRect,ascended_.get_rect())){
+        game_state_ = 5;    // game over
+    }
     
     int current_points = mario_.check_points();
     if (current_points >= 5 && current_points / 5 > last_blessed_points_ / 5) {
@@ -184,17 +188,21 @@ void Game::update_normal_mode(pro2::Window& window, const pro2::Rect& marioRect)
         game_state_ = 5;    // game over
     }
     
-    update_crosses(window, marioRect);
+    update_crosses(window, marioRect, false);
     
     check_blessing_points();
 }
 
-void Game::update_crosses(pro2::Window& window, const pro2::Rect& marioRect) {
+void Game::update_crosses(pro2::Window& window, const pro2::Rect& marioRect, bool timestoped) {
     auto visibles = finder_crosses_.query(window.camera_rect());
     for (const Cross* c : visibles) {
         Cross* cc = const_cast<Cross*>(c);
-        cc->update(window);
-        finder_crosses_.update(c);
+        
+        if(!timestoped){
+            cc->update(window);
+            finder_crosses_.update(c);
+        }
+        
         if (interseccionen(marioRect, cc->get_rect(cross_height_y_))) {
             finder_crosses_.remove(c);
             mario_.add_points();

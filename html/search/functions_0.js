@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['activate_0',['activate',['../classAscended.html#adaf670f2f333b254c5e8800f4afb450f',1,'Ascended::activate()'],['../classSandglass.html#a9abfad08730527bb3e928e88c44ec41d',1,'Sandglass::activate()']]],
+  ['activate_0',['activate',['../classAscended.html#a30b7350a89f4efc9c4092525567c4a05',1,'Ascended::activate()'],['../classSandglass.html#a9abfad08730527bb3e928e88c44ec41d',1,'Sandglass::activate()']]],
   ['add_1',['add',['../classFinder.html#a31c1952d79927548ce8fbde267628db3',1,'Finder']]],
   ['add_5fblessing_2',['add_blessing',['../classAscended.html#a1f8c2d48cb4ff04c9a97e59389b5d662',1,'Ascended']]],
   ['add_5fpoints_3',['add_points',['../classMario.html#a6a833fb3bb1f2c1a302cb5ed0e6787a2',1,'Mario']]],

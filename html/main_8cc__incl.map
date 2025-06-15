@@ -4,14 +4,14 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,27,335,73,333,78,179,32"/>
 <area shape="rect" id="Node000006" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="239,300,320,326"/>
 <area shape="poly" id="edge39_Node000001_Node000006" title=" " alt="" coords="127,34,99,53,66,80,35,114,11,154,8,166,9,181,17,212,36,250,67,267,116,281,224,302,223,307,114,287,65,272,32,254,12,214,4,182,3,166,6,152,30,111,62,77,96,49,124,29"/>
-<area shape="rect" id="Node000003" href="$mario_8hh.html" title="Especificacions de Funcions del Mario." alt="" coords="162,153,234,178"/>
+<area shape="rect" id="Node000003" href="$mario_8hh.html" title="Definició de la classe Mario per al control del personatge principal del joc." alt="" coords="162,153,234,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,108,245,149,243,144,352,103"/>
 <area shape="rect" id="Node000004" href="$list_8hh.html" title=" " alt="" coords="395,226,451,252"/>
 <area shape="poly" id="edge34_Node000002_Node000004" title=" " alt="" coords="390,104,419,211,414,212,385,106"/>
-<area shape="rect" id="Node000005" href="$platform_8hh.html" title="Especificacions de Funcions del Platforms." alt="" coords="184,226,270,252"/>
+<area shape="rect" id="Node000005" href="$platform_8hh.html" title="Definició de la classe Platform que representa plataformes en el joc." alt="" coords="184,226,270,252"/>
 <area shape="poly" id="edge14_Node000002_Node000005" title=" " alt="" coords="364,108,332,128,298,155,270,185,246,215,242,212,266,182,295,151,329,124,362,103"/>
 <area shape="poly" id="edge15_Node000002_Node000006" title=" " alt="" coords="349,96,269,99,173,108,84,126,51,139,29,155,20,168,16,180,17,192,21,203,39,224,68,244,105,261,146,276,224,297,223,302,144,281,103,266,66,248,36,228,16,205,11,193,11,179,16,165,25,151,48,134,82,121,172,103,269,94,348,91"/>
-<area shape="rect" id="Node000009" href="$cross_8hh.html" title="Especificació de les Funcions del Cross." alt="" coords="461,153,532,178"/>
+<area shape="rect" id="Node000009" href="$cross_8hh.html" title="Especificació de la classe Cross." alt="" coords="461,153,532,178"/>
 <area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="405,103,466,142,463,146,402,107"/>
 <area shape="rect" id="Node000010" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="628,226,691,252"/>
 <area shape="poly" id="edge16_Node000002_Node000010" title=" " alt="" coords="421,94,541,114,600,130,622,140,638,151,649,164,656,179,662,210,656,211,650,181,644,167,635,155,620,144,598,135,540,119,420,100"/>
@@ -19,9 +19,9 @@
 <area shape="poly" id="edge19_Node000002_Node000011" title=" " alt="" coords="420,103,542,145,540,150,419,108"/>
 <area shape="rect" id="Node000012" href="$finder_8hh.html" title="Especificació de les Funcions del Finder." alt="" coords="699,153,769,178"/>
 <area shape="poly" id="edge22_Node000002_Node000012" title=" " alt="" coords="421,98,681,150,684,151,683,156,680,155,420,103"/>
-<area shape="rect" id="Node000013" href="$sandglass_8hh.html" title="Especificació de les Funcions del SandGlass." alt="" coords="39,153,138,178"/>
+<area shape="rect" id="Node000013" href="$sandglass_8hh.html" title="Especificació de la classe Sandglass que representa un rellotge de sorra al joc." alt="" coords="39,153,138,178"/>
 <area shape="poly" id="edge25_Node000002_Node000013" title=" " alt="" coords="349,104,153,151,152,146,348,99"/>
-<area shape="rect" id="Node000014" href="$demon_8hh.html" title="Especificació de la Classe Demon." alt="" coords="308,153,386,178"/>
+<area shape="rect" id="Node000014" href="$demon_8hh.html" title="Especificació de la Classe Demon i Fireball." alt="" coords="308,153,386,178"/>
 <area shape="poly" id="edge29_Node000002_Node000014" title=" " alt="" coords="381,106,363,140,358,138,376,104"/>
 <area shape="rect" id="Node000015" href="$ascended_8hh.html" title="Especificacions de la classe Ascended." alt="" coords="766,226,862,252"/>
 <area shape="poly" id="edge35_Node000002_Node000015" title=" " alt="" coords="421,91,506,96,613,105,714,123,754,135,782,151,794,163,803,179,813,210,808,212,798,181,790,167,779,155,752,140,713,128,612,111,506,101,421,97"/>
@@ -52,6 +52,6 @@
 <area shape="poly" id="edge31_Node000014_Node000008" title=" " alt="" coords="352,178,364,212,385,250,423,288,466,319,548,364,545,369,463,324,420,292,381,254,359,215,347,179"/>
 <area shape="poly" id="edge38_Node000015_Node000006" title=" " alt="" coords="766,250,336,307,335,301,766,244"/>
 <area shape="poly" id="edge37_Node000015_Node000008" title=" " alt="" coords="810,254,786,290,769,310,749,328,701,355,652,373,650,368,699,350,746,323,765,306,782,287,805,251"/>
-<area shape="rect" id="Node000016" href="$stack_8hh.html" title=" " alt="" coords="817,300,888,326"/>
+<area shape="rect" id="Node000016" href="$stack_8hh.html" title="Implementació genèrica d&#39;una pila (stack) amb plantilles." alt="" coords="817,300,888,326"/>
 <area shape="poly" id="edge36_Node000015_Node000016" title=" " alt="" coords="823,251,841,285,836,287,818,253"/>
 </map>

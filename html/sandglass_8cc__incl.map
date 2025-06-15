@@ -1,10 +1,10 @@
 <map id="sandglass.cc" name="sandglass.cc">
 <area shape="rect" id="Node000001" title="Funcions del SandGlass." alt="" coords="88,5,186,31"/>
-<area shape="rect" id="Node000002" href="$sandglass_8hh.html" title="Especificació de les Funcions del SandGlass." alt="" coords="45,79,144,105"/>
+<area shape="rect" id="Node000002" href="$sandglass_8hh.html" title="Especificació de la classe Sandglass que representa un rellotge de sorra al joc." alt="" coords="45,79,144,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,33,112,67,107,64,128,30"/>
 <area shape="rect" id="Node000007" href="$utils_8hh.html" title="Especificacions de les Funcions del Utils." alt="" coords="182,153,245,178"/>
 <area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="146,30,202,138,198,140,141,33"/>
-<area shape="rect" id="Node000003" href="$platform_8hh.html" title="Especificacions de Funcions del Platforms." alt="" coords="21,153,107,178"/>
+<area shape="rect" id="Node000003" href="$platform_8hh.html" title="Definició de la classe Platform que representa plataformes en el joc." alt="" coords="21,153,107,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,106,78,139,73,137,87,104"/>
 <area shape="rect" id="Node000004" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="23,226,105,252"/>
 <area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="66,107,36,126,22,139,12,154,8,170,13,185,37,215,33,218,9,188,3,170,7,152,18,135,32,122,63,103"/>

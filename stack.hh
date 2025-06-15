@@ -1,5 +1,11 @@
+/**
+ * @file stack.hh
+ * @brief Implementació genèrica d'una pila (stack) amb plantilles.
+ */
+
 #ifndef STACK_HH
 #define STACK_HH
+
 #ifndef NO_DIAGRAM
 #include <iostream>
 #include <cstdlib>
@@ -7,6 +13,13 @@
 
 using namespace std;
 
+/**
+ * @class Stack
+ * @brief Implementació genèrica d'una pila (stack) amb operacions bàsiques.
+ * 
+ * Aquesta pila és implementada mitjançant una llista enllaçada interna.
+ * Ofereix operacions de push, pop, top, i consulta de mida i si està buida.
+ */
 template <typename T>
 class Stack {
 private:

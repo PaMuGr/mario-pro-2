@@ -2,13 +2,18 @@
 \hypertarget{classMario}{}\label{classMario}\index{Mario@{Mario}}
 
 
+Representa el personatge principal amb moviment, física i estadístiques.  
+
+
+
+
 {\ttfamily \#include $<$mario.\+hh$>$}
 
 \doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classMario_a99ffbd5c3dd7640ad6059ae8c458e578}{Mario}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}}, int jump\+Key, int left\+Key, int right\+Key, int godown\+Key)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor de \doxylink{classMario}{Mario}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_a6a833fb3bb1f2c1a302cb5ed0e6787a2}{add\+\_\+points}} ()
 \begin{DoxyCompactList}\small\item\em Augmenta en 1 la puntuació \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_a454e0a6b462c41fc8d2394c68167c933}{collect\+\_\+sandwatch}} ()
@@ -18,21 +23,21 @@ int \mbox{\hyperlink{classMario_a17c52358708350ffe1ca606cf0734ce3}{sandwatches\+
 int \mbox{\hyperlink{classMario_a40a06fa07b9b2956edde6bedddc3e8bb}{check\+\_\+points}} () const
 \begin{DoxyCompactList}\small\item\em Retorna el valor privat redemtion\+Points\+\_\+. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_aee49024d8542a3f425d53b7ca86aefc8}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
-\item 
+\begin{DoxyCompactList}\small\item\em Dibuixa el sprite de \doxylink{classMario}{Mario} a la finestra. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a0bc34a1f489d6d10905c83fa8e1e72f9}{pos}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Retorna la posició actual de \doxylink{classMario}{Mario}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_a807ce8785091bd609e156292409b376f}{set\+\_\+y}} (int \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})
-\item 
+\begin{DoxyCompactList}\small\item\em Estableix la coordenada y de \doxylink{classMario}{Mario}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_a52e29f7688225e81da18bad4ed571a0e}{set\+\_\+x}} (int x)
-\item 
+\begin{DoxyCompactList}\small\item\em Estableix la coordenada x de \doxylink{classMario}{Mario}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classMario_adb7c1e4fe5678628216c3110a8eb10c0}{is\+\_\+grounded}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Indica si \doxylink{classMario}{Mario} està en terra. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_a970f238b3538fa175b0f73aa29aa2c48}{set\+\_\+grounded}} (bool grounded)
-\item 
+\begin{DoxyCompactList}\small\item\em Canvia l\textquotesingle{}estat d\textquotesingle{}estar en terra o no. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_a4b8785eae84e2d5f0f45bf5290054f92}{toggle\+\_\+grounded}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Canvia l\textquotesingle{}estat de terra al contrari del que tenia. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_ac3b75d0650fb2a149d33fd9f1420da99}{jump}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Fa que \doxylink{classMario}{Mario} salti si està en terra. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classMario_acc0a64d028654c6bddca364379147bb4}{get\+\_\+rect}} () const
 \begin{DoxyCompactList}\small\item\em Retorna la hitbox del mario. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMario_a785b80003703d5213894a4999035484c}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, const std\+::vector$<$ \mbox{\hyperlink{classPlatform}{Platform}} $>$ \&platforms)
@@ -41,53 +46,55 @@ void \mbox{\hyperlink{classMario_a785b80003703d5213894a4999035484c}{update}} (\m
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classMario_a58b73569c9d36b5443c4e0efcf5a1f95}{apply\+\_\+physics\+\_\+}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Aplica la física (velocitat i acceleració) a \doxylink{classMario}{Mario}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Posició actual de \doxylink{classMario}{Mario}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a55592c8a186b21c9688ec1e10736711f}{last\+\_\+pos\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Posició anterior de \doxylink{classMario}{Mario}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\+\_\+}} = \{0, 0\}
-\item 
+\begin{DoxyCompactList}\small\item\em Velocitat actual. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classMario_a1764d97c394e6e13e2754580b9c71452}{accel\+\_\+}} = \{0, 0\}
-\item 
+\begin{DoxyCompactList}\small\item\em Acceleració actual. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}{accel\+\_\+time\+\_\+}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em Comptador per acceleració temporal. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_a4d323f2aeabc325e28a93ab4688e4459}{redemtion\+Points\+\_\+}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em Punts acumulats pel jugador. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_a3aa42fbacf28f3b2c7eda7b40df68af4}{sandwatch\+Collected\+\_\+}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em Nombre de sandwatches recollits. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_a0b42594e92c17c8b0352ac4734a44620}{mario\+\_\+width}} = 6
-\item 
+\begin{DoxyCompactList}\small\item\em Amplada del sprite de \doxylink{classMario}{Mario}. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_a3859ee4e14d8f9e30f2aca76f9de29f2}{mario\+\_\+height}} = 8
-\item 
+\begin{DoxyCompactList}\small\item\em Alçada del sprite de \doxylink{classMario}{Mario}. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_a22dbf8a740c51b63f4bb24397910e734}{jump\+\_\+key\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Codi tecla per saltar. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_ae5b22ddb16e949a19ec7211772ce0ad7}{left\+\_\+key\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Codi tecla per anar a l\textquotesingle{}esquerra. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_aeed62c8513146eaa6607d0a407fc158e}{right\+\_\+key\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Codi tecla per anar a la dreta. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_a9edbc221bc23414c8048f39f82b5a662}{go\+\_\+down\+\_\+key\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Codi tecla per anar cap avall. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMario_aa3c41608bed735336005aac06838f605}{SPEED}} = 6
-\item 
+\begin{DoxyCompactList}\small\item\em Velocitat base. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classMario_a9a5079abae4f376e690bdb2d69c16217}{grounded\+\_\+}} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Indica si \doxylink{classMario}{Mario} està en terra. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classMario_ae0d25e2cdd2bcb16b2f97665d7482d8f}{looking\+\_\+left\+\_\+}} = false
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Indica si \doxylink{classMario}{Mario} mira cap a l\textquotesingle{}esquerra. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos estáticos privados}
 \begin{DoxyCompactItemize}
 \item 
 static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classMario_a98619bbc1f150dae63dcd5a398bc05e8}{mario\+\_\+sprite\+\_\+normal\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sprite de \doxylink{classMario}{Mario} normal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
+Representa el personatge principal amb moviment, física i estadístiques. 
 
+Aquesta classe gestiona la posició, la física (acceleració, velocitat), les puntuacions, el control per teclat i el dibuix del personatge. 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00017}{17}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 
@@ -100,7 +107,24 @@ Mario\+::\+Mario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00037}{37}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Constructor de \doxylink{classMario}{Mario}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & Posició inicial \\
+\hline
+{\em jump\+Key} & Codi de tecla per saltar \\
+\hline
+{\em left\+Key} & Codi de tecla per anar a l\textquotesingle{}esquerra \\
+\hline
+{\em right\+Key} & Codi de tecla per anar a la dreta \\
+\hline
+{\em godown\+Key} & Codi de tecla per anar cap avall \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00061}{61}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -120,7 +144,7 @@ Augmenta en 1 la puntuació
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00048}{48}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00072}{72}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -130,6 +154,10 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00048}{48}} del arch
 \doxysubsubsection{\texorpdfstring{apply\_physics\_()}{apply\_physics\_()}}
 {\footnotesize\ttfamily \label{classMario_a58b73569c9d36b5443c4e0efcf5a1f95} 
 void Mario\+::apply\+\_\+physics\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aplica la física (velocitat i acceleració) a \doxylink{classMario}{Mario}. 
 
 
 
@@ -153,7 +181,7 @@ int amb els punts que té al moment
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00073}{73}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00097}{97}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -170,7 +198,7 @@ Augmenta en 1 els sandwatched collected.
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00055}{55}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00079}{79}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -200,7 +228,14 @@ bool Mario\+::is\+\_\+grounded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaptio
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00091}{91}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Indica si \doxylink{classMario}{Mario} està en terra. 
+
+\begin{DoxyReturn}{Devuelve}
+true si està en terra, false altrament 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00135}{135}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -210,6 +245,10 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00091}{91}} del arch
 \doxysubsubsection{\texorpdfstring{jump()}{jump()}}
 {\footnotesize\ttfamily \label{classMario_ac3b75d0650fb2a149d33fd9f1420da99} 
 void Mario\+::jump (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Fa que \doxylink{classMario}{Mario} salti si està en terra. 
 
 
 
@@ -226,6 +265,15 @@ void Mario\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1
 
 
 
+Dibuixa el sprite de \doxylink{classMario}{Mario} a la finestra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra on es dibuixa \doxylink{classMario}{Mario} \\
+\hline
+\end{DoxyParams}
+
+
 Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00043}{43}} del archivo \mbox{\hyperlink{mario_8cc_source}{mario.\+cc}}.
 
 
@@ -239,7 +287,14 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00043}{43}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00079}{79}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Retorna la posició actual de \doxylink{classMario}{Mario}. 
+
+\begin{DoxyReturn}{Devuelve}
+Posició actual 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00111}{111}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -259,7 +314,7 @@ int amb els sandwatches que ha recollit
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00064}{64}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00088}{88}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -272,7 +327,16 @@ void Mario\+::set\+\_\+grounded (\begin{DoxyParamCaption}\item[{bool}]{grounded}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00095}{95}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Canvia l\textquotesingle{}estat d\textquotesingle{}estar en terra o no. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em grounded} & Nou estat de terra \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00143}{143}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -285,7 +349,16 @@ void Mario\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{x}{}\end{DoxyPara
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00087}{87}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Estableix la coordenada x de \doxylink{classMario}{Mario}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em x} & Nova coordenada x \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00127}{127}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -298,7 +371,16 @@ void Mario\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{y}{}\end{DoxyPara
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00083}{83}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Estableix la coordenada y de \doxylink{classMario}{Mario}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em y} & Nova coordenada y \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00119}{119}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -311,7 +393,11 @@ void Mario\+::toggle\+\_\+grounded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCa
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00102}{102}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Canvia l\textquotesingle{}estat de terra al contrari del que tenia. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00153}{153}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
@@ -340,10 +426,16 @@ Definición en la línea \mbox{\hyperlink{mario_8cc_source_l00086}{86}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Acceleració actual. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00030}{30}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+}
+
 \end{DoxyCode}
 \Hypertarget{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}\index{Mario@{Mario}!accel\_time\_@{accel\_time\_}}
 \index{accel\_time\_@{accel\_time\_}!Mario@{Mario}}
@@ -353,7 +445,11 @@ int Mario\+::accel\+\_\+time\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Comptador per acceleració temporal. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a9edbc221bc23414c8048f39f82b5a662}\index{Mario@{Mario}!go\_down\_key\_@{go\_down\_key\_}}
 \index{go\_down\_key\_@{go\_down\_key\_}!Mario@{Mario}}
@@ -363,7 +459,11 @@ int Mario\+::go\+\_\+down\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Codi tecla per anar cap avall. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a9a5079abae4f376e690bdb2d69c16217}\index{Mario@{Mario}!grounded\_@{grounded\_}}
 \index{grounded\_@{grounded\_}!Mario@{Mario}}
@@ -373,7 +473,11 @@ bool Mario\+::grounded\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Indica si \doxylink{classMario}{Mario} està en terra. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00044}{44}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a22dbf8a740c51b63f4bb24397910e734}\index{Mario@{Mario}!jump\_key\_@{jump\_key\_}}
 \index{jump\_key\_@{jump\_key\_}!Mario@{Mario}}
@@ -383,7 +487,11 @@ int Mario\+::jump\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Codi tecla per saltar. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00037}{37}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a55592c8a186b21c9688ec1e10736711f}\index{Mario@{Mario}!last\_pos\_@{last\_pos\_}}
 \index{last\_pos\_@{last\_pos\_}!Mario@{Mario}}
@@ -393,7 +501,11 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00027}{27}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00019}{19}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Posició anterior de \doxylink{classMario}{Mario}. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00028}{28}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_ae5b22ddb16e949a19ec7211772ce0ad7}\index{Mario@{Mario}!left\_key\_@{left\_key\_}}
 \index{left\_key\_@{left\_key\_}!Mario@{Mario}}
@@ -403,7 +515,11 @@ int Mario\+::left\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Codi tecla per anar a l\textquotesingle{}esquerra. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00038}{38}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_ae0d25e2cdd2bcb16b2f97665d7482d8f}\index{Mario@{Mario}!looking\_left\_@{looking\_left\_}}
 \index{looking\_left\_@{looking\_left\_}!Mario@{Mario}}
@@ -413,7 +529,11 @@ bool Mario\+::looking\+\_\+left\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00032}{32}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Indica si \doxylink{classMario}{Mario} mira cap a l\textquotesingle{}esquerra. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00045}{45}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a3859ee4e14d8f9e30f2aca76f9de29f2}\index{Mario@{Mario}!mario\_height@{mario\_height}}
 \index{mario\_height@{mario\_height}!Mario@{Mario}}
@@ -423,7 +543,11 @@ int Mario\+::mario\+\_\+height = 8\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Alçada del sprite de \doxylink{classMario}{Mario}. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00035}{35}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a98619bbc1f150dae63dcd5a398bc05e8}\index{Mario@{Mario}!mario\_sprite\_normal\_@{mario\_sprite\_normal\_}}
 \index{mario\_sprite\_normal\_@{mario\_sprite\_normal\_}!Mario@{Mario}}
@@ -433,13 +557,53 @@ const vector$<$ vector$<$ int $>$ $>$ Mario\+::mario\+\_\+sprite\+\_\+normal\+\_
 
 {\bfseries Valor inicial\+:}
 \begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{demon_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{mario_8cc_a8ac749e7a8335becaf1f0c4d255ca28c}{wh}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}},\ \mbox{\hyperlink{cross_8cc_a79f221932ddea28e0bebf65e4ed17977}{br}}\},}
+\DoxyCodeLine{\}}
+
 \end{DoxyCode}
+
+
+Sprite de \doxylink{classMario}{Mario} normal. 
+
 
 
 Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classMario_afe8565966d1bdea7201e182558d2d709}{pos\_}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classMario_a55592c8a186b21c9688ec1e10736711f}{last\_pos\_}};\ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}{speed\_}}\ =\ \{0,\ 0\};\ }
+\DoxyCodeLine{00030\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classMario_a1764d97c394e6e13e2754580b9c71452}{accel\_}}\ =\ \{0,\ 0\};\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_a4ceb8b00f8520dfbe01dda96d9afc472}{accel\_time\_}}\ =\ 0;\ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_a4d323f2aeabc325e28a93ab4688e4459}{redemtionPoints\_}}\ =\ 0;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_a3aa42fbacf28f3b2c7eda7b40df68af4}{sandwatchCollected\_}}\ =\ 0;\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_a0b42594e92c17c8b0352ac4734a44620}{mario\_width}}\ =\ 6;\ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_a3859ee4e14d8f9e30f2aca76f9de29f2}{mario\_height}}\ =\ 8;\ \ \ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_a22dbf8a740c51b63f4bb24397910e734}{jump\_key\_}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_ae5b22ddb16e949a19ec7211772ce0ad7}{left\_key\_}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_aeed62c8513146eaa6607d0a407fc158e}{right\_key\_}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMario_a9edbc221bc23414c8048f39f82b5a662}{go\_down\_key\_}};\ \ \ \ \ \ \ }
+
 \end{DoxyCode}
 \Hypertarget{classMario_a0b42594e92c17c8b0352ac4734a44620}\index{Mario@{Mario}!mario\_width@{mario\_width}}
 \index{mario\_width@{mario\_width}!Mario@{Mario}}
@@ -449,7 +613,11 @@ int Mario\+::mario\+\_\+width = 6\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Amplada del sprite de \doxylink{classMario}{Mario}. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00034}{34}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_afe8565966d1bdea7201e182558d2d709}\index{Mario@{Mario}!pos\_@{pos\_}}
 \index{pos\_@{pos\_}!Mario@{Mario}}
@@ -459,7 +627,11 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00025}{25}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00019}{19}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Posició actual de \doxylink{classMario}{Mario}. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a4d323f2aeabc325e28a93ab4688e4459}\index{Mario@{Mario}!redemtionPoints\_@{redemtionPoints\_}}
 \index{redemtionPoints\_@{redemtionPoints\_}!Mario@{Mario}}
@@ -469,7 +641,11 @@ int Mario\+::redemtion\+Points\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Punts acumulats pel jugador. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00032}{32}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_aeed62c8513146eaa6607d0a407fc158e}\index{Mario@{Mario}!right\_key\_@{right\_key\_}}
 \index{right\_key\_@{right\_key\_}!Mario@{Mario}}
@@ -479,7 +655,11 @@ int Mario\+::right\+\_\+key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Codi tecla per anar a la dreta. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00039}{39}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a3aa42fbacf28f3b2c7eda7b40df68af4}\index{Mario@{Mario}!sandwatchCollected\_@{sandwatchCollected\_}}
 \index{sandwatchCollected\_@{sandwatchCollected\_}!Mario@{Mario}}
@@ -489,7 +669,11 @@ int Mario\+::sandwatch\+Collected\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Nombre de sandwatches recollits. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00033}{33}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_aa3c41608bed735336005aac06838f605}\index{Mario@{Mario}!SPEED@{SPEED}}
 \index{SPEED@{SPEED}!Mario@{Mario}}
@@ -499,7 +683,11 @@ int Mario\+::\+SPEED = 6\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Velocitat base. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00042}{42}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 \Hypertarget{classMario_a617d49e2f5c6ea5a91b3cc269a94d4b1}\index{Mario@{Mario}!speed\_@{speed\_}}
 \index{speed\_@{speed\_}!Mario@{Mario}}
@@ -509,10 +697,16 @@ Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00029}{29}} del arch
 
 
 
-Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
+Velocitat actual. 
+
+
+
+Definición en la línea \mbox{\hyperlink{mario_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{mario_8hh_source}{mario.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \{0,\ 0\};\ }
+
 \end{DoxyCode}
 
 

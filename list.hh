@@ -6,6 +6,20 @@
 
 using namespace std;
 
+/**
+ * @class List
+ * @brief Implementa una llista doblement enllaçada genèrica.
+ * 
+ * Aquesta classe plantilla permet emmagatzemar una col·lecció d'elements de tipus T
+ * en una estructura de llista doblement enllaçada. Proporciona operacions estàndard com
+ * inserció, esborrat, recorregut amb iteradors, accés a la mida i comprovació de buit.
+ * 
+ * La llista té dos nodes sentinella (iteminf i itemsup) que simplifiquen la gestió de
+ * les insercions i eliminacions als extrems.
+ * 
+ * Disposa d'iteradors mutables i constants per permetre la manipulació i la lectura dels
+ * elements de la llista.
+ */
 template <typename T> class List {
 private:
   

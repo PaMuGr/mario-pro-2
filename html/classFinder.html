@@ -133,8 +133,9 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class Finder&lt; T &gt;</div>
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00014">14</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+class Finder&lt; T &gt;</div><p>Implementa una divisió del món en quadricular per organitzar objectes en un grid de cel·les fixes (80x80). Permet afegir, treure, actualitzar i fer consultes eficients (O(log n)) sobre objectes que tenen un mètode get_rect() que retorna un rectangle. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00021">21</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a8a823378bec0a23c9fa080f2332999ad" name="a8a823378bec0a23c9fa080f2332999ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a823378bec0a23c9fa080f2332999ad">&#9670;&#160;</a></span>Finder()</h2>
@@ -161,8 +162,9 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00051">51</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00058">58</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
@@ -199,8 +201,24 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00060">60</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00067">67</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>                        {</div>
+<div class="line"><span class="lineno">   68</span>        <a class="code hl_class" href="classFinder.html">pro2::Rect</a> <a class="code hl_class" href="classFinder.html">rect</a> = <a class="code hl_class" href="classFinder.html">t</a>-&gt;get_rect();</div>
+<div class="line"><span class="lineno">   69</span>        <a class="code hl_class" href="classFinder.html">std::set&lt;pro2::Pt&gt;</a> <a class="code hl_class" href="classFinder.html">quadricules</a> = <a class="code hl_function" href="#a505460974de6b20a36a98b4062d0ea12">setPts</a>(<a class="code hl_class" href="classFinder.html">rect</a>);</div>
+<div class="line"><span class="lineno">   70</span>        </div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_variable" href="#a3b60c176851782e2780dd6c91a94e4bd">quadsOfObject</a>[<a class="code hl_class" href="classFinder.html">t</a>] = <a class="code hl_class" href="classFinder.html">quadricules</a>;</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classFinder.html">it</a> = <a class="code hl_class" href="classFinder.html">quadricules</a>.begin();</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">while</span>(<a class="code hl_class" href="classFinder.html">it</a> != <a class="code hl_class" href="classFinder.html">quadricules</a>.end()){</div>
+<div class="line"><span class="lineno">   75</span>            <a class="code hl_variable" href="#a24e47df48868626679624c0f90f53973">objectsTopLeft</a>[*<a class="code hl_class" href="classFinder.html">it</a>].insert(<a class="code hl_class" href="classFinder.html">t</a>); </div>
+<div class="line"><span class="lineno">   76</span>            <a class="code hl_class" href="classFinder.html">it</a>++;</div>
+<div class="line"><span class="lineno">   77</span>        }</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="ttc" id="aclassFinder_html"><div class="ttname"><a href="classFinder.html">Finder</a></div><div class="ttdef"><b>Definition</b> <a href="finder_8hh_source.html#l00021">finder.hh:21</a></div></div>
+<div class="ttc" id="aclassFinder_html_a24e47df48868626679624c0f90f53973"><div class="ttname"><a href="#a24e47df48868626679624c0f90f53973">Finder::objectsTopLeft</a></div><div class="ttdeci">std::map&lt; pro2::Pt, std::set&lt; const T * &gt; &gt; objectsTopLeft</div><div class="ttdef"><b>Definition</b> <a href="finder_8hh_source.html#l00027">finder.hh:27</a></div></div>
+<div class="ttc" id="aclassFinder_html_a3b60c176851782e2780dd6c91a94e4bd"><div class="ttname"><a href="#a3b60c176851782e2780dd6c91a94e4bd">Finder::quadsOfObject</a></div><div class="ttdeci">std::map&lt; const T *, std::set&lt; pro2::Pt &gt; &gt; quadsOfObject</div><div class="ttdef"><b>Definition</b> <a href="finder_8hh_source.html#l00025">finder.hh:25</a></div></div>
+<div class="ttc" id="aclassFinder_html_a505460974de6b20a36a98b4062d0ea12"><div class="ttname"><a href="#a505460974de6b20a36a98b4062d0ea12">Finder::setPts</a></div><div class="ttdeci">std::set&lt; pro2::Pt &gt; setPts(const pro2::Rect &amp;rObj) const</div><div class="ttdoc">Retorna el conjunt de quadricules on es troba l&#39;objecte.</div><div class="ttdef"><b>Definition</b> <a href="finder_8hh_source.html#l00040">finder.hh:40</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7dc2d4339d1982a26caf9373f34e3084" name="a7dc2d4339d1982a26caf9373f34e3084"></a>
@@ -239,8 +257,30 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins de <code>rect</code> </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00123">123</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00130">130</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>                                                {</div>
+<div class="line"><span class="lineno">  131</span>        <a class="code hl_class" href="classFinder.html">std::set&lt;const T*&gt;</a> <a class="code hl_class" href="classFinder.html">result</a>;</div>
+<div class="line"><span class="lineno">  132</span>        <a class="code hl_class" href="classFinder.html">std::set&lt;pro2::Pt&gt;</a> <a class="code hl_class" href="classFinder.html">quadricules</a> = <a class="code hl_function" href="#a505460974de6b20a36a98b4062d0ea12">setPts</a>(<a class="code hl_class" href="classFinder.html">rect</a>);</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classFinder.html">it</a> = <a class="code hl_class" href="classFinder.html">quadricules</a>.begin();</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">while</span>(<a class="code hl_class" href="classFinder.html">it</a> != <a class="code hl_class" href="classFinder.html">quadricules</a>.end()){</div>
+<div class="line"><span class="lineno">  136</span>            <span class="keyword">auto</span> <a class="code hl_class" href="classFinder.html">it2</a> = <a class="code hl_variable" href="#a24e47df48868626679624c0f90f53973">objectsTopLeft</a>.find(*<a class="code hl_class" href="classFinder.html">it</a>);</div>
+<div class="line"><span class="lineno">  137</span>            <span class="keywordflow">if</span>(<a class="code hl_class" href="classFinder.html">it2</a> != <a class="code hl_variable" href="#a24e47df48868626679624c0f90f53973">objectsTopLeft</a>.end()){</div>
+<div class="line"><span class="lineno">  138</span>                <a class="code hl_class" href="classFinder.html">std::set&lt;const T*&gt;</a> <a class="code hl_class" href="classFinder.html">setPunters</a> = <a class="code hl_class" href="classFinder.html">it2</a>-&gt;second;</div>
+<div class="line"><span class="lineno">  139</span>                <span class="keyword">auto</span> <a class="code hl_class" href="classFinder.html">it3</a> = <a class="code hl_class" href="classFinder.html">setPunters</a>.begin(); </div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>                <span class="keywordflow">while</span>(<a class="code hl_class" href="classFinder.html">it3</a> != <a class="code hl_class" href="classFinder.html">setPunters</a>.end()){</div>
+<div class="line"><span class="lineno">  142</span>                    <span class="keywordflow">if</span>(<a class="code hl_class" href="classFinder.html">interseccionen</a>((*it3) -&gt; <a class="code hl_class" href="classFinder.html">get_rect</a>(), <a class="code hl_class" href="classFinder.html">rect</a>)){</div>
+<div class="line"><span class="lineno">  143</span>                        <a class="code hl_class" href="classFinder.html">result</a>.insert(*<a class="code hl_class" href="classFinder.html">it3</a>);</div>
+<div class="line"><span class="lineno">  144</span>                    }</div>
+<div class="line"><span class="lineno">  145</span>                    <a class="code hl_class" href="classFinder.html">it3</a>++;</div>
+<div class="line"><span class="lineno">  146</span>                }</div>
+<div class="line"><span class="lineno">  147</span>            }</div>
+<div class="line"><span class="lineno">  148</span>            <a class="code hl_class" href="classFinder.html">it</a>++;</div>
+<div class="line"><span class="lineno">  149</span>        }</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classFinder.html">result</a>;</div>
+<div class="line"><span class="lineno">  151</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8a9d5bf342c5a13048d7853b52557f7d" name="a8a9d5bf342c5a13048d7853b52557f7d"></a>
@@ -276,8 +316,25 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00080">80</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00087">87</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                           {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classFinder.html">it</a> = <a class="code hl_variable" href="#a3b60c176851782e2780dd6c91a94e4bd">quadsOfObject</a>.find(<a class="code hl_class" href="classFinder.html">t</a>);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span>(<a class="code hl_class" href="classFinder.html">it</a> != <a class="code hl_variable" href="#a3b60c176851782e2780dd6c91a94e4bd">quadsOfObject</a>.end()){</div>
+<div class="line"><span class="lineno">   91</span>            <a class="code hl_class" href="classFinder.html">std::set&lt;pro2::Pt&gt;</a> <a class="code hl_class" href="classFinder.html">quadricules</a> = <a class="code hl_class" href="classFinder.html">it</a>-&gt;second;</div>
+<div class="line"><span class="lineno">   92</span>            <span class="keyword">auto</span> <a class="code hl_class" href="classFinder.html">it2</a> = <a class="code hl_class" href="classFinder.html">quadricules</a>.begin();</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>            <span class="keywordflow">while</span>(<a class="code hl_class" href="classFinder.html">it2</a> != <a class="code hl_class" href="classFinder.html">quadricules</a>.end()){</div>
+<div class="line"><span class="lineno">   95</span>                <a class="code hl_variable" href="#a24e47df48868626679624c0f90f53973">objectsTopLeft</a>[*<a class="code hl_class" href="classFinder.html">it2</a>].erase(<a class="code hl_class" href="classFinder.html">t</a>);</div>
+<div class="line"><span class="lineno">   96</span>                <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a24e47df48868626679624c0f90f53973">objectsTopLeft</a>[*<a class="code hl_class" href="classFinder.html">it2</a>].<a class="code hl_class" href="classFinder.html">empty</a>()){</div>
+<div class="line"><span class="lineno">   97</span>                    <a class="code hl_variable" href="#a24e47df48868626679624c0f90f53973">objectsTopLeft</a>.erase(*<a class="code hl_class" href="classFinder.html">it2</a>);</div>
+<div class="line"><span class="lineno">   98</span>                }</div>
+<div class="line"><span class="lineno">   99</span>                <a class="code hl_class" href="classFinder.html">it2</a>++;</div>
+<div class="line"><span class="lineno">  100</span>            }</div>
+<div class="line"><span class="lineno">  101</span>            <a class="code hl_variable" href="#a3b60c176851782e2780dd6c91a94e4bd">quadsOfObject</a>.erase(<a class="code hl_class" href="classFinder.html">it</a>);</div>
+<div class="line"><span class="lineno">  102</span>        }</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a505460974de6b20a36a98b4062d0ea12" name="a505460974de6b20a36a98b4062d0ea12"></a>
@@ -314,8 +371,25 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Un set de Pt's amb el topleft de les quadricules on està el objecte </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00033">33</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00040">40</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                      {</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_class" href="classFinder.html">std::set&lt;pro2::Pt&gt;</a> <a class="code hl_class" href="classFinder.html">result</a>;</div>
+<div class="line"><span class="lineno">   42</span>        <span class="comment">//Si tenim objecte de topleft (524,17) llavors les quadricules van del topleft minim (500,0) al bottom right maxim, iterem com una matriu</span></div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordtype">int</span> <a class="code hl_class" href="classFinder.html">left</a> = (<a class="code hl_class" href="classFinder.html">rObj</a>.left / <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>) * <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>;</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordtype">int</span> <a class="code hl_class" href="classFinder.html">right</a> = (<a class="code hl_class" href="classFinder.html">rObj</a>.right / <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>) * <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>;</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordtype">int</span> <a class="code hl_class" href="classFinder.html">top</a> = (<a class="code hl_class" href="classFinder.html">rObj</a>.top / <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>) * <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>;</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordtype">int</span> <a class="code hl_class" href="classFinder.html">bottom</a> = (<a class="code hl_class" href="classFinder.html">rObj</a>.bottom / <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>) * <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>;</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="classFinder.html">x</a> = <a class="code hl_class" href="classFinder.html">left</a>; <a class="code hl_class" href="classFinder.html">x</a> &lt;= <a class="code hl_class" href="classFinder.html">right</a>; <a class="code hl_class" href="classFinder.html">x</a> += <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>) {</div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="classFinder.html">y</a> = <a class="code hl_class" href="classFinder.html">top</a>; <a class="code hl_class" href="classFinder.html">y</a> &lt;= <a class="code hl_class" href="classFinder.html">bottom</a>; <a class="code hl_class" href="classFinder.html">y</a> += <a class="code hl_variable" href="#a75ecebb34d5a39cd2484f5a38457d820">QUADSIZE</a>) {</div>
+<div class="line"><span class="lineno">   50</span>                <span class="comment">//Tots els top lefts dels quads on esta r (rect del objecte)</span></div>
+<div class="line"><span class="lineno">   51</span>                <a class="code hl_class" href="classFinder.html">result</a>.insert({<a class="code hl_class" href="classFinder.html">x</a>, <a class="code hl_class" href="classFinder.html">y</a>});</div>
+<div class="line"><span class="lineno">   52</span>            }</div>
+<div class="line"><span class="lineno">   53</span>        }</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classFinder.html">result</a>;</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="ttc" id="aclassFinder_html_a75ecebb34d5a39cd2484f5a38457d820"><div class="ttname"><a href="#a75ecebb34d5a39cd2484f5a38457d820">Finder::QUADSIZE</a></div><div class="ttdeci">static const int QUADSIZE</div><div class="ttdef"><b>Definition</b> <a href="finder_8hh_source.html#l00030">finder.hh:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a073967ec8a3f5189c1922aeaf161098c" name="a073967ec8a3f5189c1922aeaf161098c"></a>
@@ -351,8 +425,14 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00104">104</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00111">111</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>                           {</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_function" href="#a8a9d5bf342c5a13048d7853b52557f7d">remove</a>(<a class="code hl_class" href="classFinder.html">t</a>);</div>
+<div class="line"><span class="lineno">  113</span>        <a class="code hl_function" href="#a31c1952d79927548ce8fbde267628db3">add</a>(<a class="code hl_class" href="classFinder.html">t</a>);</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="ttc" id="aclassFinder_html_a31c1952d79927548ce8fbde267628db3"><div class="ttname"><a href="#a31c1952d79927548ce8fbde267628db3">Finder::add</a></div><div class="ttdeci">void add(const T *t)</div><div class="ttdoc">Afegeix a quadsOfObject les quadricules on es troba t, també afegeix a objectsTopLeft els punters din...</div><div class="ttdef"><b>Definition</b> <a href="finder_8hh_source.html#l00067">finder.hh:67</a></div></div>
+<div class="ttc" id="aclassFinder_html_a8a9d5bf342c5a13048d7853b52557f7d"><div class="ttname"><a href="#a8a9d5bf342c5a13048d7853b52557f7d">Finder::remove</a></div><div class="ttdeci">void remove(const T *t)</div><div class="ttdoc">Treu de quadsOfObject les quadricules on es trobava t, també treu de objectsTopLeft els punters dins ...</div><div class="ttdef"><b>Definition</b> <a href="finder_8hh_source.html#l00087">finder.hh:87</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
@@ -378,7 +458,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00020">20</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00027">27</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
 
 </div>
 </div>
@@ -404,7 +484,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00023">23</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00030">30</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
 
 </div>
 </div>
@@ -430,7 +510,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00018">18</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="finder_8hh_source.html#l00025">25</a> del archivo <a class="el" href="finder_8hh_source.html">finder.hh</a>.</p>
 
 </div>
 </div>

@@ -94,6 +94,9 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Classe principal que gestiona l'estat i la lògica del joc.  
+ <a href="#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="game_8hh_source.html">game.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -108,16 +111,16 @@ Métodos públicos</h2></td></tr>
 <tr class="memdesc:af3e3428a12b9944fefb663f2fe560529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta el joc cada frame.  <br /></td></tr>
 <tr class="separator:af3e3428a12b9944fefb663f2fe560529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fef163aab28f7a4de1abb8d08794e7f" id="r_a3fef163aab28f7a4de1abb8d08794e7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fef163aab28f7a4de1abb8d08794e7f">is_paused</a> () const</td></tr>
-<tr class="memdesc:a3fef163aab28f7a4de1abb8d08794e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un bool segons si el joc esta o no pausat.  <br /></td></tr>
+<tr class="memdesc:a3fef163aab28f7a4de1abb8d08794e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna true si el joc està pausat.  <br /></td></tr>
 <tr class="separator:a3fef163aab28f7a4de1abb8d08794e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48d38b110cb6558e69b1920bb31406db" id="r_a48d38b110cb6558e69b1920bb31406db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48d38b110cb6558e69b1920bb31406db">is_finished</a> () const</td></tr>
-<tr class="memdesc:a48d38b110cb6558e69b1920bb31406db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un bool segons si el joc ha acabat.  <br /></td></tr>
+<tr class="memdesc:a48d38b110cb6558e69b1920bb31406db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna true si el joc ha acabat.  <br /></td></tr>
 <tr class="separator:a48d38b110cb6558e69b1920bb31406db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4268b648bd696673acf3de0cddfc20b" id="r_ae4268b648bd696673acf3de0cddfc20b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4268b648bd696673acf3de0cddfc20b">you_died</a> () const</td></tr>
-<tr class="memdesc:ae4268b648bd696673acf3de0cddfc20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un bool segons si el mario ha mort.  <br /></td></tr>
+<tr class="memdesc:ae4268b648bd696673acf3de0cddfc20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna true si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> ha mort (caigut o colpejat).  <br /></td></tr>
 <tr class="separator:ae4268b648bd696673acf3de0cddfc20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29df894d1d25abb59738a7651f05c7d" id="r_aa29df894d1d25abb59738a7651f05c7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa29df894d1d25abb59738a7651f05c7d">you_won</a> () const</td></tr>
-<tr class="memdesc:aa29df894d1d25abb59738a7651f05c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un bool segons si hem guanyat el joc.  <br /></td></tr>
+<tr class="memdesc:aa29df894d1d25abb59738a7651f05c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna true si el jugador ha guanyat.  <br /></td></tr>
 <tr class="separator:aa29df894d1d25abb59738a7651f05c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd0035e2b5ae89538eb741a4017dc0f" id="r_a1cd0035e2b5ae89538eb741a4017dc0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cd0035e2b5ae89538eb741a4017dc0f">set_gamemode</a> (int gamemode)</td></tr>
 <tr class="memdesc:a1cd0035e2b5ae89538eb741a4017dc0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canvia el mode de joc al seleccionat.  <br /></td></tr>
@@ -126,7 +129,7 @@ Métodos públicos</h2></td></tr>
 <tr class="memdesc:a1cb5b15762932c64246ac353a00394ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza el temporitzador del joc si hi ha límit de temps.  <br /></td></tr>
 <tr class="separator:a1cb5b15762932c64246ac353a00394ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac779383b06a6ef5b24ba05d907e30b70" id="r_ac779383b06a6ef5b24ba05d907e30b70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac779383b06a6ef5b24ba05d907e30b70">apply_game_mode_settings</a> ()</td></tr>
-<tr class="memdesc:ac779383b06a6ef5b24ba05d907e30b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica les configuracions específiquès segons el mode de joc seleccionat.  <br /></td></tr>
+<tr class="memdesc:ac779383b06a6ef5b24ba05d907e30b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica les configuracions específiques segons el mode de joc seleccionat.  <br /></td></tr>
 <tr class="separator:ac779383b06a6ef5b24ba05d907e30b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf09733d523bd8c2faf41059a7f83988" id="r_adf09733d523bd8c2faf41059a7f83988"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf09733d523bd8c2faf41059a7f83988">generate_level_objects</a> (int count)</td></tr>
 <tr class="memdesc:adf09733d523bd8c2faf41059a7f83988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea un mapa diferent amb plataformes randomitzades per cada reinici del joc.  <br /></td></tr>
@@ -174,16 +177,16 @@ Métodos públicos</h2></td></tr>
 <tr class="memdesc:aabadd5026e72b4a84cd0afdb505681fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Centra un text al mitg de la pantalla.  <br /></td></tr>
 <tr class="separator:aabadd5026e72b4a84cd0afdb505681fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbfcda5bf7c3a427a5d8f512dacec6e0" id="r_abbfcda5bf7c3a427a5d8f512dacec6e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbfcda5bf7c3a427a5d8f512dacec6e0">check_fallen_off_screen</a> (const <a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
-<tr class="memdesc:abbfcda5bf7c3a427a5d8f512dacec6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si el mario ha caigut fora de la pantalla.  <br /></td></tr>
+<tr class="memdesc:abbfcda5bf7c3a427a5d8f512dacec6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> ha caigut fora de la pantalla.  <br /></td></tr>
 <tr class="separator:abbfcda5bf7c3a427a5d8f512dacec6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad67466fb235ac2069efe278f6d35268a" id="r_ad67466fb235ac2069efe278f6d35268a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad67466fb235ac2069efe278f6d35268a">handle_sandglass_interaction</a> (const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
-<tr class="memdesc:ad67466fb235ac2069efe278f6d35268a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si mario interactua amb el rellotge i l’activa.  <br /></td></tr>
+<tr class="memdesc:ad67466fb235ac2069efe278f6d35268a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> interactua amb el rellotge i l’activa.  <br /></td></tr>
 <tr class="separator:ad67466fb235ac2069efe278f6d35268a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9c6cafeb4becc2183a220d1788062f" id="r_a6e9c6cafeb4becc2183a220d1788062f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e9c6cafeb4becc2183a220d1788062f">update_time_stoped_mode</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
 <tr class="memdesc:a6e9c6cafeb4becc2183a220d1788062f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l’estat del joc quan el rellotge està activat.  <br /></td></tr>
 <tr class="separator:a6e9c6cafeb4becc2183a220d1788062f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83971c017e3001fe2df507dad4f893e0" id="r_a83971c017e3001fe2df507dad4f893e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83971c017e3001fe2df507dad4f893e0">update_normal_mode</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
-<tr class="memdesc:a83971c017e3001fe2df507dad4f893e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l’estat normal del joc (sense rellotge)  <br /></td></tr>
+<tr class="memdesc:a83971c017e3001fe2df507dad4f893e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l’estat normal del joc (sense rellotge).  <br /></td></tr>
 <tr class="separator:a83971c017e3001fe2df507dad4f893e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8052300120200684df461bb6aa2a2b9c" id="r_a8052300120200684df461bb6aa2a2b9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8052300120200684df461bb6aa2a2b9c">update_crosses</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const <a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a> &amp;marioRect)</td></tr>
 <tr class="memdesc:a8052300120200684df461bb6aa2a2b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza les creus visibles i comprova si han estat recollides.  <br /></td></tr>
@@ -192,7 +195,7 @@ Métodos públicos</h2></td></tr>
 <tr class="memdesc:a0457735c1ff2628264fdcfeae69ad1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza el comportament del dimoni.  <br /></td></tr>
 <tr class="separator:a0457735c1ff2628264fdcfeae69ad1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7849d79c921e869e30923bf9974519b5" id="r_a7849d79c921e869e30923bf9974519b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7849d79c921e869e30923bf9974519b5">check_blessing_points</a> ()</td></tr>
-<tr class="memdesc:a7849d79c921e869e30923bf9974519b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si el mario ha aconseguit prou punts per activar benediccions.  <br /></td></tr>
+<tr class="memdesc:a7849d79c921e869e30923bf9974519b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprova si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> ha aconseguit prou punts per activar benediccions.  <br /></td></tr>
 <tr class="separator:a7849d79c921e869e30923bf9974519b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -201,7 +204,7 @@ Métodos privados</h2></td></tr>
 <tr class="memdesc:a0c6fbced92dbe00f94f96d899f02fdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa les tecles premudes i actualitza l'estat del joc en conseqüència.  <br /></td></tr>
 <tr class="separator:a0c6fbced92dbe00f94f96d899f02fdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac837e84d3f63a3dac7b3942705203e" id="r_aeac837e84d3f63a3dac7b3942705203e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeac837e84d3f63a3dac7b3942705203e">update_objects</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
-<tr class="memdesc:aeac837e84d3f63a3dac7b3942705203e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza tots els objectes del joc (mario, creus, rellotge, etc.)  <br /></td></tr>
+<tr class="memdesc:aeac837e84d3f63a3dac7b3942705203e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza tots els objectes del joc (<a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a>, creus, rellotge, etc.)  <br /></td></tr>
 <tr class="separator:aeac837e84d3f63a3dac7b3942705203e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab146f2f8cec61b092586762267cf1e73" id="r_ab146f2f8cec61b092586762267cf1e73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab146f2f8cec61b092586762267cf1e73">update_camera</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window)</td></tr>
 <tr class="memdesc:ab146f2f8cec61b092586762267cf1e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mou la càmera seguint la posició del personatge principal.  <br /></td></tr>
@@ -223,8 +226,8 @@ Atributos privados</h2></td></tr>
 <tr class="separator:a56d8b6fb9cff75879c0d70310b508ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2cb5925dfa39af72927ae512034cdac" id="r_af2cb5925dfa39af72927ae512034cdac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDemon.html">Demon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2cb5925dfa39af72927ae512034cdac">demon_</a></td></tr>
 <tr class="separator:af2cb5925dfa39af72927ae512034cdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba05b1a95dbabf977bf1d51cb67ce55" id="r_aaba05b1a95dbabf977bf1d51cb67ce55"><td class="memItemLeft" align="right" valign="top">pro2::Ascended&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaba05b1a95dbabf977bf1d51cb67ce55">ascended_</a></td></tr>
-<tr class="separator:aaba05b1a95dbabf977bf1d51cb67ce55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13497efadc50c3a335fbb39f57e01690" id="r_a13497efadc50c3a335fbb39f57e01690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAscended.html">Ascended</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13497efadc50c3a335fbb39f57e01690">ascended_</a></td></tr>
+<tr class="separator:a13497efadc50c3a335fbb39f57e01690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac62fcd6f881bcb94637e29015a7c7b" id="r_a4ac62fcd6f881bcb94637e29015a7c7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFinder.html">Finder</a>&lt; <a class="el" href="classPlatform.html">Platform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ac62fcd6f881bcb94637e29015a7c7b">finder_platforms_</a></td></tr>
 <tr class="separator:a4ac62fcd6f881bcb94637e29015a7c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ee68975468409b25082bf66e9414d6" id="r_ab1ee68975468409b25082bf66e9414d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFinder.html">Finder</a>&lt; <a class="el" href="classCross.html">Cross</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1ee68975468409b25082bf66e9414d6">finder_crosses_</a></td></tr>
@@ -254,8 +257,10 @@ Atributos estáticos privados</h2></td></tr>
 <tr class="separator:a636fa6f9369014f3aa1365b8cd3611b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00026">26</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<div class="textblock"><p>Classe principal que gestiona l'estat i la lògica del joc. </p>
+<p>La classe <a class="el" href="classGame.html" title="Classe principal que gestiona l&#39;estat i la lògica del joc.">Game</a> conté totes les dades i funcionalitats necessàries per controlar el personatge, plataformes, creus, dimoni, temporitzadors, i les diferents pantalles i estats del joc. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00033">33</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a5bc07cf8947858f32637943836cc6f8e" name="a5bc07cf8947858f32637943836cc6f8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5bc07cf8947858f32637943836cc6f8e">&#9670;&#160;</a></span>Game()</h2>
@@ -305,7 +310,7 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Aplica les configuracions específiquès segons el mode de joc seleccionat. </p>
+<p>Aplica les configuracions específiques segons el mode de joc seleccionat. </p>
 
 <p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00118">118</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
@@ -343,10 +348,10 @@ Atributos estáticos privados</h2></td></tr>
 <p>Centra un text al mitg de la pantalla. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">window</td><td>Finestra on anira el text </td></tr>
-    <tr><td class="paramname">center</td><td>Mitg de la finestra </td></tr>
+    <tr><td class="paramname">window</td><td>Finestra on anirà el text </td></tr>
+    <tr><td class="paramname">center</td><td>Punt central de la finestra </td></tr>
     <tr><td class="paramname">text</td><td>Text a pintar </td></tr>
-    <tr><td class="paramname">y_offset</td><td>Distancia del mitg de la pantalla (útil per més de un text) </td></tr>
+    <tr><td class="paramname">y_offset</td><td>Desplaçament vertical respecte al centre (per multiples textos) </td></tr>
   </table>
   </dd>
 </dl>
@@ -370,7 +375,7 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Comprova si el mario ha aconseguit prou punts per activar benediccions. </p>
+<p>Comprova si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> ha aconseguit prou punts per activar benediccions. </p>
 
 <p class="definition">Definición en la línea <a class="el" href="game_8cc_source.html#l00211">211</a> del archivo <a class="el" href="game_8cc_source.html">game.cc</a>.</p>
 <div class="fragment"></div><!-- fragment -->
@@ -391,7 +396,7 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Comprova si el mario ha caigut fora de la pantalla. </p>
+<p>Comprova si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> ha caigut fora de la pantalla. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
@@ -422,7 +427,7 @@ Atributos estáticos privados</h2></td></tr>
 <p>Crea un mapa diferent amb plataformes randomitzades per cada reinici del joc. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>Nombre de elements a pantalla a randomitzar </td></tr>
+    <tr><td class="paramname">count</td><td>Nombre d'elements a pantalla a randomitzar </td></tr>
   </table>
   </dd>
 </dl>
@@ -446,10 +451,10 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Comprova si mario interactua amb el rellotge i l’activa. </p>
+<p>Comprova si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> interactua amb el rellotge i l’activa. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">marioRect</td><td>Rectangle del mario </td></tr>
+    <tr><td class="paramname">marioRect</td><td>Rectangle de <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -481,10 +486,10 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna un bool segons si el joc ha acabat. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>True si el jugador ha sortit del joc, fals en cas contrari </dd></dl>
+<p>Retorna true si el joc ha acabat. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>bool </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00104">104</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00110">110</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -511,10 +516,10 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna un bool segons si el joc esta o no pausat. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>True or False segons l'estat del joc </dd></dl>
+<p>Retorna true si el joc està pausat. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>bool </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00096">96</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00102">102</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -882,7 +887,7 @@ Atributos estáticos privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00128">128</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00134">134</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -971,7 +976,7 @@ Atributos estáticos privados</h2></td></tr>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
-    <tr><td class="paramname">marioRect</td><td>Rectangle del mario </td></tr>
+    <tr><td class="paramname">marioRect</td><td>Rectangle de <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1026,7 +1031,7 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Actualitza l’estat normal del joc (sense rellotge) </p>
+<p>Actualitza l’estat normal del joc (sense rellotge). </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td>Finestra del joc </td></tr>
@@ -1062,7 +1067,7 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Actualitza tots els objectes del joc (mario, creus, rellotge, etc.) </p>
+<p>Actualitza tots els objectes del joc (<a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a>, creus, rellotge, etc.) </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td>Finestra principal del joc </td></tr>
@@ -1131,7 +1136,7 @@ Atributos estáticos privados</h2></td></tr>
 
 <p>Actualitza el temporitzador del joc si hi ha límit de temps. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00136">136</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00142">142</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -1158,10 +1163,10 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna un bool segons si el mario ha mort. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>True si el mario ha caigut o ha estat colpejat, fals en cas contrari </dd></dl>
+<p>Retorna true si <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> ha mort (caigut o colpejat). </p>
+<dl class="section return"><dt>Devuelve</dt><dd>bool </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00112">112</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00118">118</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -1188,16 +1193,16 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna un bool segons si hem guanyat el joc. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>True si el jugador ha guanyat, fals en cas contrari </dd></dl>
+<p>Retorna true si el jugador ha guanyat. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>bool </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00120">120</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00126">126</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
-<a id="aaba05b1a95dbabf977bf1d51cb67ce55" name="aaba05b1a95dbabf977bf1d51cb67ce55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaba05b1a95dbabf977bf1d51cb67ce55">&#9670;&#160;</a></span>ascended_</h2>
+<a id="a13497efadc50c3a335fbb39f57e01690" name="a13497efadc50c3a335fbb39f57e01690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13497efadc50c3a335fbb39f57e01690">&#9670;&#160;</a></span>ascended_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1206,7 +1211,7 @@ Atributos estáticos privados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pro2::Ascended Game::ascended_</td>
+          <td class="memname"><a class="el" href="classAscended.html">Ascended</a> Game::ascended_</td>
         </tr>
       </table>
   </td>
@@ -1215,8 +1220,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Objecte de benedicció activada </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00034">34</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00041">41</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1239,8 +1245,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Alçada de les creus </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00047">47</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00053">53</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1263,8 +1270,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Llista de creus per recollir </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00031">31</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00038">38</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1287,8 +1295,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Nombre de creus per mode fàcil </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00049">49</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00055">55</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1311,8 +1320,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Dimoni enemic </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00033">33</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00040">40</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1335,8 +1345,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><a class="el" href="classFinder.html">Finder</a> per a creus </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00038">38</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00044">44</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1359,8 +1370,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><a class="el" href="classFinder.html">Finder</a> per a plataformes </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00037">37</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00043">43</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1383,8 +1395,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Mode de joc actual (ex: 1 = Easy) </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00051">51</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00057">57</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1407,8 +1420,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Estat actual del joc (menus, jugant, etc.) </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00045">45</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00051">51</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1431,8 +1445,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Indica si el joc té límit de temps </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00042">42</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00048">48</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1455,8 +1470,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Indica si el mode esquiva està activat </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00043">43</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00049">49</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1479,8 +1495,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Últims punts per activar benedicció </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00048">48</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00054">54</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1503,8 +1520,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Personatge principal <a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00027">27</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00034">34</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1527,8 +1545,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Estat de pausa del joc </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00040">40</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00046">46</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1551,8 +1570,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Llista de plataformes al mapa </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00028">28</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00035">35</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1575,8 +1595,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Objecte rellotge de sorra </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00032">32</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00039">39</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1599,8 +1620,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><a class="el" href="platform_8cc.html#a1cf275c5d221949062bba6a49b3daa13">Color</a> blau cel per pintar fons </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00254">254</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00260">260</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1623,8 +1645,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><a class="el" href="classMario.html" title="Representa el personatge principal amb moviment, física i estadístiques.">Mario</a> estàtic per proves o estat </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00030">30</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00037">37</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1647,8 +1670,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Plataforma estàtica per proves o estat </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00029">29</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00036">36</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>
@@ -1671,8 +1695,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Temporitzador per mode speedrun </p>
 
-<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00050">50</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="game_8hh_source.html#l00056">56</a> del archivo <a class="el" href="game_8hh_source.html">game.hh</a>.</p>
 
 </div>
 </div>

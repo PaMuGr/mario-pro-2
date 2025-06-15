@@ -10,8 +10,9 @@ var searchData=
   ['fire_5fsprite_5f_7',['fire_sprite_',['../classFireball.html#abbc09dd9a79996a2134a8da32614371e',1,'Fireball']]],
   ['fireball_5fsprite_5f_8',['fireball_sprite_',['../classFireball.html#aa7d742cb8e1a1a8750438b8fe78eb42a',1,'Fireball']]],
   ['fireballs_5f_9',['fireballs_',['../classDemon.html#a053f16fc9239054238d9e250874dbec5',1,'Demon']]],
-  ['fps_10',['FPS',['../main_8cc.html#ac5090a6568797128b0a5545228bb8b75',1,'main.cc']]],
-  ['fps_5f_11',['fps_',['../classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b',1,'pro2::Window']]],
-  ['frame_5fcount_5f_12',['frame_count_',['../classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e',1,'pro2::Window']]],
-  ['frame_5fcounter_5f_13',['frame_counter_',['../classSandglass.html#a2ebce7bc7e36cb702eb91a79d5c8a415',1,'Sandglass']]]
+  ['fires_5fper_5fsecond_5f_10',['fires_per_second_',['../classDemon.html#ae23a7d393c668c7e9b6a060da00afdf0',1,'Demon']]],
+  ['fps_11',['FPS',['../main_8cc.html#ac5090a6568797128b0a5545228bb8b75',1,'main.cc']]],
+  ['fps_5f_12',['fps_',['../classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b',1,'pro2::Window']]],
+  ['frame_5fcount_5f_13',['frame_count_',['../classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e',1,'pro2::Window']]],
+  ['frame_5fcounter_5f_14',['frame_counter_',['../classSandglass.html#a2ebce7bc7e36cb702eb91a79d5c8a415',1,'Sandglass']]]
 ];

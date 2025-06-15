@@ -1,5 +1,8 @@
 /** @file cross.hh
- * @brief Especificació de les Funcions del Cross
+ *  @brief Especificació de la classe Cross.
+ *
+ *  Aquesta classe representa una creu col·leccionable amb moviment,
+ *  física bàsica i representació gràfica dins el joc.
  */
 
 #ifndef CROSS_HH
@@ -16,6 +19,13 @@
 #include <list>
 #endif
 
+/**
+ * @class Cross
+ * @brief Classe que representa una creu amb moviment i interacció física.
+ *
+ * Les creus poden moure’s, detectar si toquen terra (grounded), i ser dibuixades
+ * tant de forma individual com agrupada. També poden generar una hitbox per a col·lisions.
+ */
 class Cross {
  private:
     pro2::Pt pos_,ini_pos_;

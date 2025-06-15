@@ -39,9 +39,9 @@ static const int \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}
 \doxysubsection{Descripción detallada}
 \subsubsection*{template$<$typename T$>$\newline
 class Finder$<$ T $>$}
+Implementa una divisió del món en quadricular per organitzar objectes en un grid de cel·les fixes (80x80). Permet afegir, treure, actualitzar i fer consultes eficients (O(log n)) sobre objectes que tenen un mètode get\+\_\+rect() que retorna un rectangle. 
 
-
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00014}{14}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 
@@ -55,10 +55,12 @@ template$<$typename T$>$ \\
 
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00051}{51}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00058}{58}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \{\}}
+
 \end{DoxyCode}
 
 
@@ -81,10 +83,23 @@ Afegeix a quads\+Of\+Object les quadricules on es troba t, també afegeix a obje
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00060}{60}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00067}{67}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{pro2::Rect}}\ \mbox{\hyperlink{classFinder}{rect}}\ =\ \mbox{\hyperlink{classFinder}{t}}-\/>get\_rect();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{std::set<pro2::Pt>}}\ \mbox{\hyperlink{classFinder}{quadricules}}\ =\ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{setPts}}(\mbox{\hyperlink{classFinder}{rect}});}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}[\mbox{\hyperlink{classFinder}{t}}]\ =\ \mbox{\hyperlink{classFinder}{quadricules}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classFinder}{it}}\ =\ \mbox{\hyperlink{classFinder}{quadricules}}.begin();}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{classFinder}{it}}\ !=\ \mbox{\hyperlink{classFinder}{quadricules}}.end())\{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*\mbox{\hyperlink{classFinder}{it}}].insert(\mbox{\hyperlink{classFinder}{t}});\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{it}}++;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classFinder_a7dc2d4339d1982a26caf9373f34e3084}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!query@{query}}
 \index{query@{query}!Finder$<$ T $>$@{Finder$<$ T $>$}}
@@ -111,10 +126,33 @@ Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00123}{123}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00130}{130}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{std::set<const\ T*>}}\ \mbox{\hyperlink{classFinder}{result}};}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{std::set<pro2::Pt>}}\ \mbox{\hyperlink{classFinder}{quadricules}}\ =\ \mbox{\hyperlink{classFinder_a505460974de6b20a36a98b4062d0ea12}{setPts}}(\mbox{\hyperlink{classFinder}{rect}});}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classFinder}{it}}\ =\ \mbox{\hyperlink{classFinder}{quadricules}}.begin();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{classFinder}{it}}\ !=\ \mbox{\hyperlink{classFinder}{quadricules}}.end())\{}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classFinder}{it2}}\ =\ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.find(*\mbox{\hyperlink{classFinder}{it}});}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFinder}{it2}}\ !=\ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.end())\{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{std::set<const\ T*>}}\ \mbox{\hyperlink{classFinder}{setPunters}}\ =\ \mbox{\hyperlink{classFinder}{it2}}-\/>second;}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classFinder}{it3}}\ =\ \mbox{\hyperlink{classFinder}{setPunters}}.begin();\ }
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{classFinder}{it3}}\ !=\ \mbox{\hyperlink{classFinder}{setPunters}}.end())\{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFinder}{interseccionen}}((*it3)\ -\/>\ \mbox{\hyperlink{classFinder}{get\_rect}}(),\ \mbox{\hyperlink{classFinder}{rect}}))\{}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{result}}.insert(*\mbox{\hyperlink{classFinder}{it3}});}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{it3}}++;}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{it}}++;}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFinder}{result}};}
+\DoxyCodeLine{00151\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!remove@{remove}}
 \index{remove@{remove}!Finder$<$ T $>$@{Finder$<$ T $>$}}
@@ -134,10 +172,28 @@ Treu de quads\+Of\+Object les quadricules on es trobava t, també treu de object
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00080}{80}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00087}{87}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classFinder}{it}}\ =\ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.find(\mbox{\hyperlink{classFinder}{t}});}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFinder}{it}}\ !=\ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.end())\{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{std::set<pro2::Pt>}}\ \mbox{\hyperlink{classFinder}{quadricules}}\ =\ \mbox{\hyperlink{classFinder}{it}}-\/>second;}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classFinder}{it2}}\ =\ \mbox{\hyperlink{classFinder}{quadricules}}.begin();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{classFinder}{it2}}\ !=\ \mbox{\hyperlink{classFinder}{quadricules}}.end())\{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*\mbox{\hyperlink{classFinder}{it2}}].erase(\mbox{\hyperlink{classFinder}{t}});}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}[*\mbox{\hyperlink{classFinder}{it2}}].\mbox{\hyperlink{classFinder}{empty}}())\{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a24e47df48868626679624c0f90f53973}{objectsTopLeft}}.erase(*\mbox{\hyperlink{classFinder}{it2}});}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{it2}}++;}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a3b60c176851782e2780dd6c91a94e4bd}{quadsOfObject}}.erase(\mbox{\hyperlink{classFinder}{it}});}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00103\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classFinder_a505460974de6b20a36a98b4062d0ea12}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!setPts@{setPts}}
 \index{setPts@{setPts}!Finder$<$ T $>$@{Finder$<$ T $>$}}
@@ -160,10 +216,27 @@ Un set de Pt\textquotesingle{}s amb el topleft de les quadricules on està el ob
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00033}{33}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{std::set<pro2::Pt>}}\ \mbox{\hyperlink{classFinder}{result}};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Si\ tenim\ objecte\ de\ topleft\ (524,17)\ llavors\ les\ quadricules\ van\ del\ topleft\ minim\ (500,0)\ al\ bottom\ right\ maxim,\ iterem\ com\ una\ matriu}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFinder}{left}}\ =\ (\mbox{\hyperlink{classFinder}{rObj}}.left\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFinder}{right}}\ =\ (\mbox{\hyperlink{classFinder}{rObj}}.right\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFinder}{top}}\ =\ (\mbox{\hyperlink{classFinder}{rObj}}.top\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFinder}{bottom}}\ =\ (\mbox{\hyperlink{classFinder}{rObj}}.bottom\ /\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ *\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFinder}{x}}\ =\ \mbox{\hyperlink{classFinder}{left}};\ \mbox{\hyperlink{classFinder}{x}}\ <=\ \mbox{\hyperlink{classFinder}{right}};\ \mbox{\hyperlink{classFinder}{x}}\ +=\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFinder}{y}}\ =\ \mbox{\hyperlink{classFinder}{top}};\ \mbox{\hyperlink{classFinder}{y}}\ <=\ \mbox{\hyperlink{classFinder}{bottom}};\ \mbox{\hyperlink{classFinder}{y}}\ +=\ \mbox{\hyperlink{classFinder_a75ecebb34d5a39cd2484f5a38457d820}{QUADSIZE}})\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Tots\ els\ top\ lefts\ dels\ quads\ on\ esta\ r\ (rect\ del\ objecte)}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder}{result}}.insert(\{\mbox{\hyperlink{classFinder}{x}},\ \mbox{\hyperlink{classFinder}{y}}\});}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFinder}{result}};}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classFinder_a073967ec8a3f5189c1922aeaf161098c}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!update@{update}}
 \index{update@{update}!Finder$<$ T $>$@{Finder$<$ T $>$}}
@@ -183,10 +256,15 @@ Treiem l\textquotesingle{}antic i fiquem el nou ja mogut.
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00104}{104}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00111}{111}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a8a9d5bf342c5a13048d7853b52557f7d}{remove}}(\mbox{\hyperlink{classFinder}{t}});}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFinder_a31c1952d79927548ce8fbde267628db3}{add}}(\mbox{\hyperlink{classFinder}{t}});}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+
 \end{DoxyCode}
 
 
@@ -200,7 +278,7 @@ std\+::map$<$\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}, std\+::set$<$con
 
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 \Hypertarget{classFinder_a75ecebb34d5a39cd2484f5a38457d820}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!QUADSIZE@{QUADSIZE}}
 \index{QUADSIZE@{QUADSIZE}!Finder$<$ T $>$@{Finder$<$ T $>$}}
@@ -211,7 +289,7 @@ const int \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::\+QUADSIZE = 80\hsp
 
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00030}{30}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 \Hypertarget{classFinder_a3b60c176851782e2780dd6c91a94e4bd}\index{Finder$<$ T $>$@{Finder$<$ T $>$}!quadsOfObject@{quadsOfObject}}
 \index{quadsOfObject@{quadsOfObject}!Finder$<$ T $>$@{Finder$<$ T $>$}}
@@ -222,7 +300,7 @@ std\+::map$<$const T\texorpdfstring{$\ast$}{*}, std\+::set$<$\mbox{\hyperlink{st
 
 
 
-Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00018}{18}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
+Definición en la línea \mbox{\hyperlink{finder_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{finder_8hh_source}{finder.\+hh}}.
 
 
 

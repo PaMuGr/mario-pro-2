@@ -2,7 +2,7 @@
 
 # Juego Platformer 2D
 
-Un juego 2D donde juegas como Jesús, coge cruces, evita morir por caída o por las bolas de fuego demoniacas. El juego incluye poderes como el de parar el tiempo con el RELOJ DE ARENA y un escudo activando el BLESSER.
+Un juego 2D donde juegas como Jesús, coje cruces, evita morir por caída o por las bolas de fuego demoniacas. El juego incluye poderes como el de parar el tiempo con el RELOJ DE ARENA y un escudo activando el BLESSER.
 
 ## Controls
 
@@ -30,6 +30,16 @@ Un juego 2D donde juegas como Jesús, coge cruces, evita morir por caída o por 
 - `platform.hh` / `platform.cc`: Las plataformas y sus funciones.
 - `stack.hh`: Stack de punteros
 
+## Game Modes
+
+Al iniciar el juego se puede escojer entre 5 modos, cada uno con su gracia i dificultad
+
+- **FACIL (Agafa 10 crosses)**
+- **INTERMEDI (Agafa 20 crosses)**
+- **DIFICIL (Agafa 40 crosses)**
+- **SPEEDRUN (Amb temps)**
+- **DODGING MODE (Sense temps)**
+
 ## Build Instructions
 
 1. Recuerda tener un compilador de C++ y la libreria SDL2.
@@ -41,5 +51,6 @@ Un juego 2D donde juegas como Jesús, coge cruces, evita morir por caída o por 
 - El Sandglass tiene 10 segundos de cooldown
 - Las bolas de fuego pueden ser aturadas o bloqueadas usando poderes.
 - Si consigues la mitad de la puntuación para matar el demon este se enfadara y ira más rápido.
+- Si tienes algun blessing usalo o guardalo para tener el maximo cuando el demonio se enfade!
 
 Creado por Pau Muras Grané

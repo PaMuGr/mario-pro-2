@@ -95,6 +95,9 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Implementa una llista doblement enllaçada genèrica.  
+ <a href="#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="list_8hh_source.html">list.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -180,8 +183,12 @@ Amigas</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class List&lt; T &gt;</div>
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00009">9</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+class List&lt; T &gt;</div><p>Implementa una llista doblement enllaçada genèrica. </p>
+<p>Aquesta classe plantilla permet emmagatzemar una col·lecció d'elements de tipus T en una estructura de llista doblement enllaçada. Proporciona operacions estàndard com inserció, esborrat, recorregut amb iteradors, accés a la mida i comprovació de buit.</p>
+<p>La llista té dos nodes sentinella (iteminf i itemsup) que simplifiquen la gestió de les insercions i eliminacions als extrems.</p>
+<p>Disposa d'iteradors mutables i constants per permetre la manipulació i la lectura dels elements de la llista. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00023">23</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a5c5e27671b21b3815d4e25b953c69454" name="a5c5e27671b21b3815d4e25b953c69454"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c5e27671b21b3815d4e25b953c69454">&#9670;&#160;</a></span>List() <span class="overload">[1/2]</span></h2>
@@ -208,7 +215,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00099">99</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00113">113</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -237,7 +244,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00108">108</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00122">122</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -266,7 +273,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00118">118</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00132">132</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -296,7 +303,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00307">307</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00321">321</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -325,7 +332,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00465">465</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00479">479</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -354,7 +361,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00477">477</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00491">491</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -383,7 +390,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00087">87</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00101">101</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -412,7 +419,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00150">150</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00164">164</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -441,7 +448,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00319">319</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00333">333</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -470,7 +477,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00504">504</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00518">518</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -499,7 +506,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00346">346</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00360">360</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -528,7 +535,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00059">59</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00073">73</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -561,7 +568,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00487">487</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00501">501</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -594,7 +601,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00329">329</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00343">343</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -627,7 +634,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00048">48</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00062">62</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -660,7 +667,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00032">32</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00046">46</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -689,7 +696,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00127">127</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00141">141</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -718,7 +725,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00173">173</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00187">187</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -747,7 +754,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00184">184</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00198">198</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -776,7 +783,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00159">159</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00173">173</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -805,7 +812,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00166">166</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00180">180</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -834,7 +841,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00070">70</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00084">84</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -863,7 +870,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00079">79</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00093">93</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -892,7 +899,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00142">142</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00156">156</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 <div class="fragment"></div><!-- fragment -->
 </div>
 </div>
@@ -986,7 +993,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00027">27</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00041">41</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1019,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00028">28</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00042">42</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1045,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00028">28</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="list_8hh_source.html#l00042">42</a> del archivo <a class="el" href="list_8hh_source.html">list.hh</a>.</p>
 
 </div>
 </div>

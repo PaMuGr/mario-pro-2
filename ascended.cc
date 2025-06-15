@@ -60,7 +60,7 @@ void Ascended::update(Pt mario_pos) {
 pro2::Rect Ascended::get_rect() const {
     int width = ascended_sprite_[0].size();
     int height = ascended_sprite_.size();
-    return Rect{
+    return pro2::Rect{
         pos_.x - 9,
         pos_.y - 9,
         pos_.x + width - 9,

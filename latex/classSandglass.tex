@@ -2,80 +2,87 @@
 \hypertarget{classSandglass}{}\label{classSandglass}\index{Sandglass@{Sandglass}}
 
 
+Representa un rellotge de sorra que el jugador pot recollir i activar.  
+
+
+
+
 {\ttfamily \#include $<$sandglass.\+hh$>$}
 
 \doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor bàsic amb posició inicial. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSandglass_ace0b02043cf0d62ca8f66f5528724d6e}{Sandglass}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} speed, int dist)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor complet amb posició, velocitat i distància. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSandglass_aa5e5db525aa2aa1b376470a20af08d35}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
-\item 
+\begin{DoxyCompactList}\small\item\em Dibuixa el rellotge a la finestra indicada. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}} () const
-\begin{DoxyCompactList}\small\item\em Retorna la posicio a la que es troba la \doxylink{classSandglass}{Sandglass}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna la posició actual del rellotge. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSandglass_ac05e55c975cb51646fc96ab9ac738e92}{set\+\_\+x}} (int x)
-\begin{DoxyCompactList}\small\item\em Canvia la posició horitzontal per x. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Canvia la posició horitzontal del rellotge. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSandglass_a46ba3d11c1711d6fb5f598775e57c772}{set\+\_\+y}} (int \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})
-\begin{DoxyCompactList}\small\item\em Canvia la posició vertical per y. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Canvia la posició vertical del rellotge. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classSandglass_a774f9e157ab3b93c9ef9b503b0ca5bf7}{get\+\_\+rect}} () const
-\begin{DoxyCompactList}\small\item\em Crea una hitbox utilitzant height\+\_\+y. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retorna la hitbox actual del rellotge com un rectangle. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSandglass_a143ba242353a941463d6725f2ac53693}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
-\begin{DoxyCompactList}\small\item\em Actualitza el moviment de la creu. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Actualitza l\textquotesingle{}estat i moviment del rellotge. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSandglass_a6606aee0a03371b629d118b11c425e6e}{set\+\_\+bright}} (bool bright)
-\begin{DoxyCompactList}\small\item\em Actualitza quin sprite utilitzem a un més brillant. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Defineix si el sprite del rellotge ha de ser més brillant. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSandglass_a9abfad08730527bb3e928e88c44ec41d}{activate}} (int total\+\_\+duration, int effect\+\_\+frames)
-\begin{DoxyCompactList}\small\item\em Activa l\textquotesingle{}efecte del \doxylink{classSandglass}{Sandglass} (inicia el temps actiu) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Activa l\textquotesingle{}efecte del rellotge, inicialitzant durada i cooldown. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSandglass_a581a7852da72ff4615edcc8b8673a728}{is\+\_\+in\+\_\+cooldown}} () const
-\begin{DoxyCompactList}\small\item\em Retorna si està en fase de cooldown (esperant reapareixer) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Indica si el rellotge està en període de cooldown (esperant reapareixer). \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSandglass_a235a124e0078fd63d52d857bd0678dd7}{is\+\_\+effect\+\_\+active}} () const
-\begin{DoxyCompactList}\small\item\em Retorna si l\textquotesingle{}efecte està actiu. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Indica si l\textquotesingle{}efecte del rellotge està actiu. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classSandglass_ad11356cc66a8fba457da2cb220ad8ca6}{cooldown}} () const
-\begin{DoxyCompactList}\small\item\em Retorna el cooldown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retorna la durada restant del cooldown o de l\textquotesingle{}efecte. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Métodos privados}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classSandglass_a700c40d41a0ed8c0e3ac31f777462028}{apply\+\_\+physics\+\_\+}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Aplica la física al rellotge (moviment, gravetat, etc.) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Posició actual del rellotge. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{ini\+\_\+pos\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Posició inicial del rellotge. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{speed\+\_\+}} = \{0, 0\}
-\item 
+\begin{DoxyCompactList}\small\item\em Velocitat del rellotge (si es mou) \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{dist\+\_\+}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em Distància recorreguda (o un altre propòsit, segons implementació) \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}{frame\+\_\+counter\+\_\+}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em Comptador de frames per animació \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\+\_\+bright\+\_\+}} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Flag per a canviar a sprite més brillant. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classSandglass_ad42d5473d544c32852d1569c40284795}{animation\+\_\+speed\+\_\+}} = 20
-\item 
+\begin{DoxyCompactList}\small\item\em Velocitat de l\textquotesingle{}animació (frames) \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\+\_\+active\+\_\+}} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Indica si l\textquotesingle{}efecte està actiu. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\+\_\+in\+\_\+cooldown\+\_\+}} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Indica si està en període de cooldown (esperant reapareixer) \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\+\_\+duration\+\_\+}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em Durada restant de l\textquotesingle{}efecte actiu (frames) \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\+\_\+delay\+\_\+}} = 0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Temps restant abans de reapareixer (frames) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos estáticos privados}
 \begin{DoxyCompactItemize}
 \item 
 static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classSandglass_a8d7592d47ba54e28ed294e1a3ece2fa6}{sandglass\+\_\+sprite\+\_\+normal\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em Sprite normal. \end{DoxyCompactList}\item 
 static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classSandglass_a1a21cc4667f7932a66c8774a60239eaf}{sandglass\+\_\+sprite\+\_\+brighter\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sprite brillant. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
+Representa un rellotge de sorra que el jugador pot recollir i activar. 
 
+La classe gestiona la posició, moviment, animació i estat d\textquotesingle{}activació del rellotge. També controla els períodes d\textquotesingle{}activació i cooldown (respawn). 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00018}{18}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 
@@ -88,10 +95,21 @@ Sandglass\+::\+Sandglass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00039}{39}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Constructor bàsic amb posició inicial. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & Posició inicial del rellotge \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00053}{53}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00053\ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ \{\}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_ace0b02043cf0d62ca8f66f5528724d6e}\index{Sandglass@{Sandglass}!Sandglass@{Sandglass}}
 \index{Sandglass@{Sandglass}!Sandglass@{Sandglass}}
@@ -101,10 +119,25 @@ Sandglass\+::\+Sandglass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Constructor complet amb posició, velocitat i distància. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & Posició inicial \\
+\hline
+{\em speed} & Velocitat inicial \\
+\hline
+{\em dist} & Distància (ús específic) \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00061}{61}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}),\ \mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{ini\_pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}),\ \mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{speed\_}}(speed),\ \mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{dist\_}}(dist)\ \{\}}
+
 \end{DoxyCode}
 
 
@@ -117,20 +150,38 @@ void Sandglass\+::activate (\begin{DoxyParamCaption}\item[{int}]{total\+\_\+dura
 
 
 
-Activa l\textquotesingle{}efecte del \doxylink{classSandglass}{Sandglass} (inicia el temps actiu) 
+Activa l\textquotesingle{}efecte del rellotge, inicialitzant durada i cooldown. 
 
 
+\begin{DoxyParams}{Parámetros}
+{\em total\+\_\+duration} & Durada total del rellotge (activació + cooldown) \\
+\hline
+{\em effect\+\_\+frames} & Durada de l\textquotesingle{}efecte actiu (frames) \\
+\hline
+\end{DoxyParams}
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00097}{97}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00117}{117}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}}\ =\ effect\_frames;}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}\ =\ total\_duration\ -\/\ effect\_frames;}
+\DoxyCodeLine{00122\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_a700c40d41a0ed8c0e3ac31f777462028}\index{Sandglass@{Sandglass}!apply\_physics\_@{apply\_physics\_}}
 \index{apply\_physics\_@{apply\_physics\_}!Sandglass@{Sandglass}}
 \doxysubsubsection{\texorpdfstring{apply\_physics\_()}{apply\_physics\_()}}
 {\footnotesize\ttfamily \label{classSandglass_a700c40d41a0ed8c0e3ac31f777462028} 
 void Sandglass\+::apply\+\_\+physics\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aplica la física al rellotge (moviment, gravetat, etc.) 
 
 \Hypertarget{classSandglass_ad11356cc66a8fba457da2cb220ad8ca6}\index{Sandglass@{Sandglass}!cooldown@{cooldown}}
 \index{cooldown@{cooldown}!Sandglass@{Sandglass}}
@@ -140,14 +191,19 @@ int Sandglass\+::cooldown (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) c
 
 
 
-Retorna el cooldown. 
+Retorna la durada restant del cooldown o de l\textquotesingle{}efecte. 
+
+\begin{DoxyReturn}{Devuelve}
+Nombre de frames restants 
+\end{DoxyReturn}
 
 
-
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00117}{117}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00140}{140}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00140\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}};\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_a774f9e157ab3b93c9ef9b503b0ca5bf7}\index{Sandglass@{Sandglass}!get\_rect@{get\_rect}}
 \index{get\_rect@{get\_rect}!Sandglass@{Sandglass}}
@@ -157,15 +213,10 @@ Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00117}{117}} del
 
 
 
-Crea una hitbox utilitzant height\+\_\+y. 
+Retorna la hitbox actual del rellotge com un rectangle. 
 
-
-\begin{DoxyParams}{Parámetros}
-{\em height\+\_\+y} & altura que te al moment la \doxylink{classSandglass}{Sandglass}\\
-\hline
-\end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-Un Rectangle amb la hitbox de \doxylink{classSandglass}{Sandglass} 
+Rect amb la posició i mides del rellotge 
 \end{DoxyReturn}
 
 
@@ -173,6 +224,21 @@ Definición en la línea \mbox{\hyperlink{sandglass_8cc_source_l00071}{71}} del 
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ width\ =\ 11;\ \ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ height\ =\ 17;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ hitbox\_width\ =\ 9;\ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ hitbox\_height\ =\ 15;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{return}\ pro2::Rect(\{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.x\ +\ (width\ -\/\ hitbox\_width)\ /\ 2,\ \ \ \ \ \ \textcolor{comment}{//\ left}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.y\ +\ (height\ -\/\ hitbox\_height)\ /\ 2,\ \ \ \ \textcolor{comment}{//\ top}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.x\ +\ (width\ +\ hitbox\_width)\ /\ 2,\ \ \ \ \ \ \textcolor{comment}{//\ right}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.y\ +\ (height\ +\ hitbox\_height)\ /\ 2\ \ \ \ \ \textcolor{comment}{//\ bottom}}
+\DoxyCodeLine{00083\ \ \ \ \ \});}
+\DoxyCodeLine{00084\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_a235a124e0078fd63d52d857bd0678dd7}\index{Sandglass@{Sandglass}!is\_effect\_active@{is\_effect\_active}}
 \index{is\_effect\_active@{is\_effect\_active}!Sandglass@{Sandglass}}
@@ -182,14 +248,19 @@ bool Sandglass\+::is\+\_\+effect\+\_\+active (\begin{DoxyParamCaption}{}{}\end{D
 
 
 
-Retorna si l\textquotesingle{}efecte està actiu. 
+Indica si l\textquotesingle{}efecte del rellotge està actiu. 
+
+\begin{DoxyReturn}{Devuelve}
+true si està actiu 
+\end{DoxyReturn}
 
 
-
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00112}{112}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00134}{134}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00134\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}};\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_a581a7852da72ff4615edcc8b8673a728}\index{Sandglass@{Sandglass}!is\_in\_cooldown@{is\_in\_cooldown}}
 \index{is\_in\_cooldown@{is\_in\_cooldown}!Sandglass@{Sandglass}}
@@ -199,14 +270,19 @@ bool Sandglass\+::is\+\_\+in\+\_\+cooldown (\begin{DoxyParamCaption}{}{}\end{Dox
 
 
 
-Retorna si està en fase de cooldown (esperant reapareixer) 
+Indica si el rellotge està en període de cooldown (esperant reapareixer). 
+
+\begin{DoxyReturn}{Devuelve}
+true si està en cooldown 
+\end{DoxyReturn}
 
 
-
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00107}{107}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00128}{128}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00128\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}};\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_aa5e5db525aa2aa1b376470a20af08d35}\index{Sandglass@{Sandglass}!paint@{paint}}
 \index{paint@{paint}!Sandglass@{Sandglass}}
@@ -216,10 +292,26 @@ void Sandglass\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpr
 
 
 
+Dibuixa el rellotge a la finestra indicada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra on pintar el rellotge \\
+\hline
+\end{DoxyParams}
+
+
 Definición en la línea \mbox{\hyperlink{sandglass_8cc_source_l00064}{64}} del archivo \mbox{\hyperlink{sandglass_8cc_source}{sandglass.\+cc}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{const}\ Pt\ top\_left\ =\ \{\mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.x,\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.y\};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}})\{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacepro2_a80f038548a7ea3d520759a04437e096a}{paint\_sprite}}(window,\ top\_left,\ \mbox{\hyperlink{classSandglass_a1a21cc4667f7932a66c8774a60239eaf}{sandglass\_sprite\_brighter\_}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00068\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \mbox{\hyperlink{namespacepro2_a80f038548a7ea3d520759a04437e096a}{paint\_sprite}}(window,\ top\_left,\ \mbox{\hyperlink{classSandglass_a8d7592d47ba54e28ed294e1a3ece2fa6}{sandglass\_sprite\_normal\_}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00069\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_a373e17ed8567215ac7e60928a8c43567}\index{Sandglass@{Sandglass}!pos@{pos}}
 \index{pos@{pos}!Sandglass@{Sandglass}}
@@ -229,17 +321,21 @@ Definición en la línea \mbox{\hyperlink{sandglass_8cc_source_l00064}{64}} del 
 
 
 
-Retorna la posicio a la que es troba la \doxylink{classSandglass}{Sandglass}. 
+Retorna la posició actual del rellotge. 
 
 \begin{DoxyReturn}{Devuelve}
-Un Pt amb la posició x i y de la \doxylink{classSandglass}{Sandglass} 
+Posició (Pt) del rellotge 
 \end{DoxyReturn}
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00049}{49}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00074}{74}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}};}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_a6606aee0a03371b629d118b11c425e6e}\index{Sandglass@{Sandglass}!set\_bright@{set\_bright}}
 \index{set\_bright@{set\_bright}!Sandglass@{Sandglass}}
@@ -249,19 +345,21 @@ void Sandglass\+::set\+\_\+bright (\begin{DoxyParamCaption}\item[{bool}]{bright}
 
 
 
-Actualitza quin sprite utilitzem a un més brillant. 
+Defineix si el sprite del rellotge ha de ser més brillant. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em bright} & si == true bright \\
+{\em bright} & true per activar la brillantor, false per normal \\
 \hline
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00092}{92}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00110}{110}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \{\ \mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}}\ =\ bright;\ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_ac05e55c975cb51646fc96ab9ac738e92}\index{Sandglass@{Sandglass}!set\_x@{set\_x}}
 \index{set\_x@{set\_x}!Sandglass@{Sandglass}}
@@ -271,19 +369,23 @@ void Sandglass\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{x}{}\end{Doxy
 
 
 
-Canvia la posició horitzontal per x. 
+Canvia la posició horitzontal del rellotge. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em x} & Posició a intercanviar \\
+{\em x} & Nova coordenada X \\
 \hline
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00058}{58}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00082}{82}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.x\ =\ x;}
+\DoxyCodeLine{00084\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_a46ba3d11c1711d6fb5f598775e57c772}\index{Sandglass@{Sandglass}!set\_y@{set\_y}}
 \index{set\_y@{set\_y}!Sandglass@{Sandglass}}
@@ -293,19 +395,23 @@ void Sandglass\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{y}{}\end{Doxy
 
 
 
-Canvia la posició vertical per y. 
+Canvia la posició vertical del rellotge. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em y} & Posició a intercanviar \\
+{\em y} & Nova coordenada Y \\
 \hline
 \end{DoxyParams}
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00067}{67}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00090}{90}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.y\ =\ \mbox{\hyperlink{ascended_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}};}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+
 \end{DoxyCode}
 \Hypertarget{classSandglass_a143ba242353a941463d6725f2ac53693}\index{Sandglass@{Sandglass}!update@{update}}
 \index{update@{update}!Sandglass@{Sandglass}}
@@ -315,11 +421,11 @@ void Sandglass\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classp
 
 
 
-Actualitza el moviment de la creu. 
+Actualitza l\textquotesingle{}estat i moviment del rellotge. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em window} & finestra on ho dibuixem \\
+{\em window} & Finestra on es dibuixa (pot ser útil per col·lisions o altres) \\
 \hline
 \end{DoxyParams}
 
@@ -328,6 +434,55 @@ Definición en la línea \mbox{\hyperlink{sandglass_8cc_source_l00086}{86}} del 
 
 
 \begin{DoxyCode}{0}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}{frame\_counter\_}}++;}
+\DoxyCodeLine{00088\ \ \ \ \ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}{frame\_counter\_}}\ \%\ \mbox{\hyperlink{classSandglass_ad42d5473d544c32852d1569c40284795}{animation\_speed\_}}\ ==\ 0)\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}}\ =\ !\mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}};}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}})\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}}-\/-\/;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}}\ <=\ 0)\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}\ =\ 240;\ \ \textcolor{comment}{//5\ segons\ abans\ de\ respawnejar}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \}}
+\DoxyCodeLine{00102\ \ \ \ \ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{comment}{//Quan\ cooldown\ =\ 0\ -\/>>\ pos\ random}}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}})\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}-\/-\/;}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}\ <=\ 0)\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ pro2::Rect\ camera\ =\ window.\mbox{\hyperlink{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}{camera\_rect}}();}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Agafem\ els\ punts\ del\ rectangle\ de\ camera}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cam\_left\ =\ camera.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}};}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cam\_right\ =\ camera.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cam\_top\ =\ camera.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}};}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cam\_bottom\ =\ camera.\mbox{\hyperlink{structpro2_1_1Rect_a5240a907c581979ec7981419286a8637}{bottom}};}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Calculem\ un\ marge\ de\ 20\%\ aixi\ el\ objecte\ estarà\ a\ 10\%\ de\ dalt\ i\ baix\ i\ dels\ costats\ }}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width\_margin\ =\ (cam\_right\ -\/\ cam\_left)\ *\ 0.1;}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ height\_margin\ =\ (cam\_bottom\ -\/\ cam\_top)\ *\ 0.1;}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Randomitzem\ els\ valors}}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ new\_x\ =\ \mbox{\hyperlink{namespacepro2_afc58ae0c5cb2b4abcb963e3406ed8ee6}{randomizer}}(cam\_right\ -\/\ width\_margin,\ cam\_left\ +\ width\_margin);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Ens\ assegurem\ que\ no\ estigui\ massa\ abaix}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ min\_y\ =\ cam\_top\ +\ height\_margin*2\ +\ 50;}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_y\ =\ cam\_top\ +\ (cam\_bottom\ -\/\ cam\_top)\ *\ 3\ /\ 5;}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ new\_y\ =\ \mbox{\hyperlink{namespacepro2_afc58ae0c5cb2b4abcb963e3406ed8ee6}{randomizer}}(max\_y,\ min\_y);}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Actualitzem\ posicions}}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.x\ =\ new\_x;}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.y\ =\ new\_y;}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00132\ \ \ \ \ \}}
+\DoxyCodeLine{00133\ \}}
+
 \end{DoxyCode}
 
 
@@ -340,7 +495,11 @@ int Sandglass\+::animation\+\_\+speed\+\_\+ = 20\hspace{0.3cm}{\ttfamily [privat
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Velocitat de l\textquotesingle{}animació (frames) 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00035}{35}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}\index{Sandglass@{Sandglass}!dist\_@{dist\_}}
 \index{dist\_@{dist\_}!Sandglass@{Sandglass}}
@@ -350,7 +509,11 @@ int Sandglass\+::dist\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00022}{22}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Distància recorreguda (o un altre propòsit, segons implementació) 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}\index{Sandglass@{Sandglass}!effect\_duration\_@{effect\_duration\_}}
 \index{effect\_duration\_@{effect\_duration\_}!Sandglass@{Sandglass}}
@@ -360,7 +523,11 @@ int Sandglass\+::effect\+\_\+duration\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00030}{30}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Durada restant de l\textquotesingle{}efecte actiu (frames) 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00039}{39}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}\index{Sandglass@{Sandglass}!frame\_counter\_@{frame\_counter\_}}
 \index{frame\_counter\_@{frame\_counter\_}!Sandglass@{Sandglass}}
@@ -370,7 +537,11 @@ int Sandglass\+::frame\+\_\+counter\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Comptador de frames per animació 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00033}{33}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_ae62520b91534743016322530116424af}\index{Sandglass@{Sandglass}!ini\_pos\_@{ini\_pos\_}}
 \index{ini\_pos\_@{ini\_pos\_}!Sandglass@{Sandglass}}
@@ -380,7 +551,11 @@ Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00024}{24}} del 
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Posició inicial del rellotge. 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_a656c0a60309e56686cd516eb416ba5e3}\index{Sandglass@{Sandglass}!is\_active\_@{is\_active\_}}
 \index{is\_active\_@{is\_active\_}!Sandglass@{Sandglass}}
@@ -390,7 +565,11 @@ bool Sandglass\+::is\+\_\+active\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00028}{28}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Indica si l\textquotesingle{}efecte està actiu. 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00037}{37}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}\index{Sandglass@{Sandglass}!is\_bright\_@{is\_bright\_}}
 \index{is\_bright\_@{is\_bright\_}!Sandglass@{Sandglass}}
@@ -400,7 +579,11 @@ bool Sandglass\+::is\+\_\+bright\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Flag per a canviar a sprite més brillant. 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00034}{34}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}\index{Sandglass@{Sandglass}!is\_in\_cooldown\_@{is\_in\_cooldown\_}}
 \index{is\_in\_cooldown\_@{is\_in\_cooldown\_}!Sandglass@{Sandglass}}
@@ -410,7 +593,11 @@ bool Sandglass\+::is\+\_\+in\+\_\+cooldown\+\_\+ = false\hspace{0.3cm}{\ttfamily
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Indica si està en període de cooldown (esperant reapareixer) 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00038}{38}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}\index{Sandglass@{Sandglass}!pos\_@{pos\_}}
 \index{pos\_@{pos\_}!Sandglass@{Sandglass}}
@@ -420,7 +607,11 @@ Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00029}{29}} del 
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00020}{20}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Posició actual del rellotge. 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00028}{28}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_aa92f00cd29f9715b819d95ad452de18f}\index{Sandglass@{Sandglass}!respawn\_delay\_@{respawn\_delay\_}}
 \index{respawn\_delay\_@{respawn\_delay\_}!Sandglass@{Sandglass}}
@@ -430,7 +621,11 @@ int Sandglass\+::respawn\+\_\+delay\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00031}{31}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Temps restant abans de reapareixer (frames) 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00040}{40}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 \Hypertarget{classSandglass_a1a21cc4667f7932a66c8774a60239eaf}\index{Sandglass@{Sandglass}!sandglass\_sprite\_brighter\_@{sandglass\_sprite\_brighter\_}}
 \index{sandglass\_sprite\_brighter\_@{sandglass\_sprite\_brighter\_}!Sandglass@{Sandglass}}
@@ -440,18 +635,41 @@ const vector$<$ vector$<$ int $>$ $>$ Sandglass\+::sandglass\+\_\+sprite\+\_\+br
 
 {\bfseries Valor inicial\+:}
 \begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a50ff6611e56940dd713ba5d320c10daa}{l\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a46e42948f2964e10c595ddab2c8b703f}{s\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a292616de5fdb7817271a7cac1e9305a8}{g\_bright}},\ \mbox{\hyperlink{ascended_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\ \ \ \ \{\mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}},\ \mbox{\hyperlink{sandglass_8cc_a75fb9bd2a2cdca6aaa8a172266df81ff}{br\_bright}}\}}
+\DoxyCodeLine{\}}
+
 \end{DoxyCode}
+
+
+Sprite brillant. 
+
 
 
 Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00043}{43}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSandglass_ac05e55c975cb51646fc96ab9ac738e92}{set\_x}}(\textcolor{keywordtype}{int}\ x)\ \{}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}.x\ =\ x;}
-\DoxyCodeLine{00060\ \ \ \ \ \}}
-\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ :}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}}(pro2::Pt\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ \{\}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}}(pro2::Pt\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}},\ pro2::Pt\ speed,\ \textcolor{keywordtype}{int}\ dist)\ }
 
 \end{DoxyCode}
 \Hypertarget{classSandglass_a8d7592d47ba54e28ed294e1a3ece2fa6}\index{Sandglass@{Sandglass}!sandglass\_sprite\_normal\_@{sandglass\_sprite\_normal\_}}
@@ -485,14 +703,30 @@ const vector$<$ vector$<$ int $>$ $>$ Sandglass\+::sandglass\+\_\+sprite\+\_\+no
 \end{DoxyCode}
 
 
+Sprite normal. 
+
+
+
 Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ :}
-\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}}(pro2::Pt\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}})\ \{\}}
-\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classSandglass_a29078c60764dba2b87728aa6d151b01e}{Sandglass}}(pro2::Pt\ \mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}},pro2::Pt\ speed,\ \textcolor{keywordtype}{int}\ dist)\ :\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}),\ \mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{ini\_pos\_}}(\mbox{\hyperlink{classSandglass_a373e17ed8567215ac7e60928a8c43567}{pos}}),\ \mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{speed\_}}(speed),\mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{dist\_}}(dist)\ \{\}}
-\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classSandglass_a7e298b88c54a23b56ebf4ce5d40dbf32}{pos\_}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classSandglass_ae62520b91534743016322530116424af}{ini\_pos\_}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ pro2::Pt\ \mbox{\hyperlink{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}{speed\_}}\ =\ \{0,\ 0\};\ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_a2f17370ff7b25cc37f9f810b33ae12ea}{dist\_}}\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_a2ebce7bc7e36cb702eb91a79d5c8a415}{frame\_counter\_}}\ =\ 0;\ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a0825d9c6df5fac09dfe48660f2dba616}{is\_bright\_}}\ =\ \textcolor{keyword}{false};\ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_ad42d5473d544c32852d1569c40284795}{animation\_speed\_}}\ =\ 20;\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a656c0a60309e56686cd516eb416ba5e3}{is\_active\_}}\ =\ \textcolor{keyword}{false};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSandglass_a60f7fe8ef1a92987465ead87a66ccff0}{is\_in\_cooldown\_}}\ =\ \textcolor{keyword}{false};\ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_afdcd6abff7520c36125fe92cb80ffee8}{effect\_duration\_}}\ =\ 0;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSandglass_aa92f00cd29f9715b819d95ad452de18f}{respawn\_delay\_}}\ =\ 0;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ }
 
 \end{DoxyCode}
 \Hypertarget{classSandglass_a39a650867c3a41b7bd99daaa54fd049d}\index{Sandglass@{Sandglass}!speed\_@{speed\_}}
@@ -503,11 +737,15 @@ Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00023}{23}} del 
 
 
 
-Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00021}{21}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
+Velocitat del rellotge (si es mou) 
+
+
+
+Definición en la línea \mbox{\hyperlink{sandglass_8hh_source_l00030}{30}} del archivo \mbox{\hyperlink{sandglass_8hh_source}{sandglass.\+hh}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00021\ \{0,\ 0\};}
+\DoxyCodeLine{00030\ \{0,\ 0\};\ \ }
 
 \end{DoxyCode}
 

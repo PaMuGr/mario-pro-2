@@ -1,6 +1,6 @@
 <map id="cross.hh" name="cross.hh">
-<area shape="rect" id="Node000001" title="Especificació de les Funcions del Cross." alt="" coords="118,5,190,31"/>
-<area shape="rect" id="Node000002" href="$platform_8hh.html" title="Especificacions de Funcions del Platforms." alt="" coords="5,79,92,105"/>
+<area shape="rect" id="Node000001" title="Especificació de la classe Cross." alt="" coords="118,5,190,31"/>
+<area shape="rect" id="Node000002" href="$platform_8hh.html" title="Definició de la classe Platform que representa plataformes en el joc." alt="" coords="5,79,92,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,34,80,72,77,68,134,29"/>
 <area shape="rect" id="Node000003" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="46,153,128,178"/>
 <area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="151,32,101,140,97,137,146,30"/>

@@ -1,5 +1,5 @@
 <map id="platform.hh" name="platform.hh">
-<area shape="rect" id="Node000001" title="Especificacions de Funcions del Platforms." alt="" coords="50,5,136,31"/>
+<area shape="rect" id="Node000001" title="Definició de la classe Platform que representa plataformes en el joc." alt="" coords="50,5,136,31"/>
 <area shape="rect" id="Node000002" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="52,79,134,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,31,96,63,90,63,90,31"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,153,77,178"/>

@@ -18,9 +18,10 @@ var searchData=
   ['fireball_15',['Fireball',['../classFireball.html',1,'Fireball'],['../classDemon.html#a2bf7a415cc2e7956cc500453b15d45b9',1,'Demon::Fireball()'],['../classFireball.html#a7c7146ea91dd774c0bab5d7f605960d0',1,'Fireball::Fireball()'],['../classFireball.html#afb4af2a1e2f3794910d514a98890e084',1,'Fireball::Fireball(pro2::Pt pos, pro2::Pt speed)']]],
   ['fireball_5fsprite_5f_16',['fireball_sprite_',['../classFireball.html#aa7d742cb8e1a1a8750438b8fe78eb42a',1,'Fireball']]],
   ['fireballs_5f_17',['fireballs_',['../classDemon.html#a053f16fc9239054238d9e250874dbec5',1,'Demon']]],
-  ['fps_18',['FPS',['../main_8cc.html#ac5090a6568797128b0a5545228bb8b75',1,'main.cc']]],
-  ['fps_5f_19',['fps_',['../classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b',1,'pro2::Window']]],
-  ['frame_5fcount_20',['frame_count',['../classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964',1,'pro2::Window']]],
-  ['frame_5fcount_5f_21',['frame_count_',['../classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e',1,'pro2::Window']]],
-  ['frame_5fcounter_5f_22',['frame_counter_',['../classSandglass.html#a2ebce7bc7e36cb702eb91a79d5c8a415',1,'Sandglass']]]
+  ['fires_5fper_5fsecond_5f_18',['fires_per_second_',['../classDemon.html#ae23a7d393c668c7e9b6a060da00afdf0',1,'Demon']]],
+  ['fps_19',['FPS',['../main_8cc.html#ac5090a6568797128b0a5545228bb8b75',1,'main.cc']]],
+  ['fps_5f_20',['fps_',['../classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b',1,'pro2::Window']]],
+  ['frame_5fcount_21',['frame_count',['../classpro2_1_1Window.html#a36747221fc49f9b5dcf42d2d7bdf6964',1,'pro2::Window']]],
+  ['frame_5fcount_5f_22',['frame_count_',['../classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e',1,'pro2::Window']]],
+  ['frame_5fcounter_5f_23',['frame_counter_',['../classSandglass.html#a2ebce7bc7e36cb702eb91a79d5c8a415',1,'Sandglass']]]
 ];

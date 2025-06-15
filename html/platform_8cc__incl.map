@@ -1,6 +1,6 @@
 <map id="platform.cc" name="platform.cc">
 <area shape="rect" id="Node000001" title="Funcions del Platforms." alt="" coords="50,5,136,31"/>
-<area shape="rect" id="Node000002" href="$platform_8hh.html" title="Especificacions de Funcions del Platforms." alt="" coords="50,79,136,105"/>
+<area shape="rect" id="Node000002" href="$platform_8hh.html" title="Definició de la classe Platform que representa plataformes en el joc." alt="" coords="50,79,136,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,31,96,63,90,63,90,31"/>
 <area shape="rect" id="Node000003" href="$window_8hh.html" title="Especificació de les Funcions del Window." alt="" coords="52,153,134,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,105,96,137,90,137,90,105"/>

@@ -93,30 +93,39 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Classe que representa una bola de foc disparada pel dimoni.  
+ <a href="#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="demon_8hh_source.html">demon.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a7c7146ea91dd774c0bab5d7f605960d0" id="r_a7c7146ea91dd774c0bab5d7f605960d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c7146ea91dd774c0bab5d7f605960d0">Fireball</a> ()</td></tr>
+<tr class="memdesc:a7c7146ea91dd774c0bab5d7f605960d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor per defecte, inicialitza la bola de foc parada i caient.  <br /></td></tr>
 <tr class="separator:a7c7146ea91dd774c0bab5d7f605960d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb4af2a1e2f3794910d514a98890e084" id="r_afb4af2a1e2f3794910d514a98890e084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb4af2a1e2f3794910d514a98890e084">Fireball</a> (<a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="el" href="#a373ba9475ba1b68ecab2a843ec9809b6">pos</a>, <a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a> speed)</td></tr>
+<tr class="memdesc:afb4af2a1e2f3794910d514a98890e084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor amb posició i velocitat inicial.  <br /></td></tr>
 <tr class="separator:afb4af2a1e2f3794910d514a98890e084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4bf6e8fdcb47ff9ad9c777d956ae5ae" id="r_ae4bf6e8fdcb47ff9ad9c777d956ae5ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4bf6e8fdcb47ff9ad9c777d956ae5ae">update</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window, const std::set&lt; const <a class="el" href="classPlatform.html">Platform</a> * &gt; &amp;platforms)</td></tr>
+<tr class="memdesc:ae4bf6e8fdcb47ff9ad9c777d956ae5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualitza l'estat de la bola de foc.  <br /></td></tr>
 <tr class="separator:ae4bf6e8fdcb47ff9ad9c777d956ae5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522f236bde6146136aa8025873c3b0ef" id="r_a522f236bde6146136aa8025873c3b0ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a522f236bde6146136aa8025873c3b0ef">paint</a> (<a class="el" href="classpro2_1_1Window.html">pro2::Window</a> &amp;window) const</td></tr>
+<tr class="memdesc:a522f236bde6146136aa8025873c3b0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dibuixa la bola de foc a la finestra.  <br /></td></tr>
 <tr class="separator:a522f236bde6146136aa8025873c3b0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373ba9475ba1b68ecab2a843ec9809b6" id="r_a373ba9475ba1b68ecab2a843ec9809b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a373ba9475ba1b68ecab2a843ec9809b6">pos</a> () const</td></tr>
+<tr class="memdesc:a373ba9475ba1b68ecab2a843ec9809b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la posició actual de la bola de foc.  <br /></td></tr>
 <tr class="separator:a373ba9475ba1b68ecab2a843ec9809b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c12e22c23baa801b34c8c941db6062a" id="r_a0c12e22c23baa801b34c8c941db6062a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpro2_1_1Rect.html">pro2::Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c12e22c23baa801b34c8c941db6062a">get_rect</a> () const</td></tr>
-<tr class="memdesc:a0c12e22c23baa801b34c8c941db6062a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el rectangle del objecte.  <br /></td></tr>
+<tr class="memdesc:a0c12e22c23baa801b34c8c941db6062a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el rectangle que engloba la bola de foc.  <br /></td></tr>
 <tr class="separator:a0c12e22c23baa801b34c8c941db6062a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae047b73f626d2f2390a8732105cbfd97" id="r_ae047b73f626d2f2390a8732105cbfd97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae047b73f626d2f2390a8732105cbfd97">start_fire</a> ()</td></tr>
+<tr class="memdesc:ae047b73f626d2f2390a8732105cbfd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia l'estat de foc actiu a la bola, deixa de caure.  <br /></td></tr>
 <tr class="separator:ae047b73f626d2f2390a8732105cbfd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa43b97b2bffbcbbebffe1cb47f25d3" id="r_afaa43b97b2bffbcbbebffe1cb47f25d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaa43b97b2bffbcbbebffe1cb47f25d3">is_falling</a> () const</td></tr>
-<tr class="memdesc:afaa43b97b2bffbcbbebffe1cb47f25d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si esta o no cayent el fireball.  <br /></td></tr>
+<tr class="memdesc:afaa43b97b2bffbcbbebffe1cb47f25d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si la bola de foc està caient.  <br /></td></tr>
 <tr class="separator:afaa43b97b2bffbcbbebffe1cb47f25d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe6bb4ce265103db7d51960b5acdb255" id="r_afe6bb4ce265103db7d51960b5acdb255"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe6bb4ce265103db7d51960b5acdb255">is_expired</a> () const</td></tr>
-<tr class="memdesc:afe6bb4ce265103db7d51960b5acdb255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si esta encara actiu el foc.  <br /></td></tr>
+<tr class="memdesc:afe6bb4ce265103db7d51960b5acdb255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el foc de la bola ha acabat.  <br /></td></tr>
 <tr class="separator:afe6bb4ce265103db7d51960b5acdb255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -140,8 +149,10 @@ Atributos estáticos privados</h2></td></tr>
 <tr class="separator:abbc09dd9a79996a2134a8da32614371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00019">19</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<div class="textblock"><p>Classe que representa una bola de foc disparada pel dimoni. </p>
+<p>Té moviment propi, pot caure o quedar-se en estat actiu un temps limitat. També pot detectar col·lisions mitjançant la seva hitbox. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00025">25</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a7c7146ea91dd774c0bab5d7f605960d0" name="a7c7146ea91dd774c0bab5d7f605960d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c7146ea91dd774c0bab5d7f605960d0">&#9670;&#160;</a></span>Fireball() <span class="overload">[1/2]</span></h2>
@@ -166,8 +177,14 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00032">32</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Constructor per defecte, inicialitza la bola de foc parada i caient. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00040">40</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>: <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>({0,0}), <a class="code hl_variable" href="#a0bded5ce4b784c44915d2aebc825d120">speed_</a>({0,0}), <a class="code hl_variable" href="#a18302463a8e93ac06667bdf3d96ffd48">falling_</a>(<span class="keyword">true</span>) {}</div>
+<div class="ttc" id="aclassFireball_html_a0bded5ce4b784c44915d2aebc825d120"><div class="ttname"><a href="#a0bded5ce4b784c44915d2aebc825d120">Fireball::speed_</a></div><div class="ttdeci">pro2::Pt speed_</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00028">demon.hh:28</a></div></div>
+<div class="ttc" id="aclassFireball_html_a18302463a8e93ac06667bdf3d96ffd48"><div class="ttname"><a href="#a18302463a8e93ac06667bdf3d96ffd48">Fireball::falling_</a></div><div class="ttdeci">bool falling_</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00029">demon.hh:29</a></div></div>
+<div class="ttc" id="aclassFireball_html_a7346abd5936ff504ae0514060be3eabe"><div class="ttname"><a href="#a7346abd5936ff504ae0514060be3eabe">Fireball::pos_</a></div><div class="ttdeci">pro2::Pt pos_</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00027">demon.hh:27</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afb4af2a1e2f3794910d514a98890e084" name="afb4af2a1e2f3794910d514a98890e084"></a>
@@ -189,8 +206,19 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor amb posició i velocitat inicial. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Posició inicial de la bola de foc. </td></tr>
+    <tr><td class="paramname">speed</td><td>Velocitat inicial. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definición en la línea <a class="el" href="demon_8cc_source.html#l00190">190</a> del archivo <a class="el" href="demon_8cc_source.html">demon.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">  191</span>    : <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>(<a class="code hl_function" href="#a373ba9475ba1b68ecab2a843ec9809b6">pos</a>), <a class="code hl_variable" href="#a0bded5ce4b784c44915d2aebc825d120">speed_</a>(speed), <a class="code hl_variable" href="#a18302463a8e93ac06667bdf3d96ffd48">falling_</a>(<span class="keyword">true</span>) {}</div>
+<div class="ttc" id="aclassFireball_html_a373ba9475ba1b68ecab2a843ec9809b6"><div class="ttname"><a href="#a373ba9475ba1b68ecab2a843ec9809b6">Fireball::pos</a></div><div class="ttdeci">pro2::Pt pos() const</div><div class="ttdoc">Retorna la posició actual de la bola de foc.</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00068">demon.hh:68</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
@@ -209,11 +237,22 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retorna el rectangle del objecte. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>un Rectangle corresponent al objecte </dd></dl>
+<p>Retorna el rectangle que engloba la bola de foc. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Un rectangle que correspon a la hitbox de la bola de foc. </dd></dl>
 
 <p class="definition">Definición en la línea <a class="el" href="demon_8cc_source.html#l00212">212</a> del archivo <a class="el" href="demon_8cc_source.html">demon.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">  212</span>                                  {</div>
+<div class="line"><span class="lineno">  213</span>    <span class="keywordtype">int</span> width = <a class="code hl_variable" href="#aa7d742cb8e1a1a8750438b8fe78eb42a">fireball_sprite_</a>[0].size();</div>
+<div class="line"><span class="lineno">  214</span>    <span class="keywordtype">int</span> height = <a class="code hl_variable" href="#aa7d742cb8e1a1a8750438b8fe78eb42a">fireball_sprite_</a>.size();</div>
+<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">return</span> pro2::Rect({</div>
+<div class="line"><span class="lineno">  216</span>        <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>.x,</div>
+<div class="line"><span class="lineno">  217</span>        <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>.y,</div>
+<div class="line"><span class="lineno">  218</span>        <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>.x + width,</div>
+<div class="line"><span class="lineno">  219</span>        <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>.y + height</div>
+<div class="line"><span class="lineno">  220</span>    });</div>
+<div class="line"><span class="lineno">  221</span>}</div>
+<div class="ttc" id="aclassFireball_html_aa7d742cb8e1a1a8750438b8fe78eb42a"><div class="ttname"><a href="#aa7d742cb8e1a1a8750438b8fe78eb42a">Fireball::fireball_sprite_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; fireball_sprite_</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00065">demon.hh:65</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afe6bb4ce265103db7d51960b5acdb255" name="afe6bb4ce265103db7d51960b5acdb255"></a>
@@ -239,11 +278,13 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna si esta encara actiu el foc. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>Comprovació de si el foc esta o no apagat </dd></dl>
+<p>Indica si el foc de la bola ha acabat. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si el foc ja no està actiu, false en cas contrari. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00068">68</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00100">100</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{ <span class="keywordflow">return</span> !<a class="code hl_variable" href="#a18302463a8e93ac06667bdf3d96ffd48">falling_</a> &amp;&amp; <a class="code hl_variable" href="#a7b25ceaf3afdc4ad4cd5617945816b60">duracio_</a> &lt;= 0; }</div>
+<div class="ttc" id="aclassFireball_html_a7b25ceaf3afdc4ad4cd5617945816b60"><div class="ttname"><a href="#a7b25ceaf3afdc4ad4cd5617945816b60">Fireball::duracio_</a></div><div class="ttdeci">int duracio_</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00030">demon.hh:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afaa43b97b2bffbcbbebffe1cb47f25d3" name="afaa43b97b2bffbcbbebffe1cb47f25d3"></a>
@@ -269,11 +310,12 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna si esta o no cayent el fireball. </p>
-<dl class="section return"><dt>Devuelve</dt><dd>El bool falling_ </dd></dl>
+<p>Indica si la bola de foc està caient. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si està caient, false si no. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00061">61</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00093">93</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a18302463a8e93ac06667bdf3d96ffd48">falling_</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a522f236bde6146136aa8025873c3b0ef" name="a522f236bde6146136aa8025873c3b0ef"></a>
@@ -291,8 +333,26 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Dibuixa la bola de foc a la finestra. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Referència a la finestra on es dibuixa. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definición en la línea <a class="el" href="demon_8cc_source.html#l00203">203</a> del archivo <a class="el" href="demon_8cc_source.html">demon.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">  203</span>                                             {</div>
+<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a18302463a8e93ac06667bdf3d96ffd48">falling_</a>) {</div>
+<div class="line"><span class="lineno">  205</span>        <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>, <a class="code hl_variable" href="#aa7d742cb8e1a1a8750438b8fe78eb42a">fireball_sprite_</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">else</span>{</div>
+<div class="line"><span class="lineno">  208</span>         <a class="code hl_function" href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">paint_sprite</a>(window, <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>, <a class="code hl_variable" href="#abbc09dd9a79996a2134a8da32614371e">fire_sprite_</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="line"><span class="lineno">  210</span>}</div>
+<div class="ttc" id="aclassFireball_html_abbc09dd9a79996a2134a8da32614371e"><div class="ttname"><a href="#abbc09dd9a79996a2134a8da32614371e">Fireball::fire_sprite_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; fire_sprite_</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00076">demon.hh:76</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a80f038548a7ea3d520759a04437e096a"><div class="ttname"><a href="namespacepro2.html#a80f038548a7ea3d520759a04437e096a">pro2::paint_sprite</a></div><div class="ttdeci">void paint_sprite(pro2::Window &amp;window, pro2::Pt orig, const vector&lt; vector&lt; int &gt; &gt; &amp;sprite, bool mirror)</div><div class="ttdef"><b>Definition</b> <a href="utils_8cc_source.html#l00022">utils.cc:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a373ba9475ba1b68ecab2a843ec9809b6" name="a373ba9475ba1b68ecab2a843ec9809b6"></a>
@@ -318,8 +378,14 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00039">39</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Retorna la posició actual de la bola de foc. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Posició (<a class="el" href="structpro2_1_1Pt.html">pro2::Pt</a>). </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00068">68</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                       {</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>;</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae047b73f626d2f2390a8732105cbfd97" name="ae047b73f626d2f2390a8732105cbfd97"></a>
@@ -345,8 +411,16 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00050">50</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<p>Inicia l'estat de foc actiu a la bola, deixa de caure. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00082">82</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                     {</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>.y -= 2;</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="#a18302463a8e93ac06667bdf3d96ffd48">falling_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="#a7b25ceaf3afdc4ad4cd5617945816b60">duracio_</a> = <a class="code hl_variable" href="#ac84133824828f6c34f30d6625a04c232">duracio_fire</a>;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="ttc" id="aclassFireball_html_ac84133824828f6c34f30d6625a04c232"><div class="ttname"><a href="#ac84133824828f6c34f30d6625a04c232">Fireball::duracio_fire</a></div><div class="ttdeci">int duracio_fire</div><div class="ttdef"><b>Definition</b> <a href="demon_8hh_source.html#l00031">demon.hh:31</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae4bf6e8fdcb47ff9ad9c777d956ae5ae" name="ae4bf6e8fdcb47ff9ad9c777d956ae5ae"></a>
@@ -368,8 +442,26 @@ Atributos estáticos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Actualitza l'estat de la bola de foc. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Referència a la finestra per coordenades. </td></tr>
+    <tr><td class="paramname">platforms</td><td>Conjunt de plataformes per detectar col·lisions. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definición en la línea <a class="el" href="demon_8cc_source.html#l00193">193</a> del archivo <a class="el" href="demon_8cc_source.html">demon.cc</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">  193</span>                                                                                {    </div>
+<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a18302463a8e93ac06667bdf3d96ffd48">falling_</a>) {</div>
+<div class="line"><span class="lineno">  195</span>        <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>.x += <a class="code hl_variable" href="#a0bded5ce4b784c44915d2aebc825d120">speed_</a>.x;</div>
+<div class="line"><span class="lineno">  196</span>        <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>.y += <a class="code hl_variable" href="#a0bded5ce4b784c44915d2aebc825d120">speed_</a>.y;</div>
+<div class="line"><span class="lineno">  197</span>    }</div>
+<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a7b25ceaf3afdc4ad4cd5617945816b60">duracio_</a> &gt; 0) {</div>
+<div class="line"><span class="lineno">  199</span>        <a class="code hl_variable" href="#a7b25ceaf3afdc4ad4cd5617945816b60">duracio_</a>--;</div>
+<div class="line"><span class="lineno">  200</span>    }</div>
+<div class="line"><span class="lineno">  201</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
@@ -392,8 +484,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Comptador de duració quan el foc està actiu </p>
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00024">24</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00030">30</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
 
 </div>
 </div>
@@ -416,8 +509,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Duració total del foc (frames) </p>
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00025">25</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00031">31</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
 
 </div>
 </div>
@@ -440,8 +534,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Indica si la bola està caient </p>
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00023">23</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00029">29</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
 
 </div>
 </div>
@@ -464,9 +559,29 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Valor inicial:</b><div class="fragment"></div><!-- fragment -->
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a3d46318189c0b7fe2c79e4be012d4d71">d</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a3d46318189c0b7fe2c79e4be012d4d71">d</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a3d46318189c0b7fe2c79e4be012d4d71">d</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>}</div>
+<div class="line">}</div>
+<div class="ttc" id="aascended_8cc_html_a4d82239905175fe792bc2c8faf35bd1b"><div class="ttname"><a href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a></div><div class="ttdeci">const int _</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00009">ascended.cc:9</a></div></div>
+<div class="ttc" id="aascended_8cc_html_a536c339057ad4fa1840581ffde1bec6b"><div class="ttname"><a href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a></div><div class="ttdeci">const int y</div><div class="ttdef"><b>Definition</b> <a href="ascended_8cc_source.html#l00012">ascended.cc:12</a></div></div>
+<div class="ttc" id="ademon_8cc_html_a3d46318189c0b7fe2c79e4be012d4d71"><div class="ttname"><a href="demon_8cc.html#a3d46318189c0b7fe2c79e4be012d4d71">d</a></div><div class="ttdeci">const int d</div><div class="ttdef"><b>Definition</b> <a href="demon_8cc_source.html#l00013">demon.cc:13</a></div></div>
+<div class="ttc" id="ademon_8cc_html_a72868638d7fea1a98d306d79a8e9bc02"><div class="ttname"><a href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a></div><div class="ttdeci">const int o</div><div class="ttdef"><b>Definition</b> <a href="demon_8cc_source.html#l00011">demon.cc:11</a></div></div>
+<div class="ttc" id="ademon_8cc_html_aab1a61aefa4f95e20603bbf888cb2a5f"><div class="ttname"><a href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a></div><div class="ttdeci">const int r</div><div class="ttdef"><b>Definition</b> <a href="demon_8cc_source.html#l00016">demon.cc:16</a></div></div>
+</div><!-- fragment --><p>Sprite per el foc actiu </p>
+
 <p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00076">76</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                     {</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>.y -= 2;</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="#a18302463a8e93ac06667bdf3d96ffd48">falling_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="#a7b25ceaf3afdc4ad4cd5617945816b60">duracio_</a> = <a class="code hl_variable" href="#ac84133824828f6c34f30d6625a04c232">duracio_fire</a>;</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa7d742cb8e1a1a8750438b8fe78eb42a" name="aa7d742cb8e1a1a8750438b8fe78eb42a"></a>
@@ -488,9 +603,23 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Valor inicial:</b><div class="fragment"></div><!-- fragment -->
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a3d46318189c0b7fe2c79e4be012d4d71">d</a>, <a class="code hl_variable" href="demon_8cc.html#a3d46318189c0b7fe2c79e4be012d4d71">d</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a3d46318189c0b7fe2c79e4be012d4d71">d</a>, <a class="code hl_variable" href="demon_8cc.html#a3d46318189c0b7fe2c79e4be012d4d71">d</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="demon_8cc.html#a72868638d7fea1a98d306d79a8e9bc02">o</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>},</div>
+<div class="line">    {<a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>, <a class="code hl_variable" href="ascended_8cc.html#a4d82239905175fe792bc2c8faf35bd1b">_</a>}</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Sprite per la bola de foc </p>
+
 <p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00065">65</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
-<div class="fragment"></div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                       {</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a7346abd5936ff504ae0514060be3eabe">pos_</a>;</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+<div class="line"><span class="lineno">   71</span></div><!-- fragment -->
 </div>
 </div>
 <a id="a7346abd5936ff504ae0514060be3eabe" name="a7346abd5936ff504ae0514060be3eabe"></a>
@@ -512,8 +641,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Posició actual de la bola de foc </p>
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00021">21</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00027">27</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
 
 </div>
 </div>
@@ -536,8 +666,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Velocitat (desplaçament per actualització) </p>
 
-<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00022">22</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="demon_8hh_source.html#l00028">28</a> del archivo <a class="el" href="demon_8hh_source.html">demon.hh</a>.</p>
 
 </div>
 </div>
